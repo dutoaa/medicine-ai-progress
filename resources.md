@@ -35,15 +35,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.29980v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-28-arxiv-genetically_aligned_patient_representations_improve_hematological_diagnosis_infographic.json
 
-## 5. MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings
-
-- Date: 2026-05-28
-- Category: Clinical NLP
-- arXiv: https://arxiv.org/abs/2605.30295v1
-- PDF: https://arxiv.org/pdf/2605.30295v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-28-arxiv-medcase_structured_a_text_to_fhir_dataset_for_benchmarking_diagnostic_reasoning_in_clinica_infographic.json
-
-## 6. Uncertainty Reasoning with Large Language Models for Explainable Disease Diagnosis
+## 5. Uncertainty Reasoning with Large Language Models for Explainable Disease Diagnosis
 
 - Date: 2026-05-25
 - Category: Health Systems
@@ -51,7 +43,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.25566v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-25-arxiv-uncertainty_reasoning_with_large_language_models_for_explainable_disease_diagnosis_infographic.json
 
-## 7. ARMA-C3: A Contrastive ARMA Convolutional Framework for Unsupervised and Semi-supervised Classification
+## 6. ARMA-C3: A Contrastive ARMA Convolutional Framework for Unsupervised and Semi-supervised Classification
 
 - Date: 2026-05-25
 - Category: Medical Imaging
@@ -59,7 +51,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.25657v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-25-arxiv-arma_c3_a_contrastive_arma_convolutional_framework_for_unsupervised_and_semi_supervised_cl_infographic.json
 
-## 8. The Daily Dose: Workflow-Integrated Large Language Model Automation for Clinical Summarization and Trial Identification in Radiation Oncology
+## 7. The Daily Dose: Workflow-Integrated Large Language Model Automation for Clinical Summarization and Trial Identification in Radiation Oncology
 
 - Date: 2026-05-25
 - Category: Clinical NLP
@@ -67,15 +59,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.26346v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-25-arxiv-the_daily_dose_workflow_integrated_large_language_model_automation_for_clinical_summarizat_infographic.json
 
-## 9. OOD-GraphLLM: Graph Large Language Model for Out-of-Distribution Generalized Drug Synergy Prediction
+## 8. MedCase-Structured: A Text-to-FHIR Dataset for Benchmarking Diagnostic Reasoning in Clinically Realistic EHR Settings
 
 - Date: 2026-05-28
 - Category: Clinical NLP
-- arXiv: https://arxiv.org/abs/2605.30247v1
-- PDF: https://arxiv.org/pdf/2605.30247v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-28-arxiv-ood_graphllm_graph_large_language_model_for_out_of_distribution_generalized_drug_synergy_p_infographic.json
+- arXiv: https://arxiv.org/abs/2605.30295v1
+- PDF: https://arxiv.org/pdf/2605.30295v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-28-arxiv-medcase_structured_a_text_to_fhir_dataset_for_benchmarking_diagnostic_reasoning_in_clinica_infographic.json
 
-## 10. AutoScientists: Self-Organizing Agent Teams for Long-Running Scientific Experimentation
+## 9. AutoScientists: Self-Organizing Agent Teams for Long-Running Scientific Experimentation
 
 - Date: 2026-05-27
 - Category: Biomedical AI
@@ -83,7 +75,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.28655v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-27-arxiv-autoscientists_self_organizing_agent_teams_for_long_running_scientific_experimentation_infographic.json
 
-## 11. Fairness Beyond Demographics: Optimizing Performance Across Appearance-Based Hidden Cohorts in Medical Imaging
+## 10. Fairness Beyond Demographics: Optimizing Performance Across Appearance-Based Hidden Cohorts in Medical Imaging
 
 - Date: 2026-05-28
 - Category: Medical Imaging
@@ -91,7 +83,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.29827v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-28-arxiv-fairness_beyond_demographics_optimizing_performance_across_appearance_based_hidden_cohorts_infographic.json
 
-## 12. Trends in AI and Human-AI Interaction in Clinical Trials -- A Hybrid Human-AI Exploration
+## 11. Trends in AI and Human-AI Interaction in Clinical Trials -- A Hybrid Human-AI Exploration
 
 - Date: 2026-05-27
 - Category: Clinical NLP
@@ -99,7 +91,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.29096v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-27-arxiv-trends_in_ai_and_human_ai_interaction_in_clinical_trials_a_hybrid_human_ai_exploration_infographic.json
 
-## 13. OphIn-500K: Curating Web-Scale Visual Instructions for Scaling Ophthalmic Multimodal Large Language Models
+## 12. OphIn-500K: Curating Web-Scale Visual Instructions for Scaling Ophthalmic Multimodal Large Language Models
 
 - Date: 2026-05-27
 - Category: Clinical NLP
@@ -107,7 +99,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.27916v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-27-arxiv-ophin_500k_curating_web_scale_visual_instructions_for_scaling_ophthalmic_multimodal_large_infographic.json
 
-## 14. SigmaMedStat: Temporal Signal Modeling for ICU False Alarm Reduction
+## 13. SigmaMedStat: Temporal Signal Modeling for ICU False Alarm Reduction
 
 - Date: 2026-05-28
 - Category: Health Systems
@@ -115,13 +107,21 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2605.29236v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-28-arxiv-sigmamedstat_temporal_signal_modeling_for_icu_false_alarm_reduction_infographic.json
 
-## 15. C-MIG: Multi-view Information Gain-based Retrieval-Augmented Generation for Clinical Diagnosis Reasoning
+## 14. C-MIG: Multi-view Information Gain-based Retrieval-Augmented Generation for Clinical Diagnosis Reasoning
 
 - Date: 2026-05-27
 - Category: Clinical NLP
 - arXiv: https://arxiv.org/abs/2605.27860v1
 - PDF: https://arxiv.org/pdf/2605.27860v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-27-arxiv-c_mig_multi_view_information_gain_based_retrieval_augmented_generation_for_clinical_diagno_infographic.json
+
+## 15. OOD-GraphLLM: Graph Large Language Model for Out-of-Distribution Generalized Drug Synergy Prediction
+
+- Date: 2026-05-28
+- Category: Clinical NLP
+- arXiv: https://arxiv.org/abs/2605.30247v1
+- PDF: https://arxiv.org/pdf/2605.30247v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-28-arxiv-ood_graphllm_graph_large_language_model_for_out_of_distribution_generalized_drug_synergy_p_infographic.json
 
 ## 16. CCS: Clinical Consensus Selection for Radiology Report Generation
 
