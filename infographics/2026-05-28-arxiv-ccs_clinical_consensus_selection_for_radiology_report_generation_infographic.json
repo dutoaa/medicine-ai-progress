@@ -1,24 +1,24 @@
 {
-  "key_insight": "Clinical Consensus Selection (CCS) improves radiology report generation by selecting the candidate with the highest clinical consensus rather than relying on default decoding.",
-  "clinical_relevance": "The methodology enhances report quality in radiology by leveraging multimodal decision-making at inference time.",
+  "key_insight": "Clinical Consensus Selection (CCS) improves radiology report generation by choosing the best report from multiple sampled candidates rather than relying on a model’s default single output.",
+  "clinical_relevance": "This could make AI-generated radiology reports more clinically reliable at inference time, especially by better capturing findings that matter for downstream review.",
   "method": [
-    "CCS samples multiple candidate reports during inference.",
-    "It uses a clinical consensus measure from both text and image-based utilities.",
-    "The framework is decoder-agnostic, suitable for various radiology MLLMs."
+    "Sample multiple candidate reports from a radiology multimodal LLM.",
+    "Score candidates using both text-based agreement and an image-report multimodal utility.",
+    "Select the report with the highest clinical consensus across the pool."
   ],
-  "evidence_signal": "Experimental results show that CCS consistently outperforms single-path decoding and generic baselines across multiple datasets.",
-  "watch_item": "Further research is needed to explore the full potential of CCS in diverse clinical settings.",
+  "evidence_signal": "Across three datasets and multiple radiology MLLMs, CCS outperformed single-path decoding and generic Best-of-N baselines, with especially strong gains on clinical metrics.",
+  "watch_item": "Because CCS depends on extra sampling and selection at inference time, it may increase compute cost and its utility could vary with the quality of the multimodal embedder.",
   "hashtags": [
-    "#Radiology",
-    "#NLP",
-    "#ArtificialIntelligence",
-    "#MedicalImaging",
-    "#ClinicalDecisionMaking"
+    "#RadiologyAI",
+    "#ClinicalNLP",
+    "#ReportGeneration",
+    "#MultimodalAI",
+    "#MedicalImaging"
   ],
   "paper_id": "2026-05-28-arxiv-ccs_clinical_consensus_selection_for_radiology_report_generation",
   "paper_title": "CCS: Clinical Consensus Selection for Radiology Report Generation",
   "paper_date": "2026-05-28",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-05-30T17:44:06",
+  "generated_at": "2026-05-30T22:35:57",
   "generator": "openai"
 }

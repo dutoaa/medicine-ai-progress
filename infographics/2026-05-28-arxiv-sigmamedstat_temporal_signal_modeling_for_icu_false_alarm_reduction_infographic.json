@@ -1,24 +1,24 @@
 {
-  "key_insight": "SigmaMedStat significantly reduces false alarms in ICUs by evaluating the trustworthiness of physiological alarm signals.",
-  "clinical_relevance": "By addressing alarm fatigue, SigmaMedStat enhances patient safety and reduces the risk of missed true emergencies.",
+  "key_insight": "SigmaMedStat improves ICU false-alarm triage by modeling physiological signals over time, with a chunked CWT + EfficientNet + LSTM approach outperforming a static baseline.",
+  "clinical_relevance": "Better alarm filtering could reduce alarm fatigue in ICUs and help staff focus faster on truly urgent events.",
   "method": [
-    "Employs a temporal modeling framework that chunks recordings into 10-second intervals.",
-    "Utilizes Continuous Wavelet Transform (CWT) scalograms and an EfficientNet-B0 encoder.",
-    "Processes feature sequences with a two-layer Long Short-Term Memory (LSTM) network."
+    "Split each 60-second ICU recording into six 10-second chunks",
+    "Convert each chunk into Continuous Wavelet Transform scalograms and encode them with a shared EfficientNet-B0",
+    "Feed the chunk features into a two-layer LSTM for final alarm classification"
   ],
-  "evidence_signal": "Achieved a mean AUC of 0.822 +/- 0.016 with improved classification over a static EfficientNet baseline.",
-  "watch_item": "Ventricular Flutter is classified well, but Asystole remains challenging, indicating uneven performance across alarm types.",
+  "evidence_signal": "On 498 four-channel ICU alarm recordings from PhysioNet/Computing in Cardiology Challenge 2015, five-fold stratified cross-validation produced mean AUC 0.822 ± 0.016 versus 0.641 for a static EfficientNet baseline.",
+  "watch_item": "Performance varied by alarm type and the model still produced false negatives, so real-world deployment would need careful validation and safety review.",
   "hashtags": [
-    "#AIinMedicine",
-    "#HealthSystems",
     "#ICU",
+    "#AlarmFatigue",
     "#MachineLearning",
+    "#HealthAI",
     "#PatientSafety"
   ],
   "paper_id": "2026-05-28-arxiv-sigmamedstat_temporal_signal_modeling_for_icu_false_alarm_reduction",
   "paper_title": "SigmaMedStat: Temporal Signal Modeling for ICU False Alarm Reduction",
   "paper_date": "2026-05-28",
   "paper_category": "Health Systems",
-  "generated_at": "2026-05-30T17:43:55",
+  "generated_at": "2026-05-30T22:35:49",
   "generator": "openai"
 }
