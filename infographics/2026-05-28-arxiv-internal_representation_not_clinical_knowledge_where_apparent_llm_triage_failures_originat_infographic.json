@@ -1,24 +1,24 @@
 {
-  "key_insight": "The apparent triage failures come from how the model maps its preserved clinical understanding to constrained multiple-choice answers, not from a loss of medical representation.",
-  "clinical_relevance": "For AI triage tools, the output format can meaningfully change safety performance, so evaluation should test both free-text and forced-choice settings.",
+  "key_insight": "The paper argues that apparent triage errors come from how the model converts an already-preserved clinical representation into a multiple-choice answer, not from loss of medical understanding.",
+  "clinical_relevance": "For clinical NLP benchmarking, output format can substantially change measured triage performance, so free-text vs. multiple-choice results should not be interpreted as equivalent.",
   "method": [
-    "Sparse autoencoder (SAE) features were compared in Gemma 3 4B/12B IT and Qwen3-8B across free-text and multiple-choice triage prompts.",
-    "Three analyses were combined: natural-language autoencoder verbalization, decision-token logit attribution, and top-feature characterization.",
-    "Behavioral checks included option-order shuffling and analysis of off-by-one acuity mistakes."
+    "Compared sparse-autoencoder features across free-text and multiple-choice settings in Gemma 3 4B/12B IT and Qwen3-8B.",
+    "Used natural-language autoencoder verbalization, decision-token logit attribution, and top-feature characterization to identify what drives answers.",
+    "Tested behavioral effects with structured and natural-language inputs plus option-order shuffling."
   ],
-  "evidence_signal": "Across the same clinical narratives, medical features stayed active in the shared context but went silent at the multiple-choice decision token, while scaffold and format features dominated the logits.",
-  "watch_item": "This result is about benchmarked prompt/output behavior in specific models, so it should not be taken as a guarantee of real-world triage safety or generalized clinical reliability.",
+  "evidence_signal": "Across the shared clinical narrative, medical features were active in both formats but went silent at the multiple-choice decision token, while scaffold/format features dominated decision logits and the gap was largely due to adjacent-letter off-by-one choices.",
+  "watch_item": "These findings suggest benchmark scores may reflect format sensitivity rather than clinical capability, so any deployment or evaluation should avoid overgeneralizing from constrained multiple-choice triage tasks.",
   "hashtags": [
     "#ClinicalNLP",
-    "#LLMSafety",
+    "#LLMEvaluation",
     "#Triage",
-    "#MechanisticInterpretability",
-    "#MedicalAI"
+    "#SparseAutoencoders",
+    "#AIinMedicine"
   ],
   "paper_id": "2026-05-28-arxiv-internal_representation_not_clinical_knowledge_where_apparent_llm_triage_failures_originat",
   "paper_title": "Internal Representation, Not Clinical Knowledge: Where Apparent LLM Triage Failures Originate",
   "paper_date": "2026-05-28",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-05-30T22:36:01",
+  "generated_at": "2026-05-31T09:42:55",
   "generator": "openai"
 }
