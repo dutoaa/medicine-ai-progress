@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "2026-06-02-medrxiv-clines_clinical_llm_based_information_extractionand_structuring_agent",
+    "doi": "10.64898/2025.12.01.25341355",
+    "date": "2026-06-02",
+    "title": "CLINES: Clinical LLM-based Information Extractionand Structuring Agent",
+    "authors": "Yang, Z.; Yuan, H.; Sayeed, R.; Tan, A. L. M.; Cai, E.; Moro, M.; Li, X.; Ying, H.; Brown, N.; Weber, G.; Yu, S.; Kohane, I.; Cai, T.",
+    "abstract": "Objective. Clinical narratives in electronic health records (EHRs) hold diagnostic, therapeutic, and temporal information often missing from structured fields; manual chart review remains the de facto standard but is slow, costly, and variable. We aimed to develop and evaluate CLINES, a pipeline that extracts and normalizes clinical concepts from free-text notes into ontology-grounded, auditable, schema-ready data without task-specific fine-tuning. Methods and Analysis. We developed CLINES, a modular multi-step pipeline: semantic chunking of long notes; extraction by reasoning-capable large language models; attribute assignment (assertion, value+unit); UMLS normalization; explicit and relative date resolution; aggregation into an i2b2-style schema. Evaluation was conducted without task-specific supervised training on de-identified MIMIC-III, 4CE, and CORAL (breast, pancreas) notes. Comparators: rule/lexicon systems, transformer encoders, single-prompt LLM baselines, alongside chain-of-thought LLMs and full-size clinical NER encoders (BERT-base, GatorTron-base). Outcomes were F1 for entity, assertion, value+unit, and date processing, reported with 95% bootstrap CIs and paired-bootstrap FDR-corrected tests; inter-annotator agreement, hallucination taxonomy, cost, and component ablations are in Supplementary Materials. Results. Across all datasets and tasks, CLINES ranked first on every task-dataset combination. F1 ranges were 0.69-0.87 (entity), 0.84-0.93 (assertion), 0.77-0.90 (value+unit), and 0.73-0.79 (date, where gold annotations were available); per-dataset values are in Supplementary Materials. Gains over the strongest single-prompt LLM were +0.21-0.38; transformer encoders trailed by +0.28-0.68 F1 on entity extraction. Performance remained stable as notes lengthened, while transformer baselines lost recall. Code-field gains and most assertion/value comparisons were significant at p_FDR < 0.05 on paired-bootstrap tests; mention-level inter-annotator F1 on a cross-annotated subset was 0.82 (assertion {kappa} = 0.85); a seven-class taxonomy on 700 stratified false positives found 54% of apparent false positives to be annotation gaps rather than true hallucinations. Conclusion. CLINES translates narrative EHR text into ontology-grounded, auditable, schema-ready data, offering a practical route to scale chart-review-like extraction for cohort discovery and real-world evidence. CLINES substantially reduces, but does not eliminate, the need for manual review: the residual hallucination quantified here means human verification remains necessary for safety-critical use. CLINES is model agnostic - open and closed models can be substituted to meet cost, performance, and privacy goals.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.01.25341355v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.01.25341355v2.full.pdf"
+      }
+    ],
+    "score": 94,
+    "infographic": {
+      "key_insight": "Objective.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-clines_clinical_llm_based_information_extractionand_structuring_agent",
+      "paper_title": "CLINES: Clinical LLM-based Information Extractionand Structuring Agent",
+      "paper_date": "2026-06-02",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-06-03T11:50:55",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-28-medrxiv-generation_and_evaluation_of_realistic_synthetic_clinical_progress_notes_for_prostate_canc",
+    "doi": "10.64898/2026.05.25.26354027",
+    "date": "2026-05-28",
+    "title": "Generation and Evaluation of Realistic Synthetic Clinical Progress Notes for Prostate Cancer using Large Language Models.",
+    "authors": "Rey-Blanes, A.; Veredas-Morente, J.; Vivas-Vargas, E.; Gil-Garcia, F.; Moreno-Barea, F. J.; Veredas, F. J.",
+    "abstract": "Background and ObjectiveAccess to real-world electronic health records (EHRs) remains limited by privacy, governance and annotation constraints, hindering the development of clinical natural language processing models. Realistic synthetic progress notes may provide EHR-like corpora that preserve clinically rigorous information on diagnoses, treatments, symptoms, imaging, laboratory findings and therapeutic trajectories without relying directly on sensitive patient records. This study evaluates whether large language models (LLMs) can generate realistic Spanish prostate cancer progress notes from published case reports, preserving clinical content, temporality and hospital-style conventions. MethodsWe compiled 109 Spanish prostate cancer case reports from the biomedical literature and characterised their clinical content using Spanish biomedical named-entity recognition (NER) models, complemented by rule-based extraction of prostate specific antigen (PSA) values and Gleason scores. GPT-5.4 Nano, Qwen 3.5:35B A3B and GLM-5 were used to generate EHR-style progress notes from these case reports under plain-text and entity-enriched prompting strategies, in both zero-shot and few-shot settings. Evaluation combined lexical and semantic similarity metrics with structured LLM-as-a-judge assessment using Claude Sonnet 4.6, binary safety screening and expert clinical review. ResultsAll models preserved substantial clinical content, although lexical-overlap metrics showed variable agreement with semantic and clinical quality assessments, reflecting the abstractive nature of the task. Entity-enriched prompting improved lexical and semantic align-ment, but did not consistently improve clinical safety. Qwen 3.5:35B A3B was unstable under entity-enriched few-shot prompting, showing increased safety-critical errors and contradictions. GPT-5.4 Nano achieved strong automatic scores but showed isolated clinical inconsistencies. GLM-5 showed the most robust overall profile and performed close to human-authored notes in expert review. ConclusionsLLMs can generate clinically plausible Spanish prostate cancer progress notes from published case reports under controlled conditions. These findings support the potential use of EHR-like synthetic corpora for clinical NLP, although reliability remains model- and prompt-dependent. Expert validation and safety-oriented evaluation are therefore necessary before downstream use or clinical deployment.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-05-28",
+    "updated": "2026-05-28",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.25.26354027v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.25.26354027v1.full.pdf"
+      }
+    ],
+    "score": 93,
+    "infographic": {
+      "key_insight": "Background and ObjectiveAccess to real-world electronic health records (EHRs) remains limited by privacy, governance and annotation constraints, hindering the development of clinical natural language processing models.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-28-medrxiv-generation_and_evaluation_of_realistic_synthetic_clinical_progress_notes_for_prostate_canc",
+      "paper_title": "Generation and Evaluation of Realistic Synthetic Clinical Progress Notes for Prostate Cancer using Large Language Models.",
+      "paper_date": "2026-05-28",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-06-03T11:50:55",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-02-medrxiv-generalizable_ct_vision_language_modeling_for_population_health_and_disease_risk",
+    "doi": "10.1101/2025.07.03.25330654",
+    "date": "2026-06-02",
+    "title": "Generalizable CT Vision-Language Modeling for Population Health and Disease Risk",
+    "authors": "Beeche, C. A.; Kim, J.; Tavolinejad, H.; Zhao, B.; Sharma, R.; Duda, J.; Gee, J.; Dako, F.; Verma, A.; Morse, C.; Hou, B.; Shen, L.; Sagreiya, H.; Davatzikos, C.; Damrauer, S. M.; Shad, R.; Ritchie, M. D.; Rader, D. J.; Long, Q.; Eaton, E.; Zhang, G.; Chen, T.; Kahn, C. E.; Chirinos, J. A.; Witschey, W. R.; Penn Medicine Biobank,",
+    "abstract": "Vision-language foundation models (VLMs) for computed tomography (CT) are emerging tools that learn generalizable representations from large-scale clinical imaging data. While these models can predict task-specific labels, the extent to which their representations capture the clinical, physiological, and longitudinal variation of real-world patient populations remains unclear. We introduce Percival, a CT-native VLM trained on more than 400,000 CT-report pairs from the Penn Medicine BioBank using a dual-encoder symmetric contrastive framework. Across over 20,000 held-out participants, Percival's latent space aligns with demographic, physiological, and laboratory variation, and supports phenome-wide associations across the electronic health record. We evaluate Percival against alternative foundation-model paradigms, including vision-only contrastive and multi-organ segmentation, demonstrating that vision-language pretraining captures clinical information not fully accessible to vision-only alternatives across disease classification and longitudinal risk modeling. Together, these findings indicate that CT-VLMs uncover latent structure aligned with clinical, physiological, and prognostic variation across the disease-prevalence spectrum.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.07.03.25330654v5"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.07.03.25330654v5.full.pdf"
+      }
+    ],
+    "score": 88,
+    "infographic": {
+      "key_insight": "Vision-language foundation models (VLMs) for computed tomography (CT) are emerging tools that learn generalizable representations from large-scale clinical imaging data.",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-generalizable_ct_vision_language_modeling_for_population_health_and_disease_risk",
+      "paper_title": "Generalizable CT Vision-Language Modeling for Population Health and Disease Risk",
+      "paper_date": "2026-06-02",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-06-03T11:50:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-02-medrxiv-drug_drug_interaction_identification_using_large_language_models",
+    "doi": "10.64898/2025.12.03.25341549",
+    "date": "2026-06-02",
+    "title": "Drug-drug interaction identification using large language models",
+    "authors": "Blotske, K.; Zhao, X.; Henry, K.; Gao, Y.; Tilley, A.; Cargile, M.; Murray, B.; Smith, S. E.; Barreto, E.; Bauer, S.; Sohn, S.; Liu, T.; Bennett, T. D.; Cohen, M.; Zhou, H.; Liu, F.; Clifton, D. A.; Sikora, A.",
+    "abstract": "Background: Drug-drug interactions (DDIs) are a significant source of morbidity and adverse drug events (ADEs), particularly in situations of polypharmacy and complex medication regimens. While rules based software integrated in electronic health records (EHRs) has demonstrated proficiency in identifying DDIs present in medication regimens, large language model (LLM) based identification requires thorough benchmarking and performance evaluation using high quality datasets for safe use. Methods: We evaluated three LLMs (GPT4omini, MedGemma27B, and LLaMA370B) using a clinician-annotated benchmark dataset of 750 DDI scenarios spanning three levels of diagnostic complexity. Tasks were aligned with flexible judgment formats: (1) a pointwise two drug classification task, (2) a pairwise three drug discrimination task, and (3) a listwise 4 to 6 drug selection task. Standardized zero shot prompting with task specific instructions was applied for all models. Performance was assessed using precision, recall, F1 score, and accuracy. Reliability was quantified using self consistency across repeated runs and confidence aligned metrics to capture stability in model reasoning. Results: Across the three experiments, model performance varied by task structure and interaction severity. LLaMA370B demonstrated the highest recall and F1 score in the pointwise task, whereas GPT4omini achieved superior accuracy and consistency in the pairwise and listwise tasks. MedGemma27B showed competitive performance in identifying Category D interactions. Self consistency decreased as task complexity increased, highlighting reduced stability in multidrug reasoning. No model exhibited uniformly high reliability across all judgment formats. Conclusions: Current LLMs show promising but uneven capabilities in identifying DDIs across clinically relevant task structures. Performance degrades as the reasoning space expands, and stability across repeated queries remains limited. These findings emphasize the need for multi format evaluation frameworks and reliability aware assessment when considering LLMs for medication-safety applications.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "pharmacology and therapeutics",
+    "categories": [
+      "pharmacology and therapeutics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.03.25341549v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.03.25341549v3.full.pdf"
+      }
+    ],
+    "score": 88,
+    "infographic": {
+      "key_insight": "Background: Drug-drug interactions (DDIs) are a significant source of morbidity and adverse drug events (ADEs), particularly in situations of polypharmacy and complex medication regimens.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-drug_drug_interaction_identification_using_large_language_models",
+      "paper_title": "Drug-drug interaction identification using large language models",
+      "paper_date": "2026-06-02",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-06-03T11:50:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-02-medrxiv-an_explainable_cryobiopsy_ai_model_crai_to_predict_progression_in_interstitial_pneumonia",
+    "doi": "10.1101/2025.08.06.25333181",
+    "date": "2026-06-02",
+    "title": "An Explainable Cryobiopsy AI Model, CRAI, to Predict Progression in Interstitial Pneumonia",
+    "authors": "Uegami, W.; Okoshi, E. N.; Lami, K.; Nei, Y.; Ozasa, M.; Kataoka, K.; Kitamura, Y.; Kohashi, Y.; Cooper, L. A. D.; Sakanashi, H.; Saito, Y.; Kondoh, Y.; the study group on CRYOSOLUTION, ; Fukuoka, J.",
+    "abstract": "Interstitial lung disease (ILD) encompasses diverse pulmonary disorders with varied prognoses. Current pathological diagnoses suffer from inter-observer variability, necessitating more standardized approaches. We developed an ensemble AI model for cryobiopsy, CRAI, an artificial intelligence model to analyse transbronchial lung cryobiopsy (TBLC) specimens and predict patient outcomes. We developed an explainable AI model, CRAI, to analyse TBLC. CRAI comprises seven modules for detecting histological features, generating 17 pathologically significant findings. A downstream XGBoost classifier was developed to predict disease progression using these findings. The model's performance was evaluated using respiratory function changes and survival analysis in cross-validation and external test cohorts. In the internal cross-validation (135 cases), the model predicted 105 cases without disease progression and 30 with disease progression. The annual {Delta}%FVC was -1.293 in the non-progressive group versus -5.198 in the progressive group, outperforming most pathologists' diagnoses. In the external test cohort (48 cases), the model predicted 38 non-progressive and 10 progressive cases. Survival analysis demonstrated significantly shorter survival times in the progressive group (p=0.034). CRAI provides a comprehensive, interpretable approach to analysing TBLC specimens, offering potential for standardizing ILD diagnosis and predicting disease progression. The model could facilitate early identification of progressive cases and guide personalized therapeutic interventions.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.08.06.25333181v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.08.06.25333181v2.full.pdf"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "Interstitial lung disease (ILD) encompasses diverse pulmonary disorders with varied prognoses.",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-an_explainable_cryobiopsy_ai_model_crai_to_predict_progression_in_interstitial_pneumonia",
+      "paper_title": "An Explainable Cryobiopsy AI Model, CRAI, to Predict Progression in Interstitial Pneumonia",
+      "paper_date": "2026-06-02",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-06-03T11:50:57",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-29-medrxiv-patient_experiences_with_diagnostic_revision_in_lymphoma_analysis_of_chinese_online_forum",
+    "doi": "10.1101/2025.09.07.25335273",
+    "date": "2026-05-29",
+    "title": "Patient Experiences with Diagnostic Revision in Lymphoma: Analysis of Chinese Online Forum Narratives Using Natural Language Processing",
+    "authors": "He, F.; Yang, Z.; Zhang, X.; Koh, W. L.; Seng, L. L.; Goodwin, N.; Valderas, J. M.",
+    "abstract": "BackgroundLymphoma diagnosis is challenging due to diverse subtypes and nonspecific presentations, with high rates of revision documented across settings. Patient experiences with diagnostic revision remain poorly understood, yet they can reveal gaps in diagnostic pathways. We analysed lymphoma forum narratives to characterise patient experiences during diagnostic revision in terms of barriers, facilitators, and the associated burden. MethodsThis cross-sectional study used publicly accessible threads from Chinas largest lymphoma forum (House086.com, 2011-2025). Narratives involving diagnostic revision were identified and extracted into structured case profiles using DeepSeek-V3.2 large language model and optical character recognition. DeepSeek assigned each case to either mild-to-moderate or severe burden status, with classification reliability assessed through rubric-guided human audit. Separately, transformer-based keyword clustering identified eleven barriers and seven facilitators along the diagnostic revision pathway. Associations between barriers/facilitators and severe-burden status were examined using multivariable logistic regression. ResultsWe identified 1,801 unique cases involving diagnostic revision (median age 46, 58.4% family-authored). DeepSeek assigned 40.3% to severe-burden status, with human audit showing substantial agreement (Cohens {kappa}=0.64, n=350). The most frequently mentioned facilitators were specialist input, tertiary hospitals, and patient self-advocacy (all >50%). The most common barriers were clinician-related issues (e.g., inadequate communication; 90.4%) and case complexity (74.1%). Severe-burden status was associated with all eleven barriers, with the strongest association observed for prior inappropriate treatment despite its low frequency (9.2%; OR 37.76, 95% CI 21.59-66.04). Among facilitators, clinician expertise (11.8%; OR 0.34) and peer networks (18.8%; OR 0.49) showed the strongest associations with lower odds of severe-burden status. ConclusionIn narratives reporting lymphoma diagnostic revision, burden severity was associated with factors across clinical, system, and patient levels. Peer networks emerged as a meaningful source of support complementing formal care. Less frequent but high-risk events such as prior inappropriate treatment warrant priority attention. FundingInstitutional support from CRiHSP.",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-05-29",
+    "updated": "2026-05-29",
+    "primary_category": "health systems and quality improvement",
+    "categories": [
+      "health systems and quality improvement"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.09.07.25335273v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.09.07.25335273v3.full.pdf"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "BackgroundLymphoma diagnosis is challenging due to diverse subtypes and nonspecific presentations, with high rates of revision documented across settings.",
+      "clinical_relevance": "Potential relevance: health systems workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-29-medrxiv-patient_experiences_with_diagnostic_revision_in_lymphoma_analysis_of_chinese_online_forum",
+      "paper_title": "Patient Experiences with Diagnostic Revision in Lymphoma: Analysis of Chinese Online Forum Narratives Using Natural Language Processing",
+      "paper_date": "2026-05-29",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-06-03T11:50:57",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-02-medrxiv-grad_a_two_stage_algorithm_for_resolving_diagnostic_uncertainty_in_the_plasma_p_tau217_gra",
+    "doi": "10.64898/2026.02.03.26345302",
+    "date": "2026-06-02",
+    "title": "GRAD: A Two-Stage Algorithm for Resolving Diagnostic Uncertainty in the Plasma p-tau217 Gray Zone",
+    "authors": "Parankusham, H.; Vanderlip, C.; Birkenbihl, C.; Krishna, E.; Ugboaja, C.; Budson, A.; Frank, B.",
+    "abstract": "Background: The ongoing development of amyloid beta (A{beta}) targeting Disease-Modifying Therapies (DMTs) for Alzheimer's Disease (AD) mandates accurate A{beta} status classification of individuals with Mild Cognitive Impairment (MCI). While p-Tau217 offers the highest specificity to plasma A{beta}, 30-50% of participants fall within a \"gray zone\" of indeterminate results causing reliance on expensive A{beta}-PET. Previous studies show promise of pairing plasma biomarkers with magnetic resonance imaging (MRI) for DMT enrollment, yet strategies to alleviate this gray zone remain underdeveloped. We hypothesized that a simple machine-learning approach, integrating plasma, MRI, and demographic features, could diminish the gray zone and subsequent AD health-economic burden. Objectives: To develop and validate GRAD (\"Gatekeeper-Reflex for Alzheimer's Disease\"), a two-staged machine learning algorithm that triages participants via multimarker plasma analysis. The model was designed to reduce a) diagnostic uncertainty b) overreliance on confirmatory A{beta}-PET and c) AD health-economic burden. Design: A multi-cohort cross sectional study. Setting and Participants: 320 ADNI participants were the development cohort and external validation was 1,644 A4/LEARN participants. Measurements: Participant p-Tau217, glial fibrillary acidic protein (GFAP), A{beta}42/40, neurofilament light (NfL), APOE {varepsilon}4 carrier status, and age were integrated in Stage 2. MRI metrics were Intracranial Volume (ICV) normalized hippocampal and entorhinal volumes derived from FreeSurfer. A{beta}-PET (centiloid) was the model ground truth. Results: A two-stage model was developed: Stage 1 used solely plasma p-Tau217 with 25%/75% A{beta}+ probability thresholds to resolve 55.6% of cases (AUC 0.912; NPV 90.0%, PPV 87.2%). For gray zone cases, Stage 2 applied a Random Forest classifier with six features. The full model achieved an AUC of 0.857 (95% CI, 0.813-0.897), area under the precision-recall curve of 0.827 (AUPRC, 95% CI, 0.757-0.897) with 78.7% sensitivity, 82.4% specificity. External validation AUC of 0.828 (95% CI, 0.806-0.849), with predicted probabilities correlating with centiloid values (r=0.642, P <.001). Optionally integrating MRI in Stage 2 meaningfully improved gray zone classification ({Delta}AUC=+0.025, P=.014). At the optimal [&ge;]90% sensitivity/specificity thresholds, 72.5% of participants avoided a confirmatory PET, with simulated 67-71% cost savings. Conclusions: Simple machine-learning where plasma-biomarkers are indeterminate can significantly reduce the gray zone, A{beta}-PET usage, and AD health-economic burden. It removes a significant bottleneck for implementing plasma biomarkers for screening, determining DMT eligibility, and clinical trial enrichment for MCI adults.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.03.26345302v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.03.26345302v2.full.pdf"
+      }
+    ],
+    "score": 72,
+    "infographic": {
+      "key_insight": "Background: The ongoing development of amyloid beta (A{beta}) targeting Disease-Modifying Therapies (DMTs) for Alzheimer's Disease (AD) mandates accurate A{beta} status classification of individuals with Mild Cognitive Impairment (MCI).",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-grad_a_two_stage_algorithm_for_resolving_diagnostic_uncertainty_in_the_plasma_p_tau217_gra",
+      "paper_title": "GRAD: A Two-Stage Algorithm for Resolving Diagnostic Uncertainty in the Plasma p-tau217 Gray Zone",
+      "paper_date": "2026-06-02",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-06-03T11:50:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-01-medrxiv-hubert_ecg_as_a_self_supervised_foundation_model_for_broad_and_scalable_cardiac_applicatio",
+    "doi": "10.1101/2024.11.14.24317328",
+    "date": "2026-06-01",
+    "title": "HuBERT-ECG as a self-supervised foundation model for broad and scalable cardiac applications",
+    "authors": "Coppola, E.; Savardi, M.; Massussi, M.; Adamo, M.; Metra, M.; Signoroni, A.",
+    "abstract": "The electrocardiogram (ECG) is a widely accessible tool for cardiovascular assessment, and the growing availability of ECG datasets has enabled the emergence of ECG foundation models. However, such foundation models often lack extensive evaluation across clinically heterogeneous downstream tasks extending beyond conventional rhythm and conduction analysis. We present HuBERT-ECG, a self-supervised foundation ECG model pre-trained on 9.1 million 12-lead ECGs from four countries and diverse patient populations, and evaluated through fine-tuning on 21 independent datasets spanning more than 1.6k diagnostic and prognostic targets across adults and paediatric cohorts, including single-lead settings. These tasks cover conditions for which the ECG is the primary diagnostic modality, provides supportive but non-definitive diagnostic information, or enables acute-care prediction and prognostic modelling. Available in three model sizes to characterise scaling behaviour and support diverse computational constraints, HuBERT-ECG achieves AUROC ranging from 84% to 99% on ECG-primary diagnostic tasks, 76% to 97% on supportive diagnostic tasks, 74% to 91% on prognostic prediction tasks, and 88% to 92% on single-lead ECG benchmarks. Moreover, a large-scale multitask fine-tuning across 2.4 million subjects and 164 tasks simultaneously shows that AUROC further increases for clinically relevant tasks without extra task-specific supervision. We release pretrained models and code as building baselines.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-06-01",
+    "updated": "2026-06-01",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2024.11.14.24317328v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2024.11.14.24317328v4.full.pdf"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "The electrocardiogram (ECG) is a widely accessible tool for cardiovascular assessment, and the growing availability of ECG datasets has enabled the emergence of ECG foundation models.",
+      "clinical_relevance": "Potential relevance: diagnostics workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-01-medrxiv-hubert_ecg_as_a_self_supervised_foundation_model_for_broad_and_scalable_cardiac_applicatio",
+      "paper_title": "HuBERT-ECG as a self-supervised foundation model for broad and scalable cardiac applications",
+      "paper_date": "2026-06-01",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-06-03T11:50:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-29-medrxiv-multilingual_evaluation_of_a_large_language_model_based_primary_care_chatbot",
+    "doi": "10.64898/2026.05.03.26352241",
+    "date": "2026-05-29",
+    "title": "Multilingual Evaluation of a Large Language Model-Based Primary Care Chatbot",
+    "authors": "Chen, P.-L.; Rao, A. A.; Pugh, S. F.; Johnson, K. B.",
+    "abstract": "Pre-visit planning has the potential to reduce EHR documentation burden while improving workflow efficiency, care quality, and patient-provider engagement. Large language model (LLM) chatbots show promise for supporting this task, but while their English-centric development suggests a potential for disparity, the extent to which these concerns translate into performance degradation in multilingual clinical settings remains unclear. In this mixed-methods study, we systematically evaluate the multilingual capabilities of PCP-Bot, an English-developed LLM-based (GPT-4o) clinical chatbot that collects patient concerns and generates structured, physician-ready summaries ([~]200 words) under structured output constraints. We enrolled 31 bilingual individuals (11 Mandarin, 10 Spanish, 10 Hindi) to role-play as patients to evaluate the PCP-Bot, interacting with it across five synthetic clinical cases in both English and a second language. Participants completed a structured survey comprising baseline language proficiency screening, standardized interactions with PCP-Bot in each language, and post-interaction evaluations. Case order was randomized, with each scenario completed first in English and subsequently in the participants second language. All summaries were generated in English, regardless of the interaction language. Our results show that Hindi achieved usability and conversation quality parity with English across all measured dimensions. Mandarin achieved usability parity but showed a significant conversation quality gap relative to English. Spanish demonstrated significant deficits in both conversation quality and summary quality. Trust and workload remained consistent across languages. Qualitatively, participants found PCP-Bot natural, smooth, and accurate overall, but noted repetition, transcription errors, missed follow-ups, and more frequent usability issues in non-English interactions. Overall, our findings demonstrate that LLM translation capabilities can enable effective deployment beyond English following appropriate performance validation.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-05-29",
+    "updated": "2026-05-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.03.26352241v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.03.26352241v2.full.pdf"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "Pre-visit planning has the potential to reduce EHR documentation burden while improving workflow efficiency, care quality, and patient-provider engagement.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-29-medrxiv-multilingual_evaluation_of_a_large_language_model_based_primary_care_chatbot",
+      "paper_title": "Multilingual Evaluation of a Large Language Model-Based Primary Care Chatbot",
+      "paper_date": "2026-05-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-06-03T11:50:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-02-medrxiv-quantitative_fibrosis_features_from_digitized_h_e_stained_liver_biopsies_reveal_granular_i",
+    "doi": "10.1101/2025.06.12.25328580",
+    "date": "2026-06-02",
+    "title": "Quantitative fibrosis features from digitized H&E-stained liver biopsies reveal granular insights into fibrosis and disease progression in metabolic dysfunction-associated steatohepatitis: a retrospective analysis of STELLAR-3 and STELLAR-4",
+    "authors": "Gerardin, Y.; Stanford-Moore, A.; Patel, N.; Zhang, Y.; Zhang, J.; Mistry, P.; Kartik, D.; Liu, Y.; Indorf, N.; Fahy, D.; Singh, G.; Glickman, J.; Resnick, M.; Windholz, L.; Alkhouri, N.; Billin, A.; Watkins, T.; Brosnan-Cashman, J. A.; Jayson, C.; Lee, J.; Glass, B.; Beck, A. H.; Iyer, J.; Drage, M. G.; Murray, L.; Egger, R.",
+    "abstract": "Background: Histologic staging of metabolic dysfunction-associated steatohepatitis (MASH) requires semiquantitative assessment of hepatocellular ballooning, steatosis, lobular inflammation, and fibrosis and is fraught with pathologist variability. We hypothesize that quantitative histologic analysis will better reflect the continuous distribution of histologic features, and thus the disease biology. Methods: Using LiverExplore, a suite of machine learning models that detect and classify liver tissue regions, lobular zones, cell types, and fibrosis subtypes from hematoxylin and eosin-stained whole slide images, we characterized the MASH disease microenvironment in participants of the STELLAR-3 and STELLAR-4 trials (NCT04052516). The correlation of model-derived human interpretable features (HIFs) with pathologist-provided MASH CRN grades and fibrosis stages, AI-generated continuous CRN grades and stages, non-invasive biomarkers, transcriptomics, and patient outcomes was assessed. Results: Model-quantified steatosis, lobular inflammation, hepatocellular ballooning, and fibrosis features were significantly correlated with pathologist CRN grades/stages, while model-derived tissue and cell features revealed quantitative changes in the disease microenvironment as MASH progressed. Pathological and advanced fibrosis HIFs were correlated with non-invasive metrics of fibrosis and a gene signature associated with hepatic stellate cells. HIFs associated with nodular or advanced fibrosis and inflammation were associated with an increased risk of liver-related events in patients from STELLAR-3 and STELLAR-4. Conclusions: AI-powered quantitative characterization of the liver microenvironment delivers context relevant to MASH progression beyond the resolution afforded by categorical CRN scoring, highlighting the promise of this approach for broad applications in drug development.",
+    "category": "Biomedical AI",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.06.12.25328580v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.06.12.25328580v4.full.pdf"
+      }
+    ],
+    "score": 66,
+    "infographic": {
+      "key_insight": "Background: Histologic staging of metabolic dysfunction-associated steatohepatitis (MASH) requires semiquantitative assessment of hepatocellular ballooning, steatosis, lobular inflammation, and fibrosis and is fraught with pathologist variability.",
+      "clinical_relevance": "Potential relevance: biomedical ai workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-quantitative_fibrosis_features_from_digitized_h_e_stained_liver_biopsies_reveal_granular_i",
+      "paper_title": "Quantitative fibrosis features from digitized H&E-stained liver biopsies reveal granular insights into fibrosis and disease progression in metabolic dysfunction-associated steatohepatitis: a retrospective analysis of STELLAR-3 and STELLAR-4",
+      "paper_date": "2026-06-02",
+      "paper_category": "Biomedical AI",
+      "generated_at": "2026-06-03T11:50:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-29-medrxiv-myegpt_an_ai_agent_for_multiple_myeloma",
+    "doi": "10.64898/2026.05.14.26353252",
+    "date": "2026-05-29",
+    "title": "MyeGPT: an AI agent for Multiple Myeloma",
+    "authors": "Chang, J. G.; Gout, A. M.; Rodiger, J.; Chung, T.-H.; Mulligan, G.; Chng, W. J.",
+    "abstract": "Today, advancements in our understanding of cancer biology are increasingly attributed to large-scale clinical-molecular datasets. The case in point for multiple myeloma - the second-most prevalent haematological malignancy - is the CoMMpass study, a dataset with the paired clinical and sequencing data of 1,143 patients. Given its complexity, the multi-omics data of CoMMpass demands programming skills which imposes a hurdle for experimental myeloma researchers who want to validate their hypotheses on population data. The rise of agentic AI over the past few years presents unparalleled opportunities to bridge this technical gap. We propose MyeGPT (Myeloma Generative Pretrained Transformer), an AI bioinformatician for multiple myeloma that relies on the CoMMpass dataset as its ground truth. MyeGPT converts natural language queries such as \"What are the characteristics of patients who relapse after induction therapy\" or \"Compare the overall survival of high vs normal NSD2 expression\" into de novo analyses backed on real data, then pro-actively generates plots to visualize the results. We develop a set of evaluation questions based on CoMMpass, complete with scoring criteria, and ran benchmarks to identify the best choice for LLMs and text-embedding models. We package MyeGPT as a ready-to-use browser application, enabling CoMMpass-grounded hypothesis validation from a smartphone.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-05-29",
+    "updated": "2026-05-29",
+    "primary_category": "hematology",
+    "categories": [
+      "hematology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.14.26353252v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.14.26353252v4.full.pdf"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "Today, advancements in our understanding of cancer biology are increasingly attributed to large-scale clinical-molecular datasets.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-29-medrxiv-myegpt_an_ai_agent_for_multiple_myeloma",
+      "paper_title": "MyeGPT: an AI agent for Multiple Myeloma",
+      "paper_date": "2026-05-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-06-03T11:50:59",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-02-medrxiv-white_net_white_matter_hyperintensities_tissue_extraction_using_deep_learning_network",
+    "doi": "10.1101/2025.01.09.25320242",
+    "date": "2026-06-02",
+    "title": "WHITE-Net : White matter HyperIntensities Tissue Extraction using deep learning Network",
+    "authors": "Cathala, C.; Roduit, V.; Carneiro, F.; Heffernan, M.; Vanderbecq, Q.; Colliot, O.; Kherif, F.; Thiran, J.-P.; Bussy, A.; Draganski, B.",
+    "abstract": "White matter hyperintensities (WMH) are a hallmark of cerebral small vessel disease, a highly prevalent condition in aging, making their accurate detection in large-scale magnetic resonance imaging (MRI) studies critically important. Currently available semi-automated and automated segmentation methods are frequently limited by sensitivity to variations in imaging conditions and computational constraints, restricting their applicability across diverse acquisition settings. We present WHITE-Net, a deep learning-based framework for automated WMH segmentation built on a 3D ResUNet architecture and trained on multisite MRI data encompassing substantial variability in scanner vendors, acquisition protocols, spatial resolution, and image characteristics. Evaluated across three independent datasets - BrainLaus, ADNI, and WMH Challenge, WHITE-Net achieves high segmentation accuracy and ranks among the top-performing methods across datasets, enabling a comprehensive assessment of generalisability in varied imaging environments. WHITE-Net maintains stable performance in a wide spectrum of lesion loads and demonstrates a favorable balance between precision and recall, effectively limiting false positive detections - a common limitation of existing approaches. Beyond accuracy, WHITE-Net requires no parameter tuning and offers fast inference times, making it well-suited for deployment in large-scale neuroimaging studies. The obtained results highlight the value of training on diverse multisite data for improving generalisability and position WHITE-Net as a reliable, scalable tool for automated WMH segmentation in computational anatomy research.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.01.09.25320242v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.01.09.25320242v2.full.pdf"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "White matter hyperintensities (WMH) are a hallmark of cerebral small vessel disease, a highly prevalent condition in aging, making their accurate detection in large-scale magnetic resonance imaging (MRI) studies critically important.",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-white_net_white_matter_hyperintensities_tissue_extraction_using_deep_learning_network",
+      "paper_title": "WHITE-Net : White matter HyperIntensities Tissue Extraction using deep learning Network",
+      "paper_date": "2026-06-02",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-06-03T11:50:59",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-31-medrxiv-agent_role_structure_and_operating_characteristics_in_large_language_model_clinical_classi",
+    "doi": "10.64898/2026.02.22.26346818",
+    "date": "2026-05-31",
+    "title": "Agent Role Structure and Operating Characteristics in Large Language Model Clinical Classification: A Comparative Study of Specialist and Deliberative Multi-Agent Protocols",
+    "authors": "Anderson, C. G.",
+    "abstract": "Large language models (LLMs) are increasingly considered in clinical decision support, yet the architectural effects of role decomposition within multi-agent systems remain poorly isolated. Prior comparisons of single-agent and multi-agent prompting often confound workflow structure with changes in model configuration, training, or decoding. We present a controlled study evaluating whether specialist and generalist multi-agent protocols produce different operating characteristics under fixed inference conditions. Two deterministic protocols, Generic Deliberative (GD) and Feature-Specialist (FS), are evaluated under identical base weights, decoding settings, computational budget, and adjudication logic. The primary comparison isolates role structure and information routing, while feature-assignment and model-scale ablations evaluate boundary conditions. On the UCI Cleveland Heart Disease and Pima Indians Diabetes benchmarks, altering role structure produces substantial operating-characteristic shifts. Under the primary configuration (llama3.1:8b), Cleveland FS achieves higher accuracy (0.72 vs. 0.65) and macro-F1 (0.71 vs. 0.65), with a specificity-favoring operating point, whereas Pima GD achieves higher accuracy (0.68 vs. 0.51) and macro-F1 (0.64 vs. 0.49), while FS induces pronounced class asymmetry. Feature-pair ablations show that specialist feature assignment is a design lever, with FS accuracy ranging from 0.41 to 0.72. A model-scale ablation (qwen2.5:14b) shows that protocol-level effects interact with base-model capacity. Overall, internal role decomposition should not be treated as safety-neutral: it can act as a feature-conditioned architectural bias that changes evidence aggregation and shifts class-wise error profiles, indicating that prompt structure and architectural configuration should be explicitly tuned, validated, and reported in safety-sensitive LLM-based clinical decision systems.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-05-31",
+    "updated": "2026-05-31",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.22.26346818v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.22.26346818v4.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "Large language models (LLMs) are increasingly considered in clinical decision support, yet the architectural effects of role decomposition within multi-agent systems remain poorly isolated.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-31-medrxiv-agent_role_structure_and_operating_characteristics_in_large_language_model_clinical_classi",
+      "paper_title": "Agent Role Structure and Operating Characteristics in Large Language Model Clinical Classification: A Comparative Study of Specialist and Deliberative Multi-Agent Protocols",
+      "paper_date": "2026-05-31",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-06-03T11:51:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-28-medrxiv-development_and_validation_of_a_machine_learning_model_to_predict_prognosis_in_patients_wi",
+    "doi": "10.64898/2026.05.27.26354194",
+    "date": "2026-05-28",
+    "title": "Development and Validation of a Machine Learning Model to Predict Prognosis in Patients with Advanced Head and Neck Cancer",
+    "authors": "Zhang, K.; Gao, L.; John, D.; Li, W. T.; Hogarth, M.; Coffey, C. S.; Ongkeko, W. M.",
+    "abstract": "ImportancePrognostic tools beyond staging are needed to guide treatment and counseling in head and neck squamous cell carcinoma (HNSCC). ObjectiveTo develop and externally validate a machine learning model predicting survival in advanced HNSCC using routinely collected clinical and biomarker data. Design, Setting, and ParticipantsRetrospective, multi-institutional cohort study including 2,385 patients with stage III-IV HNSCC diagnosed from 2012-2022 in the University of California Health Data Warehouse (UCHDW). Patients were randomly split into training (n = 1,908) and test (n = 477) sets. Partial external validation used 7,749 patients from the Surveillance, Epidemiology, and End Results (SEER) registry (2010-2020). ExposuresDemographic, tumor, treatment, comorbidity, and biomarker variables recorded at or before diagnosis. Main Outcomes and MeasuresThe primary outcome was all-cause mortality within 70 months. Cox proportional hazards models included all predictors. Discrimination was assessed with Harrells concordance index (C-index), calibration with predicted vs observed survival, and stratification with Kaplan-Meier curves. A Random Survival Forest (RSF) was trained for benchmarking and interpretability using Shapley Additive exPlanations (SHAP). ResultsAmong 2,385 patients in UCHDW (median age, 63 years; 29.0% mortality), the Cox model achieved a C-index of 0.735 in the internal test set. Risk quartiles showed clear separation on Kaplan-Meier curves (log-rank p < 0.0001). In the SEER cohort (n = 7,749), where only demographic, staging, subsite, and treatment variables were available, the reduced Cox model achieved a C-index of 0.688, with calibration showing modest underestimation of survival in high-risk groups. Age, T stage, Charlson Comorbidity Index, neutrophil-to-lymphocyte ratio, and platelet count were among the strongest predictors, while surgery was associated with improved survival. The RSF achieved a C-index of 0.758 internally, with SHAP highlighting nonlinear effects of albumin, BMI, and inflammatory markers. Conclusions and RelevanceA machine learning model using routine clinical and biomarker data demonstrated good prognostic performance in advanced HNSCC, with partial external validation. Such approaches may support individualized survival estimates, risk stratification, and treatment discussions, but broader validation is required before clinical adoption. Key PointsO_ST_ABSQuestionC_ST_ABSCan a machine learning model accurately predict prognosis in patients with head and neck cancer utilizing only clinical features and biomarkers? FindingIn a study of 2,385 patients with advanced HNSCC from the UC Health Data Warehouse, a Cox model incorporating demographics, staging, comorbidities, treatment, and clinical biomarkers showed good internal discrimination (C-index 0.735). In partial external validation using 7,749 SEER patients with only demographic, staging, subsite, and treatment variables, performance remained acceptable (C-index 0.688) with preserved risk stratification. MeaningMachine learning using clinical data can predict prognosis in head and neck cancer; this tool could be used to provide individualized survival estimates and help guide treatment discussions and risk stratification at diagnosis.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-05-28",
+    "updated": "2026-05-28",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.27.26354194v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.27.26354194v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "ImportancePrognostic tools beyond staging are needed to guide treatment and counseling in head and neck squamous cell carcinoma (HNSCC).",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-28-medrxiv-development_and_validation_of_a_machine_learning_model_to_predict_prognosis_in_patients_wi",
+      "paper_title": "Development and Validation of a Machine Learning Model to Predict Prognosis in Patients with Advanced Head and Neck Cancer",
+      "paper_date": "2026-05-28",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-06-03T11:51:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-02-medrxiv-exploring_the_link_between_body_physiology_and_cognition_the_role_of_the_brain_and_aging",
+    "doi": "10.64898/2026.01.13.26343950",
+    "date": "2026-06-02",
+    "title": "Exploring the Link Between Body Physiology and Cognition: The Role of the Brain and Aging",
+    "authors": "Buianova, I.; Pat, N.",
+    "abstract": "Epidemiological links between cognition and body physiology in aging are well established, but their strength and drivers remain unclear. Which physiological systems, from body composition to cardiovascular, pulmonary, renal, hepatic, immune, metabolic, and musculoskeletal, best predict cognition, and to what extent are cognition-body associations linked to brain variation across aging? We examined 19 physiological phenotypes alongside three neuroimaging modalities in over 30,000 UK Biobank participants. Machine learning models integrating body measures predicted cognition at r=0.4, demonstrating a cognition-body covariation at 16%. Body composition and bone health emerged as the strongest predictors. Notably, 85.1% of cognition-body covariance overlapped with neuroimaging, especially white matter features. Moreover, 71.7% of cognition-age covariance was jointly shared with neuroimaging and physiology, and 96.8% was shared with either brain or body markers, or their overlap. Together, these findings clarify how body physiology and brain structure and function covary with cognitive aging.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-02",
+    "updated": "2026-06-02",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.01.13.26343950v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.01.13.26343950v2.full.pdf"
+      }
+    ],
+    "score": 55,
+    "infographic": {
+      "key_insight": "Epidemiological links between cognition and body physiology in aging are well established, but their strength and drivers remain unclear.",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-06-02-medrxiv-exploring_the_link_between_body_physiology_and_cognition_the_role_of_the_brain_and_aging",
+      "paper_title": "Exploring the Link Between Body Physiology and Cognition: The Role of the Brain and Aging",
+      "paper_date": "2026-06-02",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-06-03T11:51:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-29-medrxiv-assessing_ageing_cognitive_ability_and_freezing_of_gait_in_parkinson_s_disease_through_int",
+    "doi": "10.64898/2026.04.22.26351482",
+    "date": "2026-05-29",
+    "title": "Assessing ageing, cognitive ability and freezing of gait in Parkinson's disease through integrated brain-heart network dynamics",
+    "authors": "Pitti, L.; Sitti, G.; Candia-Rivera, D.",
+    "abstract": "Parkinsons Disease (PD) is a complex neurodegenerative disorder that manifests through systemic, large-scale physiological reorganizations. While research often focuses on region-specific neural changes, there is a growing need for multidomain approaches capable of capturing the complexity of the disease and its clinical heterogeneity. Here, we propose an analytical pipeline to evaluate Brain-heart Interactions (BHI) as a systemic biomarker of neurodegeneration and healthy ageing. In this study, we assessed BHI across three open-source datasets combining EEG and ECG recordings. We compared Healthy Young adults, Healthy Elderly participants, and early-stage PD patients during resting state to investigate the effects of ageing and neurodegeneration on large-scale physiological organization and cognition. In addition, we examined BHI dynamics surrounding episodes of freezing of gait (FOG) in PD patients. Methodologically, brain network organization was quantified using coherence-based EEG functional connectivity and graph-theoretical metrics, while cardiac dynamics were characterized through Poincare plot-derived measures of autonomic activity. Coupling between the two systems was estimated using the Maximal Information Coefficient, enabling the detection of both linear and non-linear dependencies between cortical network organization and cardiac autonomic outflow. Our results demonstrate that brain-heart networks are sensitive to systemic physiological changes associated with both healthy ageing and early PD. Specifically, we observed distinct BHI profiles differentiating Healthy Young, Healthy Elderly, and PD participants, suggesting that the proposed framework captures progressive alterations in integrated neurophysiological regulation. Importantly, resting-state BHI metrics were associated with cognitive performance in early PD, supporting the relevance of brain-heart coupling as a marker of clinical heterogeneity beyond motor symptoms alone. Furthermore, the analysis of FOG episodes revealed the emergence of specific BHI interaction clusters preceding and during gait freezing, highlighting coordinated alterations in cortical and autonomic dynamics linked to motor dysfunction. Together, these findings suggest that brain-heart networks provide a promising systems-level framework for understanding PD symptomatology and detecting early multisystem dysfunction in neurodegeneration and ageing. Our proposed pipeline offers a scalable and clinically relevant tool for large-scale physiological assessment in translational and clinical neuroscience research. Graphical abstract O_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=111 SRC=\"FIGDIR/small/26351482v2_ufig1.gif\" ALT=\"Figure 1\"> View larger version (34K): org.highwire.dtl.DTLVardef@731c20org.highwire.dtl.DTLVardef@13ba11corg.highwire.dtl.DTLVardef@1ce6a36org.highwire.dtl.DTLVardef@9f3eba_HPS_FORMAT_FIGEXP M_FIG Analytical pipeline to evaluate Brain-heart Interaction (BHI) Simultaneous electroencephalogram (EEG) and electrocardiogram (ECG) recordings undergo advanced signal preprocessing, followed by the extraction of brain and cardiac autonomic indices. For the EEG, graph-theory-based network organization metrics are computed, including Global Efficiency (Eg) and Modularity (Q). For the ECG, Poincare analysis of inter-beat interval (IBI) sequences is used to derive cardiac sympathetic (CSI) and parasympathetic (CPI) indices. Coupling between EEG and ECG time series is then quantified using the Maximal Information Coefficient (MIC). This multimodal framework provides informative markers related to ageing, cognitive ability, and freezing of gait in patients with Parkinsons disease. C_FIG HighlightsO_LIWe propose a pipeline based on EEG-ECG to assess ageing and neurodegeneration C_LIO_LIBrain-heart networks detect systemic changes in ageing and early PD C_LIO_LIResting brain-heart networks relate to cognitive performance in early PD C_LIO_LISpecific brain-heart interaction clusters emerge during freezing of gait C_LIO_LIBrain-heart networks offer a promising tool to understand PDs symptomatology C_LI",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-05-29",
+    "updated": "2026-05-29",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.22.26351482v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.22.26351482v2.full.pdf"
+      }
+    ],
+    "score": 54,
+    "infographic": {
+      "key_insight": "Parkinsons Disease (PD) is a complex neurodegenerative disorder that manifests through systemic, large-scale physiological reorganizations.",
+      "clinical_relevance": "Potential relevance: health systems workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-29-medrxiv-assessing_ageing_cognitive_ability_and_freezing_of_gait_in_parkinson_s_disease_through_int",
+      "paper_title": "Assessing ageing, cognitive ability and freezing of gait in Parkinson's disease through integrated brain-heart network dynamics",
+      "paper_date": "2026-05-29",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-06-03T11:51:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-29-medrxiv-insleep46_deployment_of_a_remote_monitoring_device_for_the_detection_and_monitoring_of_dem",
+    "doi": "10.64898/2026.05.22.26353861",
+    "date": "2026-05-29",
+    "title": "InSleep46: Deployment of a remote monitoring device for the detection and monitoring of dementia risk in older adult populations: a feasibility study",
+    "authors": "King-Robson, J.; Cartlidge, M. R. E.; Soreq, E.; Murray-Smith, H.; Harrison, M.; Horrocks, S.; Aimola, L.; Poole, M.; Mc Ardle, R.; Robinson, L.; Sharp, D. J.; Schott, J. M.",
+    "abstract": "BackgroundImprovements in health technology offer opportunities for remote disease screening, diagnosis and monitoring. The Withings Sleep Analyzer (WSA), an under mattress ballistocardiograph sensor able to detect body movement, breathing, and cardiac ejection is a promising technology for the non-invasive detection and monitoring of neurodegenerative diseases. InSleep46 aims to evaluate whether the WSA is able to detect preclinical Alzheimers disease in members of the 1946 British Birth cohort, now in their late 70s. ObjectivesTo assess feasibility of deployment of a remote sleep, circadian and physiological monitoring device in a population of older adults. Participants356 participants from the Insight 46 neuroimaging sub-study (1946 British Birth Cohort), all born in one week in March 1946. MethodsWe describe remote recruitment, device installation, and troubleshooting protocols. Feasibility analysis examined participant characteristics associated with recruitment and successful device setup using logistic regression. Troubleshooting events for device installation and maintenance were recorded over a mean 14-month follow-up period. ResultsDuring the feasibility analysis period, 263 (74%) participants, mean (SD) age 77 years (0.47) agreed to take part, of whom 245 (93%) successfully set up the WSA. Recruitment and successful set up of the WSA were not dependent on cognitive ability, socioeconomic position, or educational attainment. 162 (62%) of recruited individuals required [&ge;]1 troubleshooting call (mean 2.3 per participant, range 0-16). 603 calls were required in total. ConclusionDeployment of a remote sleep and physiological monitoring device in an older adult population is feasible. Most participants required individualised assistance to set up the device. For the technology to be widely implemented, the set up must be accessible, with dedicated support available. STRENGTHS AND LIMITATIONS OF THIS STUDYO_LIThe Withings Sleep Analyzer, a ballistocardiographic under-mattress sensor, enables passive collection of sleep, circadian, and physiological data in participants own homes, maximising ecological validity with minimal demand on research participants. C_LIO_LIStudy participants are from the worlds longest continuously running birth cohort, with extensive longitudinal data available, collected over 27-waves of data collection from birth to age 80, including cognitive, imaging and fluid biomarkers for neurodegenerative disease. C_LIO_LIThis is a nationally representative cohort of participants who are all the same age. However, reflecting the population of post-war Britain at its inception, the cohort is not ethnically diverse and thus findings may not be generalisable to all ethnic groups. Furthermore, as those invited have/expect to attend a two-day clinic visit, the cohort is likely to consist of more willing and able participants than the general population. C_LIO_LIThis study prospectively collected data on the feasibility of deployment and set up of a remote sleep monitoring device, enabling understanding of potential barriers to widescale deployment of remote digital biomarkers. C_LIO_LIWe provide a practical framework for the successful deployment and maintenance of a remote digital monitoring device. C_LI",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-05-29",
+    "updated": "2026-05-29",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.22.26353861v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.22.26353861v2.full.pdf"
+      }
+    ],
+    "score": 54,
+    "infographic": {
+      "key_insight": "BackgroundImprovements in health technology offer opportunities for remote disease screening, diagnosis and monitoring.",
+      "clinical_relevance": "Potential relevance: diagnostics workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-29-medrxiv-insleep46_deployment_of_a_remote_monitoring_device_for_the_detection_and_monitoring_of_dem",
+      "paper_title": "InSleep46: Deployment of a remote monitoring device for the detection and monitoring of dementia risk in older adult populations: a feasibility study",
+      "paper_date": "2026-05-29",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-06-03T11:51:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-28-medrxiv-grounding_language_models_in_behavioral_science_to_scale_physical_activity_interventions_f",
+    "doi": "10.64898/2026.05.26.26354165",
+    "date": "2026-05-28",
+    "title": "Grounding Language Models in Behavioral Science to Scale Physical Activity Interventions for Hispanic/Latinx Populations",
+    "authors": "Mantena, S. D.; Johnson, A.; Schuetz, N.; Tolas, A.; Montalvo, S.; Delgado-SanMartin, J.; Ramirez Posada, M.; Du, L.; Zhang, S.; Huynh, A. D.; Oppezzo, M.; King, A. C.; Schmiedmayer, P.; Lawrie, A.; Rodriguez, F.; Ashley, E.; Kim, D. S.",
+    "abstract": "ObjectiveHispanic/Latinx populations in the U.S. experience higher rates of chronic disease linked to physical inactivity, yet digital health interventions remain largely inaccessible to more than 16 million Hispanic/Latinx adults with limited English proficiency. While large language models (LLMs) offer scalable personalization, their use in non-English behavioral coaching is unexplored. This study introduces MHC-Coach-ES, a Spanish-language LLM fine-tuned on the Transtheoretical Model (TTM) of behavior change. Materials and MethodsWe fine-tuned Llama 3-70B-Instruct using a two-stage pipeline. First, the model was adapted to Spanish health and motivational language using a 2.21-million-token corpus. Second, it was instruction-tuned on 3,268 translated human written messages to align the model with the Transtheoretical Model (TTM) of Behavioral Change. We compared MHC-Coach-ES with Llama 3-70B-Instruct and translated human-expert messages using a forced-choice preference survey (N = 77) and blinded expert review (N = 2). ResultsSpanish-speaking participants significantly preferred MHC-Coach-ES messages over translated human-expert messages (81% preference, P<0.001). Linguistic analysis showed that MHC-Coach-ES produced more temporally anchored messages than the base model (65% vs. 20%), while maintaining readability. In blinded evaluation, clinical experts rated MHC-Coach-ES higher for alignment with Transtheoretical Model stages than human-expert messages (4.83 vs. 4.38 out of 5). The base model also outperformed translated expert messages across preference and expert ratings. ConclusionsGenerative AI can operationalize behavioral science frameworks in Spanish, offering a scalable approach to reducing health disparities. The strong performance of both MHC-Coach-ES and the base model highlights the promise of generative and personalized approaches over translation-based localization for theory-driven behavioral interventions.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-05-28",
+    "updated": "2026-05-28",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.26.26354165v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.26.26354165v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "ObjectiveHispanic/Latinx populations in the U.S.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-28-medrxiv-grounding_language_models_in_behavioral_science_to_scale_physical_activity_interventions_f",
+      "paper_title": "Grounding Language Models in Behavioral Science to Scale Physical Activity Interventions for Hispanic/Latinx Populations",
+      "paper_date": "2026-05-28",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-06-03T11:51:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-30-medrxiv-a_wearable_infrared_sensor_for_detecting_non_st_segment_elevation_acute_coronary_syndromes",
+    "doi": "10.64898/2025.12.24.25342991",
+    "date": "2026-05-30",
+    "title": "A Wearable Infrared Sensor for Detecting Non-ST Segment Elevation Acute Coronary Syndromes",
+    "authors": "Sengupta, P. P.; Jamthikar, A. D.; Yanamala, N.; Maganti, K.; Titus, J.; Bhavnani, S.; Sengupta, S.",
+    "abstract": "BackgroundNon-ST-segment elevation acute coronary syndrome (NSTE-ACS) is conventionally diagnosed using electrocardiography and serial blood biomarker measurements. We investigated a non-invasive, bloodless, and electrode-free diagnostic strategy using a wrist-worn infrared spectrophotometric biosensor (Infrasensor). ResultsIn a prospective multicenter study of 595 patients with suspected NSTE-ACS enrolled across 13 sites in two countries, participants were stratified into five analytical cohorts. With 200 multi-ethnic controls and a leave-one-cohort-out external validation, a machine learning model detected high-grade coronary obstruction with an area under the receiver operating characteristic curve (AUC) of 0.87 (95% CI: 0.84-0.90), 90% specificity, and 84% positive predictive value--surpassing standard risk scores. A secondary model predicted freedom from NSTE-ACS and adverse outcomes over 30 days with an AUC of 0.89 (95% CI: 0.87-0.92), 99% sensitivity, and 96% negative predictive value. ConclusionThe Infrasensor demonstrated high diagnostic accuracy for high-grade coronary obstruction and 30-day adverse outcome prediction, surpassing conventional risk scores across a prospective, multi-ethnic, multicenter cohort. These findings support its potential as a rapid, non-invasive point-of-care tool for early NSTE-ACS risk stratification.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-05-30",
+    "updated": "2026-05-30",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.24.25342991v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.24.25342991v2.full.pdf"
+      }
+    ],
+    "score": 50,
+    "infographic": {
+      "key_insight": "BackgroundNon-ST-segment elevation acute coronary syndrome (NSTE-ACS) is conventionally diagnosed using electrocardiography and serial blood biomarker measurements.",
+      "clinical_relevance": "Potential relevance: diagnostics workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-30-medrxiv-a_wearable_infrared_sensor_for_detecting_non_st_segment_elevation_acute_coronary_syndromes",
+      "paper_title": "A Wearable Infrared Sensor for Detecting Non-ST Segment Elevation Acute Coronary Syndromes",
+      "paper_date": "2026-05-30",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-06-03T11:51:02",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-05-28-medrxiv-personalized_brain_based_analgesia_detection_with_portable_fnirs_and_ai",
+    "doi": "10.64898/2026.05.20.26353377",
+    "date": "2026-05-28",
+    "title": "Personalized Brain-Based Analgesia Detection with Portable fNIRS and AI",
+    "authors": "Minoccheri, C.; Joo, P.; Hu, X.-S.; Affendi, H.; Elayyan, F.; Harville, A.; McDonald, N. J.; Botero, T.; DaSilva, A. F.",
+    "abstract": "Neuroimaging-based pain decoding faces two underappreciated challenges: between-subject variability that prevents classifiers from generalizing across patients, and within-session cross-validation designs that inflate reported accuracy by conflating within- and between-person variance. Here we address both using portable functional near-infrared spectroscopy (fNIRS) during pharmacologically verified local nerve anesthesia. Twenty-five patients with clinically painful teeth underwent 36-channel bilateral fNIRS during percussion before (\"Pre\") and after (\"Post\") local nerve anesthesia. In 13 block-success patients, a paired Pre-versus-Post comparison with healthy-tooth control identified three temporal hemodynamic response function (HRF) features - late slope, mean first derivative, and baseline-normalized amplitude - whose analgesia interaction effects (d = 0.63-0.79) exceeded that of raw general linear model (GLM) amplitude (d = 0.56), with a significant difference-in-differences interaction (p = 0.011). Per-patient calibration with these features yielded leave-one-subject-out (LOSO) AUC = 0.68-0.76 for nonlinear classifiers (permutation p = 0.002), with HbO-specific feature selection achieving the best performance (RF AUC = 0.760); a healthy-tooth negative control was non-significant. End-to-end deep learning on raw time series (CNN-LSTM AUC = 0.719) was competitive with feature-based classifiers, while linear models did not reach significance. Critically, head-to-head comparison of within-session CV and LOSO on the same data revealed mean inflation of +0.13 AUC across all model types, including deep learning - demonstrating that high within-session accuracy alone does not establish subject-independent validity. Exploratory analyses suggested complementary roles for oxyhemoglobin (HbO; within-patient analgesia detection) and deoxyhemoglobin (HbR; cross-patient information), and that trial-to-trial response variability may complement amplitude for cross-patient pain detection. These results show that per-patient calibration with temporal HRF features supports subject-independent analgesic-state detection under strict LOSO evaluation, and that within-session validation - standard in the fNIRS pain-decoding literature - can substantially overestimate performance.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-05-28",
+    "updated": "2026-05-28",
+    "primary_category": "dentistry and oral medicine",
+    "categories": [
+      "dentistry and oral medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.20.26353377v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.20.26353377v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "Neuroimaging-based pain decoding faces two underappreciated challenges: between-subject variability that prevents classifiers from generalizing across patients, and within-session cross-validation designs that inflate reported accuracy by conflating within- an",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-05-28-medrxiv-personalized_brain_based_analgesia_detection_with_portable_fnirs_and_ai",
+      "paper_title": "Personalized Brain-Based Analgesia Detection with Portable fNIRS and AI",
+      "paper_date": "2026-05-28",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-06-03T11:51:02",
+      "generator": "openai"
+    }
+  }
+]
