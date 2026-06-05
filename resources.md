@@ -1,9 +1,129 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-06-04
+Generated: 2026-06-05
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Knowledge-Driven Neuro-Symbolic Reasoning for Personalized Oncology Treatment Recommendation Based on Multi-Modal Medical Knowledge Graph
+## 1. A Vision-language Framework for Comparative Reasoning in Radiology
+
+- Date: 2026-06-04
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.06407v1
+- PDF: https://arxiv.org/pdf/2606.06407v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-04-arxiv-a_vision_language_framework_for_comparative_reasoning_in_radiology_infographic.json
+
+## 2. HoT-SSM:Higher-order Temporal Knowledge Graph Reasoning with State Space Models for Health Care
+
+- Date: 2026-06-04
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2606.05994v1
+- PDF: https://arxiv.org/pdf/2606.05994v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-04-arxiv-hot_ssm_higher_order_temporal_knowledge_graph_reasoning_with_state_space_models_for_health_infographic.json
+
+## 3. BreastGPT: A Multimodal Large Language Model for the Full Spectrum of Breast Cancer Clinical Routine
+
+- Date: 2026-06-03
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.04911v1
+- PDF: https://arxiv.org/pdf/2606.04911v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-arxiv-breastgpt_a_multimodal_large_language_model_for_the_full_spectrum_of_breast_cancer_clinica_infographic.json
+
+## 4. Towards World Models in Biomedical Research
+
+- Date: 2026-06-04
+- Category: Biomedical AI
+- Source: arXiv - https://arxiv.org/abs/2606.05925v1
+- PDF: https://arxiv.org/pdf/2606.05925v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-04-arxiv-towards_world_models_in_biomedical_research_infographic.json
+
+## 5. Ten Headache Specialists versus Artificial Intelligence for Clinical Literature Summarization: A Critical Evaluation and Comparison
+
+- Date: 2026-06-03
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.05436v1
+- PDF: https://arxiv.org/pdf/2606.05436v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-arxiv-ten_headache_specialists_versus_artificial_intelligence_for_clinical_literature_summarizat_infographic.json
+
+## 6. Evaluating Large Language Models in Dynamic Clinical Decision-Making with Standardized Patient Cases
+
+- Date: 2026-06-03
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.05112v1
+- PDF: https://arxiv.org/pdf/2606.05112v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-arxiv-evaluating_large_language_models_in_dynamic_clinical_decision_making_with_standardized_pat_infographic.json
+
+## 7. Modeling and Interpreting Teamwork Dynamics in Cancer Care Outcome Prediction
+
+- Date: 2026-06-03
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2606.04499v1
+- PDF: https://arxiv.org/pdf/2606.04499v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-arxiv-modeling_and_interpreting_teamwork_dynamics_in_cancer_care_outcome_prediction_infographic.json
+
+## 8. A unified multi-task framework enables interpretable chest radiograph analysis
+
+- Date: 2026-06-02
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.03417v1
+- PDF: https://arxiv.org/pdf/2606.03417v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-arxiv-a_unified_multi_task_framework_enables_interpretable_chest_radiograph_analysis_infographic.json
+
+## 9. Radiomic Feature Selection Using Gradient Loss of Deep Neural Network for Lung Cancer Stage Detection
+
+- Date: 2026-06-03
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.04453v1
+- PDF: https://arxiv.org/pdf/2606.04453v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-arxiv-radiomic_feature_selection_using_gradient_loss_of_deep_neural_network_for_lung_cancer_stag_infographic.json
+
+## 10. ClinicalMC: A Benchmark for Multi-Course Clinical Decision-Making with Large Language Models
+
+- Date: 2026-06-02
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2606.03157v1
+- PDF: https://arxiv.org/pdf/2606.03157v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-arxiv-clinicalmc_a_benchmark_for_multi_course_clinical_decision_making_with_large_language_model_infographic.json
+
+## 11. VentAgent: When LLMs Learn to Breathe -- Multi-Objective Arbitration for ARDS Ventilation
+
+- Date: 2026-06-03
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.04632v1
+- PDF: https://arxiv.org/pdf/2606.04632v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-arxiv-ventagent_when_llms_learn_to_breathe_multi_objective_arbitration_for_ards_ventilation_infographic.json
+
+## 12. Medication-Wide Association Study of Alzheimer's Disease and Related Dementias: Identifying Drug Candidates from Electronic Health Records through Explainable AI
+
+- Date: 2026-06-03
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.02.26354752v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.02.26354752v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-medrxiv-medication_wide_association_study_of_alzheimer_s_disease_and_related_dementias_identifying_infographic.json
+
+## 13. Gender-Dependent Diagnostic Substitution in LLM Medical Triage: Same Symptoms, Unequal Urgency
+
+- Date: 2026-06-02
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2606.03641v1
+- PDF: https://arxiv.org/pdf/2606.03641v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-arxiv-gender_dependent_diagnostic_substitution_in_llm_medical_triage_same_symptoms_unequal_urgen_infographic.json
+
+## 14. A Pathology Foundation Model for Gastric Cancer with Real-World Validation
+
+- Date: 2026-06-03
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2606.04792v1
+- PDF: https://arxiv.org/pdf/2606.04792v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-arxiv-a_pathology_foundation_model_for_gastric_cancer_with_real_world_validation_infographic.json
+
+## 15. ChatHealthAI: Aligning Electronic Health Record Representations with Large Language Models for Grounded Clinical Reasoning
+
+- Date: 2026-06-01
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.02802v1
+- PDF: https://arxiv.org/pdf/2606.02802v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-01-arxiv-chathealthai_aligning_electronic_health_record_representations_with_large_language_models_infographic.json
+
+## 16. Knowledge-Driven Neuro-Symbolic Reasoning for Personalized Oncology Treatment Recommendation Based on Multi-Modal Medical Knowledge Graph
 
 - Date: 2026-06-02
 - Category: Medical Imaging
@@ -11,154 +131,34 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354443v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-knowledge_driven_neuro_symbolic_reasoning_for_personalized_oncology_treatment_recommendati_infographic.json
 
-## 2. CLINES: Clinical LLM-based Information Extractionand Structuring Agent
-
-- Date: 2026-06-02
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2025.12.01.25341355v2
-- PDF: https://www.medrxiv.org/content/10.64898/2025.12.01.25341355v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-clines_clinical_llm_based_information_extractionand_structuring_agent_infographic.json
-
-## 3. Generalizable CT Vision-Language Modeling for Population Health and Disease Risk
-
-- Date: 2026-06-02
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.07.03.25330654v5
-- PDF: https://www.medrxiv.org/content/10.1101/2025.07.03.25330654v5.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-generalizable_ct_vision_language_modeling_for_population_health_and_disease_risk_infographic.json
-
-## 4. Drug-drug interaction identification using large language models
-
-- Date: 2026-06-02
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2025.12.03.25341549v3
-- PDF: https://www.medrxiv.org/content/10.64898/2025.12.03.25341549v3.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-drug_drug_interaction_identification_using_large_language_models_infographic.json
-
-## 5. The BEYONDD Pilot Study: A Decentralized Community-Engaged Research Framework for Multimodal Characterization of Neurodegenerative Risk in a Multi-Ethnic, Midlife Cohort with Subjective Cognitive or Behavioral Complaints
-
-- Date: 2026-06-02
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354636v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354636v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-the_beyondd_pilot_study_a_decentralized_community_engaged_research_framework_for_multimoda_infographic.json
-
-## 6. Added Value of Software-Assisted Analysis in FDG-PET for Neurodegenerative Disease Diagnosis: A Systematic Review and Meta-Analysis
+## 17. Leveraging Digitization, Archiving and Artificial Intelligence to Re-examine Predictors of Sustained Mental Health Care Engagement in Ugandan First-Episode Psychosis Patients: A Study Protocol
 
 - Date: 2026-06-03
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354659v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354659v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-medrxiv-added_value_of_software_assisted_analysis_in_fdg_pet_for_neurodegenerative_disease_diagnos_infographic.json
-
-## 7. Validity of the NINDS traumatic encephalopathy syndrome criteria for predicting chronic traumatic encephalopathy
-
-- Date: 2026-06-02
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.24.26353505v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.05.24.26353505v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-validity_of_the_ninds_traumatic_encephalopathy_syndrome_criteria_for_predicting_chronic_tr_infographic.json
-
-## 8. Deep Longitudinal Clusters of Type 2 Diabetes Pathophysiology and their Risk of Cardiovascular Disease Events and All-Cause Mortality
-
-- Date: 2026-06-03
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354645v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354645v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-medrxiv-deep_longitudinal_clusters_of_type_2_diabetes_pathophysiology_and_their_risk_of_cardiovasc_infographic.json
-
-## 9. Mitigating Automation Bias in Physician-LLM Diagnostic Reasoning Using Behavioral Nudges: A Randomized Controlled Trial
-
-- Date: 2026-06-02
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354596v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354596v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-mitigating_automation_bias_in_physician_llm_diagnostic_reasoning_using_behavioral_nudges_a_infographic.json
-
-## 10. SchistoTrackNet: machine learning for diagnosis of schistosomiasis-associated periportal fibrosis from ultrasound images
-
-- Date: 2026-06-02
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354609v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354609v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-schistotracknet_machine_learning_for_diagnosis_of_schistosomiasis_associated_periportal_fi_infographic.json
-
-## 11. An Explainable Cryobiopsy AI Model, CRAI, to Predict Progression in Interstitial Pneumonia
-
-- Date: 2026-06-02
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.08.06.25333181v2
-- PDF: https://www.medrxiv.org/content/10.1101/2025.08.06.25333181v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-an_explainable_cryobiopsy_ai_model_crai_to_predict_progression_in_interstitial_pneumonia_infographic.json
-
-## 12. Longitudinal Transdisciplinary Neuropalliative care Support (LOTUS) Study - a conceptual framework and fidelity assessments
-
-- Date: 2026-06-02
 - Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.29.26354486v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.05.29.26354486v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-longitudinal_transdisciplinary_neuropalliative_care_support_lotus_study_a_conceptual_frame_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.02.26354672v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.02.26354672v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-medrxiv-leveraging_digitization_archiving_and_artificial_intelligence_to_re_examine_predictors_of_infographic.json
 
-## 13. Plasma and CSF neurofilament light chain measured by Simoa and Lumipulse: an inter-platform comparison across neurological disorders
-
-- Date: 2026-06-02
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354573v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354573v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-plasma_and_csf_neurofilament_light_chain_measured_by_simoa_and_lumipulse_an_inter_platform_infographic.json
-
-## 14. Understanding the Patient Journey, Current Treatment Approaches and Emerging Therapeutic Opportunities in CLN2 Batten Disease
-
-- Date: 2026-06-02
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.31.26354557v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.05.31.26354557v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-understanding_the_patient_journey_current_treatment_approaches_and_emerging_therapeutic_op_infographic.json
-
-## 15. Patient Experiences with Diagnostic Revision in Lymphoma: Analysis of Chinese Online Forum Narratives Using Natural Language Processing
-
-- Date: 2026-05-29
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.09.07.25335273v3
-- PDF: https://www.medrxiv.org/content/10.1101/2025.09.07.25335273v3.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-29-medrxiv-patient_experiences_with_diagnostic_revision_in_lymphoma_analysis_of_chinese_online_forum_infographic.json
-
-## 16. GRAD: A Two-Stage Algorithm for Resolving Diagnostic Uncertainty in the Plasma p-tau217 Gray Zone
-
-- Date: 2026-06-02
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.02.03.26345302v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.02.03.26345302v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-grad_a_two_stage_algorithm_for_resolving_diagnostic_uncertainty_in_the_plasma_p_tau217_gra_infographic.json
-
-## 17. SchistoTrackVideoNet: multilabel deep learning-based classification of schistosomal periportal fibrosis from ultrasound video
-
-- Date: 2026-06-02
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354613v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354613v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-schistotrackvideonet_multilabel_deep_learning_based_classification_of_schistosomal_peripor_infographic.json
-
-## 18. HuBERT-ECG as a self-supervised foundation model for broad and scalable cardiac applications
+## 18. Automated Report-Derived Oncology VQA Benchmark for Evaluating Vision-Language Models on 3D Medical Imaging
 
 - Date: 2026-06-01
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.02809v1
+- PDF: https://arxiv.org/pdf/2606.02809v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-01-arxiv-automated_report_derived_oncology_vqa_benchmark_for_evaluating_vision_language_models_on_3_infographic.json
+
+## 19. Efficacy of an Anti-Inflammatory Dietary Pattern on Global Functioning, Gut Microbiome, and Health in Patients with Psychiatric Disorders and Neurodegenerative Diseases: Protocol for a Randomized Controlled Crossover Trial
+
+- Date: 2026-06-03
 - Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2024.11.14.24317328v4
-- PDF: https://www.medrxiv.org/content/10.1101/2024.11.14.24317328v4.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-01-medrxiv-hubert_ecg_as_a_self_supervised_foundation_model_for_broad_and_scalable_cardiac_applicatio_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.02.26354674v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.02.26354674v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-medrxiv-efficacy_of_an_anti_inflammatory_dietary_pattern_on_global_functioning_gut_microbiome_and_infographic.json
 
-## 19. Multilingual Evaluation of a Large Language Model-Based Primary Care Chatbot
+## 20. Health Care Students/Professionals Perspectives on Artificial Intelligence: Survey in Erbil, Iraq
 
-- Date: 2026-05-29
+- Date: 2026-06-03
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.03.26352241v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.05.03.26352241v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-05-29-medrxiv-multilingual_evaluation_of_a_large_language_model_based_primary_care_chatbot_infographic.json
-
-## 20. Quantitative fibrosis features from digitized H&E-stained liver biopsies reveal granular insights into fibrosis and disease progression in metabolic dysfunction-associated steatohepatitis: a retrospective analysis of STELLAR-3 and STELLAR-4
-
-- Date: 2026-06-02
-- Category: Biomedical AI
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.06.12.25328580v4
-- PDF: https://www.medrxiv.org/content/10.1101/2025.06.12.25328580v4.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-02-medrxiv-quantitative_fibrosis_features_from_digitized_h_e_stained_liver_biopsies_reveal_granular_i_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.27.26354009v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.05.27.26354009v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-03-medrxiv-health_care_students_professionals_perspectives_on_artificial_intelligence_survey_in_erbil_infographic.json
