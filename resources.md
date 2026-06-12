@@ -1,9 +1,25 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-06-11
+Generated: 2026-06-12
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Pre-AF 13: An Interpretable Atrial Fibrillation Risk Score Mined from Discharge Reports
+## 1. ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages
+
+- Date: 2026-06-11
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.13572v1
+- PDF: https://arxiv.org/pdf/2606.13572v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-arogyasutra_a_multi_agent_framework_for_multimodal_medical_reasoning_in_indic_languages_infographic.json
+
+## 2. sebis at CRF Filling 2026: A Two-Stage Local LLM Pipeline for Medical CRF Filling
+
+- Date: 2026-06-11
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.13082v1
+- PDF: https://arxiv.org/pdf/2606.13082v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-sebis_at_crf_filling_2026_a_two_stage_local_llm_pipeline_for_medical_crf_filling_infographic.json
+
+## 3. Pre-AF 13: An Interpretable Atrial Fibrillation Risk Score Mined from Discharge Reports
 
 - Date: 2026-06-09
 - Category: Clinical NLP
@@ -11,7 +27,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.10725v2
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-09-arxiv-pre_af_13_an_interpretable_atrial_fibrillation_risk_score_mined_from_discharge_reports_infographic.json
 
-## 2. Characterizing artificial intelligence (AI) psychosis in a large academic medical setting: evidence of the new clinical phenomenon and the vulnerability of those in early phases of psychosis
+## 4. Characterizing artificial intelligence (AI) psychosis in a large academic medical setting: evidence of the new clinical phenomenon and the vulnerability of those in early phases of psychosis
 
 - Date: 2026-06-08
 - Category: Clinical NLP
@@ -19,7 +35,39 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.04.26354939v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-medrxiv-characterizing_artificial_intelligence_ai_psychosis_in_a_large_academic_medical_setting_ev_infographic.json
 
-## 3. Measuring Epistemic Resilience of LLMs Under Misleading Medical Context
+## 5. Transformer-Guided Graph Attention for Direct Cardiac Mesh Reconstruction: A Structural Digital Twin Framework
+
+- Date: 2026-06-11
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.13188v1
+- PDF: https://arxiv.org/pdf/2606.13188v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-transformer_guided_graph_attention_for_direct_cardiac_mesh_reconstruction_a_structural_dig_infographic.json
+
+## 6. A Comparison of Manual and Automated Approaches to Developing Computable Algorithms for Identifying Acute Pancreatitis
+
+- Date: 2026-06-08
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.05.26354934v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.05.26354934v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-medrxiv-a_comparison_of_manual_and_automated_approaches_to_developing_computable_algorithms_for_id_infographic.json
+
+## 7. Deployment-Centered Evaluation: Predicting Query-Level Rejection Risk in a Clinical LLM System
+
+- Date: 2026-06-10
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.12702v1
+- PDF: https://arxiv.org/pdf/2606.12702v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-deployment_centered_evaluation_predicting_query_level_rejection_risk_in_a_clinical_llm_sys_infographic.json
+
+## 8. Hallucination in Medical Imaging AI: A Cross-Modality Analytical Framework for Taxonomy, Detection, and Mitigation under Regulatory Constraints
+
+- Date: 2026-06-11
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.13211v1
+- PDF: https://arxiv.org/pdf/2606.13211v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-hallucination_in_medical_imaging_ai_a_cross_modality_analytical_framework_for_taxonomy_det_infographic.json
+
+## 9. Measuring Epistemic Resilience of LLMs Under Misleading Medical Context
 
 - Date: 2026-06-10
 - Category: Clinical NLP
@@ -27,7 +75,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.12291v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-measuring_epistemic_resilience_of_llms_under_misleading_medical_context_infographic.json
 
-## 4. LLM-Orchestrated Conformance Checking in Stroke Care Without Computer-Interpretable Guidelines
+## 10. AAbAAC: An Annotated Corpus for Autoimmunity Information Extraction
+
+- Date: 2026-06-11
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.13051v1
+- PDF: https://arxiv.org/pdf/2606.13051v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-aabaac_an_annotated_corpus_for_autoimmunity_information_extraction_infographic.json
+
+## 11. LLM-Orchestrated Conformance Checking in Stroke Care Without Computer-Interpretable Guidelines
 
 - Date: 2026-06-08
 - Category: Health Systems
@@ -35,7 +91,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.09489v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-arxiv-llm_orchestrated_conformance_checking_in_stroke_care_without_computer_interpretable_guidel_infographic.json
 
-## 5. Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance?
+## 12. Quality and Safety profiles of AI-Generated vs Clinician-Generated Handoffs in Hospital Medicine
+
+- Date: 2026-06-08
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.05.26354946v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.05.26354946v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-medrxiv-quality_and_safety_profiles_of_ai_generated_vs_clinician_generated_handoffs_in_hospital_me_infographic.json
+
+## 13. Reasoning for Mobile User Experience with Multimodal LLMs: Task, Benchmark, and Approach
+
+- Date: 2026-06-11
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.13192v1
+- PDF: https://arxiv.org/pdf/2606.13192v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-reasoning_for_mobile_user_experience_with_multimodal_llms_task_benchmark_and_approach_infographic.json
+
+## 14. Reassessing High-Performing LLMs on Polish Medical Exams: True Competence or Bias-Driven Performance?
 
 - Date: 2026-06-10
 - Category: Clinical NLP
@@ -43,7 +115,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.12250v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-reassessing_high_performing_llms_on_polish_medical_exams_true_competence_or_bias_driven_pe_infographic.json
 
-## 6. Lung-R1: A Knowledge Graph-Guided LLM for Pulmonary Diagnostic Reasoning
+## 15. Unified MRI Brain Image Translation via Hierarchical Tumor Structure Comparison
+
+- Date: 2026-06-11
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.13096v1
+- PDF: https://arxiv.org/pdf/2606.13096v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-unified_mri_brain_image_translation_via_hierarchical_tumor_structure_comparison_infographic.json
+
+## 16. EDEN: A Large-Scale Corpus of Clinical Notes for Italian
+
+- Date: 2026-06-10
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.12569v1
+- PDF: https://arxiv.org/pdf/2606.12569v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-eden_a_large_scale_corpus_of_clinical_notes_for_italian_infographic.json
+
+## 17. Lung-R1: A Knowledge Graph-Guided LLM for Pulmonary Diagnostic Reasoning
 
 - Date: 2026-06-10
 - Category: Clinical NLP
@@ -51,7 +139,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.11675v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-lung_r1_a_knowledge_graph_guided_llm_for_pulmonary_diagnostic_reasoning_infographic.json
 
-## 7. Intelligent Skin Cancer Detection Using a Multispectral Metasurface and a Hybrid
+## 18. Intelligent Skin Cancer Detection Using a Multispectral Metasurface and a Hybrid
 
 - Date: 2026-06-09
 - Category: Medical Imaging
@@ -59,7 +147,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.11287v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-09-arxiv-intelligent_skin_cancer_detection_using_a_multispectral_metasurface_and_a_hybrid_infographic.json
 
-## 8. Self-Supervised Vision Transformers for CBCT-Based Detection of Temporomandibular Joint Osteoarthritis
+## 19. Self-Supervised Vision Transformers for CBCT-Based Detection of Temporomandibular Joint Osteoarthritis
 
 - Date: 2026-06-06
 - Category: Medical Imaging
@@ -67,98 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.08364v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-06-arxiv-self_supervised_vision_transformers_for_cbct_based_detection_of_temporomandibular_joint_os_infographic.json
 
-## 9. MedCTA: A Benchmark for Clinical Tool Agents
+## 20. Masked and Predictive Self-Supervised Foundation Models for 3D Brain MRI
 
-- Date: 2026-06-10
+- Date: 2026-06-11
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.11702v1
-- PDF: https://arxiv.org/pdf/2606.11702v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-medcta_a_benchmark_for_clinical_tool_agents_infographic.json
-
-## 10. TRIAGE: Dialectical Reasoning for Explainable Risk Prediction on Irregularly Sampled Medical Time Series with LLMs
-
-- Date: 2026-06-08
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2606.09030v1
-- PDF: https://arxiv.org/pdf/2606.09030v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-arxiv-triage_dialectical_reasoning_for_explainable_risk_prediction_on_irregularly_sampled_medica_infographic.json
-
-## 11. Beyond Injection Detection: A Positive-Security Prompt Firewall that Closes the Scope and PHI Gap SOTA Classifiers Miss in Healthcare
-
-- Date: 2026-06-06
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.04.26354950v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.04.26354950v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-06-medrxiv-beyond_injection_detection_a_positive_security_prompt_firewall_that_closes_the_scope_and_p_infographic.json
-
-## 12. Transition-Based Digital Twin Modelling for Alzheimer's Disease under Sparse Longitudinal Data
-
-- Date: 2026-06-08
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.09671v1
-- PDF: https://arxiv.org/pdf/2606.09671v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-arxiv-transition_based_digital_twin_modelling_for_alzheimer_s_disease_under_sparse_longitudinal_infographic.json
-
-## 13. Next-Token Prediction Learns Generalisable Representations of Sleep Physiology
-
-- Date: 2026-06-08
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2606.09605v1
-- PDF: https://arxiv.org/pdf/2606.09605v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-arxiv-next_token_prediction_learns_generalisable_representations_of_sleep_physiology_infographic.json
-
-## 14. Deterministic Integrity Gates for LLM-Assisted Clinical Manuscript Preparation: An Auditable Biomedical Informatics Architecture
-
-- Date: 2026-06-08
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2606.09500v2
-- PDF: https://arxiv.org/pdf/2606.09500v2
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-08-arxiv-deterministic_integrity_gates_for_llm_assisted_clinical_manuscript_preparation_an_auditabl_infographic.json
-
-## 15. Curation of a Cardiology Interface Terminology for Highlighting Electronic Health Records using Machine Learning
-
-- Date: 2026-06-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2606.08311v1
-- PDF: https://arxiv.org/pdf/2606.08311v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-06-arxiv-curation_of_a_cardiology_interface_terminology_for_highlighting_electronic_health_records_infographic.json
-
-## 16. From Patches to Patients: A study of the tile-to-slide performance transferability in Digital Pathology
-
-- Date: 2026-06-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.10778v1
-- PDF: https://arxiv.org/pdf/2606.10778v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-09-arxiv-from_patches_to_patients_a_study_of_the_tile_to_slide_performance_transferability_in_digit_infographic.json
-
-## 17. OpenMedReason: Scientific Reasoning Supervision for Medical Vision-Language Models
-
-- Date: 2026-06-10
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.12169v1
-- PDF: https://arxiv.org/pdf/2606.12169v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-openmedreason_scientific_reasoning_supervision_for_medical_vision_language_models_infographic.json
-
-## 18. Time-Conditioned and Multi-Time Survival Prediction from 2D PET/CT Projections in Lung Cancer
-
-- Date: 2026-06-10
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.12140v1
-- PDF: https://arxiv.org/pdf/2606.12140v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-time_conditioned_and_multi_time_survival_prediction_from_2d_pet_ct_projections_in_lung_can_infographic.json
-
-## 19. Data-Driven Robust Machine Learning Models to Differentiate Parkinson's Disease Patients Using Heterogeneous Risk Factors
-
-- Date: 2026-06-06
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2025.12.18.25342612v2
-- PDF: https://www.medrxiv.org/content/10.64898/2025.12.18.25342612v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-06-medrxiv-data_driven_robust_machine_learning_models_to_differentiate_parkinson_s_disease_patients_u_infographic.json
-
-## 20. AGE-MIL: Anchor-Guided Evidence Learning for Patient-Level Prediction
-
-- Date: 2026-06-10
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.12126v1
-- PDF: https://arxiv.org/pdf/2606.12126v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-10-arxiv-age_mil_anchor_guided_evidence_learning_for_patient_level_prediction_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2606.13315v1
+- PDF: https://arxiv.org/pdf/2606.13315v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-11-arxiv-masked_and_predictive_self_supervised_foundation_models_for_3d_brain_mri_infographic.json
