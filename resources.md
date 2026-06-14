@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-06-13
+Generated: 2026-06-14
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Technology acceptance of machine learning in life sciences: the role of hype perception and journal impact factor.

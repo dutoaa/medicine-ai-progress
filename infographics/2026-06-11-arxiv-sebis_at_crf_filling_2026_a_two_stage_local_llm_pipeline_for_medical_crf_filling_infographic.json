@@ -1,13 +1,13 @@
 {
-  "key_insight": "A fully local, two-stage MedGemma pipeline can extract CRF data from EHR notes while reducing hallucinations through evidence-based presence and value separation.",
-  "clinical_relevance": "This offers a privacy-preserving, on-premise approach for clinical data extraction that can support CRF completion without sending sensitive text to external APIs.",
+  "key_insight": "A fully local, two-stage LLM pipeline can extract CRF variables from clinical notes while reducing hallucinations by separating presence detection from value extraction.",
+  "clinical_relevance": "This offers a privacy-preserving, on-premise approach for medical form filling that may fit settings where external APIs and data sharing are not allowed.",
   "method": [
-    "Binary stage first classifies whether each item is present, negated, uncertain, or unknown.",
-    "Value stage extracts item-specific values only when textual evidence supports presence.",
-    "Uses local, domain-adapted few-shot in-context learning with MedGemma-27B and no fine-tuning."
+    "Used MedGemma-27B in a local deployment",
+    "Stage 1: binary presence classification",
+    "Stage 2: value extraction with item-specific few-shot in-context prompts; no fine-tuning or external API calls"
   ],
-  "evidence_signal": "On the official English test track, the system achieved a macro-F1 of 0.55 and ranked second among locally hosted open-source submissions.",
-  "watch_item": "Performance is promising but still below top proprietary systems, and the item-specific prompt design may be complex to maintain across new CRF schemas.",
+  "evidence_signal": "The approach achieved a macro-F1 score of 0.55 on the official English test track and ranked second among locally hosted, open-source submissions.",
+  "watch_item": "Performance is moderate, so real-world use still needs careful validation for edge cases, negation, uncertainty, and workflow integration.",
   "hashtags": [
     "#ClinicalNLP",
     "#LLM",
@@ -19,6 +19,6 @@
   "paper_title": "sebis at CRF Filling 2026: A Two-Stage Local LLM Pipeline for Medical CRF Filling",
   "paper_date": "2026-06-11",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-06-13T09:51:03",
+  "generated_at": "2026-06-14T10:19:27",
   "generator": "openai"
 }
