@@ -1,24 +1,24 @@
 {
-  "key_insight": "Encoding the ICD-10-CM hierarchy explicitly helps EHR foundation models learn better disease representations than treating diagnosis codes as flat tokens.",
-  "clinical_relevance": "Hierarchy-aware coding may improve clinical prediction and cross-dataset transfer by preserving medically meaningful relationships between related diagnoses.",
+  "key_insight": "Encoding the ICD-10-CM hierarchy as an explicit model input improves EHR representation learning compared with treating diagnosis codes as flat tokens.",
+  "clinical_relevance": "Hierarchy-aware code representations may better capture clinically meaningful relationships between diagnoses, which can strengthen prediction and transfer across hospitals or datasets.",
   "method": [
-    "Augmented a BERT-style transformer with ICD hierarchy level tokens.",
-    "Built graph-based code representations using hierarchy-aware edges plus diagnosis co-occurrence links.",
-    "Compared flat vs hierarchy-aware models across multiple hierarchy levels and tasks."
+    "BERT-style transformer with extra tokens for different ICD hierarchy levels",
+    "Graph-based code embeddings using hierarchy-aware edges plus diagnosis co-occurrence",
+    "Compared flat vs hierarchy-aware representations across in-domain and cross-dataset settings"
   ],
-  "evidence_signal": "Evaluated on MIMIC-IV for pretraining/in-domain testing and eICU for frozen-encoder cross-dataset transfer, showing hierarchy-aware models outperform flat code representations.",
-  "watch_item": "The most useful hierarchy level depends on the task and model, so implementation choices may need tuning rather than using a single universal coding depth.",
+  "evidence_signal": "Evaluated on MIMIC-IV for pretraining/in-domain testing and eICU for frozen-encoder transfer, showing hierarchy helped in both settings.",
+  "watch_item": "Benefits varied by task, model type, and hierarchy level, so implementation needs careful selection of which hierarchy depth to encode.",
   "hashtags": [
     "#EHR",
-    "#ICD10",
-    "#MedicalAI",
-    "#FoundationModels",
-    "#ClinicalNLP"
+    "#ICDCodes",
+    "#ClinicalAI",
+    "#RepresentationLearning",
+    "#MedicalML"
   ],
   "paper_id": "2026-06-13-arxiv-hierarchical_modeling_of_icd_codes_in_ehr_foundation_models",
   "paper_title": "Hierarchical Modeling of ICD Codes in EHR Foundation Models",
   "paper_date": "2026-06-13",
   "paper_category": "Diagnostics",
-  "generated_at": "2026-06-16T12:03:59",
+  "generated_at": "2026-06-17T11:28:11",
   "generator": "openai"
 }
