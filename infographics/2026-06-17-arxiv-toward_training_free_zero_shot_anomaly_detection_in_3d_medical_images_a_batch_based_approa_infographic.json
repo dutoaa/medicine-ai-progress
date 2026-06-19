@@ -1,24 +1,24 @@
 {
-  "key_insight": "A training-free, zero-shot 3D anomaly detection method can localize lesions by turning 2D foundation model slice features into volumetric tokens and flagging subjects whose tokens have no close matches across the batch.",
-  "clinical_relevance": "This approach could help identify abnormal regions in heterogeneous 3D medical scans when labeled 3D training data are scarce, especially for new or rare pathologies.",
+  "key_insight": "A training-free zero-shot framework can localize anomalies in 3D medical volumes by reusing 2D foundation models and comparing each subject’s tokens against other subjects for mutual similarity.",
+  "clinical_relevance": "This could help flag unusual lesions in scans when labeled 3D training data are scarce, potentially supporting broader deployment across changing protocols and patient populations.",
   "method": [
-    "Decompose each 3D volume along multiple anatomical axes and encode slices with a frozen 2D vision transformer.",
-    "Pool neighboring slice features into localized volumetric tokens for cross-subject comparison.",
-    "Use coarse-to-fine tokenization to preserve focal lesion signals while avoiding exhaustive matching."
+    "Decomposes each 3D volume along multiple anatomical axes and encodes slices with a frozen 2D vision transformer.",
+    "Pools neighboring slice features into localized volumetric tokens for cross-subject anomaly scoring.",
+    "Uses coarse-to-fine tokenization to better preserve focal lesion signals during depth pooling."
   ],
-  "evidence_signal": "Evaluated on brain MRI for metastases, glioma, and stroke, with additional validation on lung CT to assess generalizability beyond atlas-aligned brain imaging.",
-  "watch_item": "Performance may drop when lesions are low-contrast or when depth pooling attenuates small focal abnormalities, so token resolution and modality matter.",
+  "evidence_signal": "The approach was evaluated on brain MRI for metastases, glioma, and stroke, and also validated on lung CT to test generalizability beyond brain imaging.",
+  "watch_item": "Fine tokenization may not help equally across modalities, and depth pooling can still attenuate small focal lesions if token resolution is too coarse.",
   "hashtags": [
-    "#MedicalImaging",
-    "#AnomalyDetection",
-    "#ZeroShotLearning",
+    "#ZeroShotAnomalyDetection",
+    "#MedicalImagingAI",
     "#3DImaging",
-    "#FoundationModels"
+    "#FoundationModels",
+    "#BrainMRI"
   ],
   "paper_id": "2026-06-17-arxiv-toward_training_free_zero_shot_anomaly_detection_in_3d_medical_images_a_batch_based_approa",
   "paper_title": "Toward Training-Free Zero-Shot Anomaly Detection in 3D Medical Images: A Batch-Based Approach Using 2D Foundation Models",
   "paper_date": "2026-06-17",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-06-18T11:04:57",
+  "generated_at": "2026-06-19T11:14:03",
   "generator": "openai"
 }
