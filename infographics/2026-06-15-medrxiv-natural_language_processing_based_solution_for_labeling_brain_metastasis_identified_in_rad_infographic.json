@@ -1,24 +1,24 @@
 {
-  "key_insight": "An NLP pipeline that reads both the Findings and Impressions sections of radiology reports can identify brain metastases at scale, including cases not captured by cancer registries.",
-  "clinical_relevance": "This could improve population-level surveillance of brain metastases and help registries better track asynchronous disease burden across health systems.",
+  "key_insight": "An NLP pipeline using radiology report text can identify brain metastases at scale, including cases missed by registry-only capture.",
+  "clinical_relevance": "This could improve population-level surveillance of brain metastases and support more complete cancer registry workflows across provinces.",
   "method": [
-    "Trained two Bio_ClinicalBERT models separately on Findings and Impressions text.",
-    "Combined the two section-level predictions by taking the maximum probability as the report-level label.",
-    "Validated the system on internal and external reports from Alberta, Ontario, and British Columbia."
+    "Trained two Bio_ClinicalBERT models on the Findings and Impressions sections of brain/head radiology reports",
+    "Combined both section outputs by taking the maximum predicted probability as the report-level prediction",
+    "Validated internally and externally using manually labeled reports from Alberta, Ontario, and British Columbia"
   ],
-  "evidence_signal": "The model was trained on 1,879 samples and in internal validation reached 0.888 sensitivity at a 0.4 threshold, with external sensitivity of 0.918 in Ontario and 0.726 in British Columbia.",
-  "watch_item": "Performance varied by province, so local data differences and threshold selection may affect real-world deployment.",
+  "evidence_signal": "The model was trained on 1,879 samples and tested on 1,833 internal validation reports, achieving sensitivity 0.888 at a 0.4 threshold and showing external sensitivity of 0.918 in Ontario and 0.726 in British Columbia.",
+  "watch_item": "Performance varied across provinces, so deployment will need local validation, threshold tuning, and workflow integration to avoid missed cases or false positives.",
   "hashtags": [
-    "#AIinMedicine",
     "#NLP",
-    "#Radiology",
+    "#RadiologyAI",
     "#BrainMetastases",
-    "#CancerRegistry"
+    "#CancerRegistry",
+    "#HealthData"
   ],
   "paper_id": "2026-06-15-medrxiv-natural_language_processing_based_solution_for_labeling_brain_metastasis_identified_in_rad",
   "paper_title": "Natural Language Processing Based Solution for Labeling Brain Metastasis Identified in Radiology Reports",
   "paper_date": "2026-06-15",
   "paper_category": "Health Systems",
-  "generated_at": "2026-06-19T11:14:31",
+  "generated_at": "2026-06-20T09:58:19",
   "generator": "openai"
 }

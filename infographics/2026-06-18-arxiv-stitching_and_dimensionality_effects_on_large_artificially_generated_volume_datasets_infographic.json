@@ -1,17 +1,17 @@
 {
-  "key_insight": "Stitching artifacts can quietly degrade generative microscopy outputs, and FID alone may miss harms that matter for downstream segmentation.",
-  "clinical_relevance": "For biomedical image generation and domain adaptation workflows, artifact-free patch stitching is more important than perceptual scores alone when the output will support analysis tasks.",
+  "key_insight": "Stitching artifacts from patch-based generation can silently degrade output quality and downstream segmentation, even when perceptual scores look acceptable.",
+  "clinical_relevance": "For biomedical image generation, especially large-volume datasets, careful stitching strategy matters because artifacts may affect the reliability of AI-assisted image analysis.",
   "method": [
-    "Compared cycleGAN models trained on cryo-electron microscopy volumes using 2D vs 3D patching.",
-    "Tested three stitching strategies to assess border artifacts during volume assembly.",
-    "Evaluated outputs with FID, perceptual quality checks, and downstream mitochondria segmentation; also tested orthogonal-direction ensembling."
+    "Compared three patch stitching approaches in cycleGAN-based style transfer.",
+    "Compared 2D versus 3D patch dimensionality on cryo-electron microscopy volumes.",
+    "Evaluated both perceptual quality and mitochondria segmentation performance, including orthogonal ensembling."
   ],
-  "evidence_signal": "Across the abstract’s experiments, subtle stitching artifacts were not captured by FID but did affect segmentation performance, while 3D artifact-free stitching only slightly outperformed 2D despite higher compute cost.",
-  "watch_item": "The modest gain from 3D models may not justify the extra computational burden, so implementation should prioritize artifact control and task-based evaluation over perceptual metrics alone.",
+  "evidence_signal": "FID failed to detect subtle stitching artifacts, while downstream segmentation revealed meaningful differences; 3D artifact-free stitching performed slightly better than 2D, and 2D trained more stably.",
+  "watch_item": "Perceptual metrics alone are insufficient, so implementation should include task-based evaluation to catch artifacts that may not be visually obvious.",
   "hashtags": [
     "#MedicalImaging",
     "#DeepLearning",
-    "#CycleGAN",
+    "#ImageGeneration",
     "#CryoEM",
     "#StitchingArtifacts"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Stitching and dimensionality effects on large artificially generated volume datasets",
   "paper_date": "2026-06-18",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-06-19T11:13:58",
+  "generated_at": "2026-06-20T09:57:47",
   "generator": "openai"
 }
