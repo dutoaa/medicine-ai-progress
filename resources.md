@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-06-20
+Generated: 2026-06-21
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. MedRLM: Recursive Multimodal Health Intelligence for Long-Context Clinical Reasoning, Sensor-Guided Screening, Evidence-Grounded Decision Support, and Community-to-Tertiary Referral Optimization
@@ -99,15 +99,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.19852v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-18-arxiv-prompt_plan_extract_zero_shot_agentic_llms_workflows_for_lung_pathology_extraction_from_cl_infographic.json
 
-## 13. QG-MIL: A Gated Transformer Aggregator for Domain-Agnostic Multiple Instance Learning in Medical Imaging
-
-- Date: 2026-06-18
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.20027v1
-- PDF: https://arxiv.org/pdf/2606.20027v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-18-arxiv-qg_mil_a_gated_transformer_aggregator_for_domain_agnostic_multiple_instance_learning_in_me_infographic.json
-
-## 14. AIPatient Arena: EHR-grounded evaluation of large language models in end-to-end clinical consultation workflows
+## 13. AIPatient Arena: EHR-grounded evaluation of large language models in end-to-end clinical consultation workflows
 
 - Date: 2026-06-16
 - Category: Clinical NLP
@@ -115,7 +107,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.17474v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-16-arxiv-aipatient_arena_ehr_grounded_evaluation_of_large_language_models_in_end_to_end_clinical_co_infographic.json
 
-## 15. PSyGenTAB: A Privacy-Preserving Framework for Synthetic Clinical Tabular Data Generation via Constrained Optimization
+## 14. PSyGenTAB: A Privacy-Preserving Framework for Synthetic Clinical Tabular Data Generation via Constrained Optimization
 
 - Date: 2026-06-16
 - Category: Health Systems
@@ -123,7 +115,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.18518v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-16-arxiv-psygentab_a_privacy_preserving_framework_for_synthetic_clinical_tabular_data_generation_vi_infographic.json
 
-## 16. Evaluation of AI-Generated Synthetic Data for Clinical Research in Secondary Cardiovascular Prevention among Dyslipidemia Patients
+## 15. Evaluation of AI-Generated Synthetic Data for Clinical Research in Secondary Cardiovascular Prevention among Dyslipidemia Patients
 
 - Date: 2026-06-15
 - Category: Clinical NLP
@@ -131,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.12.26355456v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-15-medrxiv-evaluation_of_ai_generated_synthetic_data_for_clinical_research_in_secondary_cardiovascula_infographic.json
 
-## 17. Context-Aware Optimization of Follow-Up Intervals for Type 2 Diabetes Care Using Markov Decision Processes
+## 16. Context-Aware Optimization of Follow-Up Intervals for Type 2 Diabetes Care Using Markov Decision Processes
 
 - Date: 2026-06-17
 - Category: Health Systems
@@ -139,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.19092v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-17-arxiv-context_aware_optimization_of_follow_up_intervals_for_type_2_diabetes_care_using_markov_de_infographic.json
 
-## 18. Scalable Training of Spatially Grounded 2D Vision-Language Models for Radiology
+## 17. Scalable Training of Spatially Grounded 2D Vision-Language Models for Radiology
 
 - Date: 2026-06-18
 - Category: Clinical NLP
@@ -147,7 +139,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.20477v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-18-arxiv-scalable_training_of_spatially_grounded_2d_vision_language_models_for_radiology_infographic.json
 
-## 19. Confidence Calibration for Multimodal LLMs: An Empirical Study through Medical VQA
+## 18. Confidence Calibration for Multimodal LLMs: An Empirical Study through Medical VQA
 
 - Date: 2026-06-18
 - Category: Clinical NLP
@@ -155,10 +147,18 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.19950v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-18-arxiv-confidence_calibration_for_multimodal_llms_an_empirical_study_through_medical_vqa_infographic.json
 
-## 20. Natural Language Processing Based Solution for Labeling Brain Metastasis Identified in Radiology Reports
+## 19. Natural Language Processing Based Solution for Labeling Brain Metastasis Identified in Radiology Reports
 
 - Date: 2026-06-15
 - Category: Health Systems
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.10.26355415v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.10.26355415v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-15-medrxiv-natural_language_processing_based_solution_for_labeling_brain_metastasis_identified_in_rad_infographic.json
+
+## 20. Scaling Generative Foundation Models for Chest Radiography with Rectified Flow Transformers
+
+- Date: 2026-06-17
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.19460v1
+- PDF: https://arxiv.org/pdf/2606.19460v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-17-arxiv-scaling_generative_foundation_models_for_chest_radiography_with_rectified_flow_transformer_infographic.json
