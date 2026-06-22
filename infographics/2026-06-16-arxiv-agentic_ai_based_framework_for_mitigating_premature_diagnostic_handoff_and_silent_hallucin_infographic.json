@@ -1,24 +1,24 @@
 {
-  "key_insight": "A multi-agent healthcare framework can reduce unsafe early diagnosis and undetected hallucinations by enforcing structured symptom collection and uncertainty checks before an answer is delivered.",
-  "clinical_relevance": "The approach aims to improve patient-facing diagnostic support by making LLM-driven systems more complete, more auditable, and less likely to hand off too early.",
+  "key_insight": "A deterministic multi-agent workflow can reduce two major LLM safety failures in healthcare: handing off too early and giving unflagged hallucinated diagnoses.",
+  "clinical_relevance": "By enforcing complete symptom collection and checking output uncertainty before release, the framework aims to make AI-assisted diagnostic support more structured and safer for clinical use.",
   "method": [
-    "Uses deterministic orchestration instead of LLM-as-a-judge routing",
-    "Blocks diagnosis until OLDCARTS symptom fields are fully collected",
-    "Computes semantic entropy from 5 independent diagnostic samples to flag divergent outputs"
+    "Blocks diagnostic handoff until all OLDCARTS fields are collected.",
+    "Uses semantic entropy across 5 independent diagnostic samples to flag divergent outputs.",
+    "Replaces LLM-based routing with deterministic orchestration constraints."
   ],
-  "evidence_signal": "In simulation on 150 test cases with llama-3.1-70b-instruct patient agents, the full system reached 49.3% diagnostic precision, an 11.3-point gain over baseline, with a significant negative correlation between OLDCARTS completeness and semantic entropy.",
-  "watch_item": "Results are based on simulated cases, so real-world clinical performance, workflow fit, and safety across diverse patient presentations still need prospective validation.",
+  "evidence_signal": "In 150 simulated test cases using llama-3.1-70b-instruct patient agents, the full system reached 49.3% diagnostic precision, an 11.3-point absolute gain over baseline, with a significant negative correlation between OLDCARTS completeness and semantic entropy (r = -0.181, p < 0.05).",
+  "watch_item": "Results were obtained in simulation with a specific model setup, so real-world performance, workflow fit, and false-blocking of useful diagnostic progress still need validation.",
   "hashtags": [
-    "#HealthAI",
     "#AgenticAI",
-    "#MedicalLLM",
+    "#HealthcareAI",
     "#ClinicalSafety",
-    "#UncertaintyQuantification"
+    "#LLMGuardrails",
+    "#MedicalInformatics"
   ],
   "paper_id": "2026-06-16-arxiv-agentic_ai_based_framework_for_mitigating_premature_diagnostic_handoff_and_silent_hallucin",
   "paper_title": "Agentic AI-based Framework for Mitigating Premature Diagnostic Handoff and Silent Hallucination in Healthcare Applications",
   "paper_date": "2026-06-16",
   "paper_category": "Health Systems",
-  "generated_at": "2026-06-21T10:25:13",
+  "generated_at": "2026-06-22T12:43:38",
   "generator": "openai"
 }

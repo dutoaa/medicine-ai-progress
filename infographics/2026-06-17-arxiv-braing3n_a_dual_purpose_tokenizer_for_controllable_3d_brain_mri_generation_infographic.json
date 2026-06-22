@@ -1,16 +1,16 @@
 {
-  "key_insight": "BrainG3N introduces a 3D brain MRI tokenizer that separates clinically useful embeddings from image reconstruction, enabling both strong downstream representation learning and controllable generation.",
-  "clinical_relevance": "A single embedding space could help support clinical benchmarking, conditional brain MRI synthesis, and patient-specific longitudinal forecasting for neurology and neuro-oncology research.",
+  "key_insight": "BrainG3N uses a dual-purpose 3D MRI tokenizer that preserves clinically useful features while still reconstructing anatomically faithful brain volumes for controllable generation.",
+  "clinical_relevance": "This could help create synthetic brain MRI data for under-represented groups, simulate disease progression, and enable privacy-preserving data sharing without sacrificing downstream clinical utility.",
   "method": [
-    "Frozen 3D MAE encoder learns volumetric brain MRI embeddings",
-    "Dedicated CNN decoder reconstructs voxels from projected embeddings",
-    "Conditional diffusion transformer uses the embeddings for generation and forecasting"
+    "Frozen 3D masked-autoencoder (MAE) encoder learns clinically informative embeddings.",
+    "Separate CNN decoder reconstructs voxels from a linear projection of the embeddings.",
+    "Latent diffusion/DiT is trained on the embeddings for conditional generation and longitudinal forecasting."
   ],
-  "evidence_signal": "Pretrained on 35,309 volumes from 18 public cohorts, the encoder matched or exceeded prior models on 21 of 23 linear-probing tasks and supported conditional generation across six variables.",
-  "watch_item": "Promising results are based on retrospective public datasets, so generalization and safe use across sites, scanners, and clinical contexts still need careful validation.",
+  "evidence_signal": "The encoder was pretrained on 35,309 volumes from 18 public cohorts and achieved top or matched performance on 21 of 23 linear-probing tasks, while also supporting conditional generation across six variables.",
+  "watch_item": "Results are promising, but clinical deployment would still need careful validation across scanners, sites, and patient populations to avoid bias or poor generalization.",
   "hashtags": [
-    "#BrainMRI",
     "#MedicalImaging",
+    "#BrainMRI",
     "#GenerativeAI",
     "#LatentDiffusion",
     "#NeuroAI"
@@ -19,6 +19,6 @@
   "paper_title": "BrainG3N: A Dual-Purpose Tokenizer for Controllable 3D Brain MRI Generation",
   "paper_date": "2026-06-17",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-06-21T10:25:02",
+  "generated_at": "2026-06-22T12:43:25",
   "generator": "openai"
 }

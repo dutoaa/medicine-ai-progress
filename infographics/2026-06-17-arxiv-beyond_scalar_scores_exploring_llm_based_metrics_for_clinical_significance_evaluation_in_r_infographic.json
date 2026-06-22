@@ -1,24 +1,24 @@
 {
-  "key_insight": "LLM-based radiology metrics can detect true clinical errors well, but many also over-penalize harmless wording changes, so the key challenge is balancing discrimination and robustness.",
-  "clinical_relevance": "A better metric can judge generated radiology reports more reliably, helping reduce clinically important mistakes without unfairly rejecting acceptable report variations.",
+  "key_insight": "LLM-based radiology report metrics should separate true clinical errors from harmless wording changes, because current evaluators tend to over-penalize rephrasings.",
+  "clinical_relevance": "A sharper clinical-significance boundary can improve automated evaluation of generated radiology reports, helping prioritize omissions or misstatements that could affect patient care.",
   "method": [
-    "Tested 8 LLM evaluators on the ReEvalMed benchmark in one-pass and two-pass settings",
-    "Measuring two dimensions: Discrimination for catching true errors and Robustness for tolerating benign rephrasings",
-    "Trained lightweight interpretable metrics on 4k synthesized report pairs using Qwen3-8B and MedGemma-4B"
+    "Tested 8 LLM evaluators on the ReEvalMed benchmark.",
+    "Measured two metric behaviors: discrimination of true errors and robustness to insignificant variation.",
+    "Trained lightweight interpretable metrics on 4k synthesized report pairs using Qwen3-8B and MedGemma-4B."
   ],
-  "evidence_signal": "The trained metric outperformed 32B-scale medical LLM evaluators and stayed competitive with proprietary models, while two-pass inference did not consistently improve overall performance.",
-  "watch_item": "Even strong metrics may still over-penalize harmless variations, so deployment should be checked for the desired discrimination-robustness balance before use.",
+  "evidence_signal": "Across one-pass and two-pass settings, the study found a widespread discrimination bias: evaluators detected errors but often misclassified harmless rephrasings as clinically important.",
+  "watch_item": "Two-pass inference did not consistently improve overall performance, so deployment should weigh added cost against only partial gains in the discrimination-robustness balance.",
   "hashtags": [
-    "#ClinicalNLP",
-    "#RadiologyAI",
-    "#LLMMetrics",
-    "#MedicalAI",
-    "#AIinMedicine"
+    "#RadiologyNLP",
+    "#ClinicalAI",
+    "#LLMEvaluation",
+    "#MedicalImaging",
+    "#AIinHealthcare"
   ],
   "paper_id": "2026-06-17-arxiv-beyond_scalar_scores_exploring_llm_based_metrics_for_clinical_significance_evaluation_in_r",
   "paper_title": "Beyond Scalar Scores: Exploring LLM-based Metrics for Clinical Significance Evaluation in Radiology Reports",
   "paper_date": "2026-06-17",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-06-21T10:25:09",
+  "generated_at": "2026-06-22T12:43:33",
   "generator": "openai"
 }

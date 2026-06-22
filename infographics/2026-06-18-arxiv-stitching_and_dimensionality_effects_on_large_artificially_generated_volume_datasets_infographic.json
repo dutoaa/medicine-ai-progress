@@ -1,13 +1,13 @@
 {
-  "key_insight": "Stitching artifacts can quietly hurt downstream segmentation even when generative image quality looks acceptable, and artifact-free 3D stitching offers only a modest edge over 2D.",
-  "clinical_relevance": "For biomedical image generation workflows, evaluation must include downstream task performance, not just visual or FID-based quality, to avoid misleading results.",
+  "key_insight": "Stitching artifacts from patch-based generation can quietly degrade downstream segmentation, and artifact-free 3D stitching only modestly improves results over 2D despite higher cost.",
+  "clinical_relevance": "For biomedical imaging pipelines, the main takeaway is that image quality metrics alone may miss errors that affect automated analysis, so downstream task performance should be checked.",
   "method": [
-    "Compared cycleGAN-based style-transfer models with three stitching strategies.",
-    "Tested two patch dimensionalities: 2D vs 3D.",
-    "Assessed perceptual quality and mitochondria segmentation performance on cryo-EM datasets."
+    "Compared 3 stitching approaches for patch assembly",
+    "Benchmarked 2D vs 3D cycleGANs on cryo-EM data",
+    "Evaluated both perceptual quality and mitochondria segmentation performance"
   ],
-  "evidence_signal": "The abstract reports that FID did not detect subtle stitching artifacts, while downstream mitochondria segmentation captured meaningful performance differences across stitching methods and patch dimensionalities.",
-  "watch_item": "3D artifact-free stitching may improve outputs slightly, but the computational cost is high and benefits may not justify the added complexity in many settings.",
+  "evidence_signal": "FID did not reliably detect subtle stitching artifacts, but those artifacts significantly changed downstream segmentation performance.",
+  "watch_item": "The reported 3D gains were small relative to added compute, so implementation choices should balance artifact control against hardware and training cost.",
   "hashtags": [
     "#MedicalImaging",
     "#DeepLearning",
@@ -19,6 +19,6 @@
   "paper_title": "Stitching and dimensionality effects on large artificially generated volume datasets",
   "paper_date": "2026-06-18",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-06-21T10:25:06",
+  "generated_at": "2026-06-22T12:43:49",
   "generator": "openai"
 }
