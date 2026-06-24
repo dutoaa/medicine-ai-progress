@@ -1,24 +1,24 @@
 {
-  "key_insight": "CADRE adapts medical vision-language models to new imaging modalities while explicitly limiting catastrophic forgetting and drift from the pretrained prior.",
-  "clinical_relevance": "This could support safer model updates in clinical imaging workflows by preserving prior competence as new modality-specific data are added.",
+  "key_insight": "CADRE is a frozen-backbone, parameter-efficient adaptation method that aims to improve medical VLM stability by reducing both forgetting of prior modalities and drift away from pretrained knowledge.",
+  "clinical_relevance": "For clinical imaging systems, this could support safer adaptation to new modalities while better preserving performance on previously learned ones, but it is not a deployment guarantee.",
   "method": [
-    "Frozen backbone with low-rank adaptation (LoRA) for parameter-efficient tuning",
-    "Online, self-scaling, similarity-aware elastic weight consolidation to bound retained-competence loss",
-    "Anchor-to-prior penalty to limit embedding drift from the pretrained model"
+    "Uses LoRA to adapt only a small fraction of parameters (~0.23%).",
+    "Adds an online, self-scaling, similarity-aware elastic weight consolidation term to limit forgetting.",
+    "Adds an anchor-to-prior penalty to keep embeddings close to the frozen pretrained model."
   ],
-  "evidence_signal": "In a multi-seed, multi-order cross-modality test across breast cancer histopathology, ultrasound, and chest radiography, CADRE trained about 0.23% of parameters and showed the best accuracy, SPQ, backward transfer, and lowest forgetting, with forgetting reduced from 0.075 to 0.011 versus the strongest regularized baseline (paired p=0.023).",
-  "watch_item": "The paper frames these results as stability-oriented research findings, not a deployment guarantee, and does not address robustness to distribution shift or adversarial inputs.",
+  "evidence_signal": "In a multi-seed, multi-order breast cancer cross-modality stress test across histopathology, ultrasound, and chest radiography, CADRE showed the best accuracy, SPQ, and backward transfer and the lowest forgetting, with forgetting reduced from 0.075 to 0.011 versus the strongest regularized baseline (paired p=0.023).",
+  "watch_item": "Results are from a controlled cross-modality setting; robustness to broader distribution shift and adversarial inputs was not evaluated.",
   "hashtags": [
     "#MedicalAI",
     "#VisionLanguageModels",
     "#ContinualLearning",
-    "#ParameterEfficientTuning",
-    "#RadiologyAI"
+    "#MachineLearningSafety",
+    "#MedicalImaging"
   ],
   "paper_id": "2026-06-22-arxiv-cadre_stable_parameter_efficient_adaptation_of_medical_vision_language_models_with_bounded",
   "paper_title": "CADRE: Stable, Parameter Efficient Adaptation of Medical Vision Language Models with Bounded Forgetting and Prior Drift",
   "paper_date": "2026-06-22",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-06-23T10:28:26",
+  "generated_at": "2026-06-24T10:14:32",
   "generator": "openai"
 }
