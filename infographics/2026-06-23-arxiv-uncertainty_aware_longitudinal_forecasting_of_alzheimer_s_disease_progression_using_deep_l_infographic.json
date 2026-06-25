@@ -1,13 +1,13 @@
 {
-  "key_insight": "The model predicts Alzheimer’s disease progression over time while also estimating how uncertain each future diagnosis and biomarker forecast is.",
-  "clinical_relevance": "This could help researchers and clinicians better anticipate likely disease trajectories and identify cases where the forecast is less reliable, especially around MCI-to-dementia transitions.",
+  "key_insight": "The study combines ordinal diagnosis prediction, multi-horizon trajectory forecasting, and uncertainty decomposition to better model how Alzheimer's disease progresses over time.",
+  "clinical_relevance": "This approach may help clinicians interpret not only the most likely next diagnosis, but also how reliably a patient’s future cognitive and biomarker changes are predicted.",
   "method": [
-    "Temporal Fusion Transformer encoder with a CORAL ordinal output layer for ordered diagnosis prediction",
-    "Autoregressive Mixture Density Network to generate 5-year trajectories for diagnosis, CDR-SB, MMSE orientation, and hippocampal volume",
-    "Separate aleatoric and epistemic uncertainty using mixture variance plus a 5-member bootstrap ensemble"
+    "Temporal Fusion Transformer encoder + CORAL ordinal output for next-visit diagnosis prediction",
+    "Autoregressive Mixture Density Network to generate 5-year probabilistic trajectories for diagnosis, CDR-SB, MMSE orientation, and hippocampal volume",
+    "Bootstrap ensemble plus analytic mixture variance to separate epistemic and aleatoric uncertainty"
   ],
-  "evidence_signal": "On ADNI, the approach outperformed linear, recurrent, and transformer baselines for next-visit diagnosis prediction, produced near-nominal 90% interval coverage, and showed stronger epistemic uncertainty on OASIS-3.",
-  "watch_item": "External performance and uncertainty calibration may vary across cohorts, so deployment would need careful validation before real-world use.",
+  "evidence_signal": "On ADNI, the model outperformed linear, recurrent, and transformer baselines for next-visit diagnosis prediction, achieved near-nominal 90% credible interval coverage, and showed increased epistemic uncertainty on external OASIS-3 evaluation.",
+  "watch_item": "Performance and uncertainty estimates may be less stable for rare progression patterns and across external datasets, so real-world deployment would need careful validation and calibration.",
   "hashtags": [
     "#AlzheimersDisease",
     "#DeepLearning",
@@ -19,6 +19,6 @@
   "paper_title": "Uncertainty-Aware Longitudinal Forecasting of Alzheimer's Disease Progression Using Deep Learning",
   "paper_date": "2026-06-23",
   "paper_category": "Diagnostics",
-  "generated_at": "2026-06-24T10:14:17",
+  "generated_at": "2026-06-25T10:12:13",
   "generator": "openai"
 }
