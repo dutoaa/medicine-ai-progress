@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-06-26
+Generated: 2026-06-27
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. CORTEX: A Structured Reasoning Benchmark for Trustworthy 3D Chest CT MLLMs
@@ -43,7 +43,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.26764v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-25-arxiv-anatomy_guided_residual_motion_diffusion_for_controllable_4d_cardiac_mri_synthesis_infographic.json
 
-## 6. Efficient Multimodal Clinical Question Answering for Pulmonary Embolism Risk Assessment
+## 6. MedGuards: Multi-Agent System for Reliable Medical Error Detection and Correction
+
+- Date: 2026-06-24
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.25651v1
+- PDF: https://arxiv.org/pdf/2606.25651v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-24-arxiv-medguards_multi_agent_system_for_reliable_medical_error_detection_and_correction_infographic.json
+
+## 7. Efficient Multimodal Clinical Question Answering for Pulmonary Embolism Risk Assessment
 
 - Date: 2026-06-21
 - Category: Clinical NLP
@@ -51,7 +59,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.22442v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-21-arxiv-efficient_multimodal_clinical_question_answering_for_pulmonary_embolism_risk_assessment_infographic.json
 
-## 7. Brain-Adapter: A Dual-Stream Vision-Language MIL Framework for Comprehensive 3D CT Diagnosis of Acute Intracranial Pathologies
+## 8. Brain-Adapter: A Dual-Stream Vision-Language MIL Framework for Comprehensive 3D CT Diagnosis of Acute Intracranial Pathologies
 
 - Date: 2026-06-22
 - Category: Clinical NLP
@@ -59,21 +67,13 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2606.23494v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-22-arxiv-brain_adapter_a_dual_stream_vision_language_mil_framework_for_comprehensive_3d_ct_diagnosi_infographic.json
 
-## 8. A Pipeline for Generating Longitudinal Synthetic Clinical Notes Using Large Language Models
+## 9. A Pipeline for Generating Longitudinal Synthetic Clinical Notes Using Large Language Models
 
 - Date: 2026-06-25
 - Category: Health Systems
 - Source: arXiv - https://arxiv.org/abs/2606.26879v1
 - PDF: https://arxiv.org/pdf/2606.26879v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-25-arxiv-a_pipeline_for_generating_longitudinal_synthetic_clinical_notes_using_large_language_model_infographic.json
-
-## 9. MedGuards: Multi-Agent System for Reliable Medical Error Detection and Correction
-
-- Date: 2026-06-24
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2606.25651v1
-- PDF: https://arxiv.org/pdf/2606.25651v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-24-arxiv-medguards_multi_agent_system_for_reliable_medical_error_detection_and_correction_infographic.json
 
 ## 10. Multisite Real-World Validation of an Electronic Health Record-Integrated Generative Artificial Intelligence Tool for Venous Thromboembolism Risk Stratification
 
