@@ -1,24 +1,24 @@
 {
-  "key_insight": "GradAudit uses parameter gradients to reveal whether a vision-language model was trained on specific image-text pairs, not just on individual images or text.",
-  "clinical_relevance": "For healthcare AI, it offers a stronger way to audit whether sensitive medical images and reports may have been included in model training, supporting privacy and provenance checks.",
+  "key_insight": "GradAudit uses parameter gradients to spot whether a vision-language model has learned a specific image-text pair during training, rather than just whether each modality appeared separately.",
+  "clinical_relevance": "For healthcare AI, this could help audit whether patient images and reports may have been used in model training, supporting privacy and provenance checks.",
   "method": [
-    "Analyze internal gradient patterns rather than only model outputs.",
-    "Look for stable, well-aligned gradients on training samples versus noisy, inconsistent gradients on non-training samples.",
-    "Use the gradient signature to detect true cross-modal image-text exposure."
+    "Analyzes internal gradient patterns instead of model outputs",
+    "Looks for stable, well-aligned gradients on training samples versus noisy gradients on non-training samples",
+    "Targets cross-modal image-text associations in VLLMs"
   ],
-  "evidence_signal": "Across medical and general-domain datasets, the method outperformed state-of-the-art baselines in both pretraining and fine-tuning settings, and a copyrighted-content case study showed existing methods underestimated training-data use.",
-  "watch_item": "Gradient-based auditing may require internal model access and careful interpretation, so it may be harder to deploy on fully closed models or at scale.",
+  "evidence_signal": "Across medical and general datasets, GradAudit outperformed state-of-the-art baselines in both pretraining and fine-tuning settings, and case studies suggested existing methods underestimate unauthorized data use.",
+  "watch_item": "Gradient-based auditing may require access to model internals and careful interpretation, so results should not be treated as a complete privacy or copyright verdict.",
   "hashtags": [
-    "#AIinMedicine",
-    "#Privacy",
-    "#ModelAuditing",
+    "#AIMedicine",
     "#VisionLanguageModels",
-    "#DataProvenance"
+    "#DataPrivacy",
+    "#ModelAuditing",
+    "#ClinicalNLP"
   ],
   "paper_id": "2026-06-23-arxiv-revealing_training_data_exposure_in_vision_language_large_models_via_parameter_gradients",
   "paper_title": "Revealing Training Data Exposure in Vision Language Large Models via Parameter Gradients",
   "paper_date": "2026-06-23",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-06-27T09:23:15",
+  "generated_at": "2026-06-28T09:53:29",
   "generator": "openai"
 }
