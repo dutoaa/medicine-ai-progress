@@ -1,0 +1,24 @@
+{
+  "key_insight": "TriageRA-CCF uses source-only confidence, clinical coverage, and counterfactual signals to adaptively choose how much LoRA rank to activate per medical question.",
+  "clinical_relevance": "This could help medical LLMs allocate more capacity to harder or less covered questions while keeping parameter-efficient fine-tuning lightweight.",
+  "method": [
+    "Computes three supervision signals from source training data: base-model answer confidence, metadata-cell clinical coverage, and a close-miss counterfactual proxy.",
+    "Trains a straight-through budget router to select among active LoRA rank budgets {2,4,8}.",
+    "Adds budget-cost, entropy, and rank-balance regularization to stabilize routing."
+  ],
+  "evidence_signal": "Across matched CMB-source training on Qwen3-8B and Llama3.1-8B, the method slightly outperformed LoRA, DoRA, and MoELoRA baselines, with modest average gains (+0.21 and +0.16 points vs the strongest external baseline).",
+  "watch_item": "The improvements are small and not uniform across benchmarks or backbones, and adaptive routing may still be sensitive to stabilization and regularization choices.",
+  "hashtags": [
+    "#MedicalNLP",
+    "#LLM",
+    "#LoRA",
+    "#AdaptiveRouting",
+    "#ClinicalAI"
+  ],
+  "paper_id": "2026-06-28-arxiv-triagera_ccf_source_side_clinical_confidence_and_coverage_signals_for_adaptive_rank_budget",
+  "paper_title": "TriageRA-CCF: Source-Side Clinical Confidence and Coverage Signals for Adaptive Rank Budgeting in Medical LLMs",
+  "paper_date": "2026-06-28",
+  "paper_category": "Clinical NLP",
+  "generated_at": "2026-06-30T10:25:43",
+  "generator": "openai"
+}
