@@ -1,24 +1,24 @@
 {
-  "key_insight": "IMCBench shows that multimodal medical LLMs can describe images well yet still vary substantially in safety, accuracy, and uncertainty handling during realistic multi-turn clinical conversations.",
-  "clinical_relevance": "This benchmark highlights the need to evaluate medical AI on conversation-level safety, not just image recognition or single-turn question answering, before considering decision support or triage use.",
+  "key_insight": "IMCBench shows that multimodal medical LLMs can describe images well yet still give unsafe or uncertain clinical guidance, so performance must be judged beyond accuracy alone.",
+  "clinical_relevance": "The benchmark highlights why image-grounded, multi-turn evaluation is important for clinical decision support and triage tools that may influence patient-facing guidance.",
   "method": [
-    "Built image-grounded, multi-turn medical conversations using real public clinical images plus synthetic patient profiles.",
-    "Scored eight frontier multimodal models across safety, accuracy, and uncertainty using 1–5 LLM-as-Jury ratings calibrated to clinician annotations.",
-    "Compared four model families and ran ablations removing visual input or EHR context to test what improves safe guidance."
+    "Built IMCBench using real public clinical images plus synthetic patient profiles for multi-turn medical conversations.",
+    "Evaluated eight frontier multimodal models across safety, accuracy, and appropriate uncertainty using 1–5 LLM-as-Jury scoring calibrated to clinician annotations.",
+    "Ran ablations to test the impact of removing visual input and EHR context on model safety."
   ],
-  "evidence_signal": "Claude Opus 4.6 ranked highest overall at 3.61, with safety declining for malignant and rare cases (Δ = -0.27 each) and dropping when visual input or EHR context was removed.",
-  "watch_item": "Because the benchmark relies on synthetic profiles and LLM-as-Jury scoring, results may not fully capture real-world clinical risk, workflow constraints, or patient diversity.",
+  "evidence_signal": "Claude Opus 4.6 had the highest overall score (3.61), followed by Claude Sonnet 4.6 (3.30) and GPT-5.2 (3.29); safety dropped when visual input or EHR context was removed, and weakened for malignant and rare cases.",
+  "watch_item": "The benchmark relies on synthetic patient profiles and LLM-as-Jury scoring, so results may not fully capture real-world clinical complexity or deployment risk.",
   "hashtags": [
     "#MedicalAI",
     "#MultimodalLLM",
     "#ClinicalNLP",
-    "#AISafety",
-    "#Benchmarking"
+    "#PatientSafety",
+    "#AIBenchmark"
   ],
   "paper_id": "2026-06-26-arxiv-imcbench_a_benchmark_for_multimodal_llms_in_image_grounded_medical_conversations",
   "paper_title": "IMCBench: A benchmark for multimodal LLMs in Image-grounded Medical Conversations",
   "paper_date": "2026-06-26",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-06-30T10:25:20",
+  "generated_at": "2026-07-01T10:37:26",
   "generator": "openai"
 }

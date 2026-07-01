@@ -1,13 +1,13 @@
 {
-  "key_insight": "Frozen medical LLM embeddings can act as a shared space to combine structured EHR variables and discharge notes for primary ICD category prediction.",
-  "clinical_relevance": "This approach may help automate diagnosis coding and support portable EHR representations across hospitals and datasets.",
+  "key_insight": "Frozen medical LLM embeddings can act as a shared representation for combining structured EHR variables and discharge notes to predict primary ICD category.",
+  "clinical_relevance": "This suggests a lightweight way to improve diagnosis coding support and cross-dataset adaptation without retraining a full model.",
   "method": [
-    "Built a MIMIC-IV cohort of 13,645 admissions from the 10 most frequent primary ICD-10 codes, grouped into 7 categories.",
-    "Serialized structured EHR variables into narrative text and combined them with leakage-pruned discharge notes.",
-    "Extracted hidden states from 5 layers of a frozen MedFound-Llama3-8B model and trained linear probes; compared with XGBoost and PLM-ICD baselines, plus a small adapter for MIMIC-III transfer."
+    "Built a MIMIC-IV cohort of 13,645 admissions from 10 common primary ICD-10 codes grouped into 7 categories",
+    "Serialized structured EHR variables into narrative text and combined them with leakage-pruned discharge notes",
+    "Extracted hidden states from a frozen MedFound-Llama3-8B backbone and trained linear probes across layers, with XGBoost and PLM-ICD baselines for comparison"
   ],
-  "evidence_signal": "On MIMIC-IV, the combined probe achieved 87.69% strict accuracy and 91.45% medical accuracy, outperforming single-modality probes and baselines; a 2M-parameter adapter enabled transfer to MIMIC-III with 5% target labels.",
-  "watch_item": "Results depend on careful leakage pruning and dataset-specific label structure, so real-world deployment may require site-specific validation and retraining.",
+  "evidence_signal": "On MIMIC-IV, the combined probe achieved 87.69% strict accuracy and 91.45% medical accuracy, and a small adapter enabled transfer to MIMIC-III using 5% of target labels.",
+  "watch_item": "Performance depends on careful leakage control and may not generalize beyond the tested ICD subset, datasets, or probing setup.",
   "hashtags": [
     "#ClinicalNLP",
     "#ICDCoding",
@@ -19,6 +19,6 @@
   "paper_title": "Primary ICD Category Prediction using LLM-based Probing",
   "paper_date": "2026-06-27",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-06-30T10:25:14",
+  "generated_at": "2026-07-01T10:37:17",
   "generator": "openai"
 }
