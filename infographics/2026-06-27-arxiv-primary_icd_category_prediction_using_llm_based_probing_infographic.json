@@ -1,13 +1,13 @@
 {
-  "key_insight": "Frozen medical LLM embeddings can act as a shared representation for combining structured EHR variables and discharge notes to predict primary ICD category.",
-  "clinical_relevance": "This suggests a lightweight way to improve diagnosis coding support and cross-dataset adaptation without retraining a full model.",
+  "key_insight": "Frozen medical LLM embeddings can act as a shared space that combines structured EHR variables and discharge notes to predict primary ICD category more accurately than single-modality or baseline models.",
+  "clinical_relevance": "This suggests a lightweight way to reuse existing clinical representations for diagnosis coding, multimodal EHR analysis, and cross-dataset adaptation with limited new labels.",
   "method": [
-    "Built a MIMIC-IV cohort of 13,645 admissions from 10 common primary ICD-10 codes grouped into 7 categories",
-    "Serialized structured EHR variables into narrative text and combined them with leakage-pruned discharge notes",
-    "Extracted hidden states from a frozen MedFound-Llama3-8B backbone and trained linear probes across layers, with XGBoost and PLM-ICD baselines for comparison"
+    "Built a MIMIC-IV cohort of 13,645 admissions from the 10 most frequent primary ICD-10 codes, merged into seven categories.",
+    "Serialized structured variables into text and combined them with leakage-pruned discharge notes.",
+    "Extracted hidden states from five layers of a frozen MedFound-Llama3-8B-finetuned model and trained linear probes, plus a compact adapter for MIMIC-III transfer."
   ],
-  "evidence_signal": "On MIMIC-IV, the combined probe achieved 87.69% strict accuracy and 91.45% medical accuracy, and a small adapter enabled transfer to MIMIC-III using 5% of target labels.",
-  "watch_item": "Performance depends on careful leakage control and may not generalize beyond the tested ICD subset, datasets, or probing setup.",
+  "evidence_signal": "On MIMIC-IV, the combined probe achieved 87.69% strict accuracy and 91.45% medical accuracy, outperforming single-modality probes and baseline methods.",
+  "watch_item": "Results depend on careful leakage pruning and dataset-specific label structure, so performance may not transfer directly to other hospitals or coding setups.",
   "hashtags": [
     "#ClinicalNLP",
     "#ICDCoding",
@@ -19,6 +19,6 @@
   "paper_title": "Primary ICD Category Prediction using LLM-based Probing",
   "paper_date": "2026-06-27",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-07-01T10:37:17",
+  "generated_at": "2026-07-02T09:52:27",
   "generator": "openai"
 }
