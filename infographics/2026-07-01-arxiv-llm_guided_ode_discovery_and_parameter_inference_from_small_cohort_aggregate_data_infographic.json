@@ -1,13 +1,13 @@
 {
-  "key_insight": "AgentODE uses an LLM to propose ODE models and then refines parameter distributions from summary statistics to discover interpretable dynamics when patient-level data are scarce.",
-  "clinical_relevance": "This could support privacy-preserving mechanistic modeling for rare diseases, helping researchers infer disease processes from small cohorts without needing individual-level data.",
+  "key_insight": "AgentODE uses an LLM plus iterative inference to discover ODE structure and parameter distributions from summary statistics alone, not individual-level data.",
+  "clinical_relevance": "This could help model rare diseases more interpretablely and privately when patient-level data are scarce, noisy, or hard to share.",
   "method": [
     "LLM proposes candidate ODE structures",
-    "A tool-augmented inference agent updates parameter distributions in a diagnosis–update loop",
-    "Uses population-level summary statistics rather than raw patient trajectories"
+    "Tool-augmented agent refines parameter distributions in a diagnosis–update loop",
+    "Uses population-level summary statistics to capture heterogeneity"
   ],
-  "evidence_signal": "The authors tested AgentODE on three benchmark problems and two clinical datasets, including RDEB with only 231 observations from 46 patients.",
-  "watch_item": "Results depend on summary-statistic quality and LLM-guided structure proposals, so incorrect summaries or model bias could still yield plausible but wrong mechanisms.",
+  "evidence_signal": "The approach was tested on three benchmark problems and two clinical datasets, including RDEB with only 231 observations from 46 patients, and recovered functionally consistent ODEs.",
+  "watch_item": "Results depend on summary-statistic quality and LLM-generated structure proposals, so implausible models may still arise without careful validation.",
   "hashtags": [
     "#AIinMedicine",
     "#RareDisease",
@@ -19,6 +19,6 @@
   "paper_title": "LLM-Guided ODE Discovery and Parameter Inference from Small-Cohort Aggregate Data",
   "paper_date": "2026-07-01",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-07-02T09:52:42",
+  "generated_at": "2026-07-04T09:14:09",
   "generator": "openai"
 }

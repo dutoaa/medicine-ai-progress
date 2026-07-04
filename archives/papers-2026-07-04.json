@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
+    "doi": "10.64898/2026.06.25.26356626",
+    "date": "2026-06-29",
+    "title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
+    "authors": "Fuchs, J.; Satusky, M. J.; Leese, P. J.; Nag, S.; Zipple, I. W.; Baggett, C. D.; Lash, S.; Reeder-Hayes, K.; Wood, W. A.; Johnson, C. T.; Critchley, C.; Krishnamurthy, A. K.; Elston Lafata, J.; Thompson, C. A.; Troester, M. A.; Pfaff, E. R.",
+    "abstract": "Cancer registries enable cancer surveillance at the population level. These registries require significant human-time to read through many different parts of the electronic health record, including structured data and lengthy, free-text clinical reports, to abstract values for hundreds of required variables. Large language models (LLMs) offer the possibility to significantly improve this process by supporting and speeding up cancer registry data abstraction. However, it is unclear how well these models perform at real-world cancer registry abstraction involving multiple cancer types and large patient volumes. Here, we evaluate five foundational LLMs for their ability to reliably abstract cancer registry variables. We leverage hospital cancer registry data from a large regional health system as the ground truth and use LLMs to abstract from clinical reports eight registry variables for 5,939 patients with seven different cancer types. We use a zero-shot prompting strategy to compare LLM ability on commonly abstracted cancer variables with different data types. The results show that larger and more advanced models (Claude Sonnet 4.5, GPT-OSS-120b, GPT-OSS-20b) generally outperform smaller models (Gemma 12b, LLaMA 3.1 8b). The best performing models show F1 scores around 0.8 for cancer registry variables with low cardinality (grade, summary stage, laterality), with only slightly lower F1 scores for variables with high cardinality (primary site, regional nodes examined, regional nodes positive). On the more complex task of precise date extraction, all models showed decreased performance on both diagnosis and treatment dates (exact accuracy [~]0.55 for the best performing models), which increased to [~]0.85 for a tolerance within {+/-}30 days. These results quantify the performance of various models as well as the potential and limitations of LLMs in cancer registry abstraction tasks. Author SummaryCancer registries help us understand who gets cancer, how it is treated, and how outcomes change over time. Today, trained registrars read many parts of the medical record and manually enter hundreds of details, leading to significant delays before cancer researchers can use this data. We tested whether Large Language Models could help with this work. Using clinical reports from 5,939 patients across seven cancer types at a large regional comprehensive cancer center, we asked five different models to capture key cancer registry fields such as where the cancer started, how advanced it is, the tumors grade, and the date of diagnosis. In our study, larger models were generally more accurate than smaller ones, and some open-source models performed comparably to proprietary options. Dates were the hardest information to capture precisely. We provide a realistic benchmark for speeding registry workflows in consultation with cancer registrars.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1.full.pdf"
+      }
+    ],
+    "score": 89,
+    "infographic": {
+      "key_insight": "Large language models can meaningfully assist cancer registry abstraction, with the best models reaching about 0.8 F1 on several common registry variables but performing less well on exact date extraction.",
+      "clinical_relevance": "This suggests LLMs could speed up registry data entry and reduce manual workload, while still requiring careful human oversight for harder fields and high-stakes use.",
+      "method": [
+        "Benchmarked five foundation LLMs in zero-shot prompting",
+        "Abstracted eight cancer registry variables from clinical reports",
+        "Evaluated 5,939 patients across seven cancer types"
+      ],
+      "evidence_signal": "The study compared model outputs against hospital cancer registry ground truth across thousands of patients and multiple variable types, showing stronger performance for low-cardinality fields and weaker exact accuracy for dates.",
+      "watch_item": "Real-world deployment should be cautious because performance varied by variable complexity, and date extraction remained imperfect even for the best models.",
+      "hashtags": [
+        "#CancerRegistry",
+        "#ClinicalNLP",
+        "#LargeLanguageModels",
+        "#HealthAI",
+        "#MedicalDataExtraction"
+      ],
+      "paper_id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
+      "paper_title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
+      "paper_date": "2026-06-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-03T09:51:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
+    "doi": "10.64898/2026.06.19.26355815",
+    "date": "2026-06-29",
+    "title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+    "authors": "Shi, D.; Shugg, T.; Eadon, M. T.; Su, J.; Chen, Y.; Song, Q.",
+    "abstract": "ObjectivePredicting health outcomes from electronic health records (EHRs) is challenging because traditional models rely on structured data and often ignore external medical knowledge. We propose an approach that integrates structured EHR with text-based clinical evidence to improve prediction and interpretability. MethodsWe introduce PHO-Agents, a multi-agent system powered by large language models (LLMs) for health outcome prediction. Structured EHR sequences are encoded to produce attention-based representations and initial logits, which are converted into patient summaries by a data agent. A retrieval agent gathers relevant clinical guidelines. Research and practical doctor agents independently assess the patient, and a leader agent synthesizes their analyses. Outputs from the EHR-based model and the LLM agents are fused to generate final predictions and explanation reports. PHO-Agents was evaluated on three real-world cohorts: acute kidney injury (AKI) patients (in-hospital mortality), chronic kidney disease patients (AKI onset within two years), and cancer patients receiving immune checkpoint inhibitors (immune-related adverse events within one year). ResultsPHO-Agents outperformed single-agent and multi-agent LLM baselines across all cohorts. In the AKI mortality task, it achieved a PR-AUC of 90.20 {+/-} 2.07, compared with 56.46 {+/-} 2.98 for the best single-agent baseline. Similar gains were observed in the ICI and CKD cohorts. Ablation studies showed that both multi-agent reasoning and logit-level fusion contributed to performance improvements, and case analyses demonstrated clinically consistent explanations. ConclusionPHO-Agents integrates longitudinal EHR modeling with collaborative LLM reasoning, improving predictive performance, interpretability, and robustness across diverse clinical tasks. This hybrid approach offers a trustworthy strategy for real-world clinical decision support.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1.full.pdf"
+      }
+    ],
+    "score": 89,
+    "infographic": {
+      "key_insight": "PHO-Agents combines structured EHR modeling with multi-agent LLM reasoning to improve health outcome prediction and generate more interpretable explanations.",
+      "clinical_relevance": "This hybrid system could support clinical decision-making by predicting patient risks more accurately while grounding outputs in external medical evidence.",
+      "method": [
+        "Encoded longitudinal EHR data to create patient representations and initial prediction logits.",
+        "Converted EHR outputs into patient summaries for a data agent.",
+        "Used retrieval plus research, doctor, and leader agents to review evidence and synthesize final predictions and explanations; fused these with the EHR model output."
+      ],
+      "evidence_signal": "Evaluated on three real-world cohorts (AKI mortality, CKD-to-AKI onset, and ICI-related adverse events) and outperformed single-agent and multi-agent LLM baselines, including PR-AUC 90.20 ± 2.07 vs 56.46 ± 2.98 in AKI mortality.",
+      "watch_item": "The approach depends on reliable retrieval, LLM reasoning, and site-specific EHR data quality, so real-world deployment may require careful validation and oversight.",
+      "hashtags": [
+        "#AIinMedicine",
+        "#ClinicalNLP",
+        "#EHR",
+        "#MultiAgentAI",
+        "#HealthPrediction"
+      ],
+      "paper_id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
+      "paper_title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+      "paper_date": "2026-06-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-03T09:51:51",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-gaps_in_congenital_heart_disease_care_social_drivers_and_clinical_consequences",
+    "doi": "10.64898/2026.06.24.26356504",
+    "date": "2026-06-29",
+    "title": "Gaps in Congenital Heart Disease Care: Social Drivers and Clinical Consequences",
+    "authors": "Zaidi, A. H.; Alberts, A.; Kwan, A.; Sai Prashanthi, G.; Jenkins, K.; Saleeb, S. F.; Sood, E.; Kazak, A.; de Ferranti, S. D.",
+    "abstract": "BackgroundGaps in care (GIC) among patients with congenital heart disease (CHD) are associated with adverse outcomes, yet the specific social and healthcare-related factors contributing to GIC and the clinical consequences of delayed re-engagement in care remain poorly characterized. Large electronic medical record datasets often cannot distinguish true GIC from clinically appropriate care patterns or capture the patient-level factors contributing to GIC. MethodsWe conducted a retrospective cohort study, combining large data with manual chart review, of 1,746 patients of all ages with surgically repaired CHD between 2003 and 2020 at a tertiary care center serving four states. GIC was defined as more than 3 years and 3 months between cardiology visits and exceeding the physician recommended follow-up interval. ResultsOf the cohort, 916 patients (52%) met criteria for potential GIC. Following a structured manual chart review, a substantial subset was reclassified as having appropriate care, leaving 275 patients (15.7%) with true GIC. After multivariable adjustment, older age and simple anatomic CHD complexity were independently associated with GIC. Among patients with GIC, 17.8% had a documented contributor, most commonly insurance instability or social factors. Forty-one and one-half percent returned to care (RTC), and many were asymptomatic but had significant disease progression. Thirteen percent of patients who RTC required cardiac intervention, including semi-urgent or urgent procedures, and 26.7% of those requiring intervention experienced significant morbidity or mortality, including stroke, infective endocarditis, urgent transplant referral, or death. These outcomes occurred across all levels of CHD complexity, including patients with simple CHD. ConclusionsGIC remain prevalent in patients with surgically repaired CHD and are associated with significant morbidity and mortality across the full spectrum of anatomic complexity. They are most often driven by insurance instability and social vulnerability rather than clinical factors, and many adverse outcomes may be preventable with consistent longitudinal care. These findings support a shift toward proactive care models that integrate standardized follow-up pathways, systematic assessment of patient-level needs, and emerging analytic tools to identify at-risk patients before GIC occur. CLINICAL PERSPECTIVEO_ST_ABSWhat Is New?C_ST_ABSO_LIGaps in care (GIC) remained common among patients with surgically repaired CHD and were associated with insurance instability, social vulnerability, asymptomatic disease progression, major adverse clinical events, and death. C_LI What Are the Clinical Implications?O_LIReducing GIC and its consequences will require systematic assessment of social and patient-reported needs, education that asymptomatic status does not imply disease stability, and emerging predictive tools such as artificial intelligence to identify patients at risk for disengagement before adverse outcomes occur. C_LI",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356504v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356504v1.full.pdf"
+      }
+    ],
+    "score": 83,
+    "infographic": {
+      "key_insight": "In surgically repaired congenital heart disease, true gaps in cardiology follow-up are common and are often linked to insurance instability and social vulnerability rather than medical need alone.",
+      "clinical_relevance": "Missed follow-up can lead to silent disease progression and serious outcomes, including urgent intervention, stroke, infection, transplant referral, or death, even in patients with simple CHD.",
+      "method": [
+        "Retrospective cohort of 1,746 patients with surgically repaired CHD at a tertiary center (2003–2020)",
+        "Combined electronic medical record data with structured manual chart review to distinguish true gaps in care from appropriate follow-up patterns",
+        "Defined gap in care as >3 years and 3 months between cardiology visits and beyond the recommended follow-up interval"
+      ],
+      "evidence_signal": "Large real-world dataset with adjudicated chart review: 52% screened as possible gaps, but only 15.7% were confirmed as true gaps in care.",
+      "watch_item": "Single-center retrospective data may undercount social contributors and limit generalizability to other health systems, populations, and insurance environments.",
+      "hashtags": [
+        "#CongenitalHeartDisease",
+        "#HealthDisparities",
+        "#CareContinuity",
+        "#SocialDeterminantsOfHealth",
+        "#Cardiology"
+      ],
+      "paper_id": "2026-06-29-medrxiv-gaps_in_congenital_heart_disease_care_social_drivers_and_clinical_consequences",
+      "paper_title": "Gaps in Congenital Heart Disease Care: Social Drivers and Clinical Consequences",
+      "paper_date": "2026-06-29",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-07-03T09:51:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-artificial_intelligence_in_medical_imaging_with_emphasis_on_generative_and_foundation_base",
+    "doi": "10.64898/2026.06.26.26356684",
+    "date": "2026-06-29",
+    "title": "Artificial Intelligence in Medical Imaging With Emphasis on Generative and Foundation-Based Methods: A Bibliometric Analysis of Global and United Kingdom Research, 2017-2025",
+    "authors": "Naidu, J. S.; Baskaradoss, V.",
+    "abstract": "BackgroundArtificial intelligence (AI), including generative and foundation-based methods, has rapidly expanded within medical imaging research. However, the structure, citation impact, collaboration patterns, and thematic orientation of national research ecosystems remain incompletely characterised. ObjectivesTo evaluate global research trends in AI applied to medical imaging between 2017 and 2025, with detailed analysis of United Kingdom (UK)-affiliated output, citation performance, collaboration structure, funding landscape, and thematic evolution, with emphasis on generative and foundation-based methodologies. Materials and MethodsA bibliometric analysis of Scopus-indexed publications (2017-2025) was performed using a predefined search strategy targeting AI and medical imaging concepts, with emphasis on generative and foundation-based terms. Records were analysed globally and filtered for UK affiliation. Descriptive indicators including total publications (TP), total citations (TC), citations per paper (CPP), and year-on-year growth were calculated. Co-authorship and keyword co-occurrence networks were generated using VOSviewer (v1.6.19). ResultsA total of 13,452 publications were identified globally (194,650 citations; global CPP 14.47), of which 889 (6.61%) were UK-affiliated. The UK ranked fourth by publication volume yet demonstrated higher citation efficiency (CPP 21.00) than several higher-volume countries. UK output increased approximately 18-fold between 2017 and 2025, with evidence of a citation-lag effect in recent years. Research activity was concentrated within a small number of institutions accounting for nearly half of national output, although citation impact varied independently of volume. Journal-dominant dissemination was associated with higher average citation impact compared with conference-centric models. Keyword analysis identified three principal thematic clusters: generative/deep learning methodologies, MRI- and diffusion-focused applications, and broader diagnostic imaging workflows. Highly cited publications were initially dominated by generative adversarial network-based reconstruction and synthesis, with recent rapid citation growth observed in diffusion and foundation-model architectures. ConclusionUK-affiliated research represents a rapidly expanding and highly cited component of the global AI medical imaging literature, with increasing emphasis on generative, diffusion-based, and foundation-model approaches. These findings provide a reproducible bibliometric baseline for monitoring research activity, collaboration patterns, and potential translational priorities, while recognising that citation-based indicators do not directly measure clinical implementation, methodological quality, or real-world impact.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356684v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356684v1.full.pdf"
+      }
+    ],
+    "score": 79,
+    "infographic": {
+      "key_insight": "AI research in medical imaging grew rapidly from 2017-2025, with the UK producing a smaller share of papers but achieving relatively high citation impact and a shift toward generative and foundation-based methods.",
+      "clinical_relevance": "The findings suggest AI-enabled imaging tools are becoming more influential in research and may increasingly shape reconstruction, synthesis, and diagnostic workflows, though translation to routine care still depends on validation and implementation quality.",
+      "method": [
+        "Scopus bibliometric analysis of AI-related medical imaging publications from 2017-2025",
+        "Compared global output with a UK-affiliated subset using TP, TC, CPP, and growth trends",
+        "Mapped co-authorship and keyword networks with VOSviewer to identify collaboration and thematic clusters"
+      ],
+      "evidence_signal": "The dataset included 13,452 global publications with 194,650 citations, and 889 UK-affiliated papers with a higher CPP (21.00) than the global average (14.47).",
+      "watch_item": "Recent years may show a citation-lag effect, so newer generative and foundation-model papers may be undercounted in impact despite growing activity.",
+      "hashtags": [
+        "#MedicalImaging",
+        "#ArtificialIntelligence",
+        "#GenerativeAI",
+        "#FoundationModels",
+        "#Bibliometrics"
+      ],
+      "paper_id": "2026-06-29-medrxiv-artificial_intelligence_in_medical_imaging_with_emphasis_on_generative_and_foundation_base",
+      "paper_title": "Artificial Intelligence in Medical Imaging With Emphasis on Generative and Foundation-Based Methods: A Bibliometric Analysis of Global and United Kingdom Research, 2017-2025",
+      "paper_date": "2026-06-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-07-03T09:51:57",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
+    "doi": "10.64898/2026.04.21.26351389",
+    "date": "2026-06-28",
+    "title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
+    "authors": "Jourdan, O.; Duchiron, M.; Torrent, J.; Turpinat, C.; Mondesert, E.; Busto, G.; Morchikh, M.; Dornadic, M.; Delaby, C.; Hirtz, C.; Thizy, L.; Barnier-Figue, G.; Perrein, F.; Jurici, S.; Gabelle, A.; Bennys, K.; Lehmann, S.",
+    "abstract": "BackgroundIn neurodegenerative diseases, the diagnostic value of -synuclein seed amplification assay (SAA) in routine clinical practice and its relationship with cognitive performance and fluid biomarkers remains incompletely characterized. In addition, although Alzheimer disease (AD) CSF and blood biomarkers accurately detect amyloid and tau pathology, their ability to identify concomitant -synuclein (Syn) pathology remains unknown. MethodsWe included 398 patients from the multicenter memory clinic ALZAN cohort. All participants underwent CSF and blood sampling with measurement of CSF biomarkers (A{beta}42/40, tau, p-tau181) and plasma biomarkers (A{beta}42/40, p-tau181, p-tau217, GFAP, NfL). Cognitive assessment was performed using the Mini-Mental State Examination (MMSE). Clinical diagnoses were independently confirmed by two senior neurologists. Syn status was determined by SAA (RT-QuIC). ResultsOf 398 patients, 19/20 patients with Lewy body dementia (LBD) (95.0%) and 32/203 patients with AD (15.8%) were SAA+. SAA-positivity presented a sensitivity of 95.0% (95%CI, 75.1-99.9), a specificity of 93.1% (95%CI, 88.3-96.4) for distinguishing LBD from patients without LBD or AD. In the entire cohort, SAA+ patients showed lower MMSE scores (p<0.01), lower CSF A{beta}42/40 ratio (p<0.01), and elevated plasma GFAP (p<0.05). However, within the AD subgroup, only CSF A{beta}42/40 differed marginally between SAA+ and SAA- patients, whereas CSF total tau, CSF p-tau181, plasma p-tau217, p-tau181, GFAP, and NfL showed no significant differences. ConclusionsSAA accurately detects Syn pathology in routine memory clinic practice that is not captured by current AD CSF and blood biomarkers. These findings support SAA as a complementary biomarker for routine diagnosis and patient stratification. What is already known on this topic-synuclein seed amplification assay (SAA) has shown high sensitivity and specificity for detecting Lewy body dementia (LBD) in research cohorts, and -synuclein co-pathology is frequently observed in Alzheimers disease (AD). However, it remains unknown whether currently available AD CSF and blood biomarkers can identify patients with -synuclein pathology in routine clinical practice. What this study addsIn a prospective multicenter memory clinic cohort, SAA showed high sensitivity (95.0%) and specificity (93.5%) for identifying clinically diagnosed LBD and detected Syn co-pathology in 15.8% of AD patients. Current AD CSF and blood biomarkers did not discriminate between SAA-positive and SAA-negative patients, providing little information on concomitant Syn pathology. How this study might affect research, practice or policySAA provides unique biological information by improving the detection of LBD and identifying AD patients with concomitant Syn co-pathology that is not captured by current CSF and blood biomarkers, thereby improving patient stratification and informing future precision medicine approaches and therapeutic trials.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-06-28",
+    "updated": "2026-06-28",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2.full.pdf"
+      }
+    ],
+    "score": 78,
+    "infographic": {
+      "key_insight": "In routine memory-clinic practice, α-synuclein seed amplification assay (SAA) detected Lewy body pathology with high accuracy and identified α-synuclein co-pathology that standard Alzheimer fluid biomarkers largely missed.",
+      "clinical_relevance": "SAA may be a useful complementary biomarker for improving diagnosis and patient stratification when Lewy body disease or mixed pathology is suspected.",
+      "method": [
+        "398 patients from a multicenter memory-clinic cohort were studied.",
+        "CSF and plasma Alzheimer biomarkers were measured alongside MMSE and clinician-confirmed diagnoses.",
+        "α-synuclein status was determined using RT-QuIC seed amplification assay."
+      ],
+      "evidence_signal": "Among 20 Lewy body dementia cases, 95.0% were SAA-positive, and SAA showed 95.0% sensitivity and 93.1% specificity for distinguishing LBD from non-LBD/non-AD patients; within AD, most CSF and plasma biomarkers did not separate SAA+ from SAA- cases.",
+      "watch_item": "This is a single cohort from memory-clinic practice, so broader performance and how best to integrate SAA into workflows still need external validation.",
+      "hashtags": [
+        "#Neurology",
+        "#Biomarkers",
+        "#LewyBodyDementia",
+        "#AlzheimersDisease",
+        "#Diagnostics"
+      ],
+      "paper_id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
+      "paper_title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
+      "paper_date": "2026-06-28",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-07-03T09:52:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-eeg_based_identification_of_adolescent_non_suicidal_self_injury_and_neurophysiological_int",
+    "doi": "10.64898/2026.06.23.26356351",
+    "date": "2026-06-29",
+    "title": "EEG-Based Identification of Adolescent Non-Suicidal Self-Injury and Neurophysiological Interpretation Using an Explainable Deep Learning Framework",
+    "authors": "Liu, T.; Liu, X.; Bao, Y.; Li, W.; Lin, G. N.",
+    "abstract": "Non-suicidal self-injury (NSSI) among adolescents is a prevalent mental health problem and an important indicator of potential suicide risk. Early objective identification and neural mechanism analysis are therefore crucial for clinical screening and intervention. Traditional assessments mainly rely on self-report scales and clinical interviews, which are vulnerable to subjective bias, clinical experience, and missed diagnosis. Electroencephalography (EEG), with its non-invasive, low-cost, and high-temporal-resolution characteristics, provides a promising physiological basis for identifying NSSI-related neural abnormalities. However, EEG-based intelligent recognition of adolescent NSSI remains limited, and existing studies often emphasize classification performance while lacking systematic neurophysiological interpretation. To address these issues, this study proposes CGA-NSSI, a lightweight deep learning framework for adolescent NSSI recognition. The model integrates a one-dimensional convolutional neural network, bidirectional gated recurrent unit, and multi-head self-attention mechanism to extract local spatiotemporal EEG features, model long-range temporal dependencies, and focus on key pathology-related time segments and channels. A standardized preprocessing pipeline, together with Mixup augmentation and Focal Loss, is further used to alleviate sample imbalance and improve robustness in small clinical EEG datasets. Experiments on a real-world adolescent clinical EEG dataset show that CGA-NSSI can effectively identify NSSI-related EEG patterns under imbalanced sample conditions. Interpretability and functional connectivity analyses further reveal prefrontal-centered cross-regional network reorganization, excessive static functional coupling, reduced dynamic connectivity fluctuations, and increased abnormal state occupancy. These findings suggest that CGA-NSSI not only improves objective NSSI recognition but also provides neurophysiological evidence for understanding adolescent self-injury.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "psychiatry and clinical psychology",
+    "categories": [
+      "psychiatry and clinical psychology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356351v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356351v1.full.pdf"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "A lightweight EEG deep-learning model (CGA-NSSI) can identify adolescent non-suicidal self-injury while highlighting prefrontal-centered brain network abnormalities.",
+      "clinical_relevance": "This could support more objective screening of NSSI risk in adolescents alongside interviews and self-report tools, especially where EEG is available.",
+      "method": [
+        "1D CNN + BiGRU + multi-head self-attention to capture local, long-range, and salient EEG features",
+        "Mixup augmentation and Focal Loss to address class imbalance in small clinical datasets",
+        "Interpretability plus functional connectivity analysis to link predictions with neurophysiology"
+      ],
+      "evidence_signal": "On a real-world adolescent clinical EEG dataset, the model performed well under imbalanced conditions and the analyses showed altered connectivity patterns consistent with NSSI-related neural changes.",
+      "watch_item": "The findings come from a clinical EEG dataset, so external validation and real-world generalization before deployment remain important.",
+      "hashtags": [
+        "#EEG",
+        "#AdolescentMentalHealth",
+        "#NSSI",
+        "#ExplainableAI",
+        "#Diagnostics"
+      ],
+      "paper_id": "2026-06-29-medrxiv-eeg_based_identification_of_adolescent_non_suicidal_self_injury_and_neurophysiological_int",
+      "paper_title": "EEG-Based Identification of Adolescent Non-Suicidal Self-Injury and Neurophysiological Interpretation Using an Explainable Deep Learning Framework",
+      "paper_date": "2026-06-29",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-07-03T09:52:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-proposed_context_of_use_evaluation_framework_for_medication_management_tasks_completed_by",
+    "doi": "10.64898/2026.06.26.26356706",
+    "date": "2026-06-29",
+    "title": "Proposed Context-of-Use Evaluation Framework for Medication Management Tasks Completed by Generative Artificial Intelligence",
+    "authors": "Henry, K.; Blotske, K.; Smith, B.; Li, T.; Gao, Y.; Zhao, X.; Liu, T.; Sikora, A.",
+    "abstract": "BackgroundStandardized evaluation of agentic artificial intelligence (AI) for medication management is lacking. Given the potential lethality of medication errors endorsed or missed by AI, performance evaluation constructs are essential. The purpose of this evaluation was to develop a standardized grading framework for performance evaluation of medication management tasks. MethodsA mixed-methods approach was undertaken that included literature evaluation for standards and best practices of comprehensive medication management (CMM), panel discussions, and iterative application to set of cases. The goal was to develop a grading framework that effectively evaluated domains like safety, factuality, and clinical relevance that can be employed for a broad range of medication domains (i.e., electrolyte replacement, antibiotic selection). Inter-rater reliability with intraclass Krippendorffs Alpha was the primary outcome. ResultsA total of 5 panelists developed the CMM Evaluation Framework, which includes 4 dimensions: safety, factuality, completeness, and preference. These dimensions are applied to three CMM skills: collecting patient data, analyzing information, and designing regimens. Each dimension is rated from 1-5. An additional dimension evaluated the presence of hallucinations and errors with high harm scores (i.e., \"absolute failure\" criteria regardless of an overall score). The Krippendorffs Alpha was highest in the medication therapy problem and medication therapy format categories, for 50 pneumonia cases, run in triplicate (150 total). ConclusionsThis framework is informed by national standards for CMM and the healthcare professionals dedicated to the provision of this service. These domains allow for the possibilities of practice variation via the preference domain while also having strong guardrails against the commission of medication errors. Further analyses beyond pilot testing are necessary.",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health systems and quality improvement",
+    "categories": [
+      "health systems and quality improvement"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356706v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356706v1.full.pdf"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "The paper proposes a standardized scoring framework for evaluating generative AI on medication management tasks, balancing safety guardrails with room for clinical preference.",
+      "clinical_relevance": "This could help compare AI tools more consistently before they are used to support medication-related decisions, where errors can be high-risk.",
+      "method": [
+        "Literature review of comprehensive medication management standards and best practices",
+        "Panel discussions with 5 experts",
+        "Iterative testing of the framework on case sets"
+      ],
+      "evidence_signal": "In pilot testing, inter-rater reliability was the main outcome, with the highest Krippendorff’s alpha seen in medication therapy problem and medication therapy format categories across 50 pneumonia cases run in triplicate (150 evaluations).",
+      "watch_item": "The framework is still in pilot stage, so broader validation is needed before it can be relied on for real-world implementation.",
+      "hashtags": [
+        "#AIinHealthcare",
+        "#MedicationSafety",
+        "#HealthSystems",
+        "#ClinicalEvaluation",
+        "#GenerativeAI"
+      ],
+      "paper_id": "2026-06-29-medrxiv-proposed_context_of_use_evaluation_framework_for_medication_management_tasks_completed_by",
+      "paper_title": "Proposed Context-of-Use Evaluation Framework for Medication Management Tasks Completed by Generative Artificial Intelligence",
+      "paper_date": "2026-06-29",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-07-03T09:52:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-30-medrxiv-infoxmed2_0_27b_instruction_tuning_preference_alignment_and_grpo_based_reward_model_traini",
+    "doi": "10.64898/2026.06.25.26356522",
+    "date": "2026-06-30",
+    "title": "Infoxmed2.0-27B: Instruction Tuning, Preference Alignment, and GRPO-Based Reward Model Training for Medical LLMs",
+    "authors": "Xie, J.; Guo, Z.; Zhao, H.; Ni, H.",
+    "abstract": "Large language models (LLMs) [1], [2] have demonstrated remarkable capabilities across general domains, yet their application in specialized medical contexts demands rigorous domain adaptation [3], [4]. We present Infoxmed2.0-27B, a medical foundation model built upon Qwen3.5-27B [5] through a comprehensive multi-stage post-training pipeline: (1) proprietary medical data synthesis from a MySQL database with MedicalCategoryTree organization, medical PhD team validation, Chinese RoBERTa [6] semantic deduplication, and API-assisted language refinement; (2) instruction supervised fine-tuning of Qwen3.5-27B via LoRA [7] (r = 8, = 32) using MS-Swift [8], producing iterations Infoxmed2.0.0[-&gt;] 2.0.2[-&gt;] 2.0.4; (3) Direct Preference Optimization (DPO) [9] on 6,283 curated medical preference pairs [10] using DPO-RPO loss ({beta} = 0.3, RPO = 0.1) across eight progressive training iterations (v0-v7); and (4) parallel Group Relative Policy Optimization (GRPO) [11]-based medical reward model training on Qwen3.5 combining internal rule-based reward functions with external DeepSeek signals. Comprehensive evaluations under a uniform LLM-as-Judge [12] framework with GPT-5.4 demonstrate 77.0% accuracy (mean quality score +7.18) on MedMCQA [10] and +2.59 on HLE, with pipeline progression from +6.69 (base) to +7.06 (SFT) to +7.18 (final).",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-30",
+    "updated": "2026-06-30",
+    "primary_category": "medical education",
+    "categories": [
+      "medical education"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356522v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356522v1.full.pdf"
+      }
+    ],
+    "score": 67,
+    "infographic": {
+      "key_insight": "The paper presents a multi-stage post-training pipeline to turn Qwen3.5-27B into a medical LLM using synthetic data curation, supervised fine-tuning, preference optimization, and GRPO-based reward training.",
+      "clinical_relevance": "This kind of domain adaptation aims to improve the quality and consistency of medical question answering, which could support clinician-facing and educational NLP tools.",
+      "method": [
+        "Synthetic medical data were generated from a MySQL-based knowledge structure, validated by medical PhDs, deduplicated with Chinese RoBERTa, and linguistically refined.",
+        "The base model was instruction-tuned with LoRA using MS-Swift, then improved through multi-iteration DPO on 6,283 curated preference pairs.",
+        "A parallel GRPO-based reward model used internal rules plus external DeepSeek signals to shape medical response quality."
+      ],
+      "evidence_signal": "Under a uniform LLM-as-Judge evaluation with GPT-5.4, the pipeline reached 77.0% accuracy on MedMCQA and improved mean quality scores from +6.69 at baseline to +7.18 in the final model.",
+      "watch_item": "The results are reported with LLM-as-Judge and task-specific benchmarks, so real-world clinical reliability, safety, and generalization beyond the evaluated data remain uncertain.",
+      "hashtags": [
+        "#MedicalAI",
+        "#LLM",
+        "#InstructionTuning",
+        "#PreferenceAlignment",
+        "#ClinicalNLP"
+      ],
+      "paper_id": "2026-06-30-medrxiv-infoxmed2_0_27b_instruction_tuning_preference_alignment_and_grpo_based_reward_model_traini",
+      "paper_title": "Infoxmed2.0-27B: Instruction Tuning, Preference Alignment, and GRPO-Based Reward Model Training for Medical LLMs",
+      "paper_date": "2026-06-30",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-03T09:52:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-cross_llm_ai_platform_meta_research_non_inferiority_of_bovine_milk_based_fortifiers_to_hum",
+    "doi": "10.64898/2026.06.24.26356426",
+    "date": "2026-06-29",
+    "title": "Cross-LLM AI platform meta-research: Non-inferiority of bovine milk-based fortifiers to human milk-based fortifiers",
+    "authors": "Ni, D.; Ge, A.; Mishra, A.; Oei, J. L.; Nanan, R.",
+    "abstract": "Necrotizing enterocolitis (NEC), frequently resulting in sepsis, is among the leading causes of morbidity and mortality of pre-term newborns. However, diagnostic and therapeutic strategies for NEC and sepsis are still limited and controversial. In this context, there are ongoing debates regarding the application of human milk-based fortifiers (HMF) versus bovine milk-based fortifiers (BMF), but robust evidence is lacking. Systematic reviews and meta-analyses are expected to provide the highest level of evidence, but they are time-consuming and resource-intensive and are at risk of potential bias and subjectivity. The rapidly progressing large language model (LLM) artificial intelligence (AI) tools thus emerge as a promising complementary methodology for systematic review and meta-analysis. We conceptualized a cross-LLM AI platform meta-research and evidence synthesis workflow, leveraging 3 representative state-of-the-art platforms, ChatGPT, Claude and Manus AI. We analyzed 3371 PubMed-indexed publications. 3 platforms reported highly concordant findings. We found that prior systematic reviews and meta-analyses generally reported mixed findings comparing HMF versus BMF. Our LLM AI-assisted meta-research and evidence synthesis found non-inferiority of BMF to HMF for NEC and sepsis outcomes. Here, we present an unbiased direct head-to-head comparison between HMF and BMF in the context of NEC and sepsis. Our analyses also represent a proof-of-concept example for LLM AI-assisted meta-research and evidence synthesis, supporting the integration of LLM AI methodologies into evidence-based medicine and digital health.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "nutrition",
+    "categories": [
+      "nutrition"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356426v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356426v1.full.pdf"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "Across three LLM platforms, the study reports that bovine milk-based fortifiers were non-inferior to human milk-based fortifiers for NEC and sepsis outcomes.",
+      "clinical_relevance": "If supported by further evaluation, this could inform neonatal nutrition decisions and highlights how AI-assisted evidence synthesis may speed comparisons in preterm infant care.",
+      "method": [
+        "Cross-LLM meta-research workflow using ChatGPT, Claude, and Manus AI",
+        "Reviewed 3,371 PubMed-indexed publications",
+        "Compared prior systematic reviews/meta-analyses and synthesized NEC and sepsis findings"
+      ],
+      "evidence_signal": "The abstract reports highly concordant outputs across three platforms and a synthesis of 3,371 PubMed-indexed studies, with mixed findings in prior reviews but a final non-inferiority conclusion for BMF.",
+      "watch_item": "This is a proof-of-concept AI-assisted synthesis, so conclusions may still depend on study quality, selection choices, and the risk of bias in the underlying literature.",
+      "hashtags": [
+        "#AIinMedicine",
+        "#SystematicReview",
+        "#MetaAnalysis",
+        "#NeonatalCare",
+        "#EvidenceBasedMedicine"
+      ],
+      "paper_id": "2026-06-29-medrxiv-cross_llm_ai_platform_meta_research_non_inferiority_of_bovine_milk_based_fortifiers_to_hum",
+      "paper_title": "Cross-LLM AI platform meta-research: Non-inferiority of bovine milk-based fortifiers to human milk-based fortifiers",
+      "paper_date": "2026-06-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-03T09:52:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-ai_as_a_signal_assessor_can_a_large_language_model_perform_causality_assessment_on_a_case",
+    "doi": "10.64898/2026.06.26.26356656",
+    "date": "2026-06-29",
+    "title": "AI as a signal assessor - Can a Large Language Model perform causality assessment on a case series?",
+    "authors": "Shenoy, A.; Zekarias, A.; Viklund, A.; Mitchell, J.; Barrett, J.; Sandberg, L.; Meldau, E.-L.; Taavola-Gustafsson, H.",
+    "abstract": "BackgroundLarge Language Models (LLMs) are increasingly explored for pharmacovigilance tasks, including information extraction, case documentation, and single-case causality assessment. However, their ability to support causality assessment at the case series level -- a complex, time-intensive task requiring clinical reasoning across multiple reports -- remains unexplored. ObjectiveTo investigate how a large-scale general-purpose LLM can support pharmacovigilance professionals in assessing causality in a case series, and to explore how prompt design influences the quality of the models reasoning. MethodsGPT-4o was used to assess causality for five drug - adverse event combinations, using an adaptation of the Bradford Hill viewpoints for case series assessment. The combinations represented varying drugs and vaccines, adverse events, and case series sizes (5-402 reports). One combination served as a negative control. Structured prompts were iteratively developed and refined using one combination, then applied to all combinations. LLM-generated assessments for each viewpoint were qualitatively evaluated by human annotators for accuracy (precision), and the LLMs coverage of key aspects from the original signal text was assessed for one combination (recall). ResultsAcross all five combinations, annotators agreed with 79-92% of the LLMs output sentences. Full disagreement was consistently low (3-7%), with errors typically involving misinterpretation of complex report details rather than outright fabrication. Prompt design substantially influenced output quality; providing Bradford Hill viewpoint descriptions, including case series data, and adding explicit anti-hallucination instructions improved specificity and grounding. For the recall assessment, 15 of 23 key segments from the original signal text were reflected in the LLM output. The overall summary assessments demonstrated balanced reasoning, correctly distinguishing between positive safety signals and the negative control, and provided a coherent synthesis suitable as a starting point for human assessors. ConclusionsLLMs have the potential to generate contextually nuanced and largely accurate preliminary causality assessments of case series aligned with the Bradford Hill viewpoints, with a low but non-zero hallucination rate. These findings support LLMs as a tool to augment, not replace, expert judgment in signal assessment. Future work should address larger and more diverse signal sets, improved evaluation frameworks for generative output, and the integration of pre-computed summary statistics to reduce errors. Key pointsO_LIA large language model (GPT-4o) can support pharmacovigilance professionals by generating preliminary causality assessments of a case series that align with human expert judgment. C_LIO_LIGenerated in minutes, such assessments could give assessors a structured starting point for in-depth review, condensing case-level information and surfacing early evidence for or against a signal. C_LIO_LIOutput quality depended heavily on prompt design, and because the hallucination rate was low but not zero, these tools should augment, not replace, expert judgment in signal assessment. C_LI",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "pharmacology and therapeutics",
+    "categories": [
+      "pharmacology and therapeutics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356656v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356656v1.full.pdf"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "A general-purpose LLM (GPT-4o) can help draft case-series causality assessments for pharmacovigilance, with prompt design strongly affecting output quality.",
+      "clinical_relevance": "This suggests LLMs may speed up early signal assessment work by providing a structured starting point for human reviewers, rather than replacing expert judgment.",
+      "method": [
+        "GPT-4o assessed causality for five drug/adverse-event combinations using Bradford Hill-style viewpoints adapted for case series.",
+        "The combinations included different drugs/vaccines, event types, and case-series sizes; one combination was a negative control.",
+        "Prompts were iteratively refined on one case, then applied to all combinations and evaluated by human annotators."
+      ],
+      "evidence_signal": "Annotators agreed with 79–92% of the model’s output sentences, and 15 of 23 key signal segments were reflected in the LLM output for the recall check.",
+      "watch_item": "The model can misread complex report details, so its outputs need expert review and careful prompt design before use in real pharmacovigilance workflows.",
+      "hashtags": [
+        "#Pharmacovigilance",
+        "#LargeLanguageModels",
+        "#ClinicalNLP",
+        "#DrugSafety",
+        "#AIinHealthcare"
+      ],
+      "paper_id": "2026-06-29-medrxiv-ai_as_a_signal_assessor_can_a_large_language_model_perform_causality_assessment_on_a_case",
+      "paper_title": "AI as a signal assessor - Can a Large Language Model perform causality assessment on a case series?",
+      "paper_date": "2026-06-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-03T09:52:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-computer_vision_procedural_telemetry_for_airway_guidance_a_public_30_run_manikin_evidence",
+    "doi": "10.64898/2026.06.26.26356677",
+    "date": "2026-06-29",
+    "title": "Computer-Vision Procedural Telemetry for Airway Guidance: A Public 30-Run Manikin Evidence-Package Audit",
+    "authors": "Napier, A.; Klement, S.; Fedeles, B.",
+    "abstract": "BackgroundComputer vision-enabled airway workflows can turn airway video into timestamped model-observation fields, but later blinded review and training studies require source-video linkage, run identifiers, quality-control status, and app/model provenance. ObjectiveTo audit whether a public post-reconciliation 30-run manikin evidence package from a computer vision-enabled video laryngoscopy workflow preserved prespecified, video-linked procedural telemetry in structured JSON, while keeping detection accuracy, report quality, and reviewer agreement outside the current claim. MethodsThirty manikin runs were captured on a HEALTHIBLE Intubation Simulator using an IntuBlade device connected to an iPhone 15 Pro Max. Six predefined conditions were tested with five runs each in planned round-robin order by a board-certified emergency physician operator. The author-affiliated team analyzed corrected Study Metrics JSON exports, the video manifest, app/model metadata, QC fields, and the frozen package checker after reconciliation against the assigned run guide. Blinded video review, independent analysis, and report-quality adjudication were not performed. ResultsAfter reconciliation, all 30 rows contained parseable Study Metrics JSON, a companion videoFilename, run-named Drive video status, QC pass status, and corrected identifiers matching assigned row labels (30/30 for each completeness field; descriptive exact binomial 95% CI, 88.4% to 100.0%). App/model metadata were complete: appVersion 3.3.0 (75), source revision b94cd63, Navigation model, model version 31, and detection threshold 0.1. The exported JSON target-state flag was true in 25 of 25 target-condition rows (95% CI, 86.3% to 100.0%) and false in 5 of 5 no-target controls (95% CI, 47.8% to 100.0%), with zero glottic-detected frames and zero acceptable-view time in no-target controls. Among target-condition rows, median time to first model-detected glottic target was 2 seconds (IQR 1 to 3), median acceptable-view duration was 2.2 seconds (IQR 1.0 to 3.8), and median glottic visibility was 35.8% (IQR 25.8 to 45.6). InterpretationThe corrected package supports a bounded formative claim: simulated airway video can be represented as specified, video-linked computer-vision procedural telemetry after documented reconciliation. It supports package completeness, traceability, and assigned-condition consistency only; it does not establish native uncorrected export reliability, computer-vision detection accuracy, report quality, reviewer agreement, training effectiveness, autonomous guidance, tube-placement confirmation, clinical efficacy, or patient outcomes.",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356677v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356677v1.full.pdf"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "A corrected 30-run manikin evidence package successfully preserved complete, video-linked telemetry and provenance fields for a computer-vision airway workflow in structured JSON.",
+      "clinical_relevance": "This suggests such systems may support later review, auditing, and training by keeping airway video data traceable and organized, without addressing clinical performance here.",
+      "method": [
+        "30 manikin intubation runs on a HEALTHIBLE simulator with an IntuBlade device and iPhone 15 Pro Max",
+        "Six predefined conditions were tested in planned round-robin order, with post-reconciliation review of exported JSON, video manifest, QC fields, and model/app metadata",
+        "Blinded video review, independent analysis, and report-quality adjudication were not performed"
+      ],
+      "evidence_signal": "After reconciliation, all 30 rows had parseable Study Metrics JSON, matching video/run identifiers, QC pass status, and complete app/model provenance; target rows were 25/25 positive and controls 5/5 negative on the exported target-state flag.",
+      "watch_item": "This is a manikin-based, post-reconciliation audit of data completeness, so it should not be read as evidence of clinical accuracy, usability, or workflow safety in real patients.",
+      "hashtags": [
+        "#ComputerVision",
+        "#AirwayManagement",
+        "#MedicalAI",
+        "#DataIntegrity",
+        "#SimulationStudy"
+      ],
+      "paper_id": "2026-06-29-medrxiv-computer_vision_procedural_telemetry_for_airway_guidance_a_public_30_run_manikin_evidence",
+      "paper_title": "Computer-Vision Procedural Telemetry for Airway Guidance: A Public 30-Run Manikin Evidence-Package Audit",
+      "paper_date": "2026-06-29",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-07-03T09:52:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-a_real_world_evaluation_of_failure_detection_for_liver_ct_segmentation",
+    "doi": "10.64898/2026.06.26.26356692",
+    "date": "2026-06-29",
+    "title": "A Real-World Evaluation of Failure Detection for Liver CT Segmentation",
+    "authors": "Bennett, J.; Woodland, M.; Castelo, A.; Altaie, M.; Antony, A.; Siddiqi, N. S.; Long, J. P.; Brock, K. K.",
+    "abstract": "Deep learning models deployed in clinical imaging frequently encounter distribution shifts, yet most out-of-distribution (OOD) detection methods are evaluated only on controlled research datasets. As a result, it is unclear whether existing approaches can reliably identify segmentation failures that arise in real-world clinical practice. We evaluated six OOD detection methods on a deployed liver CT segmentation model (3D nnU-Net) using internal data from 400 patients and external data from 100 patients collected across nearly 70 sites in 7 countries. One method was Pairwise Surface DSC, a surface-based extension of Pairwise DSC, that we introduced. OOD performance was measured using sensitivity, AUROC, and balanced accuracy, with thresholds determined on an independent cohort of 400 patients using the Youden J statistic. Statistical significance was assessed using McNemar tests and stratified bootstraps ( = 0.05) with Benjamini-Hochberg correction. Pairwise Surface DSC was the top-performing method, with perfect sensitivities (1.00), near-perfect AUROCs (0.97 internal; 1.00 external), and the highest balanced accuracies (0.94 internal; 0.88 external; p < 0.001). These results show that automated failure detection for liver CT segmentation is clinically feasible and that Pairwise Surface DSC is a promising candidate for deployment. Our code is available at https://github.com/mckellwoodland/liver_ct_ood_translation.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356692v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356692v1.full.pdf"
+      }
+    ],
+    "score": 58,
+    "infographic": {
+      "key_insight": "Pairwise Surface DSC was the best-performing method for detecting liver CT segmentation failures across internal and external real-world clinical data.",
+      "clinical_relevance": "This suggests automated failure detection for liver CT segmentation could help flag unreliable outputs before they are used in practice.",
+      "method": [
+        "Compared six OOD detection methods on a deployed 3D nnU-Net liver CT segmentation model.",
+        "Tested on 400 internal patients and 100 external patients from nearly 70 sites in 7 countries.",
+        "Set thresholds using an independent 400-patient cohort and evaluated sensitivity, AUROC, and balanced accuracy."
+      ],
+      "evidence_signal": "Pairwise Surface DSC achieved perfect sensitivity (1.00), near-perfect AUROC (0.97 internal; 1.00 external), and the highest balanced accuracy (0.94 internal; 0.88 external).",
+      "watch_item": "Results are promising, but deployment will need validation across new scanners, sites, and workflow settings to ensure robustness.",
+      "hashtags": [
+        "#MedicalImaging",
+        "#AIinMedicine",
+        "#LiverCT",
+        "#OODDetection",
+        "#DigitalHealth"
+      ],
+      "paper_id": "2026-06-29-medrxiv-a_real_world_evaluation_of_failure_detection_for_liver_ct_segmentation",
+      "paper_title": "A Real-World Evaluation of Failure Detection for Liver CT Segmentation",
+      "paper_date": "2026-06-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-07-03T09:52:18",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-efficacy_inference_in_early_phase_non_controlled_clinical_trials_via_bayesian_biomarker_de",
+    "doi": "10.64898/2026.06.26.26356652",
+    "date": "2026-06-29",
+    "title": "Efficacy inference in early-phase non-controlled clinical trials via Bayesian biomarker deconvolution",
+    "authors": "Humphries, C.; Kilpatrick, A. M.; Cartwright, J. A.; Potter, C.; Fernando, A. J.; Candela, M. E.; Man, J.; Aird, R.; Simpson, K. J.; Lyall, M. J.; Starkey Lewis, P.; Rodriguez, A.; Weir, C. J.; Dear, J. W.; Forbes, S. J.; Schumacher, L. J.",
+    "abstract": "Early-phase clinical trials of therapies for acute organ injury are typically small, uncontrolled, and must infer treatment activity using only tissue-damage biomarker changes over time. Interpretation is confounded by the temporal overlap of ongoing tissue damage and biomarker clearance. We address this with a Bayesian deconvolution framework that fits individual patient biomarker trajectories with an exponentially-modified Gaussian model. This model separates injury kinetics (peak release rate, injury duration, time to peak) from biomarker clearance, using a historic cohort as a null distribution. In a simulated phase 1 dose-escalation regenerative therapy trial, the framework reduces the minimum detectable treatment effect from 67.5% to 24.5% (a 2.76-fold improvement) and supports dose selection. Applied to published case-series data for another therapeutic, the framework recovers per-patient pharmacodynamic signatures consistent with pre-clinical mechanistic studies and supports smaller prospective clinical trial design. With indication-specific recalibration, the framework architecture conceptually transfers to other acute organ injuries where serum biomarkers reflect tissue damage. This offers a route to significantly reducing clinical trial sizes, supporting therapy dose-finding in non-controlled clinical trials, and identifying pharmacodynamic signatures.",
+    "category": "Drug Discovery",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "pharmacology and therapeutics",
+    "categories": [
+      "pharmacology and therapeutics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356652v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356652v1.full.pdf"
+      }
+    ],
+    "score": 58,
+    "infographic": {
+      "key_insight": "A Bayesian biomarker deconvolution model can separate true tissue-injury dynamics from biomarker clearance, making efficacy signals easier to infer in small uncontrolled early-phase trials.",
+      "clinical_relevance": "This could help researchers estimate treatment activity and select doses in acute organ injury studies while reducing the number of participants needed.",
+      "method": [
+        "Fits individual biomarker time courses with an exponentially modified Gaussian model.",
+        "Deconvolves injury kinetics from biomarker clearance.",
+        "Uses a historic cohort as a null distribution for comparison."
+      ],
+      "evidence_signal": "In simulation, the framework lowered the minimum detectable treatment effect from 67.5% to 24.5% and was also applied to published case-series data to recover patient-level pharmacodynamic signatures.",
+      "watch_item": "Results rely on biomarker-specific, indication-specific recalibration and on historical data quality, so performance may vary across settings and biomarkers.",
+      "hashtags": [
+        "#BayesianModeling",
+        "#Biomarkers",
+        "#ClinicalTrials",
+        "#DrugDiscovery",
+        "#PrecisionMedicine"
+      ],
+      "paper_id": "2026-06-29-medrxiv-efficacy_inference_in_early_phase_non_controlled_clinical_trials_via_bayesian_biomarker_de",
+      "paper_title": "Efficacy inference in early-phase non-controlled clinical trials via Bayesian biomarker deconvolution",
+      "paper_date": "2026-06-29",
+      "paper_category": "Drug Discovery",
+      "generated_at": "2026-07-03T09:52:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-a_curated_reference_dataset_and_deep_learning_model_for_multi_lead_electrocardiographic_in",
+    "doi": "10.64898/2026.06.26.26356665",
+    "date": "2026-06-29",
+    "title": "A curated reference dataset and deep learning model for multi-lead electrocardiographic interval measurements in UK Biobank",
+    "authors": "Kaplan, T.; Ramirez, J.; Young, W. J.; Sanghvi, M. M.; Madrid, J.; Naderi, H.; Shah, R.; Minchole, A.; Orini, M.; Tinker, A.; Lambiase, P. D.; Munroe, P. B.; van Duijvenboden, S.",
+    "abstract": "Electrocardiographic (ECG) interval measurements underpin clinical decision-making and large-scale cardiovascular research, yet existing automated methods are often developed using small, heterogeneous datasets with limited expert annotation and uncertain generalisability to population cohorts. We developed a deep learning framework for automated PR, QRS, and QT interval estimation and established a large expert-curated reference dataset using UK Biobank (UKB) ECGs. The reference dataset comprises 11,330 lead-level annotations from 12-lead ECGs in 1,030 randomly selected UKB participants, generated using a standardised annotation protocol with independent expert review. A 1D convolutional neural network was trained to segment ECG waveforms and derive PR, QRS, and QT intervals. Performance was evaluated against expert annotations, UKB CardioSoft measurements, an open-source signal-processing toolbox, and a wavelet-based delineation method. Clinical validity was evaluated through associations with incident atrial fibrillation and major adverse cardiovascular events (MACE). Inter-observer agreement was high (ICC 0.81-0.97). In a held-out test set, the deep learning model achieved mean absolute errors of 7.7 ms (PR), 7.5 ms (QRS), and 4.9 ms (QT), outperforming all comparator methods, with minimal bias relative to expert annotations. Review of distributional outliers confirmed >80% validity for most interval measurements. Among 46,749 participants with follow-up (median 4 years), prolonged QTc derived by the deep learning model showed stronger associations with incident MACE (hazard ratio 2.9, 95% CI 2.1-4.0) than wavelet-based measurements (1.7, 1.4-2.0) or CardioSoft (1.1, 0.9-1.4). This expert-curated reference dataset and validated deep learning framework provide a scalable foundation for reproducible ECG phenotyping in UKB and beyond.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356665v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356665v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "A deep learning model trained on a large expert-curated UK Biobank ECG dataset accurately measured PR, QRS, and QT intervals and outperformed existing automated methods.",
+      "clinical_relevance": "More reliable ECG interval measurement could improve large-scale cardiovascular research and support better risk stratification for outcomes such as atrial fibrillation and major adverse cardiovascular events.",
+      "method": [
+        "Built a reference dataset with 11,330 lead-level annotations from 1,030 UK Biobank participants.",
+        "Trained a 1D convolutional neural network to segment ECG waveforms and estimate PR, QRS, and QT intervals.",
+        "Compared performance with expert annotations, CardioSoft, an open-source toolbox, and a wavelet-based method."
+      ],
+      "evidence_signal": "Inter-observer agreement was high (ICC 0.81-0.97), and the model achieved low mean absolute errors on the held-out test set: 7.7 ms for PR, 7.5 ms for QRS, and 4.9 ms for QT.",
+      "watch_item": "The model was validated in UK Biobank, so external performance and generalizability to other populations, acquisition settings, and ECG systems still need confirmation.",
+      "hashtags": [
+        "#AIinMedicine",
+        "#ECG",
+        "#DeepLearning",
+        "#CardiovascularResearch",
+        "#UKBiobank"
+      ],
+      "paper_id": "2026-06-29-medrxiv-a_curated_reference_dataset_and_deep_learning_model_for_multi_lead_electrocardiographic_in",
+      "paper_title": "A curated reference dataset and deep learning model for multi-lead electrocardiographic interval measurements in UK Biobank",
+      "paper_date": "2026-06-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-07-03T09:52:23",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
+    "doi": "10.64898/2026.06.25.26356520",
+    "date": "2026-06-29",
+    "title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
+    "authors": "Rosen Lang, Y.; Puccio, A.; Yuh, E. L.; Lombardi, D.; Kuang, K.; Diaz Nelson, M.; Boscardin, W. J.; Huie, J. R.; Yaffe, K.; Okonkwo, D. O.; Diaz Arrastia, R.; Manley, G. T.; Gardner, R. C.; Transforming Research and Clinical Knowledge in Traumatic Brain Injury (TRACK-TBI) investigators,",
+    "abstract": "ImportanceOlder adults ([&ge;]65 years old) are the largest and fastest growing population of traumatic brain injury (TBI) victims. However, real-world evidence of 6-month functional outcomes is limited. ObjectiveTo describe 6-month functional outcomes in older adults after mild TBI (mTBI; presenting Glasgow Coma Scale score 13-15), by age group and preinjury cognitive status. To evaluate the performance of the Glasgow Outcome Scale-Extended (GOSE) as a geriatric mTBI clinical trial endpoint. DesignProspective cohort study; single-center pilot enrollment February 2018-April 2019; two-center enrollment October 2020-March 2025. SettingTwo U.S. level I trauma centers. ParticipantsOlder adults presenting within 72 hours of mTBI who received head CT, and their co-enrolled study-partner informants. Data curation and analysis were performed January 2023-November 2025. ExposuremTBI. Main outcome and measuresGOSE was assessed at 2 weeks and 6 months post-injury and weighted using inverse probability weighting to mitigate attrition bias. Reliable change index was used to estimate the proportions of GOSE improvement or deterioration from 2 weeks to 6 months versus a 9-item Activities of Daily Living survey (ADL, Supplemental Methods) and Functional Activities Questionnaire (FAQ). ResultsAmong 253 participants with mTBI, mean (SD) age was 77.3 (8.3) years, 129 (51%) were female, 68 (34%) had pre-injury mild cognitive impairment and 28 (15%) had pre-injury dementia (58 had unknown preinjury cognitive status). At 6 months, 14% died, 73% achieved home independence (GOSE 5+), and 17% achieved complete recovery (GOSE 8). Younger-old and persons without preinjury cognitive impairment had substantially better recovery (mortality 6-11%, home independence 84-86%, complete recovery 21-22%) versus oldest-old and those with pre-injury dementia (mortality 29-32%, home independence 23-52%, complete recovery 5-10%). GOSE detected the greatest proportion of reliable improvement or deterioration compared to ADL and FAQ, though low agreement reflects their complementary domains. Conclusions and RelevanceMost younger and cognitively-unimpaired older adults achieved favorable functional outcomes, however, more vulnerable older adults may suffer chronic disability after mTBI. GOSE effectively captures meaningful change in this population, while ADL and FAQ provide important complementary information. Findings underscore the need for age-appropriate prognostication and more inclusive geriatric TBI research and clinical trial design. Trial RegistrationNCT07296783 Key pointsO_ST_ABSQuestionC_ST_ABSWhat are the functional outcomes of older adults 6 months after mild TBI, by age group and preinjury cognitive status? FindingsMost older adults achieved home independence, though complete recovery was less common and mortality was notable. Younger-old and preinjury cognitively unimpaired individuals had substantially better recovery, with lower mortality and higher rates of home independence and complete recovery, compared to the oldest-old and those who had dementia preinjury. Meaning6 months after mild TBI, the younger-old and cognitively-resilient have high potential for favorable outcome, while the older-old and cognitively-vulnerable are at high risk for mortality or chronic disability.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "After mild traumatic brain injury, many older adults recover well by 6 months, but the oldest patients and those with pre-injury cognitive impairment have much worse outcomes.",
+      "clinical_relevance": "6-month functional prognosis after mTBI in older adults is strongly shaped by age and baseline cognition, which may help identify patients needing closer follow-up and support.",
+      "method": [
+        "Prospective cohort at two U.S. level I trauma centers",
+        "Older adults seen within 72 hours of mTBI with head CT and co-enrolled informants",
+        "Outcomes tracked with GOSE at 2 weeks and 6 months, with weighting to reduce attrition bias"
+      ],
+      "evidence_signal": "In 253 participants, 14% died by 6 months, 73% were home independent, and 17% achieved complete recovery; GOSE was more sensitive than ADL or FAQ for detecting change.",
+      "watch_item": "This was a cohort study with attrition and some unknown pre-injury cognitive status, so the findings support prognosis rather than proving which interventions improve recovery.",
+      "hashtags": [
+        "#TraumaticBrainInjury",
+        "#Geriatrics",
+        "#MildTBI",
+        "#FunctionalRecovery",
+        "#ClinicalResearch"
+      ],
+      "paper_id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
+      "paper_title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
+      "paper_date": "2026-06-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-07-03T09:52:26",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-dyslipidemia_is_a_metabolic_hallmark_of_acute_pain_in_sickle_cell_disease",
+    "doi": "10.64898/2026.06.24.26356495",
+    "date": "2026-06-29",
+    "title": "Dyslipidemia is a metabolic hallmark of acute pain in sickle cell disease.",
+    "authors": "Enders, J. D.; Khalid, Z.; Blecking, V.; Ebert, A. D.; Brandow, A. M.; Stucky, C. L.",
+    "abstract": "Individuals with sickle cell disease (SCD) experience intense acute episodic pain associated with vaso-occlusive events and persistent, often daily, chronic pain. Triggers for acute episodic pain include cold exposure, strenuous exercise, and hypoxia. The molecular mechanisms underlying acute pain in SCD are poorly defined. We asked whether acute pain was associated with an altered metabolomic profile in individuals with SCD. We performed untargeted metabolomics on plasma from 25 children with SCD obtained during two disease states: 1) during an acute pain episode, and 2) during baseline state of health (\"baseline health\"). Control plasma was analyzed from 25 race-matched healthy controls. We identified 318 dysregulated metabolites in SCD patients during baseline health relative to healthy controls. Baseline health SCD samples had elevated pyrimidine, polyamine, and methionine metabolites, whereas arginine and sphingomyelin metabolites were decreased. During acute pain, we identified 448 dysregulated metabolites relative to baseline health conditions in the same SCD patients. We found decreased amino acid metabolites and acyl-carnitines, consistent with hypoxia. Network analysis revealed eight metabolic modules that were significantly differentially correlated to healthy controls, baseline health, or SCD acute pain. Modules enriched for porphyrin metabolism were correlated with SCD during acute and baseline health conditions. Other modules identified prominent dyslipidemia during acute pain in SCD relative to baseline health and healthy controls. Furthermore, we identified a metabolic module characterized by multiple sphingomyelins that were reduced in SCD and correlated with acute pain. Our findings identify dyslipidemia and impaired oxidative metabolism as potential drivers of acute pain in SCD.",
+    "category": "Biomedical AI",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "hematology",
+    "categories": [
+      "hematology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356495v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356495v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "In children with sickle cell disease, acute pain episodes are linked to a distinct metabolic shift marked by dyslipidemia and signs of impaired oxidative metabolism.",
+      "clinical_relevance": "These metabolite patterns may help explain why vaso-occlusive pain occurs and could point to future biomarkers or treatment targets, but they are not yet ready for clinical use.",
+      "method": [
+        "Untargeted plasma metabolomics in 25 children with sickle cell disease during acute pain and baseline health",
+        "Compared results against 25 race-matched healthy controls",
+        "Used network analysis to identify dysregulated metabolic modules"
+      ],
+      "evidence_signal": "The study detected 318 dysregulated metabolites at baseline versus controls and 448 during acute pain versus baseline, with lipid- and hypoxia-related pathways emerging as major signals.",
+      "watch_item": "Small pediatric cohort and observational design limit generalizability; the findings show association, not causation, and need external validation.",
+      "hashtags": [
+        "#SickleCellDisease",
+        "#Metabolomics",
+        "#AcutePain",
+        "#BiomedicalAI",
+        "#Dyslipidemia"
+      ],
+      "paper_id": "2026-06-29-medrxiv-dyslipidemia_is_a_metabolic_hallmark_of_acute_pain_in_sickle_cell_disease",
+      "paper_title": "Dyslipidemia is a metabolic hallmark of acute pain in sickle cell disease.",
+      "paper_date": "2026-06-29",
+      "paper_category": "Biomedical AI",
+      "generated_at": "2026-07-03T09:52:29",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-the_urinary_metabolite_based_lung_cancer_index_ulci_an_interpretable_machine_learning_risk",
+    "doi": "10.64898/2026.06.26.26356700",
+    "date": "2026-06-29",
+    "title": "The urinary-metabolite-based lung cancer index (uLCI): an interpretable machine-learning risk model for early-stage disease",
+    "authors": "Khan, M. A.; Mathe, E. A.; Pine, S. R.; Gonzalez, F. J.; Harris, C. C.; Wang, X. W.; Patel, D. P.",
+    "abstract": "BackgroundFive-year survival from lung cancer exceeds 60% at stage I-II but falls below 10% once metastasis occurs. Low-dose CT (LDCT) screening reduces mortality in heavy smokers but carries a false-positive rate of approximately 29% and is restricted to smoking-based eligibility, leaving most cases undetected. We aimed to develop and independently validate an interpretable machine-learning urinary metabolite risk index (uLCI) for non-invasive lung cancer detection. MethodsFour urinary metabolites--creatine riboside (CR), N-acetylneuraminic acid (NANA), 27-nor-5{beta}-cholestane-3,7,12,24,25-pentol (CP), and cortisol sulfate (CS)--and three clinical variables (age, race, smoking) were integrated by Lasso-regularised logistic regression into a uLCI score. The model was developed under 10-fold cross-validation in the NCI-Maryland (NCI-MD) cohort (n=845; 470 controls, 375 cases, stages I-IV) and applied without refitting to the independent Colorado Lung Cancer Cohort (n=488; 211 controls, 277 cases). Analyses were prespecified; reporting followed TRIPOD+AI. FindingsuLCI achieved an area under the curve (AUC) of 0{middle dot}906 (95% CI 0{middle dot}887-0{middle dot}926) in NCI-MD and 0{middle dot}748 (0{middle dot}701-0{middle dot}793) in the independent Colorado cohort. Scores rose monotonically across stages in both cohorts (Spearman {rho}=0{middle dot}69 and 0{middle dot}45; both p<0{middle dot}0001). Stage-specific discrimination was preserved from stage I to IV (NCI-MD 0{middle dot}900-0{middle dot}927; Colorado 0{middle dot}722-0{middle dot}843). Net reclassification improvement over clinical variables was 1{middle dot}24 (1{middle dot}14-1{middle dot}36) and 0{middle dot}74 (0{middle dot}56-0{middle dot}90). uLCI tertiles stratified post-resection survival in stage I-II disease (adjusted hazard ratio 2{middle dot}03, 1{middle dot}26-3{middle dot}27). InterpretationuLCI is an independently validated, interpretable urinary risk index that detects lung cancer across all stages, with monotonic stage progression and post-resection prognostic value. Its false-positive rate compares favourably with published estimates for LDCT and cell-free-DNA assays, supporting prospective head-to-head evaluation as a non-invasive triage tool, including in screening-ineligible populations. FundingIntramural Research Program, Center for Cancer Research, National Cancer Institute, US National Institutes of Health. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSWe searched PubMed, Embase, and Web of Science from Jan 1, 2000, to Jan 31, 2026, without language restriction, for biomarker-based diagnostic or risk models for lung cancer, using \"lung cancer\", \"early detection\", \"biomarker\", \"urine\", \"metabolite\", \"machine learning\", \"TRIPOD\", and \"validation in an independent cohort\". Five-year survival exceeds 60% at stage I-II but falls below 10% after metastasis. Low-dose CT reduces mortality in heavy smokers but carries an approximately 29% false-positive rate and excludes never-smokers, who account for 10-25% of US lung cancers and up to 40% globally; blood-based cell-free DNA and methylation assays report rates near 27%. Most prior urinary-metabolite work, including our 2024 creatine-riboside and N-acetylneuraminic-acid report, used case-control designs without a locked, integrated model, and--even where two cohorts were analyzed--lacked prespecified independent validation or TRIPOD+AI-compliant reporting; an interpretable urinary index integrating an expanded metabolite panel with clinical variables under these standards had not been described. Added value of this studyAcross two cohorts (1333 individuals), we developed and independently validated uLCI, an interpretable Lasso-regularised logistic index combining four urinary metabolites (CR, NANA, CP, CS) with age, race, and smoking, reported to TRIPOD+AI standards. The prespecified locked model achieved an AUC of 0{middle dot}906 (95% CI 0{middle dot}887-0{middle dot}926) in NCI-MD development and 0{middle dot}748 (0{middle dot}701-0{middle dot}793) in the independent Colorado cohort without refitting, with discrimination preserved from stage I to IV (0{middle dot}900-0{middle dot}927; 0{middle dot}722-0{middle dot}843). uLCI rose monotonically with stage in both cohorts (Spearman {rho}=0{middle dot}693 and 0{middle dot}449; both p<0{middle dot}0001), improved reclassification over clinical variables (net reclassification improvement 1{middle dot}24 and 0{middle dot}74), and independently stratified post-resection survival in stage I-II disease (adjusted hazard ratio 2{middle dot}03 in NCI-MD; 3{middle dot}81 in Colorado). On indirect benchmarking, the 17-19% false-positive rate was below published estimates for low-dose CT ([~]29%) and DELFI ([~]27%), and discrimination was preserved in never-smokers -- whom low-dose CT excludes -- and across racial subgroups in the diverse development cohort. Implications of all the available evidenceA locked, independently validated, non-invasive urinary index that is interpretable, accurate from stage I, stage-responsive, and prognostic after resection addresses a defined detection gap, with a plausible role as a low-cost triage test that raises pre-test probability before imaging and extends risk assessment to screening-ineligible never-smokers, complementary to low-dose CT. Prospective screening-cohort evaluation (planned in the NCI PLCO and Southern Community Cohort biobanks), head-to-head comparison with blood-based assays, recalibration to screening prevalence, and replication in diverse cohorts are the warranted next steps.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356700v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356700v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "A urinary metabolite score (uLCI) built from four metabolites plus age, race, and smoking can detect lung cancer with good accuracy and rises with disease stage.",
+      "clinical_relevance": "This suggests a non-invasive screening or triage tool that could complement CT-based approaches and may help identify risk beyond smoking-eligibility criteria.",
+      "method": [
+        "Lasso-regularised logistic regression combined 4 urinary metabolites (CR, NANA, CP, CS) with 3 clinical variables.",
+        "Model was developed with 10-fold cross-validation in the NCI-MD cohort (n=845).",
+        "It was then tested without refitting in an independent Colorado cohort (n=488)."
+      ],
+      "evidence_signal": "uLCI achieved AUC 0.906 in the development cohort and 0.748 in independent validation, with monotonic increases across lung cancer stages and added reclassification value over clinical variables.",
+      "watch_item": "Performance dropped in external validation, so real-world implementation will need broader prospective testing, especially across diverse populations and screening settings.",
+      "hashtags": [
+        "#LungCancer",
+        "#Diagnostics",
+        "#MachineLearning",
+        "#Biomarkers",
+        "#UrineTest"
+      ],
+      "paper_id": "2026-06-29-medrxiv-the_urinary_metabolite_based_lung_cancer_index_ulci_an_interpretable_machine_learning_risk",
+      "paper_title": "The urinary-metabolite-based lung cancer index (uLCI): an interpretable machine-learning risk model for early-stage disease",
+      "paper_date": "2026-06-29",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-07-03T09:52:32",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-revisiting_the_high_benefit_patient_generic_machine_learning_inference_for_intensive_blood",
+    "doi": "10.64898/2026.06.26.26356708",
+    "date": "2026-06-29",
+    "title": "Revisiting the High-Benefit Patient: Generic Machine Learning Inference for Intensive Blood Pressure Control",
+    "authors": "Habibdoust, A.; Song, X.",
+    "abstract": "We applied the model-free GenericML framework using robust estimators (the Best Linear Predictor, Group Average Treatment Effects, and baseline profile classification) to reassess treatment effect heterogeneity (HTE) of intensive blood pressure (BP) using pooled data from two large-scale randomized control trials on BP controls. Among 10,712 participants with up to three years of follow-up, we estimated the differential risks of the primary cardiovascular outcome. Intensive BP control produced a modest average risk reduction (BLP {beta}1 = -0.0136), but evidence for HTE was not statistically significant (BLP {beta}2 p = 0.443; GATES top-bottom contrast p = 0.471). Although CLAN grouped participants with metabolically adverse profiles into the highest predicted-benefit stratum, their treatment response did not differ significantly from that of the lowest-benefit group. Overall, while machine learning can identify clusters of high-risk baseline phenotypes, group-level inference revealed no meaningful HTE, underscoring the need for caution when interpreting individualized treatment predictions.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356708v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356708v1.full.pdf"
+      }
+    ],
+    "score": 48,
+    "infographic": {
+      "key_insight": "Generic machine learning identified baseline risk clusters for intensive blood pressure control, but it did not show meaningful treatment effect heterogeneity across groups.",
+      "clinical_relevance": "The findings suggest that individualized benefit predictions for intensive BP lowering should be interpreted cautiously because average benefit was modest and subgroup differences were not statistically significant.",
+      "method": [
+        "Pooled participant-level data from two large randomized blood pressure control trials.",
+        "Applied the model-free GenericML framework with robust estimators: Best Linear Predictor (BLP), Group Average Treatment Effects (GATES), and baseline profile classification (CLAN).",
+        "Compared predicted-benefit strata and tested whether treatment response differed across groups."
+      ],
+      "evidence_signal": "Analysis included 10,712 participants followed for up to 3 years; intensive BP control showed a small average risk reduction, but HTE tests were non-significant (BLP p=0.443; GATES p=0.471).",
+      "watch_item": "Machine-learning risk clusters may look clinically plausible, but without statistically supported subgroup effects they should not be used to guide individualized treatment decisions.",
+      "hashtags": [
+        "#BloodPressure",
+        "#MachineLearning",
+        "#TreatmentHeterogeneity",
+        "#RandomizedTrials",
+        "#CardiovascularRisk"
+      ],
+      "paper_id": "2026-06-29-medrxiv-revisiting_the_high_benefit_patient_generic_machine_learning_inference_for_intensive_blood",
+      "paper_title": "Revisiting the High-Benefit Patient: Generic Machine Learning Inference for Intensive Blood Pressure Control",
+      "paper_date": "2026-06-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-07-03T09:52:34",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-28-medrxiv-blood_lead_levels_and_alzheimer_s_disease_mortality_in_nhanes_addressing_temporal_confound",
+    "doi": "10.1101/2024.07.20.24310751",
+    "date": "2026-06-28",
+    "title": "Blood Lead Levels and Alzheimer's Disease Mortality in NHANES: Addressing Temporal Confounding Through a Study Exit Covariate",
+    "authors": "Grossman, A.",
+    "abstract": "BackgroundThe relationship between blood lead levels (BLLs) and Alzheimers disease (AD) mortality remains unclear. Prior efforts are likely hampered by structural temporal confounding. In pooled historical cohorts with fixed mortality-linked ascertainment windows, differences in enrollment timing dictate individual follow-up duration, disproportionately concentrating cumulative person-time and advanced age within earlier cohorts. Crucially, across these same historical periods, environmental lead exposure steeply declined while clinical recognition and cause-of-death certification of AD expanded. This systematic imbalance forces earlier, higher-exposed cohorts to contribute more person-time during the modern high-ascertainment era, while later cohorts are right-censored prematurely. This confounds exposure with diagnostic landscape, biasing conventional survival estimates toward the null. MethodsIn a two-phase design, we first replicated a prior Continuous NHANES (1999-2008) cohort with updated mortality follow-up through December 2019 (Phase 1), then expanded the sample by pooling Continuous NHANES with NHANES III (1988-1994) to evaluate 21,308 participants aged [&ge;]40 years with 350 AD deaths (Phase 2). To correct for temporal confounding, we compared conventional Cox models with and without conditioning on a structural covariate: calendar time at study exit. ResultsPhase 1 replication with extended follow-up neutralized the previously reported positive hazard ratio to an attenuated null (HR=1.00; 95% CI: 0.78-1.28). In Phase 2 pooled analyses, conventional Cox models also showed no meaningful overall association (HR=0.86; 95% CI: 0.70-1.05). However, incorporating the study exit covariate yielded a robust inverse association (HR=0.57; 95% CI: 0.46-0.70), which remained stable across categorical specifications and sensitivity analyses excluding early deaths (10-year exclusion: HR=0.54; 95% CI: 0.42-0.69). Exit-year stratified analyses revealed consistent within-stratum inverse associations, consistent with Simpsons paradox-type aggregation effects. ConclusionsSystematic differences in enrollment-driven person-time across evolving diagnostic eras profoundly distort exposure-disease relationships in long-latency historical cohorts. Conditioning on calendar time at study exit provides a method for equalizing the ascertainment landscape across heterogeneous study periods without restricting the sample or compromising model structure. However, the observed inverse BLL-AD association should not be interpreted as evidence of a protective effect of lead exposure. Future studies are needed to establish the true nature of this relationship.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-06-28",
+    "updated": "2026-06-28",
+    "primary_category": "public and global health",
+    "categories": [
+      "public and global health"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2024.07.20.24310751v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2024.07.20.24310751v2.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "Accounting for calendar time at study exit changed the blood lead–Alzheimer’s mortality association from null to a strong inverse relationship, suggesting temporal confounding was masking the signal.",
+      "clinical_relevance": "The findings caution that mortality studies using long historical cohorts may misestimate exposure–outcome links unless evolving diagnostic eras and follow-up timing are modeled explicitly.",
+      "method": [
+        "Replicated a prior Continuous NHANES cohort with extended mortality follow-up through 2019.",
+        "Pooled Continuous NHANES with NHANES III to analyze 21,308 adults aged 40+ and 350 Alzheimer’s deaths.",
+        "Compared conventional Cox models with models adjusted for study exit calendar year to address temporal confounding."
+      ],
+      "evidence_signal": "In the pooled analysis, the unadjusted Cox model was near null (HR 0.86), but adding study exit year produced a robust inverse association (HR 0.57) that persisted in sensitivity analyses.",
+      "watch_item": "This is observational evidence and the exit-year adjustment may capture broader cohort-era differences, so causal interpretation and generalization should be made cautiously.",
+      "hashtags": [
+        "#NHANES",
+        "#LeadExposure",
+        "#AlzheimersDisease",
+        "#SurvivalAnalysis",
+        "#Epidemiology"
+      ],
+      "paper_id": "2026-06-28-medrxiv-blood_lead_levels_and_alzheimer_s_disease_mortality_in_nhanes_addressing_temporal_confound",
+      "paper_title": "Blood Lead Levels and Alzheimer's Disease Mortality in NHANES: Addressing Temporal Confounding Through a Study Exit Covariate",
+      "paper_date": "2026-06-28",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-03T09:52:37",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-mind_s_eye_widespread_saccade_related_evoked_potentials_support_visual_memory_encoding_in",
+    "doi": "10.1101/2025.11.11.25339896",
+    "date": "2026-06-29",
+    "title": "Mind's eye: widespread saccade-related evoked potentials support visual memory encoding in humans",
+    "authors": "Tan, G.; Demarest, P.; Li, Y.; Cho, H.; Park, H.; Swift, J. R.; Inman, C. S.; Manns, J. R.; Hamann, S. B.; Liu, X.; Wahlstrom, K. L.; Li, Z.; Hollearn, M. K.; Campbell, J. M.; Cettina, P. E.; Sivakumar, S. S.; Leuthardt, E. C.; Willie, J. T.; Brunner, P.",
+    "abstract": "Saccadic eye movements modulate medial temporal lobe (MTL) activity in primates, a region critical for memory, yet whether and how this saccadic modulation supports memory encoding in humans remains unknown. By combining eye tracking with intracranial local field potentials in humans performing memory tasks, we identified widespread cortical evoked potentials time-locked to saccades (saccade-related evoked potentials, SREPs) that could not be explained by oculomuscular artifacts or retinal input. SREPs emerge earliest and with the greatest amplitude in the lateral temporal cortex. Machine learning analysis revealed that pre-saccadic oscillation and SREPs predicted recognition memory but not saccade direction, suggesting that SREPs are distinct from corollary discharge. Frontoparietal SREPs, rather than those in MTL, best predict memory outcomes, and successful encoding is associated with earlier, more pronounced SREPs. This study extends the active sensing framework to human visual memory: saccades are accompanied by a structured cortical event that influences memory encoding. TeaserEvery eye movement is accompanied by a ripple of coordinated neural activity that shapes whether a visual experience will be remembered. Graphical abstract O_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=185 SRC=\"FIGDIR/small/25339896v3_ufig1.gif\" ALT=\"Figure 1\"> View larger version (63K): org.highwire.dtl.DTLVardef@12f5733org.highwire.dtl.DTLVardef@1060c3eorg.highwire.dtl.DTLVardef@df46aorg.highwire.dtl.DTLVardef@297e0d_HPS_FORMAT_FIGEXP M_FIG C_FIG",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.11.11.25339896v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.11.11.25339896v3.full.pdf"
+      }
+    ],
+    "score": 43,
+    "infographic": {
+      "key_insight": "In humans, eye saccades are accompanied by widespread saccade-related evoked potentials (SREPs) that appear to support visual memory encoding, especially in frontoparietal cortex.",
+      "clinical_relevance": "These findings may help explain how active vision interacts with memory formation and could inform future neural markers of encoding during eye-movement-based tasks.",
+      "method": [
+        "Combined eye tracking with intracranial local field potential recordings in humans during memory tasks",
+        "Analyzed saccade-locked cortical evoked activity across brain regions",
+        "Used machine learning to test whether pre-saccadic oscillations and SREPs predicted memory outcomes"
+      ],
+      "evidence_signal": "The abstract reports that SREPs emerged earliest and strongest in lateral temporal cortex, and that pre-saccadic oscillations plus SREPs predicted recognition memory but not saccade direction.",
+      "watch_item": "Because the study is based on intracranial recordings in a limited human sample, broader generalizability and practical use as a biomarker will need further validation.",
+      "hashtags": [
+        "#Neuroscience",
+        "#MemoryEncoding",
+        "#EyeMovements",
+        "#IntracranialEEG",
+        "#MedicalImaging"
+      ],
+      "paper_id": "2026-06-29-medrxiv-mind_s_eye_widespread_saccade_related_evoked_potentials_support_visual_memory_encoding_in",
+      "paper_title": "Mind's eye: widespread saccade-related evoked potentials support visual memory encoding in humans",
+      "paper_date": "2026-06-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-07-03T09:52:39",
+      "generator": "openai"
+    }
+  }
+]

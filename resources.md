@@ -1,9 +1,73 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-03
+Generated: 2026-07-04
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types
+## 1. TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling
+
+- Date: 2026-07-01
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.00975v1
+- PDF: https://arxiv.org/pdf/2607.00975v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-trcgl_net_a_long_tailed_multi_label_chest_x_ray_classification_framework_with_generative_d_infographic.json
+
+## 2. Multimodal Fusion for Fine-Grained Classification of Breast Fibroadenoma and Phyllodes Tumors
+
+- Date: 2026-07-02
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.02091v1
+- PDF: https://arxiv.org/pdf/2607.02091v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-multimodal_fusion_for_fine_grained_classification_of_breast_fibroadenoma_and_phyllodes_tum_infographic.json
+
+## 3. MMIR-TCM: Memory-Integrated Multimodal Inference and Retrieval for TCM Clinical Decision Support
+
+- Date: 2026-07-02
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.01814v1
+- PDF: https://arxiv.org/pdf/2607.01814v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-mmir_tcm_memory_integrated_multimodal_inference_and_retrieval_for_tcm_clinical_decision_su_infographic.json
+
+## 4. Predicting Early Stages Of Alzheimer's Disease And Identifying Key Biomarkers Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies
+
+- Date: 2026-07-02
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.02142v1
+- PDF: https://arxiv.org/pdf/2607.02142v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-predicting_early_stages_of_alzheimer_s_disease_and_identifying_key_biomarkers_using_deep_a_infographic.json
+
+## 5. CaresAI at CT-DEB26: Detecting Dosing Errors In Clinical Trials Using Domain-Specific Transformer Embeddings and Classification Models
+
+- Date: 2026-06-29
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.30236v1
+- PDF: https://arxiv.org/pdf/2606.30236v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-arxiv-caresai_at_ct_deb26_detecting_dosing_errors_in_clinical_trials_using_domain_specific_trans_infographic.json
+
+## 6. Role-Prompting in Frontier Large Language Models Influences Clinical Reasoning in Complex Medical Cases
+
+- Date: 2026-07-01
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.29.26356864v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.29.26356864v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-medrxiv-role_prompting_in_frontier_large_language_models_influences_clinical_reasoning_in_complex_infographic.json
+
+## 7. HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents
+
+- Date: 2026-06-30
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2606.31179v1
+- PDF: https://arxiv.org/pdf/2606.31179v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-healthagentbench_a_unified_benchmark_suite_of_realistic_agentic_healthcare_environments_fo_infographic.json
+
+## 8. Assessing VLM Reliability for Medical Image Quality Evaluation Under Corruption and Bias
+
+- Date: 2026-07-02
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.01973v1
+- PDF: https://arxiv.org/pdf/2607.01973v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-assessing_vlm_reliability_for_medical_image_quality_evaluation_under_corruption_and_bias_infographic.json
+
+## 9. Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types
 
 - Date: 2026-06-29
 - Category: Clinical NLP
@@ -11,7 +75,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model_infographic.json
 
-## 2. PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes
+## 10. PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes
 
 - Date: 2026-06-29
 - Category: Clinical NLP
@@ -19,7 +83,55 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome_infographic.json
 
-## 3. Gaps in Congenital Heart Disease Care: Social Drivers and Clinical Consequences
+## 11. NLP Framework for Automated Symptom Severity Staging in Heart Failure and COPD Clinical Notes Using Ontology Integration: A Study Protocol
+
+- Date: 2026-06-30
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.27.26356738v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.27.26356738v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-medrxiv-nlp_framework_for_automated_symptom_severity_staging_in_heart_failure_and_copd_clinical_no_infographic.json
+
+## 12. A rubric-based controlled comparison of frontier language models on expert-authored clinical reasoning tasks
+
+- Date: 2026-07-02
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.02175v1
+- PDF: https://arxiv.org/pdf/2607.02175v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-a_rubric_based_controlled_comparison_of_frontier_language_models_on_expert_authored_clinic_infographic.json
+
+## 13. RareDxR1: Autonomous Medical Reasoning for Rare Disease Diagnosis Beyond Human Annotation
+
+- Date: 2026-06-30
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.00147v1
+- PDF: https://arxiv.org/pdf/2607.00147v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-raredxr1_autonomous_medical_reasoning_for_rare_disease_diagnosis_beyond_human_annotation_infographic.json
+
+## 14. Rethinking Multi-Label Image Classification With Deep Learning: Taxonomy, Challenge, and Outlook
+
+- Date: 2026-07-01
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.00839v1
+- PDF: https://arxiv.org/pdf/2607.00839v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-rethinking_multi_label_image_classification_with_deep_learning_taxonomy_challenge_and_outl_infographic.json
+
+## 15. Scientific Explanations in Health Sciences: Causality, Trust, and Epistemic Adequacy
+
+- Date: 2026-06-30
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2606.31616v1
+- PDF: https://arxiv.org/pdf/2606.31616v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-scientific_explanations_in_health_sciences_causality_trust_and_epistemic_adequacy_infographic.json
+
+## 16. CLExEval: A Human-in-the-Loop Framework for Qualitative Evaluation of LLM Clinical Reasoning
+
+- Date: 2026-06-30
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2606.31608v1
+- PDF: https://arxiv.org/pdf/2606.31608v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-clexeval_a_human_in_the_loop_framework_for_qualitative_evaluation_of_llm_clinical_reasonin_infographic.json
+
+## 17. Gaps in Congenital Heart Disease Care: Social Drivers and Clinical Consequences
 
 - Date: 2026-06-29
 - Category: Health Systems
@@ -27,138 +139,26 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.24.26356504v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-gaps_in_congenital_heart_disease_care_social_drivers_and_clinical_consequences_infographic.json
 
-## 4. Artificial Intelligence in Medical Imaging With Emphasis on Generative and Foundation-Based Methods: A Bibliometric Analysis of Global and United Kingdom Research, 2017-2025
+## 18. LLM-Guided ODE Discovery and Parameter Inference from Small-Cohort Aggregate Data
 
-- Date: 2026-06-29
+- Date: 2026-07-01
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356684v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356684v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-artificial_intelligence_in_medical_imaging_with_emphasis_on_generative_and_foundation_base_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.00733v1
+- PDF: https://arxiv.org/pdf/2607.00733v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-llm_guided_ode_discovery_and_parameter_inference_from_small_cohort_aggregate_data_infographic.json
 
-## 5. Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology
+## 19. HGGT：Heterogeneous Gated Graph Transformer for Predicting Clinical Trial Success
 
-- Date: 2026-06-28
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf_infographic.json
-
-## 6. EEG-Based Identification of Adolescent Non-Suicidal Self-Injury and Neurophysiological Interpretation Using an Explainable Deep Learning Framework
-
-- Date: 2026-06-29
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.23.26356351v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.23.26356351v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-eeg_based_identification_of_adolescent_non_suicidal_self_injury_and_neurophysiological_int_infographic.json
-
-## 7. Proposed Context-of-Use Evaluation Framework for Medication Management Tasks Completed by Generative Artificial Intelligence
-
-- Date: 2026-06-29
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356706v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356706v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-proposed_context_of_use_evaluation_framework_for_medication_management_tasks_completed_by_infographic.json
-
-## 8. Infoxmed2.0-27B: Instruction Tuning, Preference Alignment, and GRPO-Based Reward Model Training for Medical LLMs
-
-- Date: 2026-06-30
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.25.26356522v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.25.26356522v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-medrxiv-infoxmed2_0_27b_instruction_tuning_preference_alignment_and_grpo_based_reward_model_traini_infographic.json
-
-## 9. Cross-LLM AI platform meta-research: Non-inferiority of bovine milk-based fortifiers to human milk-based fortifiers
-
-- Date: 2026-06-29
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.24.26356426v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.24.26356426v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-cross_llm_ai_platform_meta_research_non_inferiority_of_bovine_milk_based_fortifiers_to_hum_infographic.json
-
-## 10. AI as a signal assessor - Can a Large Language Model perform causality assessment on a case series?
-
-- Date: 2026-06-29
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356656v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356656v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-ai_as_a_signal_assessor_can_a_large_language_model_perform_causality_assessment_on_a_case_infographic.json
-
-## 11. Computer-Vision Procedural Telemetry for Airway Guidance: A Public 30-Run Manikin Evidence-Package Audit
-
-- Date: 2026-06-29
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356677v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356677v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-computer_vision_procedural_telemetry_for_airway_guidance_a_public_30_run_manikin_evidence_infographic.json
-
-## 12. A Real-World Evaluation of Failure Detection for Liver CT Segmentation
-
-- Date: 2026-06-29
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356692v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356692v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-a_real_world_evaluation_of_failure_detection_for_liver_ct_segmentation_infographic.json
-
-## 13. Efficacy inference in early-phase non-controlled clinical trials via Bayesian biomarker deconvolution
-
-- Date: 2026-06-29
+- Date: 2026-07-01
 - Category: Drug Discovery
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356652v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356652v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-efficacy_inference_in_early_phase_non_controlled_clinical_trials_via_bayesian_biomarker_de_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.28.26356795v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.28.26356795v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-medrxiv-hggt_heterogeneous_gated_graph_transformer_for_predicting_clinical_trial_success_infographic.json
 
-## 14. A curated reference dataset and deep learning model for multi-lead electrocardiographic interval measurements in UK Biobank
+## 20. MARVEL: Margin-Aware Robust von Mises-Fischer Expert Learning for Long-Tailed Out-of-Distribution Detection
 
-- Date: 2026-06-29
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356665v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356665v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-a_curated_reference_dataset_and_deep_learning_model_for_multi_lead_electrocardiographic_in_infographic.json
-
-## 15. 6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study
-
-- Date: 2026-06-29
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study_infographic.json
-
-## 16. Dyslipidemia is a metabolic hallmark of acute pain in sickle cell disease.
-
-- Date: 2026-06-29
-- Category: Biomedical AI
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.24.26356495v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.24.26356495v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-dyslipidemia_is_a_metabolic_hallmark_of_acute_pain_in_sickle_cell_disease_infographic.json
-
-## 17. The urinary-metabolite-based lung cancer index (uLCI): an interpretable machine-learning risk model for early-stage disease
-
-- Date: 2026-06-29
+- Date: 2026-07-02
 - Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356700v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356700v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-the_urinary_metabolite_based_lung_cancer_index_ulci_an_interpretable_machine_learning_risk_infographic.json
-
-## 18. Revisiting the High-Benefit Patient: Generic Machine Learning Inference for Intensive Blood Pressure Control
-
-- Date: 2026-06-29
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356708v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356708v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-revisiting_the_high_benefit_patient_generic_machine_learning_inference_for_intensive_blood_infographic.json
-
-## 19. Blood Lead Levels and Alzheimer's Disease Mortality in NHANES: Addressing Temporal Confounding Through a Study Exit Covariate
-
-- Date: 2026-06-28
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2024.07.20.24310751v2
-- PDF: https://www.medrxiv.org/content/10.1101/2024.07.20.24310751v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-28-medrxiv-blood_lead_levels_and_alzheimer_s_disease_mortality_in_nhanes_addressing_temporal_confound_infographic.json
-
-## 20. Mind's eye: widespread saccade-related evoked potentials support visual memory encoding in humans
-
-- Date: 2026-06-29
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.11.11.25339896v3
-- PDF: https://www.medrxiv.org/content/10.1101/2025.11.11.25339896v3.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-medrxiv-mind_s_eye_widespread_saccade_related_evoked_potentials_support_visual_memory_encoding_in_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.02435v1
+- PDF: https://arxiv.org/pdf/2607.02435v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-marvel_margin_aware_robust_von_mises_fischer_expert_learning_for_long_tailed_out_of_distri_infographic.json
