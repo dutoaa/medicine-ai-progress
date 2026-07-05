@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-04
+Generated: 2026-07-05
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling
