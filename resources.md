@@ -1,9 +1,137 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-06
+Generated: 2026-07-07
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling
+## 1. Medi-Gemma: A Hybrid Clinical Decision Support System Integrating Deterministic EMR Analytics and Retrieval-Augmented Generation
+
+- Date: 2026-07-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.04907v1
+- PDF: https://arxiv.org/pdf/2607.04907v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-medi_gemma_a_hybrid_clinical_decision_support_system_integrating_deterministic_emr_analyti_infographic.json
+
+## 2. Toward Trustworthy Large Language Model Agents in Healthcare
+
+- Date: 2026-07-06
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2607.05055v1
+- PDF: https://arxiv.org/pdf/2607.05055v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-toward_trustworthy_large_language_model_agents_in_healthcare_infographic.json
+
+## 3. Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction
+
+- Date: 2026-07-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.04912v1
+- PDF: https://arxiv.org/pdf/2607.04912v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-graph_representation_learning_of_longitudinal_medical_imaging_trajectories_for_treatment_r_infographic.json
+
+## 4. Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)
+
+- Date: 2026-07-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.05032v1
+- PDF: https://arxiv.org/pdf/2607.05032v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-multi_large_language_model_orchestrated_severity_assessment_of_clinical_records_mosaic_infographic.json
+
+## 5. Deep Learning for Semen Analysis in Male Infertility: Computer Vision, Multimodal Fusion, and Clinical Translation
+
+- Date: 2026-07-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.05311v1
+- PDF: https://arxiv.org/pdf/2607.05311v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-deep_learning_for_semen_analysis_in_male_infertility_computer_vision_multimodal_fusion_and_infographic.json
+
+## 6. Leveraging Pathology Co-occurrence for Test-Time Adaptation in Chest X-Ray Diagnosis
+
+- Date: 2026-07-04
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.03715v1
+- PDF: https://arxiv.org/pdf/2607.03715v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-04-arxiv-leveraging_pathology_co_occurrence_for_test_time_adaptation_in_chest_x_ray_diagnosis_infographic.json
+
+## 7. UniSpine-GS: An Efficient Physics-Aware Gaussian Framework for Cross-Modality Multi-view Spine Image Synthesis
+
+- Date: 2026-07-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.04923v1
+- PDF: https://arxiv.org/pdf/2607.04923v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-unispine_gs_an_efficient_physics_aware_gaussian_framework_for_cross_modality_multi_view_sp_infographic.json
+
+## 8. Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms
+
+- Date: 2026-07-02
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using_infographic.json
+
+## 9. Paired Uterine Whole-Slide Images and Pathology Reports for Multimodal Computational Pathology
+
+- Date: 2026-07-04
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.04020v1
+- PDF: https://arxiv.org/pdf/2607.04020v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-04-arxiv-paired_uterine_whole_slide_images_and_pathology_reports_for_multimodal_computational_patho_infographic.json
+
+## 10. Solve the Missing First Step: Can VLMs Standardize Raw Heterogeneous Medical Data?
+
+- Date: 2026-07-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.04694v1
+- PDF: https://arxiv.org/pdf/2607.04694v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-solve_the_missing_first_step_can_vlms_standardize_raw_heterogeneous_medical_data_infographic.json
+
+## 11. PulmoSight-XAI: An Explainable Multi-View Attention Ensemble with Gradient Boosting Meta-Learning for Multi-Label Chest X-Ray Classification
+
+- Date: 2026-07-05
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.04478v1
+- PDF: https://arxiv.org/pdf/2607.04478v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-05-arxiv-pulmosight_xai_an_explainable_multi_view_attention_ensemble_with_gradient_boosting_meta_le_infographic.json
+
+## 12. Beyond Random Sampling: Distribution-Aware Alignment for Semi-Supervised Medical Image Segmentation
+
+- Date: 2026-07-05
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.04249v1
+- PDF: https://arxiv.org/pdf/2607.04249v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-05-arxiv-beyond_random_sampling_distribution_aware_alignment_for_semi_supervised_medical_image_segm_infographic.json
+
+## 13. An Interpretable Deep Learning Framework for Discovery and Clinical Validation of Deep Radiomic Signatures in Tumor Classification
+
+- Date: 2026-07-03
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.03593v1
+- PDF: https://arxiv.org/pdf/2607.03593v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-03-arxiv-an_interpretable_deep_learning_framework_for_discovery_and_clinical_validation_of_deep_rad_infographic.json
+
+## 14. Semantic Segmentation-Driven Image-Level Diagnosis of Liver Cancers in Hematoxylin and Eosin Histopathology Images
+
+- Date: 2026-07-03
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.03253v1
+- PDF: https://arxiv.org/pdf/2607.03253v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-03-arxiv-semantic_segmentation_driven_image_level_diagnosis_of_liver_cancers_in_hematoxylin_and_eos_infographic.json
+
+## 15. WPG-MoE: Weak-Prior-Guided Dense Mixture-of-Experts for User-Level Social Media Depression Detection
+
+- Date: 2026-07-05
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.04350v1
+- PDF: https://arxiv.org/pdf/2607.04350v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-05-arxiv-wpg_moe_weak_prior_guided_dense_mixture_of_experts_for_user_level_social_media_depression_infographic.json
+
+## 16. Optimizing Large Language Models for Causality Assessment in Pharmacovigilance: Developing a Performance Metric as Objective for Bayesian Hyperparameter Optimization
+
+- Date: 2026-07-04
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.03704v1
+- PDF: https://arxiv.org/pdf/2607.03704v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-04-arxiv-optimizing_large_language_models_for_causality_assessment_in_pharmacovigilance_developing_infographic.json
+
+## 17. TRCGL-Net: A Long-Tailed Multi-Label Chest X-Ray Classification Framework with Generative Data Augmentation and Label Co-Occurrence Modeling
 
 - Date: 2026-07-01
 - Category: Medical Imaging
@@ -11,154 +139,26 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.00975v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-trcgl_net_a_long_tailed_multi_label_chest_x_ray_classification_framework_with_generative_d_infographic.json
 
-## 2. Multimodal Fusion for Fine-Grained Classification of Breast Fibroadenoma and Phyllodes Tumors
+## 18. Uncertainty-aware damage identification in short-span bridges via physics-informed variational autoencoder
 
-- Date: 2026-07-02
+- Date: 2026-07-06
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.02091v1
-- PDF: https://arxiv.org/pdf/2607.02091v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-multimodal_fusion_for_fine_grained_classification_of_breast_fibroadenoma_and_phyllodes_tum_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.05025v1
+- PDF: https://arxiv.org/pdf/2607.05025v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-uncertainty_aware_damage_identification_in_short_span_bridges_via_physics_informed_variati_infographic.json
 
-## 3. MMIR-TCM: Memory-Integrated Multimodal Inference and Retrieval for TCM Clinical Decision Support
+## 19. ImputeECG: Deep Learning Reconstruction of Complete 12-Lead Electrocardiograms from Incomplete Recordings for Cardiac Assessment
 
-- Date: 2026-07-02
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.01814v1
-- PDF: https://arxiv.org/pdf/2607.01814v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-mmir_tcm_memory_integrated_multimodal_inference_and_retrieval_for_tcm_clinical_decision_su_infographic.json
-
-## 4. Predicting Early Stages Of Alzheimer's Disease And Identifying Key Biomarkers Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies
-
-- Date: 2026-07-02
+- Date: 2026-07-06
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.02142v1
-- PDF: https://arxiv.org/pdf/2607.02142v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-predicting_early_stages_of_alzheimer_s_disease_and_identifying_key_biomarkers_using_deep_a_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.05009v1
+- PDF: https://arxiv.org/pdf/2607.05009v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-imputeecg_deep_learning_reconstruction_of_complete_12_lead_electrocardiograms_from_incompl_infographic.json
 
-## 5. CaresAI at CT-DEB26: Detecting Dosing Errors In Clinical Trials Using Domain-Specific Transformer Embeddings and Classification Models
+## 20. Topology-Driven Transferability Estimation for 3D Medical Vision Foundation Models
 
-- Date: 2026-06-29
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2606.30236v1
-- PDF: https://arxiv.org/pdf/2606.30236v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-29-arxiv-caresai_at_ct_deb26_detecting_dosing_errors_in_clinical_trials_using_domain_specific_trans_infographic.json
-
-## 6. HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents
-
-- Date: 2026-06-30
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2606.31179v1
-- PDF: https://arxiv.org/pdf/2606.31179v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-healthagentbench_a_unified_benchmark_suite_of_realistic_agentic_healthcare_environments_fo_infographic.json
-
-## 7. A rubric-based controlled comparison of frontier language models on expert-authored clinical reasoning tasks
-
-- Date: 2026-07-02
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.02175v1
-- PDF: https://arxiv.org/pdf/2607.02175v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-a_rubric_based_controlled_comparison_of_frontier_language_models_on_expert_authored_clinic_infographic.json
-
-## 8. RareDxR1: Autonomous Medical Reasoning for Rare Disease Diagnosis Beyond Human Annotation
-
-- Date: 2026-06-30
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.00147v1
-- PDF: https://arxiv.org/pdf/2607.00147v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-raredxr1_autonomous_medical_reasoning_for_rare_disease_diagnosis_beyond_human_annotation_infographic.json
-
-## 9. Assessing VLM Reliability for Medical Image Quality Evaluation Under Corruption and Bias
-
-- Date: 2026-07-02
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.01973v1
-- PDF: https://arxiv.org/pdf/2607.01973v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-assessing_vlm_reliability_for_medical_image_quality_evaluation_under_corruption_and_bias_infographic.json
-
-## 10. Rethinking Multi-Label Image Classification With Deep Learning: Taxonomy, Challenge, and Outlook
-
-- Date: 2026-07-01
+- Date: 2026-07-05
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.00839v1
-- PDF: https://arxiv.org/pdf/2607.00839v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-rethinking_multi_label_image_classification_with_deep_learning_taxonomy_challenge_and_outl_infographic.json
-
-## 11. Scientific Explanations in Health Sciences: Causality, Trust, and Epistemic Adequacy
-
-- Date: 2026-06-30
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2606.31616v1
-- PDF: https://arxiv.org/pdf/2606.31616v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-scientific_explanations_in_health_sciences_causality_trust_and_epistemic_adequacy_infographic.json
-
-## 12. CLExEval: A Human-in-the-Loop Framework for Qualitative Evaluation of LLM Clinical Reasoning
-
-- Date: 2026-06-30
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2606.31608v1
-- PDF: https://arxiv.org/pdf/2606.31608v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-clexeval_a_human_in_the_loop_framework_for_qualitative_evaluation_of_llm_clinical_reasonin_infographic.json
-
-## 13. MARVEL: Margin-Aware Robust von Mises-Fischer Expert Learning for Long-Tailed Out-of-Distribution Detection
-
-- Date: 2026-07-02
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.02435v1
-- PDF: https://arxiv.org/pdf/2607.02435v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-marvel_margin_aware_robust_von_mises_fischer_expert_learning_for_long_tailed_out_of_distri_infographic.json
-
-## 14. How Should Transformers Encode Numeric Values in Electronic Health Records?
-
-- Date: 2026-07-01
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.01391v1
-- PDF: https://arxiv.org/pdf/2607.01391v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-how_should_transformers_encode_numeric_values_in_electronic_health_records_infographic.json
-
-## 15. ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction
-
-- Date: 2026-07-01
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.00798v1
-- PDF: https://arxiv.org/pdf/2607.00798v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-clinrag_graph_clinical_prior_retrieval_augmented_graph_model_with_domain_adversarial_learn_infographic.json
-
-## 16. RadiomicNet: A Hybrid Radiomics-Guided Lightweight Architecture for Interpretable Medical Image Segmentation
-
-- Date: 2026-07-02
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.02185v1
-- PDF: https://arxiv.org/pdf/2607.02185v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-radiomicnet_a_hybrid_radiomics_guided_lightweight_architecture_for_interpretable_medical_i_infographic.json
-
-## 17. SABER: A Semantic-Aligned Brain Network Analysis Framework via Multi-scale Hypergraphs
-
-- Date: 2026-07-02
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.01901v1
-- PDF: https://arxiv.org/pdf/2607.01901v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-02-arxiv-saber_a_semantic_aligned_brain_network_analysis_framework_via_multi_scale_hypergraphs_infographic.json
-
-## 18. FaithMed: Training LLMs For Faithful Evidence-Based Medical Reasoning
-
-- Date: 2026-07-01
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.01440v1
-- PDF: https://arxiv.org/pdf/2607.01440v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-faithmed_training_llms_for_faithful_evidence_based_medical_reasoning_infographic.json
-
-## 19. Clinician-Level Agreement Without Clinical Caution: LLM Evaluator Limits in Medical AI Benchmarking
-
-- Date: 2026-07-01
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.01103v1
-- PDF: https://arxiv.org/pdf/2607.01103v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-01-arxiv-clinician_level_agreement_without_clinical_caution_llm_evaluator_limits_in_medical_ai_benc_infographic.json
-
-## 20. Synergistic Perception-Reasoning Governance: Grounding Medical MLLMs with Verifiable Anatomical Evidence
-
-- Date: 2026-06-30
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.00060v1
-- PDF: https://arxiv.org/pdf/2607.00060v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-06-30-arxiv-synergistic_perception_reasoning_governance_grounding_medical_mllms_with_verifiable_anatom_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.04199v1
+- PDF: https://arxiv.org/pdf/2607.04199v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-05-arxiv-topology_driven_transferability_estimation_for_3d_medical_vision_foundation_models_infographic.json
