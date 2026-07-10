@@ -1,9 +1,25 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-09
+Generated: 2026-07-10
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models
+## 1. MentalHospital: A Virtual Environment for Evaluating Psychiatric Clinical Encounters
+
+- Date: 2026-07-09
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.08257v1
+- PDF: https://arxiv.org/pdf/2607.08257v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-mentalhospital_a_virtual_environment_for_evaluating_psychiatric_clinical_encounters_infographic.json
+
+## 2. A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis
+
+- Date: 2026-07-09
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.08038v1
+- PDF: https://arxiv.org/pdf/2607.08038v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-a_safety_oriented_hypothetico_deductive_framework_for_ai_assisted_differential_diagnosis_infographic.json
+
+## 3. MedPMC: A Systematic Framework for Scaling High-Fidelity Medical Multimodal Data for Foundation Models
 
 - Date: 2026-07-08
 - Category: Medical Imaging
@@ -11,7 +27,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.07673v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-medpmc_a_systematic_framework_for_scaling_high_fidelity_medical_multimodal_data_for_founda_infographic.json
 
-## 2. AA-ViT: Anatomically Aware Vision Transformer with Structural and Frequency Guidance for Contrast Enhanced Brain MRI Synthesis
+## 4. Aligning Clinical Needs and AI Capabilities: A Survey on LLMs for Medical Reasoning
+
+- Date: 2026-07-08
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2607.07761v1
+- PDF: https://arxiv.org/pdf/2607.07761v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-aligning_clinical_needs_and_ai_capabilities_a_survey_on_llms_for_medical_reasoning_infographic.json
+
+## 5. AA-ViT: Anatomically Aware Vision Transformer with Structural and Frequency Guidance for Contrast Enhanced Brain MRI Synthesis
 
 - Date: 2026-07-08
 - Category: Medical Imaging
@@ -19,7 +43,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.07553v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-aa_vit_anatomically_aware_vision_transformer_with_structural_and_frequency_guidance_for_co_infographic.json
 
-## 3. Medi-Gemma: A Hybrid Clinical Decision Support System Integrating Deterministic EMR Analytics and Retrieval-Augmented Generation
+## 6. Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance
+
+- Date: 2026-07-09
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.08602v1
+- PDF: https://arxiv.org/pdf/2607.08602v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-towards_precision_therapy_in_hepatocellular_carcinoma_a_clinical_reasoning_llm_for_risk_st_infographic.json
+
+## 7. Medi-Gemma: A Hybrid Clinical Decision Support System Integrating Deterministic EMR Analytics and Retrieval-Augmented Generation
 
 - Date: 2026-07-06
 - Category: Clinical NLP
@@ -27,7 +59,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.04907v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-medi_gemma_a_hybrid_clinical_decision_support_system_integrating_deterministic_emr_analyti_infographic.json
 
-## 4. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
+## 8. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
 
 - Date: 2026-07-07
 - Category: Health Systems
@@ -35,7 +67,47 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.06531v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-the_large_cancer_assistant_lca_a_model_agnostic_orchestration_framework_for_scalable_clini_infographic.json
 
-## 5. RenalTransLSTM: Multi-Horizon Prediction of Acute Kidney Injury in ICU Patients using a Hybrid LSTM-Transformer Architecture
+## 9. Classifier Chain-based Pathological Test Recommendation
+
+- Date: 2026-07-09
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2607.08299v1
+- PDF: https://arxiv.org/pdf/2607.08299v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-classifier_chain_based_pathological_test_recommendation_infographic.json
+
+## 10. The complexities of patient-centred conversational artificial intelligence
+
+- Date: 2026-07-09
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.08625v1
+- PDF: https://arxiv.org/pdf/2607.08625v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-the_complexities_of_patient_centred_conversational_artificial_intelligence_infographic.json
+
+## 11. Alignment Plausibility: A New Standard for Assuring AI in Healthcare
+
+- Date: 2026-07-08
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2607.07766v1
+- PDF: https://arxiv.org/pdf/2607.07766v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-alignment_plausibility_a_new_standard_for_assuring_ai_in_healthcare_infographic.json
+
+## 12. Multimodal profiling for prediction of primary resistance to anti-PD-(L)1 therapy in advanced non-small-cell lung cancer: the prospective PIONeeR biomarkers study
+
+- Date: 2026-07-07
+- Category: Biomedical AI
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.01.09.26343779v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.01.09.26343779v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-medrxiv-multimodal_profiling_for_prediction_of_primary_resistance_to_anti_pd_l_1_therapy_in_advanc_infographic.json
+
+## 13. Federated Deep Learning for Privacy-Preserving Cardiovascular Disease Risk Prediction
+
+- Date: 2026-07-09
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2607.08595v1
+- PDF: https://arxiv.org/pdf/2607.08595v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-federated_deep_learning_for_privacy_preserving_cardiovascular_disease_risk_prediction_infographic.json
+
+## 14. RenalTransLSTM: Multi-Horizon Prediction of Acute Kidney Injury in ICU Patients using a Hybrid LSTM-Transformer Architecture
 
 - Date: 2026-07-06
 - Category: Health Systems
@@ -43,7 +115,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.02.26357177v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-medrxiv-renaltranslstm_multi_horizon_prediction_of_acute_kidney_injury_in_icu_patients_using_a_hyb_infographic.json
 
-## 6. Toward Trustworthy Large Language Model Agents in Healthcare
+## 15. Toward Trustworthy Large Language Model Agents in Healthcare
 
 - Date: 2026-07-06
 - Category: Health Systems
@@ -51,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.05055v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-toward_trustworthy_large_language_model_agents_in_healthcare_infographic.json
 
-## 7. Multisite Real-World Validation of an Electronic Health Record-Integrated Generative Artificial Intelligence Tool for Venous Thromboembolism Risk Stratification
+## 16. Multisite Real-World Validation of an Electronic Health Record-Integrated Generative Artificial Intelligence Tool for Venous Thromboembolism Risk Stratification
 
 - Date: 2026-07-05
 - Category: Health Systems
@@ -59,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.17.26355819v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-05-medrxiv-multisite_real_world_validation_of_an_electronic_health_record_integrated_generative_artif_infographic.json
 
-## 8. Compass: Prostate Cancer Detection Needs Multi-View Context
+## 17. Compass: Prostate Cancer Detection Needs Multi-View Context
 
 - Date: 2026-07-08
 - Category: Medical Imaging
@@ -67,7 +139,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.06919v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-compass_prostate_cancer_detection_needs_multi_view_context_infographic.json
 
-## 9. Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation
+## 18. Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation
 
 - Date: 2026-07-08
 - Category: Medical Imaging
@@ -75,90 +147,18 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.07401v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-heterogeneity_adaptive_diffusion_schrodinger_bridge_for_pet_guided_whole_body_mri_translat_infographic.json
 
-## 10. Canopy: A Heterograph Foundation Model for Metabolic Engineering
+## 19. CT-CLIP Representations for Multimodal Lung Cancer Survival Prediction
 
-- Date: 2026-07-07
-- Category: Biomedical AI
-- Source: arXiv - https://arxiv.org/abs/2607.06224v1
-- PDF: https://arxiv.org/pdf/2607.06224v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-canopy_a_heterograph_foundation_model_for_metabolic_engineering_infographic.json
-
-## 11. Feature Selection with Quantum Annealing for Biomedical Machine Learning Applications
-
-- Date: 2026-07-06
+- Date: 2026-07-09
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.02.26357174v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.02.26357174v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-medrxiv-feature_selection_with_quantum_annealing_for_biomedical_machine_learning_applications_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.08503v1
+- PDF: https://arxiv.org/pdf/2607.08503v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-ct_clip_representations_for_multimodal_lung_cancer_survival_prediction_infographic.json
 
-## 12. X-FEMR: A Token-level Explainable Approach for Electronic Health Records Foundation Models using Transformer-based Models
+## 20. DeepPySR -- A Symbolic Regression Framework with Dynamic Pruning, Pareto Selection, and Hierarchical Composition for Real-World Scientific Discovery
 
-- Date: 2026-07-07
+- Date: 2026-07-09
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.06163v1
-- PDF: https://arxiv.org/pdf/2607.06163v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-x_femr_a_token_level_explainable_approach_for_electronic_health_records_foundation_models_infographic.json
-
-## 13. KOAL: Knowledge-Driven Prostate Cancer Grading with Ordinal-Aware Learning
-
-- Date: 2026-07-07
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.06019v1
-- PDF: https://arxiv.org/pdf/2607.06019v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-koal_knowledge_driven_prostate_cancer_grading_with_ordinal_aware_learning_infographic.json
-
-## 14. Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction
-
-- Date: 2026-07-06
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.04912v1
-- PDF: https://arxiv.org/pdf/2607.04912v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-graph_representation_learning_of_longitudinal_medical_imaging_trajectories_for_treatment_r_infographic.json
-
-## 15. Harrison.Rad 1.5 Technical Report: A radiology foundation model that can draft reports from images, priors and clinical context
-
-- Date: 2026-07-07
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.05880v1
-- PDF: https://arxiv.org/pdf/2607.05880v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-harrison_rad_1_5_technical_report_a_radiology_foundation_model_that_can_draft_reports_from_infographic.json
-
-## 16. Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)
-
-- Date: 2026-07-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.05032v1
-- PDF: https://arxiv.org/pdf/2607.05032v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-multi_large_language_model_orchestrated_severity_assessment_of_clinical_records_mosaic_infographic.json
-
-## 17. Deep Learning for Semen Analysis in Male Infertility: Computer Vision, Multimodal Fusion, and Clinical Translation
-
-- Date: 2026-07-06
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.05311v1
-- PDF: https://arxiv.org/pdf/2607.05311v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-deep_learning_for_semen_analysis_in_male_infertility_computer_vision_multimodal_fusion_and_infographic.json
-
-## 18. From Voting to Agent Collaboration: Answer-Type-Aware LLM Pipelines for BioASQ 14b
-
-- Date: 2026-07-07
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.06452v1
-- PDF: https://arxiv.org/pdf/2607.06452v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-from_voting_to_agent_collaboration_answer_type_aware_llm_pipelines_for_bioasq_14b_infographic.json
-
-## 19. Comparative Performance of Clinical Scoring Systems for Early Mortality Prediction in Blunt Traumatic Brain Injury
-
-- Date: 2026-07-06
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.03.26357217v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.03.26357217v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-medrxiv-comparative_performance_of_clinical_scoring_systems_for_early_mortality_prediction_in_blun_infographic.json
-
-## 20. Vision Foundation Models in Radiology: A Scoping Review of Data, Methodology, Evaluation and Clinical Translation
-
-- Date: 2026-07-08
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.07219v1
-- PDF: https://arxiv.org/pdf/2607.07219v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-vision_foundation_models_in_radiology_a_scoping_review_of_data_methodology_evaluation_and_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.08150v1
+- PDF: https://arxiv.org/pdf/2607.08150v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-deeppysr_a_symbolic_regression_framework_with_dynamic_pruning_pareto_selection_and_hierarc_infographic.json
