@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-10
+Generated: 2026-07-11
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. MentalHospital: A Virtual Environment for Evaluating Psychiatric Clinical Encounters
@@ -35,7 +35,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.07761v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-aligning_clinical_needs_and_ai_capabilities_a_survey_on_llms_for_medical_reasoning_infographic.json
 
-## 5. AA-ViT: Anatomically Aware Vision Transformer with Structural and Frequency Guidance for Contrast Enhanced Brain MRI Synthesis
+## 5. Classifier Chain-based Pathological Test Recommendation
+
+- Date: 2026-07-09
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2607.08299v1
+- PDF: https://arxiv.org/pdf/2607.08299v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-classifier_chain_based_pathological_test_recommendation_infographic.json
+
+## 6. AA-ViT: Anatomically Aware Vision Transformer with Structural and Frequency Guidance for Contrast Enhanced Brain MRI Synthesis
 
 - Date: 2026-07-08
 - Category: Medical Imaging
@@ -43,7 +51,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.07553v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-aa_vit_anatomically_aware_vision_transformer_with_structural_and_frequency_guidance_for_co_infographic.json
 
-## 6. Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance
+## 7. Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance
 
 - Date: 2026-07-09
 - Category: Clinical NLP
@@ -51,7 +59,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.08602v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-towards_precision_therapy_in_hepatocellular_carcinoma_a_clinical_reasoning_llm_for_risk_st_infographic.json
 
-## 7. Medi-Gemma: A Hybrid Clinical Decision Support System Integrating Deterministic EMR Analytics and Retrieval-Augmented Generation
+## 8. Medi-Gemma: A Hybrid Clinical Decision Support System Integrating Deterministic EMR Analytics and Retrieval-Augmented Generation
 
 - Date: 2026-07-06
 - Category: Clinical NLP
@@ -59,21 +67,13 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.04907v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-medi_gemma_a_hybrid_clinical_decision_support_system_integrating_deterministic_emr_analyti_infographic.json
 
-## 8. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
+## 9. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
 
 - Date: 2026-07-07
 - Category: Health Systems
 - Source: arXiv - https://arxiv.org/abs/2607.06531v1
 - PDF: https://arxiv.org/pdf/2607.06531v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-the_large_cancer_assistant_lca_a_model_agnostic_orchestration_framework_for_scalable_clini_infographic.json
-
-## 9. Classifier Chain-based Pathological Test Recommendation
-
-- Date: 2026-07-09
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2607.08299v1
-- PDF: https://arxiv.org/pdf/2607.08299v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-classifier_chain_based_pathological_test_recommendation_infographic.json
 
 ## 10. The complexities of patient-centred conversational artificial intelligence
 
@@ -123,7 +123,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.05055v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-06-arxiv-toward_trustworthy_large_language_model_agents_in_healthcare_infographic.json
 
-## 16. Multisite Real-World Validation of an Electronic Health Record-Integrated Generative Artificial Intelligence Tool for Venous Thromboembolism Risk Stratification
+## 16. Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies
+
+- Date: 2026-07-09
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.08270v1
+- PDF: https://arxiv.org/pdf/2607.08270v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-progression_as_latent_drift_generative_forecasting_of_slow_evolving_pathologies_infographic.json
+
+## 17. KOAL: Knowledge-Driven Prostate Cancer Grading with Ordinal-Aware Learning
+
+- Date: 2026-07-07
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.06019v1
+- PDF: https://arxiv.org/pdf/2607.06019v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-07-arxiv-koal_knowledge_driven_prostate_cancer_grading_with_ordinal_aware_learning_infographic.json
+
+## 18. Multisite Real-World Validation of an Electronic Health Record-Integrated Generative Artificial Intelligence Tool for Venous Thromboembolism Risk Stratification
 
 - Date: 2026-07-05
 - Category: Health Systems
@@ -131,7 +147,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.17.26355819v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-05-medrxiv-multisite_real_world_validation_of_an_electronic_health_record_integrated_generative_artif_infographic.json
 
-## 17. Compass: Prostate Cancer Detection Needs Multi-View Context
+## 19. Compass: Prostate Cancer Detection Needs Multi-View Context
 
 - Date: 2026-07-08
 - Category: Medical Imaging
@@ -139,26 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.06919v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-compass_prostate_cancer_detection_needs_multi_view_context_infographic.json
 
-## 18. Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation
+## 20. Heterogeneity-Adaptive Diffusion Schrodinger Bridge for PET-Guided Whole-Body MRI Translation
 
 - Date: 2026-07-08
 - Category: Medical Imaging
 - Source: arXiv - https://arxiv.org/abs/2607.07401v1
 - PDF: https://arxiv.org/pdf/2607.07401v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-08-arxiv-heterogeneity_adaptive_diffusion_schrodinger_bridge_for_pet_guided_whole_body_mri_translat_infographic.json
-
-## 19. CT-CLIP Representations for Multimodal Lung Cancer Survival Prediction
-
-- Date: 2026-07-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.08503v1
-- PDF: https://arxiv.org/pdf/2607.08503v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-ct_clip_representations_for_multimodal_lung_cancer_survival_prediction_infographic.json
-
-## 20. DeepPySR -- A Symbolic Regression Framework with Dynamic Pruning, Pareto Selection, and Hierarchical Composition for Real-World Scientific Discovery
-
-- Date: 2026-07-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.08150v1
-- PDF: https://arxiv.org/pdf/2607.08150v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-deeppysr_a_symbolic_regression_framework_with_dynamic_pruning_pareto_selection_and_hierarc_infographic.json
