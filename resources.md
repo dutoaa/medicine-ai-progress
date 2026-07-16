@@ -1,14 +1,14 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-15
+Generated: 2026-07-16
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Evidence-Grounded AI for Musculoskeletal Care
 
 - Date: 2026-07-14
 - Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2607.12527v1
-- PDF: https://arxiv.org/pdf/2607.12527v1
+- Source: arXiv - https://arxiv.org/abs/2607.12527v2
+- PDF: https://arxiv.org/pdf/2607.12527v2
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-evidence_grounded_ai_for_musculoskeletal_care_infographic.json
 
 ## 2. The Path to Self-Evolving Clinical Systems: Scaling Medical Agents from Assistance to Autonomy
@@ -51,7 +51,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.12750v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-crc_hgd_a_histopathological_image_dataset_for_grading_colorectal_cancer_infographic.json
 
-## 7. FAIR GraphRAG: A Retrieval-Augmented Generation Approach for Semantic Data Analysis
+## 7. Towards Enhancing 3D Spatial Reasoning in Medical Multimodal Large Language Models
+
+- Date: 2026-07-15
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.13860v1
+- PDF: https://arxiv.org/pdf/2607.13860v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-towards_enhancing_3d_spatial_reasoning_in_medical_multimodal_large_language_models_infographic.json
+
+## 8. FAIR GraphRAG: A Retrieval-Augmented Generation Approach for Semantic Data Analysis
 
 - Date: 2026-07-13
 - Category: Clinical NLP
@@ -59,23 +67,47 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.11464v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-13-arxiv-fair_graphrag_a_retrieval_augmented_generation_approach_for_semantic_data_analysis_infographic.json
 
-## 8. DermDepth: Toward Monocular Metric Scale 3D Reconstruction Models for Dermatology
+## 9. DermDepth: Toward Monocular Metric Scale 3D Reconstruction Models for Dermatology
 
 - Date: 2026-07-14
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.13010v1
-- PDF: https://arxiv.org/pdf/2607.13010v1
+- Source: arXiv - https://arxiv.org/abs/2607.13010v2
+- PDF: https://arxiv.org/pdf/2607.13010v2
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-dermdepth_toward_monocular_metric_scale_3d_reconstruction_models_for_dermatology_infographic.json
 
-## 9. Automated Phenotypic Characterization in Rare Hematologic Malignancies Using a Large Language Model-Based Framework
+## 10. FM$^2$: Unified Federated Foundation Models for Heterogeneous Multimodal Medical Imaging
 
-- Date: 2026-07-09
+- Date: 2026-07-15
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.13386v1
+- PDF: https://arxiv.org/pdf/2607.13386v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-fm_2_unified_federated_foundation_models_for_heterogeneous_multimodal_medical_imaging_infographic.json
+
+## 11. A Self-Evolving Agent for Longitudinal Personal Health Management
+
+- Date: 2026-07-15
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.13940v1
+- PDF: https://arxiv.org/pdf/2607.13940v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-a_self_evolving_agent_for_longitudinal_personal_health_management_infographic.json
+
+## 12. Fine-Grained Vision-Language Pretraining with Organ-Conditioned Pattern Tokens for CT Understanding
+
+- Date: 2026-07-15
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.13892v1
+- PDF: https://arxiv.org/pdf/2607.13892v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-fine_grained_vision_language_pretraining_with_organ_conditioned_pattern_tokens_for_ct_unde_infographic.json
+
+## 13. Exploring Post-Training Alignment of Small Language Models for Biomedical Data-to-Text Generation: A Case Study of Medication Leaflet
+
+- Date: 2026-07-15
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.26.26356633v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.26.26356633v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-medrxiv-automated_phenotypic_characterization_in_rare_hematologic_malignancies_using_a_large_langu_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.13430v1
+- PDF: https://arxiv.org/pdf/2607.13430v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-exploring_post_training_alignment_of_small_language_models_for_biomedical_data_to_text_gen_infographic.json
 
-## 10. UniMedSeg: Unified In-Context Learning for Multi-Paradigm 2D/3D Medical Image Segmentation
+## 14. UniMedSeg: Unified In-Context Learning for Multi-Paradigm 2D/3D Medical Image Segmentation
 
 - Date: 2026-07-14
 - Category: Medical Imaging
@@ -83,7 +115,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.12896v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-unimedseg_unified_in_context_learning_for_multi_paradigm_2d_3d_medical_image_segmentation_infographic.json
 
-## 11. Evaluating Large Language Models on Misconceptions in Multi-Turn Medical Conversations
+## 15. Evaluating Large Language Models on Misconceptions in Multi-Turn Medical Conversations
 
 - Date: 2026-07-14
 - Category: Clinical NLP
@@ -91,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.12884v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-evaluating_large_language_models_on_misconceptions_in_multi_turn_medical_conversations_infographic.json
 
-## 12. AdaPCLA: Adaptive Prior-Calibrated Logit Adjustment for Long-Tailed Longitudinal EHR Generation
+## 16. AdaPCLA: Adaptive Prior-Calibrated Logit Adjustment for Long-Tailed Longitudinal EHR Generation
 
 - Date: 2026-07-14
 - Category: Medical Imaging
@@ -99,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.12645v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-adapcla_adaptive_prior_calibrated_logit_adjustment_for_long_tailed_longitudinal_ehr_genera_infographic.json
 
-## 13. NVAITC AI Scientist: A Governed End-to-End Research System -- A Hypertension GWAS Case Study
+## 17. NVAITC AI Scientist: A Governed End-to-End Research System -- A Hypertension GWAS Case Study
 
 - Date: 2026-07-13
 - Category: Health Systems
@@ -107,7 +139,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.11084v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-13-arxiv-nvaitc_ai_scientist_a_governed_end_to_end_research_system_a_hypertension_gwas_case_study_infographic.json
 
-## 14. Evaluating Health Misinformation in Low-Resource Languages: Integrating Small Language Models with a Culturally-Sensitive Responsible NLP Framework (Bangla as a Case Study)
+## 18. Evaluating Health Misinformation in Low-Resource Languages: Integrating Small Language Models with a Culturally-Sensitive Responsible NLP Framework (Bangla as a Case Study)
 
 - Date: 2026-07-14
 - Category: Clinical NLP
@@ -115,50 +147,18 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.12336v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-evaluating_health_misinformation_in_low_resource_languages_integrating_small_language_mode_infographic.json
 
-## 15. Beyond Binary Detection: A Multi-Dimensional Taxonomy of Cancer Misinformation on Reddit
+## 19. Multimodal Assessment of Pancreatic Cancer Resectability Using Deep Learning
+
+- Date: 2026-07-15
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.13826v1
+- PDF: https://arxiv.org/pdf/2607.13826v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-multimodal_assessment_of_pancreatic_cancer_resectability_using_deep_learning_infographic.json
+
+## 20. SARFA: Segment Anything with Radiomic Feature Alignment
 
 - Date: 2026-07-14
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.12383v1
-- PDF: https://arxiv.org/pdf/2607.12383v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-beyond_binary_detection_a_multi_dimensional_taxonomy_of_cancer_misinformation_on_reddit_infographic.json
-
-## 16. Agentic systems for breast cancer treatment recommendations
-
-- Date: 2026-07-13
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.12051v1
-- PDF: https://arxiv.org/pdf/2607.12051v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-13-arxiv-agentic_systems_for_breast_cancer_treatment_recommendations_infographic.json
-
-## 17. DiffEEG: A Self-Supervised Denoising Diffusion Model for Learning EEG Generic Representations
-
-- Date: 2026-07-13
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2607.11578v1
-- PDF: https://arxiv.org/pdf/2607.11578v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-13-arxiv-diffeeg_a_self_supervised_denoising_diffusion_model_for_learning_eeg_generic_representatio_infographic.json
-
-## 18. Information-seeking failures of large language models in agentic clinical reasoning
-
-- Date: 2026-07-11
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.10275v1
-- PDF: https://arxiv.org/pdf/2607.10275v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-11-arxiv-information_seeking_failures_of_large_language_models_in_agentic_clinical_reasoning_infographic.json
-
-## 19. MentalHospital: A Virtual Environment for Evaluating Psychiatric Clinical Encounters
-
-- Date: 2026-07-09
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.08257v1
-- PDF: https://arxiv.org/pdf/2607.08257v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-mentalhospital_a_virtual_environment_for_evaluating_psychiatric_clinical_encounters_infographic.json
-
-## 20. A safety-oriented hypothetico-deductive framework for AI-assisted differential diagnosis
-
-- Date: 2026-07-09
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.08038v1
-- PDF: https://arxiv.org/pdf/2607.08038v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-09-arxiv-a_safety_oriented_hypothetico_deductive_framework_for_ai_assisted_differential_diagnosis_infographic.json
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.13323v1
+- PDF: https://arxiv.org/pdf/2607.13323v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-sarfa_segment_anything_with_radiomic_feature_alignment_infographic.json
