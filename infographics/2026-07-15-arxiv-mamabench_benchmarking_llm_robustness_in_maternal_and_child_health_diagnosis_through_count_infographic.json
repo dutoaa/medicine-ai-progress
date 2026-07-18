@@ -1,24 +1,24 @@
 {
-  "key_insight": "MamaBench shows that medical LLMs can look strong on standard questions yet still fail on clinically similar counterfactual cases, revealing important hidden fragility.",
-  "clinical_relevance": "For maternal and child health diagnosis, this matters because safe AI support depends on distinguishing near-identical presentations that require different interventions.",
+  "key_insight": "MamaBench shows that medical LLMs can answer the original case correctly yet still fail clinically similar counterfactual cases, revealing a gap between benchmark accuracy and true diagnostic robustness.",
+  "clinical_relevance": "For maternal and child health AI, this matters because small changes in presentation can imply different interventions, so systems need to distinguish near-miss cases reliably.",
   "method": [
-    "Built MamaBench with 434 expert-authored clinical narratives in 217 counterfactual pairs across 371 pathologies.",
-    "Introduced Bias Trap Rate (BTR) to measure failure on the counterfactual case after success on the base case.",
-    "Proposed Evidence-Anchored RAG (EA-RAG), using parameter extraction, coverage auditing, and contrastive sub-queries to improve retrieval relevance."
+    "Created MamaBench: 434 expert-authored clinical narratives in 217 counterfactual pairs across 371 pathologies.",
+    "Evaluated models with Bias Trap Rate (BTR), measuring the chance of failing the counterfactual after succeeding on the base case.",
+    "Introduced Evidence-Anchored RAG (EA-RAG), which extracts clinical parameters, audits evidence coverage, and uses contrastive sub-queries."
   ],
-  "evidence_signal": "Across eight configurations of four frontier LLMs, base accuracy overstated robust accuracy by 16–28 percentage points, and EA-RAG reached 20.3% BTR and 65.0% robust accuracy on Claude Sonnet 4.6.",
-  "watch_item": "Even with EA-RAG, a residual ~20% BTR remains, so counterfactual robustness is still not reliable enough for deployment without further validation.",
+  "evidence_signal": "Across eight configurations of four frontier LLMs, base accuracy overstated robust accuracy by 16–28 percentage points; EA-RAG achieved 20.3% BTR and 65.0% robust accuracy on Claude Sonnet 4.6.",
+  "watch_item": "Even with EA-RAG, a residual 20% BTR remains, so counterfactual robustness is still incomplete and should not be assumed from standard benchmark scores.",
   "hashtags": [
     "#ClinicalNLP",
     "#MedicalAI",
-    "#CounterfactualEvaluation",
     "#MaternalHealth",
-    "#Robustness"
+    "#CounterfactualEvaluation",
+    "#RAG"
   ],
   "paper_id": "2026-07-15-arxiv-mamabench_benchmarking_llm_robustness_in_maternal_and_child_health_diagnosis_through_count",
   "paper_title": "MamaBench: Benchmarking LLM Robustness in Maternal and Child Health Diagnosis through Counterfactual Clinical Perturbation",
   "paper_date": "2026-07-15",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-07-17T09:05:23",
+  "generated_at": "2026-07-18T08:42:39",
   "generator": "openai"
 }

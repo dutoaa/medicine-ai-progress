@@ -1,24 +1,24 @@
 {
-  "key_insight": "CRISP turns stable probability rankings into robust spatial priors, enabling source-only medical image segmentation that remains reliable under domain shift without test-time updates or target data.",
-  "clinical_relevance": "This could improve the reliability of automated segmentation when models are deployed across hospitals, patient groups, or imaging modalities that differ from training data.",
+  "key_insight": "CRISP uses stable probability rankings under domain shift to build robust high-precision and high-recall spatial priors for segmentation without test-time adaptation or target data.",
+  "clinical_relevance": "It may improve the reliability of medical image segmentation across unseen hospitals, patient groups, and imaging modalities, where standard models often fail.",
   "method": [
-    "Uses the assumption that positive-region ranking is stable under shift.",
-    "Creates high-precision (HP) and high-recall (HR) priors via latent feature perturbations.",
-    "Iteratively refines these priors during training to squeeze them toward the final mask."
+    "Perturbs latent features to identify invariant high-grade regions as a high-precision core.",
+    "Finds voxels that stay potentially foreground across perturbations to form a high-recall support.",
+    "Iteratively squeezes these priors toward the final mask during training, using a frozen-weight, plug-in refinement framework."
   ],
-  "evidence_signal": "The method was evaluated on multi-center cardiac MRI and CT lung vessel segmentation, with reported HD95 reductions of up to 0.14, 1.90, and 8.39 pixels across multi-center, demographic, and modality shifts.",
-  "watch_item": "Performance depends on the validity of the rank-stability assumption, which may not hold for all anatomy, scanners, or severe distribution shifts.",
+  "evidence_signal": "The method was evaluated on multi-center cardiac MRI and CT lung vessel segmentation, with reported HD95 improvements up to 7.0%, 13.1%, and 38.9% across multi-center, demographic, and modality shifts.",
+  "watch_item": "Its robustness depends on the assumption that positive-region rankings remain stable under shift, which may not hold uniformly across all datasets or pathological cases.",
   "hashtags": [
     "#MedicalImaging",
-    "#DomainShift",
     "#Segmentation",
+    "#DomainShift",
     "#RobustAI",
-    "#HealthAI"
+    "#RadiologyAI"
   ],
   "paper_id": "2026-07-16-arxiv-crisp_constrained_refinement_via_iterative_squeezing_process_for_robust_medical_image_segm",
   "paper_title": "CRISP: Constrained Refinement via Iterative Squeezing Process for Robust Medical Image Segmentation under Domain Shift",
   "paper_date": "2026-07-16",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-07-17T09:05:44",
+  "generated_at": "2026-07-18T08:43:07",
   "generator": "openai"
 }

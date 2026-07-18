@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-17
+Generated: 2026-07-18
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Evidence-Grounded AI for Musculoskeletal Care
@@ -107,7 +107,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.15216v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-16-arxiv-symbal_detecting_systematic_misalignments_in_model_generated_captions_infographic.json
 
-## 14. Causal-Adversarial Probing of Clinical Covariates for Prostate MRI Grading
+## 14. Explainable Machine Learning Models for Alzheimer's Diagnosis Using Routine and Low-Cost Clinical Data
+
+- Date: 2026-07-13
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.10.26357720v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.10.26357720v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-13-medrxiv-explainable_machine_learning_models_for_alzheimer_s_diagnosis_using_routine_and_low_cost_c_infographic.json
+
+## 15. Causal-Adversarial Probing of Clinical Covariates for Prostate MRI Grading
 
 - Date: 2026-07-16
 - Category: Medical Imaging
@@ -115,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.14720v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-16-arxiv-causal_adversarial_probing_of_clinical_covariates_for_prostate_mri_grading_infographic.json
 
-## 15. CRISP: Constrained Refinement via Iterative Squeezing Process for Robust Medical Image Segmentation under Domain Shift
+## 16. CRISP: Constrained Refinement via Iterative Squeezing Process for Robust Medical Image Segmentation under Domain Shift
 
 - Date: 2026-07-16
 - Category: Medical Imaging
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.15231v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-16-arxiv-crisp_constrained_refinement_via_iterative_squeezing_process_for_robust_medical_image_segm_infographic.json
 
-## 16. CRC-HGD: A Histopathological Image Dataset for Grading Colorectal Cancer
+## 17. CRC-HGD: A Histopathological Image Dataset for Grading Colorectal Cancer
 
 - Date: 2026-07-14
 - Category: Medical Imaging
@@ -131,7 +139,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.12750v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-crc_hgd_a_histopathological_image_dataset_for_grading_colorectal_cancer_infographic.json
 
-## 17. Towards Enhancing 3D Spatial Reasoning in Medical Multimodal Large Language Models
+## 18. Towards Enhancing 3D Spatial Reasoning in Medical Multimodal Large Language Models
 
 - Date: 2026-07-15
 - Category: Clinical NLP
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.13860v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-towards_enhancing_3d_spatial_reasoning_in_medical_multimodal_large_language_models_infographic.json
 
-## 18. FAIR GraphRAG: A Retrieval-Augmented Generation Approach for Semantic Data Analysis
+## 19. FAIR GraphRAG: A Retrieval-Augmented Generation Approach for Semantic Data Analysis
 
 - Date: 2026-07-13
 - Category: Clinical NLP
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.11464v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-13-arxiv-fair_graphrag_a_retrieval_augmented_generation_approach_for_semantic_data_analysis_infographic.json
 
-## 19. MonteRET: AI Agent Enhancing Multimodal LLMs with Multi-granularity Knowledge Retrieval for Chest CT Report Generation
+## 20. MonteRET: AI Agent Enhancing Multimodal LLMs with Multi-granularity Knowledge Retrieval for Chest CT Report Generation
 
 - Date: 2026-07-15
 - Category: Clinical NLP
 - Source: arXiv - https://arxiv.org/abs/2607.14264v1
 - PDF: https://arxiv.org/pdf/2607.14264v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-monteret_ai_agent_enhancing_multimodal_llms_with_multi_granularity_knowledge_retrieval_for_infographic.json
-
-## 20. DermDepth: Toward Monocular Metric Scale 3D Reconstruction Models for Dermatology
-
-- Date: 2026-07-14
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.13010v2
-- PDF: https://arxiv.org/pdf/2607.13010v2
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-14-arxiv-dermdepth_toward_monocular_metric_scale_3d_reconstruction_models_for_dermatology_infographic.json
