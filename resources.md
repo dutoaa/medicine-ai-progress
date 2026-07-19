@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-18
+Generated: 2026-07-19
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Evidence-Grounded AI for Musculoskeletal Care
