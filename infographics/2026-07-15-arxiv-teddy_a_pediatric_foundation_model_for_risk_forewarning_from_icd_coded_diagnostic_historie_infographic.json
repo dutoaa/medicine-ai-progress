@@ -1,24 +1,24 @@
 {
-  "key_insight": "TEDDY is a compact pediatric transformer that learns from ICD-coded diagnostic histories to forecast disease risk and visit timing well before diagnoses appear.",
-  "clinical_relevance": "This suggests pediatric EHR trajectories may help identify children at elevated risk for future conditions, including rare diseases, using far smaller models than typical foundation models.",
+  "key_insight": "A compact pediatric foundation model, TEDDY, can forecast future disease risk and visit timing from longitudinal ICD-coded histories across many diagnoses, including rare conditions.",
+  "clinical_relevance": "This suggests routine pediatric EHR diagnosis histories may help identify children at elevated risk earlier, potentially supporting broader risk stratification without requiring massive model sizes.",
   "method": [
     "Trained a 1.84M-parameter decoder transformer on ~73 million ICD-10 diagnoses from 1.6 million children.",
-    "Modeled longitudinal diagnosis sequences and visit timing using first-occurrence prediction setup.",
-    "Benchmarked against DenseNet, CNN, RNN, LSTM, and a much larger general-purpose language model."
+    "Modeled longitudinal diagnosis trajectories and visit timing using only prior information before the target visit.",
+    "Evaluated 797 onset-prediction tasks against sex- and age-matched controls and compared with CNN, RNN, LSTM, DenseNet, and a large language model baseline."
   ],
-  "evidence_signal": "Across 797 onset-prediction tasks spanning 16 ICD-10 chapters, TEDDY achieved a median AUC of 72.0% and outperformed all same-data baselines on 96-99% of tasks, with signal still detectable more than two years before diagnosis.",
-  "watch_item": "Single-institution training and imperfect calibration for median/long-tail visit intervals may limit generalizability and implementation readiness.",
+  "evidence_signal": "TEDDY achieved a median AUC of 72.0% across 797 disease-onset tasks, with strong performance on rare diagnoses and benchmark AUCs of 79.3% for asthma and 84.7% for ADHD.",
+  "watch_item": "This was trained and tested at a single pediatric institution, and visit-timing calibration remained imperfect for median and long-tail return intervals.",
   "hashtags": [
-    "#PediatricAI",
+    "#AIinMedicine",
+    "#Pediatrics",
     "#EHR",
-    "#RiskPrediction",
     "#FoundationModel",
-    "#Diagnostics"
+    "#RiskPrediction"
   ],
   "paper_id": "2026-07-15-arxiv-teddy_a_pediatric_foundation_model_for_risk_forewarning_from_icd_coded_diagnostic_historie",
   "paper_title": "TEDDY: A Pediatric Foundation Model for Risk Forewarning from ICD-Coded Diagnostic Histories",
   "paper_date": "2026-07-15",
   "paper_category": "Diagnostics",
-  "generated_at": "2026-07-21T09:22:48",
+  "generated_at": "2026-07-22T09:22:31",
   "generator": "openai"
 }

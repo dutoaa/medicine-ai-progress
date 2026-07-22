@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-21
+Generated: 2026-07-22
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. LLM4EHR: Aligning Clinical Time Series with Medical Event Sequences via Large Language Models
@@ -19,7 +19,39 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.18218v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-gigapath_flash_and_gigatime_flash_efficient_pathology_foundation_models_for_whole_slide_an_infographic.json
 
-## 3. Cura 1T: Specialized Model for Agentic Healthcare
+## 3. Local Label-Informed Feature Transfer for Generating Ground-Truth Medical Images: A Comparison of GAN- and Diffusion-Based Approaches
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.18882v1
+- PDF: https://arxiv.org/pdf/2607.18882v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-local_label_informed_feature_transfer_for_generating_ground_truth_medical_images_a_compari_infographic.json
+
+## 4. From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches
+
+- Date: 2026-07-21
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2607.19075v1
+- PDF: https://arxiv.org/pdf/2607.19075v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-from_operations_to_elderly_care_outcomes_a_thematic_review_of_industrial_engineering_and_d_infographic.json
+
+## 5. DobicVLM: Aligning Chest X-Ray Report Generation with Clinically-Grounded Programmatic Rewards via Group Relative Policy Optimization
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.18988v1
+- PDF: https://arxiv.org/pdf/2607.18988v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-dobicvlm_aligning_chest_x_ray_report_generation_with_clinically_grounded_programmatic_rewa_infographic.json
+
+## 6. An unsupervised clustering analysis of breast cancer data derived from electronic health records enhanced through UMAP dimensionality reduction
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.19089v1
+- PDF: https://arxiv.org/pdf/2607.19089v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-an_unsupervised_clustering_analysis_of_breast_cancer_data_derived_from_electronic_health_r_infographic.json
+
+## 7. Cura 1T: Specialized Model for Agentic Healthcare
 
 - Date: 2026-07-15
 - Category: Health Systems
@@ -27,7 +59,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.15314v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-cura_1t_specialized_model_for_agentic_healthcare_infographic.json
 
-## 4. Medical Imaging Fusing Vision Transformer: Laryngeal Cancer Screening with Explanation
+## 8. Medical Imaging Fusing Vision Transformer: Laryngeal Cancer Screening with Explanation
 
 - Date: 2026-07-20
 - Category: Medical Imaging
@@ -35,7 +67,31 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.17789v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-medical_imaging_fusing_vision_transformer_laryngeal_cancer_screening_with_explanation_infographic.json
 
-## 5. BrainNext: A General-Purpose Self-Supervised Foundation Model for Brain MRI Analysis
+## 9. PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.19261v1
+- PDF: https://arxiv.org/pdf/2607.19261v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-pathagentbench_benchmarking_evidence_seeking_vision_language_models_on_whole_slide_patholo_infographic.json
+
+## 10. Advancing Multimodal Fusion on Heterogeneous Medical Data with Hybrid Geometry Attention
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.19086v1
+- PDF: https://arxiv.org/pdf/2607.19086v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-advancing_multimodal_fusion_on_heterogeneous_medical_data_with_hybrid_geometry_attention_infographic.json
+
+## 11. MedDDC-Eval: Diagnosis-Decoupled Evaluation of Multi-Turn Medical Consultation Agents
+
+- Date: 2026-07-21
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2607.18999v1
+- PDF: https://arxiv.org/pdf/2607.18999v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-medddc_eval_diagnosis_decoupled_evaluation_of_multi_turn_medical_consultation_agents_infographic.json
+
+## 12. BrainNext: A General-Purpose Self-Supervised Foundation Model for Brain MRI Analysis
 
 - Date: 2026-07-20
 - Category: Medical Imaging
@@ -43,7 +99,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.17782v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-brainnext_a_general_purpose_self_supervised_foundation_model_for_brain_mri_analysis_infographic.json
 
-## 6. Multimodal Attention-based Deep Learning for Emergency Triage with Electronic Health Records
+## 13. SWITi: Quantifying and Reducing Tiling Artifacts with Sliding Window Inner Tiling
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.18990v1
+- PDF: https://arxiv.org/pdf/2607.18990v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-switi_quantifying_and_reducing_tiling_artifacts_with_sliding_window_inner_tiling_infographic.json
+
+## 14. Multimodal Attention-based Deep Learning for Emergency Triage with Electronic Health Records
 
 - Date: 2026-07-18
 - Category: Health Systems
@@ -51,7 +115,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.16662v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-18-arxiv-multimodal_attention_based_deep_learning_for_emergency_triage_with_electronic_health_recor_infographic.json
 
-## 7. TEDDY: A Pediatric Foundation Model for Risk Forewarning from ICD-Coded Diagnostic Histories
+## 15. Reconsidering the case against risk prediction in self-harm: routinely collected health data distinguishes groups at higher and lower risk of adverse outcomes following paracetamol overdose
+
+- Date: 2026-07-17
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.15.26358127v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.15.26358127v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-17-medrxiv-reconsidering_the_case_against_risk_prediction_in_self_harm_routinely_collected_health_dat_infographic.json
+
+## 16. Copy Less, Ground More: Overcoming Repetitive Copying in Long-Context Reasoning via Evidence-Aware Reinforcement Learning
+
+- Date: 2026-07-21
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.19345v1
+- PDF: https://arxiv.org/pdf/2607.19345v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-copy_less_ground_more_overcoming_repetitive_copying_in_long_context_reasoning_via_evidence_infographic.json
+
+## 17. TEDDY: A Pediatric Foundation Model for Risk Forewarning from ICD-Coded Diagnostic Histories
 
 - Date: 2026-07-15
 - Category: Diagnostics
@@ -59,106 +139,26 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.14191v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-teddy_a_pediatric_foundation_model_for_risk_forewarning_from_icd_coded_diagnostic_historie_infographic.json
 
-## 8. Judge-dependent safety gains and model-specific helpfulness costs of evidence-sufficiency prompting in clinical LLMs
+## 18. Weakly Supervised Pathology-Informed Representation Learning for PET-Based Content Retrieval of Intra-Tumour Heterogeneity
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.18762v1
+- PDF: https://arxiv.org/pdf/2607.18762v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-weakly_supervised_pathology_informed_representation_learning_for_pet_based_content_retriev_infographic.json
+
+## 19. Using binary silver labels in electronic health records-based computable phenotyping algorithms
 
 - Date: 2026-07-20
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.18086v1
-- PDF: https://arxiv.org/pdf/2607.18086v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-judge_dependent_safety_gains_and_model_specific_helpfulness_costs_of_evidence_sufficiency_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.18431v1
+- PDF: https://arxiv.org/pdf/2607.18431v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-using_binary_silver_labels_in_electronic_health_records_based_computable_phenotyping_algor_infographic.json
 
-## 9. SAMRI-3D: Adapting SAM2 for 3D MRI Segmentation with Global Volume Tokens
+## 20. Riemannian Deep Learning:Modules, Networks, and Geometries
 
-- Date: 2026-07-20
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.18014v1
-- PDF: https://arxiv.org/pdf/2607.18014v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-samri_3d_adapting_sam2_for_3d_mri_segmentation_with_global_volume_tokens_infographic.json
-
-## 10. Can Multimodal Large Language Models Understand OCT?
-
-- Date: 2026-07-18
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.16609v1
-- PDF: https://arxiv.org/pdf/2607.16609v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-18-arxiv-can_multimodal_large_language_models_understand_oct_infographic.json
-
-## 11. Benchmarking Resource-Efficient LLMs for Research Topic Ontology Generation in the Biomedical Field
-
-- Date: 2026-07-20
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.17902v1
-- PDF: https://arxiv.org/pdf/2607.17902v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-benchmarking_resource_efficient_llms_for_research_topic_ontology_generation_in_the_biomedi_infographic.json
-
-## 12. Investigation of Polycystic Ovary Syndrome (PCOS) Diagnosis Using Machine Learning Approaches
-
-- Date: 2026-07-18
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.16941v1
-- PDF: https://arxiv.org/pdf/2607.16941v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-18-arxiv-investigation_of_polycystic_ovary_syndrome_pcos_diagnosis_using_machine_learning_approache_infographic.json
-
-## 13. Multimodal Semantic-Aware Contrastive Learning For False Negative Mitigation in 3D Medical Imaging
-
-- Date: 2026-07-16
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.14995v1
-- PDF: https://arxiv.org/pdf/2607.14995v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-16-arxiv-multimodal_semantic_aware_contrastive_learning_for_false_negative_mitigation_in_3d_medical_infographic.json
-
-## 14. NeuroGRIP: Retrieval-Augmented Graph Refinement for Knowledge-Grounded EEG Seizure Diagnosis
-
-- Date: 2026-07-15
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.14314v1
-- PDF: https://arxiv.org/pdf/2607.14314v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-neurogrip_retrieval_augmented_graph_refinement_for_knowledge_grounded_eeg_seizure_diagnosi_infographic.json
-
-## 15. A Temporal Machine Learning-Based Time-to-Event Model for Predicting ALS Progression and Healthcare Utilization
-
-- Date: 2026-07-15
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2607.14190v1
-- PDF: https://arxiv.org/pdf/2607.14190v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-15-arxiv-a_temporal_machine_learning_based_time_to_event_model_for_predicting_als_progression_and_h_infographic.json
-
-## 16. Pediatric Bone Age Prediction Using Deep Learning
-
-- Date: 2026-07-18
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.16936v1
-- PDF: https://arxiv.org/pdf/2607.16936v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-18-arxiv-pediatric_bone_age_prediction_using_deep_learning_infographic.json
-
-## 17. CardioMeta: Calibrated Multi-Task Prediction of Diabetes, Hypertension, and Cardiovascular Disease Across Population and EHR Data
-
-- Date: 2026-07-17
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.15721v1
-- PDF: https://arxiv.org/pdf/2607.15721v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-17-arxiv-cardiometa_calibrated_multi_task_prediction_of_diabetes_hypertension_and_cardiovascular_di_infographic.json
-
-## 18. A Transportable Threshold-Based Framework for Interpretable Classification of Medical Data
-
-- Date: 2026-07-16
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2607.15394v1
-- PDF: https://arxiv.org/pdf/2607.15394v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-16-arxiv-a_transportable_threshold_based_framework_for_interpretable_classification_of_medical_data_infographic.json
-
-## 19. Hierarchy-Aware and Anatomy-Guided Learning for Lung Ultrasound Video Classification
-
-- Date: 2026-07-20
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.17551v1
-- PDF: https://arxiv.org/pdf/2607.17551v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-hierarchy_aware_and_anatomy_guided_learning_for_lung_ultrasound_video_classification_infographic.json
-
-## 20. Safety That Does Not Transfer: Cross-Lingual Clinical Correctness Drift in Deployable Medical Language Models
-
-- Date: 2026-07-19
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.17270v1
-- PDF: https://arxiv.org/pdf/2607.17270v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-19-arxiv-safety_that_does_not_transfer_cross_lingual_clinical_correctness_drift_in_deployable_medic_infographic.json
+- Date: 2026-07-21
+- Category: Biomedical AI
+- Source: arXiv - https://arxiv.org/abs/2607.19305v1
+- PDF: https://arxiv.org/pdf/2607.19305v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-riemannian_deep_learning_modules_networks_and_geometries_infographic.json
