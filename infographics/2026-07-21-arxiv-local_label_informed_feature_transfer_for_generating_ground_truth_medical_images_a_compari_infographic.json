@@ -1,24 +1,24 @@
 {
-  "key_insight": "LLIFT generates semi-synthetic brain MRI with realistic, spatially controlled lesions using only image-level labels or bounding-box guidance, enabling ground-truth data for XAI evaluation without pixel-level lesion annotations.",
-  "clinical_relevance": "This could improve benchmarking of explainable AI in medical imaging by creating more realistic test images with known lesion locations, supporting safer model assessment workflows.",
+  "key_insight": "LLIFT generates semi-synthetic brain MRI with realistic, spatially controlled lesions using only image-level labels or box masks, enabling ground-truth benchmarks for XAI evaluation.",
+  "clinical_relevance": "This could help researchers test explainability methods on medical images where lesion location is known, without relying on imperfect manual pixel annotations.",
   "method": [
-    "LLIFT-GAN: a custom GAN learns pathological features from binary healthy vs pathological labels.",
-    "LLIFT-DM: a diffusion inpainting pipeline uses ControlNet with bounding-box masks to place lesions in user-controlled regions.",
-    "Both produce semi-synthetic MRI benchmarks with controlled ground truth for downstream XAI testing."
+    "LLIFT-GAN learns pathological features from binary class labels alone.",
+    "LLIFT-DM uses diffusion-based inpainting conditioned on bounding-box masks via ControlNet.",
+    "Both aim to place realistic lesions in user-controlled regions of healthy MRI scans."
   ],
-  "evidence_signal": "On Human Connectome Project-derived brain MRI, both variants achieved FID scores against real pathological images that were comparable to the healthy-versus-pathological reference gap, with qualitative inspection supporting lesion realism.",
-  "watch_item": "The approach depends on how well semi-synthetic lesions match real pathology, so results should be validated carefully before using the datasets as a substitute for clinical ground truth.",
+  "evidence_signal": "On Human Connectome Project brain MRI data, both variants achieved Fréchet Inception Distance scores comparable to the real healthy-vs-pathological gap, and qualitative review found lesion structures realistic.",
+  "watch_item": "The generated images are for benchmark creation rather than direct clinical use, and realism or generalization may depend on the source dataset and chosen lesion region.",
   "hashtags": [
     "#MedicalImaging",
-    "#ExplainableAI",
-    "#GenerativeAI",
+    "#XAI",
+    "#GAN",
     "#DiffusionModels",
-    "#GANs"
+    "#BrainMRI"
   ],
   "paper_id": "2026-07-21-arxiv-local_label_informed_feature_transfer_for_generating_ground_truth_medical_images_a_compari",
   "paper_title": "Local Label-Informed Feature Transfer for Generating Ground-Truth Medical Images: A Comparison of GAN- and Diffusion-Based Approaches",
   "paper_date": "2026-07-21",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-07-22T09:21:56",
+  "generated_at": "2026-07-23T09:18:52",
   "generator": "openai"
 }

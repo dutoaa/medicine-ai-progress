@@ -1,24 +1,24 @@
 {
-  "key_insight": "MedDDC-Eval separates evidence-gathering quality from final diagnosis generation, making multi-turn medical agent evaluation more fair and interpretable.",
-  "clinical_relevance": "This matters for patient-facing consultation systems because it better measures whether an agent asks useful questions and collects enough history before concluding.",
+  "key_insight": "MedDDC-Eval separates evidence collection from final diagnosis generation, making it easier to measure how well a medical consultation agent asks useful questions and gathers diagnostic history.",
+  "clinical_relevance": "This could improve evaluation and training of AI triage/consultation tools, especially where the quality of patient questioning matters as much as the final answer.",
   "method": [
-    "Uses a shared frozen reader so different histories are judged with the same diagnosis mapping.",
-    "Evaluates open-ended responses with directional semantic coverage and one-to-one matching for precision/recall counts.",
-    "Adds a D/T/E harness to track diagnostic usefulness, information acquisition, and efficiency during multi-turn consultations."
+    "Uses a diagnosis-decoupled testbed that evaluates elicited history instead of end-to-end diagnosis alone.",
+    "Holds history-to-diagnosis mapping constant with a shared frozen reader to isolate policy quality.",
+    "Applies GRPO-based post-training on multi-turn rollouts using diagnosis-result and trajectory feedback."
   ],
-  "evidence_signal": "Across two held-out sources, changing only the diagnostic reader shifted diagnosis F1 by 2.2-19.0 points and reversed 18% and 36% of policy pairwise rankings on the Record and Dialogue splits; GRPO training improved total score by 9.7 and 4.6 points on the 100-case Record and 70-case Dialogue splits.",
-  "watch_item": "Results depend on the chosen frozen reader and evaluation setup, so real-world deployment should still validate whether the measured history quality matches clinical usefulness.",
+  "evidence_signal": "Across held-out Record and Dialogue splits, the framework showed that changing only the diagnostic reader shifted diagnosis F1 by 2.2–19.0 points and reversed 18%–36% of pairwise policy orderings.",
+  "watch_item": "Results depend on a frozen shared reader and automated semantic matching, so real-world clinical validity may differ from benchmark performance.",
   "hashtags": [
     "#MedicalAI",
-    "#ClinicalEvaluation",
-    "#MultiTurnDialogue",
-    "#LLMEvaluation",
-    "#DecisionSupport"
+    "#ClinicalDecisionSupport",
+    "#MultiTurnDialog",
+    "#EvaluationBenchmark",
+    "#PolicyOptimization"
   ],
   "paper_id": "2026-07-21-arxiv-medddc_eval_diagnosis_decoupled_evaluation_of_multi_turn_medical_consultation_agents",
   "paper_title": "MedDDC-Eval: Diagnosis-Decoupled Evaluation of Multi-Turn Medical Consultation Agents",
   "paper_date": "2026-07-21",
   "paper_category": "Diagnostics",
-  "generated_at": "2026-07-22T09:22:16",
+  "generated_at": "2026-07-23T09:19:15",
   "generator": "openai"
 }
