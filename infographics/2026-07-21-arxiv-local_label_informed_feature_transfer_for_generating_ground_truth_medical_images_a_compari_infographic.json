@@ -1,13 +1,13 @@
 {
-  "key_insight": "LLIFT generates semi-synthetic brain MRI with realistic, spatially controlled lesions using only image-level labels or box masks, enabling ground-truth benchmarks for XAI evaluation.",
-  "clinical_relevance": "This could help researchers test explainability methods on medical images where lesion location is known, without relying on imperfect manual pixel annotations.",
+  "key_insight": "LLIFT generates semi-synthetic brain MRI with realistic, spatially controlled lesions using only image-level labels, enabling ground-truth datasets for testing XAI methods.",
+  "clinical_relevance": "This could help researchers benchmark explanation tools on medical images without relying on error-prone pixel-level lesion annotations or unrealistic artificial perturbations.",
   "method": [
-    "LLIFT-GAN learns pathological features from binary class labels alone.",
-    "LLIFT-DM uses diffusion-based inpainting conditioned on bounding-box masks via ControlNet.",
-    "Both aim to place realistic lesions in user-controlled regions of healthy MRI scans."
+    "LLIFT learns where to place informative features from binary class labels alone.",
+    "LLIFT-GAN uses a custom GAN to transfer pathological features into healthy images.",
+    "LLIFT-DM uses diffusion-based inpainting with ControlNet and bounding-box masks."
   ],
-  "evidence_signal": "On Human Connectome Project brain MRI data, both variants achieved Fréchet Inception Distance scores comparable to the real healthy-vs-pathological gap, and qualitative review found lesion structures realistic.",
-  "watch_item": "The generated images are for benchmark creation rather than direct clinical use, and realism or generalization may depend on the source dataset and chosen lesion region.",
+  "evidence_signal": "On Human Connectome Project brain MRI data, both variants achieved FID scores comparable to the healthy-vs-pathological gap in the dataset, and visual review found the lesions realistic.",
+  "watch_item": "These are semi-synthetic images for benchmarking, so performance may not fully reflect real-world clinical lesion diversity or downstream XAI behavior.",
   "hashtags": [
     "#MedicalImaging",
     "#XAI",
@@ -19,6 +19,6 @@
   "paper_title": "Local Label-Informed Feature Transfer for Generating Ground-Truth Medical Images: A Comparison of GAN- and Diffusion-Based Approaches",
   "paper_date": "2026-07-21",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-07-23T09:18:52",
+  "generated_at": "2026-07-24T09:15:47",
   "generator": "openai"
 }

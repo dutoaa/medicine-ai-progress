@@ -1,24 +1,24 @@
 {
-  "key_insight": "Medical image representations converge only modestly, and this shared geometry is driven more by self-supervised pretraining than by clinical supervision or model scale.",
-  "clinical_relevance": "A classifier can transfer across encoders and even to unseen hospitals with about 85% of within-encoder performance, suggesting interoperability is possible but must be validated carefully.",
+  "key_insight": "Medical image encoders become more similar mainly when they are trained with self-supervised objectives, not simply because they are larger or clinically supervised.",
+  "clinical_relevance": "A classifier can transfer across encoders and hospitals, but the shared representation is only partial and should be validated before assuming models are interchangeable in practice.",
   "method": [
-    "Compared 18 image and 7 text encoders across 5 imaging modalities.",
-    "Controlled for data, architecture, and scale while varying only the training objective.",
-    "Evaluated representational similarity and transfer, including a synthetic model check."
+    "Compared 18 image and 7 text encoders across 5 imaging modalities, spanning 7M to 27B parameters.",
+    "Controlled training to vary only the learning objective while keeping data, architecture, and scale fixed.",
+    "Tested representational similarity plus transfer across encoders, modalities, and five held-out hospitals."
   ],
-  "evidence_signal": "The study analyzed 650,982 chest radiographs from six datasets and found matched self-supervised encoders aligned most on chest radiography (40.4%), versus label-supervised (21.1%) and image-text (3.3%).",
-  "watch_item": "The convergence does not extend well to clinical language or radiologist-defined similarity, so shared representations may be weakest in subgroup-specific or judgment-based use cases.",
+  "evidence_signal": "On chest radiography, matched self-supervised encoders aligned most (40.4%), while label-supervised (21.1%) and image-text (3.3%) were much lower; transfer retained about 85% of within-encoder performance.",
+  "watch_item": "The convergence is modest, within-modality, and does not match clinical similarity judgments, so interoperability may fail in weaker subgroups or settings.",
   "hashtags": [
     "#MedicalAI",
     "#FoundationModels",
     "#SelfSupervisedLearning",
-    "#RadiologyAI",
-    "#RepresentationLearning"
+    "#MedicalImaging",
+    "#ModelInteroperability"
   ],
   "paper_id": "2026-07-22-arxiv-self_supervision_drives_representational_convergence_in_medical_foundation_models_more_tha",
   "paper_title": "Self-supervision drives representational convergence in medical foundation models more than clinical supervision",
   "paper_date": "2026-07-22",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-07-23T09:18:38",
+  "generated_at": "2026-07-24T09:15:04",
   "generator": "openai"
 }
