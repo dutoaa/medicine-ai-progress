@@ -1,24 +1,24 @@
 {
-  "key_insight": "Diagnostic accuracy alone can hide whether a medical LLM used patient evidence correctly, so the paper audits evidence use rather than just final answers.",
-  "clinical_relevance": "This matters because clinically plausible differential reasoning can look like failure, while shortcut-like reasoning may be missed unless evidence interactions are checked.",
+  "key_insight": "Diagnostic accuracy alone can hide whether a medical LLM actually used the right evidence, so the paper audits evidence use rather than just final answers.",
+  "clinical_relevance": "This matters because models may appear reliable while relying on shortcuts, missing negations, or clinically implausible cues that could affect diagnosis support.",
   "method": [
-    "Decomposed each case into evidence units and scored diagnoses under controlled subsets of evidence.",
-    "Mined low-order interactions in diagnostic margins to find support, conflict, and cancellation effects.",
-    "Separated interaction discovery from failure assignment, then used robustness checks and clinical review for suspicious cases."
+    "Decomposed each patient case into evidence units and tested diagnoses under controlled evidence subsets.",
+    "Mined low-order interactions in diagnostic margins to see how different evidence pieces change model choices.",
+    "Separated clinically plausible differential-diagnosis effects from suspicious shortcut-like failures using robustness checks and clinical review."
   ],
-  "evidence_signal": "Across five open-weight LLMs on DDXPlus, CupCase, and MedCase, most interaction strength came from faithful support and differential conflict or cancellation, with a blinded 130-item reviewer sample highlighting invalid or shortcut-like cases mainly in negated/absent findings and local evidence.",
-  "watch_item": "Because evidence interactions are diagnosis-relative, some large or negative effects may be clinically reasonable differentials rather than model failures, so interpretation needs expert review.",
+  "evidence_signal": "Across DDXPlus, CupCase, and MedCase, faithful support plus differential conflict or cancellation explained most interaction strength, while a blinded 130-item DDXPlus review found invalid or shortcut-like cases concentrated in negated/absent findings and local evidence.",
+  "watch_item": "Interaction patterns are diagnosis-relative, so some large effects are not errors; interpreting them requires careful clinical validation before drawing conclusions about model failure.",
   "hashtags": [
     "#MedicalAI",
-    "#LLMAudit",
-    "#Diagnostics",
-    "#EvidenceUse",
-    "#ClinicalNLP"
+    "#LLMEvaluation",
+    "#Diagnosis",
+    "#ClinicalSafety",
+    "#AIAuditing"
   ],
   "paper_id": "2026-07-23-arxiv-auditing_evidence_use_in_medical_llm_diagnosis",
   "paper_title": "Auditing Evidence Use in Medical LLM Diagnosis",
   "paper_date": "2026-07-23",
   "paper_category": "Diagnostics",
-  "generated_at": "2026-07-24T09:15:07",
+  "generated_at": "2026-07-25T09:52:12",
   "generator": "openai"
 }

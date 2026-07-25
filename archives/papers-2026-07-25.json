@@ -24,19 +24,19 @@
         "url": "https://arxiv.org/pdf/2607.20087v1"
       }
     ],
-    "score": 103,
+    "score": 108,
     "infographic": {
-      "key_insight": "An automated CMR AI pipeline can extract labels from reports, fine-tune vision models, and diagnose major cardiomyopathies with strong accuracy.",
-      "clinical_relevance": "This could support faster, more consistent reading of conventional CMR scans and reduce manual data-curation burden in cardiac imaging workflows.",
+      "key_insight": "An automated AI pipeline can extract labels from CMR reports and, using multimodal vision models, accurately identify several cardiomyopathies and normal scans from conventional CMR images.",
+      "clinical_relevance": "This could support faster, more standardized CMR interpretation and help scale diagnostic assistance in settings with limited expert readers.",
       "method": [
-        "Used locally run open-source LLMs to extract diagnostic labels from narrative CMR reports.",
-        "Preprocessed multimodal CMR data, including cine and late-gadolinium-enhancement (LGE) sequences.",
-        "Fine-tuned three foundation models (DINO, VST, UMedPT) in a two-stage training setup."
+        "Used locally run open-source LLMs to pull diagnostic labels from narrative CMR reports and curate multimodal CMR data.",
+        "Fine-tuned three vision foundation models (DINO, VST, UMedPT) on cine and late-gadolinium-enhancement (LGE) sequences in a two-stage workflow.",
+        "Combined model and modality outputs with ensemble strategies to improve diagnostic robustness."
       ],
-      "evidence_signal": "On an independent test set of 1,067 patients, ensemble models achieved AUCs up to 0.966 for cardiac amyloidosis and 0.959 for hypertrophic cardiomyopathy.",
-      "watch_item": "Performance was shown in a research setting, so real-world deployment still needs external validation, workflow integration, and monitoring for label/selection bias.",
+      "evidence_signal": "The study trained on 988 curated cases, validated on 246, and reported performance on an independent test set of 1,067 patients, with top AUCs reaching 0.966 for cardiac amyloidosis and 0.959 for hypertrophic cardiomyopathy.",
+      "watch_item": "Performance was strong, but real-world use still needs external validation, workflow integration, and confirmation that automated label extraction remains reliable across sites and report styles.",
       "hashtags": [
-        "#AIinMedicine",
+        "#ArtificialIntelligence",
         "#CardiacMRI",
         "#MedicalImaging",
         "#DeepLearning",
@@ -46,7 +46,7 @@
       "paper_title": "Development of an automated, reliable, and clinically meaningful artificial intelligence (AI) tool for diagnosing cardiac disease from conventional cardiovascular magnetic resonance (CMR) images",
       "paper_date": "2026-07-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:51:59",
+      "generated_at": "2026-07-24T09:14:54",
       "generator": "openai"
     }
   },
@@ -77,29 +77,29 @@
         "url": "https://arxiv.org/pdf/2607.21343v1"
       }
     ],
-    "score": 88,
+    "score": 93,
     "infographic": {
-      "key_insight": "M$^3$-Gen generates plausible gene expression profiles from histopathology images plus clinical metadata, while also highlighting which image regions influenced the output.",
-      "clinical_relevance": "This could help researchers study molecular tumor patterns when direct gene-expression testing is costly, limited, or unavailable.",
+      "key_insight": "M³-Gen predicts biologically plausible gene expression profiles from histopathology images plus clinical metadata, while also highlighting which image regions influenced the output.",
+      "clinical_relevance": "This could help researchers estimate molecular profiles when gene expression testing is costly, unavailable, or privacy-sensitive, supporting multimodal cancer research and model development.",
       "method": [
-        "Conditions a GAN on histopathology images and clinical variables",
-        "Uses contrastive learning to build a shared latent representation across modalities",
-        "Adds attention-based fusion for interpretable, modality-guided generation"
+        "Uses a GAN to generate gene expression profiles conditioned on image and clinical inputs.",
+        "Learns a shared latent space with contrastive learning to align modalities.",
+        "Adds attention-based fusion for intrinsic interpretability of image regions and generated genes."
       ],
-      "evidence_signal": "In TCGA evaluations, the model produced realistic and functionally meaningful gene expression profiles.",
-      "watch_item": "Results are based on retrospective TCGA data, so external validation and clinical deployment testing are still needed.",
+      "evidence_signal": "On the TCGA dataset, the model produced realistic and functionally meaningful gene expression profiles according to the abstract.",
+      "watch_item": "Generative results should be validated carefully across external cohorts and settings before any downstream research use, since performance may depend on dataset quality and modality alignment.",
       "hashtags": [
-        "#AIinMedicine",
         "#MedicalImaging",
-        "#PathologyAI",
+        "#AIinMedicine",
         "#MultimodalAI",
-        "#ExplainableAI"
+        "#DigitalPathology",
+        "#Genomics"
       ],
       "paper_id": "2026-07-23-arxiv-m_3_gen_interpretable_multimodal_generation_of_gene_expression_profiles_using_clinical_and",
       "paper_title": "M$^3$-Gen: Interpretable Multimodal Generation of Gene Expression Profiles Using Clinical and Imaging Data",
       "paper_date": "2026-07-23",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:02",
+      "generated_at": "2026-07-24T09:14:56",
       "generator": "openai"
     }
   },
@@ -128,29 +128,29 @@
         "url": "https://arxiv.org/pdf/2607.20814v1"
       }
     ],
-    "score": 87,
+    "score": 92,
     "infographic": {
-      "key_insight": "A guide-grounded multimodal LLM that combines ECG image features, Grad-CAM heatmaps, and a curated ECG interpretation guide can generate more clinically aligned cardiac reports.",
-      "clinical_relevance": "This approach may improve trustworthiness and reproducibility of AI-assisted ECG interpretation by reducing hallucinations and using guideline-consistent diagnostic language.",
+      "key_insight": "Injecting a curated ECG interpretation guide into a multimodal LLM makes ECG report generation more guideline-grounded and less hallucinatory.",
+      "clinical_relevance": "This could improve the trustworthiness and reproducibility of AI-generated ECG explanations for cardiac assessment.",
       "method": [
-        "CNN analyzes 12-lead ECG images to produce class probabilities.",
-        "Grad-CAM creates class-specific heatmaps for visual grounding.",
-        "A distilled ECG Interpretation Guide is injected into a multimodal LLM to generate structured reports."
+        "CNN analyzes 12-lead ECG images and outputs class probabilities.",
+        "Grad-CAM creates class-specific heatmaps and a fact pack from the ECG.",
+        "A multimodal LLM generates structured reports using the ECG image, heatmap, CNN facts, and a fixed offline ECG guide."
       ],
-      "evidence_signal": "On the full PTB-XL test set, the method improved average BERTScore for impressions from 0.818 to 0.953 versus a strong baseline while preserving competitive classification performance.",
-      "watch_item": "Because the guide is fixed and distilled offline, performance may depend on the quality, completeness, and updating of the curated clinical knowledge.",
+      "evidence_signal": "On the full PTB-XL test set, the method raised impression BERTScore from 0.818 to 0.953 versus a strong baseline while keeping competitive classification performance.",
+      "watch_item": "Performance gains depend on the quality and completeness of the curated guide, so mismatches with local practice or unusual ECG patterns could still affect reliability.",
       "hashtags": [
-        "#AIinMedicine",
         "#ECG",
-        "#ClinicalNLP",
         "#ExplainableAI",
-        "#MultimodalLLM"
+        "#ClinicalNLP",
+        "#MultimodalLLM",
+        "#CardiologyAI"
       ],
       "paper_id": "2026-07-23-arxiv-enhancing_explainable_cardiac_diagnosis_with_guide_grounded_multimodal_llms",
       "paper_title": "Enhancing Explainable Cardiac Diagnosis with Guide-Grounded Multimodal LLMs",
       "paper_date": "2026-07-23",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-07-25T09:52:04",
+      "generated_at": "2026-07-24T09:14:59",
       "generator": "openai"
     }
   },
@@ -180,29 +180,29 @@
         "url": "https://arxiv.org/pdf/2607.20691v1"
       }
     ],
-    "score": 86,
+    "score": 91,
     "infographic": {
-      "key_insight": "A spatially grounded Concept Bottleneck Model uses weak lesion-mask supervision to make breast ultrasound predictions more interpretable and anatomically faithful.",
-      "clinical_relevance": "This approach could improve trust in AI-assisted breast ultrasound by aligning concept explanations with lesion regions and posterior acoustic effects that clinicians expect to matter.",
+      "key_insight": "A spatially grounded Concept Bottleneck Model can make breast ultrasound diagnoses more trustworthy by tying concept predictions to lesion-specific regions instead of irrelevant image areas.",
+      "clinical_relevance": "This approach aims to improve both diagnostic performance and explainability in breast ultrasound, supporting more anatomically plausible AI assistance for clinicians.",
       "method": [
-        "Derive two weakly supervised zones from each lesion mask: an in-lesion region for morphology and a posterior acoustic band for posterior phenomena.",
-        "Train concept maps with a grouped spatial grounding objective to encourage concept evidence from the right anatomy.",
-        "Use a linear bottleneck classifier to preserve semantic faithfulness while supporting diagnosis."
+        "Use coarse lesion masks to define two weakly supervised zones: an in-lesion region and a posterior acoustic band.",
+        "Train concept maps with a grouped spatial grounding objective to encourage concept evidence in the right anatomy.",
+        "Keep the final diagnosis stage interpretable with a linear bottleneck classifier."
       ],
-      "evidence_signal": "In five-fold stratified group cross-validation, SG-CBM improved diagnostic AUROC, concept macro-AUROC, and spatial alignment of concept evidence; a Train-corrupt/Test-clean test assessed sensitivity to annotation quality.",
-      "watch_item": "The model’s trustworthiness depends on the quality of coarse lesion annotations, so noisy or inconsistent masks may weaken both explanation fidelity and diagnostic performance.",
+      "evidence_signal": "In five-fold stratified group cross-validation, the model improved diagnostic AUROC and concept macro-AUROC while increasing spatial alignment; a Train-corrupt/Test-clean stress test assessed how annotation quality affects trustworthiness.",
+      "watch_item": "The method depends on the quality of coarse lesion delineations, so performance and spatial faithfulness may degrade when supervision is noisy or inconsistently annotated.",
       "hashtags": [
         "#BreastUltrasound",
-        "#ConceptBottleneckModel",
+        "#AIinMedicine",
         "#ExplainableAI",
-        "#MedicalImagingAI",
+        "#ConceptBottleneckModel",
         "#TrustworthyAI"
       ],
       "paper_id": "2026-07-22-arxiv-spatially_grounded_concept_bottleneck_models_for_trustworthy_breast_ultrasound_diagnosis",
       "paper_title": "Spatially Grounded Concept Bottleneck Models for Trustworthy Breast Ultrasound Diagnosis",
       "paper_date": "2026-07-22",
       "paper_category": "Diagnostics",
-      "generated_at": "2026-07-25T09:52:07",
+      "generated_at": "2026-07-24T09:15:02",
       "generator": "openai"
     }
   },
@@ -234,29 +234,29 @@
         "url": "https://arxiv.org/pdf/2607.20274v1"
       }
     ],
-    "score": 85,
+    "score": 90,
     "infographic": {
-      "key_insight": "In medical foundation models, representational convergence is driven more by the self-supervised pretraining objective than by clinical supervision or model scale.",
-      "clinical_relevance": "A linear classifier can transfer across encoders and to external hospitals, but the shared geometry is still imperfect and weaker where clinical judgment matters most.",
+      "key_insight": "Medical image encoders become more similar mainly when they are trained with self-supervised objectives, not simply because they are larger or clinically supervised.",
+      "clinical_relevance": "A classifier can transfer across encoders and hospitals, but the shared representation is only partial and should be validated before assuming models are interchangeable in practice.",
       "method": [
-        "Compared 18 image and 7 text encoders across 5 imaging modalities",
-        "Controlled experiments varied only the training objective while keeping data, architecture, and scale fixed",
-        "Evaluated similarity, scalability, and transfer across six chest radiography datasets and held-out hospitals"
+        "Compared 18 image and 7 text encoders across 5 imaging modalities, spanning 7M to 27B parameters.",
+        "Controlled training to vary only the learning objective while keeping data, architecture, and scale fixed.",
+        "Tested representational similarity plus transfer across encoders, modalities, and five held-out hospitals."
       ],
-      "evidence_signal": "Across 650,982 chest radiographs, matched self-supervised encoders aligned most (40.4%), outperforming label-supervised (21.1%) and image-text (3.3%) models.",
-      "watch_item": "The observed convergence is modest, within-modality, and does not match radiologists' similarity judgments, so interoperability may fail in underrepresented subgroups or edge cases.",
+      "evidence_signal": "On chest radiography, matched self-supervised encoders aligned most (40.4%), while label-supervised (21.1%) and image-text (3.3%) were much lower; transfer retained about 85% of within-encoder performance.",
+      "watch_item": "The convergence is modest, within-modality, and does not match clinical similarity judgments, so interoperability may fail in weaker subgroups or settings.",
       "hashtags": [
         "#MedicalAI",
         "#FoundationModels",
         "#SelfSupervisedLearning",
-        "#Radiology",
+        "#MedicalImaging",
         "#ModelInteroperability"
       ],
       "paper_id": "2026-07-22-arxiv-self_supervision_drives_representational_convergence_in_medical_foundation_models_more_tha",
       "paper_title": "Self-supervision drives representational convergence in medical foundation models more than clinical supervision",
       "paper_date": "2026-07-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:09",
+      "generated_at": "2026-07-24T09:15:04",
       "generator": "openai"
     }
   },
@@ -285,29 +285,29 @@
         "url": "https://arxiv.org/pdf/2607.20848v1"
       }
     ],
-    "score": 83,
+    "score": 88,
     "infographic": {
-      "key_insight": "Diagnostic accuracy alone can hide whether a medical LLM actually used the right evidence, so the paper audits evidence use rather than just final answers.",
-      "clinical_relevance": "This matters because models may appear reliable while relying on shortcuts, missing negations, or clinically implausible cues that could affect diagnosis support.",
+      "key_insight": "Diagnostic accuracy alone can hide whether a medical LLM used patient evidence correctly, so the paper audits evidence use rather than just final answers.",
+      "clinical_relevance": "This matters because clinically plausible differential reasoning can look like failure, while shortcut-like reasoning may be missed unless evidence interactions are checked.",
       "method": [
-        "Decomposed each patient case into evidence units and tested diagnoses under controlled evidence subsets.",
-        "Mined low-order interactions in diagnostic margins to see how different evidence pieces change model choices.",
-        "Separated clinically plausible differential-diagnosis effects from suspicious shortcut-like failures using robustness checks and clinical review."
+        "Decomposed each case into evidence units and scored diagnoses under controlled subsets of evidence.",
+        "Mined low-order interactions in diagnostic margins to find support, conflict, and cancellation effects.",
+        "Separated interaction discovery from failure assignment, then used robustness checks and clinical review for suspicious cases."
       ],
-      "evidence_signal": "Across DDXPlus, CupCase, and MedCase, faithful support plus differential conflict or cancellation explained most interaction strength, while a blinded 130-item DDXPlus review found invalid or shortcut-like cases concentrated in negated/absent findings and local evidence.",
-      "watch_item": "Interaction patterns are diagnosis-relative, so some large effects are not errors; interpreting them requires careful clinical validation before drawing conclusions about model failure.",
+      "evidence_signal": "Across five open-weight LLMs on DDXPlus, CupCase, and MedCase, most interaction strength came from faithful support and differential conflict or cancellation, with a blinded 130-item reviewer sample highlighting invalid or shortcut-like cases mainly in negated/absent findings and local evidence.",
+      "watch_item": "Because evidence interactions are diagnosis-relative, some large or negative effects may be clinically reasonable differentials rather than model failures, so interpretation needs expert review.",
       "hashtags": [
         "#MedicalAI",
-        "#LLMEvaluation",
-        "#Diagnosis",
-        "#ClinicalSafety",
-        "#AIAuditing"
+        "#LLMAudit",
+        "#Diagnostics",
+        "#EvidenceUse",
+        "#ClinicalNLP"
       ],
       "paper_id": "2026-07-23-arxiv-auditing_evidence_use_in_medical_llm_diagnosis",
       "paper_title": "Auditing Evidence Use in Medical LLM Diagnosis",
       "paper_date": "2026-07-23",
       "paper_category": "Diagnostics",
-      "generated_at": "2026-07-25T09:52:12",
+      "generated_at": "2026-07-24T09:15:07",
       "generator": "openai"
     }
   },
@@ -337,29 +337,29 @@
         "url": "https://arxiv.org/pdf/2607.21496v1"
       }
     ],
-    "score": 82,
+    "score": 87,
     "infographic": {
-      "key_insight": "A speech-based multimodal LLM approach that combines audio and transcript embeddings can improve cognitive impairment detection and generalize better across datasets.",
-      "clinical_relevance": "This suggests a non-invasive screening framework that could support earlier identification of cognitive impairment using routinely collected speech data.",
+      "key_insight": "A speech-based multimodal LLM framework that combines audio and transcripts can improve generalizable cognitive impairment detection.",
+      "clinical_relevance": "This approach could support scalable, non-invasive screening for cognitive impairment while reducing reliance on sensitive raw patient data.",
       "method": [
-        "Extract acoustic embeddings from speech audio.",
-        "Generate textual embeddings from automatic transcripts.",
-        "Concatenate modality-specific features for downstream classification with open-source LLMs."
+        "Extract acoustic embeddings directly from speech audio.",
+        "Generate textual embeddings from automatic speech transcripts.",
+        "Concatenate modality-specific features and classify cognitive impairment with open-source LLM-based models."
       ],
-      "evidence_signal": "Evaluated on ADReSS20 and ADReSSo21, the model achieved 92.4% accuracy and outperformed single-modality baselines with strong cross-dataset generalization.",
-      "watch_item": "Performance depends on transcript quality and recording conditions, so real-world deployment may face robustness and privacy/implementation challenges.",
+      "evidence_signal": "The model was evaluated on ADReSS20 and ADReSSo21 and reported 92.4% CI classification accuracy, outperforming single-modality baselines and improving cross-dataset generalization.",
+      "watch_item": "Performance may depend on transcript quality and dataset characteristics, so real-world deployment should verify robustness across accents, devices, and clinical settings.",
       "hashtags": [
+        "#AIinMedicine",
         "#ClinicalNLP",
         "#SpeechAI",
-        "#MultimodalLLM",
-        "#CognitiveImpairment",
-        "#DigitalHealth"
+        "#MultimodalLearning",
+        "#CognitiveHealth"
       ],
       "paper_id": "2026-07-23-arxiv-toward_generalizable_cognitive_impairment_detection_with_speech_based_multimodal_large_lan",
       "paper_title": "Toward Generalizable Cognitive Impairment Detection with Speech-Based Multimodal Large Language Models",
       "paper_date": "2026-07-23",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-07-25T09:52:15",
+      "generated_at": "2026-07-24T09:15:11",
       "generator": "openai"
     }
   },
@@ -388,29 +388,29 @@
         "url": "https://arxiv.org/pdf/2607.19624v1"
       }
     ],
-    "score": 82,
+    "score": 87,
     "infographic": {
-      "key_insight": "Training report-generation models to match pathologists’ visual attention improves prostate histopathology reports and makes model attention maps more clinically meaningful.",
-      "clinical_relevance": "This could help produce more accurate, interpretable pathology reports and support downstream tasks like visual question answering in prostate cancer workflows.",
+      "key_insight": "Aligning a model’s image attention with pathologists’ viewing behavior improves prostate histopathology report generation and makes the model’s highlighted regions more clinically meaningful.",
+      "clinical_relevance": "This could help pathology AI produce reports and answers that better reflect the regions experts use for diagnosis, potentially improving transparency and usefulness in prostate cancer workflows.",
       "method": [
-        "Collected a multimodal human-attention dataset from 121 prostate whole-slide images.",
-        "Annotated multi-scale viewport trajectories, cursor movements, and synchronized verbal descriptions for five clinically relevant components.",
-        "Finetuned two report-generation models with an attention-alignment loss to match model patch attention to pathologist attention."
+        "Collected a multimodal dataset of 121 prostate whole-slide images with synchronized pathologist viewport trajectories, verbal descriptions, and cursor movements.",
+        "Finetuned two report-generation models using an attention-alignment loss to match model patch attention to pathologist attention.",
+        "Tested performance on prostate cancer report generation and visual question answering with models using different internal attention mechanisms."
       ],
-      "evidence_signal": "Across prostate cancer report generation and visual question answering, the approach improved NLP metrics by 10.9% on average and component accuracy by 19.3% over five clinically relevant report elements.",
-      "watch_item": "The dataset is relatively small and specific to prostate histopathology, so broader validation is needed before generalizing to other organs, scanners, or clinical settings.",
+      "evidence_signal": "Across five clinically relevant report components, the approach improved NLP-based metrics by an average of 10.9% and accuracy by 19.3%, while producing attention maps that more closely matched pathologist attention.",
+      "watch_item": "The dataset is relatively small and task-specific, so broader validation is needed before assuming the attention-alignment gains will generalize across institutions, scanners, and pathology tasks.",
       "hashtags": [
-        "#AIinMedicine",
-        "#PathologyAI",
-        "#MedicalImaging",
-        "#Histopathology",
-        "#ExplainableAI"
+        "#MedicalAI",
+        "#DigitalPathology",
+        "#ProstateCancer",
+        "#ReportGeneration",
+        "#HumanAttention"
       ],
       "paper_id": "2026-07-21-arxiv-pathologist_attention_aligned_report_generation_for_prostate_histopathology",
       "paper_title": "Pathologist Attention-Aligned Report Generation for Prostate Histopathology",
       "paper_date": "2026-07-21",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:17",
+      "generated_at": "2026-07-24T09:15:14",
       "generator": "openai"
     }
   },
@@ -439,80 +439,29 @@
         "url": "https://arxiv.org/pdf/2607.20589v1"
       }
     ],
-    "score": 79,
+    "score": 84,
     "infographic": {
-      "key_insight": "GPT-4.1 persona simulation can predict human opinions with high accuracy when given demographic/background personas, including election and healthcare beliefs.",
-      "clinical_relevance": "This suggests a potential AI tool for analyzing public attitudes toward medicine and vaccines, but results should be used for research and policy insight rather than individual-level decisions.",
+      "key_insight": "GPT-4.1 can simulate personas to predict opinions with high accuracy, including election outcomes and some health beliefs.",
+      "clinical_relevance": "This suggests LLM-based persona simulation could help explore public attitudes toward vaccines and other health topics, but it is not a substitute for direct population evidence.",
       "method": [
-        "Used Columbia Personas from nine U.S. states to test 2024 election outcome prediction.",
-        "Applied GPT-4.1 to Pew American Trends Panel Wave 123 to predict healthcare and childhood vaccine opinions.",
-        "Generated persona-to-persona conversations to assess whether outputs matched background and personality traits."
+        "Used persona profiles from Columbia University’s Personas dataset to test state-level opinion prediction.",
+        "Applied GPT-4.1 to Pew Research Center’s American Trends Panel Wave 123 on medicine and healthcare beliefs.",
+        "Generated persona-based dialogues to assess whether outputs matched personality and background traits."
       ],
-      "evidence_signal": "The model predicted 2024 election outcomes in 8 of 9 states and reached up to 0.94 accuracy for childhood vaccine belief prediction.",
-      "watch_item": "Persona simulations may reflect bias and can sound plausible without fully natural human-like dialogue, so outputs need careful validation.",
+      "evidence_signal": "The model correctly predicted 8 of 9 U.S. state election outcomes and reached up to 0.94 accuracy for beliefs about childhood vaccines.",
+      "watch_item": "Outputs may reflect bias and the simulated conversations were less natural than human dialogue, so results need cautious interpretation.",
       "hashtags": [
         "#GPT41",
         "#PersonaSimulation",
-        "#OpinionPrediction",
         "#ClinicalNLP",
-        "#HealthAI"
+        "#HealthOpinionPrediction",
+        "#AIResearch"
       ],
       "paper_id": "2026-07-22-arxiv-evaluating_the_effectiveness_of_persona_simulation_in_opinion_prediction_with_gpt_4_1",
       "paper_title": "Evaluating the Effectiveness of Persona Simulation in Opinion Prediction with GPT-4.1",
       "paper_date": "2026-07-22",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-07-25T09:52:20",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-22-medrxiv-evaluating_large_language_models_for_colonoscopy_preparation_assistance_correctness_and_di",
-    "doi": "10.1101/2025.11.19.25340596",
-    "date": "2026-07-22",
-    "title": "Evaluating Large Language Models for Colonoscopy Preparation Assistance: Correctness and Diversity in Synthetic Dialogues",
-    "authors": "Kaumenova, T.; Chakraborty, S.; Fosler-Lussier, E.; Gofar, K.; Metcalf, I.; Perrault, A.; White, M.",
-    "abstract": "Background: Colorectal cancer is a leading cause of cancer-related deaths in the United States, and colonoscopy remains the gold standard for early detection and prevention. However, many procedures are postponed due to inadequate bowel preparation, a preventable failure often caused by patients' difficulty in understanding or following written prep instructions. Prior interventions such as reminder apps and instructional videos have improved adherence only modestly, largely because they cannot answer patients' specific questions. Recent advances in large language models (LLMs) raise the possibility of developing conversational assistants that can provide interactive support to patients in procedure preparation. Objective: This study evaluated correctness, harmfulness and diversity of synthetic dialogues generated by leading LLMs acting as both simulated AI Coaches and patients for colonoscopy preparation. Methods: Five leading LLMs, OpenAI's o3, GPT-4.1 and GPT-5.1, Meta's Llama 3.3 70B, and Mistral's Large-2411 were used to generate 250 patient-AI Coach dialogues per model. Dialogues consisted of 3-7 question-answer pairs concerning diet, medications, and other prep-related topics. A multi-prompt, multi-question approach was designed to elicit diverse patient questions, and an error taxonomy was established to assess model capabilities in responding to questions. Human raters, including three medical experts, evaluated the generated questions for difficulty and responses for correctness, error type, and potential harmfulness. Automatic evaluation using an LLM-as-a-judge approach complemented human evaluation. Question diversity was assessed using lexical diversity metrics (Distinct-1, Distinct-2) and entropy. In addition, we evaluated a safety filtering mechanism in which responses judged incorrect by an automated evaluator were replaced with a deferral message instructing patients to contact their healthcare provider. Differences in response correctness across models were evaluated using permutation tests conducted at dialogue level. Inter-rater agreement among human evaluators was assessed using Gwet's AC1 statistic. The study was conducted between May and September 2025. Results: Automatic evaluation results closely aligned with human judgments: leading models approached but did not achieve adequate performance. Closed-weight models (GPT-5.1, GPT-4.1, and o3) outperformed open-weight models (Llama, Mistral) on correctness, with the reasoning models (GPT-5.1 and o3) performing best. This turn-level ranking was preserved under the supplementary single-prompt baseline, although dialogue-level rankings differed. All models produced harmful errors, primarily due to omissions or misinterpretations of prep instructions. The multi-prompt generation strategy substantially increased the diversity of patient questions compared with a single-prompt baseline. Applying an automated safety filter reduced overall error rates but failed to eliminate harmful responses. Conclusions: While LLMs demonstrate strong potential for colonoscopy preparation support, none are yet reliable enough for unsupervised deployment in patient-facing contexts. Persistent harmful errors and the limited effectiveness of simple filtering mechanisms highlight the need for improved instruction adherence, stronger safety mechanisms, and validation using real patient queries.",
-    "category": "Clinical NLP",
-    "source": "medRxiv",
-    "published": "2026-07-22",
-    "updated": "2026-07-22",
-    "primary_category": "gastroenterology",
-    "categories": [
-      "gastroenterology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.1101/2025.11.19.25340596v3"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.1101/2025.11.19.25340596v3.full.pdf"
-      }
-    ],
-    "score": 78,
-    "infographic": {
-      "key_insight": "Leading LLMs can generate diverse colonoscopy-prep dialogues, but response correctness varies and unsafe errors remain a concern.",
-      "clinical_relevance": "Conversational AI could help patients understand prep instructions and ask specific questions, but it should be paired with safety checks and clinician oversight.",
-      "method": [
-        "Generated 250 patient–AI coach dialogues per model across 5 LLMs",
-        "Used 3–7 question-answer pairs on diet, medications, and prep topics",
-        "Compared human expert ratings with LLM-as-a-judge evaluation and diversity metrics"
-      ],
-      "evidence_signal": "The study combined human expert review, automatic evaluation, and permutation tests at the dialogue level to compare correctness, harmfulness, and diversity across models.",
-      "watch_item": "Synthetic dialogue performance may not translate directly to real patient interactions, so incorrect advice should be filtered and escalated to healthcare providers.",
-      "hashtags": [
-        "#ColonoscopyPrep",
-        "#LargeLanguageModels",
-        "#ClinicalNLP",
-        "#PatientEducation",
-        "#AIinMedicine"
-      ],
-      "paper_id": "2026-07-22-medrxiv-evaluating_large_language_models_for_colonoscopy_preparation_assistance_correctness_and_di",
-      "paper_title": "Evaluating Large Language Models for Colonoscopy Preparation Assistance: Correctness and Diversity in Synthetic Dialogues",
-      "paper_date": "2026-07-22",
-      "paper_category": "Clinical NLP",
-      "generated_at": "2026-07-25T09:52:22",
+      "generated_at": "2026-07-24T09:15:26",
       "generator": "openai"
     }
   },
@@ -541,20 +490,20 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.16.26358271v1.full.pdf"
       }
     ],
-    "score": 77,
+    "score": 82,
     "infographic": {
-      "key_insight": "SHARE is a human-AI co-learning framework that improved EHR-based disease activity labeling by combining expert review, evidence extraction, and iterative adjudication.",
-      "clinical_relevance": "This could help scale more consistent phenotyping of complex conditions from routine clinical notes for real-world evidence generation.",
+      "key_insight": "SHARE is a human-AI co-learning framework that combines expert review with model reasoning to improve scalable labeling of disease activity from EHR notes.",
+      "clinical_relevance": "It may help produce more accurate and reproducible phenotyping for rheumatoid arthritis and other complex outcomes to support real-world evidence generation.",
       "method": [
-        "Used a multi-institutional rheumatoid arthritis EHR cohort of 3,167 patients.",
-        "Combined note filtering, structured evidence extraction, and integrated reasoning to assign disease activity labels with rationale and confidence.",
-        "Compared budget-tiered GPT-5 Nano + o4-mini configuration against a GPT-5.4 high-reasoning baseline, with human adjudication refining labels."
+        "Used 3,167-patient multi-institutional RA EHR cohort",
+        "Experts and an AI agent labeled notes with the same guideline, then adjudicated disagreements into co-produced labels",
+        "Tested a budget-tiered setup using GPT-5 Nano for extraction and o4-mini for reasoning, benchmarked against a higher-effort GPT-5.4 configuration"
       ],
-      "evidence_signal": "Against a 686-note co-produced reference, the final agent’s mean absolute error improved from 0.406 to 0.291, and ambiguity-flag agreement reached 92.1%; the tiered setup reduced estimated cost by 69% and compute time by 70%.",
-      "watch_item": "Performance was shown in rheumatoid arthritis notes only, so broader reliability across other diseases, institutions, and note styles still needs validation.",
+      "evidence_signal": "On 686 co-produced reference notes, the final agent improved MAE from 0.406 to 0.291, agreed with ambiguity flags at 92.1%, and the budget-tiered setup cut estimated cost by 69% and compute time by 70% while matching GPT-5.4 performance.",
+      "watch_item": "Performance was demonstrated in rheumatoid arthritis EHR data, so generalization to other diseases, sites, or documentation styles still needs validation.",
       "hashtags": [
         "#ClinicalNLP",
-        "#ElectronicHealthRecords",
+        "#EHR",
         "#HumanAI",
         "#Phenotyping",
         "#RWE"
@@ -563,7 +512,7 @@
       "paper_title": "A framework for human-artificial intelligence co-learning for disease activity labeling using electronic health records",
       "paper_date": "2026-07-19",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-07-25T09:52:26",
+      "generated_at": "2026-07-24T09:15:28",
       "generator": "openai"
     }
   },
@@ -593,29 +542,29 @@
         "url": "https://arxiv.org/pdf/2607.21570v1"
       }
     ],
-    "score": 76,
+    "score": 81,
     "infographic": {
-      "key_insight": "MedGame turns static clinical cases into structured storytelling games using LLMs to guide learners through decision-centered medical scenarios.",
-      "clinical_relevance": "It may make medical education more engaging and interactive than text-only case practice, helping students explore clinical decision-making in a guided format.",
+      "key_insight": "MedGame turns static clinical cases into interactive storytelling games using LLMs to guide learners through decision-centered medical scenarios.",
+      "clinical_relevance": "This approach may make medical education more engaging and structured than single-turn Q&A by simulating case progression and decision-making.",
       "method": [
-        "Built a dual-engine system: a Medical Narrative Designer for case-grounded storylines and decision nodes.",
-        "Added a Story Director to generate dependency-aware multimodal orchestration plans for an interactive platform.",
-        "Created MedGame Bench with 5,000 cases to evaluate medical narrative generation and story direction."
+        "Medical Narrative Designer creates case-grounded storylines with states and decision nodes.",
+        "Story Director converts narratives into dependency-aware multimodal execution plans for an interactive platform.",
+        "A 5,000-case benchmark (MedGame Bench) evaluates Medical Narrative Generation and Story Direction."
       ],
-      "evidence_signal": "The abstract reports that fine-tuning improved open-source LLMs on MedGame Bench, reduced the gap with commercial models, and a pilot student study found higher engagement and usefulness versus text-only alternatives.",
-      "watch_item": "The pilot study and benchmark results suggest promise, but real-world educational impact and robustness across diverse clinical domains still need broader validation.",
+      "evidence_signal": "The abstract reports that task-specific fine-tuning improves open-source LLM performance on MedGame Bench and that a pilot student study found the system more engaging and useful than text-only alternatives.",
+      "watch_item": "Results come from a benchmark and a pilot study, so broader clinical classroom effectiveness, safety, and generalizability still need more validation.",
       "hashtags": [
         "#MedicalEducation",
         "#LargeLanguageModels",
         "#ClinicalNLP",
         "#Gamification",
-        "#AIinMedicine"
+        "#AIinHealthcare"
       ],
       "paper_id": "2026-07-23-arxiv-medgame_storytelling_gamification_empowered_by_large_language_models_for_medical_education",
       "paper_title": "MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education",
       "paper_date": "2026-07-23",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-07-25T09:52:28",
+      "generated_at": "2026-07-24T09:15:31",
       "generator": "openai"
     }
   },
@@ -644,29 +593,29 @@
         "url": "https://arxiv.org/pdf/2607.21546v1"
       }
     ],
-    "score": 75,
+    "score": 80,
     "infographic": {
-      "key_insight": "UnDA transfers useful structure between imaging modalities without paired data by aligning semantically meaningful class tokens and down-weighting uncertain predictions.",
-      "clinical_relevance": "This could improve segmentation performance when paired multimodal scans are unavailable, potentially making cross-modal models more practical in real-world medical imaging workflows.",
+      "key_insight": "UnDA transfers knowledge between different medical imaging modalities without paired scans by aligning semantically structured features and down-weighting uncertain predictions.",
+      "clinical_relevance": "This could make multimodal segmentation models more practical in real-world clinical settings where matched cross-modal datasets are scarce.",
       "method": [
-        "Alignment Module: attention-based pooling extracts class tokens in a backbone-agnostic way.",
-        "UCT-OT: uncertainty-weighted optimal transport suppresses noisy feature alignment from low-confidence predictions.",
-        "ProtoNCE: per-class prototype memory encourages stable, globally discriminative representations across unpaired batches."
+        "Attention-based Alignment Module extracts class tokens from features in a backbone-agnostic way",
+        "Uncertainty-Weighted Optimal Transport (UCT-OT) prioritizes confident predictions and suppresses noisy supervision",
+        "Per-class ProtoNCE maintains prototype memories to improve class-level discrimination across unpaired batches"
       ],
-      "evidence_signal": "In strictly unpaired segmentation evaluations, the method consistently improved accuracy and boundary precision in the target modality.",
-      "watch_item": "Performance may depend on reliable uncertainty estimates and careful tuning of alignment/prototype components when modality gaps are large.",
+      "evidence_signal": "The abstract reports consistent gains on representative segmentation tasks under strictly unpaired settings, including improved accuracy and boundary precision in the target modality.",
+      "watch_item": "Performance may depend on prediction-confidence quality and careful tuning of alignment and prototype-memory components in heterogeneous datasets.",
       "hashtags": [
         "#MedicalImaging",
         "#CrossModalLearning",
         "#KnowledgeDistillation",
-        "#Segmentation",
+        "#SegmentationAI",
         "#UnpairedLearning"
       ],
       "paper_id": "2026-07-23-arxiv-unda_unpaired_domain_alignment_for_cross_modal_knowledge_transfer_in_medical_imaging",
       "paper_title": "UnDA: Unpaired Domain Alignment for Cross-Modal Knowledge Transfer in Medical Imaging",
       "paper_date": "2026-07-23",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:30",
+      "generated_at": "2026-07-24T09:15:33",
       "generator": "openai"
     }
   },
@@ -696,80 +645,29 @@
         "url": "https://arxiv.org/pdf/2607.20028v1"
       }
     ],
-    "score": 75,
+    "score": 80,
     "infographic": {
-      "key_insight": "Intensity normalisation changes MRI segmentation performance, but its effect is modest compared with the much larger drop caused by moving to a different dataset or scanner domain.",
-      "clinical_relevance": "For knee MRI meniscus segmentation, choosing a robust normalisation method may help cross-site generalisation, but it is not enough on its own to ensure reliable real-world deployment.",
+      "key_insight": "Intensity normalisation affects 3D knee MRI segmentation generalisability, but its benefit is modest compared with the larger impact of cross-dataset domain shift.",
+      "clinical_relevance": "For deploying MRI segmentation models more reliably across scanners and protocols, normalisation can help, but it is not sufficient on its own to ensure robust external performance.",
       "method": [
-        "Compared 7 intensity normalisation methods, including standard scaling, histogram-based approaches, and a GMM-based method.",
-        "Trained a 3D U-Net on the IWOAI 2019 dataset for meniscus segmentation.",
-        "Evaluated performance on internal and external test sets, including SKM-TEA, to test generalisability."
+        "Compared seven intensity normalisation methods, including standard scaling, histogram-based techniques, and a GMM-based approach.",
+        "Trained a 3D U-Net for meniscus segmentation on the IWOAI 2019 dataset.",
+        "Evaluated performance on internal and external test sets (SKM-TEA) to assess generalisability."
       ],
-      "evidence_signal": "Performance was similar within the training domain, but external testing showed significant differences between normalisation methods, with Z-score, Nyúl histogram matching, and CLAHE performing more robustly.",
-      "watch_item": "The gains from normalisation were small relative to the overall domain shift, so deployment still needs additional robustness strategies beyond preprocessing alone.",
+      "evidence_signal": "Internal performance was similar across methods, but external testing showed significant differences, with Z-score, Nyúl histogram matching, and CLAHE performing more robustly.",
+      "watch_item": "Results suggest that choosing a normalisation method may help, but external-domain performance still drops substantially, so implementation should account for broader domain shift.",
       "hashtags": [
         "#MedicalImaging",
         "#MRI",
         "#DeepLearning",
-        "#DomainGeneralization",
-        "#Segmentation"
+        "#Segmentation",
+        "#Generalizability"
       ],
       "paper_id": "2026-07-22-arxiv-a_systematic_benchmark_of_intensity_normalisation_methods_for_3d_knee_mri_segmentation_and",
       "paper_title": "A Systematic Benchmark of Intensity Normalisation Methods for 3D Knee MRI Segmentation and Cross-Domain Generalisability",
       "paper_date": "2026-07-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:33",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-21-medrxiv-developing_a_heart_failure_readmission_model_from_inpatient_electronic_medical_record_data",
-    "doi": "10.64898/2026.07.18.26358391",
-    "date": "2026-07-21",
-    "title": "Developing a Heart Failure Readmission Model From Inpatient Electronic Medical Record Data",
-    "authors": "Martin, E. A.; Lee, S.; Walker, R.; Pitka, E.; Soroush, M. Z.; Ezekowitz, J.; Howlett, J. G.; Fine, N. M.; Bakal, J. A.; Quan, H.; Eastwood, C. A.",
-    "abstract": "ImportanceHeart failure readmissions remain common following hospitalization, but accurately identifying which patients will be readmitted after discharge remains challenging. Improved prediction could support targeted transitional care interventions and more efficient allocation of clinical resources. ObjectiveIn this study we attempted to improve readmission prediction after heart failure hospitalization by using variables chosen through a modified Delphi process, and using inpatient Electronic Medical Record (EMR) data, focusing on clinical notes. DesignThis prognostic study developed competing risk survival models to predict readmission after heart failure hospitalization. Variables were chosen using a modified Delphi process, and extracted from EMR notes using various natural language processing techniques or from other EMR elements where appropriate. Patients were admitted between 2011 through 2019, and at least one year of follow-up was available for all patients. Models were evaluated using C-statistics, as well as sensitivity, specificity, positive and negative predictive values. SettingDuring the study period, all acute-care facilities in Calgary, Alberta used the same EMR system, from which patients were selected. ParticipantsPatients were 18 years or older, resided in Alberta, and were admitted to a Calgary hospital. All corresponding admissions with a most responsible diagnosis of heart failure were included (n=15,160). Main Outcomes and MeasuresThe main outcome of interest was readmission within 30 days, though 90- and 365-day time frames were also analyzed. Death was treated as a competing risk and analysed at those time frames as well. ResultsMany of the identified variables believed to be important for predicting readmission were not collected reliably enough to be used in readmission models. The final model had a C-statistic of 64.4 when predicting readmission within 30 days, in line with previous studies. Conclusions and RelevanceEfforts to improve heart failure readmission prediction should work with clinical teams to ensure variables believed to be important are collected during hospitalization.",
-    "category": "Health Systems",
-    "source": "medRxiv",
-    "published": "2026-07-21",
-    "updated": "2026-07-21",
-    "primary_category": "cardiovascular medicine",
-    "categories": [
-      "cardiovascular medicine"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.18.26358391v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.18.26358391v1.full.pdf"
-      }
-    ],
-    "score": 75,
-    "infographic": {
-      "key_insight": "A Delphi-informed readmission model built from inpatient EMR data and clinical notes modestly predicted 30-day heart failure readmission, but performance remained limited.",
-      "clinical_relevance": "This suggests hospitals may need better, more reliable inpatient data capture to support targeted discharge planning and transitional care for heart failure patients.",
-      "method": [
-        "Retrospective prognostic study using Calgary EMR data from 2011–2019",
-        "Included 15,160 adult heart failure hospitalizations with at least 1 year of follow-up",
-        "Used modified Delphi-selected variables and NLP extraction from clinical notes to build competing-risk survival models"
-      ],
-      "evidence_signal": "The final model achieved a C-statistic of 64.4 for 30-day readmission prediction, with 90- and 365-day outcomes and death analyzed as competing risks.",
-      "watch_item": "Several variables considered important were not collected reliably enough for modeling, which may limit real-world implementation and model improvement.",
-      "hashtags": [
-        "#HeartFailure",
-        "#Readmission",
-        "#ElectronicMedicalRecords",
-        "#NaturalLanguageProcessing",
-        "#HealthSystems"
-      ],
-      "paper_id": "2026-07-21-medrxiv-developing_a_heart_failure_readmission_model_from_inpatient_electronic_medical_record_data",
-      "paper_title": "Developing a Heart Failure Readmission Model From Inpatient Electronic Medical Record Data",
-      "paper_date": "2026-07-21",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-07-25T09:52:35",
+      "generated_at": "2026-07-24T09:15:35",
       "generator": "openai"
     }
   },
@@ -799,17 +697,17 @@
         "url": "https://arxiv.org/pdf/2607.18218v2"
       }
     ],
-    "score": 75,
+    "score": 80,
     "infographic": {
-      "key_insight": "GigaPath-Flash and GigaTIME-Flash are compact, open-weight pathology foundation models that make slide-level histology analysis and tumor microenvironment prediction much more efficient.",
-      "clinical_relevance": "These models could support scalable whole-slide pathology workflows and help advance cancer biomarker and immuno-oncology research using routine H&E images.",
+      "key_insight": "GigaPath-Flash and GigaTIME-Flash deliver efficient, open-weight pathology foundation models that preserve strong slide-level performance while dramatically reducing compute.",
+      "clinical_relevance": "These models could make whole-slide pathology analysis and tumor microenvironment prediction more practical for research workflows and potentially support future cancer biomarker and treatment-stratification studies.",
       "method": [
-        "Distilled a 22M-parameter ViT-S tile encoder from the billion-parameter GigaPath teacher.",
-        "Combined the tile encoder with a 21M-parameter LongNet slide encoder for whole-slide analysis.",
-        "Extended the backbone to predict tumor immune microenvironment features from standard histopathology images."
+        "Distilled a compact 22M-parameter ViT-S tile encoder from the billion-parameter GigaPath teacher.",
+        "Paired the tile encoder with a 21M-parameter LongNet slide encoder for whole-slide pathology analysis.",
+        "Extended the backbone in GigaTIME-Flash to predict tumor immune microenvironment features directly from routine H&E images."
       ],
-      "evidence_signal": "According to the abstract, GigaPath-Flash retains 97% of GigaPath’s average slide-level performance with 50x less compute, and GigaTIME-Flash improves prediction quality while running 6x faster and using 8x less GPU memory than the original CNN-based GigaTIME.",
-      "watch_item": "Performance gains are reported from the abstract summary, so external validation and real-world deployment testing will be important before broad use.",
+      "evidence_signal": "According to the abstract, GigaPath-Flash retains 97% of GigaPath’s average slide-level performance with 50x less compute, while GigaTIME-Flash improves prediction quality and is 6x faster with 8x less GPU memory than the original GigaTIME.",
+      "watch_item": "Despite strong efficiency gains, real-world adoption will still depend on external validation, deployment calibration, and how well performance transfers across institutions and staining variation.",
       "hashtags": [
         "#ComputationalPathology",
         "#FoundationModels",
@@ -821,7 +719,7 @@
       "paper_title": "GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis",
       "paper_date": "2026-07-20",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:42",
+      "generated_at": "2026-07-24T09:15:38",
       "generator": "openai"
     }
   },
@@ -851,17 +749,17 @@
         "url": "https://arxiv.org/pdf/2607.19532v1"
       }
     ],
-    "score": 73,
+    "score": 78,
     "infographic": {
-      "key_insight": "Federated learning can potentially predict breast cancer tumour progression using multimodal patient data while keeping data stored locally across institutions.",
-      "clinical_relevance": "This approach may enable privacy-preserving, personalised treatment planning and support future decision tools such as digital twins in breast cancer care.",
+      "key_insight": "Federated learning can help build privacy-preserving, multimodal breast cancer prediction models that aim to match centralized performance while keeping patient data local.",
+      "clinical_relevance": "This approach could support personalized treatment planning by enabling institutions to collaborate on tumor progression prediction without sharing raw patient data.",
       "method": [
-        "Trained a federated learning model on multimodal inputs including clinical, biomarker, demographic, and MRI data.",
-        "Compared federated performance against a centralised model built from aggregated data.",
-        "Examined deployment pillars such as transparency, scalability, security, and fairness."
+        "Used federated learning across institutions instead of pooling data centrally",
+        "Combined multimodal inputs: clinical data, tumor features, biomarkers, demographics, and MRI scans",
+        "Compared federated model performance with a centralized model and assessed privacy, scalability, security, and fairness"
       ],
-      "evidence_signal": "The abstract reports a direct comparison between federated and centralised learning to assess whether privacy-preserving training can achieve comparable predictive performance.",
-      "watch_item": "Real-world use still depends on secure model updates, consistent performance across patient subgroups, and smooth deployment across multiple institutions.",
+      "evidence_signal": "The abstract reports evaluation of a federated framework against a centralized baseline to judge whether predictive performance remains comparable while preserving data locality.",
+      "watch_item": "Real-world deployment still depends on secure model update handling and consistent performance across different patient subgroups and participating sites.",
       "hashtags": [
         "#FederatedLearning",
         "#BreastCancer",
@@ -873,7 +771,7 @@
       "paper_title": "Trustworthy Privacy-Preserving Multimodal Federated Learning for Personalised Breast Cancer Prediction",
       "paper_date": "2026-07-21",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:45",
+      "generated_at": "2026-07-24T09:15:40",
       "generator": "openai"
     }
   },
@@ -903,80 +801,29 @@
         "url": "https://arxiv.org/pdf/2607.18882v1"
       }
     ],
-    "score": 73,
+    "score": 78,
     "infographic": {
-      "key_insight": "LLIFT creates semi-synthetic brain MRI lesions in user-controlled locations without needing pixel-level lesion labels, enabling ground-truth data for XAI evaluation.",
-      "clinical_relevance": "This could help researchers test whether explanation methods truly localize pathology in medical imaging more reliably than using manually labeled or artificially pasted lesions.",
+      "key_insight": "LLIFT generates semi-synthetic brain MRI with realistic, spatially controlled lesions using only image-level labels, enabling ground-truth datasets for testing XAI methods.",
+      "clinical_relevance": "This could help researchers benchmark explanation tools on medical images without relying on error-prone pixel-level lesion annotations or unrealistic artificial perturbations.",
       "method": [
-        "Trains a label-informed feature transfer framework from healthy and pathological brain MRI.",
-        "LLIFT-GAN learns pathological features from binary class labels only.",
-        "LLIFT-DM uses diffusion-based inpainting conditioned on bounding-box masks via ControlNet."
+        "LLIFT learns where to place informative features from binary class labels alone.",
+        "LLIFT-GAN uses a custom GAN to transfer pathological features into healthy images.",
+        "LLIFT-DM uses diffusion-based inpainting with ControlNet and bounding-box masks."
       ],
-      "evidence_signal": "On Human Connectome Project brain MRI data, both variants reached Fréchet Inception Distance scores comparable to the healthy-versus-pathological separation in the dataset, with qualitative inspection supporting lesion realism.",
-      "watch_item": "The generated lesions are semi-synthetic, so realism and downstream XAI conclusions still depend on how well the benchmark matches true clinical pathology.",
+      "evidence_signal": "On Human Connectome Project brain MRI data, both variants achieved FID scores comparable to the healthy-vs-pathological gap in the dataset, and visual review found the lesions realistic.",
+      "watch_item": "These are semi-synthetic images for benchmarking, so performance may not fully reflect real-world clinical lesion diversity or downstream XAI behavior.",
       "hashtags": [
         "#MedicalImaging",
-        "#ExplainableAI",
+        "#XAI",
+        "#GAN",
         "#DiffusionModels",
-        "#GANs",
-        "#MRI"
+        "#BrainMRI"
       ],
       "paper_id": "2026-07-21-arxiv-local_label_informed_feature_transfer_for_generating_ground_truth_medical_images_a_compari",
       "paper_title": "Local Label-Informed Feature Transfer for Generating Ground-Truth Medical Images: A Comparison of GAN- and Diffusion-Based Approaches",
       "paper_date": "2026-07-21",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-07-25T09:52:47",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-21-medrxiv-development_and_validation_of_machine_learning_models_for_predicting_13_or_more_sections_i",
-    "doi": "10.64898/2026.07.20.26358484",
-    "date": "2026-07-21",
-    "title": "Development and Validation of Machine Learning Models for Predicting 13 or More Sections in Mohs Micrographic Surgery",
-    "authors": "Aksoy, Y. A.; Lee, S.; Moreno-Bonilla, G.",
-    "abstract": "BackgroundCases requiring 13 or more tissue sections in Mohs micrographic surgery (MMS) demand extended operative time, additional resources, and often specialised closure techniques. Pre-operative identification of such cases would improve surgical scheduling, resource allocation, and patient counselling. We aimed to develop and validate a machine learning prediction tool using pre-operative clinical features to identify cases likely to require [&ge;]13 sections. ObjectivesTo develop and validate machine learning models for predicting which Mohs procedures will require [&ge;]13 sections, using pre-operative clinical features, and to identify key predictive factors. MethodsWe analysed 408 consecutive Mohs procedures with 16 pre-operative clinical variables. Thirty machine learning algorithms were evaluated, including ensemble methods (Stacking, Voting), gradient boosting (XGBoost, LightGBM, CatBoost), neural networks (3-7 layers), support vector machines, and traditional classifiers. Model performance was assessed using 5-fold stratified cross-validation and independent test set evaluation. Feature importance was determined using SHAP (SHapley Additive exPlanations) analysis. ResultsThe stacking ensemble achieved the highest cross-validation AUC of 0.891 (95% CI: 0.849-0.934) and test AUC of 0.884. Tumour area (cm{superscript 2}), calculated using the ellipse formula to approximate clinical tumour morphology, emerged as the strongest predictor (SHAP importance: 0.141), followed by tumour size dimensions (0.086 and 0.068), aggressive histopathology (0.046), and recurrence status (0.035). Wide neural network architectures (5-layer) outperformed deeper configurations (7-layer). The model demonstrated 70.7% high-confidence predictions with uncertainty <15%. ConclusionsMachine learning models using pre-operative clinical features can accurately predict which Mohs procedures will require 13 or more sections. The stacking ensemble approach provides robust predictions suitable for clinical decision support. External validation in multi-centre cohorts with diverse patient populations and practice patterns is warranted to assess model generalisability.",
-    "category": "Health Systems",
-    "source": "medRxiv",
-    "published": "2026-07-21",
-    "updated": "2026-07-21",
-    "primary_category": "dermatology",
-    "categories": [
-      "dermatology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.20.26358484v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.20.26358484v1.full.pdf"
-      }
-    ],
-    "score": 73,
-    "infographic": {
-      "key_insight": "A stacking machine-learning model using pre-operative clinical features predicted which Mohs surgery cases would require 13 or more tissue sections with strong accuracy.",
-      "clinical_relevance": "If validated externally, this tool could help clinicians plan operating time, allocate resources, and counsel patients before Mohs micrographic surgery.",
-      "method": [
-        "408 consecutive Mohs procedures were analyzed with 16 pre-operative clinical variables.",
-        "Thirty models were tested, including ensemble methods, gradient boosting, neural networks, SVMs, and traditional classifiers.",
-        "Performance was evaluated with 5-fold stratified cross-validation and an independent test set; SHAP was used to identify key predictors."
-      ],
-      "evidence_signal": "The stacking ensemble achieved the best performance, with cross-validation AUC 0.891 and test AUC 0.884, and produced 70.7% high-confidence predictions.",
-      "watch_item": "This is a single-cohort study, so external validation across centers and practice patterns is still needed before routine implementation.",
-      "hashtags": [
-        "#MohsSurgery",
-        "#MachineLearning",
-        "#PredictiveModeling",
-        "#HealthSystems",
-        "#AIinMedicine"
-      ],
-      "paper_id": "2026-07-21-medrxiv-development_and_validation_of_machine_learning_models_for_predicting_13_or_more_sections_i",
-      "paper_title": "Development and Validation of Machine Learning Models for Predicting 13 or More Sections in Mohs Micrographic Surgery",
-      "paper_date": "2026-07-21",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-07-25T09:52:49",
+      "generated_at": "2026-07-24T09:15:47",
       "generator": "openai"
     }
   },
@@ -1005,29 +852,184 @@
         "url": "https://arxiv.org/pdf/2607.21384v1"
       }
     ],
-    "score": 72,
+    "score": 77,
     "infographic": {
-      "key_insight": "A multimodal self-supervised EEG foundation model can learn seizure-relevant representations that transfer well across datasets and tasks.",
-      "clinical_relevance": "This could improve seizure detection systems by making them more adaptable to new patients and recording settings, while also supporting more interpretable localization.",
+      "key_insight": "A multimodal self-supervised EEG foundation model can learn generalizable seizure-related representations by aligning raw signals, time-frequency maps, and text in a shared embedding space.",
+      "clinical_relevance": "This approach may improve seizure detection models that transfer more reliably across datasets and support patient-independent evaluation.",
       "method": [
-        "Raw EEG encoded with a Mamba-based model",
-        "Time-frequency EEG encoded with a ViT-style branch",
-        "Text encoder + shared embedding space with masked modeling, cross-view contrastive alignment, and temporal consistency losses"
+        "Raw EEG encoding with a Mamba-based backbone",
+        "Time-frequency encoding with a ViT-style branch plus lightweight text encoder",
+        "Pretraining with masked modeling, cross-view contrastive alignment, and temporal consistency losses"
       ],
-      "evidence_signal": "The best model reached AUROC 0.874 on the CHB-MIT benchmark, the ensemble reached 0.878, and leave-one-subject-out testing showed mean balanced accuracy of 0.558 across 19 subjects.",
-      "watch_item": "Performance dropped substantially in patient-independent LOSO evaluation, so real-world generalization may still be limited despite strong benchmark results.",
+      "evidence_signal": "On CHB-MIT, the best single model reached AUROC 0.874 and the ensemble reached 0.878, with mean LOSO balanced accuracy of 0.558 across 19 subjects.",
+      "watch_item": "Performance drops under leave-one-subject-out testing, so real-world generalization remains challenging and needs careful external validation.",
       "hashtags": [
         "#EEG",
         "#SeizureDetection",
         "#SelfSupervisedLearning",
-        "#FoundationModels",
-        "#MultimodalAI"
+        "#FoundationModel",
+        "#MedicalAI"
       ],
       "paper_id": "2026-07-23-arxiv-multimodal_pretraining_for_generalizable_eeg_representation_learning",
       "paper_title": "Multimodal Pretraining for Generalizable EEG Representation Learning",
       "paper_date": "2026-07-23",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-07-25T09:52:52",
+      "generated_at": "2026-07-24T09:15:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-23-arxiv-automated_synthesis_and_adversarial_validation_of_executable_causal_research_pipelines",
+    "arxiv_id": "2607.21173v1",
+    "date": "2026-07-23",
+    "title": "Automated Synthesis and Adversarial Validation of Executable Causal Research Pipelines",
+    "authors": "Irena Girshovitz, Dan Zeltzer, Ran Gilad-Bachrach",
+    "abstract": "While automated research systems promise to accelerate empirical analysis, they are prone to silent failures: instances in which analysis code executes successfully yet relies on invalid causal assumptions. We present the Artificial Intelligence (AI)-based Epidemiology Research Assistant (ARA), a framework that makes these failures visible by explicitly encoding causal design principles, study-specific assumptions, and methodological constraints. ARA integrates protocol construction, synthetic data generation, and adversarial validation into a unified pipeline. The framework translates natural language research questions into structured causal protocols and executable analysis code by first constructing a protocol and then generating synthetic datasets using Structural Causal Models (SCMs) with known ground-truth effects. This synthetic-data step can also support pipeline development when access to confidential data, such as medical data, is restricted. The generated analysis is then evaluated under controlled violations of identification assumptions. We evaluate ARA on the Automated Causal Reasoning Benchmark, assessing recovery of identification strategies, causal quantities, treatment and outcome variables, and consistency between generated code and approved protocol. Protocol construction and adversarial validation did not consistently improve numerical agreement with benchmark estimates compared with standard LLM-based generation. However, they changed the failure mode: instead of silently returning causal estimates, ARA often surfaced protocol concerns, diagnostic failures, incomplete inference, or downgraded non-causal interpretations. These findings suggest that validity-first automated science systems should be evaluated not only by answer accuracy, but also by whether they indicate when causal claims are unwarranted.",
+    "category": "Clinical NLP",
+    "source": "arXiv",
+    "published": "2026-07-23T10:59:16Z",
+    "updated": "2026-07-23T10:59:16Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.21173v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.21173v1"
+      }
+    ],
+    "score": 77,
+    "infographic": {
+      "key_insight": "ARA turns automated causal analysis into a “validity-first” workflow by making hidden design assumptions and failure modes explicit.",
+      "clinical_relevance": "For clinical and epidemiologic research, this could help flag when an automatically generated analysis is not suitable for causal interpretation, especially when data are restricted or assumptions are fragile.",
+      "method": [
+        "Converts natural-language research questions into structured causal protocols and executable analysis code.",
+        "Uses synthetic datasets from Structural Causal Models (SCMs) to provide known ground-truth effects and support development without confidential data.",
+        "Runs adversarial validation by testing the pipeline under controlled violations of identification assumptions."
+      ],
+      "evidence_signal": "On the Automated Causal Reasoning Benchmark, ARA was evaluated for recovery of identification strategies, causal quantities, treatment/outcome variables, and protocol-code consistency; it did not consistently improve numerical agreement, but often surfaced concerns instead of silent causal claims.",
+      "watch_item": "The framework may be useful for diagnostics, but its added protocol and validation steps do not guarantee better benchmark accuracy or reliable causal conclusions in every setting.",
+      "hashtags": [
+        "#ClinicalNLP",
+        "#CausalInference",
+        "#AIinMedicine",
+        "#AutomatedScience",
+        "#ResearchValidity"
+      ],
+      "paper_id": "2026-07-23-arxiv-automated_synthesis_and_adversarial_validation_of_executable_causal_research_pipelines",
+      "paper_title": "Automated Synthesis and Adversarial Validation of Executable Causal Research Pipelines",
+      "paper_date": "2026-07-23",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-24T09:15:51",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-23-arxiv-halluscope_fine_grained_hallucination_diagnosis_for_multimodal_large_language_models",
+    "arxiv_id": "2607.21105v1",
+    "date": "2026-07-23",
+    "title": "HalluScope: Fine-grained Hallucination Diagnosis for Multimodal Large Language Models",
+    "authors": "Weilin Jin, Mingyu Wang, Wenbo Li, Haoyang Huang, Yifan Wu, Ying Li",
+    "abstract": "Although Multimodal Large Language Models have achieved strong performance across a wide range of vision-language tasks, they still suffer from hallucinations, where model outputs become inconsistent with the visual content, textual context, or commonsense knowledge. Existing studies primarily address this problem through coarse-grained detection. However, these approaches often provide insufficient diagnostic information for understanding hallucination types and supporting downstream hallucination mitigation. To bridge this gap, we propose fine-grained hallucination diagnosis for MLLMs, a new unified task that jointly performs hallucination detection, classification, and interpretable explanation generation. We develop an automated data generation pipeline and construct HalluScope-30K, a large-scale diagnostic dataset covering eight sources and five task categories. Based on this dataset, we design a multi-granular joint reward function and train two diagnosis models, HalluScope-4B and HalluScope-8B, which achieve state-of-the-art performance on both the MHALO benchmark and our fine-grained hallucination classification benchmark. Notably, detection and classification are mutually beneficial under joint optimization. Furthermore, diagnosis-driven feedback experiments show that the fine-grained diagnostic explanations produced by our model effectively guide target models to correct their hallucinations, with full diagnosis substantially outperforming all baselines on both Qwen3-VL-8B-Instruct and LLaVA-1.5-7B.",
+    "category": "Clinical NLP",
+    "source": "arXiv",
+    "published": "2026-07-23T09:35:32Z",
+    "updated": "2026-07-23T09:35:32Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.21105v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.21105v1"
+      }
+    ],
+    "score": 77,
+    "infographic": {
+      "key_insight": "HalluScope adds fine-grained diagnosis for multimodal LLM hallucinations by jointly detecting errors, classifying their type, and generating explanations.",
+      "clinical_relevance": "Better hallucination diagnosis could improve reliability of vision-language AI used in clinical workflows by making errors easier to identify, understand, and correct.",
+      "method": [
+        "Built HalluScope-30K, a large diagnostic dataset with eight hallucination sources and five task categories.",
+        "Trained HalluScope-4B and HalluScope-8B using a multi-granular joint reward objective.",
+        "Evaluated both diagnosis performance and whether generated explanations could help other models correct hallucinations."
+      ],
+      "evidence_signal": "The abstract reports state-of-the-art results on the MHALO benchmark and a fine-grained classification benchmark, plus successful feedback-based correction on Qwen3-VL-8B-Instruct and LLaVA-1.5-7B.",
+      "watch_item": "The work is benchmark-driven, so real-world clinical usefulness may still depend on external validation in safety-critical settings.",
+      "hashtags": [
+        "#MultimodalAI",
+        "#HallucinationDetection",
+        "#ClinicalNLP",
+        "#VisionLanguageModels",
+        "#AISafety"
+      ],
+      "paper_id": "2026-07-23-arxiv-halluscope_fine_grained_hallucination_diagnosis_for_multimodal_large_language_models",
+      "paper_title": "HalluScope: Fine-grained Hallucination Diagnosis for Multimodal Large Language Models",
+      "paper_date": "2026-07-23",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-07-24T09:15:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-21-arxiv-from_operations_to_elderly_care_outcomes_a_thematic_review_of_industrial_engineering_and_d",
+    "arxiv_id": "2607.19075v1",
+    "date": "2026-07-21",
+    "title": "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches",
+    "authors": "Shayan Farhang Pazhooh, Fereshteh Parvaresh",
+    "abstract": "The rapid growth of the global aging population presents severe challenges to healthcare systems, necessitating efficient, equitable, and patient-centered care models. While Industrial Engineering and Operations Research (OR) provide robust optimization and decision-support tools to address these multidimensional complexities, current applications often remain fragmented. This paper presents a thematic review of 30 seminal studies at the intersection of OR and elderly care, categorizing the literature into home healthcare operations, polypharmacy management, and clinical chronotherapy. Our analysis highlights a significant methodological evolution from static, deterministic models toward dynamic and stochastic frameworks integrated with artificial intelligence (AI). Despite these advancements, a critical translational gap persists: the current OR literature is heavily dominated by process-level optimizations, such as staff routing, and struggles to translate these operational efficiencies into measurable clinical outcomes. Furthermore, holistic models bridging the transition between hospital and community care remain critically underexplored. To develop resilient and smart healthcare systems, this study proposes a conceptual framework that shifts the research focus from isolated operational tasks to integrated, multi-level decision-making. We emphasize the critical need for robust systems analysis, human-inclusive design, and the smartification of care through emerging digital technologies - including digital twins and large language models - to successfully bridge the gap between theoretical operational metrics and tangible patient-level health outcomes.",
+    "category": "Health Systems",
+    "source": "arXiv",
+    "published": "2026-07-21T13:07:28Z",
+    "updated": "2026-07-21T13:07:28Z",
+    "primary_category": "math.OC",
+    "categories": [
+      "math.OC",
+      "cs.AI",
+      "cs.CY"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.19075v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.19075v1"
+      }
+    ],
+    "score": 77,
+    "infographic": {
+      "key_insight": "A thematic review shows that industrial engineering and operations research can improve elderly care, but most studies still optimize operations rather than patient health outcomes.",
+      "clinical_relevance": "The paper suggests that smarter scheduling, routing, and decision-support could make elderly care more efficient and coordinated, while still needing stronger links to real clinical benefits.",
+      "method": [
+        "Reviewed 30 seminal studies at the OR–elderly care intersection",
+        "Grouped the literature into home healthcare operations, polypharmacy management, and clinical chronotherapy",
+        "Compared the field’s shift from deterministic models toward dynamic, stochastic, and AI-integrated approaches"
+      ],
+      "evidence_signal": "The abstract reports a thematic review of 30 studies and traces methodological trends, but does not provide new patient-level outcome data or a quantitative meta-analysis.",
+      "watch_item": "A key limitation is the translational gap: operational gains such as better routing may not automatically translate into measurable health improvements for older adults.",
+      "hashtags": [
+        "#ElderlyCare",
+        "#OperationsResearch",
+        "#HealthSystems",
+        "#DecisionSupport",
+        "#AIinHealthcare"
+      ],
+      "paper_id": "2026-07-21-arxiv-from_operations_to_elderly_care_outcomes_a_thematic_review_of_industrial_engineering_and_d",
+      "paper_title": "From Operations to Elderly Care Outcomes: A Thematic Review of Industrial Engineering and Decision-Support Approaches",
+      "paper_date": "2026-07-21",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-07-24T09:15:56",
       "generator": "openai"
     }
   }
