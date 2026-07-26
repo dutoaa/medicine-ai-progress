@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-25
+Generated: 2026-07-26
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Development of an automated, reliable, and clinically meaningful artificial intelligence (AI) tool for diagnosing cardiac disease from conventional cardiovascular magnetic resonance (CMR) images
@@ -83,15 +83,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.1101/2025.11.19.25340596v3.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-22-medrxiv-evaluating_large_language_models_for_colonoscopy_preparation_assistance_correctness_and_di_infographic.json
 
-## 11. A framework for human-artificial intelligence co-learning for disease activity labeling using electronic health records
+## 11. A Multimodal Multiomics Machine Learning (MMM) approach for biomarker discovery and acceleration of clinical trial readiness for childhood-onset neurological disorders
 
-- Date: 2026-07-19
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.16.26358271v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.16.26358271v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-19-medrxiv-a_framework_for_human_artificial_intelligence_co_learning_for_disease_activity_labeling_us_infographic.json
+- Date: 2026-07-22
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.21.26358463v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.21.26358463v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-22-medrxiv-a_multimodal_multiomics_machine_learning_mmm_approach_for_biomarker_discovery_and_accelera_infographic.json
 
-## 12. MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education
+## 12. Local Label-Informed Feature Transfer for Generating Ground-Truth Medical Images: A Comparison of GAN- and Diffusion-Based Approaches
+
+- Date: 2026-07-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.18882v1
+- PDF: https://arxiv.org/pdf/2607.18882v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-local_label_informed_feature_transfer_for_generating_ground_truth_medical_images_a_compari_infographic.json
+
+## 13. MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education
 
 - Date: 2026-07-23
 - Category: Clinical NLP
@@ -99,7 +107,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.21570v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-medgame_storytelling_gamification_empowered_by_large_language_models_for_medical_education_infographic.json
 
-## 13. UnDA: Unpaired Domain Alignment for Cross-Modal Knowledge Transfer in Medical Imaging
+## 14. UnDA: Unpaired Domain Alignment for Cross-Modal Knowledge Transfer in Medical Imaging
 
 - Date: 2026-07-23
 - Category: Medical Imaging
@@ -107,7 +115,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.21546v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-unda_unpaired_domain_alignment_for_cross_modal_knowledge_transfer_in_medical_imaging_infographic.json
 
-## 14. A Systematic Benchmark of Intensity Normalisation Methods for 3D Knee MRI Segmentation and Cross-Domain Generalisability
+## 15. A Systematic Benchmark of Intensity Normalisation Methods for 3D Knee MRI Segmentation and Cross-Domain Generalisability
 
 - Date: 2026-07-22
 - Category: Medical Imaging
@@ -115,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.20028v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-22-arxiv-a_systematic_benchmark_of_intensity_normalisation_methods_for_3d_knee_mri_segmentation_and_infographic.json
 
-## 15. Developing a Heart Failure Readmission Model From Inpatient Electronic Medical Record Data
+## 16. Developing a Heart Failure Readmission Model From Inpatient Electronic Medical Record Data
 
 - Date: 2026-07-21
 - Category: Health Systems
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.18.26358391v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-medrxiv-developing_a_heart_failure_readmission_model_from_inpatient_electronic_medical_record_data_infographic.json
 
-## 16. GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis
+## 17. GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis
 
 - Date: 2026-07-20
 - Category: Medical Imaging
@@ -131,21 +139,13 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.18218v2
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-20-arxiv-gigapath_flash_and_gigatime_flash_efficient_pathology_foundation_models_for_whole_slide_an_infographic.json
 
-## 17. Trustworthy Privacy-Preserving Multimodal Federated Learning for Personalised Breast Cancer Prediction
+## 18. Trustworthy Privacy-Preserving Multimodal Federated Learning for Personalised Breast Cancer Prediction
 
 - Date: 2026-07-21
 - Category: Medical Imaging
 - Source: arXiv - https://arxiv.org/abs/2607.19532v1
 - PDF: https://arxiv.org/pdf/2607.19532v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-trustworthy_privacy_preserving_multimodal_federated_learning_for_personalised_breast_cance_infographic.json
-
-## 18. Local Label-Informed Feature Transfer for Generating Ground-Truth Medical Images: A Comparison of GAN- and Diffusion-Based Approaches
-
-- Date: 2026-07-21
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.18882v1
-- PDF: https://arxiv.org/pdf/2607.18882v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-local_label_informed_feature_transfer_for_generating_ground_truth_medical_images_a_compari_infographic.json
 
 ## 19. Development and Validation of Machine Learning Models for Predicting 13 or More Sections in Mohs Micrographic Surgery
 
