@@ -1,9 +1,33 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-27
+Generated: 2026-07-28
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Development of an automated, reliable, and clinically meaningful artificial intelligence (AI) tool for diagnosing cardiac disease from conventional cardiovascular magnetic resonance (CMR) images
+## 1. Color Fundus Photography Analysis: Co-evolution of Data, Preprocessing, and Modeling toward Multimodal AI
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.23972v1
+- PDF: https://arxiv.org/pdf/2607.23972v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-color_fundus_photography_analysis_co_evolution_of_data_preprocessing_and_modeling_toward_m_infographic.json
+
+## 2. Closed-Loop Validation-Repair for Healthcare Interoperability: A Multi-Model Study of Schema Compliance in Clinical LLMs
+
+- Date: 2026-07-27
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.24371v1
+- PDF: https://arxiv.org/pdf/2607.24371v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-closed_loop_validation_repair_for_healthcare_interoperability_a_multi_model_study_of_schem_infographic.json
+
+## 3. Toward Automated Detection of Documentation Inconsistencies in Electronic Health Records
+
+- Date: 2026-07-24
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.22954v1
+- PDF: https://arxiv.org/pdf/2607.22954v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-toward_automated_detection_of_documentation_inconsistencies_in_electronic_health_records_infographic.json
+
+## 4. Development of an automated, reliable, and clinically meaningful artificial intelligence (AI) tool for diagnosing cardiac disease from conventional cardiovascular magnetic resonance (CMR) images
 
 - Date: 2026-07-22
 - Category: Medical Imaging
@@ -11,7 +35,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.20087v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-22-arxiv-development_of_an_automated_reliable_and_clinically_meaningful_artificial_intelligence_ai_infographic.json
 
-## 2. RadSight: Towards Perceptually Reliable Multimodal Radiology Image Understanding
+## 5. Infrared Imaging Empowered by Artificial Intelligence for Pediatric Skeletal Triage: A Narrative Review and Future Perspectives
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.24727v1
+- PDF: https://arxiv.org/pdf/2607.24727v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-infrared_imaging_empowered_by_artificial_intelligence_for_pediatric_skeletal_triage_a_narr_infographic.json
+
+## 6. Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls
+
+- Date: 2026-07-27
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2607.24519v1
+- PDF: https://arxiv.org/pdf/2607.24519v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-stress_testing_eeg_foundation_models_for_clinical_decoding_dataset_identity_and_targeted_n_infographic.json
+
+## 7. RadSight: Towards Perceptually Reliable Multimodal Radiology Image Understanding
 
 - Date: 2026-07-24
 - Category: Medical Imaging
@@ -19,7 +59,63 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.22293v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-radsight_towards_perceptually_reliable_multimodal_radiology_image_understanding_infographic.json
 
-## 3. Biomedical Machine Translation for Low-Resource Arabic-Script Languages via Cross-Lingual Transfer and LoRA Adapter Merging
+## 8. ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding
+
+- Date: 2026-07-27
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2607.24743v1
+- PDF: https://arxiv.org/pdf/2607.24743v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-clinfusion_a_vision_centric_multimodal_llm_system_for_holistic_medical_understanding_infographic.json
+
+## 9. MEGA-CL: A Molecular Foundation Model for Generalizable ADMET Prediction through Graph External Attention and Contrastive Learning
+
+- Date: 2026-07-27
+- Category: Drug Discovery
+- Source: arXiv - https://arxiv.org/abs/2607.24314v1
+- PDF: https://arxiv.org/pdf/2607.24314v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-mega_cl_a_molecular_foundation_model_for_generalizable_admet_prediction_through_graph_exte_infographic.json
+
+## 10. RareLens: Towards End-to-End Rare Disease Care via Aligning Divergent Large Language Model Reasoning
+
+- Date: 2026-07-25
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2607.23290v1
+- PDF: https://arxiv.org/pdf/2607.23290v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-25-arxiv-rarelens_towards_end_to_end_rare_disease_care_via_aligning_divergent_large_language_model_infographic.json
+
+## 11. Parameter-Efficient Adaptation of SAM3 for Prompt-Driven Surgical Concept Segmentation
+
+- Date: 2026-07-26
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.23694v1
+- PDF: https://arxiv.org/pdf/2607.23694v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-26-arxiv-parameter_efficient_adaptation_of_sam3_for_prompt_driven_surgical_concept_segmentation_infographic.json
+
+## 12. KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.24730v1
+- PDF: https://arxiv.org/pdf/2607.24730v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-kanex_translating_kolmogorov_arnold_networks_interpretability_to_medical_explainability_infographic.json
+
+## 13. Panda: Unsupervised Pelvic Anomaly Detection for Real-Time MR Imaging
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.24703v1
+- PDF: https://arxiv.org/pdf/2607.24703v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-panda_unsupervised_pelvic_anomaly_detection_for_real_time_mr_imaging_infographic.json
+
+## 14. Efficient Ultrasound Image Segmentation with Token-Conditioned Neural Cellular Automata
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2607.24529v1
+- PDF: https://arxiv.org/pdf/2607.24529v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-efficient_ultrasound_image_segmentation_with_token_conditioned_neural_cellular_automata_infographic.json
+
+## 15. Biomedical Machine Translation for Low-Resource Arabic-Script Languages via Cross-Lingual Transfer and LoRA Adapter Merging
 
 - Date: 2026-07-24
 - Category: Clinical NLP
@@ -27,138 +123,42 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2607.22300v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-biomedical_machine_translation_for_low_resource_arabic_script_languages_via_cross_lingual_infographic.json
 
-## 4. M$^3$-Gen: Interpretable Multimodal Generation of Gene Expression Profiles Using Clinical and Imaging Data
+## 16. Physics-Guided Generative AI for Property-Targeted 3D Porous Media Design
 
-- Date: 2026-07-23
+- Date: 2026-07-27
+- Category: Biomedical AI
+- Source: arXiv - https://arxiv.org/abs/2607.24274v1
+- PDF: https://arxiv.org/pdf/2607.24274v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-physics_guided_generative_ai_for_property_targeted_3d_porous_media_design_infographic.json
+
+## 17. A Scale-adaptive Vision Model Links C. elegans Neuronal Morphology to Behavior for Neurotoxicity Assessment
+
+- Date: 2026-07-25
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.21343v1
-- PDF: https://arxiv.org/pdf/2607.21343v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-m_3_gen_interpretable_multimodal_generation_of_gene_expression_profiles_using_clinical_and_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.23183v1
+- PDF: https://arxiv.org/pdf/2607.23183v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-25-arxiv-a_scale_adaptive_vision_model_links_c_elegans_neuronal_morphology_to_behavior_for_neurotox_infographic.json
 
-## 5. Enhancing Explainable Cardiac Diagnosis with Guide-Grounded Multimodal LLMs
+## 18. PathScale-R1: Cross-scale Reasoning for Pathological Image Analysis
 
-- Date: 2026-07-23
+- Date: 2026-07-26
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.20814v1
-- PDF: https://arxiv.org/pdf/2607.20814v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-enhancing_explainable_cardiac_diagnosis_with_guide_grounded_multimodal_llms_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.23794v1
+- PDF: https://arxiv.org/pdf/2607.23794v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-26-arxiv-pathscale_r1_cross_scale_reasoning_for_pathological_image_analysis_infographic.json
 
-## 6. Autoregressive EHR Foundation Models with Multimodal Inputs
+## 19. Beyond Local Inspection: Global, Guideline-Grounded Evaluation of Post-hoc XAI Methods for ECG Classification
 
-- Date: 2026-07-24
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.22264v1
-- PDF: https://arxiv.org/pdf/2607.22264v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-autoregressive_ehr_foundation_models_with_multimodal_inputs_infographic.json
-
-## 7. Pretraining EHR Foundation Models with Patient-Aware Sampling
-
-- Date: 2026-07-24
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.22114v1
-- PDF: https://arxiv.org/pdf/2607.22114v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-pretraining_ehr_foundation_models_with_patient_aware_sampling_infographic.json
-
-## 8. Spatially Grounded Concept Bottleneck Models for Trustworthy Breast Ultrasound Diagnosis
-
-- Date: 2026-07-22
+- Date: 2026-07-27
 - Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.20691v1
-- PDF: https://arxiv.org/pdf/2607.20691v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-22-arxiv-spatially_grounded_concept_bottleneck_models_for_trustworthy_breast_ultrasound_diagnosis_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.24035v1
+- PDF: https://arxiv.org/pdf/2607.24035v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-beyond_local_inspection_global_guideline_grounded_evaluation_of_post_hoc_xai_methods_for_e_infographic.json
 
-## 9. Self-supervision drives representational convergence in medical foundation models more than clinical supervision
+## 20. Task-Conditional Faithfulness Auditing of Multimodal LLMs for Grid Diagnosis
 
-- Date: 2026-07-22
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.20274v1
-- PDF: https://arxiv.org/pdf/2607.20274v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-22-arxiv-self_supervision_drives_representational_convergence_in_medical_foundation_models_more_tha_infographic.json
-
-## 10. Auditing Evidence Use in Medical LLM Diagnosis
-
-- Date: 2026-07-23
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.20848v1
-- PDF: https://arxiv.org/pdf/2607.20848v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-auditing_evidence_use_in_medical_llm_diagnosis_infographic.json
-
-## 11. Diffusion Models in Medical Image Inpainting: Challenges, Solution Taxonomy, and Future Directions
-
-- Date: 2026-07-24
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.21904v1
-- PDF: https://arxiv.org/pdf/2607.21904v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-diffusion_models_in_medical_image_inpainting_challenges_solution_taxonomy_and_future_direc_infographic.json
-
-## 12. Toward Generalizable Cognitive Impairment Detection with Speech-Based Multimodal Large Language Models
-
-- Date: 2026-07-23
+- Date: 2026-07-27
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.21496v1
-- PDF: https://arxiv.org/pdf/2607.21496v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-toward_generalizable_cognitive_impairment_detection_with_speech_based_multimodal_large_lan_infographic.json
-
-## 13. Pathologist Attention-Aligned Report Generation for Prostate Histopathology
-
-- Date: 2026-07-21
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.19624v1
-- PDF: https://arxiv.org/pdf/2607.19624v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-21-arxiv-pathologist_attention_aligned_report_generation_for_prostate_histopathology_infographic.json
-
-## 14. Bowel Obstruction Detection and Localization on Abdominal CT with Deep Learning
-
-- Date: 2026-07-24
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2607.22173v1
-- PDF: https://arxiv.org/pdf/2607.22173v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-bowel_obstruction_detection_and_localization_on_abdominal_ct_with_deep_learning_infographic.json
-
-## 15. Evaluating the Effectiveness of Persona Simulation in Opinion Prediction with GPT-4.1
-
-- Date: 2026-07-22
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.20589v1
-- PDF: https://arxiv.org/pdf/2607.20589v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-22-arxiv-evaluating_the_effectiveness_of_persona_simulation_in_opinion_prediction_with_gpt_4_1_infographic.json
-
-## 16. Interpretable EEG biomarkers with bag-of-waves: Spatial and temporal waveform dictionaries for low-data regimes
-
-- Date: 2026-07-24
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.22508v1
-- PDF: https://arxiv.org/pdf/2607.22508v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-interpretable_eeg_biomarkers_with_bag_of_waves_spatial_and_temporal_waveform_dictionaries_infographic.json
-
-## 17. From Isolated Tasks to Structured Capabilities: A Multilayer Taxonomy for Large Language Models
-
-- Date: 2026-07-24
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.22182v1
-- PDF: https://arxiv.org/pdf/2607.22182v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-from_isolated_tasks_to_structured_capabilities_a_multilayer_taxonomy_for_large_language_mo_infographic.json
-
-## 18. TextSLIP: Text Self-Supervised CLIP for Medical Report Generation
-
-- Date: 2026-07-24
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.21970v1
-- PDF: https://arxiv.org/pdf/2607.21970v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-24-arxiv-textslip_text_self_supervised_clip_for_medical_report_generation_infographic.json
-
-## 19. MedGame: Storytelling Gamification Empowered by Large Language Models for Medical Education
-
-- Date: 2026-07-23
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.21570v1
-- PDF: https://arxiv.org/pdf/2607.21570v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-medgame_storytelling_gamification_empowered_by_large_language_models_for_medical_education_infographic.json
-
-## 20. UnDA: Unpaired Domain Alignment for Cross-Modal Knowledge Transfer in Medical Imaging
-
-- Date: 2026-07-23
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.21546v1
-- PDF: https://arxiv.org/pdf/2607.21546v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-23-arxiv-unda_unpaired_domain_alignment_for_cross_modal_knowledge_transfer_in_medical_imaging_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.24539v1
+- PDF: https://arxiv.org/pdf/2607.24539v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-task_conditional_faithfulness_auditing_of_multimodal_llms_for_grid_diagnosis_infographic.json

@@ -1,13 +1,13 @@
 {
-  "key_insight": "Cross-lingual transfer from Arabic and Persian can substantially improve biomedical translation for some low-resource Arabic-script languages, especially when using LoRA adapter merging or small supervised adaptation.",
-  "clinical_relevance": "This could help expand access to biomedical information in under-resourced languages, but performance is uneven and may be insufficient for high-stakes clinical use.",
+  "key_insight": "Cross-lingual transfer from Arabic and Persian can substantially improve biomedical machine translation for very low-resource Arabic-script languages, especially when using LoRA-based pivot adapters and adapter merging.",
+  "clinical_relevance": "This could help expand access to biomedical information in under-resourced languages, but the results are not yet reliable enough for high-stakes clinical use in more distant language pairs.",
   "method": [
-    "Used Arabic and Persian as higher-resource pivot languages.",
-    "Fine-tuned small decoder-only LLMs with LoRA to create domain-specific pivot adapters.",
-    "Compared few-shot prompting, 500-sentence supervised adaptation, and zero-data adapter merging."
+    "LoRA fine-tuning of small decoder-only LLMs",
+    "Train domain-specific pivot adapters on Arabic and Persian",
+    "Compare few-shot prompting, 500-sentence supervised adaptation, and zero-data adapter merging"
   ],
-  "evidence_signal": "On evaluation, supervised adaptation with 500 sentences reached CHrF++ 41.01 for Dari and 28.88 for Urdu, while adapter merging stayed within 3.5 CHrF++ of supervised Dari performance without extra target-language data.",
-  "watch_item": "Pashto and Sorani Kurdish remained too weak for high-stakes deployment, showing that transfer may fail when language distance from the pivots is large.",
+  "evidence_signal": "The abstract reports CHrF++ gains, including near-pivot performance for Dari with 500 sentences (41.01) and meaningful improvement for Urdu (28.88), with adapter merging landing within 3.5 CHrF++ of supervised adaptation for Dari.",
+  "watch_item": "Pashto and Sorani Kurdish remained too weak for safe clinical deployment, showing that transfer performance drops sharply when the target language is structurally distant from the pivots.",
   "hashtags": [
     "#ClinicalNLP",
     "#MachineTranslation",
@@ -19,6 +19,6 @@
   "paper_title": "Biomedical Machine Translation for Low-Resource Arabic-Script Languages via Cross-Lingual Transfer and LoRA Adapter Merging",
   "paper_date": "2026-07-24",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-07-27T10:32:28",
+  "generated_at": "2026-07-28T09:31:19",
   "generator": "openai"
 }
