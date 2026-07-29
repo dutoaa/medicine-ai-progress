@@ -1,13 +1,13 @@
 {
-  "key_insight": "EEG foundation models can look strong or weak depending on dataset identity, split strategy, and control baselines, so transfer claims need stress-testing.",
-  "clinical_relevance": "For clinical EEG decoding, frozen pretrained representations may not outperform classical features or even random encoders, except in some cross-subject tasks like ictal detection.",
+  "key_insight": "EEG foundation-model performance for clinical decoding is highly sensitive to dataset identity, split strategy, and negative controls, and can be outperformed by classical features or even random initialisation on some tasks.",
+  "clinical_relevance": "Clinicians and researchers should be cautious when interpreting pretrained EEG model gains, because apparent improvements may not generalise across patient-disjoint settings or different datasets.",
   "method": [
-    "Benchmarked 6 pretrained EEG models across 5 clinical tasks and 4 datasets.",
-    "Used frozen linear probes with leave-one-subject-out, subject-grouped, or recording-level splits.",
-    "Ran targeted controls: random initialization, random features, label permutation, scrambled-label fine-tuning, and projection tests."
+    "Benchmarked 6 EEG foundation models on 5 clinical tasks across 4 datasets",
+    "Used frozen linear probes with leave-one-subject-out, subject-grouped, and recording-level splits",
+    "Ran targeted controls: random initialisation, random features, label permutation, scrambled-label fine-tuning, and projection sensitivity"
   ],
-  "evidence_signal": "Dataset identity was decoded almost perfectly from embeddings (AUROC 1.000 at PCA-50; 0.9998 after preprocessing), while Korean diagnosis decoding was far lower (0.528) and CHB-MIT ictal detection was the clearest positive result (0.793 AUROC).",
-  "watch_item": "Performance is highly sensitive to evaluation unit and comparator choice, so results from frozen probes may not generalize without patient-disjoint validation and strong negative controls.",
+  "evidence_signal": "Dataset identity was decoded almost perfectly from frozen embeddings (AUROC 1.000 at PCA-50), while Korean dementia diagnosis from the same pipeline was near chance (0.528), and a randomly initialised encoder sometimes beat pretrained REVE.",
+  "watch_item": "Results may not reflect real-world deployment if evaluation is not patient-disjoint and if strong classical baselines and negative controls are not included.",
   "hashtags": [
     "#EEG",
     "#FoundationModels",
@@ -19,6 +19,6 @@
   "paper_title": "Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls",
   "paper_date": "2026-07-27",
   "paper_category": "Diagnostics",
-  "generated_at": "2026-07-28T09:30:53",
+  "generated_at": "2026-07-29T09:32:58",
   "generator": "openai"
 }
