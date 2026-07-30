@@ -1,24 +1,24 @@
 {
-  "key_insight": "A two-stage LLM pipeline can surface many internal inconsistencies in discharge summaries, but reliable use depends on strong context-aware verification.",
-  "clinical_relevance": "Automatically flagging contradictory or ambiguous documentation in EHR notes could support chart review, reduce reasoning errors, and improve patient safety.",
+  "key_insight": "A two-stage large language model pipeline can surface many internal inconsistencies in discharge summaries, but reliable use depends on strong context and clinical verification.",
+  "clinical_relevance": "Automated inconsistency detection could help flag documentation errors that affect clinical reasoning, patient safety, and downstream care decisions.",
   "method": [
-    "Screened 3,000 randomly sampled MIMIC-IV-Note discharge summaries",
-    "Used Gemini 2.5 Pro for open-ended candidate inconsistency detection",
-    "Used Gemini 2.5 Flash for context-grounded verification, then had clinicians review a subset"
+    "Open-ended candidate inconsistency detection with Gemini 2.5 Pro",
+    "Context-grounded verification with Gemini 2.5 Flash",
+    "Manual expert review of a subset of outputs"
   ],
-  "evidence_signal": "The pipeline generated 3,460 candidate inconsistencies across 69.7% of admissions, with expert review highlighting common failure modes tied to temporal reasoning and missing clinical context.",
-  "watch_item": "Many flags are not true contradictions unless each statement is anchored to its section, timeline, and clinical domain, so deployment needs careful validation and human oversight.",
+  "evidence_signal": "In 3,000 MIMIC-IV-Note discharge summaries, the pipeline found 3,460 candidate inconsistencies and these appeared in 69.7% of admissions.",
+  "watch_item": "Many flagged items need temporal reasoning, diagnosis evolution, or outpatient-prescribing knowledge, so some apparent contradictions may reflect missing context rather than true errors.",
   "hashtags": [
     "#ClinicalNLP",
     "#EHR",
     "#LLM",
     "#PatientSafety",
-    "#MedicalAI"
+    "#HealthAI"
   ],
   "paper_id": "2026-07-24-arxiv-toward_automated_detection_of_documentation_inconsistencies_in_electronic_health_records",
   "paper_title": "Toward Automated Detection of Documentation Inconsistencies in Electronic Health Records",
   "paper_date": "2026-07-24",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-07-29T09:32:33",
+  "generated_at": "2026-07-30T09:25:18",
   "generator": "openai"
 }
