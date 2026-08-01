@@ -1,24 +1,24 @@
 {
-  "key_insight": "CalTwin combines Fisher-information shift regularisation with a confidence-misalignment penalty to make medical world models more robust to hospital/domain shifts and better calibrated.",
-  "clinical_relevance": "This could improve the reliability of latent patient-state forecasting for tasks like sepsis monitoring, imaging-based prediction, and digital-twin treatment planning across different clinical sites.",
+  "key_insight": "CalTwin combines a Fisher-information shift penalty with a confidence-misalignment penalty to make medical world models both more robust to hospital-to-hospital distribution shifts and better calibrated.",
+  "clinical_relevance": "This could improve the reliability of latent-patient forecasting used in digital-twin planning and imaging-based decision support, especially when models are deployed at unseen hospitals.",
   "method": [
-    "GRU-based medical world model with a latent transition predictor",
-    "Fisher-Information-based penalty to reduce covariate shift across fragmented training data",
-    "Confidence Misalignment Penalty to reduce overconfident multi-step forecasts"
+    "GRU-based medical world model with a latent transition predictor.",
+    "Adds Fisher-Information-based regularisation to reduce covariate-shift sensitivity across fragmented training data.",
+    "Adds a Confidence Misalignment Penalty to reduce overconfident multi-step forecasts."
   ],
-  "evidence_signal": "On PhysioNet 2019 Sepsis Challenge data, using two hospital systems for training and a third as OOD test, CalTwin reduced OOD next-step latent-state MSE by 9.1% and slightly improved ECE (0.7%).",
-  "watch_item": "The calibration gain was small, so practical benefit may depend on whether the added regularisation justifies the extra complexity and whether results generalise beyond the sepsis benchmark.",
+  "evidence_signal": "On PhysioNet 2019 Sepsis Challenge data, using two hospital systems for training and a third unseen system for OOD testing, CalTwin reduced OOD next-step latent-state MSE by 9.1% versus the baseline and slightly improved calibration (ECE down 0.7%).",
+  "watch_item": "The calibration gain was small, so the approach may need further validation across more sites, tasks, and deployment settings before clinical use.",
   "hashtags": [
-    "#MedicalAI",
-    "#DigitalTwin",
     "#MedicalImaging",
-    "#RobustML",
-    "#Calibration"
+    "#MedicalAI",
+    "#WorldModels",
+    "#Calibration",
+    "#DomainShift"
   ],
   "paper_id": "2026-07-29-arxiv-caltwin_towards_calibrated_shift_robust_medical_world_models_via_fisher_information_regula",
   "paper_title": "CalTwin: Towards Calibrated, Shift-Robust Medical World Models via Fisher-Information Regularisation",
   "paper_date": "2026-07-29",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-07-30T09:24:56",
+  "generated_at": "2026-08-01T09:00:45",
   "generator": "openai"
 }
