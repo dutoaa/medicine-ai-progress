@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-01
+Generated: 2026-08-02
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study
@@ -11,154 +11,154 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.27.26359009v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-histological_triage_of_early_stage_mycosis_fungoides_using_a_weakly_supervised_deep_learni_infographic.json
 
-## 2. Agentic AI in medicine: architectures, applications, evaluation, and challenges for clinical translation
-
-- Date: 2026-07-28
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.25489v1
-- PDF: https://arxiv.org/pdf/2607.25489v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-arxiv-agentic_ai_in_medicine_architectures_applications_evaluation_and_challenges_for_clinical_t_infographic.json
-
-## 3. PanDent: Toward Comprehensive Tooth-Level Structure-Language Consistency in Dental Radiology
+## 2. Predicting Depression and Anxiety Progression in Multiple Sclerosis from Longitudinal Clinical Data Using Machine Learning
 
 - Date: 2026-07-29
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.27378v1
-- PDF: https://arxiv.org/pdf/2607.27378v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-arxiv-pandent_toward_comprehensive_tooth_level_structure_language_consistency_in_dental_radiolog_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.23.26356339v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.23.26356339v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-medrxiv-predicting_depression_and_anxiety_progression_in_multiple_sclerosis_from_longitudinal_clin_infographic.json
 
-## 4. Medical world models in healthcare: foundations, applications, and challenges for trustworthy clinical translation
-
-- Date: 2026-07-28
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2607.25242v1
-- PDF: https://arxiv.org/pdf/2607.25242v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-arxiv-medical_world_models_in_healthcare_foundations_applications_and_challenges_for_trustworthy_infographic.json
-
-## 5. MIND: Multimodal Intent-Driven Network via Diffusion Transformers for Medical Image Fusion
-
-- Date: 2026-07-30
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.28565v1
-- PDF: https://arxiv.org/pdf/2607.28565v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-mind_multimodal_intent_driven_network_via_diffusion_transformers_for_medical_image_fusion_infographic.json
-
-## 6. ScaFE: Data-Efficient Scar Classification with LLM-Generated Clinical Feature Programs
-
-- Date: 2026-07-30
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.28538v1
-- PDF: https://arxiv.org/pdf/2607.28538v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-scafe_data_efficient_scar_classification_with_llm_generated_clinical_feature_programs_infographic.json
-
-## 7. Hearsay: Vision-Language Medical Diagnoses Without an Image
-
-- Date: 2026-07-29
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.26886v1
-- PDF: https://arxiv.org/pdf/2607.26886v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-arxiv-hearsay_vision_language_medical_diagnoses_without_an_image_infographic.json
-
-## 8. PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents
-
-- Date: 2026-07-28
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2607.25485v1
-- PDF: https://arxiv.org/pdf/2607.25485v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-arxiv-patientagentbench_a_benchmark_framework_for_evaluating_patient_facing_health_ai_agents_infographic.json
-
-## 9. LoMeVQA: A Comprehensive Benchmark for Longitudinal Medical VQA
-
-- Date: 2026-07-30
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.27806v1
-- PDF: https://arxiv.org/pdf/2607.27806v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-lomevqa_a_comprehensive_benchmark_for_longitudinal_medical_vqa_infographic.json
-
-## 10. Color Fundus Photography Analysis: Co-evolution of Data, Preprocessing, and Modeling toward Multimodal AI
-
-- Date: 2026-07-27
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.23972v1
-- PDF: https://arxiv.org/pdf/2607.23972v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-color_fundus_photography_analysis_co_evolution_of_data_preprocessing_and_modeling_toward_m_infographic.json
-
-## 11. SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation
-
-- Date: 2026-07-29
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.26885v1
-- PDF: https://arxiv.org/pdf/2607.26885v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-arxiv-scalpel_semantic_cross_modal_alignment_via_llm_powered_encoder_learning_for_medical_vision_infographic.json
-
-## 12. Closed-Loop Validation-Repair for Healthcare Interoperability: A Multi-Model Study of Schema Compliance in Clinical LLMs
+## 3. Comparison of Influenza Vaccine Effectiveness Estimates Using Test-Negative Prospective Enrollment and Electronic Health Record Data, United States, 2024--2025
 
 - Date: 2026-07-27
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.24371v1
-- PDF: https://arxiv.org/pdf/2607.24371v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-arxiv-closed_loop_validation_repair_for_healthcare_interoperability_a_multi_model_study_of_schem_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.23.26358258v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.23.26358258v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-comparison_of_influenza_vaccine_effectiveness_estimates_using_test_negative_prospective_en_infographic.json
 
-## 13. Toward Multi-Modal Deep Learning for Pulmonary Disease Classification: A Texture-Based Machine Learning Pilot Study on Public Chest X-Ray Data
+## 4. Deep Learning-Based Pretreatment Cardiovascular Risk Stratification in Women with Breast Cancer
 
-- Date: 2026-07-29
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.27286v1
-- PDF: https://arxiv.org/pdf/2607.27286v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-arxiv-toward_multi_modal_deep_learning_for_pulmonary_disease_classification_a_texture_based_mach_infographic.json
+- Date: 2026-07-28
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.26.26350307v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.26.26350307v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-deep_learning_based_pretreatment_cardiovascular_risk_stratification_in_women_with_breast_c_infographic.json
 
-## 14. A report-grounded vision-language foundation model for colonoscopy from 280000 routine reports
-
-- Date: 2026-07-30
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.28466v1
-- PDF: https://arxiv.org/pdf/2607.28466v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-a_report_grounded_vision_language_foundation_model_for_colonoscopy_from_280000_routine_rep_infographic.json
-
-## 15. PathView-Bench: Can Multimodal Large Language Models Achieve Fine-grained Multiscale Understanding of Pathology Images?
-
-- Date: 2026-07-30
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.28318v1
-- PDF: https://arxiv.org/pdf/2607.28318v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-pathview_bench_can_multimodal_large_language_models_achieve_fine_grained_multiscale_unders_infographic.json
-
-## 16. What Makes Deep Learning Work for Traditional Chinese Medicine Tongue Diagnosis? A Comprehensive Ablation Study
-
-- Date: 2026-07-30
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.28148v1
-- PDF: https://arxiv.org/pdf/2607.28148v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-what_makes_deep_learning_work_for_traditional_chinese_medicine_tongue_diagnosis_a_comprehe_infographic.json
-
-## 17. CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography
-
-- Date: 2026-07-30
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.27779v1
-- PDF: https://arxiv.org/pdf/2607.27779v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-cxr_retrieve_compositional_text_to_image_retrieval_in_chest_radiography_infographic.json
-
-## 18. CalTwin: Towards Calibrated, Shift-Robust Medical World Models via Fisher-Information Regularisation
-
-- Date: 2026-07-29
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2607.26752v1
-- PDF: https://arxiv.org/pdf/2607.26752v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-arxiv-caltwin_towards_calibrated_shift_robust_medical_world_models_via_fisher_information_regula_infographic.json
-
-## 19. ClinLens: Towards Long-Horizon Coding Agents for Longitudinal Multimodal Clinical Data Science
+## 5. Forty-seven percent of pregnancies have stigmatizing language in their clinical notes in an electronic health record cohort
 
 - Date: 2026-07-28
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.26155v1
-- PDF: https://arxiv.org/pdf/2607.26155v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-arxiv-clinlens_towards_long_horizon_coding_agents_for_longitudinal_multimodal_clinical_data_scie_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.27.26359049v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.27.26359049v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-forty_seven_percent_of_pregnancies_have_stigmatizing_language_in_their_clinical_notes_in_a_infographic.json
 
-## 20. The MADRS Pipeline: Supporting Depression Assessment in Clinical Trials
+## 6. Multimodal Deep Learning Integrating Electrocardiography and Chest Radiography Enhances Prediction of Incident Regurgitant Valvular Heart Disease
 
-- Date: 2026-07-30
+- Date: 2026-07-29
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.25.26358904v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.25.26358904v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-medrxiv-multimodal_deep_learning_integrating_electrocardiography_and_chest_radiography_enhances_pr_infographic.json
+
+## 7. Evaluative Stance Toward Artificial Intelligence in High-Quartile Medical Journals (2021-2026): Large-Scale LLM-Assisted Computational Content Analysis
+
+- Date: 2026-07-27
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2607.28190v1
-- PDF: https://arxiv.org/pdf/2607.28190v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-30-arxiv-the_madrs_pipeline_supporting_depression_assessment_in_clinical_trials_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.23.26358815v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.23.26358815v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-evaluative_stance_toward_artificial_intelligence_in_high_quartile_medical_journals_2021_20_infographic.json
+
+## 8. Rapid diagnosis of fever etiology using wearable temperature monitoring and machine learning
+
+- Date: 2026-07-28
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.27.26359010v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.27.26359010v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-rapid_diagnosis_of_fever_etiology_using_wearable_temperature_monitoring_and_machine_learni_infographic.json
+
+## 9. Agentic Artificial Intelligence as a Catalyst for Administrative Modernization: The Beginning of the End for Traditional Fax Workflows in Healthcare
+
+- Date: 2026-07-28
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.27.26359032v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.27.26359032v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-agentic_artificial_intelligence_as_a_catalyst_for_administrative_modernization_the_beginni_infographic.json
+
+## 10. What it takes to implement AI in Africa: health-system lessons from developing an ML-enabled maternal risk stratification algorithm in Tanzania
+
+- Date: 2026-07-28
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.26.26358974v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.26.26358974v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-what_it_takes_to_implement_ai_in_africa_health_system_lessons_from_developing_an_ml_enable_infographic.json
+
+## 11. Scaling Safe Resident Driven OPAT bundle in a Lower Middle-Income Country: A Quality Improvement Intervention
+
+- Date: 2026-07-27
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.23.26358342v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.23.26358342v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-scaling_safe_resident_driven_opat_bundle_in_a_lower_middle_income_country_a_quality_improv_infographic.json
+
+## 12. An explainable transformer model learning from entire treatment timelines for pan-cancer risk profiling across healthcare systems
+
+- Date: 2026-07-27
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.24.26358838v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.24.26358838v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-an_explainable_transformer_model_learning_from_entire_treatment_timelines_for_pan_cancer_r_infographic.json
+
+## 13. A phase II multi-center, open-label, randomized, parallel-group, superiority study to compare the acute toxicity of Hypofractionated dOse Painted External radiotherapy versus conventional external radiotherapy in patients with carcinoma cervix stage I - IIB. (HOPE)
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.24.26358844v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.24.26358844v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-a_phase_ii_multi_center_open_label_randomized_parallel_group_superiority_study_to_compare_infographic.json
+
+## 14. Algorithm-Based Model for Gastrointestinal and Liver Histopathological Analysis Using VGG16 and Specialized Stains: Statistical Validation of Thresholds in AI-Driven Digital Pathology
+
+- Date: 2026-07-28
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.04.08.26350456v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.04.08.26350456v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-algorithm_based_model_for_gastrointestinal_and_liver_histopathological_analysis_using_vgg1_infographic.json
+
+## 15. Chest Radiography AI Concordance and Lung Cancer Linkage in a Large Health Check-up Cohort
+
+- Date: 2026-07-28
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.27.26359077v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.27.26359077v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-28-medrxiv-chest_radiography_ai_concordance_and_lung_cancer_linkage_in_a_large_health_check_up_cohort_infographic.json
+
+## 16. Privacy Preserving Federated Gradient Boosting for Single Record Patient Devices
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.02.10.26345891v5
+- PDF: https://www.medrxiv.org/content/10.64898/2026.02.10.26345891v5.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-privacy_preserving_federated_gradient_boosting_for_single_record_patient_devices_infographic.json
+
+## 17. Prevalence of cancer in patients with cardiovascular diseases and risk factors: a systematic review and meta-analysis
+
+- Date: 2026-07-29
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.04.26357301v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.04.26357301v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-medrxiv-prevalence_of_cancer_in_patients_with_cardiovascular_diseases_and_risk_factors_a_systemati_infographic.json
+
+## 18. Assessment of Glucose Metabolism In Vivo in the Human Frontal Lobe Using Interleaved 1H and 13C MRS at 7T: Toward Clinical Translation
+
+- Date: 2026-07-29
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.25.26358922v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.25.26358922v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-29-medrxiv-assessment_of_glucose_metabolism_in_vivo_in_the_human_frontal_lobe_using_interleaved_1h_an_infographic.json
+
+## 19. A digital health approach for identifying polyendocrine metabolic ovarian syndrome using machine learning and body temperature
+
+- Date: 2026-07-27
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.23.26358666v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.23.26358666v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-a_digital_health_approach_for_identifying_polyendocrine_metabolic_ovarian_syndrome_using_m_infographic.json
+
+## 20. A Multi-Schedule Machine Learning Pipeline for Medicare Reimbursement Change Prediction and Operational Risk Stratification
+
+- Date: 2026-07-27
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.22.26358736v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.22.26358736v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-07-27-medrxiv-a_multi_schedule_machine_learning_pipeline_for_medicare_reimbursement_change_prediction_an_infographic.json
