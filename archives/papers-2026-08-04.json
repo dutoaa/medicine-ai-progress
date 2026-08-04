@@ -1,0 +1,665 @@
+[
+  {
+    "id": "2026-07-28-medrxiv-histological_triage_of_early_stage_mycosis_fungoides_using_a_weakly_supervised_deep_learni",
+    "doi": "10.64898/2026.07.27.26359009",
+    "date": "2026-07-28",
+    "title": "Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study",
+    "authors": "Doeleman, T.; Brussee, S.; Valkema, P.; Kempf, W.; Vermeer, M.; Kers, J.; Wynaendts, L.; Kerckhoffs, K.; de Jonge, M.; Nguyen, A.; Peters, E.; Wobser, M.; Rauert-Wunderlich, H.; Rosenwald, A.; Stadler, R.; Jansen, P.; Battistella, M.; Roccuzzo, G.; Quaglino, P.; Schrader, A.",
+    "abstract": "BackgroundHistological diagnosis of early-stage mycosis fungoides (MF) is hindered by profound overlap with benign inflammatory dermatoses (BIDs), leading to diagnostic delays and extensive ancillary testing. We developed MIMIC (Multiple Instance-learning for Identification of Mycosis fungoides In Cutaneous biopsies), a weakly supervised deep learning model designed as a triage tool at initial HCE whole-slide image (WSI) review to distinguish classic patch- and plaque-stage MF from BIDs. We externally validated the model and evaluated its clinical utility. MethodsIn this retrospective multicentre study, we trained a base model using weakly supervised attention-based multiple-instance learning on 3,339 WSIs from two Dutch centres. Crucially, all MF training labels were derived from a deeply phenotyped national cohort featuring strict multidisciplinary expert panel consensus diagnoses (the clinical gold standard). Transportability was evaluated on 371 WSIs from four independent European centres. A blinded reader study on 171 WSIs compared morphology-only performance of MIMIC with 11 (dermato-)pathologists. We then retrained an updated model on all retrospective multicentre data and assessed clinical utility in a strictly held-out, consecutive Utrecht cohort (2022-2023; 486 accessions, 863 WSIs). Primary analysis focused on classic MF versus BIDs (453 accessions). Decision curve analysis, using Platt-scaled probabilities to correct for spectrum bias, evaluated net benefit at a prespecified, safety-oriented threshold of 0.04. FindingsThe base model showed good multicentre transportability (mean centre-specific AUROC 0.91; pooled AUROC 0.84). In the reader study, MIMIC achieved an AUROC of 0.87, exceeding the mean pathologist AUROC (0.79) and the best individual reader (0.83). In the consecutive MF versus BID cohort, the updated model achieved an AUROC of 0.87 (95% CI 0.81-0.92). At the 0.04 threshold, sensitivity was 97.8% (44/45 MF cases) and specificity 50.2%, reducing unnecessary ancillary workups by 39.9 per 100 screening cases versus a test-all strategy. InterpretationBy identifying nearly half of BIDs as low risk while preserving near-complete sensitivity for classic early-stage MF in a European digital pathology workflow, this unimodal HCE approach offers a scalable digital solution to reduce defensive ancillary testing and accelerate the diagnostic journey for patients with MF. Further validation is needed in non-European centres and in populations with darker skin phototypes. FundingThis work was supported by an unrestricted Fellowship grant of Stichting Hanarth Fonds in The Netherlands. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSMycosis fungoides (MF) is notoriously difficult to diagnose in its early stages due to significant clinical and histopathological overlap with benign inflammatory dermatoses (BIDs), resulting in a median diagnostic delay of 36 months from symptom onset. Standard diagnostic workups are highly resource-intensive and frequently inconclusive, often requiring multiple consecutive biopsies, extensive immunohistochemistry panels, molecular T-cell receptor clonality studies, and iterative clinicopathological correlation in multidisciplinary consensus meetings. We systematically searched PubMed from database inception up to May 28, 2026, using the terms (\"mycosis fungoides\" OR \"cutaneous T-cell lymphoma\" OR \"CTCL\") AND (\"deep learning\" OR \"machine learning\" OR \"artificial intelligence\" OR \"AI\" OR \"foundation model\") with no language restrictions, identifying 123 raw citations. Only eight original research articles were found to explicitly evaluate machine learning or artificial intelligence applications for cutaneous lymphomas. This pool was supplemented with international conference proceedings and a preprint, identifying a total of thirteen relevant studies. The vast majority of this limited literature focused on non-histological modalities (e.g., clinical photography, dermoscopic imaging, 3D skin tumour burden scoring, or structured electronic health records) or required specialized, non-standard imaging hardware such as non-linear optical microscopy. Furthermore, alternative computational pipelines relied on highly resource-intensive and costly molecular data, such as bulk RNA-sequencing gene-expression classifiers. Crucially, fewer than five peer-reviewed studies focused on standard brightfield haematoxylin and eosin (HCE) whole-slide images (WSIs) to differentiate early-stage MF from BIDs. While recent baseline architectures, exploratory conference abstracts, and emerging multimodal systems integrating histopathology with clinical metadata have established the existence of a trainable discriminative signal, severe translational limitations persist. Most existing frameworks relied on small development datasets, lacked rigorous external geographic validation across independent international registries, and failed to strictly isolate patient-level clustered data during performance evaluation. Crucially, no prior study has evaluated a unimodal brightfield HCE pathology foundation model within a formalized, Platt-scaled calibration framework to correct for spectrum bias, or utilized decision curve analysis to demonstrate safe, high-sensitivity clinical triage in a consecutive screening pipeline. Added value of this studyWe developed, externally validated, and evaluated the clinical utility of MIMIC, a clinical decision support tool utilizing a pathology foundation model (H-Optimus-1) for risk-stratified triage at the point of initial histological review. In an external geographic validation across four independent European institutions, the base model demonstrated high transportability with a mean centre-specific AUROC of 0{middle dot}91. In a blinded multi-centre reader study on 171 WSIs, MIMIC achieved an AUROC of 0{middle dot}87, outperforming the mean baseline performance of 11 independent (dermato-)pathologists (AUROC 0{middle dot}79 {+/-} 0{middle dot}03) and exceeding the integrated discriminative area of the top-performing human expert (AUROC 0{middle dot}83). Crucially, following TRIPOD+AI guidelines for model updating, the final candidate was evaluated on a strictly held-out, consecutive clinical screening workflow cohort (N = 453 accessions). Following Platt scaling to robustly calibrate for spectrum bias, MIMIC achieved a diagnostic sensitivity of 97{middle dot}8% at a conservative, safety-oriented operational threshold of 0{middle dot}04, intercepting 44 out of 45 true malignant cases while effectively identifying 50{middle dot}2% of BIDs as low-risk on initial HCE morphology alone. Implications of all the available evidenceMIMIC can be seamlessly integrated into digital pathology workflows to safely \"de-bulk\" the diagnostic workload by reliably identifying low-risk cases that can be triaged away from automatic ancillary testing. Our automated three-tier workflow analysis demonstrates that a staggering 45{middle dot}5% of the total diagnostic screening volume can be safely classified as low-risk triage zones where ancillary testing could be avoided, translating to substantial direct laboratory cost savings. Decision curve analysis demonstrated a consistent positive net benefit at the 0{middle dot}04 threshold, corresponding to a net reduction of 39{middle dot}9 unnecessary ancillary workups and expert multidisciplinary reviews per 100 screening cases relative to a standard \"test all\" clinical strategy. By acting as a highly sensitive, objective, and reproducible filter at the earliest stage of histopathological review, this unimodal HCE approach offers a scalable, zero-marginal-cost digital solution to mitigate defensive diagnostic reflexes, optimize specialized laboratory resource allocation, and significantly accelerate the diagnostic pathway for patients with early-stage MF.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359009v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359009v1.full.pdf"
+      }
+    ],
+    "score": 91,
+    "infographic": {
+      "key_insight": "BackgroundHistological diagnosis of early-stage mycosis fungoides (MF) is hindered by profound overlap with benign inflammatory dermatoses (BIDs), leading to diagnostic delays and extensive ancillary testing.",
+      "clinical_relevance": "Potential relevance: diagnostics workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-histological_triage_of_early_stage_mycosis_fungoides_using_a_weakly_supervised_deep_learni",
+      "paper_title": "Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study",
+      "paper_date": "2026-07-28",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-08-03T10:34:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-29-medrxiv-predicting_depression_and_anxiety_progression_in_multiple_sclerosis_from_longitudinal_clin",
+    "doi": "10.64898/2026.06.23.26356339",
+    "date": "2026-07-29",
+    "title": "Predicting Depression and Anxiety Progression in Multiple Sclerosis from Longitudinal Clinical Data Using Machine Learning",
+    "authors": "Specht, B.; Garbaya, S.; Schneider, R.; Khadraoui, D.; Chavarriaga, R.; Tayeb, Z.",
+    "abstract": "Depression and anxiety are highly prevalent in multiple sclerosis (MS), yet tools for predicting mental health trajectories from clinical data remain limited. We investigated what structured electronic health record data can predict about depression and anxiety progression in MS, and where its limits lie. We developed gradient boosting models to predict PHQ-9 (depression) and GAD-7 (anxiety) score change using EHR data from 2,163 MS patients (7,327 observations) and 1,465 patients (3,319 observations), respectively. Models achieved R2 of 0.22 (PHQ-9) and 0.28 (GAD-7). Baseline score was the dominant predictor, but this largely reflects regression to the mean: patients with high baseline scores tend to improve, while those with low scores tend to worsen. Age emerged as a consistent secondary predictor across both models: younger patients showed smaller improvements independent of baseline severity. Feature importance differed between models--PHQ-9 prediction relied on symptom subscales while GAD-7 incorporated pain and disease duration. These results suggest that structured clinical data alone capture only a fraction of what drives mental health trajectories, and that richer data sources--clinical notes, patient-reported outcomes, digital phenotyping--will be needed to enable meaningful individual-level prediction.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-07-29",
+    "updated": "2026-07-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356339v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356339v2.full.pdf"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "Depression and anxiety are highly prevalent in multiple sclerosis (MS), yet tools for predicting mental health trajectories from clinical data remain limited.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-29-medrxiv-predicting_depression_and_anxiety_progression_in_multiple_sclerosis_from_longitudinal_clin",
+      "paper_title": "Predicting Depression and Anxiety Progression in Multiple Sclerosis from Longitudinal Clinical Data Using Machine Learning",
+      "paper_date": "2026-07-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-08-03T10:34:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-deep_learning_based_pretreatment_cardiovascular_risk_stratification_in_women_with_breast_c",
+    "doi": "10.64898/2026.07.26.26350307",
+    "date": "2026-07-28",
+    "title": "Deep Learning-Based Pretreatment Cardiovascular Risk Stratification in Women with Breast Cancer",
+    "authors": "Dehghan Manshadi, M.; Manouchehri, N.; Hubbert, L.; Liljegren, A.; Manouchehrinia, A.; Linder-Stragliotto, C.; Rantala, J.; Hedayati, E.; Kiani, N.",
+    "abstract": "BackgroundCardiovascular disease is a leading non-cancer cause of morbidity and mortality among breast cancer (BC) survivors. Existing cardiovascular risk tools are not tailored to cancer populations and often rely on cardiology investigations or treatment details unavailable at the initial oncology visit, limiting their use for early referral decisions. MethodsWe conducted a registry-based cohort study including 17,051 women diagnosed with BC in stage I-III or ductal carcinoma in situ in the Stockholm-Gotland region (2008-2019). Using only pre-treatment information routinely available to oncologists, such as demographics, cancer characteristics, planned cancer treatment, baseline comorbidities, medications, and healthcare utilization, we trained and validated a deep learning-based competing-risk model to predict 1-year major adverse cardiovascular events (MACE) risk, accounting for non-cardiovascular death as a competing outcome. Model performance was evaluated using a 3-fold CV and time-dependent concordance indices. Fine-Gray subdistribution hazard models were used to aid interpretability. ResultsThe model demonstrated strong and stable discrimination across validation folds, with a median c-index of 0.84 for 1-year MACE prediction and 0.90 for the competing risk. Key contributors to predictive performance included age at BC diagnosis, prior cardiovascular disease, healthcare utilization patterns, cancer stage, and specific medication profiles. Several predictors with modest marginal hazard ratios in the Fine-Gray model contributed substantially through nonlinear effects and interactions. ConclusionsOur model with a deep learning-based competing-risk structure and using only pre-treatment, oncology-accessible data enables accurate short-term cardiovascular risk stratification in women with BC and may support targeted cardio-oncology referral prior to initiation of systemic therapy.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26350307v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26350307v1.full.pdf"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "BackgroundCardiovascular disease is a leading non-cancer cause of morbidity and mortality among breast cancer (BC) survivors.",
+      "clinical_relevance": "Potential relevance: diagnostics workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-deep_learning_based_pretreatment_cardiovascular_risk_stratification_in_women_with_breast_c",
+      "paper_title": "Deep Learning-Based Pretreatment Cardiovascular Risk Stratification in Women with Breast Cancer",
+      "paper_date": "2026-07-28",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-08-03T10:34:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-forty_seven_percent_of_pregnancies_have_stigmatizing_language_in_their_clinical_notes_in_a",
+    "doi": "10.64898/2026.07.27.26359049",
+    "date": "2026-07-28",
+    "title": "Forty-seven percent of pregnancies have stigmatizing language in their clinical notes in an electronic health record cohort",
+    "authors": "Simha, N.; Takasuka, H.; Chen, L.-C.; Khan, U.; Oskotsky, T. T.; Sirota, M.; Capra, J. A.; Chen, I. Y.",
+    "abstract": "Stigmatizing language in medical documentation may reflect and perpetuate bias, but its prevalence in obstetrics has not been systematically quantified. We applied a keyword-guided BERT classifier to 640,345 obstetric notes from 26,178 pregnancies at an academic medical center. Stigmatizing language was detected in 47% of 26,178 pregnancies. Black pregnancies had significantly higher odds of stigmatizing language compared with Asian (aOR=1.5, p=3x10-8) or White (aOR=1.4, p=6x10-6). Indicated and spontaneous preterm births were also significantly associated with stigmatizing language compared to term (aORs=1.5, 1.2; p=7x10-12, 0.01). Pregnant individuals with only 12th-grade maternal education were more likely to experience stigma than those with college (aOR=1.5; p=4x10-14). These findings provide evidence of differences in clinical documentation across race, education levels, and clinical conditions. They also demonstrate how automated natural language processing can enable systematic monitoring of bias in healthcare language at scale.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "obstetrics and gynecology",
+    "categories": [
+      "obstetrics and gynecology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359049v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359049v1.full.pdf"
+      }
+    ],
+    "score": 61,
+    "infographic": {
+      "key_insight": "Stigmatizing language in medical documentation may reflect and perpetuate bias, but its prevalence in obstetrics has not been systematically quantified.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-forty_seven_percent_of_pregnancies_have_stigmatizing_language_in_their_clinical_notes_in_a",
+      "paper_title": "Forty-seven percent of pregnancies have stigmatizing language in their clinical notes in an electronic health record cohort",
+      "paper_date": "2026-07-28",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-08-03T10:34:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-29-medrxiv-multimodal_deep_learning_integrating_electrocardiography_and_chest_radiography_enhances_pr",
+    "doi": "10.64898/2026.07.25.26358904",
+    "date": "2026-07-29",
+    "title": "Multimodal Deep Learning Integrating Electrocardiography and Chest Radiography Enhances Prediction of Incident Regurgitant Valvular Heart Disease",
+    "authors": "Li, S.; Zhang, B.; Pan, L.; Xiao, Z.; Yu, Z.; Chen, J.; Zhou, Y.; Li, Z.; Li, X.; Wang, C.; Lu, H.; Lai, H.; Liang, Y.; Ge, J.",
+    "abstract": "BackgroundRegurgitant valvular heart disease (rVHD) is a major cause of cardiovascular morbidity. Echocardiography is the diagnostic standard but is resource-intensive for large-scale screening. Electrocardiography (ECG) has shown promise for predicting incident rVHD, yet performance varies across phenotypes, particularly for aortic regurgitation (AR). Chest radiography (CXR) provides complementary structural and hemodynamic information. We hypothesized that a multimodal model integrating ECG and CXR would improve prediction of incident moderate-to-severe rVHD. MethodsIn this retrospective multicenter study, we identified 212,888 paired ECG-CXR examinations from 116,380 patients across two Chinese centers. Baseline ECG and CXR were obtained within 60 days of echocardiography. Outcome was progression to moderate-to-severe AR, mitral regurgitation (MR), or tricuspid regurgitation (TR). We developed a multimodal neural network with pretrained unimodal encoders, token-level cross-modal fusion, and a class-specific gating mechanism that adaptively weighted ECG-only, CXR-only, and fused predictions. Performance was assessed using C-index, AUROC, AUPRC, decision curve analysis, net reclassification improvement (NRI), and Kaplan-Meier stratification. ResultsMultimodal fusion consistently outperformed unimodal models across all phenotypes. For AR, C-index improved from 0.616 (ECG-only) to 0.713 (multimodal; AUROC 0.729, AUPRC 0.972). For MR, multimodal C-index was 0.801 (AUROC 0.814, AUPRC 0.972), versus 0.782 for ECG and 0.775 for CXR alone. For TR, multimodal and CXR-only models showed similar discrimination (C-index 0.802), but multimodal fusion yielded greater net benefit on decision curve analysis. NRI was positive across all time horizons (1-5 years) for all valve types. Grad-CAM interpretability analyses revealed that ECG attention localized to leads II, V-V (AR), leads I, II, aVF, V-V (MR), and inferior/right precordial leads (TR); CXR attention highlighted chamber-specific enlargement and pulmonary congestion patterns consistent with pathophysiology. ConclusionA multimodal deep learning model integrating ECG and CXR significantly improved prediction of incident rVHD compared with ECG alone, with the greatest benefit observed for AR. The model leveraged complementary electrical and structural information, demonstrated biological plausibility through interpretability analyses, and provided consistent clinical utility. Given the widespread availability and low cost of both modalities, this approach offers a scalable tool for risk stratification in routine care. Prospective studies are warranted to validate clinical implementation.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-07-29",
+    "updated": "2026-07-29",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.25.26358904v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.25.26358904v1.full.pdf"
+      }
+    ],
+    "score": 60,
+    "infographic": {
+      "key_insight": "BackgroundRegurgitant valvular heart disease (rVHD) is a major cause of cardiovascular morbidity.",
+      "clinical_relevance": "Potential relevance: diagnostics workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-29-medrxiv-multimodal_deep_learning_integrating_electrocardiography_and_chest_radiography_enhances_pr",
+      "paper_title": "Multimodal Deep Learning Integrating Electrocardiography and Chest Radiography Enhances Prediction of Incident Regurgitant Valvular Heart Disease",
+      "paper_date": "2026-07-29",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-08-03T10:34:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-rapid_diagnosis_of_fever_etiology_using_wearable_temperature_monitoring_and_machine_learni",
+    "doi": "10.64898/2026.07.27.26359010",
+    "date": "2026-07-28",
+    "title": "Rapid diagnosis of fever etiology using wearable temperature monitoring and machine learning",
+    "authors": "Khan, S. N.; Lee, S.; Ren, X.; Wittrup, E.; Madhukar, R.; Flora, C.; Mayhew, K.; Rozwadowski, M.; Winnega, E.; Leopold, K.; Weinberg, J. B.; Paludo, J.; Binder, A. F.; Ghosh, M.; Frame, D.; Craig, E.; Braun, T. M.; Chanderraj, R.; Sung, A. D.; Najarian, K.; Choi, S. W.; Tewari, M.",
+    "abstract": "IntroductionDistinct temperature patterns have long been recognized to correlate with fevers of differing etiologies. While the use of wearable sensors for high-frequency temperature monitoring (HFTM) on a near minute-by-minute basis has been shown to detect fevers earlier than standard-of-care nursing vital sign assessments in hospitalized patients, leveraging these high-resolution datasets to computationally identify unique digital signatures for real-time diagnosis of underlying fever etiology has not been widely explored. Diagnostic uncertainty is common in patients undergoing hematopoietic stem cell transplantation (HCT), with only 20-30% of febrile neutropenic episodes being microbiologically documented. We hypothesized that unique temperature patterns extracted from HFTM data collected during episodes of febrile neutropenia could be used to develop a supervised machine learning classifier capable of accurately predicting underlying fever etiology in HCT patients. MethodsWe analyzed 68 clinically independent fever episodes recorded in HCT patients (n=90) outfitted with an FDA-cleared wireless temperature sensor (TempTraq(R), BlueSpark Technologies) that measured axillary temperature every 2 minutes throughout hospitalization. Time-series features were extracted from temperature traces spanning 1 hour before to 3 hours after fever onset and used to train a suite of machine-learning models to distinguish engraftment fevers from other fever etiologies. Model training and evaluation were performed using repeated stratified 5-fold patient-level cross-validation, yielding 100 train-test evaluations. ResultsAmong all classification models, the logistic regression classifier provided the best overall performance and interpretability, achieving 94% specificity (95% CI, 0.84-1.0) for identifying engraftment fevers with a mean AUROC of 0.88 {+/-} 0.10. Feature importance analysis demonstrated that both clinical variables and HFTM-derived temperature dynamics contributed to model performance, with a strong reliance on time-series features captured within the first 4 hours of fever onset. ConclusionOur study provides a demonstration that continuous temperature data collected from patients outfitted with wearable sensors can be leveraged not only for early fever detection but also for machine learning-based diagnosis of fever etiology. These findings suggest that dynamic temperature patterns contain clinically meaningful physiologic information that with further studies could support real-time diagnostic decision-making and guide safe de-escalation of empiric antibiotics during febrile neutropenia in patients undergoing intensive cancer therapy.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359010v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359010v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "IntroductionDistinct temperature patterns have long been recognized to correlate with fevers of differing etiologies.",
+      "clinical_relevance": "Potential relevance: diagnostics workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-rapid_diagnosis_of_fever_etiology_using_wearable_temperature_monitoring_and_machine_learni",
+      "paper_title": "Rapid diagnosis of fever etiology using wearable temperature monitoring and machine learning",
+      "paper_date": "2026-07-28",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-08-03T10:34:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-agentic_artificial_intelligence_as_a_catalyst_for_administrative_modernization_the_beginni",
+    "doi": "10.64898/2026.07.27.26359032",
+    "date": "2026-07-28",
+    "title": "Agentic Artificial Intelligence as a Catalyst for Administrative Modernization: The Beginning of the End for Traditional Fax Workflows in Healthcare",
+    "authors": "Lin, A. L.; Curtis, S.; Fitzsimmons, M.; Nguyen, N.; Baqui, A.; Desai, A.; Stalker, L.; Aycock, N.; Koneru, S.; Sridharan, B.; Phillips, H.; Vemulapalli, S.; Patel, M. R.",
+    "abstract": "BackgroundHealthcare has witnessed administrative staffing roles balloon to twice the number of employed clinicians, resulting in $950 billion per year in administrative costs to deliver healthcare. Administrative workflows, like fax routing, are ripe for automation given the high human labor cost necessary to complete these tasks. Fax transmissions remain a key mode of communication in modern healthcare, requiring substantial manpower, and incurring significant, though not well-characterized, costs to health systems. Opportunities may exist for agentic artificial intelligence (AI) to automate this administrative task. MethodsThis quality improvement study was performed in 2 phases at Duke Universitys Division of Cardiology, a single tertiary-care cardiac referral center. The first retrospective phase employed an observational time study design surveying manual fax routing processes at 3 representative cardiology clinics from April 1, 2024, to July 12, 2024. The second phase quantified all inbound faxes received through the divisions communication hub from July 1, 2025, to December 31, 2025, and applied direct labor costs observed in the time study to quantify the economic burden of manual fax routing across the hub. ResultsThe observational time study (Phase 1) demonstrated fax routing processing times ranging from 4.4 to 9.4 minutes depending on fax type, with a mean processing time of 6.0 minutes per fax. On average, the ambulatory clinics received 1,694 faxes per month and spent 169.1 person-hours routing faxes. The divisional communication hub (Phase 2) received 24,420 faxes over the study period, averaging 4,070 inbound faxes and 13,341 pages of information per month. Extrapolating direct labor efforts from the time study, 407 person-hours per month were spent processing inbound faxes. For our institution, this translated to $10,663.40 in total monthly costs, roughly 2.5 full-time equivalents. ConclusionManual fax routing represents a substantial, measurable, and previously under-characterized operational and administrative burden. Given the significant opportunity to reduce labor time and costs, our study establishes fax routing as a high-value target for automation. Future work is needed to determine the impact of AI-automated fax routing on the time, labor, accuracy, and economics within clinical settings.",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "health systems and quality improvement",
+    "categories": [
+      "health systems and quality improvement"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359032v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359032v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "BackgroundHealthcare has witnessed administrative staffing roles balloon to twice the number of employed clinicians, resulting in $950 billion per year in administrative costs to deliver healthcare.",
+      "clinical_relevance": "Potential relevance: health systems workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-agentic_artificial_intelligence_as_a_catalyst_for_administrative_modernization_the_beginni",
+      "paper_title": "Agentic Artificial Intelligence as a Catalyst for Administrative Modernization: The Beginning of the End for Traditional Fax Workflows in Healthcare",
+      "paper_date": "2026-07-28",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-08-03T10:34:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-what_it_takes_to_implement_ai_in_africa_health_system_lessons_from_developing_an_ml_enable",
+    "doi": "10.64898/2026.07.26.26358974",
+    "date": "2026-07-28",
+    "title": "What it takes to implement AI in Africa: health-system lessons from developing an ML-enabled maternal risk stratification algorithm in Tanzania",
+    "authors": "Hellar, A. M.; Lyatuu, I.; Kinyina, A.; Kulindwa, Y.; Ernest, E.; Mandali, H.; Mtani, C.; Athumani, H.; Phiri, F.; Massawe, P.; Sukari, O.; Sospeter, P.; Kapologwe, N.",
+    "abstract": "BackgroundMachine learning (ML) has growing potential to support early identification of high-risk pregnancies in resource-constrained settings. However, most studies focus on model development and predictive performance, with less attention to the health-system processes required to generate ML-ready data and translate risk information into clinical action. The Mlinde Mama Project in Tanzania combined Group Antenatal Care (G-ANC), digital maternal health systems, and development of an ML-enabled risk stratification model for hypertensive disorders of pregnancy (HDP). This study examined the health-system conditions shaping the pathway from routine care to actionable ML-enabled risk information. MethodsWe conducted a retrospective mixed-methods implementation analysis of this project that was implemented between 2022 and 2024 in Geita, Tanzania. The analysis triangulated endline evaluation findings, quantitative exit interviews with pregnant women, focus group discussions with women and healthcare workers, key informant interviews, project implementation records, routine data from Tanzanias Unified Community System (UCS), and documented ML development experience. Relevant quotations from the final evaluation report were systematically screened, selected, and coded. An abductive analysis combined inductively derived themes with the Non-adoption, Abandonment, Scale-up, Spread and Sustainability (NASSS) framework and a study-specific ML implementation pathway. ResultsSeven themes emerged across three phases of the implementation pathway. ML readiness began before the algorithm, with reliable clinical measurement and documentation; patient participation and task-sharing redistributed data generation. The paper-to-digital transition shaped which information became ML-ready data. The potential value of ML depended on workflow redesign rather than prediction alone. Technology created an efficiency paradox in which task-sharing reduced workload while staffing shortages and confirmatory work generated new burdens. Advanced analytics depended on basic infrastructure, while sustainability relied on teamwork, trust, user demand, and local ownership. ConclusionsOur findings suggest that successful ML implementation in maternal health begins with health-system readiness before the algorithm itself. A critical paper-to-digital transition stage was a major determinant of data quality and ML readiness. ML-enabled maternal risk stratification should therefore be approached as a sociotechnical intervention spanning measurement, digitization, clinical confirmation, and follow-up. This implementation readiness is critical for the successful development of an ML-enabled risk stratification system. Crucially, our findings resonate with the key domains of the NASSS framework, underscoring how addressing multidimensional complexities, from technological design to organizational readiness, is vital for successful adoption, scale-up and long-term sustainability. Author SummaryMachine learning (ML) has shown considerable potential for improving maternal health by identifying women at increased risk of complications such as hypertensive disorders of pregnancy. However, most studies focus on how accurately ML models predict risk, with less attention paid to the health-system conditions required for these technologies to function in routine care, particularly in low-resource settings. We examined implementation lessons from the Mlinde Mama Project in Tanzania, which combined Group Antenatal Care, digital health tools and ML-enabled maternal risk stratification across six public health facilities. We triangulated qualitative and quantitative evaluation findings, project implementation records and routine digital health data to understand how clinical information moves from routine care to digital systems and, ultimately, to clinical action. We found that ML readiness begins long before an algorithm is deployed. Reliable clinical measurements, successful conversion of paper records into digital data, workflow design, workforce capacity, infrastructure and trust all influenced whether risk information could become useful in practice. Our study highlights a critical stage in the context of low-resource settings, a \"paper-to-digital transition\" stage, where information may be delayed, duplicated or lost before reaching an ML system. These findings suggest that ML should be implemented as a sociotechnical intervention rather than as a standalone technology.",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "health systems and quality improvement",
+    "categories": [
+      "health systems and quality improvement"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26358974v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26358974v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "BackgroundMachine learning (ML) has growing potential to support early identification of high-risk pregnancies in resource-constrained settings.",
+      "clinical_relevance": "Potential relevance: health systems workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-what_it_takes_to_implement_ai_in_africa_health_system_lessons_from_developing_an_ml_enable",
+      "paper_title": "What it takes to implement AI in Africa: health-system lessons from developing an ML-enabled maternal risk stratification algorithm in Tanzania",
+      "paper_date": "2026-07-28",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-08-03T10:34:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-29-medrxiv-fine_grained_emotional_characterization_of_dementia_caregivers_in_online_support_communiti",
+    "doi": "10.64898/2026.07.26.26358983",
+    "date": "2026-07-29",
+    "title": "Fine-Grained Emotional Characterization of Dementia Caregivers in Online Support Communities Using Large Language Models",
+    "authors": "Mungle, T.; Kwan, A. A.; Hwang, Y. M.; Pillai, M.; Sahai, M.; Ng, M.; Handler, R.; Hernandez-Boussard, T.",
+    "abstract": "BackgroundDementia caregiving carries substantial emotional and psychological consequences, but most evidence comes from structured surveys and interviews that are resource-intensive and may incompletely capture spontaneous, contextual experience. Scalable methods to characterize caregiver experience from real-world narratives are lacking. ObjectiveTo characterize how emotional expression among dementia caregivers varies by caregiving relationship and context, using structured extraction of caregiver narratives from an online support community at scale. MethodsWe analyzed 7,198 publicly available posts from 3,350 authors across three forums of an online dementia caregiver community. A large language model (LLM) extracted caregiver role and relationship, caregiving objective, emotional valence (-1 to +1), and emotional themes from each post. Reproducibility of the extracted annotations was assessed through agreement between two independent LLMs, using Cohens {kappa} for categorical fields and correlation for continuous valence. ResultsCaregiver narratives were predominantly negative (89.3% of posts; mean valence - 0.46), with interpretable structure. Parent caregivers (-0.51) and adult children caring for fathers (-0.52) and mothers (-0.50) expressed more negative valence than spouse caregivers (-0.47). Emotional valence varied most by post objective - most negative for immediate safety/crisis (-0.73), family conflict (-0.61), and end-of-life (-0.55) contexts, and net-positive only for resource sharing (+0.05). Even net-positive posts often retained concern alongside hope or gratitude rather than expressing uniform positivity. Concern, frustration, and sadness were the most prevalent emotional themes. Greater cumulative posting activity was associated with more positive expression. Inter-model agreement was high for relationship category ({kappa}=0.80) and emotional valence (r=0.95). ConclusionsCaregiver emotional expression is systematically patterned by caregiving relationship and by the objective of a post, with crisis and family conflict situations most negative and resource sharing the only net positive context, in ways that coarse sentiment or topic-modeling approaches have not shown. Emotional valence reflects expressed experience rather than clinical burden. Applied at scale, structured LLM extraction complements survey-based methods and could support distress screening and longitudinal monitoring of caregiver experience and inform the design of caregiver-support programs.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-07-29",
+    "updated": "2026-07-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26358983v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26358983v1.full.pdf"
+      }
+    ],
+    "score": 52,
+    "infographic": {
+      "key_insight": "BackgroundDementia caregiving carries substantial emotional and psychological consequences, but most evidence comes from structured surveys and interviews that are resource-intensive and may incompletely capture spontaneous, contextual experience.",
+      "clinical_relevance": "Potential relevance: clinical nlp workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-29-medrxiv-fine_grained_emotional_characterization_of_dementia_caregivers_in_online_support_communiti",
+      "paper_title": "Fine-Grained Emotional Characterization of Dementia Caregivers in Online Support Communities Using Large Language Models",
+      "paper_date": "2026-07-29",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-08-03T10:34:12",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-algorithm_based_model_for_gastrointestinal_and_liver_histopathological_analysis_using_vgg1",
+    "doi": "10.64898/2026.04.08.26350456",
+    "date": "2026-07-28",
+    "title": "Algorithm-Based Model for Gastrointestinal and Liver Histopathological Analysis Using VGG16 and Specialized Stains: Statistical Validation of Thresholds in AI-Driven Digital Pathology",
+    "authors": "Adeluwoye, A. O.; Gbadegesin, M. O.; James, F. M.; Otegbade, P. S.; Alabetutu, A.",
+    "abstract": "Digital pathology, coupled with advanced image recognition algorithms, represents a transformative frontier in histopathological diagnosis. This sub-Saharan African laboratorys exploratory study investigates the application of a Convolutional Neural Network (CNN) model, specifically leveraging the VGG16 architecture with transfer learning, for automated analysis and classification of selected gastrointestinal (GIT) and liver tissue samples, incorporating both routine and specialized staining protocols. The study utilized a dataset comprising 114 samples (18 liver, 96 GIT images) derived from archival formalin-fixed paraffin-embedded tissue blocks at University College Hospital, Ibadan, Nigeria. Specialized staining techniques included Alcian Yellow for GIT mucin visualization and Massons Trichrome for liver fibrosis assessment, alongside conventional H&E staining. Model performance was evaluated using statistical methodologies including Wilson Score confidence intervals (CI), Bayesian probability assessment, and effect size analysis. Results reveal a striking dichotomy in model performance. The GIT tissue model achieved perfect classification accuracy (100% test accuracy) with exceptional statistical significance (Z=10.0, p<0.0001), Wilson CI [96.29%, 99.99%], Cohens h=1.571, and Bayesian probability >99.99%. Conversely, the liver tissue model demonstrated diagnostic failure (42.86% test accuracy), with Z=-1.428, p=0.9236, Wilson CI [33.59%, 52.65%], Cohens h=-0.144, and Bayesian probability of 7.64%. This performance divergence correlates with training data availability, as the liver dataset fell far below empirically established thresholds (>100-200 samples) for reliable classification. The liver models failure reveals limitations in transfer learning with insufficient data. These findings underscore critical implications for AI-enhanced digital pathology, demonstrating potential deployment of the GIT model as a promising one that supports tissue-specific model development.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.08.26350456v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.08.26350456v2.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "Digital pathology, coupled with advanced image recognition algorithms, represents a transformative frontier in histopathological diagnosis.",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-algorithm_based_model_for_gastrointestinal_and_liver_histopathological_analysis_using_vgg1",
+      "paper_title": "Algorithm-Based Model for Gastrointestinal and Liver Histopathological Analysis Using VGG16 and Specialized Stains: Statistical Validation of Thresholds in AI-Driven Digital Pathology",
+      "paper_date": "2026-07-28",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-08-03T10:34:12",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-chest_radiography_ai_concordance_and_lung_cancer_linkage_in_a_large_health_check_up_cohort",
+    "doi": "10.64898/2026.07.27.26359077",
+    "date": "2026-07-28",
+    "title": "Chest Radiography AI Concordance and Lung Cancer Linkage in a Large Health Check-up Cohort",
+    "authors": "Fujita, Y.; Saito, S.; Yagishita, S.; Araya, J.; Nakagawa, R.",
+    "abstract": "PurposeTo evaluate the implementation characteristics of a commercially available chest radiography artificial intelligence (AI) system in a large real-world health check-up cohort using workflow-level, lesion-specific, and exploratory retrospective lung cancer case analyses. MethodsThis retrospective single-centre study included 298,991 consecutive health check-up chest radiographs from 114,866 individuals obtained between 2019 and 2023 and interpreted under routine double reading by board-certified radiologists. A commercially available AI system was evaluated using two prespecified thresholds: positivity in any of ten findings for the all-score analysis and positivity for nodule or mass for the nodule-focused analysis, both at a manufacturer-recommended score threshold of 15. Because routine radiologist judgement rather than universal CT or pathologic verification served as the reference framework, the primary analyses were interpreted as radiologist-referenced operational concordance analyses. ResultsRadiologist-referenced sensitivity and specificity were 72.0% and 79.6%, respectively, in the all-score analysis and 87.1% and 91.8%, respectively, in the nodule-focused analysis. Negative predictive values were 99.0% and 100.0%, respectively. Among 48 histopathologically confirmed lung cancer cases, retrospective timeline analyses showed earlier AI positivity than routine radiologist positivity in a subset of cases. These findings should be interpreted as exploratory observations and do not establish prospective clinical benefit. ConclusionIn a large health check-up cohort, chest radiography AI demonstrated stable concordance with routine radiologist judgement and high sensitivity for radiologist-reported pulmonary nodules and masses. Exploratory retrospective analyses showed earlier AI positivity in a subset of histopathologically confirmed lung cancer cases, supporting further prospective evaluation of AI-assisted health check-up workflows. At a Glance CommentaryO_ST_ABSScientific Knowledge on the SubjectC_ST_ABSArtificial intelligence has shown promise for supporting chest radiograph interpretation, including detection of pulmonary nodules and other thoracic abnormalities. However, most previous studies have used selected datasets, simulated reading environments, or enriched populations. Evidence remains limited regarding how chest radiography AI performs at programme scale in low-prevalence, real-world health check-up settings, particularly with respect to concordance with routine radiologist judgement, discordant review volume, and retrospective linkage to clinically confirmed lung cancer cases. What This Study Adds to the FieldIn 298,991 consecutive health check-up examinations, chest radiography AI demonstrated stable concordance with routine radiologist judgement. For radiologist-reported pulmonary nodules and masses, AI showed 87.1% sensitivity and 100.0% negative predictive value relative to the radiologist reference framework. Retrospective analysis of histopathologically confirmed lung cancer cases identified earlier AI positivity in a subset of patients, although prospective clinical benefit remains unproven. These findings provide large-scale, implementation-oriented evidence on the potential role and limitations of AI as a supplementary tool within radiologist-led chest radiography workflows.",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "respiratory medicine",
+    "categories": [
+      "respiratory medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359077v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359077v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "PurposeTo evaluate the implementation characteristics of a commercially available chest radiography artificial intelligence (AI) system in a large real-world health check-up cohort using workflow-level, lesion-specific, and exploratory retrospective lung cance",
+      "clinical_relevance": "Potential relevance: health systems workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-28-medrxiv-chest_radiography_ai_concordance_and_lung_cancer_linkage_in_a_large_health_check_up_cohort",
+      "paper_title": "Chest Radiography AI Concordance and Lung Cancer Linkage in a Large Health Check-up Cohort",
+      "paper_date": "2026-07-28",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-08-03T10:34:12",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-29-medrxiv-prevalence_of_cancer_in_patients_with_cardiovascular_diseases_and_risk_factors_a_systemati",
+    "doi": "10.64898/2026.07.04.26357301",
+    "date": "2026-07-29",
+    "title": "Prevalence of cancer in patients with cardiovascular diseases and risk factors: a systematic review and meta-analysis",
+    "authors": "Galimzhanov, A.; Beytekin, E.; Lim, L. C.; Ali Zai, A. B.; Doolub, G.; Aljarshawi, M.; Sokhal, B. S.; Matetic, A.; Bagur, R.; Sun, L.; Ng, C. H.; Menezes, M. N.; Zaman, S.; Ky, B.; Mamas, M.",
+    "abstract": "BackgroundNo systematic review has been conducted to pool the existing evidence and quantify cancer prevalence rates in cardiovascular diseases (CVDs). We aimed to estimate pooled cancer prevalence in coronary artery disease (CAD), heart failure (HF), atrial fibrillation (AF), hypertension, type 2 diabetes mellitus (DM), stroke, peripheral arterial disease (PAD), and valvular heart diseases (VHD). MethodsPubMed, Web of Science, and Scopus were searched from 2010 to July 2024. The outcomes were proportions of patients with active, any, previous, blood, solid, and metastatic cancer. The prevalence rates were estimated via one-step generalized linear mixed models. ResultsTotally, we retrieved 676 studies with enrollment of roughly 180 million participants. The analysis for active cancer included 59 studies with a population of 4,759,695 patients. The pooled prevalence of active cancer was 4.22% (95% confidence interval (CI) 2.18-5.32), 4.43% (95% CI 2.78-6.38), 4.60% (95% CI 1.72-8.13), 4.61% (95% CI, 2.83-6.97), 4.90% (95% CI 3.84-6.37), and 5.55% (95% CI 3.97-7.01) in patients with type 2 DM, chronic HF, any stroke, CAD, VHD, and AF. For any cancer, prevalence rates ranged from 14.10% (95% CI 12.20-15.99) in AF to 7.04% (95% CI 6.05-8.03) in CAD. ConclusionPooled prevalence rates demonstrate a measurable burden of cancer among patients with a wide range of CVDs, highlighting the need for multidisciplinary management in this population. RegistrationPROSPERO CRD42023494764",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-07-29",
+    "updated": "2026-07-29",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.04.26357301v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.04.26357301v2.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "BackgroundNo systematic review has been conducted to pool the existing evidence and quantify cancer prevalence rates in cardiovascular diseases (CVDs).",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-29-medrxiv-prevalence_of_cancer_in_patients_with_cardiovascular_diseases_and_risk_factors_a_systemati",
+      "paper_title": "Prevalence of cancer in patients with cardiovascular diseases and risk factors: a systematic review and meta-analysis",
+      "paper_date": "2026-07-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-08-03T10:34:12",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-29-medrxiv-assessment_of_glucose_metabolism_in_vivo_in_the_human_frontal_lobe_using_interleaved_1h_an",
+    "doi": "10.64898/2026.07.25.26358922",
+    "date": "2026-07-29",
+    "title": "Assessment of Glucose Metabolism In Vivo in the Human Frontal Lobe Using Interleaved 1H and 13C MRS at 7T: Toward Clinical Translation",
+    "authors": "Xiao, Y.; Wenz, D.; Bègue, I.; Hagmann, P.; Duarte, J. M. N.; Mattera, L.; Philippe, N.; Kaiser, A.; Pierzchala, K.; Döring, A.; Widmaier, M.; Do, K. Q.; Gruetter, R.; Karampinos, D. C.; Xin, L.",
+    "abstract": "BackgroundMitochondrial dysfunction and abnormal cerebral energy metabolism are implicated in many neuropsychiatric and neurodegenerative disorders. 13C magnetic resonance spectroscopy (MRS), combined with 13C-labeled substrate infusion, offers a non-ionizing, minimally invasive method for assessing fluxes through the main cerebral energy metabolism pathways. However, its human application at 7 T has not been fully established, especially within the frontal lobe. PurposeTo explore a clinically translatable interleaved 1H/13C MRS protocol for quantification of cerebral glucose uptake and downstream metabolism at 7 T, and to estimate the tricarboxylic acid (TCA) cycle flux (VTCA) for validation. Study TypeProspective. PopulationThree young healthy volunteers. Field Strength/Sequence7T; ACE-STEAM (indirect 1H-[13C]) and ISIS-DEPT (direct 13C-[1H]). AssessmentACE-STEAM and ISIS-DEPT were applied to acquire the time-resolved spectra in the frontal lobe. 13C-labeled glucose, glutamate, and glutamine fractional enrichment time courses were quantified to estimate VTCA through the one-compartment model. Statistical TestsThe relative estimated fitting uncertainties (EFUs) were reported for the processed spectra. Nonlinear least squares minimization was used for flux fitting of 13C traces. Uncertainty of the estimated metabolic fluxes was evaluated using Monte-Carlo simulations. Results[1-13C]-glucose (GlcC1) was detected immediately on 13C MR spectra, followed by 13C-labeled GluH4 and GlnH4 and then GlxH3 can be quantified on 1H MR spectra. End-of-infusion mean enrichments were 17% (GluH4), 13% (GlnH4), and 7% (GlxH3). Brain glucose concentration ranged 1.86-2.94 mM, with 61% of the mean enrichment in C1. Group-average VTCA was 0.66 {+/-} 0.07 mol/g/min. Data ConclusionThis interleaved 1H/13C MRS protocol enables minimally invasive quantification of cerebral metabolic fluxes, may provide a useful framework for investigating neuropsychiatric and neurodegenerative diseases at 7 T. Evidence Level1. Technical EfficacyStage 1.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-07-29",
+    "updated": "2026-07-29",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.25.26358922v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.25.26358922v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "BackgroundMitochondrial dysfunction and abnormal cerebral energy metabolism are implicated in many neuropsychiatric and neurodegenerative disorders.",
+      "clinical_relevance": "Potential relevance: medical imaging workflows and research evaluation.",
+      "method": [
+        "AI medicine paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI and medical relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-07-29-medrxiv-assessment_of_glucose_metabolism_in_vivo_in_the_human_frontal_lobe_using_interleaved_1h_an",
+      "paper_title": "Assessment of Glucose Metabolism In Vivo in the Human Frontal Lobe Using Interleaved 1H and 13C MRS at 7T: Toward Clinical Translation",
+      "paper_date": "2026-07-29",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-08-03T10:34:13",
+      "generator": "openai"
+    }
+  }
+]
