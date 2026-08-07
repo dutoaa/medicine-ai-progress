@@ -1,9 +1,73 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-06
+Generated: 2026-08-07
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. A Comparative Study of Feature Selection Methods for EHR Diagnosis Codes in Opioid Use Disorder Prediction
+## 1. Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.06366v1
+- PDF: https://arxiv.org/pdf/2608.06366v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-tracing_the_heart_an_evidence_linked_pipeline_for_heart_failure_feature_engineering_infographic.json
+
+## 2. Clinical Communication Processing with Models Trained on LLM-Generated Synthetic Data: A Structured Survey and Novel Application Case Studies
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.05993v1
+- PDF: https://arxiv.org/pdf/2608.05993v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-clinical_communication_processing_with_models_trained_on_llm_generated_synthetic_data_a_st_infographic.json
+
+## 3. STAIL: Semantic Text-Anchored Incremental Learning for Medical Imaging via Large Language Models
+
+- Date: 2026-08-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.05808v1
+- PDF: https://arxiv.org/pdf/2608.05808v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-stail_semantic_text_anchored_incremental_learning_for_medical_imaging_via_large_language_m_infographic.json
+
+## 4. QuanTiMedAI: Quantum-Enhanced Time-Series Model guided by Agentic AI for Cardiac Arrest Mortality Prediction
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.06294v1
+- PDF: https://arxiv.org/pdf/2608.06294v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-quantimedai_quantum_enhanced_time_series_model_guided_by_agentic_ai_for_cardiac_arrest_mor_infographic.json
+
+## 5. EpiBench: Can LLMs Understand Epitopes for Antibody Drug Discovery?
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.06022v1
+- PDF: https://arxiv.org/pdf/2608.06022v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-epibench_can_llms_understand_epitopes_for_antibody_drug_discovery_infographic.json
+
+## 6. Improving the Realism of Synthetic Clinical Benchmarks Under Utility Constraints
+
+- Date: 2026-08-06
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2608.06265v1
+- PDF: https://arxiv.org/pdf/2608.06265v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-improving_the_realism_of_synthetic_clinical_benchmarks_under_utility_constraints_infographic.json
+
+## 7. THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction
+
+- Date: 2026-08-06
+- Category: Biomedical AI
+- Source: arXiv - https://arxiv.org/abs/2608.05982v1
+- PDF: https://arxiv.org/pdf/2608.05982v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-thbkg_a_temporal_biomedical_knowledge_graph_for_decision_aligned_clinical_advancement_pred_infographic.json
+
+## 8. The Judgment-Consequence Gap: LLM Moral Reasoning in Healthcare Decisions
+
+- Date: 2026-08-06
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2608.05583v1
+- PDF: https://arxiv.org/pdf/2608.05583v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-the_judgment_consequence_gap_llm_moral_reasoning_in_healthcare_decisions_infographic.json
+
+## 9. A Comparative Study of Feature Selection Methods for EHR Diagnosis Codes in Opioid Use Disorder Prediction
 
 - Date: 2026-08-04
 - Category: Clinical NLP
@@ -11,7 +75,47 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.04180v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-a_comparative_study_of_feature_selection_methods_for_ehr_diagnosis_codes_in_opioid_use_dis_infographic.json
 
-## 2. CRS-Triage: Confidence- and Reliability-Aware Selective Triage under Incomplete Clinical Evidence
+## 10. TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN
+
+- Date: 2026-08-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.06275v1
+- PDF: https://arxiv.org/pdf/2608.06275v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-tlnm_externally_validated_tooth_detection_numbering_and_segmentation_from_smartphone_photo_infographic.json
+
+## 11. Is Self-Pretraining really useful to improve diagnosis in medical Time Series?
+
+- Date: 2026-08-06
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2608.06122v1
+- PDF: https://arxiv.org/pdf/2608.06122v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-is_self_pretraining_really_useful_to_improve_diagnosis_in_medical_time_series_infographic.json
+
+## 12. Curia-MAE: Multi-Modal Multi-Anatomy MAE Pre-Training for 3D Medical Image Segmentation
+
+- Date: 2026-08-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.05844v1
+- PDF: https://arxiv.org/pdf/2608.05844v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-curia_mae_multi_modal_multi_anatomy_mae_pre_training_for_3d_medical_image_segmentation_infographic.json
+
+## 13. ECHO: A Locally-Deployable Agentic Health Assistant with Temporal Memory, Safety Guardrails, and Speech Assessment
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.06110v1
+- PDF: https://arxiv.org/pdf/2608.06110v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-echo_a_locally_deployable_agentic_health_assistant_with_temporal_memory_safety_guardrails_infographic.json
+
+## 14. ALTER: Modeling Longitudinal Changes via Regional Differencing for 3D CT Report Generation
+
+- Date: 2026-08-06
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.05615v1
+- PDF: https://arxiv.org/pdf/2608.05615v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-alter_modeling_longitudinal_changes_via_regional_differencing_for_3d_ct_report_generation_infographic.json
+
+## 15. CRS-Triage: Confidence- and Reliability-Aware Selective Triage under Incomplete Clinical Evidence
 
 - Date: 2026-08-04
 - Category: Clinical NLP
@@ -19,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.03862v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-crs_triage_confidence_and_reliability_aware_selective_triage_under_incomplete_clinical_evi_infographic.json
 
-## 3. MedUPS: Towards Diagnostic Assistance in Uncommon Medical Cases with Large Language Models
+## 16. MedUPS: Towards Diagnostic Assistance in Uncommon Medical Cases with Large Language Models
 
 - Date: 2026-08-02
 - Category: Clinical NLP
@@ -27,7 +131,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.01012v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-02-arxiv-medups_towards_diagnostic_assistance_in_uncommon_medical_cases_with_large_language_models_infographic.json
 
-## 4. Generative AI and Foundation Models in Medical Image
+## 17. MetaboLLM: a metabolomics-specialized large language model for biochemical knowledge integration and predictive metabolite graph construction
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.06253v1
+- PDF: https://arxiv.org/pdf/2608.06253v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-metabollm_a_metabolomics_specialized_large_language_model_for_biochemical_knowledge_integr_infographic.json
+
+## 18. DoctorAgents: an agentic framework to iteratively refine AutoML pipeline for small clinical temporal data
+
+- Date: 2026-08-05
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.05375v1
+- PDF: https://arxiv.org/pdf/2608.05375v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-doctoragents_an_agentic_framework_to_iteratively_refine_automl_pipeline_for_small_clinical_infographic.json
+
+## 19. Generative AI and Foundation Models in Medical Image
 
 - Date: 2026-08-03
 - Category: Clinical NLP
@@ -35,130 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.01686v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-03-arxiv-generative_ai_and_foundation_models_in_medical_image_infographic.json
 
-## 5. Patients-like-me: A Variational LM--GNN Framework for Explainable Clinical Prediction
+## 20. Patients-like-me: A Variational LM--GNN Framework for Explainable Clinical Prediction
 
 - Date: 2026-08-04
 - Category: Clinical NLP
 - Source: arXiv - https://arxiv.org/abs/2608.04193v1
 - PDF: https://arxiv.org/pdf/2608.04193v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-patients_like_me_a_variational_lm_gnn_framework_for_explainable_clinical_prediction_infographic.json
-
-## 6. Characterizing Treatment-Context Medication Evidence Across Clinic Notes and Structured EHR Medication History
-
-- Date: 2026-08-03
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.01570v1
-- PDF: https://arxiv.org/pdf/2608.01570v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-03-arxiv-characterizing_treatment_context_medication_evidence_across_clinic_notes_and_structured_eh_infographic.json
-
-## 7. From Multi-Resolution Cells to Gigapixel Whole Slide Images Foundation Model for Computational Pathology
-
-- Date: 2026-08-04
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.03508v1
-- PDF: https://arxiv.org/pdf/2608.03508v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-from_multi_resolution_cells_to_gigapixel_whole_slide_images_foundation_model_for_computati_infographic.json
-
-## 8. Guideline-as-Oracle: Zero-Annotation Training of an Ophthalmic Telephone Triage Agent
-
-- Date: 2026-08-05
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.04772v1
-- PDF: https://arxiv.org/pdf/2608.04772v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-guideline_as_oracle_zero_annotation_training_of_an_ophthalmic_telephone_triage_agent_infographic.json
-
-## 9. LiNC: Lightweight Noise Correction via Per-Sample Trust and Gaussian Mixture Modeling
-
-- Date: 2026-08-04
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.04147v1
-- PDF: https://arxiv.org/pdf/2608.04147v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-linc_lightweight_noise_correction_via_per_sample_trust_and_gaussian_mixture_modeling_infographic.json
-
-## 10. RESPClinBench: Benchmarking Multimodal Clinical Decision-Making and Longitudinal Disease Management in Respiratory Specialty Care
-
-- Date: 2026-08-05
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.04514v1
-- PDF: https://arxiv.org/pdf/2608.04514v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-respclinbench_benchmarking_multimodal_clinical_decision_making_and_longitudinal_disease_ma_infographic.json
-
-## 11. A Physics-Flavored Transformer Network for Parametrizing Contraction Dynamics of Engineered Skeletal Muscle Tissues
-
-- Date: 2026-08-04
-- Category: Biomedical AI
-- Source: arXiv - https://arxiv.org/abs/2608.03927v1
-- PDF: https://arxiv.org/pdf/2608.03927v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-a_physics_flavored_transformer_network_for_parametrizing_contraction_dynamics_of_engineere_infographic.json
-
-## 12. HarMoE: Multi-Source Chest Radiograph Pretraining with Dataset-Disentangled Experts
-
-- Date: 2026-08-03
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.02252v1
-- PDF: https://arxiv.org/pdf/2608.02252v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-03-arxiv-harmoe_multi_source_chest_radiograph_pretraining_with_dataset_disentangled_experts_infographic.json
-
-## 13. A Privacy-Preserving Zero-Code Conversational Statistical Analysis System for Clinical Research Using Agentic AI and Local R Execution
-
-- Date: 2026-08-02
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.30.26359367v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.30.26359367v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-02-medrxiv-a_privacy_preserving_zero_code_conversational_statistical_analysis_system_for_clinical_res_infographic.json
-
-## 14. HexMIL: Hierarchical Attention MIL for Ante-Hoc Explainable Detection of AI-Manipulated CT Volumes
-
-- Date: 2026-08-05
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.05101v1
-- PDF: https://arxiv.org/pdf/2608.05101v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-hexmil_hierarchical_attention_mil_for_ante_hoc_explainable_detection_of_ai_manipulated_ct_infographic.json
-
-## 15. Bag-of-Visual-Words for Spatial Mapping of Lung Adenocarcinoma Growth Patterns
-
-- Date: 2026-08-05
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.05074v1
-- PDF: https://arxiv.org/pdf/2608.05074v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-bag_of_visual_words_for_spatial_mapping_of_lung_adenocarcinoma_growth_patterns_infographic.json
-
-## 16. TumorBoard: Evidence-Grounded Multi-Agent Decision Support for Longitudinal Neuro-Oncology
-
-- Date: 2026-08-04
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.03190v1
-- PDF: https://arxiv.org/pdf/2608.03190v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-tumorboard_evidence_grounded_multi_agent_decision_support_for_longitudinal_neuro_oncology_infographic.json
-
-## 17. DisMix: Order-Aware Mixup for Medical Imaging via Disentangling Ordinal and Non-Ordinal Features
-
-- Date: 2026-08-05
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.04652v1
-- PDF: https://arxiv.org/pdf/2608.04652v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-dismix_order_aware_mixup_for_medical_imaging_via_disentangling_ordinal_and_non_ordinal_fea_infographic.json
-
-## 18. LocAnyMed: Vision-Language Grounding for Multimodal Medical Images
-
-- Date: 2026-08-04
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.03322v1
-- PDF: https://arxiv.org/pdf/2608.03322v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-locanymed_vision_language_grounding_for_multimodal_medical_images_infographic.json
-
-## 19. Evaluating Counterfactual Sensitivity to Patient Information in Medication-Safety Reasoning
-
-- Date: 2026-08-04
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.03028v1
-- PDF: https://arxiv.org/pdf/2608.03028v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-evaluating_counterfactual_sensitivity_to_patient_information_in_medication_safety_reasonin_infographic.json
-
-## 20. PatTree: a novel approach for automated creation of multimodal, graph-based patient representations for medical classification tasks
-
-- Date: 2026-08-03
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2608.02692v1
-- PDF: https://arxiv.org/pdf/2608.02692v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-03-arxiv-pattree_a_novel_approach_for_automated_creation_of_multimodal_graph_based_patient_represen_infographic.json
