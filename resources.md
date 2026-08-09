@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-08
+Generated: 2026-08-09
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering
@@ -147,18 +147,18 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.03862v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-crs_triage_confidence_and_reliability_aware_selective_triage_under_incomplete_clinical_evi_infographic.json
 
-## 19. MedUPS: Towards Diagnostic Assistance in Uncommon Medical Cases with Large Language Models
-
-- Date: 2026-08-02
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.01012v1
-- PDF: https://arxiv.org/pdf/2608.01012v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-02-arxiv-medups_towards_diagnostic_assistance_in_uncommon_medical_cases_with_large_language_models_infographic.json
-
-## 20. MetaboLLM: a metabolomics-specialized large language model for biochemical knowledge integration and predictive metabolite graph construction
+## 19. MetaboLLM: a metabolomics-specialized large language model for biochemical knowledge integration and predictive metabolite graph construction
 
 - Date: 2026-08-06
 - Category: Clinical NLP
 - Source: arXiv - https://arxiv.org/abs/2608.06253v1
 - PDF: https://arxiv.org/pdf/2608.06253v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-metabollm_a_metabolomics_specialized_large_language_model_for_biochemical_knowledge_integr_infographic.json
+
+## 20. DoctorAgents: an agentic framework to iteratively refine AutoML pipeline for small clinical temporal data
+
+- Date: 2026-08-05
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.05375v1
+- PDF: https://arxiv.org/pdf/2608.05375v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-doctoragents_an_agentic_framework_to_iteratively_refine_automl_pipeline_for_small_clinical_infographic.json
