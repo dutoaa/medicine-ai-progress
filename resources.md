@@ -1,89 +1,41 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-10
+Generated: 2026-08-11
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. ResidencyRL: Reinforcement Learning in Simulated Clinical Environments
-
-- Date: 2026-08-07
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.07418v1
-- PDF: https://arxiv.org/pdf/2608.07418v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-arxiv-residencyrl_reinforcement_learning_in_simulated_clinical_environments_infographic.json
-
-## 2. Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering
+## 1. Multimodal artificial intelligence using entire electronic health record and complete pathogen genome data for patient outcome prediction from life-threatening infection: the SuperbugAI Platform
 
 - Date: 2026-08-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.06366v1
-- PDF: https://arxiv.org/pdf/2608.06366v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-tracing_the_heart_an_evidence_linked_pipeline_for_heart_failure_feature_engineering_infographic.json
-
-## 3. Clinical Communication Processing with Models Trained on LLM-Generated Synthetic Data: A Structured Survey and Novel Application Case Studies
-
-- Date: 2026-08-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.05993v1
-- PDF: https://arxiv.org/pdf/2608.05993v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-clinical_communication_processing_with_models_trained_on_llm_generated_synthetic_data_a_st_infographic.json
-
-## 4. STAIL: Semantic Text-Anchored Incremental Learning for Medical Imaging via Large Language Models
-
-- Date: 2026-08-06
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.05808v1
-- PDF: https://arxiv.org/pdf/2608.05808v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-stail_semantic_text_anchored_incremental_learning_for_medical_imaging_via_large_language_m_infographic.json
-
-## 5. Human-Centered Explainable AI for TinyML Edge Devices: A Pareto-Based Selection Framework with LLM-Guided Design
-
-- Date: 2026-08-07
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.07091v1
-- PDF: https://arxiv.org/pdf/2608.07091v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-arxiv-human_centered_explainable_ai_for_tinyml_edge_devices_a_pareto_based_selection_framework_w_infographic.json
-
-## 6. MiGHT-EHR: A Multi-task Graph Transformer for Heterogeneous Temporal Electronic Health Records
-
-- Date: 2026-08-05
 - Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2608.06430v1
-- PDF: https://arxiv.org/pdf/2608.06430v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-arxiv-might_ehr_a_multi_task_graph_transformer_for_heterogeneous_temporal_electronic_health_reco_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359536v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359536v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-multimodal_artificial_intelligence_using_entire_electronic_health_record_and_complete_path_infographic.json
 
-## 7. Representation-driven Endoscopic Visual Embedding Alignment for Latent Generation
+## 2. Continuous Value Tokenization Improves Medical Event Foundation Models
 
-- Date: 2026-08-07
+- Date: 2026-08-06
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359713v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359713v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-continuous_value_tokenization_improves_medical_event_foundation_models_infographic.json
+
+## 3. Characterizing large language model generative artificial intelligence variability in the production of objective structured clinical examination stations
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359691v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359691v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-characterizing_large_language_model_generative_artificial_intelligence_variability_in_the_infographic.json
+
+## 4. Multimodal Large Language Models vs. Medical Doctors in Degenerative Lumbar Spine Surgery: A Retrospective Decision Concordance Study of 147 Patients
+
+- Date: 2026-08-06
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.07176v1
-- PDF: https://arxiv.org/pdf/2608.07176v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-arxiv-representation_driven_endoscopic_visual_embedding_alignment_for_latent_generation_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359718v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359718v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-multimodal_large_language_models_vs_medical_doctors_in_degenerative_lumbar_spine_surgery_a_infographic.json
 
-## 8. QuanTiMedAI: Quantum-Enhanced Time-Series Model guided by Agentic AI for Cardiac Arrest Mortality Prediction
-
-- Date: 2026-08-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.06294v1
-- PDF: https://arxiv.org/pdf/2608.06294v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-quantimedai_quantum_enhanced_time_series_model_guided_by_agentic_ai_for_cardiac_arrest_mor_infographic.json
-
-## 9. EpiBench: Can LLMs Understand Epitopes for Antibody Drug Discovery?
-
-- Date: 2026-08-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.06022v1
-- PDF: https://arxiv.org/pdf/2608.06022v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-epibench_can_llms_understand_epitopes_for_antibody_drug_discovery_infographic.json
-
-## 10. LSEAD: A Privacy-Preserving LLM-Based Speech Analysis Framework for Early Alzheimer's Disease Screening
-
-- Date: 2026-08-07
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.07378v1
-- PDF: https://arxiv.org/pdf/2608.07378v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-arxiv-lsead_a_privacy_preserving_llm_based_speech_analysis_framework_for_early_alzheimer_s_disea_infographic.json
-
-## 11. Diagnostic Accuracy of a locally deployed Large Language Model Algorithm for Automated Code Stroke Pathway Identification in Emergency Department Triage Notes
+## 5. Diagnostic Accuracy of a locally deployed Large Language Model Algorithm for Automated Code Stroke Pathway Identification in Emergency Department Triage Notes
 
 - Date: 2026-08-05
 - Category: Clinical NLP
@@ -91,74 +43,114 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.03.26359639v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-diagnostic_accuracy_of_a_locally_deployed_large_language_model_algorithm_for_automated_cod_infographic.json
 
-## 12. Omni-modal decomposition autoencoders learn full-stack wearable disentangled representations
+## 6. RCC-AID: Renal Cell Carcinoma AI Dataset for Medical Imaging Research
 
-- Date: 2026-08-07
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2608.07385v1
-- PDF: https://arxiv.org/pdf/2608.07385v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-arxiv-omni_modal_decomposition_autoencoders_learn_full_stack_wearable_disentangled_representatio_infographic.json
-
-## 13. Explanation Stability of Test-Time Adaptation in Computational Pathology: A Large-Scale Benchmark
-
-- Date: 2026-08-07
+- Date: 2026-08-05
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.07062v1
-- PDF: https://arxiv.org/pdf/2608.07062v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-arxiv-explanation_stability_of_test_time_adaptation_in_computational_pathology_a_large_scale_ben_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.04.22.26351451v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.04.22.26351451v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-rcc_aid_renal_cell_carcinoma_ai_dataset_for_medical_imaging_research_infographic.json
 
-## 14. Improving the Realism of Synthetic Clinical Benchmarks Under Utility Constraints
-
-- Date: 2026-08-06
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2608.06265v1
-- PDF: https://arxiv.org/pdf/2608.06265v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-improving_the_realism_of_synthetic_clinical_benchmarks_under_utility_constraints_infographic.json
-
-## 15. THBKG: A Temporal Biomedical Knowledge Graph for Decision-Aligned Clinical Advancement Prediction
-
-- Date: 2026-08-06
-- Category: Biomedical AI
-- Source: arXiv - https://arxiv.org/abs/2608.05982v1
-- PDF: https://arxiv.org/pdf/2608.05982v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-thbkg_a_temporal_biomedical_knowledge_graph_for_decision_aligned_clinical_advancement_pred_infographic.json
-
-## 16. The Judgment-Consequence Gap: LLM Moral Reasoning in Healthcare Decisions
+## 7. Predicting Cognitive Function Using Transformer-Derived Speech Representations and Longitudinal Coherence Features
 
 - Date: 2026-08-06
 - Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2608.05583v1
-- PDF: https://arxiv.org/pdf/2608.05583v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-the_judgment_consequence_gap_llm_moral_reasoning_in_healthcare_decisions_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359730v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359730v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-predicting_cognitive_function_using_transformer_derived_speech_representations_and_longitu_infographic.json
 
-## 17. A Comparative Study of Feature Selection Methods for EHR Diagnosis Codes in Opioid Use Disorder Prediction
+## 8. Toward precision rehabilitation in adolescent mild traumatic brain injury: leveraging physiologic data from commercially available smartwatches to identify patient subgroups
 
-- Date: 2026-08-04
+- Date: 2026-08-05
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.04180v1
-- PDF: https://arxiv.org/pdf/2608.04180v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-04-arxiv-a_comparative_study_of_feature_selection_methods_for_ehr_diagnosis_codes_in_opioid_use_dis_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.16.26358245v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.16.26358245v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-toward_precision_rehabilitation_in_adolescent_mild_traumatic_brain_injury_leveraging_physi_infographic.json
 
-## 18. TLNM: Externally Validated Tooth Detection, Numbering and Segmentation from Smartphone Photographs Using Mask R-CNN
+## 9. Quantifying the Quality of Corrective Actions in Medical Safety Incident Reports Using a Hybrid Rule-Based and Large-Language-Model Classification System: A Cross-Sectional Pilot Feasibility Analysis of 11,507 Japanese National Reports (2010, Interim)
+
+- Date: 2026-08-06
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359750v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359750v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-quantifying_the_quality_of_corrective_actions_in_medical_safety_incident_reports_using_a_h_infographic.json
+
+## 10. Deep Learning of Fluorescence Lifetime Imaging Ophthalmoscopy for Type 2 Diabetes Classification
 
 - Date: 2026-08-06
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.06275v1
-- PDF: https://arxiv.org/pdf/2608.06275v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-tlnm_externally_validated_tooth_detection_numbering_and_segmentation_from_smartphone_photo_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359728v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359728v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-deep_learning_of_fluorescence_lifetime_imaging_ophthalmoscopy_for_type_2_diabetes_classifi_infographic.json
 
-## 19. Is Self-Pretraining really useful to improve diagnosis in medical Time Series?
+## 11. Towards understanding the disease landscape of clinical trials in Germany: Ontology and embedding-based pipelines versus Large Language Models for ICD-10 Harmonization
 
 - Date: 2026-08-06
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2608.06122v2
-- PDF: https://arxiv.org/pdf/2608.06122v2
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-arxiv-is_self_pretraining_really_useful_to_improve_diagnosis_in_medical_time_series_infographic.json
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359616v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359616v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-towards_understanding_the_disease_landscape_of_clinical_trials_in_germany_ontology_and_emb_infographic.json
 
-## 20. MolBioKG: Grounding Out-of-Graph Molecules in Biomedical Knowledge Graphs via Multi-Resolution Structural Anchoring
+## 12. Towards Accessible Radiological Image Analysis via Local Agentic Framework: Validation in Mammography
+
+- Date: 2026-08-05
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.03.26359608v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.03.26359608v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-towards_accessible_radiological_image_analysis_via_local_agentic_framework_validation_in_m_infographic.json
+
+## 13. Generative AI Use for Mental Health Support: Patterns, Correlates, and Impact among Canadian Students
+
+- Date: 2026-08-05
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.03.26359623v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.03.26359623v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-generative_ai_use_for_mental_health_support_patterns_correlates_and_impact_among_canadian_infographic.json
+
+## 14. Standardized Comparison of Clinical, Cognitive, Genetic, Neuroimaging, and Fluid Biomarkers for Predicting 24-Month Progression from Mild Cognitive Impairment to Alzheimer's Disease
+
+- Date: 2026-08-05
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.03.26359630v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.03.26359630v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-standardized_comparison_of_clinical_cognitive_genetic_neuroimaging_and_fluid_biomarkers_fo_infographic.json
+
+## 15. Causal Network Mapping of sEEG Identifies Compact Epileptogenic Targets Concordant with Seizure Freedom: A Multicenter Study of 97 Patients
+
+- Date: 2026-08-05
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.21.26353792v3
+- PDF: https://www.medrxiv.org/content/10.64898/2026.05.21.26353792v3.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-causal_network_mapping_of_seeg_identifies_compact_epileptogenic_targets_concordant_with_se_infographic.json
+
+## 16. Regional and Temporal Patterns of COVID-19 Vaccine Misinformation in Sub-Saharan Africa
 
 - Date: 2026-08-07
-- Category: Drug Discovery
-- Source: arXiv - https://arxiv.org/abs/2608.06713v1
-- PDF: https://arxiv.org/pdf/2608.06713v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-arxiv-molbiokg_grounding_out_of_graph_molecules_in_biomedical_knowledge_graphs_via_multi_resolut_infographic.json
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.08.19.25334033v2
+- PDF: https://www.medrxiv.org/content/10.1101/2025.08.19.25334033v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-07-medrxiv-regional_and_temporal_patterns_of_covid_19_vaccine_misinformation_in_sub_saharan_africa_infographic.json
+
+## 17. BioDeformUNet: A Deep Learning Model for Biomechanically Informed Liver Image Registration
+
+- Date: 2026-08-05
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.03.26359612v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.03.26359612v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-biodeformunet_a_deep_learning_model_for_biomechanically_informed_liver_image_registration_infographic.json
+
+## 18. Heritability of Age-Related Macular Degeneration in the Amish
+
+- Date: 2026-08-06
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.04.26359695v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.04.26359695v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-06-medrxiv-heritability_of_age_related_macular_degeneration_in_the_amish_infographic.json
+
+## 19. Robustness of Deep Learning Segmentation Across Heterogeneous Uterine MRI Datasets: A Multi-Task Comparison of U-Net, Swin-UNETR, MedNeXt, and nnU-Net
+
+- Date: 2026-08-05
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.22.26358583v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.22.26358583v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-05-medrxiv-robustness_of_deep_learning_segmentation_across_heterogeneous_uterine_mri_datasets_a_multi_infographic.json
