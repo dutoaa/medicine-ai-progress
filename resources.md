@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-14
+Generated: 2026-08-15
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. An Agentic Generative Large Language Model for Treatment Planning of Colorectal Cancer
@@ -19,7 +19,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.12805v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-comedbench_a_multi_source_benchmark_of_synthetic_medical_data_fidelity_and_downstream_util_infographic.json
 
-## 3. Perturbation-based Regional Interpretability through Subtraction Mapping (PRISM): naming-error dissociations in language models and post-stroke aphasia
+## 3. HounsWorld: A Multimodal World Model for Hidden Patient-State Readout, Reconstruction, and Simulation
+
+- Date: 2026-08-13
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.12904v1
+- PDF: https://arxiv.org/pdf/2608.12904v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-hounsworld_a_multimodal_world_model_for_hidden_patient_state_readout_reconstruction_and_si_infographic.json
+
+## 4. Perturbation-based Regional Interpretability through Subtraction Mapping (PRISM): naming-error dissociations in language models and post-stroke aphasia
 
 - Date: 2026-08-13
 - Category: Medical Imaging
@@ -27,7 +35,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.12717v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-perturbation_based_regional_interpretability_through_subtraction_mapping_prism_naming_erro_infographic.json
 
-## 4. Logit-Boundary Geometric Belief Interfaces and Sparse Sheaf-Enclave Protocols: A Self-Contained Substrate for Secure Network Electronic Health Record (EHR) Interoperability
+## 5. Logit-Boundary Geometric Belief Interfaces and Sparse Sheaf-Enclave Protocols: A Self-Contained Substrate for Secure Network Electronic Health Record (EHR) Interoperability
 
 - Date: 2026-08-10
 - Category: Clinical NLP
@@ -35,7 +43,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.10300v2
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-10-arxiv-logit_boundary_geometric_belief_interfaces_and_sparse_sheaf_enclave_protocols_a_self_conta_infographic.json
 
-## 5. CT-$Δ$Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models
+## 6. CT-$Δ$Bench: A Benchmark for Longitudinal 3D Medical Imaging Difference Reporting with Vision-Language Models
 
 - Date: 2026-08-12
 - Category: Clinical NLP
@@ -43,7 +51,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.11534v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-12-arxiv-ct_bench_a_benchmark_for_longitudinal_3d_medical_imaging_difference_reporting_with_vision_infographic.json
 
-## 6. Real-World Performance of the 2026 AHA/ACC Pulmonary Embolism Framework in a Multi-System CTPA Cohort
+## 7. Real-World Performance of the 2026 AHA/ACC Pulmonary Embolism Framework in a Multi-System CTPA Cohort
 
 - Date: 2026-08-10
 - Category: Medical Imaging
@@ -51,21 +59,13 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.06.26359865v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-10-medrxiv-real_world_performance_of_the_2026_aha_acc_pulmonary_embolism_framework_in_a_multi_system_infographic.json
 
-## 7. Novel Knowledge-Guided Generative Methods for Synthetic Transcriptomic Data
+## 8. Novel Knowledge-Guided Generative Methods for Synthetic Transcriptomic Data
 
 - Date: 2026-08-13
 - Category: Biomedical AI
 - Source: arXiv - https://arxiv.org/abs/2608.13256v1
 - PDF: https://arxiv.org/pdf/2608.13256v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-novel_knowledge_guided_generative_methods_for_synthetic_transcriptomic_data_infographic.json
-
-## 8. HounsWorld: A Multimodal World Model for Hidden Patient-State Readout, Reconstruction, and Simulation
-
-- Date: 2026-08-13
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.12904v1
-- PDF: https://arxiv.org/pdf/2608.12904v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-hounsworld_a_multimodal_world_model_for_hidden_patient_state_readout_reconstruction_and_si_infographic.json
 
 ## 9. Apodex Discovery: Reality Benchmarks and Environments for Evaluating and Building Discoverative Artificial Intelligence
 
@@ -139,7 +139,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.13309v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-how_good_are_foundation_models_in_longitudinal_mri_disease_progression_reasoning_infographic.json
 
-## 18. Deep Multimodal Wearable Sensor Fusion for Detection of Body-Focused Repetitive Behaviors
+## 18. A comparison of CNN architectures for Alzheimer's disease detection in single-view MRI scans
+
+- Date: 2026-08-12
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.11762v1
+- PDF: https://arxiv.org/pdf/2608.11762v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-12-arxiv-a_comparison_of_cnn_architectures_for_alzheimer_s_disease_detection_in_single_view_mri_sca_infographic.json
+
+## 19. Deep Multimodal Wearable Sensor Fusion for Detection of Body-Focused Repetitive Behaviors
 
 - Date: 2026-08-10
 - Category: Diagnostics
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.09830v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-10-arxiv-deep_multimodal_wearable_sensor_fusion_for_detection_of_body_focused_repetitive_behaviors_infographic.json
 
-## 19. Beyond Simulated Benchmarks: Evaluating Motion Representations for Fall Detection Under Real-World Data Scarcity
+## 20. Beyond Simulated Benchmarks: Evaluating Motion Representations for Fall Detection Under Real-World Data Scarcity
 
 - Date: 2026-08-13
 - Category: Medical Imaging
 - Source: arXiv - https://arxiv.org/abs/2608.13197v1
 - PDF: https://arxiv.org/pdf/2608.13197v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-beyond_simulated_benchmarks_evaluating_motion_representations_for_fall_detection_under_rea_infographic.json
-
-## 20. CardioState-JEPA: Delay-Aware Cross-Modal Learning of a Shared Cardiac Representation
-
-- Date: 2026-08-13
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2608.12944v1
-- PDF: https://arxiv.org/pdf/2608.12944v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-cardiostate_jepa_delay_aware_cross_modal_learning_of_a_shared_cardiac_representation_infographic.json
