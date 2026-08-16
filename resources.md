@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-15
+Generated: 2026-08-16
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. An Agentic Generative Large Language Model for Treatment Planning of Colorectal Cancer
