@@ -1,9 +1,17 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-18
+Generated: 2026-08-19
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Foresight-England: Development of a National-Scale Generative AI Model of Electronic Health Records for Medical Event Prediction across the COVID-19 Pandemic
+## 1. MultiSigBERT: Beyond Survival Analysis through Multimodal and Sequential Modeling in Oncology
+
+- Date: 2026-08-17
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.16972v1
+- PDF: https://arxiv.org/pdf/2608.16972v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-multisigbert_beyond_survival_analysis_through_multimodal_and_sequential_modeling_in_oncolo_infographic.json
+
+## 2. Foresight-England: Development of a National-Scale Generative AI Model of Electronic Health Records for Medical Event Prediction across the COVID-19 Pandemic
 
 - Date: 2026-08-17
 - Category: Health Systems
@@ -11,7 +19,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.16273v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-foresight_england_development_of_a_national_scale_generative_ai_model_of_electronic_health_infographic.json
 
-## 2. CoM$^3$eT: A foundation model for medical image analysis through federated, multidimensional context integration
+## 3. Foundation Agents Meet Agentic Deep Research: Evidence-Grounded Clinical Code Forecasting
+
+- Date: 2026-08-17
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.17075v1
+- PDF: https://arxiv.org/pdf/2608.17075v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-foundation_agents_meet_agentic_deep_research_evidence_grounded_clinical_code_forecasting_infographic.json
+
+## 4. SpurCon: Weighted Supervised Contrastive Learning for Mitigating Spurious Cues in Medical Imaging
+
+- Date: 2026-08-18
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.17598v1
+- PDF: https://arxiv.org/pdf/2608.17598v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-spurcon_weighted_supervised_contrastive_learning_for_mitigating_spurious_cues_in_medical_i_infographic.json
+
+## 5. CoM$^3$eT: A foundation model for medical image analysis through federated, multidimensional context integration
 
 - Date: 2026-08-17
 - Category: Medical Imaging
@@ -19,15 +43,39 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.16268v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-com_3_et_a_foundation_model_for_medical_image_analysis_through_federated_multidimensional_infographic.json
 
-## 3. Vision and Language Models for Classifying Maxillary Sinus Disease on Cone-Beam Computed Tomography: A Transparent Multimodal Benchmark
+## 6. Automated ACL Footprint Identification Using 3D Deep Learning
 
-- Date: 2026-08-12
+- Date: 2026-08-18
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.18012v1
+- PDF: https://arxiv.org/pdf/2608.18012v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-automated_acl_footprint_identification_using_3d_deep_learning_infographic.json
+
+## 7. Large Language Models Generate Stigmatizing Language During Reasoning Over Real-World Clinical Data
+
+- Date: 2026-08-14
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.11.26360189v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.11.26360189v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-12-medrxiv-vision_and_language_models_for_classifying_maxillary_sinus_disease_on_cone_beam_computed_t_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.12.26360210v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.12.26360210v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-14-medrxiv-large_language_models_generate_stigmatizing_language_during_reasoning_over_real_world_clin_infographic.json
 
-## 4. Concept-based explanation of gene expression prediction from H&E images
+## 8. CFB-GBM v2.0: An Augmented Longitudinal Dataset for Multi-Modal Glioblastoma Segmentation, Radiomics, and RANO Progression Tracking
+
+- Date: 2026-08-18
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.17884v1
+- PDF: https://arxiv.org/pdf/2608.17884v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-cfb_gbm_v2_0_an_augmented_longitudinal_dataset_for_multi_modal_glioblastoma_segmentation_r_infographic.json
+
+## 9. Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss
+
+- Date: 2026-08-17
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.17051v1
+- PDF: https://arxiv.org/pdf/2608.17051v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-institution_specific_llm_prompting_recovers_phi_that_de_identification_systems_and_their_g_infographic.json
+
+## 10. Concept-based explanation of gene expression prediction from H&E images
 
 - Date: 2026-08-17
 - Category: Medical Imaging
@@ -35,7 +83,31 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.16669v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-concept_based_explanation_of_gene_expression_prediction_from_h_e_images_infographic.json
 
-## 5. PLeDO: Pain Level Detection for Osteoarthritis from EMR Data
+## 11. Conformal Prediction for Molecular Properties under Label Shift
+
+- Date: 2026-08-18
+- Category: Drug Discovery
+- Source: arXiv - https://arxiv.org/abs/2608.17678v1
+- PDF: https://arxiv.org/pdf/2608.17678v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-conformal_prediction_for_molecular_properties_under_label_shift_infographic.json
+
+## 12. BrainNorm: A Foundation Model that knows Normal via Semantic Atlas Pretraining
+
+- Date: 2026-08-18
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.17521v1
+- PDF: https://arxiv.org/pdf/2608.17521v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-brainnorm_a_foundation_model_that_knows_normal_via_semantic_atlas_pretraining_infographic.json
+
+## 13. LLMs for Medical Consultation Are Evaluated Too Late: The Preformulation Gap
+
+- Date: 2026-08-18
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2608.17330v1
+- PDF: https://arxiv.org/pdf/2608.17330v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-llms_for_medical_consultation_are_evaluated_too_late_the_preformulation_gap_infographic.json
+
+## 14. PLeDO: Pain Level Detection for Osteoarthritis from EMR Data
 
 - Date: 2026-08-16
 - Category: Clinical NLP
@@ -43,7 +115,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.15719v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-16-arxiv-pledo_pain_level_detection_for_osteoarthritis_from_emr_data_infographic.json
 
-## 6. Comprehensive Benchmarking of Deep Learning Architectures for Lung Cancer Histopathology
+## 15. PathoArgus: Advancing Evidence-Grounded Long-Context Visual Reasoning across Gigapixel Whole-Slide and Multi-Slide Case Contexts
+
+- Date: 2026-08-18
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2608.17607v1
+- PDF: https://arxiv.org/pdf/2608.17607v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-pathoargus_advancing_evidence_grounded_long_context_visual_reasoning_across_gigapixel_whol_infographic.json
+
+## 16. Pathology Transport: Optimal-Transport Explanations for Clinical Data, and When Their Heatmaps (Fail to) Localize Disease
+
+- Date: 2026-08-18
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2608.17370v1
+- PDF: https://arxiv.org/pdf/2608.17370v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-pathology_transport_optimal_transport_explanations_for_clinical_data_and_when_their_heatma_infographic.json
+
+## 17. Comprehensive Benchmarking of Deep Learning Architectures for Lung Cancer Histopathology
 
 - Date: 2026-08-16
 - Category: Medical Imaging
@@ -51,7 +139,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.15915v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-16-arxiv-comprehensive_benchmarking_of_deep_learning_architectures_for_lung_cancer_histopathology_infographic.json
 
-## 7. CACSurv: Concordance-Aligned Comparative Learning with Large Language Models for Cancer Survival Prediction
+## 18. CACSurv: Concordance-Aligned Comparative Learning with Large Language Models for Cancer Survival Prediction
 
 - Date: 2026-08-17
 - Category: Clinical NLP
@@ -59,7 +147,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.16594v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-cacsurv_concordance_aligned_comparative_learning_with_large_language_models_for_cancer_sur_infographic.json
 
-## 8. Large language models as synthetic clinical experts to inform longitudinal rare-disease modeling
+## 19. Large language models as synthetic clinical experts to inform longitudinal rare-disease modeling
 
 - Date: 2026-08-17
 - Category: Clinical NLP
@@ -67,98 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.16507v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-large_language_models_as_synthetic_clinical_experts_to_inform_longitudinal_rare_disease_mo_infographic.json
 
-## 9. Removing Temporal Note Redundancy Improves Multimodal Reinforcement Learning for Medicine
+## 20. Multi-Agent AI System for Radiology Report Structuring and Quality Assurance with Independent Radiologist Evaluation
 
-- Date: 2026-08-14
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.14157v1
-- PDF: https://arxiv.org/pdf/2608.14157v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-14-arxiv-removing_temporal_note_redundancy_improves_multimodal_reinforcement_learning_for_medicine_infographic.json
-
-## 10. Longitudinal Clinical Foundation Models Augmented with Genomics for Early Detection and Risk Stratification of Inherited Cardiomyopathy
-
-- Date: 2026-08-12
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.10.26360107v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.10.26360107v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-12-medrxiv-longitudinal_clinical_foundation_models_augmented_with_genomics_for_early_detection_and_ri_infographic.json
-
-## 11. What Matters is the Prompt: Prompt Sensitivity and Prompt Generation in Foundation Models for Lung Nodule Segmentation
-
-- Date: 2026-08-17
+- Date: 2026-08-18
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.16832v1
-- PDF: https://arxiv.org/pdf/2608.16832v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-what_matters_is_the_prompt_prompt_sensitivity_and_prompt_generation_in_foundation_models_f_infographic.json
-
-## 12. ETHOS: Towards a Modular Ethics Framework for Clinical Multi-Agent Systems
-
-- Date: 2026-08-15
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2608.15424v1
-- PDF: https://arxiv.org/pdf/2608.15424v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-15-arxiv-ethos_towards_a_modular_ethics_framework_for_clinical_multi_agent_systems_infographic.json
-
-## 13. Policy Iteration with Human Feedback: Bringing Post-Training RL to In-context Learning
-
-- Date: 2026-08-17
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.16831v1
-- PDF: https://arxiv.org/pdf/2608.16831v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-policy_iteration_with_human_feedback_bringing_post_training_rl_to_in_context_learning_infographic.json
-
-## 14. CoMedBench: A Multi-Source Benchmark of Synthetic Medical Data Fidelity and Downstream Utility
-
-- Date: 2026-08-13
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2608.12805v1
-- PDF: https://arxiv.org/pdf/2608.12805v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-arxiv-comedbench_a_multi_source_benchmark_of_synthetic_medical_data_fidelity_and_downstream_util_infographic.json
-
-## 15. Forecasting laboratory measurements from longitudinal electronic health records
-
-- Date: 2026-08-13
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.12.26360243v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.12.26360243v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-13-medrxiv-forecasting_laboratory_measurements_from_longitudinal_electronic_health_records_infographic.json
-
-## 16. AnchorScore: A CLIP-Based Diagnostic of MLLM Annotation Difficulty
-
-- Date: 2026-08-17
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.16690v1
-- PDF: https://arxiv.org/pdf/2608.16690v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-anchorscore_a_clip_based_diagnostic_of_mllm_annotation_difficulty_infographic.json
-
-## 17. Toward Better Assessment of LLMs' Performance in Clinical Error Detection
-
-- Date: 2026-08-17
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2608.16643v1
-- PDF: https://arxiv.org/pdf/2608.16643v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-17-arxiv-toward_better_assessment_of_llms_performance_in_clinical_error_detection_infographic.json
-
-## 18. Beyond Natural-Image Foundation Models: Benchmarking Satellite Pretraining for Ophthalmic Image Analysis
-
-- Date: 2026-08-15
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.15195v1
-- PDF: https://arxiv.org/pdf/2608.15195v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-15-arxiv-beyond_natural_image_foundation_models_benchmarking_satellite_pretraining_for_ophthalmic_i_infographic.json
-
-## 19. Consensus-gated Multi-Agent Neural Architecture Search for Seismic Fault Segmentation
-
-- Date: 2026-08-14
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2608.13889v1
-- PDF: https://arxiv.org/pdf/2608.13889v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-14-arxiv-consensus_gated_multi_agent_neural_architecture_search_for_seismic_fault_segmentation_infographic.json
-
-## 20. Generalizing intensive care AI across time scales in resource-limited settings
-
-- Date: 2026-08-12
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.04.23.26351588v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.04.23.26351588v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-12-medrxiv-generalizing_intensive_care_ai_across_time_scales_in_resource_limited_settings_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2608.18072v1
+- PDF: https://arxiv.org/pdf/2608.18072v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-18-arxiv-multi_agent_ai_system_for_radiology_report_structuring_and_quality_assurance_with_independ_infographic.json
