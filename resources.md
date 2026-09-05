@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-04
+Generated: 2026-09-05
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. A Multi-Agent Large Language Model Reasoning Engine for Early Detection of Pediatric Growth Disorders
@@ -19,7 +19,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.03851v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-03-arxiv-pushing_the_decision_boundaries_dynamically_calibrating_differentially_private_noise_to_ex_infographic.json
 
-## 3. Generating Medical Image Counterfactuals using Causal Explanations
+## 3. MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structural Reasoning in Whole-Body PET/CT
+
+- Date: 2026-09-03
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.03690v1
+- PDF: https://arxiv.org/pdf/2609.03690v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-03-arxiv-metastructatlas_a_grounded_3d_vision_language_dataset_and_benchmark_for_functional_and_str_infographic.json
+
+## 4. Generating Medical Image Counterfactuals using Causal Explanations
 
 - Date: 2026-09-02
 - Category: Medical Imaging
@@ -27,7 +35,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.02697v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-02-arxiv-generating_medical_image_counterfactuals_using_causal_explanations_infographic.json
 
-## 4. LLM4CKD: Large Language Models for Early Stage Chronic Kidney Disease Screening
+## 5. LLM4CKD: Large Language Models for Early Stage Chronic Kidney Disease Screening
 
 - Date: 2026-09-03
 - Category: Clinical NLP
@@ -35,21 +43,13 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.04013v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-03-arxiv-llm4ckd_large_language_models_for_early_stage_chronic_kidney_disease_screening_infographic.json
 
-## 5. Responsible Integration of AI in Cancer Genomics: Barriers, Risks, and Pathways to Trustworthy Clinical Translation
+## 6. Responsible Integration of AI in Cancer Genomics: Barriers, Risks, and Pathways to Trustworthy Clinical Translation
 
 - Date: 2026-08-31
 - Category: Biomedical AI
 - Source: arXiv - https://arxiv.org/abs/2608.30912v1
 - PDF: https://arxiv.org/pdf/2608.30912v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-31-arxiv-responsible_integration_of_ai_in_cancer_genomics_barriers_risks_and_pathways_to_trustworth_infographic.json
-
-## 6. MetaStructAtlas: A Grounded 3D Vision-Language Dataset and Benchmark for Functional and Structural Reasoning in Whole-Body PET/CT
-
-- Date: 2026-09-03
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2609.03690v1
-- PDF: https://arxiv.org/pdf/2609.03690v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-03-arxiv-metastructatlas_a_grounded_3d_vision_language_dataset_and_benchmark_for_functional_and_str_infographic.json
 
 ## 7. ORB-SVM : An Innovative Hybrid Framework for Efficient Brain Tumor Detection from MRI Scans
 
@@ -139,7 +139,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361496v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-31-medrxiv-a_pragmatic_randomized_trial_of_an_ehr_integrated_generative_ai_chart_summarization_tool_f_infographic.json
 
-## 18. INTERVenE: Temporal-Abstraction-Interval Based Transformers for Short-Horizon Medical Event Prediction
+## 18. Novel Entropy-Based Framework for Quantifying Dynamic Epistemic Uncertainty in Clinical Medicine
+
+- Date: 2026-08-31
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.27.26361497v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.27.26361497v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-31-medrxiv-novel_entropy_based_framework_for_quantifying_dynamic_epistemic_uncertainty_in_clinical_me_infographic.json
+
+## 19. INTERVenE: Temporal-Abstraction-Interval Based Transformers for Short-Horizon Medical Event Prediction
 
 - Date: 2026-08-30
 - Category: Clinical NLP
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2608.29901v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-08-30-arxiv-intervene_temporal_abstraction_interval_based_transformers_for_short_horizon_medical_event_infographic.json
 
-## 19. NeoRed: A Knowledge-Logic-Alignment Multimodal Large Language Model for Neonatal Respiratory Disease Diagnosis
+## 20. NeoRed: A Knowledge-Logic-Alignment Multimodal Large Language Model for Neonatal Respiratory Disease Diagnosis
 
 - Date: 2026-09-03
 - Category: Clinical NLP
 - Source: arXiv - https://arxiv.org/abs/2609.03527v1
 - PDF: https://arxiv.org/pdf/2609.03527v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-03-arxiv-neored_a_knowledge_logic_alignment_multimodal_large_language_model_for_neonatal_respirator_infographic.json
-
-## 20. Exemplar: Classical Priors Complement Frozen Features for Few-Shot Microscopy Segmentation at Native Resolution
-
-- Date: 2026-09-02
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2609.03080v1
-- PDF: https://arxiv.org/pdf/2609.03080v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-02-arxiv-exemplar_classical_priors_complement_frozen_features_for_few_shot_microscopy_segmentation_infographic.json
