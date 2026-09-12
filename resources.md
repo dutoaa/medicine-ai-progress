@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-11
+Generated: 2026-09-12
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Artificial Intelligence Algorithms for the Detection of Pathologies Related to Lung Cancer through Image Analysis using Convolutional Neural Networks and Data Augmentation: a systematic mapping of the literature
@@ -99,15 +99,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.02.26361902v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-07-medrxiv-ukb_kg_knowledge_graph_for_integrating_and_enhancing_biomedical_insights_from_the_uk_bioba_infographic.json
 
-## 13. A Rubric-Guided Large Language Model Solution for Opioid Use Disorder Computable Phenotyping
+## 13. A user-friendly, no-code, application for HIPAA-compliant automated analysis of tabular data at scale
 
-- Date: 2026-09-04
+- Date: 2026-09-08
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2609.05682v1
-- PDF: https://arxiv.org/pdf/2609.05682v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-04-arxiv-a_rubric_guided_large_language_model_solution_for_opioid_use_disorder_computable_phenotypi_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-a_user_friendly_no_code_application_for_hipaa_compliant_automated_analysis_of_tabular_data_infographic.json
 
-## 14. Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bias Assessment
+## 14. Reasoning Before Disposition: A Model-Agnostic Cannot-Miss Discipline for Quiet Emergencies and the Case for Deterministic Enforcement
+
+- Date: 2026-09-08
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.02.26362074v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.02.26362074v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-reasoning_before_disposition_a_model_agnostic_cannot_miss_discipline_for_quiet_emergencies_infographic.json
+
+## 15. Can LLMs Follow Medical Expert Logic? A Benchmark for Hierarchical Logical Consistency in Risk-of-Bias Assessment
 
 - Date: 2026-09-10
 - Category: Clinical NLP
@@ -115,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.11185v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-10-arxiv-can_llms_follow_medical_expert_logic_a_benchmark_for_hierarchical_logical_consistency_in_r_infographic.json
 
-## 15. Automated Chest CT Protocol Selection via Large Language Model Derived Text Embeddings from Imaging Request Text
+## 16. Automated Chest CT Protocol Selection via Large Language Model Derived Text Embeddings from Imaging Request Text
 
 - Date: 2026-09-07
 - Category: Clinical NLP
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.07986v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-07-arxiv-automated_chest_ct_protocol_selection_via_large_language_model_derived_text_embeddings_fro_infographic.json
 
-## 16. TabBench-Bio: A Living Benchmark for Machine Learning on High-Dimensional Biomedical Tables
+## 17. TabBench-Bio: A Living Benchmark for Machine Learning on High-Dimensional Biomedical Tables
 
 - Date: 2026-09-07
 - Category: Biomedical AI
@@ -131,7 +139,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.07441v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-07-arxiv-tabbench_bio_a_living_benchmark_for_machine_learning_on_high_dimensional_biomedical_tables_infographic.json
 
-## 17. Auditable Emergency Triage for Maternal and Newborn Care in India
+## 18. Auditable Emergency Triage for Maternal and Newborn Care in India
 
 - Date: 2026-09-08
 - Category: Clinical NLP
@@ -139,7 +147,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.09356v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-arxiv-auditable_emergency_triage_for_maternal_and_newborn_care_in_india_infographic.json
 
-## 18. Evaluating Scaffolding-Oriented Multi-Agent Large Language Model System for Clinical Interview Training
+## 19. Evaluating Scaffolding-Oriented Multi-Agent Large Language Model System for Clinical Interview Training
 
 - Date: 2026-09-10
 - Category: Clinical NLP
@@ -147,18 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2609.10939v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-10-arxiv-evaluating_scaffolding_oriented_multi_agent_large_language_model_system_for_clinical_inter_infographic.json
 
-## 19. BruNet: A Cross-Domain Transfer Framework for Bruise Segmentation
+## 20. BruNet: A Cross-Domain Transfer Framework for Bruise Segmentation
 
 - Date: 2026-09-10
 - Category: Medical Imaging
 - Source: arXiv - https://arxiv.org/abs/2609.11463v1
 - PDF: https://arxiv.org/pdf/2609.11463v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-10-arxiv-brunet_a_cross_domain_transfer_framework_for_bruise_segmentation_infographic.json
-
-## 20. XPos3R: Cross-Modal Transformer for Intraoperative 2D/3D Registration
-
-- Date: 2026-09-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2609.10733v1
-- PDF: https://arxiv.org/pdf/2609.10733v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-arxiv-xpos3r_cross_modal_transformer_for_intraoperative_2d_3d_registration_infographic.json
