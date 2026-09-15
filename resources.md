@@ -1,76 +1,84 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-14
+Generated: 2026-09-15
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. A user-friendly, no-code, application for HIPAA-compliant automated analysis of tabular data at scale
+## 1. Performance and Fairness of a Peripheral Artery Disease Detection Model Across Patient Phenotypes and Health Systems
 
-- Date: 2026-09-08
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-a_user_friendly_no_code_application_for_hipaa_compliant_automated_analysis_of_tabular_data_infographic.json
-
-## 2. Reasoning Before Disposition: A Model-Agnostic Cannot-Miss Discipline for Quiet Emergencies and the Case for Deterministic Enforcement
-
-- Date: 2026-09-08
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.02.26362074v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.02.26362074v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-reasoning_before_disposition_a_model_agnostic_cannot_miss_discipline_for_quiet_emergencies_infographic.json
-
-## 3. Multimodal Multiple Instance Learning for Fibroepithelial Tumor Diagnosis in Breast Ultrasound
-
-- Date: 2026-09-08
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.07.26362448v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.07.26362448v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-multimodal_multiple_instance_learning_for_fibroepithelial_tumor_diagnosis_in_breast_ultras_infographic.json
-
-## 4. Scoring Rubric to Assess Ethical Issues in Clinical Artificial Intelligence Tools
-
-- Date: 2026-09-08
+- Date: 2026-09-09
 - Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.05.26362340v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.05.26362340v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-scoring_rubric_to_assess_ethical_issues_in_clinical_artificial_intelligence_tools_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.19.26360861v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.19.26360861v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-performance_and_fairness_of_a_peripheral_artery_disease_detection_model_across_patient_phe_infographic.json
 
-## 5. Ensemble SHAP Aggregation and Attribution Variability in Clinical Machine Learning: A COVID-19 Mortality Study
+## 2. Sensitive Glioma Detection and Recurrence Monitoring Using a Machine Learning Model Based on Circulating Monocytes
 
-- Date: 2026-09-08
+- Date: 2026-09-09
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.29.26354409v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.05.29.26354409v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-sensitive_glioma_detection_and_recurrence_monitoring_using_a_machine_learning_model_based_infographic.json
+
+## 3. Algorithmic Multi-Domain Syndromic Profiling in Cerebrovascular Disease: A Deterministic Approach to Post-Stroke Neurocognitive Deficit Mapping
+
+- Date: 2026-09-09
 - Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.07.26362459v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.07.26362459v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-ensemble_shap_aggregation_and_attribution_variability_in_clinical_machine_learning_a_covid_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362502v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362502v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-algorithmic_multi_domain_syndromic_profiling_in_cerebrovascular_disease_a_deterministic_ap_infographic.json
 
-## 6. Analysis of east Asian Parkinson's disease Genomes Identifies Novel Susceptibility Loci and Functional Regulatory Variation
+## 4. From Anatomy to Aneurysm: Morphological-Hemodynamic Coupling and Predictive Modeling in Aberrant Splenic Artery.
 
-- Date: 2026-09-08
+- Date: 2026-09-10
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.03.26362212v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.03.26362212v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-analysis_of_east_asian_parkinson_s_disease_genomes_identifies_novel_susceptibility_loci_an_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362579v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362579v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-10-medrxiv-from_anatomy_to_aneurysm_morphological_hemodynamic_coupling_and_predictive_modeling_in_abe_infographic.json
 
-## 7. Using large language models to facilitate literature review and data extraction for infectious disease models: COVID-19 as a test case
+## 5. Automated Skill Optimisation for False Presupposition Handling in Cancer Communication: SkillOpt Versus Conventional Prompt Engineering Across Language Models
 
-- Date: 2026-09-08
+- Date: 2026-09-10
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.06.26362399v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.06.26362399v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-using_large_language_models_to_facilitate_literature_review_and_data_extraction_for_infect_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-10-medrxiv-automated_skill_optimisation_for_false_presupposition_handling_in_cancer_communication_ski_infographic.json
 
-## 8. Balancing optimization and standardization in multisite fMRI data analyses to address site-specific parameters
+## 6. Consistent DNA methylation patterns enable accurate and interpretable cross-platform classification of central nervous system tumors
 
-- Date: 2026-09-08
+- Date: 2026-09-09
+- Category: Biomedical AI
+- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.10.07.25337348v2
+- PDF: https://www.medrxiv.org/content/10.1101/2025.10.07.25337348v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-consistent_dna_methylation_patterns_enable_accurate_and_interpretable_cross_platform_class_infographic.json
+
+## 7. Validation of the Incremental Prognostic Value of Deceased Donation Pre-implantation Kidney Transplant Biopsies through Comprehensive Lesion Quantification with Deep Learning
+
+- Date: 2026-09-09
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.04.26362236v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.04.26362236v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-balancing_optimization_and_standardization_in_multisite_fmri_data_analyses_to_address_site_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362425v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362425v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-validation_of_the_incremental_prognostic_value_of_deceased_donation_pre_implantation_kidne_infographic.json
 
-## 9. WITHDRAWN: Combined triglyceride-glucose and frailty index (TyGFI) and risk of endometrial cancer in U.S. women aged >=45: NHANES 2011-2018 analysis integrating data engineering and machine learning with logistic modeling
+## 8. Deep Learning Reconstruction for Ultra-High-Resolution Photon-Counting CT of the Lung: Image Quality and Texture Characterization
 
-- Date: 2026-09-08
+- Date: 2026-09-09
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.02.26357105v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.02.26357105v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-08-medrxiv-withdrawn_combined_triglyceride_glucose_and_frailty_index_tygfi_and_risk_of_endometrial_ca_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.04.26361840v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.04.26361840v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-deep_learning_reconstruction_for_ultra_high_resolution_photon_counting_ct_of_the_lung_imag_infographic.json
+
+## 9. Sex-aware Cross-tissue Regulatory Transformer Identified Sexually Dimorphic Alzheimer's Disease Risk Loci and Causal Cellular Circuit
+
+- Date: 2026-09-09
+- Category: Biomedical AI
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362488v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362488v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-sex_aware_cross_tissue_regulatory_transformer_identified_sexually_dimorphic_alzheimer_s_di_infographic.json
+
+## 10. Language model-assisted label refinement for accurate sepsis detection from electronic health records
+
+- Date: 2026-09-09
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362428v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362428v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-language_model_assisted_label_refinement_for_accurate_sepsis_detection_from_electronic_hea_infographic.json
