@@ -1,84 +1,164 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-15
+Generated: 2026-09-16
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Performance and Fairness of a Peripheral Artery Disease Detection Model Across Patient Phenotypes and Health Systems
+## 1. KnowBench: Effort Reduction as a Unified, Deployment-Grounded Benchmark for Clinical AI
 
-- Date: 2026-09-09
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.19.26360861v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.19.26360861v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-performance_and_fairness_of_a_peripheral_artery_disease_detection_model_across_patient_phe_infographic.json
-
-## 2. Sensitive Glioma Detection and Recurrence Monitoring Using a Machine Learning Model Based on Circulating Monocytes
-
-- Date: 2026-09-09
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.05.29.26354409v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.05.29.26354409v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-sensitive_glioma_detection_and_recurrence_monitoring_using_a_machine_learning_model_based_infographic.json
-
-## 3. Algorithmic Multi-Domain Syndromic Profiling in Cerebrovascular Disease: A Deterministic Approach to Post-Stroke Neurocognitive Deficit Mapping
-
-- Date: 2026-09-09
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362502v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362502v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-algorithmic_multi_domain_syndromic_profiling_in_cerebrovascular_disease_a_deterministic_ap_infographic.json
-
-## 4. From Anatomy to Aneurysm: Morphological-Hemodynamic Coupling and Predictive Modeling in Aberrant Splenic Artery.
-
-- Date: 2026-09-10
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362579v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362579v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-10-medrxiv-from_anatomy_to_aneurysm_morphological_hemodynamic_coupling_and_predictive_modeling_in_abe_infographic.json
-
-## 5. Automated Skill Optimisation for False Presupposition Handling in Cancer Communication: SkillOpt Versus Conventional Prompt Engineering Across Language Models
-
-- Date: 2026-09-10
+- Date: 2026-09-14
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-10-medrxiv-automated_skill_optimisation_for_false_presupposition_handling_in_cancer_communication_ski_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.15794v1
+- PDF: https://arxiv.org/pdf/2609.15794v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-knowbench_effort_reduction_as_a_unified_deployment_grounded_benchmark_for_clinical_ai_infographic.json
 
-## 6. Consistent DNA methylation patterns enable accurate and interpretable cross-platform classification of central nervous system tumors
+## 2. A Vision-Language Foundation Model for Precise and Comprehensive Brain Tumor Diagnosis from Preoperative Multimodal Data
 
-- Date: 2026-09-09
+- Date: 2026-09-15
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.16597v1
+- PDF: https://arxiv.org/pdf/2609.16597v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-15-arxiv-a_vision_language_foundation_model_for_precise_and_comprehensive_brain_tumor_diagnosis_fro_infographic.json
+
+## 3. Knowledge-Enriched Structured EHR Features for 30-Day Hospital Readmission Prediction on MIMIC-IV
+
+- Date: 2026-09-14
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.15713v1
+- PDF: https://arxiv.org/pdf/2609.15713v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-knowledge_enriched_structured_ehr_features_for_30_day_hospital_readmission_prediction_on_m_infographic.json
+
+## 4. GRIN+: Towards Fast Yet Effective Machine Unlearning for Imbalanced Medical Data
+
+- Date: 2026-09-14
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2609.15571v1
+- PDF: https://arxiv.org/pdf/2609.15571v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-grin_towards_fast_yet_effective_machine_unlearning_for_imbalanced_medical_data_infographic.json
+
+## 5. Enhancing Accessibility of Medical Texts through Large Language Model-Driven Plain Language Adaptation
+
+- Date: 2026-09-15
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.17398v1
+- PDF: https://arxiv.org/pdf/2609.17398v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-15-arxiv-enhancing_accessibility_of_medical_texts_through_large_language_model_driven_plain_languag_infographic.json
+
+## 6. Concept-Grounded Reasoning with Prompt-Driven Localization for Interpretable Structured Report Generation
+
+- Date: 2026-09-14
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.15334v1
+- PDF: https://arxiv.org/pdf/2609.15334v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-concept_grounded_reasoning_with_prompt_driven_localization_for_interpretable_structured_re_infographic.json
+
+## 7. Japanese Stroke LLM Evaluation: A Conversational Benchmark for Safe Stroke Care in Japanese Using Large Language Models
+
+- Date: 2026-09-15
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.16739v1
+- PDF: https://arxiv.org/pdf/2609.16739v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-15-arxiv-japanese_stroke_llm_evaluation_a_conversational_benchmark_for_safe_stroke_care_in_japanese_infographic.json
+
+## 8. A primer on evaluation methods for large language models in healthcare
+
+- Date: 2026-09-13
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.14819v1
+- PDF: https://arxiv.org/pdf/2609.14819v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-13-arxiv-a_primer_on_evaluation_methods_for_large_language_models_in_healthcare_infographic.json
+
+## 9. Multi-Modal Tumor Survival Prediction via Graph-Guided Mixture of Experts
+
+- Date: 2026-09-12
 - Category: Biomedical AI
-- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.10.07.25337348v2
-- PDF: https://www.medrxiv.org/content/10.1101/2025.10.07.25337348v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-consistent_dna_methylation_patterns_enable_accurate_and_interpretable_cross_platform_class_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.14072v1
+- PDF: https://arxiv.org/pdf/2609.14072v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-12-arxiv-multi_modal_tumor_survival_prediction_via_graph_guided_mixture_of_experts_infographic.json
 
-## 7. Validation of the Incremental Prognostic Value of Deceased Donation Pre-implantation Kidney Transplant Biopsies through Comprehensive Lesion Quantification with Deep Learning
+## 10. Medical Knowledge Simplification for Patients in the Era of LLMs: A Case Study on Diabetes
 
-- Date: 2026-09-09
+- Date: 2026-09-14
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.15129v1
+- PDF: https://arxiv.org/pdf/2609.15129v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-medical_knowledge_simplification_for_patients_in_the_era_of_llms_a_case_study_on_diabetes_infographic.json
+
+## 11. ModaLens: Measuring Image Sensitivity in Report-Conditioned Medical VLMs
+
+- Date: 2026-09-14
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362425v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362425v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-validation_of_the_incremental_prognostic_value_of_deceased_donation_pre_implantation_kidne_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.15635v1
+- PDF: https://arxiv.org/pdf/2609.15635v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-modalens_measuring_image_sensitivity_in_report_conditioned_medical_vlms_infographic.json
 
-## 8. Deep Learning Reconstruction for Ultra-High-Resolution Photon-Counting CT of the Lung: Image Quality and Texture Characterization
+## 12. Memorisation bias in medical AI
 
-- Date: 2026-09-09
+- Date: 2026-09-15
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2609.17223v1
+- PDF: https://arxiv.org/pdf/2609.17223v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-15-arxiv-memorisation_bias_in_medical_ai_infographic.json
+
+## 13. Hyperbolic Contrastive Learning with Entailment for Spatial Transcriptomics
+
+- Date: 2026-09-14
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.04.26361840v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.04.26361840v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-deep_learning_reconstruction_for_ultra_high_resolution_photon_counting_ct_of_the_lung_imag_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.16207v1
+- PDF: https://arxiv.org/pdf/2609.16207v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-hyperbolic_contrastive_learning_with_entailment_for_spatial_transcriptomics_infographic.json
 
-## 9. Sex-aware Cross-tissue Regulatory Transformer Identified Sexually Dimorphic Alzheimer's Disease Risk Loci and Causal Cellular Circuit
+## 14. Benchmarking Intra-Patient 3D Deformable Multimodal Image Registration
 
-- Date: 2026-09-09
-- Category: Biomedical AI
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362488v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362488v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-sex_aware_cross_tissue_regulatory_transformer_identified_sexually_dimorphic_alzheimer_s_di_infographic.json
-
-## 10. Language model-assisted label refinement for accurate sepsis detection from electronic health records
-
-- Date: 2026-09-09
+- Date: 2026-09-14
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362428v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362428v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-09-medrxiv-language_model_assisted_label_refinement_for_accurate_sepsis_detection_from_electronic_hea_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.15669v1
+- PDF: https://arxiv.org/pdf/2609.15669v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-benchmarking_intra_patient_3d_deformable_multimodal_image_registration_infographic.json
+
+## 15. Psychosis involves a deficit of information compression in connected speech
+
+- Date: 2026-09-14
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.15522v1
+- PDF: https://arxiv.org/pdf/2609.15522v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-14-arxiv-psychosis_involves_a_deficit_of_information_compression_in_connected_speech_infographic.json
+
+## 16. Mobile CT Services for Rural, Regional, and Remote Areas: Current Practice and Future Integration with Telehealth and Regulatory-Authorised AI
+
+- Date: 2026-09-13
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2609.14347v1
+- PDF: https://arxiv.org/pdf/2609.14347v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-13-arxiv-mobile_ct_services_for_rural_regional_and_remote_areas_current_practice_and_future_integra_infographic.json
+
+## 17. Generative model of patient health states and pan-cancer risk stratification
+
+- Date: 2026-09-11
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-11-medrxiv-generative_model_of_patient_health_states_and_pan_cancer_risk_stratification_infographic.json
+
+## 18. MUMINS: Metadata-conditioned Uncertainty-aware Medical Image Next-state Synthesis
+
+- Date: 2026-09-15
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.17169v1
+- PDF: https://arxiv.org/pdf/2609.17169v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-15-arxiv-mumins_metadata_conditioned_uncertainty_aware_medical_image_next_state_synthesis_infographic.json
+
+## 19. PiPS: Post-Hoc Prototypical Explanations for Interpretable Semantic Segmentation
+
+- Date: 2026-09-15
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.16909v1
+- PDF: https://arxiv.org/pdf/2609.16909v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-15-arxiv-pips_post_hoc_prototypical_explanations_for_interpretable_semantic_segmentation_infographic.json
+
+## 20. Smarter by the Moment: Environment-Driven Dynamic Policies for Continual LLM Improvement
+
+- Date: 2026-09-15
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.16800v1
+- PDF: https://arxiv.org/pdf/2609.16800v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-15-arxiv-smarter_by_the_moment_environment_driven_dynamic_policies_for_continual_llm_improvement_infographic.json
