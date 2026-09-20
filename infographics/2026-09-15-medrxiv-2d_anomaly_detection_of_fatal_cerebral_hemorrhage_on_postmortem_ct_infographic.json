@@ -1,13 +1,13 @@
 {
-  "key_insight": "Diffusion-based reconstruction can flag fatal cerebral hemorrhage on postmortem CT, and adding weak image-level labels markedly improves anomaly detection.",
-  "clinical_relevance": "This could support faster forensic triage of brain PMCT by helping prioritize scans with suspected fatal intracranial hemorrhage.",
+  "key_insight": "Diffusion-based anomaly detection can identify fatal cerebral hemorrhage on postmortem brain CT, and weak image-level supervision performs best.",
+  "clinical_relevance": "This could support faster forensic triage of postmortem CT scans by highlighting likely hemorrhage cases for expert review.",
   "method": [
-    "Retrospective PMCT study of 265 healthy cases and 33 fatal intracranial hemorrhage cases from a single forensic institute.",
-    "Automated brain extraction, slice selection, and intensity normalization prepared the scans for modeling.",
-    "Compared an unsupervised AnoDDPM trained on healthy anatomy with a weakly supervised classifier-guided diffusion model using image-level death-cause labels."
+    "Retrospective PMCT dataset: 265 healthy subjects and 33 fatal intracranial hemorrhage cases.",
+    "Applied automated brain extraction, slice selection, and intensity normalization.",
+    "Trained two diffusion models: unsupervised AnoDDPM and a weakly supervised classifier-guided model."
   ],
-  "evidence_signal": "At the image level, AnoDDPM achieved AUROC 0.928 and AUPRC 0.794, while the classifier-guided model achieved AUROC 0.991 and AUPRC 0.960, each with bootstrap confidence intervals.",
-  "watch_item": "Single-center retrospective data with limited hemorrhage cases may restrict generalizability and the method still needs external validation before routine use.",
+  "evidence_signal": "On image-level evaluation, AnoDDPM achieved AUROC 0.928 and AUPRC 0.794, while the classifier-guided model improved to AUROC 0.991 and AUPRC 0.960, with 95% bootstrap confidence intervals.",
+  "watch_item": "Single-center retrospective data with limited hemorrhage cases may affect generalizability and real-world performance across scanners, protocols, and decomposed postmortem anatomy.",
   "hashtags": [
     "#MedicalImaging",
     "#ForensicAI",
@@ -19,6 +19,6 @@
   "paper_title": "2D anomaly detection of fatal cerebral hemorrhage on postmortem CT",
   "paper_date": "2026-09-15",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-09-19T11:42:58",
+  "generated_at": "2026-09-20T11:55:23",
   "generator": "openai"
 }
