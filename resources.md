@@ -1,9 +1,33 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-23
+Generated: 2026-09-25
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Identifying cohorts at elevated risk of cancers using generative modeling of patient health states
+## 1. Identifying Family Relationships from Electronic Health Records: A Machine Learning Approach
+
+- Date: 2026-09-21
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.18.26363428v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.18.26363428v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-identifying_family_relationships_from_electronic_health_records_a_machine_learning_approac_infographic.json
+
+## 2. Uncoded Clinical Features from Multilingual Electronic Health Records in Catalonia: Development and Validation Study
+
+- Date: 2026-09-22
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363030v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363030v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-uncoded_clinical_features_from_multilingual_electronic_health_records_in_catalonia_develop_infographic.json
+
+## 3. Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models
+
+- Date: 2026-09-21
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-fully_automated_abstraction_of_longitudinal_breast_oncology_records_with_off_the_shelf_lar_infographic.json
+
+## 4. Identifying cohorts at elevated risk of cancers using generative modeling of patient health states
 
 - Date: 2026-09-19
 - Category: Clinical NLP
@@ -11,23 +35,111 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-19-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt_infographic.json
 
-## 2. Extracting Symptoms of Psychotic Disorders from Clinical Notes using Natural Language Processing.
+## 5. Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech
 
-- Date: 2026-09-17
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363090v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363090v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-extracting_symptoms_of_psychotic_disorders_from_clinical_notes_using_natural_language_proc_infographic.json
-
-## 3. Psychological factors contribute more to chronic low back pain than spine pathology: An LLM-based analysis of radiology reports
-
-- Date: 2026-09-17
+- Date: 2026-09-21
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363055v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363055v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-psychological_factors_contribute_more_to_chronic_low_back_pain_than_spine_pathology_an_llm_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan_infographic.json
 
-## 4. Safety, Feasibility, and Preliminary Clinical Findings of an Oral Polypore Fungi Combination with Mild-to-Moderate COVID-19: A Randomized, Placebo-Controlled Phase I Clinical Trial
+## 6. Does Deep Learning Vascular Segmentation on CTA Improve Vertebral Artery Dissection Detection?
+
+- Date: 2026-09-22
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.20.26363486v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.20.26363486v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-does_deep_learning_vascular_segmentation_on_cta_improve_vertebral_artery_dissection_detect_infographic.json
+
+## 7. Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records
+
+- Date: 2026-09-22
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he_infographic.json
+
+## 8. Privacy-Aware Distillation of Large Language Models for Enhanced Multimorbidity Scoring
+
+- Date: 2026-09-21
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.19.26363476v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.19.26363476v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-privacy_aware_distillation_of_large_language_models_for_enhanced_multimorbidity_scoring_infographic.json
+
+## 9. Leveraging Large Language Models for Colorectal Cancer Symptom Extraction from MIMIC-IV Clinical Notes
+
+- Date: 2026-09-20
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26362961v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26362961v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-20-medrxiv-leveraging_large_language_models_for_colorectal_cancer_symptom_extraction_from_mimic_iv_cl_infographic.json
+
+## 10. Decision Support in Publicly Available Patient Information Policies at U.S. Osteopathic Medical Schools: A Vignette-Based Document Analysis
+
+- Date: 2026-09-21
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.18.26363437v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.18.26363437v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-decision_support_in_publicly_available_patient_information_policies_at_u_s_osteopathic_med_infographic.json
+
+## 11. Benchmarking open-source automated thigh muscle MRI segmentation algorithms
+
+- Date: 2026-09-22
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms_infographic.json
+
+## 12. The United States CADASIL Consortium: Baseline Findings from a Natural History Study
+
+- Date: 2026-09-22
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-the_united_states_cadasil_consortium_baseline_findings_from_a_natural_history_study_infographic.json
+
+## 13. Lessons learned from a trial on integrated and proactive care for patients with complex needs (Hotspotters project): a process evaluation
+
+- Date: 2026-09-21
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26362413v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26362413v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-lessons_learned_from_a_trial_on_integrated_and_proactive_care_for_patients_with_complex_ne_infographic.json
+
+## 14. Evaluation of accelerated whole-body diffusion weighted imaging with deep learning reconstruction in patients with metastatic prostate cancer: assessment of image quality and ADC estimates.
+
+- Date: 2026-09-21
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-evaluation_of_accelerated_whole_body_diffusion_weighted_imaging_with_deep_learning_reconst_infographic.json
+
+## 15. Automated Assessment of Hypernasality in Motor Speech Disorders Using Nasal Cognate Distinctiveness and Nasal Posterior Probability
+
+- Date: 2026-09-21
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.19.26363478v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.19.26363478v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-automated_assessment_of_hypernasality_in_motor_speech_disorders_using_nasal_cognate_distin_infographic.json
+
+## 16. The Online Health Safety Gap: Consensus Alignment Does Not Imply Safety in Peer-to-Peer Health Narratives.
+
+- Date: 2026-09-21
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.18.26363448v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.18.26363448v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-the_online_health_safety_gap_consensus_alignment_does_not_imply_safety_in_peer_to_peer_hea_infographic.json
+
+## 17. Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma
+
+- Date: 2026-09-21
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-incremental_predictive_value_and_representation_of_transcriptomic_features_for_immunothera_infographic.json
+
+## 18. Safety, Feasibility, and Preliminary Clinical Findings of an Oral Polypore Fungi Combination with Mild-to-Moderate COVID-19: A Randomized, Placebo-Controlled Phase I Clinical Trial
 
 - Date: 2026-09-19
 - Category: Drug Discovery
@@ -35,122 +147,18 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354267v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-19-medrxiv-safety_feasibility_and_preliminary_clinical_findings_of_an_oral_polypore_fungi_combination_infographic.json
 
-## 5. Sleep Variability From Routine Nursing Observation and Wearable Actigraphy for Early Risk Stratification in Acute Psychiatric Inpatients: Prospective Observational Study
+## 19. Genomic Landscape of Early-Onset and Familial Latin American Parkinson's Patients
 
-- Date: 2026-09-20
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.08.26362319v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.08.26362319v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-20-medrxiv-sleep_variability_from_routine_nursing_observation_and_wearable_actigraphy_for_early_risk_infographic.json
+- Date: 2026-09-22
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26359514v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26359514v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-genomic_landscape_of_early_onset_and_familial_latin_american_parkinson_s_patients_infographic.json
 
-## 6. Population-Scale Precision Safety in Oncology Reveals Clinical and Genetic Determinants of Systemic Therapy Toxicity
+## 20. Evaluating agentic simulation for local public health estimation
 
-- Date: 2026-09-17
+- Date: 2026-09-21
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363259v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363259v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-population_scale_precision_safety_in_oncology_reveals_clinical_and_genetic_determinants_of_infographic.json
-
-## 7. Machine Learning Approach to Identify Gut Microbiota Biomarkers in Patients with ST-Elevation Myocardial Infarction Presenting Primary Ventricular Tachyarrhythmias
-
-- Date: 2026-09-20
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363271v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363271v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-20-medrxiv-machine_learning_approach_to_identify_gut_microbiota_biomarkers_in_patients_with_st_elevat_infographic.json
-
-## 8. A longitudinal study of age-related traits and cognitive function: The Collaborative Amish Aging and Memory Project (CAAMP)
-
-- Date: 2026-09-20
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.17.26363351v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.17.26363351v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-20-medrxiv-a_longitudinal_study_of_age_related_traits_and_cognitive_function_the_collaborative_amish_infographic.json
-
-## 9. HCM-PhenotypeNet: Deep Multimodal Phenotyping of Hypertrophic Cardiomyopathy from Echocardiographic Video and Clinical Data
-
-- Date: 2026-09-17
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.13.26362954v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.13.26362954v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-hcm_phenotypenet_deep_multimodal_phenotyping_of_hypertrophic_cardiomyopathy_from_echocardi_infographic.json
-
-## 10. Deep learning-based assessment of ulcerative colitis activity from full-length endoscopic videos with spatial characterisation and histological correlation
-
-- Date: 2026-09-17
-- Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363201v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363201v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-deep_learning_based_assessment_of_ulcerative_colitis_activity_from_full_length_endoscopic_infographic.json
-
-## 11. Liwen Ablation versus Modified Morrow Myectomy for Obstructive Hypertrophic Cardiomyopathy: 1-Year Hemodynamic and Conduction Outcomes
-
-- Date: 2026-09-18
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26363181v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26363181v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-18-medrxiv-liwen_ablation_versus_modified_morrow_myectomy_for_obstructive_hypertrophic_cardiomyopathy_infographic.json
-
-## 12. 3D Segmentation of Pathological Muscle with a Physics-Informed Latent-Regularized U-Net
-
-- Date: 2026-09-17
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26363155v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26363155v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-3d_segmentation_of_pathological_muscle_with_a_physics_informed_latent_regularized_u_net_infographic.json
-
-## 13. Construction of a Standardized Time-Lapse Imaging Database and a Gradient Boosting Ensemble Framework for Integrating Zygote Morphokinetic Parameters with Conventional Embryo Assessment
-
-- Date: 2026-09-17
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.20.26359523v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.20.26359523v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-construction_of_a_standardized_time_lapse_imaging_database_and_a_gradient_boosting_ensembl_infographic.json
-
-## 14. Transcriptomic and Machine-Learning Prioritization of OCEL1 in Low Bone Mineral Density With Multivariable cis-MR
-
-- Date: 2026-09-20
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363200v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363200v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-20-medrxiv-transcriptomic_and_machine_learning_prioritization_of_ocel1_in_low_bone_mineral_density_wi_infographic.json
-
-## 15. Validating LLM judges for automated oversight of patient communication
-
-- Date: 2026-09-17
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363176v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363176v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-validating_llm_judges_for_automated_oversight_of_patient_communication_infographic.json
-
-## 16. Molecular subgroups of ALS patients with distinct survival outcomes identified through plasma proteomics
-
-- Date: 2026-09-17
-- Category: Biomedical AI
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26362998v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26362998v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-molecular_subgroups_of_als_patients_with_distinct_survival_outcomes_identified_through_pla_infographic.json
-
-## 17. Zero-Cost Digital Automation for Scalable Assessment in a National Mechanical Ventilation Curriculum
-
-- Date: 2026-09-17
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.11.26362682v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.11.26362682v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-zero_cost_digital_automation_for_scalable_assessment_in_a_national_mechanical_ventilation_infographic.json
-
-## 18. Population-scale burden analysis of rare damaging coding variants identifies novel risk genes for Alzheimer's disease and related dementias and Parkinson's disease and related disorders
-
-- Date: 2026-09-18
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.03.03.26347540v4
-- PDF: https://www.medrxiv.org/content/10.64898/2026.03.03.26347540v4.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-18-medrxiv-population_scale_burden_analysis_of_rare_damaging_coding_variants_identifies_novel_risk_ge_infographic.json
-
-## 19. Antihypertensive Pharmacotherapy Gaps in Nigeria: A Predictive Machine Learning Analysis of Treatment Uptake Amid Macroeconomic Shock, Using NDHS 2023-24
-
-- Date: 2026-09-17
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.11.26362863v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.11.26362863v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-17-medrxiv-antihypertensive_pharmacotherapy_gaps_in_nigeria_a_predictive_machine_learning_analysis_of_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-evaluating_agentic_simulation_for_local_public_health_estimation_infographic.json
