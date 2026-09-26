@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-25
+Generated: 2026-09-26
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Identifying Family Relationships from Electronic Health Records: A Machine Learning Approach
@@ -27,15 +27,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-fully_automated_abstraction_of_longitudinal_breast_oncology_records_with_off_the_shelf_lar_infographic.json
 
-## 4. Identifying cohorts at elevated risk of cancers using generative modeling of patient health states
-
-- Date: 2026-09-19
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-19-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt_infographic.json
-
-## 5. Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech
+## 4. Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech
 
 - Date: 2026-09-21
 - Category: Medical Imaging
@@ -43,7 +35,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan_infographic.json
 
-## 6. Does Deep Learning Vascular Segmentation on CTA Improve Vertebral Artery Dissection Detection?
+## 5. Does Deep Learning Vascular Segmentation on CTA Improve Vertebral Artery Dissection Detection?
 
 - Date: 2026-09-22
 - Category: Medical Imaging
@@ -51,7 +43,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.20.26363486v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-does_deep_learning_vascular_segmentation_on_cta_improve_vertebral_artery_dissection_detect_infographic.json
 
-## 7. Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records
+## 6. Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records
 
 - Date: 2026-09-22
 - Category: Diagnostics
@@ -59,13 +51,21 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he_infographic.json
 
-## 8. Privacy-Aware Distillation of Large Language Models for Enhanced Multimorbidity Scoring
+## 7. Privacy-Aware Distillation of Large Language Models for Enhanced Multimorbidity Scoring
 
 - Date: 2026-09-21
 - Category: Health Systems
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.19.26363476v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.19.26363476v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-privacy_aware_distillation_of_large_language_models_for_enhanced_multimorbidity_scoring_infographic.json
+
+## 8. An auditable evidence compiler for large language model-assisted systematic reviews
+
+- Date: 2026-09-22
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-an_auditable_evidence_compiler_for_large_language_model_assisted_systematic_reviews_infographic.json
 
 ## 9. Leveraging Large Language Models for Colorectal Cancer Symptom Extraction from MIMIC-IV Clinical Notes
 
@@ -139,21 +139,21 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-21-medrxiv-incremental_predictive_value_and_representation_of_transcriptomic_features_for_immunothera_infographic.json
 
-## 18. Safety, Feasibility, and Preliminary Clinical Findings of an Oral Polypore Fungi Combination with Mild-to-Moderate COVID-19: A Randomized, Placebo-Controlled Phase I Clinical Trial
-
-- Date: 2026-09-19
-- Category: Drug Discovery
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354267v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354267v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-19-medrxiv-safety_feasibility_and_preliminary_clinical_findings_of_an_oral_polypore_fungi_combination_infographic.json
-
-## 19. Genomic Landscape of Early-Onset and Familial Latin American Parkinson's Patients
+## 18. Genomic Landscape of Early-Onset and Familial Latin American Parkinson's Patients
 
 - Date: 2026-09-22
 - Category: Medical Imaging
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26359514v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26359514v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-genomic_landscape_of_early_onset_and_familial_latin_american_parkinson_s_patients_infographic.json
+
+## 19. Soft Temporal Scoring Using a Foundation Model: Optimal Frame Selection for Improved ONSD Measurement in Ultrasound Videos
+
+- Date: 2026-09-22
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26362872v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26362872v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-soft_temporal_scoring_using_a_foundation_model_optimal_frame_selection_for_improved_onsd_m_infographic.json
 
 ## 20. Evaluating agentic simulation for local public health estimation
 

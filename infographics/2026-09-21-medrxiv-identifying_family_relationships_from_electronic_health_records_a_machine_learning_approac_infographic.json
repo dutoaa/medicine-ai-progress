@@ -1,24 +1,24 @@
 {
-  "key_insight": "Machine learning on EHR data can accurately infer several family relationship types, especially when training is focused on records with shared contact information.",
-  "clinical_relevance": "Automatically identifying family links in health records could improve patient-centered research and healthcare workflows, but only for relationships that are detectable from existing data.",
+  "key_insight": "A machine-learning pipeline can infer family relationships from EHR data with high precision by combining record linkage, feature engineering, and iterative model refinement.",
+  "clinical_relevance": "Accurate family-relationship inference could improve patient-centered research and care coordination, but it is best suited to secondary data uses rather than direct clinical decision-making.",
   "method": [
-    "Random Forest classifiers for Mother-Child, Father-Child, Sibling-Sibling, Twin-Twin, and Partner-Partner relationships",
-    "Four-stage refinement: initial training, multicollinearity reduction, feature engineering, and training-data refinement",
-    "Used INPC EHR data plus Indiana Natality records as the gold standard, with negative pairs selected through blocking and similarity filters"
+    "Trained Random Forest classifiers for five relationship types: mother-child, father-child, sibling-sibling, twin-twin, and partner-partner.",
+    "Used Indiana EHR and natality data, with verified natality links as the gold standard and negative pairs generated through blocking and similarity filtering.",
+    "Refined models in four stages: initial training, multicollinearity reduction, feature engineering, and training-data restriction to pairs with shared contact features."
   ],
-  "evidence_signal": "Across the five relationship types, the models reached precision of 0.92-1.00, recall of 0.97-1.00, and F1 of 0.94-1.00 in large-scale evaluation.",
-  "watch_item": "A substantial share of true relationships had no shared contact information in EHRs, making them structurally undetectable and limiting real-world coverage.",
+  "evidence_signal": "Across large Indiana datasets, the models achieved precision of 0.92-1.00, recall of 0.97-1.00, and F1 scores of 0.94-1.00, with high-confidence predictions capturing 77-99% of true positives.",
+  "watch_item": "A substantial share of verified relationships had no shared contact information in the EHR and were structurally undetectable, so real-world performance may depend heavily on data completeness and linkage quality.",
   "hashtags": [
-    "#AIinHealth",
-    "#EHR",
     "#MachineLearning",
-    "#FamilyLinkage",
-    "#HealthSystems"
+    "#EHR",
+    "#HealthInformatics",
+    "#PatientCenteredResearch",
+    "#RecordLinkage"
   ],
   "paper_id": "2026-09-21-medrxiv-identifying_family_relationships_from_electronic_health_records_a_machine_learning_approac",
   "paper_title": "Identifying Family Relationships from Electronic Health Records: A Machine Learning Approach",
   "paper_date": "2026-09-21",
   "paper_category": "Health Systems",
-  "generated_at": "2026-09-25T12:25:10",
+  "generated_at": "2026-09-26T11:56:44",
   "generator": "openai"
 }
