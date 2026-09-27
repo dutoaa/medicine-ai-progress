@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-26
+Generated: 2026-09-27
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Identifying Family Relationships from Electronic Health Records: A Machine Learning Approach
@@ -67,13 +67,13 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-an_auditable_evidence_compiler_for_large_language_model_assisted_systematic_reviews_infographic.json
 
-## 9. Leveraging Large Language Models for Colorectal Cancer Symptom Extraction from MIMIC-IV Clinical Notes
+## 9. Assessing the Performance of Artificial Intelligence on Anesthesiology In-Training Examinations and Applicability in Medical Education
 
-- Date: 2026-09-20
+- Date: 2026-09-22
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26362961v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26362961v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-20-medrxiv-leveraging_large_language_models_for_colorectal_cancer_symptom_extraction_from_mimic_iv_cl_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363591v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363591v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-assessing_the_performance_of_artificial_intelligence_on_anesthesiology_in_training_examina_infographic.json
 
 ## 10. Decision Support in Publicly Available Patient Information Policies at U.S. Osteopathic Medical Schools: A Vignette-Based Document Analysis
 
