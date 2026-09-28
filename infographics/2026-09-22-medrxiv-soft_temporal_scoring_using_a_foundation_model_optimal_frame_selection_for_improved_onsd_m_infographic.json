@@ -1,24 +1,24 @@
 {
-  "key_insight": "A foundation-model-based temporal scorer can identify the best ultrasound frame for ONSD measurement by learning from sparse, softly weighted labels around expert-selected key frames.",
-  "clinical_relevance": "This could make optic nerve sheath diameter assessment more accessible and consistent in low-resource settings by reducing dependence on highly skilled manual frame selection.",
+  "key_insight": "A foundation-model-based temporal scorer can pick the best ultrasound frame for optic nerve sheath diameter measurement using sparse labels and soft targets.",
+  "clinical_relevance": "This could make ONSD ultrasound easier to use in low-resource settings by helping less experienced operators identify frames suitable for intracranial pressure assessment.",
   "method": [
-    "Extract per-frame embeddings from an ultrasound foundation model (USFM).",
-    "Train a lightweight temporal head with Gaussian soft labels around labeled key frames.",
-    "Rank frames in each video and select the top-scoring frame for ONSD assessment."
+    "Extract per-frame embeddings from an ultrasound foundation model.",
+    "Feed embeddings into a lightweight temporal head to score each video frame.",
+    "Train with Gaussian soft labels around key frames instead of hard 0/1 labels."
   ],
-  "evidence_signal": "Evaluated with subject-level cross-validation on 18 subjects and 323 ultrasound videos across nine sweep types, the model found an optimal frame in 82.2% of sweeps versus 49.2% for the strongest training-free baseline and 71.9% for hard-label classification.",
-  "watch_item": "Performance depends on having representative ultrasound acquisition data, and results may not generalize without validation across devices, operators, and patient populations.",
+  "evidence_signal": "In subject-level cross-validation on 18 subjects and 323 videos across nine sweep types, the method selected an optimal frame in 82.2% of evaluated sweeps, outperforming the strongest training-free baseline and hard-label classification.",
+  "watch_item": "Performance depends on the quality of sparse key-frame labels and still needs validation in broader, real-world ultrasound workflows before deployment.",
   "hashtags": [
     "#MedicalImaging",
     "#UltrasoundAI",
     "#FoundationModel",
-    "#MachineLearning",
-    "#ICP"
+    "#IntracranialPressure",
+    "#PointOfCare"
   ],
   "paper_id": "2026-09-22-medrxiv-soft_temporal_scoring_using_a_foundation_model_optimal_frame_selection_for_improved_onsd_m",
   "paper_title": "Soft Temporal Scoring Using a Foundation Model: Optimal Frame Selection for Improved ONSD Measurement in Ultrasound Videos",
   "paper_date": "2026-09-22",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-09-27T12:35:33",
+  "generated_at": "2026-09-28T14:42:50",
   "generator": "openai"
 }

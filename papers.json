@@ -1,56 +1,5 @@
 [
   {
-    "id": "2026-09-21-medrxiv-identifying_family_relationships_from_electronic_health_records_a_machine_learning_approac",
-    "doi": "10.64898/2026.09.18.26363428",
-    "date": "2026-09-21",
-    "title": "Identifying Family Relationships from Electronic Health Records: A Machine Learning Approach",
-    "authors": "Pundir, A.; Hill, A.; Kahn, M. G.; Kwan, B. M.; Lindberg, D. M.; Grannis, S. J.; Schleyer, T. K.; Schilling, L. M.; Kautz, S. V.; Ong, T. C.",
-    "abstract": "ObjectiveTo develop and evaluate machine learning methods for automated identification of family relationships from electronic health records (EHRs). We employed Random Forest classifiers to identify five relationship types: Mother-Child, Father-Child, Sibling-Sibling, Twin-Twin, and Partner-Partner, using a four-stage iterative refinement process to improve precision for patient-centered outcomes research (PCOR) and healthcare applications. Materials and MethodsWe used two large-scale Indiana datasets: the Indiana Network for Patient Care (INPC), comprising approximately 15 million unique individuals across approximately 45 million medical records, and the Indiana Natality dataset (birth certificates, 1970-2024), which served as the gold standard. Positive cases were derived by linking verified relationships from Natality records to INPC using a shared Global Identifier. Negative cases were drawn from a three-tier blocking strategy combined with sliding window restriction and similarity scoring, which together reduced the comparison space from over 1014 potential pairs to approximately 121 million candidates. Five Random Forest classifiers underwent four-stage iterative refinement: initial training, feature removal for multicollinearity, feature engineering to address systematic errors, and training-data refinement restricted to relationship pairs with at least one shared contact feature. ResultsThe models achieved precision of 0.92 to 1.00, recall of 0.97 to 1.00, and F1 scores of 0.94 to 1.00 across all relationship types (Mother-Child 0.97, Father-Child 0.98, Sibling-Sibling 0.98, Twin-Twin 1.00, Partner-Partner 0.94). Between 15% and 78% of Natality-verified relationships lacked any shared contact information in INPC and were structurally undetectable by record linkage; restricting training and evaluation to linkable pairs improved precision, and training-data refinement improved F1-scores by a further 0.02-0.04 for the Mother-Child, Father-Child, and Sibling models. High-confidence predictions (probability [&ge;] 0.9) captured 77-99% of true positives. Age difference was the primary predictor for parent-child and twin relationships, while phone number similarity was most important for siblings. DiscussionThe framework identifies family relationships from standard demographic fields available in most EHR systems. The iterative refinement approach shows how systematic error analysis can guide methodological improvements. Training-data refinement addresses a constraint in EHR-based family linkage: not all verified biological relationships have overlapping demographic footprints in healthcare data. Unlike rule-based approaches, the framework provides probability scores that enable configurable deployment thresholds. ConclusionThe Random Forest models demonstrate high performance suitable for large-scale research deployment and are ready for testing in clinical applications rather than immediate widespread clinical use. The methodology can be adapted to other EHR systems, supporting family-centered study design in patient-centered outcomes research.",
-    "category": "Health Systems",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363428v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363428v1.full.pdf"
-      }
-    ],
-    "score": 81,
-    "infographic": {
-      "key_insight": "Machine learning on EHR data can accurately infer several family relationship types, including parent-child, sibling, twin, and partner links.",
-      "clinical_relevance": "Automatically identifying family ties could strengthen patient-centered research and improve context-aware healthcare applications by linking related records at scale.",
-      "method": [
-        "Used Random Forest classifiers to predict five relationship types: mother-child, father-child, sibling-sibling, twin-twin, and partner-partner.",
-        "Built and refined models in four stages: initial training, multicollinearity reduction, feature engineering, and training-data restriction to linkable pairs.",
-        "Compared large Indiana EHR data (INPC) against natality birth certificate records as the gold standard."
-      ],
-      "evidence_signal": "Across relationship types, models achieved precision of 0.92-1.00, recall of 0.97-1.00, and F1 scores of 0.94-1.00, with high-confidence predictions capturing 77-99% of true positives.",
-      "watch_item": "A substantial share of verified relationships had no shared contact information in the EHR, limiting detectability and potentially reducing real-world coverage.",
-      "hashtags": [
-        "#MachineLearning",
-        "#EHR",
-        "#HealthInformatics",
-        "#PatientCenteredResearch",
-        "#FamilyLinkage"
-      ],
-      "paper_id": "2026-09-21-medrxiv-identifying_family_relationships_from_electronic_health_records_a_machine_learning_approac",
-      "paper_title": "Identifying Family Relationships from Electronic Health Records: A Machine Learning Approach",
-      "paper_date": "2026-09-21",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-09-27T12:34:50",
-      "generator": "openai"
-    }
-  },
-  {
     "id": "2026-09-22-medrxiv-uncoded_clinical_features_from_multilingual_electronic_health_records_in_catalonia_develop",
     "doi": "10.64898/2026.09.16.26363030",
     "date": "2026-09-22",
@@ -75,131 +24,233 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363030v1.full.pdf"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "A privacy-preserving local hybrid system using a small language model plus rules can accurately extract uncoded urinary tract infection features from multilingual primary-care EHR free text.",
-      "clinical_relevance": "This could help convert narrative notes into structured data for research, quality improvement, and risk stratification without sending sensitive records to external cloud LLMs.",
+      "key_insight": "A local hybrid pipeline combining a small language model with regular expressions can accurately extract uncoded urinary tract infection features from Catalan primary care notes without sending data to the cloud.",
+      "clinical_relevance": "This approach could help turn free-text EHR narratives into usable structured data for research and quality improvement while better preserving privacy.",
       "method": [
-        "Ran Phi4-mini (3.8B) locally inside the institutional firewall with Ollama.",
-        "Combined clinician-refined prompts with deterministic regular expressions to extract six UTI features.",
-        "Validated against a double-blind clinician gold standard and an adversarial synthetic noise dataset."
+        "Deployed the open-weight Phi4-mini model inside the institutional firewall using Ollama.",
+        "Refined prompts with clinicians and added deterministic regular expressions after model output.",
+        "Validated on both real clinician-reviewed records and noisy synthetic notes designed to stress-test the pipeline."
       ],
-      "evidence_signal": "On 15,498 EHR narratives from 2,962 patients, the pipeline identified 4,663 feature occurrences and achieved 93.8% accuracy in real-world clinician validation, with 83.6% sensitivity and 96.6% specificity.",
-      "watch_item": "Performance was validated on a focused UTI feature set, so broader deployment may require retraining, local language adaptation, and monitoring for edge cases or site-specific documentation styles.",
+      "evidence_signal": "In 15,498 MEAP narratives from 2,962 patients, the pipeline found 4,663 feature occurrences and achieved 93.8% accuracy in real-world clinician validation.",
+      "watch_item": "Performance was strong, but the approach still needs careful local calibration and oversight because multilingual notes, noisy text, and feature-specific errors can affect reliability.",
       "hashtags": [
         "#ClinicalNLP",
-        "#MedicalAI",
+        "#HealthAI",
         "#EHR",
-        "#LLM",
-        "#PrivacyPreservingAI"
+        "#PrivacyPreservingAI",
+        "#MedicalLLM"
       ],
       "paper_id": "2026-09-22-medrxiv-uncoded_clinical_features_from_multilingual_electronic_health_records_in_catalonia_develop",
       "paper_title": "Uncoded Clinical Features from Multilingual Electronic Health Records in Catalonia: Development and Validation Study",
       "paper_date": "2026-09-22",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-09-27T12:34:53",
+      "generated_at": "2026-09-28T14:42:17",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-21-medrxiv-fully_automated_abstraction_of_longitudinal_breast_oncology_records_with_off_the_shelf_lar",
-    "doi": "10.64898/2026.03.23.26349012",
-    "date": "2026-09-21",
-    "title": "Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models",
-    "authors": "Dickerson, J. C.; McClure, M. B.; Shaw, M.; Reitsma, M. B.; Dalal, N. H.; Curtis, C.; Kurian, A. W.; Caswell-Jin, J. L.",
-    "abstract": "Manual chart abstraction is a major bottleneck in clinical research. In oncology, important outcomes are often documented only in clinical notes. We developed an open-source pipeline that, in a HIPAA-compliant setting, uses general-purpose large language models (LLMs) to abstract variables from longitudinal patient records without fine-tuning or hand-selecting input documents. We randomly selected 100 patients from a complex institutional breast cancer cohort and compared four LLMs with oncologist abstraction, genetic testing records, and, for select variables, research coordinator abstraction. The unedited charts contained a median of 3,100 pages of text, 7 lines of therapy, and 6.5 years of follow-up. Across the two best-performing models, GPT-5 and Gemini 2.5 Pro, the pipeline achieved 90%-100% concordance for recurrence, BRCA1/2, hormone receptor, HER2, clinical stage, PIK3CA, and ESR1 status. Anti-cancer drug identification was comparable to that of a second oncologist. Therapy-line reconstruction was less accurate than a second oncologist; all four LLMs outperformed research coordinators on both tasks. In a separate cohort of 97 patients, the unmodified pipeline showed similar performance for recurrence detection. These findings suggest that LLMs may enable scalable abstraction from narrative medical records, but replication and validation across institutions and diseases are needed.",
+    "id": "2026-09-23-medrxiv-auditing_the_human_llm_autonomy_gap_in_clinical_ethics_development_and_application_of_the",
+    "doi": "10.64898/2026.09.22.26363256",
+    "date": "2026-09-23",
+    "title": "Auditing the Human LLM Autonomy Gap in Clinical Ethics: Development and Application of the Autonomy Index Across 50 Clinical Ethics Vignettes",
+    "authors": "Dutta Roy, T.; Brendel, R. W.",
+    "abstract": "Background.Respect for autonomy is central to biomedical ethics but is rarely assessed with a structured, reproducible measure. This gap matters as patients, families, and clinicians increasingly use general-purpose language models for health-related questions. We developed the Autonomy Index (AIx) to characterize autonomous agency in clinical-ethics vignettes and compared ratings from trained human reviewers with ratings from current language models. Methods.We reviewed ten decisional-capacity instruments and classified them by target construct into consent capacity, decision capacity, and functional autonomy, identifying a region of autonomous agency (values, deliberation, and enactment) that existing instruments measure least well. The resulting thirteen-item instrument scores four domains: Values Awareness, Factual Understanding, Rational Deliberation, and Intentional Action, on a five-point ordinal scale with an explicit not-applicable option; the External Constraint Index and Support Provided Index are reported separately. Nine models scored 89 clinical vignettes. We selected 50 vignettes by model-score tier and inter-model disagreement, then obtained 173 ratings from 30 clinical and bioethics-informed reviewers and 3,431 valid scores from eight models in July 2026. The prespecified comparison summarized each source within vignette and estimated the paired human-minus-model difference; mixed-effects, domain, agreement, and variance-component analyses were secondary or exploratory. Human data were collected under Harvard Longwood Campus IRB protocol IRB26-0146. Results.Across the selected 50-vignette comparison set, human and model composites were strongly associated (Pearson r = 0.781, P = 2.3 x 10-{superscript 1}{superscript 1}; Spearman {rho} = 0.775). The human mean was 50.2 and the model mean was 39.2, a paired human-minus-model difference of 11.0 index points (95% CI, 6.3 to 15.8; P = 2.6 x 10-; d_z = 0.66). Human means exceeded model means on 36 of 50 vignettes. Bland-Altman limits of agreement were wide (-21.9 to 43.9), indicating substantial case-level variation. Mean differences were positive in all four domains: Factual Understanding, 13.7; Intentional Action, 12.3; Values Awareness, 10.4; and Rational Deliberation, 7.9 points; the joint domain-by-source test did not detect heterogeneity (Wald {chi}{superscript 2}[3] = 2.27, P = 0.52). Vignette content accounted for 80.9% of score variance, whereas source accounted for 0.7%. Models never selected not applicable; human reviewers did so for 22.5% of item responses. Among 19 vignettes with at least four human ratings, 9 had human-minus-model differences greater than 15 points and none had a difference below -15 points. Conclusions.In this deliberately selected 50-vignette set, trained reviewers assigned higher autonomy scores than the tested general-purpose language models on average, while the two sources ranked cases similarly. Wide limits of agreement and variation across well-rated vignettes preclude treating the mean difference as a prediction for an individual case. Because the comparison set was selected using prior model scores, reviewers were a convenience sample, and human ratings are a reference standard rather than ground truth, the findings should be interpreted as evidence of systematic divergence in this sample, not proof that models underestimate patient capacity. External validation in prospectively sampled cases with denser human rating is required before clinical use.",
     "category": "Clinical NLP",
     "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "oncology",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "primary_category": "medical ethics",
     "categories": [
-      "oncology"
+      "medical ethics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363256v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363256v1.full.pdf"
       }
     ],
     "score": 70,
     "infographic": {
-      "key_insight": "Off-the-shelf large language models can automatically abstract many key breast oncology variables from very long longitudinal charts with high agreement to expert review.",
-      "clinical_relevance": "This could reduce manual chart-review burden in cancer research and make retrospective data extraction faster and more scalable, while still needing careful validation before broader use.",
+      "key_insight": "The Autonomy Index (AIx) offers a structured way to measure autonomous agency in clinical ethics, and human reviewers scored vignettes higher than language models overall.",
+      "clinical_relevance": "This suggests general-purpose LLMs may underrepresent patient autonomy in ethics-related health responses, so their outputs should be checked carefully in autonomy-sensitive settings.",
       "method": [
-        "Open-source pipeline used general-purpose LLMs without fine-tuning or manual document selection.",
-        "Tested on 100 randomly selected breast cancer patients with long records and compared outputs against oncologist abstraction and other records.",
-        "A separate 97-patient cohort was used to check recurrence detection performance."
+        "Built a 13-item Autonomy Index spanning Values Awareness, Factual Understanding, Rational Deliberation, and Intentional Action.",
+        "Compared trained human reviewers with multiple language models across 50 selected clinical ethics vignettes.",
+        "Used paired and mixed-effects analyses, plus agreement and variance checks, to compare human vs model scoring."
       ],
-      "evidence_signal": "In the best models, GPT-5 and Gemini 2.5 Pro, the pipeline reached 90%-100% concordance for several key variables and outperformed research coordinators on recurrence and therapy-line tasks.",
-      "watch_item": "Performance was lower for therapy-line reconstruction, and the approach still requires replication and validation across institutions, cohorts, and diseases.",
+      "evidence_signal": "Across the 50-vignette comparison set, human and model scores were strongly correlated (r=0.781), but humans scored higher by 11.0 points on average and case-level disagreement was wide.",
+      "watch_item": "The vignette-based design and wide limits of agreement mean the index may not transfer cleanly to real-world patient encounters or to all clinical contexts.",
       "hashtags": [
-        "#AIinMedicine",
         "#ClinicalNLP",
-        "#BreastCancerResearch",
-        "#LargeLanguageModels",
-        "#HealthInformatics"
+        "#AIEthics",
+        "#Autonomy",
+        "#LLMEvaluation",
+        "#Bioethics"
       ],
-      "paper_id": "2026-09-21-medrxiv-fully_automated_abstraction_of_longitudinal_breast_oncology_records_with_off_the_shelf_lar",
-      "paper_title": "Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models",
-      "paper_date": "2026-09-21",
+      "paper_id": "2026-09-23-medrxiv-auditing_the_human_llm_autonomy_gap_in_clinical_ethics_development_and_application_of_the",
+      "paper_title": "Auditing the Human LLM Autonomy Gap in Clinical Ethics: Development and Application of the Autonomy Index Across 50 Clinical Ethics Vignettes",
+      "paper_date": "2026-09-23",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-09-27T12:34:55",
+      "generated_at": "2026-09-28T14:42:20",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-21-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan",
-    "doi": "10.64898/2026.09.18.26363435",
-    "date": "2026-09-21",
-    "title": "Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech",
-    "authors": "Pugalenthi, L. S.; Collins, A. P.; Colomer, N. M.; Marques-Kiderle, S.-K.; Rodriguez, C. W.; Chaires, J. C. H.; Motta, W. A.; Filella-Merce, J.; Li, J. J.; Llanos, F.; Zhu, N.; Rubio-Guerra, S.; Illan-Gala, I.; Borrego-Ecija, S.; Llado, A.; Fortea, J.; Lleo, A.; Sanchez-Valle, R.; Henry, M. L.; Santos, M. A. S.; Grasso, S. M.",
-    "abstract": "BackgroundThe nonfluent/agrammatic (nfv) and logopenic (lv) variants of primary progressive aphasia (PPA) disrupt fluency through distinct underlying neurocognitive mechanisms. Differential diagnosis currently requires hours of cognitive-linguistic testing, with additional barriers for bilingual patients due to a shortage of bilingual service providers and a lack of well-established assessment methods. In English speakers, a promising automated approach for differentiating nfvPPA and lvPPA is to derive speech-timing measures and linguistic features from connected speech as input to machine learning (ML) classification algorithms. To our knowledge, this approach has not been evaluated in the context of bilingualism. MethodsThirty-four Catalan-Spanish simultaneous bilingual patients (lv = 24, nfv = 10) were asked to describe a picture (Western Aphasia Battery Picnic Scene) in both their dominant and non-dominant language. From the participants recorded response, we derived four feature sets: speech-timing measures, derived with PRAAT; word-level parameters, derived from corpora; linguistic features, derived with the natural language processing tools SpaCy and CLAN; image-text congruence scores, derived with the vision-language encoder Multilingual-CLIP. Each feature set was fed into classification algorithms for differentiating nfv from lv in participants non-dominant and dominant samples. Then, we combined each feature sets classifier into an ensemble model. We used the McNemar test to determine the statistical significance of differences in classification performance between responses in the non-dominant and dominant language. ResultsThe best-performing classifier achieved F1 macro scores of 93% (word-level parameters) and 92% (ensemble) in the non-dominant and dominant language, respectively. For all feature sets and ensemble models, classification performance did not significantly differ between the non-dominant and dominant language. Ensemble modeling did not significantly improve classification performance in either language. ConclusionsTaking advantage of recent advances in multilingual multimodal machine learning, we accurately differentiate Spanish-Catalan bilingual individuals with nfvPPA and lvPPA using a largely automated, time-efficient (1-2 minutes), and ecologically valid connected-speech-based approach. Future directions include evaluating this approach on larger datasets balanced by PPA subtype, using automated transcriptions of connected speech. Our study represents a step towards addressing current inequities in PPA differential diagnosis for non-English-speaking bilingual speakers. Trial registrationData from the clinical trial NCT05741853 was retrospectively analyzed",
-    "category": "Medical Imaging",
+    "id": "2026-09-23-medrxiv-evaluation_of_an_ai_powered_patient_education_application_in_bariatric_surgery_a_prospecti",
+    "doi": "10.64898/2026.09.16.26363276",
+    "date": "2026-09-23",
+    "title": "Evaluation of an AI-Powered Patient Education Application in Bariatric Surgery: A Prospective Mixed-Methods Feasibility Study",
+    "authors": "Samaan, J. S.; Nguyen, S. T.; Hamamah, S.; Tran, A.; Ceasar, R. C.; Wolfe, N.; Yu, T.; Chavez, D.; Rajeev, N.; Advani, R.; Watson, R.; Abu Dayyeh, B.; Sandhu, K.; Wong, H. J.; Tatonetti, N. P.; Samakar, K.",
+    "abstract": "BackgroundPatient education is critical to safe and effective postoperative bariatric surgery care. Large language models (LLMs) may improve access to personalized patient education but evidence regarding direct patient use in clinical settings remains limited. We evaluated BariBot, an LLM-powered educational application for patients undergoing bariatric surgery. MethodsWe conducted a prospective, single-arm mixed-methods feasibility study at a tertiary academic medical center from May 2024 to May 2025. Adult patients undergoing bariatric surgery used BariBot independently on postoperative day 1. The application provided conversational postoperative education and adapted language complexity to participants educational attainment. Outcomes included feasibility, usability, acceptability, perceived trustworthiness, and anticipated future use. Usability was assessed using the System Usability Scale (SUS). Immediately after BariBot use, participants completed a semi-structured qualitative interview assessing acceptability, perceived trustworthiness, and anticipated future use. Interview transcripts underwent thematic analysis. ResultsSixteen participants completed the BariBot use session, SUS assessment, and post-intervention interview. No technical failures prevented application use, and no participant requested early discontinuation. The median SUS score was 91.3 (IQR, 81.3-98.1), consistent with excellent perceived usability. Qualitative analysis showed that participants valued the applications immediacy, structured responses, conversational context, ability to address follow-up questions, judgement-free nature, and future availability between clinical encounters. Trust was strengthened by alignment with prior clinical guidance and perceived institutional association, although participants emphasized the need for transparency, clinician oversight, and use as an adjunct rather than a replacement of clinician guidance. ConclusionsBariBot was feasible to implement and was associated with high perceived usability and acceptability postoperatively after bariatric surgery. Larger, longitudinal, and comparative studies are needed to evaluate safety during unsupervised use and determine whether LLM-based educational applications improve patient understanding, engagement, and clinical outcomes.",
+    "category": "Clinical NLP",
     "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "neurology",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "primary_category": "health informatics",
     "categories": [
-      "neurology"
+      "health informatics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363276v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363276v1.full.pdf"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "Multilingual multimodal machine learning can accurately distinguish nonfluent/agrammatic from logopenic primary progressive aphasia in Catalan-Spanish bilinguals using connected speech from either language.",
-      "clinical_relevance": "This approach could support faster, language-flexible screening for bilingual patients when specialized bilingual aphasia assessment is limited.",
+      "key_insight": "An LLM-powered bariatric surgery education app (BariBot) was feasible to use postoperatively and was rated highly usable and acceptable by patients.",
+      "clinical_relevance": "This suggests AI chat tools may support patient education between clinical encounters, but they should complement—rather than replace—clinician guidance.",
       "method": [
-        "34 Catalan-Spanish simultaneous bilingual patients were recorded describing a picture in both dominant and non-dominant language.",
-        "Four feature sets were extracted: speech timing, word-level, linguistic, and image-text congruence.",
-        "Multiple classifiers and an ensemble model were tested to separate nfvPPA from lvPPA."
+        "Prospective, single-arm mixed-methods feasibility study at a tertiary academic medical center.",
+        "Adult bariatric surgery patients used BariBot independently on postoperative day 1.",
+        "Usability measured with the System Usability Scale (SUS) plus post-use semi-structured interviews."
       ],
-      "evidence_signal": "In this sample, the best F1 macro scores reached 93% with word-level features in the non-dominant language and 92% with the ensemble in the dominant language, with no significant performance difference between languages.",
-      "watch_item": "Results come from a small single-cohort study, so real-world performance and generalizability need validation across larger and more diverse bilingual populations.",
+      "evidence_signal": "Sixteen patients completed the study; there were no technical failures or early discontinuations, and the median SUS score was 91.3, indicating excellent perceived usability.",
+      "watch_item": "Findings are based on a small, single-center, short-term study, so safety and effectiveness during longer unsupervised use remain unproven.",
       "hashtags": [
-        "#Aphasia",
-        "#MachineLearning",
-        "#Bilingualism",
-        "#SpeechAnalysis",
-        "#MedicalAI"
+        "#AIinMedicine",
+        "#BariatricSurgery",
+        "#PatientEducation",
+        "#LargeLanguageModels",
+        "#UsabilityStudy"
       ],
-      "paper_id": "2026-09-21-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan",
-      "paper_title": "Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech",
-      "paper_date": "2026-09-21",
+      "paper_id": "2026-09-23-medrxiv-evaluation_of_an_ai_powered_patient_education_application_in_bariatric_surgery_a_prospecti",
+      "paper_title": "Evaluation of an AI-Powered Patient Education Application in Bariatric Surgery: A Prospective Mixed-Methods Feasibility Study",
+      "paper_date": "2026-09-23",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-09-28T14:42:22",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-23-medrxiv-clinician_perspectives_on_automated_facial_analysis_for_pain_assessment_a_cross_sectional",
+    "doi": "10.64898/2026.09.21.26363597",
+    "date": "2026-09-23",
+    "title": "Clinician Perspectives on Automated Facial Analysis for Pain Assessment: A Cross-Sectional Survey of Physicians, Advanced Practice Providers, and Nurses",
+    "authors": "Mullins, C. S.; Espelien, C.; Gurka, M.; Chernyavskiy, P.",
+    "abstract": "Pain assessment remains challenging in clinical practice. Automated pain assessment using artificial intelligence (AI) and facial expression analysis has emerged as a potential approach to support more objective and continuous pain monitoring, particularly for patients who are unable to communicate effectively. However, successful implementation depends on clinician acceptance. We conducted a cross-sectional survey of physicians, advanced practice providers (APPs), and nurses at a tertiary academic medical center to evaluate current pain assessment practices and perceptions of a facial-analysis-based pain assessment system. Eighty-seven eligible clinicians participated. For current assessment practices, clinicians commonly relied on observational indicators of pain, including vital signs (88.5%), physical examination findings (85.1%), and facial expressions (79.3%). Attitudes toward automated pain assessment were generally neutral to positive. Half of respondents agreed that such a system would be useful for monitoring patients over time (50.6%), and many perceived value for nonverbal patients (86.5%), patients with dementia or cognitive impairment (78.4%), and patients with language barriers (62.2%). Most clinicians reported requiring high levels of accuracy before routine use, with nearly 60% requiring at least 90% accuracy. Key concerns included alert fatigue and unequal performance across patient populations. These findings suggest clinicians view automated facial-analysis systems as potentially valuable adjuncts for pain monitoring, particularly in communication-impaired populations, while emphasizing the importance of accuracy, fairness, explainability, and workflow integration during system development and implementation.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "primary_category": "pain medicine",
+    "categories": [
+      "pain medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363597v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363597v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "Clinicians see automated facial-analysis pain assessment as a promising adjunct, especially for patients who cannot communicate well, but only if it is highly accurate and fits clinical workflow.",
+      "clinical_relevance": "This survey suggests AI pain-monitoring tools may be most useful for nonverbal, cognitively impaired, or language-barrier patients, while requiring strong performance and fairness before routine adoption.",
+      "method": [
+        "Cross-sectional survey at a tertiary academic medical center",
+        "Participants: physicians, advanced practice providers, and nurses",
+        "Assessed current pain-assessment practices and views on facial-analysis AI"
+      ],
+      "evidence_signal": "The study surveyed 87 eligible clinicians and found generally neutral-to-positive attitudes, with most respondents demanding at least 90% accuracy before routine use.",
+      "watch_item": "Potential alert fatigue and unequal performance across patient groups could limit safe implementation if not addressed.",
+      "hashtags": [
+        "#AIMedicine",
+        "#PainAssessment",
+        "#ClinicalNLP",
+        "#FacialAnalysis",
+        "#DigitalHealth"
+      ],
+      "paper_id": "2026-09-23-medrxiv-clinician_perspectives_on_automated_facial_analysis_for_pain_assessment_a_cross_sectional",
+      "paper_title": "Clinician Perspectives on Automated Facial Analysis for Pain Assessment: A Cross-Sectional Survey of Physicians, Advanced Practice Providers, and Nurses",
+      "paper_date": "2026-09-23",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-09-28T14:42:24",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-23-medrxiv-assessment_of_fairness_and_bias_of_an_image_based_surgical_site_infection_detection_ai_mod",
+    "doi": "10.64898/2026.09.22.26363636",
+    "date": "2026-09-23",
+    "title": "Assessment of Fairness and Bias of an Image-based Surgical Site Infection Detection AI Model",
+    "authors": "Lee, F. G.; Choudhary, A.; Li-Han, L. Y.; Dale, E. L.; Bankes, A. C.; Varghese, C.; Anderson, S. S.; Habermann, E. B.; Etzioni, D. A.; McLaughlin, S. A.; Salehinejad, H.; Thiels, C. A.",
+    "abstract": "BackgroundEvaluating fairness in artificial intelligence (AI) is essential before clinical implementation to prevent unintended harm across diverse patient populations. This study assesses performance differences of an image-based surgical site infection (SSI) detection model across age, gender, geography, race, and skin color. MethodsModel development/validation study using retrospective, multicenter data across surgical subspecialties from adults who submitted an image of their incision via the electronic health record within 30 days of their procedure between 2019-2024. Area under receiver operating curve (AUROC) was compared by age (<55 vs. [&ge;]55 years old), gender (male vs. female), geography (Rochester, Minnesota vs. Jacksonville, Florida vs. Scottsdale, Arizona vs. regional Minnesota/Wisconsin areas), race (White/Caucasian vs. non-White/Caucasian), and skin color (Fitpatrick I-III vs. IV-VI and Monk A-E vs. F-J). ResultsTraining data contained 13,702 images from 4,274 patients between 2019-2022 (50.1% [&ge;]55 years old; 63.2% female; 91.6% White/Caucasian; 58.5% Rochester, 17.3% Florida, 10.5% Arizona; 96.3% light skin tone), of which 1,348 images (9.8%) had an SSI. No differences in SSI detection existed for age, gender, race, or skin color (AUROC 0.83-0.87, p>0.09), however geographical differences were significant: lowest AUROC 0.83 (95% CI 0.77-0.88) vs. highest AUROC 0.87 (95% CI 0.84-0.89, p=0.01). Temporal validation using 4,242 images from 1,353 patients between 2022-2023 showed intact fairness across subgroups ({Delta}AUROC [&le;]0.06) except geography ({Delta}AUROC [&le;]0.16). ConclusionsThe model behaved fairly across age, gender, race, and skin color, however geographical differences persisted. These findings have practical implications underscoring the importance of evaluating bias in clinical AI before deployment.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "primary_category": "surgery",
+    "categories": [
+      "surgery"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363636v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363636v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "This image-based surgical site infection AI model showed similar performance across age, gender, race, and skin color, but performance varied by geography.",
+      "clinical_relevance": "The study highlights why fairness testing is needed before deploying clinical AI, so performance gaps across sites or regions do not create unequal care.",
+      "method": [
+        "Retrospective multicenter model development and validation using postoperative incision images submitted through the electronic health record.",
+        "Compared AUROC across age, gender, geography, race, and skin color subgroups.",
+        "Used both internal training data and temporal validation data from later years."
+      ],
+      "evidence_signal": "Training included 13,702 images from 4,274 patients, and temporal validation included 4,242 images from 1,353 patients; subgroup AUROC differences were minimal except for geography.",
+      "watch_item": "The dataset was heavily concentrated in White/light-skin patients and certain regions, so broader external validation is still needed before widespread use.",
+      "hashtags": [
+        "#MedicalAI",
+        "#FairnessInAI",
+        "#MedicalImaging",
+        "#SurgicalSiteInfection",
+        "#DigitalHealth"
+      ],
+      "paper_id": "2026-09-23-medrxiv-assessment_of_fairness_and_bias_of_an_image_based_surgical_site_infection_detection_ai_mod",
+      "paper_title": "Assessment of Fairness and Bias of an Image-based Surgical Site Infection Detection AI Model",
+      "paper_date": "2026-09-23",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:34:57",
+      "generated_at": "2026-09-28T14:42:26",
       "generator": "openai"
     }
   },
@@ -228,29 +279,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.20.26363486v1.full.pdf"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
-      "key_insight": "The segmentation model was highly accurate for outlining vertebral arteries, but adding it to CTA did not improve and actually reduced reader diagnostic accuracy for vertebral artery dissection.",
-      "clinical_relevance": "This suggests the tool may be useful for vessel visualization, but it is not yet ready to reliably support faster or better VAD diagnosis in routine acute care.",
+      "key_insight": "A deep learning CTA vessel-segmentation model was very accurate technically, but it did not improve vertebral artery dissection detection in a reader study.",
+      "clinical_relevance": "The tool may help visualize vascular anatomy, but its current form should not be assumed to improve real-world diagnosis of vertebral artery dissection.",
       "method": [
-        "Trained a nnU-Net v2 vascular segmentation model on 101 CTA scans using five-fold cross-validation.",
-        "Externally tested the model on 40 CTA scans, including 22 VAD-positive and 18 VAD-negative cases.",
-        "Ran a 10-reader crossover study comparing CTA reads with vs without segmentation-based augmentation."
+        "Trained nnU-Net v2 on 101 manually segmented CTA studies with 5-fold cross-validation.",
+        "Externally tested on 40 CTA cases, including 22 with vertebral artery dissection.",
+        "Ran a 10-reader crossover study comparing CTA interpretation with vs without segmentation-based augmentation."
       ],
-      "evidence_signal": "The model achieved Dice similarity coefficient of 0.96 ± 0.01, but reader accuracy was significantly lower with augmentation than without (0.72 vs 0.84, P < 0.001).",
-      "watch_item": "High segmentation performance did not translate into better diagnostic performance, so workflow integration and real-world validation remain important concerns.",
+      "evidence_signal": "Segmentation performance was strong (Dice 0.96 ± 0.01), but diagnostic accuracy was worse with augmentation than without (0.72 vs 0.84, P < .001).",
+      "watch_item": "High segmentation accuracy did not translate into better diagnostic performance, so workflow integration and clinical validation remain major concerns.",
       "hashtags": [
         "#MedicalImaging",
         "#DeepLearning",
         "#CTA",
-        "#VertebralArteryDissection",
-        "#RadiologyAI"
+        "#RadiologyAI",
+        "#VertebralArteryDissection"
       ],
       "paper_id": "2026-09-22-medrxiv-does_deep_learning_vascular_segmentation_on_cta_improve_vertebral_artery_dissection_detect",
       "paper_title": "Does Deep Learning Vascular Segmentation on CTA Improve Vertebral Artery Dissection Detection?",
       "paper_date": "2026-09-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:00",
+      "generated_at": "2026-09-28T14:42:28",
       "generator": "openai"
     }
   },
@@ -279,21 +330,21 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
-      "key_insight": "UPEBNL makes causal Bayesian network learning scalable for EHR-based cancer prescreening while keeping the model structure interpretable.",
-      "clinical_relevance": "The approach could help clinicians and researchers understand which patient factors and evidence pathways contribute to esophageal and colorectal cancer risk predictions.",
+      "key_insight": "UPEBNL makes causal Bayesian network learning scalable, allowing interpretable cancer prescreening models to be built from large electronic health record datasets.",
+      "clinical_relevance": "The approach may help clinicians and researchers understand risk pathways for esophageal and colorectal cancer while supporting more transparent prescreening decisions.",
       "method": [
-        "Adaptive data slicing to split large EHR datasets for parallel learning",
-        "Quality-aware structure aggregation to combine local network results",
-        "Global DAG construction to produce a stable causal-interpretable network"
+        "Adaptive data slicing to split large EHR data for parallel learning",
+        "Quality-aware structure aggregation to combine learned subnetworks",
+        "Global directed acyclic graph construction for stable causal-interpretable models"
       ],
-      "evidence_signal": "In simulations it improved structural recovery by nearly 40% and sped up conventional CBN learning by up to 221.28-fold; in EHR prescreening it reached AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.",
-      "watch_item": "The learned network is based on observational EHR data, so causal direction and generalizability still need careful external validation before real-world use.",
+      "evidence_signal": "In simulations, the framework improved structural recovery by nearly 40% and sped up conventional CBN learning by up to 221.28-fold; in EHR prescreening it achieved AUC 0.8171 for esophageal cancer and 0.784 for colorectal cancer.",
+      "watch_item": "Like other observational EHR-based models, the learned causal directions may still reflect data quality and confounding rather than confirmed biological causality.",
       "hashtags": [
         "#AIinMedicine",
         "#CancerScreening",
-        "#ElectronicHealthRecords",
+        "#EHR",
         "#CausalML",
         "#BayesianNetworks"
       ],
@@ -301,58 +352,7 @@
       "paper_title": "Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records",
       "paper_date": "2026-09-22",
       "paper_category": "Diagnostics",
-      "generated_at": "2026-09-27T12:35:03",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-privacy_aware_distillation_of_large_language_models_for_enhanced_multimorbidity_scoring",
-    "doi": "10.64898/2026.09.19.26363476",
-    "date": "2026-09-21",
-    "title": "Privacy-Aware Distillation of Large Language Models for Enhanced Multimorbidity Scoring",
-    "authors": "Awasthi, R.; Yang, Y.; Li, M.; Zhu, X.",
-    "abstract": "The truthful use of large language models (LLMs) is a growing challenge in safeguarding sensitive patient data from leakage. We introduce and evaluate a privacy-preserving knowledge distillation framework for LLM-based clinical modeling, using multimorbidity scoring as a healthcare task. Although LLMs can encode rich clinical knowledge and improve upon traditional rule-based comorbidity scoring, their direct evaluation on large-scale biobank data remains constrained by patient privacy. In our framework, multimorbidity reasoning is distilled from state-of-the-art LLM teacher models into compact student models (CoLLMs) using synthetic cohorts that preserve UK Biobank distributions, without exposing real patient data. This approach achieves high-fidelity knowledge transfer (Spearman {rho} = 0.75-0.89). Independent LLM-as-Judge evaluation confirms the clinical significance of the distilled knowledge and reveals substantial variability among teacher models. When applied to real UK Biobank data, CoLLM-derived multimorbidity scores improve survival prediction (C-index up to 0.91) and exhibit higher SNP heritability (h2 {approx} 0.05). Our work establishes a trustworthy, privacy-compliant pathway for large-scale healthcare applications of LLMs.",
-    "category": "Health Systems",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363476v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363476v1.full.pdf"
-      }
-    ],
-    "score": 61,
-    "infographic": {
-      "key_insight": "A privacy-preserving distillation framework can transfer clinically useful multimorbidity reasoning from large language models into smaller models without exposing real patient data.",
-      "clinical_relevance": "The distilled scores improved survival prediction on UK Biobank data, suggesting LLM-based methods could enhance large-scale risk stratification in health systems.",
-      "method": [
-        "Used state-of-the-art LLM teacher models to generate multimorbidity reasoning.",
-        "Distilled knowledge into compact CoLLM student models using synthetic cohorts matched to UK Biobank distributions.",
-        "Evaluated transfer quality and downstream performance without direct access to sensitive patient records."
-      ],
-      "evidence_signal": "Knowledge transfer was strong (Spearman rho 0.75–0.89), with LLM-as-Judge confirmation and downstream gains including C-index up to 0.91 and heritability around h2 ≈ 0.05.",
-      "watch_item": "Performance may vary substantially across teacher models, so results could depend on model choice and careful validation before deployment.",
-      "hashtags": [
-        "#HealthAI",
-        "#LLM",
-        "#PrivacyPreservingAI",
-        "#Multimorbidity",
-        "#Biobank"
-      ],
-      "paper_id": "2026-09-21-medrxiv-privacy_aware_distillation_of_large_language_models_for_enhanced_multimorbidity_scoring",
-      "paper_title": "Privacy-Aware Distillation of Large Language Models for Enhanced Multimorbidity Scoring",
-      "paper_date": "2026-09-21",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-09-27T12:35:05",
+      "generated_at": "2026-09-28T14:42:30",
       "generator": "openai"
     }
   },
@@ -381,29 +381,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v1.full.pdf"
       }
     ],
-    "score": 60,
+    "score": 55,
     "infographic": {
-      "key_insight": "The study proposes an auditable framework that combines LLM-assisted evidence extraction with deterministic checks and human oversight to produce versioned, traceable systematic review outputs.",
-      "clinical_relevance": "This could improve transparency and reliability in evidence synthesis used to inform clinical and prognostic decisions, but it is not yet proven to improve patient care or generalize broadly.",
+      "key_insight": "The study presents an auditable framework that combines LLM-assisted extraction with deterministic checks and human oversight to preserve provenance, statistical rules, and correction history in systematic review synthesis.",
+      "clinical_relevance": "This could improve transparency and traceability in evidence reviews, but its clinical value still needs independent validation before routine use.",
       "method": [
-        "LLM agents interpreted sources and extracted data",
-        "Deterministic code enforced statistical rules and handling of corrections",
-        "Investigators resolved material ambiguities and authorized release"
+        "LLM agents interpreted source reports and extracted review data.",
+        "Deterministic code enforced statistical rules, while investigators resolved ambiguities and authorized releases.",
+        "The team defined ten release properties and retrospectively tested integrity domains and historical failure events in one prognostic review."
       ],
-      "evidence_signal": "In one registered prognostic review, the team documented 50 root-cause events, evaluated six integrity domains, and compared two implementations across 1,217 numerical checks plus 94 byte-level file comparisons.",
-      "watch_item": "This was a retrospective, single-project evaluation without an external comparator, so broader validity and real-world benefit remain unproven.",
+      "evidence_signal": "In one registered prognostic review, the authors documented 50 root-cause events, evaluated 454 reports across 41 fitted analyses, and reported byte-identical release files plus agreement across 1,217 numerical comparisons.",
+      "watch_item": "This is a single-case retrospective evaluation without an external comparator, so generalizability and real-world clinical benefit remain uncertain.",
       "hashtags": [
         "#AIMedicine",
         "#SystematicReview",
-        "#ClinicalNLP",
         "#LLM",
+        "#ClinicalNLP",
         "#ResearchIntegrity"
       ],
       "paper_id": "2026-09-22-medrxiv-an_auditable_evidence_compiler_for_large_language_model_assisted_systematic_reviews",
       "paper_title": "An auditable evidence compiler for large language model-assisted systematic reviews",
       "paper_date": "2026-09-22",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-09-27T12:35:07",
+      "generated_at": "2026-09-28T14:42:32",
       "generator": "openai"
     }
   },
@@ -432,19 +432,19 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363591v1.full.pdf"
       }
     ],
-    "score": 58,
+    "score": 53,
     "infographic": {
-      "key_insight": "Two current-generation large language models, Claude Opus 5 and GPT-5.6, performed at about 95% accuracy on an anesthesiology in-training examination question bank, including strong results on figure-based items when images were provided.",
-      "clinical_relevance": "These results suggest LLMs may be useful as high-performing study aids in anesthesiology education, but their value still depends on access to complete question context, especially figures.",
+      "key_insight": "Two current-generation large language models performed at nearly identical, near-top levels on an anesthesiology in-training exam question bank, including figure-based items when images were provided.",
+      "clinical_relevance": "These results suggest LLMs may be useful study aids in anesthesiology education, but they are not substitutes for clinician judgment or exam preparation tools that rely on verified content.",
       "method": [
-        "1,001 single-best-answer anesthesiology ITE review questions were tested",
-        "Each question was given once in a fresh, stateless prompt with no tools, retrieval, or answer key",
-        "All 27 figure-dependent items were included; published figures were supplied for image-based testing"
+        "1,001 single-best-answer anesthesiology ITE review questions were given to Claude Opus 5 and GPT-5.6.",
+        "Each question was asked once in a fresh, stateless context with no tools, retrieval, answer key, or explanation.",
+        "All 27 figure-dependent items were included; published figures were supplied for the image-based subset."
       ],
-      "evidence_signal": "Claude Opus 5 scored 947/1,001 (94.6%) and GPT-5.6 scored 946/1,001 (94.5%); performance was similar overall, but withholding figures from figure-based questions cut pooled accuracy from 88.9% to 52.8%.",
-      "watch_item": "This was a controlled review-bank evaluation, so real-world educational use may be less reliable if prompts are incomplete, figures are missing, or answer formats differ from the test setting.",
+      "evidence_signal": "Claude Opus 5 scored 947/1,001 (94.6%) and GPT-5.6 scored 946/1,001 (94.5%); the difference was not significant, and accuracy dropped sharply when figures were withheld from figure-based questions.",
+      "watch_item": "Performance was measured on a review question bank rather than a live clinical setting, so educational usefulness may not translate directly to real-world decision support.",
       "hashtags": [
-        "#ArtificialIntelligence",
+        "#AIinMedicine",
         "#MedicalEducation",
         "#Anesthesiology",
         "#LargeLanguageModels",
@@ -454,58 +454,58 @@
       "paper_title": "Assessing the Performance of Artificial Intelligence on Anesthesiology In-Training Examinations and Applicability in Medical Education",
       "paper_date": "2026-09-22",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-09-27T12:35:10",
+      "generated_at": "2026-09-28T14:42:35",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-21-medrxiv-decision_support_in_publicly_available_patient_information_policies_at_u_s_osteopathic_med",
-    "doi": "10.64898/2026.09.18.26363437",
-    "date": "2026-09-21",
-    "title": "Decision Support in Publicly Available Patient Information Policies at U.S. Osteopathic Medical Schools: A Vignette-Based Document Analysis",
-    "authors": "Dai, N.; Waarala, K. L.",
-    "abstract": "Research ObjectivesTo evaluate whether publicly available institutional guidance supports patient-information decisions across scenarios and schools, and characterize document synthesis and evaluation consistency. MethodsWe conducted an exploratory, vignette-based document analysis of a geographically diverse nonprobability sample of 20 U.S. osteopathic medical schools. Eight educational vignettes yielded 160 school-vignette pairs. Each pair underwent three separate AI-assisted retrieval-and-evaluation runs, classifying decision support as Explicitly Supported, Inferable, Ambiguous, or Not Addressed. Response selection prioritized greater support for discordant pairs, followed by fewer contributing documents and run order. One investigator verified or revised selected discordant classifications against cited evidence. Explicitly Supported and Inferable were grouped post hoc as sufficient decision support. Analyses were descriptive and included an exploratory two-school model-investigator comparison. ResultsAt least one eligible source was retrieved for 159 of 160 pairs (99.4%). Final classifications were Explicitly Supported for 18 pairs (11.3%), Inferable for 3 (1.9%), Ambiguous for 132 (82.5%), and Not Addressed for 7 (4.4%). Sufficient support occurred in 21 pairs (13.1%), most frequently for generative AI-assisted reflective writing (7/20 schools, 35%), and in none for personal cloud notes or official clinical logs. Ten schools had no sufficiently supported vignette; the maximum was four of eight. Multiple documents contributed to 111 evaluations (69.4%). Three-run ratings were unanimous for 113 pairs (70.6%), with 80.2% pairwise exact agreement. Investigator review retained 44 of 47 selected discordant ratings and revised three upward. In the two-school comparison, the investigator more frequently judged evidence sufficient when models judged it insufficient than the reverse. ConclusionsRelevant public guidance was frequently retrieved, but few school-vignette pairs were classified as providing sufficient scenario-specific decision support. These findings highlight a gap between identifying relevant guidance and determining an appropriate course of action within this evaluation framework. They support institutional review of how student-facing materials explain information use, storage, sharing, and approval requirements. Vignette-based review identifies questions requiring clarification. Evaluation with learners and assessment of internal and clinical-site guidance would help determine how these findings translate to students decisions.",
-    "category": "Health Systems",
+    "id": "2026-09-23-medrxiv-mind_the_gap_emergent_clinical_risk_at_the_interface_of_two_individually_safe_ai_systems_i",
+    "doi": "10.64898/2026.09.22.26363642",
+    "date": "2026-09-23",
+    "title": "Mind the gap: emergent clinical risk at the interface of two individually safe AI systems in a multilingual ambient scribe",
+    "authors": "Bergman, H.; Liu, V.; Austin, B.; Sanghera, R.",
+    "abstract": "ObjectivesTo determine whether single-layer evaluation characterises clinical risk in the final note of a multilingual ambient AI scribe, and where serious errors arise. DesignTwo-arm evaluation on one common clinical-risk scale, using a frozen, reference-aligned synthetic corpus. SettingScripted consultations spanning 77 languages and five complexity levels, from simple general practice to expert multidisciplinary-team handover. Main outcome measuresPer-session incidence of at least one serious (HIGH or CRITICAL) note-layer error in intrinsic (reference script to note, n=385) and end-to-end (automatic speech recognition (ASR) transcript to note, n=2,302) generation; three LLM raters classified discrepancies using a four-mode taxonomy. ResultsIntrinsic note generation had a 3.4% serious-error rate, with no detectable gradient across complexity (1% to 6%; Cochran-Armitage p=0.42) or language resource (high 2%, medium 5%, low 4%). End-to-end serious errors rose steeply with complexity (L1 1% to L4/L5 24%) and language scarcity (high 7%, medium 10%, low 15%; OR 1.54 per tier, 95% CI 1.15-2.07; p=0.004, GEE clustered on language). Of serious in-note errors, 87% were ASR-derived and 7% note-originated; amplification exceeded correction threefold (fate entropy 1.19 bits). Repeated generation showed moderate reproducibility (Fleiss kappa 0.42); word error rate explained 24% of cross-language variance versus [~]1% for transcription risk density. ConclusionsLow serious-error rates in individual layers did not preclude higher end-to-end note risk. Evaluation should therefore include the clinician-facing note, because component-level metrics cannot fully capture risk created or transformed at the transcription-to-generation interface. What is already known on this topicO_LIAmbient AI scribes are being deployed globally, and safety evaluation has characterised the transcription layer in isolation, most commonly with word error rate C_LIO_LIFrequency-based transcription metrics such as word error rate do not directly encode clinical consequence, and component-level performance may not represent the risk of the final generated note C_LIO_LILarge language models produce clinically relevant output stochastically, so identical prompts can yield materially different content C_LI What this study addsO_LINote generation from a perfect transcript had a low observed serious-error rate and no detectable complexity or language-resource gradient, whereas the end-to-end system showed steep gradients on both axes. C_LIO_LISerious note-layer errors were predominantly ASR-derived, but note generation transformed upstream errors variably, amplifying serious errors about three times more often than it corrected them C_LIO_LITranscription-layer metrics had limited predictive value for note-layer risk after accounting for complexity and language-level dependence; word error rate explained approximately one-quarter of cross-language variance C_LI How this study might affect research, practice or policyO_LIEvaluation and procurement of ambient scribes should include end-to-end assessment of the clinician-facing note, with results stratified by consultation complexity and language where relevant C_LIO_LIA three-surface root-cause alignment using a four-mode root-cause taxonomy (note-originated, propagated-ASR, amplified-ASR and silent-correction) can attribute documentation errors to their point of origin or transformation C_LIO_LILanguage-related performance should remain a surveillance target because disparities can emerge after components are composed, even when corresponding gradients are not detectable in an individual layer C_LI",
+    "category": "Clinical NLP",
     "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "medical education",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "primary_category": "health informatics",
     "categories": [
-      "medical education"
+      "health informatics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363437v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363642v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363437v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363642v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 52,
     "infographic": {
-      "key_insight": "Publicly available policies at U.S. osteopathic medical schools rarely gave clear, scenario-specific support for patient-information decisions, even when related guidance could be found.",
-      "clinical_relevance": "For institutions and clinicians, the main takeaway is that policy availability does not necessarily translate into actionable guidance for real-world patient-information scenarios.",
+      "key_insight": "Individually safe ASR and note-generation components can still combine into meaningful clinical risk at the final note stage, especially across complex or low-resource language settings.",
+      "clinical_relevance": "For ambient AI scribes, safety should be assessed on the clinician-facing note, not just transcription accuracy, because interface errors can amplify harm.",
       "method": [
-        "Exploratory vignette-based document analysis of 20 U.S. osteopathic medical schools",
-        "Eight patient-information vignettes produced 160 school-vignette evaluations",
-        "Each evaluation was run three times with AI-assisted retrieval and rating, then reviewed for discordant cases"
+        "Two-arm evaluation on a common clinical-risk scale using a frozen synthetic corpus",
+        "Compared intrinsic generation (reference script→note) with end-to-end generation (ASR transcript→note)",
+        "Three LLM raters labeled discrepancies with a four-mode error taxonomy across 77 languages and five complexity levels"
       ],
-      "evidence_signal": "At least one eligible source was found for 159 of 160 pairs, but only 21 pairs (13.1%) were judged to have sufficient support after classification.",
-      "watch_item": "This was a nonprobability sample of schools and an AI-assisted document review, so results may not generalize broadly and depend on how policies are written and interpreted.",
+      "evidence_signal": "Serious-note errors were low in intrinsic generation (3.4%) but rose sharply end-to-end with complexity and language scarcity, with 87% of serious errors attributed to ASR-derived issues.",
+      "watch_item": "Because the study used scripted synthetic consultations and LLM-based raters, real-world performance and error patterns may differ from deployed clinical workflows.",
       "hashtags": [
-        "#HealthPolicy",
-        "#MedicalEducation",
-        "#AIinResearch",
-        "#PatientInformation",
-        "#DocumentAnalysis"
+        "#AIMedicine",
+        "#AmbientScribe",
+        "#ClinicalSafety",
+        "#ASR",
+        "#HealthNLP"
       ],
-      "paper_id": "2026-09-21-medrxiv-decision_support_in_publicly_available_patient_information_policies_at_u_s_osteopathic_med",
-      "paper_title": "Decision Support in Publicly Available Patient Information Policies at U.S. Osteopathic Medical Schools: A Vignette-Based Document Analysis",
-      "paper_date": "2026-09-21",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-09-27T12:35:13",
+      "paper_id": "2026-09-23-medrxiv-mind_the_gap_emergent_clinical_risk_at_the_interface_of_two_individually_safe_ai_systems_i",
+      "paper_title": "Mind the gap: emergent clinical risk at the interface of two individually safe AI systems in a multilingual ambient scribe",
+      "paper_date": "2026-09-23",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-09-28T14:42:37",
       "generator": "openai"
     }
   },
@@ -534,29 +534,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
-      "key_insight": "In head-to-head testing of open-source thigh muscle MRI segmentation tools, specialized domain-trained models performed best and were more reliable than foundation or general-purpose models.",
-      "clinical_relevance": "Better muscle segmentation can improve MRI-based volumetrics, radiomics, and fat-fraction measures used in neuromuscular disease research and potentially clinical workflows.",
+      "key_insight": "In a head-to-head benchmark, open-source thigh muscle MRI segmentation tools showed large performance differences, with domain-specific models generally outperforming foundation and general-purpose approaches.",
+      "clinical_relevance": "Better segmentation can improve MRI-based muscle volume, radiomics, and fat-fraction biomarkers used in neuromuscular disease research and care planning.",
       "method": [
         "Benchmarked 8 open-source segmentation tools on 3D thigh MRI volumes.",
-        "Tested across 3 base datasets and additional derived datasets.",
-        "Compared quantitative accuracy plus qualitative usability, including performance on pathological cases."
+        "Compared performance across 3 base datasets and later derived datasets.",
+        "Assessed both quantitative accuracy and qualitative usability."
       ],
-      "evidence_signal": "The study found substantial performance variation across methods and datasets, with many algorithms losing accuracy on pathological scans.",
-      "watch_item": "Results may not generalize well to underrepresented populations or disease patterns, so real-world deployment needs careful validation.",
+      "evidence_signal": "The study found substantial variation across methods and datasets, with many algorithms performing worse on pathological cases.",
+      "watch_item": "Results may not generalize well to underrepresented populations or disease patterns, so local validation is important before deployment.",
       "hashtags": [
         "#MedicalImaging",
         "#MRI",
         "#Segmentation",
-        "#AIinHealthcare",
-        "#NeuromuscularDisease"
+        "#MuscleMRI",
+        "#OpenSourceAI"
       ],
       "paper_id": "2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms",
       "paper_title": "Benchmarking open-source automated thigh muscle MRI segmentation algorithms",
       "paper_date": "2026-09-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:15",
+      "generated_at": "2026-09-28T14:42:39",
       "generator": "openai"
     }
   },
@@ -585,247 +585,43 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
-      "key_insight": "The first U.S. CADASIL natural history cohort establishes a well-characterized baseline of clinical, cognitive, MRI, and biomarker features in carriers of pathogenic NOTCH3 variants versus family controls.",
-      "clinical_relevance": "This creates a standardized rare-disease model for understanding vascular cognitive impairment and for preparing future trials in small-vessel disease.",
+      "key_insight": "The first U.S. CADASIL cohort shows that NOTCH3-confirmed carriers can be stratified into genetic risk tiers and characterized with standardized clinical, cognitive, MRI, and biomarker measures at baseline.",
+      "clinical_relevance": "These baseline data create a more uniform human model of small-vessel disease that can improve biomarker validation and readiness for future VCID/CADASIL studies.",
       "method": [
-        "Cross-sectional baseline analysis from 12 U.S. sites (Oct 2022–Jan 2025)",
-        "Adults from families with documented NOTCH3 variants underwent standardized clinical, cognitive, functional, MRI, and proteomic assessments",
-        "Comparisons used Fisher’s exact/Kruskal-Wallis tests with multivariable adjustment for age, sex, race, and education"
+        "Cross-sectional baseline analysis from 12 U.S. enrollment sites (Oct 2022–Jan 2025).",
+        "Adults from families with documented NOTCH3 variants underwent standardized histories, exams, cognitive/physical testing, MRI, genetics, and proteomics.",
+        "Participants were grouped as pathogenic/likely pathogenic carriers vs non-carrier family controls, with carriers further classified into low-, medium-, and high-risk tiers."
       ],
-      "evidence_signal": "Among 560 enrolled participants, the analytic cohort included 343 CADASIL carriers and 116 non-carrier family controls, with carriers stratified into low-, medium-, and high-risk NOTCH3 tiers.",
-      "watch_item": "Findings are baseline and cross-sectional, so they describe association and phenotype distribution rather than disease progression or treatment effect.",
+      "evidence_signal": "The analytic sample included 343 CADASIL-causing NOTCH3 carriers and 116 non-carrier controls out of 560 baseline participants, with group comparisons using Fisher’s exact/Kruskal-Wallis tests and multivariable regression adjusted for age, sex, race, and education.",
+      "watch_item": "Because this is a cross-sectional baseline cohort enriched for recruited families and mostly White, highly educated participants, generalizability to broader VCID populations may be limited.",
       "hashtags": [
         "#CADASIL",
         "#VCID",
-        "#Neuroimaging",
+        "#MRI",
         "#Biomarkers",
-        "#NaturalHistoryStudy"
+        "#Neurology"
       ],
       "paper_id": "2026-09-22-medrxiv-the_united_states_cadasil_consortium_baseline_findings_from_a_natural_history_study",
       "paper_title": "The United States CADASIL Consortium: Baseline Findings from a Natural History Study",
       "paper_date": "2026-09-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:17",
+      "generated_at": "2026-09-28T14:42:42",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-21-medrxiv-lessons_learned_from_a_trial_on_integrated_and_proactive_care_for_patients_with_complex_ne",
-    "doi": "10.64898/2026.09.15.26362413",
-    "date": "2026-09-21",
-    "title": "Lessons learned from a trial on integrated and proactive care for patients with complex needs (Hotspotters project): a process evaluation",
-    "authors": "Tiemes, V.; Verdonk, M.; Van Der Wel, M.; Adriaanse, M.; Van Gestel, L.; Ephraim, M.; Van Bruggen, S.; Bruijnzeels, M.; Numans, M.; Borgdorff, H.; Vos, R. C.",
-    "abstract": "BackgroundThis study focused on adults with complex care needs due to problems on multiple life domains and consequent high acute care use. The Hotspotters Project was undertaken to assess the effects of proactive integrated care on health outcomes and healthcare costs in this group. We evaluated the reach, effectiveness, adoption, implementation and maintenance (RE-AIM) of the Hotspotters Project in order to identify factors that influenced implementation and outcomes. MethodThis mixed method study followed the RE-AIM-framework, using validated questionnaires, routine care data and semi-structured interviews. Qualitative data from patients and care providers offered insight in the quantitative outcomes. Quantitative data were analyzed descriptively (SPSS), and interview transcripts were analyzed using inductive thematic content analysis (Atlas.ti). ResultsAs acute care use was lower than expected, few patients were eligible (153/1403) and subsequent low enrollment (n=30) limited conclusions regarding effectiveness. Nevertheless, the intervention improved collaboration with social work, and the structured intake was valued for the overview of patients complex needs. Many practices adopted the intervention into regular care, despite the complex inclusion process. Care providers proposed revising the target population and recruitment to better reflect the Dutch context. ConclusionAlthough cost-effectiveness could not be assessed, this study nonetheless provides insights that can help future interventions and trials to better match patients needs, adapt to local context and reduce patients study burden. Adapting the definition of patients with complex needs to a local context can strengthen the rationale for implementation and enhance patient motivation.",
-    "category": "Health Systems",
+    "id": "2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s",
+    "doi": "10.64898/2026.09.21.26363568",
+    "date": "2026-09-22",
+    "title": "Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma",
+    "authors": "Esperanca-Martins, M.; Sokolov Ravasqueira, M.; Dias, S.; Abecasis, N.; Costa, L.; Vasques, H.",
+    "abstract": "BackgroundClinicopathologic (SARCULATOR) and transcriptomic (CINSARC) models are established prognostication tools in soft tissue sarcoma, but neither directly represent the sequence context of tumor genomic alterations. Evo2 is a genomic foundation model trained to learn the grammar of DNA/RNA sequences. We tested whether Evo2-derived features from tumor short variants, fusions, and rearrangements improve survival prognostication beyond clinicopathologic and transcriptomic risk models. MethodsWe analysed formalin-fixed, paraffin-embedded tumor material and clinical data from 102 patients with dedifferentiated liposarcoma (n = 25), high-grade leiomyosarcoma (n = 25), and undifferentiated pleomorphic sarcoma (n = 52). A separate TCGA-SARC cohort of comparable histologies (n = 129) served as external validation. Reconstructable alterations (short variants, fusions and rearrangements) were converted into sequence inputs, embedded with Evo2 and aggregated into patient-level genomic representations. Cox proportional hazards models incorporated genomic features alone (Evo2) or together with clinicopathologic (SARCULATOR) or transcriptomic (CINSARC) predictors across overall survival (OS), progression-free survival (PFS), disease-free survival (DFS), relapse-free survival (RFS), and metastasis-free survival (MFS). Discrimination was assessed using Harrells concordance index (C-index). ResultsEvo2 features were generated from 174 study-cohort sequences and 7298 TCGA-SARC sequences. In the study cohort, adding Evo2 to SARCULATOR increased the reported C-index for OS from 0.620 to 0.770, PFS from 0.625 to 0.755, DFS from 0.612 to 0.714, and RFS from 0.633 to 0.771. In TCGA-SARC, SARCULATOR plus Evo2 increased the OS C-index from 0.595 to 0.716 and the MFS C-index from 0.548 to 0.667. Also in TCGA-SARC, adding Evo2 to CINSARC increased the OS C-index from 0.476 to 0.653 and the MFS C-index from 0.553 to 0.650. These are descriptive point-estimate comparisons. Moreover, in TCGA-SARC Evo2 alone outperformed SARCULATOR alone and CINSARC alone, supporting independent prognostic information within altered sequence-context representations. ConclusionsEvo2-derived genomic representations improved clinicopathologic and transcriptomic prognostication across sarcoma cohorts and survival endpoints. These findings support genomic foundation models as an independent and complementary layer for sarcoma risk stratification through direct modeling of altered tumor sequence biology. Confirmation of model transportability, calibration and clinical utility is required before clinical application. Graphical abstract O_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=112 SRC=\"FIGDIR/small/26363568v1_ufig1.gif\" ALT=\"Figure 1\"> View larger version (44K): org.highwire.dtl.DTLVardef@166ca4corg.highwire.dtl.DTLVardef@16b7fcborg.highwire.dtl.DTLVardef@9300bforg.highwire.dtl.DTLVardef@11619a4_HPS_FORMAT_FIGEXP M_FIG C_FIG Genomic sequence representations for sarcoma prognostication. Reconstructed short variants and study-cohort fusion proxies are processed with Evo2 and aggregated into patient-level genomic profiles for ridge-penalised Cox survival modelling. Genomic profiles are evaluated alone or with clinicopathologic SARCULATOR or transcriptomic CINSARC predictors; CINSARC is evaluated only in TCGA-SARC. The lower panel shows reported overall-survival Harrell C-index point estimates before and after adding Evo2 features. These descriptive comparisons do not establish statistical significance or clinical utility. {Delta} denotes the alternative-minus-reference difference in mean sequence log-likelihood. Embedding displacement denotes cosine distance between paired short-variant embeddings. FFPE, formalin-fixed, paraffin-embedded; TCGA-SARC, The Cancer Genome Atlas sarcoma cohort. Created using BioRender.",
+    "category": "Clinical NLP",
     "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "primary care research",
-    "categories": [
-      "primary care research"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26362413v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26362413v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "A proactive integrated care model for people with complex needs was hard to test because far fewer patients than expected qualified or enrolled, but it still improved coordination with social work and was seen as useful by practices.",
-      "clinical_relevance": "The findings suggest that matching eligibility rules and recruitment to the local care context is crucial when designing integrated care programs for patients with complex, multi-domain needs.",
-      "method": [
-        "Mixed-method process evaluation using the RE-AIM framework",
-        "Used questionnaires, routine care data, and semi-structured interviews",
-        "Analyzed quantitative data descriptively and interviews thematically"
-      ],
-      "evidence_signal": "Only 153 of 1403 screened patients were eligible and 30 enrolled, limiting conclusions on effectiveness, while process data showed improved collaboration and broad practice uptake.",
-      "watch_item": "The main implementation concern was very low enrollment due to a restrictive inclusion process and low acute-care use, which limited assessment of cost-effectiveness and outcomes.",
-      "hashtags": [
-        "#HealthSystems",
-        "#IntegratedCare",
-        "#ProcessEvaluation",
-        "#ComplexNeeds",
-        "#ImplementationScience"
-      ],
-      "paper_id": "2026-09-21-medrxiv-lessons_learned_from_a_trial_on_integrated_and_proactive_care_for_patients_with_complex_ne",
-      "paper_title": "Lessons learned from a trial on integrated and proactive care for patients with complex needs (Hotspotters project): a process evaluation",
-      "paper_date": "2026-09-21",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-09-27T12:35:20",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-evaluation_of_accelerated_whole_body_diffusion_weighted_imaging_with_deep_learning_reconst",
-    "doi": "10.64898/2026.09.17.26362983",
-    "date": "2026-09-21",
-    "title": "Evaluation of accelerated whole-body diffusion weighted imaging with deep learning reconstruction in patients with metastatic prostate cancer: assessment of image quality and ADC estimates.",
-    "authors": "Kousi, E.; Rata, M.; Koh, D.-M.; Messiou, C.; Tunariu, N.; Hopkinson, G.; Evans, E.; Darwish, O.; Weiland, E.; Winfield, J.",
-    "abstract": "ObjectivesTo evaluate the impact of an accelerated whole-body diffusion-weighted MRI (WB-DWI) protocol using deep learning (DL) reconstruction on image quality and apparent diffusion coefficient (ADC) quantification in patients with metastatic prostate cancer. MethodsThis single-centre prospective study involved two patient cohorts undergoing standard-of-care WB-MRI at 1.5T. The DL WB-DWI acquisition used fewer signal averages and higher parallel imaging acceleration, reconstructed with a research application DL package based on a variational network. In Cohort 1 (n = 10), qualitative assessment of image quality was performed across four anatomical stations using a 4-point Likert scale by two radiologists, blinded to the DWI protocol. In Cohort 2 (n = 20), ADC values were evaluated in hypercellular focal bone metastases (as determined by a radiologist) and compared between the standard and accelerated DL WB-DWI protocols. Image quality scores were analysed using Wilcoxon signed-rank tests (Bonferroni-corrected), and ADC agreement was evaluated via Bland-Altman analysis. ResultsAccelerated DL WB-DWI reduced WB-DWI acquisition time by 37% without compromising image quality. Radiologists consistently rated both protocols as good-to-excellent across all image quality metrics. Median ADC estimates in lesions showed no significant difference between protocols; interquartile range of ADC estimates also showed no significant difference. ConclusionsAccelerated DL WB-DWI enables 37% scan time reduction without degrading image quality or affecting ADC estimates of lesions in patients with metastatic prostate cancer. Advances in knowledgeDL-based reconstruction enables faster WB-DWI acquisition without compromising image quality or ADC quantification, supporting clinical implementation in metastatic prostate cancer staging and therapy assessment.",
-    "category": "Medical Imaging",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "radiology and imaging",
-    "categories": [
-      "radiology and imaging"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "Deep learning–reconstructed accelerated whole-body DWI cut scan time by 37% while preserving image quality and lesion ADC measurements in metastatic prostate cancer.",
-      "clinical_relevance": "This suggests faster metastatic prostate cancer WB-MRI may be feasible without sacrificing the quantitative diffusion information used for staging and treatment assessment.",
-      "method": [
-        "Prospective single-centre study at 1.5T with standard-of-care WB-MRI.",
-        "Cohort 1 (n=10): radiologists compared image quality across 4 anatomical stations using a 4-point Likert scale.",
-        "Cohort 2 (n=20): ADC values from hypercellular bone metastases were compared between standard and accelerated DL DWI."
-      ],
-      "evidence_signal": "Radiologists rated both protocols as good-to-excellent, and ADC values showed no significant difference between standard and accelerated DL reconstruction on Bland-Altman analysis.",
-      "watch_item": "Small single-centre cohorts and research-based DL reconstruction mean broader validation is needed before routine deployment.",
-      "hashtags": [
-        "#MedicalImaging",
-        "#DiffusionMRI",
-        "#DeepLearning",
-        "#ProstateCancer",
-        "#RadiologyAI"
-      ],
-      "paper_id": "2026-09-21-medrxiv-evaluation_of_accelerated_whole_body_diffusion_weighted_imaging_with_deep_learning_reconst",
-      "paper_title": "Evaluation of accelerated whole-body diffusion weighted imaging with deep learning reconstruction in patients with metastatic prostate cancer: assessment of image quality and ADC estimates.",
-      "paper_date": "2026-09-21",
-      "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:22",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-automated_assessment_of_hypernasality_in_motor_speech_disorders_using_nasal_cognate_distin",
-    "doi": "10.64898/2026.09.19.26363478",
-    "date": "2026-09-21",
-    "title": "Automated Assessment of Hypernasality in Motor Speech Disorders Using Nasal Cognate Distinctiveness and Nasal Posterior Probability",
-    "authors": "Wang, F.; Utianski, R. L.; Barnard, L. R.; Duffy, J. R.; Botha, H.",
-    "abstract": "PurposeTo evaluate whether two automated measures of nasality, Nasal Cognate Distinctiveness (NCD) and nasal posterior probability (NPP), provide clinically meaningful markers of hypernasality in speakers with motor speech disorders (MSDs) and to determine whether hypernasality-related information extends beyond stop consonants, which are typically targeted in cognate-based approaches. MethodSentence-level speech recordings were obtained from 561 patients, including 374 neurologically typical controls and 187 individuals with MSDs. NCD was computed for voiceless stops (/p/, /t/, /k/) using likelihood ratios between stops and their nasal cognates. NPP was extracted using a phonological feature-based neural network model and analyzed for stops, consonants, and vowels. Hypernasality severity was rated by speech-language pathologists. Group differences and associations with hypernasality severity were evaluated using linear mixed-effects models and Spearman correlations, and receiver operating characteristic (ROC) analyses were used to evaluate discrimination of absent versus present hypernasality. An additional 20 controls with repeat recordings were used to evaluate test-retest reliability and minimal detectable change (MDC). ResultsNCD generally decreased and NPP increased with increasing hypernasality severity, with phoneme-specific severity effects observed for NCD. Across stops, NCD and NPP were strongly inversely correlated and showed comparable discrimination of absent versus present hypernasality (AUCs = 0.796 and 0.730, respectively). Consonant and vowel NPP measures were both positively associated with hypernasality severity and demonstrated identical classification performance (AUC = 0.853). No significant differences in ROC performance were observed between NCD and NPP or between consonant and vowel NPP measures. Test-retest change exceeded the MDC threshold in 2 of 20 controls for NCD and 1 of 20 for NPP. ConclusionsBoth NCD and NPP provide objective markers of hypernasality in speakers with MSDs. The measures capture related aspects of nasalization and demonstrate comparable ability to identify clinically meaningful hypernasality. NPP captures hypernasality-related acoustic information across both consonants and vowels, with similar relationships to severity and classification performance across sound classes. Test-retest findings provide preliminary MDC benchmarks for interpreting longitudinal change.",
-    "category": "Medical Imaging",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363478v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363478v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "Automated nasalization measures—Nasal Cognate Distinctiveness (NCD) and nasal posterior probability (NPP)—tracked hypernasality severity in motor speech disorders and performed similarly for identifying clinically meaningful hypernasality.",
-      "clinical_relevance": "These tools could help provide objective, scalable support for assessing hypernasality in speech-language evaluation, especially when human ratings are needed at larger scale or over time.",
-      "method": [
-        "Analyzed sentence-level speech from 561 participants (374 controls, 187 with motor speech disorders).",
-        "Computed NCD for voiceless stops (/p/, /t/, /k/) and NPP from a phonological feature-based neural network across stops, consonants, and vowels.",
-        "Compared measures with clinician-rated hypernasality using mixed-effects models, correlations, ROC analyses, and test-retest reliability testing."
-      ],
-      "evidence_signal": "Across measures, higher hypernasality was linked to lower NCD and higher NPP, with ROC performance showing moderate-to-good discrimination (e.g., NCD AUC 0.796, NPP AUC 0.730 for absent vs present hypernasality; consonant/vowel NPP AUC 0.853).",
-      "watch_item": "Performance was measured in a research cohort, so real-world deployment will need validation across speakers, recording conditions, and clinical settings, plus attention to small test-retest changes near the MDC threshold.",
-      "hashtags": [
-        "#SpeechAnalytics",
-        "#Hypernasality",
-        "#MotorSpeechDisorders",
-        "#AIinMedicine",
-        "#DigitalHealth"
-      ],
-      "paper_id": "2026-09-21-medrxiv-automated_assessment_of_hypernasality_in_motor_speech_disorders_using_nasal_cognate_distin",
-      "paper_title": "Automated Assessment of Hypernasality in Motor Speech Disorders Using Nasal Cognate Distinctiveness and Nasal Posterior Probability",
-      "paper_date": "2026-09-21",
-      "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:24",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-the_online_health_safety_gap_consensus_alignment_does_not_imply_safety_in_peer_to_peer_hea",
-    "doi": "10.64898/2026.09.18.26363448",
-    "date": "2026-09-21",
-    "title": "The Online Health Safety Gap: Consensus Alignment Does Not Imply Safety in Peer-to-Peer Health Narratives.",
-    "authors": "Clark, O.; Joshi, K.; Ahmed, Z.",
-    "abstract": "Online health information systems evaluate content by its alignment with medical consensus, treating that alignment as a reliable signal of safety. In peer-to-peer health discourse, that assumption fails: advice that is factually accurate is not necessarily safe to act on. This paper identifies and empirically validates the Online Health Safety Gap, a structural misspecification in which medically accurate content can carry substantial health risk. Across 704 health narratives (699 classified), two scores computed from non-overlapping feature sets, Narrative Truth Distance for epistemic divergence and Narrative Risk Score for health risk potential, share only 4.9% of their variance (r = 0.222, p < 0.001). Consequently, 39.6% of narratives fall in the two off-diagonal quadrants that single-axis systems mishandle by construction: aligned-but- risky content (25.2%) invisible to fact-checking, and divergent-but-safe content (14.4%) incorrectly suppressed. The same independence constrains what existing benchmarks can measure. On an expert-labeled misinformation benchmark of 437 posts containing 127 misinformation instances, the highest discrimination attained is Youdens J of 0.349, by a supervised classifier trained on those labels directly, which neither frozen biomedical embeddings nor a prompted large language model improves upon. Labels encoding factual accuracy therefore carry little signal about behavioral risk, and benchmarks of this construction cannot evaluate risk-aware assessment. To operationalize the gap, we introduce the Classification Quadrant, which maps epistemic divergence and health risk potential onto four governance categories with distinct intervention implications, and argue for a shift from fact- centric evaluation to risk-aware assessment.",
-    "category": "Medical Imaging",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363448v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363448v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "Accurate medical information in peer-to-peer health narratives is not automatically safe, because factual alignment and health risk can be largely independent.",
-      "clinical_relevance": "For online health content moderation, fact-checking alone can miss risky advice and overblock harmless but divergent narratives, so risk-aware review is needed.",
-      "method": [
-        "Analyzed 704 online health narratives (699 classified).",
-        "Computed Narrative Truth Distance for epistemic divergence and Narrative Risk Score for health-risk potential using non-overlapping feature sets.",
-        "Mapped content into a 4-quadrant classification to separate aligned/risky and divergent/safe narratives."
-      ],
-      "evidence_signal": "The two scores shared only 4.9% of variance (r = 0.222, p < 0.001), and 39.6% of narratives fell into off-diagonal quadrants that single-axis systems misclassify.",
-      "watch_item": "The framework depends on the quality of risk and truth feature engineering, so real-world deployment would need careful validation across topics, platforms, and populations.",
-      "hashtags": [
-        "#HealthAI",
-        "#Misinformation",
-        "#DigitalHealth",
-        "#ContentModeration",
-        "#PatientSafety"
-      ],
-      "paper_id": "2026-09-21-medrxiv-the_online_health_safety_gap_consensus_alignment_does_not_imply_safety_in_peer_to_peer_hea",
-      "paper_title": "The Online Health Safety Gap: Consensus Alignment Does Not Imply Safety in Peer-to-Peer Health Narratives.",
-      "paper_date": "2026-09-21",
-      "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:26",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-incremental_predictive_value_and_representation_of_transcriptomic_features_for_immunothera",
-    "doi": "10.64898/2026.09.14.26363060",
-    "date": "2026-09-21",
-    "title": "Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma",
-    "authors": "Han, G. Y.; Tai, H.; Wang, F.",
-    "abstract": "Transcriptomic profiling may improve immunotherapy response prediction, but its incremental value beyond established clinical and tumor biomarkers is unclear. In 298 patients with advanced urothelial carcinoma from IMvigor210, an atezolizumab (PD-L1 inhibitor) trial, we compared knowledge-guided tumor microenvironment gene-set features with data-driven transcriptome-wide gene selection. Knowledge-guided features improved AUPRC by 0.058 beyond clinical variables alone, with smaller gains after including standard biomarkers (TMB, PD-L1; +0.011) and research-enriched biomarkers (neoantigen burden, immune phenotype; +0.016). Data-driven gene selection was unstable across folds (mean Jaccard similarity, 0.227) and, under the clinical-plus-biomarker baseline, yielded an AUPRC 0.150 lower than the knowledge-guided representation. Despite this instability, IL-6/JAK/STAT3 signaling was the most recurrent Hallmark pathway, suggesting pathway-level biological convergence. External evaluation showed a similar pattern: knowledge-guided features improved AUPRC by 0.128 over clinical variables vs. 0.019 over clinical-plus-biomarker baseline. These findings support biologically informed transcriptomic representation when molecular profiling adds value beyond established biomarkers.",
-    "category": "Medical Imaging",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
     "primary_category": "oncology",
     "categories": [
       "oncology"
@@ -833,36 +629,87 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1.full.pdf"
       }
     ],
-    "score": 47,
+    "score": 49,
     "infographic": {
-      "key_insight": "Biology-guided transcriptomic features outperformed unstable gene-level selection for predicting atezolizumab response in advanced urothelial carcinoma.",
-      "clinical_relevance": "Transcriptomic profiling appears most useful when it adds to established clinical and biomarker data through interpretable pathway-level features rather than sparse gene lists.",
+      "key_insight": "A genomic foundation model (Evo2) extracted from tumor variant sequence context added prognostic information beyond established clinicopathologic and transcriptomic sarcoma risk models.",
+      "clinical_relevance": "In soft tissue sarcoma, sequence-aware genomic features may help refine survival risk stratification when combined with existing models like SARCULATOR and CINSARC.",
       "method": [
-        "Compared knowledge-guided tumor microenvironment gene-set features with data-driven transcriptome-wide gene selection.",
-        "Evaluated incremental predictive value over clinical variables, standard biomarkers, and research-enriched biomarkers.",
-        "Assessed stability across folds and tested the approach in an external evaluation set."
+        "Analyzed FFPE tumor samples and clinical data from 102 sarcoma patients, with 129 TCGA-SARC cases used for external validation.",
+        "Converted reconstructable short variants, fusions, and rearrangements into sequence inputs and embedded them with Evo2 to create patient-level representations.",
+        "Compared Cox model performance for Evo2 alone and in combination with SARCULATOR or CINSARC across multiple survival endpoints using C-index."
       ],
-      "evidence_signal": "In IMvigor210 (298 patients), knowledge-guided features improved AUPRC by 0.058 over clinical variables alone and still showed smaller gains over biomarker-enriched baselines; external evaluation showed a similar advantage.",
-      "watch_item": "Data-driven gene selection was unstable across folds, so transcriptomic signatures may not generalize well without biologically informed representation and external validation.",
+      "evidence_signal": "Reported C-index improvements were seen after adding Evo2, including OS from 0.620 to 0.770 in the study cohort and from 0.595 to 0.716 in TCGA-SARC, with similar gains for other survival endpoints.",
+      "watch_item": "These are descriptive point-estimate comparisons from retrospective cohorts, so clinical utility and generalizability still need prospective validation.",
       "hashtags": [
-        "#Immunotherapy",
-        "#Transcriptomics",
-        "#UrothelialCarcinoma",
-        "#Biomarkers",
+        "#Sarcoma",
+        "#GenomicFoundationModels",
+        "#Prognosis",
+        "#ClinicalAI",
         "#PrecisionOncology"
       ],
-      "paper_id": "2026-09-21-medrxiv-incremental_predictive_value_and_representation_of_transcriptomic_features_for_immunothera",
-      "paper_title": "Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma",
-      "paper_date": "2026-09-21",
+      "paper_id": "2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s",
+      "paper_title": "Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma",
+      "paper_date": "2026-09-22",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-09-28T14:42:44",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-23-medrxiv-evaluating_the_real_world_safety_of_atypical_antipsychotics_in_paediatric_autism_spectrum",
+    "doi": "10.64898/2026.09.22.26363643",
+    "date": "2026-09-23",
+    "title": "Evaluating the Real-World Safety of Atypical Antipsychotics in Paediatric Autism Spectrum Disorder: Lessons from Saudi Arabia's Pharmacovigilance System.",
+    "authors": "Aljead, M.; Almeziny, M.; Alghamdi, E.; Jalal, Z.; Jones, A. M.",
+    "abstract": "BackgroundAtypical antipsychotics (AAPs) are increasingly prescribed for paediatric patients with autism spectrum disorder (ASD). However, pharmacovigilance data from Saudi Arabia remain scarce. The aim of this study is to detect and characterise signals associated with AAPs and assess gender- and age-related ADR reporting patterns. MethodsA retrospective cross-sectional study with disproportionality analysis was conducted on paediatric patients (0-19 years) using the Saudi Food and Drug Authority (SFDA) database (2021-2024). Disproportionality analyses were performed using the reporting odds ratio (ROR), proportional reporting ratio (PRR), and Bayesian confidence propagation neural network (BCPNN). Age and gender were assessed using odds ratios (ORs), with Firth penalized logistic regression to confirm associations. ResultsOverall, 701 ADR reports were analysed. Most involved males (59.91%) and children aged 0-9 years (82.88%). Olanzapine had the highest proportion of serious reports (44.44%). At the system organ class (SOC) level, signals included nervous system disorders with risperidone (ROR 32.61 [16.62-64.00]; PRR 3.49 [2.22-5.47]; IC025 0.08); cardiac and general disorders with quetiapine; haematological, metabolic, and psychiatric disorders with olanzapine; and gastrointestinal disorders with aripiprazole. Gender-adjusted analyses indicated significant variation in selected ADR signals across age groups, while no significant differences were observed by gender. ConclusionsThis study highlights disproportionality signals associated with AAP use in paediatric patients. Age-related ADR variation supports consideration of age-specific ADR monitoring within current paediatric recommendations. While these findings do not establish causality, they generate hypotheses for further evaluation. Regional pharmacovigilance may complement international paediatric safety monitoring frameworks.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "primary_category": "psychiatry and clinical psychology",
+    "categories": [
+      "psychiatry and clinical psychology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363643v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.22.26363643v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "In Saudi paediatric ASD reports, atypical antipsychotics showed drug- and age-specific safety signals, with the strongest signals varying by agent and organ system.",
+      "clinical_relevance": "These findings may help clinicians and pharmacovigilance teams watch more closely for adverse reactions in children, especially younger age groups, when using atypical antipsychotics.",
+      "method": [
+        "Retrospective cross-sectional analysis of SFDA pharmacovigilance reports from 2021-2024.",
+        "Included 701 paediatric ADR reports (ages 0-19 years) and assessed sex/age patterns.",
+        "Used disproportionality methods: ROR, PRR, and BCPNN, with Firth logistic regression for association checks."
+      ],
+      "evidence_signal": "Signals included nervous system disorders with risperidone, cardiac/general disorders with quetiapine, haematological/metabolic/psychiatric disorders with olanzapine, and gastrointestinal disorders with aripiprazole.",
+      "watch_item": "Spontaneous reporting data can show disproportionality but cannot prove causality, and underreporting or reporting bias may affect interpretation.",
+      "hashtags": [
+        "#Pharmacovigilance",
+        "#AutismSpectrumDisorder",
+        "#Paediatrics",
+        "#Antipsychotics",
+        "#DrugSafety"
+      ],
+      "paper_id": "2026-09-23-medrxiv-evaluating_the_real_world_safety_of_atypical_antipsychotics_in_paediatric_autism_spectrum",
+      "paper_title": "Evaluating the Real-World Safety of Atypical Antipsychotics in Paediatric Autism Spectrum Disorder: Lessons from Saudi Arabia's Pharmacovigilance System.",
+      "paper_date": "2026-09-23",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:28",
+      "generated_at": "2026-09-28T14:42:46",
       "generator": "openai"
     }
   },
@@ -891,29 +738,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26359514v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "Whole-genome sequencing in Latin American patients with early-onset or familial Parkinson’s identified several pathogenic or likely pathogenic variants that standard array-based screening could miss.",
-      "clinical_relevance": "Genetic screening may improve the detection of monogenic Parkinson’s risk in underrepresented Latin American populations and help clarify early-onset or familial cases.",
+      "key_insight": "Whole-genome sequencing in Latin American patients with early-onset or familial Parkinson’s disease uncovered additional pathogenic and likely pathogenic variants that standard genotyping could miss.",
+      "clinical_relevance": "Broader genomic screening may improve genetic diagnosis and counseling for early-onset/familial Parkinson’s disease in underrepresented Latin American populations.",
       "method": [
-        "Short-read whole-genome sequencing was performed in 263 participants with early-onset and/or familial Parkinson’s disease.",
-        "The cohort had no previously known pathogenic Parkinson’s variant on genotyping data.",
-        "Researchers screened 7 Parkinson’s-related genes plus 21 genes linked to related parkinsonian disorders."
+        "Short-read whole-genome sequencing was performed in 263 individuals with early-onset PD and/or a family history of PD.",
+        "Participants were selected after prior genotyping showed no known pathogenic PD variant.",
+        "Variants were screened across 7 PD-related genes and 21 genes linked to related parkinsonian disorders."
       ],
-      "evidence_signal": "In this sequenced subset, 4.7% had pathogenic or likely pathogenic variants in primary or secondary Parkinson’s genes, 5.5% had pathogenic or likely pathogenic Gaucher disease variants, and 2.7% carried known GBA1 risk variants.",
-      "watch_item": "Because the analysis focused on a selected subgroup without prior known pathogenic variants, findings may not generalize to all Parkinson’s patients and still require careful variant interpretation.",
+      "evidence_signal": "Among analyzed individuals, 4.7% had pathogenic/likely pathogenic variants in primary or secondary PD genes, 5.5% had pathogenic/likely pathogenic Gaucher disease variants, and 2.7% carried known GBA1 risk variants.",
+      "watch_item": "This was a selected subset without known pathogenic variants on prior genotyping, so the findings may not generalize to all PD patients and still require careful variant interpretation.",
       "hashtags": [
         "#ParkinsonsDisease",
         "#Genomics",
         "#WholeGenomeSequencing",
-        "#EarlyOnsetPD",
-        "#LatinAmericanHealth"
+        "#LatinAmerica",
+        "#Neurology"
       ],
       "paper_id": "2026-09-22-medrxiv-genomic_landscape_of_early_onset_and_familial_latin_american_parkinson_s_patients",
       "paper_title": "Genomic Landscape of Early-Onset and Familial Latin American Parkinson's Patients",
       "paper_date": "2026-09-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:31",
+      "generated_at": "2026-09-28T14:42:48",
       "generator": "openai"
     }
   },
@@ -942,43 +789,94 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26362872v1.full.pdf"
       }
     ],
-    "score": 45,
+    "score": 40,
     "infographic": {
-      "key_insight": "A foundation-model-based temporal scorer can identify the best ultrasound frame for ONSD measurement by learning from sparse, softly weighted labels around expert-selected key frames.",
-      "clinical_relevance": "This could make optic nerve sheath diameter assessment more accessible and consistent in low-resource settings by reducing dependence on highly skilled manual frame selection.",
+      "key_insight": "A foundation-model-based temporal scorer can pick the best ultrasound frame for optic nerve sheath diameter measurement using sparse labels and soft targets.",
+      "clinical_relevance": "This could make ONSD ultrasound easier to use in low-resource settings by helping less experienced operators identify frames suitable for intracranial pressure assessment.",
       "method": [
-        "Extract per-frame embeddings from an ultrasound foundation model (USFM).",
-        "Train a lightweight temporal head with Gaussian soft labels around labeled key frames.",
-        "Rank frames in each video and select the top-scoring frame for ONSD assessment."
+        "Extract per-frame embeddings from an ultrasound foundation model.",
+        "Feed embeddings into a lightweight temporal head to score each video frame.",
+        "Train with Gaussian soft labels around key frames instead of hard 0/1 labels."
       ],
-      "evidence_signal": "Evaluated with subject-level cross-validation on 18 subjects and 323 ultrasound videos across nine sweep types, the model found an optimal frame in 82.2% of sweeps versus 49.2% for the strongest training-free baseline and 71.9% for hard-label classification.",
-      "watch_item": "Performance depends on having representative ultrasound acquisition data, and results may not generalize without validation across devices, operators, and patient populations.",
+      "evidence_signal": "In subject-level cross-validation on 18 subjects and 323 videos across nine sweep types, the method selected an optimal frame in 82.2% of evaluated sweeps, outperforming the strongest training-free baseline and hard-label classification.",
+      "watch_item": "Performance depends on the quality of sparse key-frame labels and still needs validation in broader, real-world ultrasound workflows before deployment.",
       "hashtags": [
         "#MedicalImaging",
         "#UltrasoundAI",
         "#FoundationModel",
-        "#MachineLearning",
-        "#ICP"
+        "#IntracranialPressure",
+        "#PointOfCare"
       ],
       "paper_id": "2026-09-22-medrxiv-soft_temporal_scoring_using_a_foundation_model_optimal_frame_selection_for_improved_onsd_m",
       "paper_title": "Soft Temporal Scoring Using a Foundation Model: Optimal Frame Selection for Improved ONSD Measurement in Ultrasound Videos",
       "paper_date": "2026-09-22",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-09-27T12:35:33",
+      "generated_at": "2026-09-28T14:42:50",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-21-medrxiv-evaluating_agentic_simulation_for_local_public_health_estimation",
-    "doi": "10.64898/2026.09.19.26363431",
-    "date": "2026-09-21",
-    "title": "Evaluating agentic simulation for local public health estimation",
-    "authors": "Nakatsuka, M. A.; Steele, R. J.; Han, X.; Oermann, E. K.",
-    "abstract": "Large language model (LLM)-based generative agents can reproduce aspects of individual human behavior, but whether they can be scaled to geographically grounded populations that reproduce real-world health behaviors remains unclear. Here, we introduce LLMPopSim, an agentic population simulation framework that uses U.S. Census and Centers for Disease Control and Prevention data to construct populations of AI agents whose simulated individual health behaviors can be aggregated and evaluated at the community level. We developed the framework using historical data from Hawaii in 2018, and evaluated temporal and geographic generalizability using held-out 2022 cohorts from Hawaii and New York State, with colorectal cancer screening and mammography as proof-of-concept behaviors. Across the four state-outcome evaluations, mean absolute error ranged from 3.5 to 15.0 percentage points and correlations between simulated and observed ZCTA-level prevalence ranged from 0.26 to 0.69. Mean prediction bias was +15.0 and +10.2 percentage points for colorectal cancer screening in Hawaii and New York State, respectively, and +2.9 and +0.9 percentage points for mammography; ratios of predicted to observed geographic standard deviation were 0.60 and 0.68 for colorectal cancer screening and 1.12 and 1.96 for mammography, respectively. Prediction error was greatest in communities with lower observed screening prevalence and varied across community characteristics without a uniform socioeconomic gradient. These findings demonstrate that individually represented AI agents can aggregate into population-level patterns that retain measurable features of real-world health behavior across temporal and geographic transfer, while identifying calibration, distributional fidelity and subgroup performance as key challenges for generative population simulation. LLMPopSim provides an empirical foundation for developing synthetic populations that may ultimately enable simulation of heterogeneous population responses to public health interventions.",
-    "category": "Clinical NLP",
+    "id": "2026-09-23-medrxiv-automated_segmentation_of_intracranial_arteries_on_4d_flow_mri_for_hemodynamic_quantificat",
+    "doi": "10.64898/2026.03.09.26347567",
+    "date": "2026-09-23",
+    "title": "Automated Segmentation of Intracranial Arteries on 4D Flow MRI for Hemodynamic Quantification",
+    "authors": "Zhang, J.; Verschuur, A. S.; van Ooij, P.; Schrauben, E. M.; Bakker, M. K.; Nam, K. M.; van der Schaaf, I. C.; Tax, C. M. W.",
+    "abstract": "Accurate vessel segmentation is essential for reliable hemodynamic quantification in 4D Flow MRI. Automated segmentation with deep learning offers a promising alternative to the time-consuming, operator-dependent manual segmentation, but its application is often hindered by the scarcity of labeled datasets. Moreover, while a previous study has evaluated the impact of automated vs manual segmentation on downstream intracranial hemodynamic quantification, it remains to be explored whether variability between different automated segmentation methods affects hemodynamic quantification significantly, particularly in the context of intracranial 7T 4D Flow MRI. We investigated a transfer learning-based intracranial artery segmentation model using a 3D full-resolution nnU-Net, pretrained on 355 TOF-MRA scans and fine-tuned on 11 7T 4D Flow MRI scans. The model was compared with two published models: a direct-transfer U-Net pretrained only on TOF-MRA without 4D Flow MRI fine-tuning, and a DenseNet U-Net trained from scratch on the same 11 7T 4D Flow MRI scans. Segmentation performance was evaluated against the manual reference on test sets with different resolutions and the impact on downstream hemodynamic quantification was assessed. The transfer learning-based nnU-Net achieved the highest Dice score (>0.85), the lowest HD95 ([~]3 mm), and the highest ICCs in cross-sectional area (0.62-0.87, except PCAs) and mean blood flow (0.78- 0.98). For wall shear stress (WSS) quantification, the transfer learning-based nnU-Net segmentations achieved the closest agreement with the manual reference (mean = 1.57 {+/-} 0.63 Pa, ICC = 0.96; max = 2.16 {+/-} 1.05 Pa, ICC = 0.97) and minimal bias ([&le;] 1.7%), whereas U-Net and DenseNet U-Net showed systematic under-(-5%) and overestimation (+7%), respectively. However, several vessel segments, including the ACA for DenseNet U-Net and the BA for U-Net, showed statistically significant differences (ANOVA post-hoc correction P < 0.05) in the flow-related metrics when compared with the manual reference. These results demonstrate that the transfer learning-based nnU-Net can provide accurate automated intracranial artery segmentation for 7T 4D flow MRI, and that segmentation accuracy directly affects 4D Flow MRI- derived hemodynamic quantification.",
+    "category": "Medical Imaging",
     "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.03.09.26347567v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.03.09.26347567v2.full.pdf"
+      }
+    ],
+    "score": 38,
+    "infographic": {
+      "key_insight": "A transfer learning-based 3D nnU-Net produced the most accurate intracranial artery segmentation on 7T 4D Flow MRI and best preserved downstream hemodynamic measurements.",
+      "clinical_relevance": "More reliable automated segmentation could reduce manual workload and improve consistency in 4D Flow MRI-based intracranial hemodynamic analysis.",
+      "method": [
+        "Pretrained a 3D full-resolution nnU-Net on 355 TOF-MRA scans, then fine-tuned it on 11 7T 4D Flow MRI scans.",
+        "Compared against two published baselines: a TOF-MRA-only direct-transfer U-Net and a DenseNet U-Net trained from scratch on the 11 4D Flow MRI scans.",
+        "Evaluated segmentation quality and effects on area, flow, and wall shear stress against manual reference across test sets with different resolutions."
+      ],
+      "evidence_signal": "The transfer learning nnU-Net achieved Dice scores above 0.85, HD95 around 3 mm, and strong agreement for flow metrics and WSS (ICC up to 0.97), outperforming both comparison models.",
+      "watch_item": "Results are based on a very small fine-tuning set and some vessel segments still showed significant metric differences versus manual segmentation, so generalization and segment-specific reliability remain concerns.",
+      "hashtags": [
+        "#MedicalImaging",
+        "#DeepLearning",
+        "#4DFlowMRI",
+        "#Neurovascular",
+        "#Hemodynamics"
+      ],
+      "paper_id": "2026-09-23-medrxiv-automated_segmentation_of_intracranial_arteries_on_4d_flow_mri_for_hemodynamic_quantificat",
+      "paper_title": "Automated Segmentation of Intracranial Arteries on 4D Flow MRI for Hemodynamic Quantification",
+      "paper_date": "2026-09-23",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-09-28T14:42:52",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-22-medrxiv-clinical_trajectories_and_genetic_architecture_across_the_neurological_psychiatric_boundar",
+    "doi": "10.64898/2026.08.06.26359855",
+    "date": "2026-09-22",
+    "title": "Clinical trajectories and genetic architecture across the neurological-psychiatric boundary",
+    "authors": "Kopal, J.; Smeland, O. B.; Hagen, E.; Amanzadi, A.; Erdos, B.; Fuhrer, J.; Shadrin, A. A.; Frei, O.; van der Meer, D.; O'Connell, K. S.; Dale, A. M.; Andreassen, O. A.",
+    "abstract": "Neurological and psychiatric disorders are treated as distinct diagnostic categories, yet genetic studies reveal substantial pleiotropy between them. Whether this overlap extends to clinical trajectories has not been tested at scale. We compared disease trajectory embeddings from Delphi-2M, a transformer model trained only on the health records of 400,000 UK Biobank participants, with genome-wide genetic correlations across 19 neurological and psychiatric disorders. Clinical and genetic similarity partly converged across disorder pairs (Mantel r = 0.33). Both measures placed most disorders closer to their own diagnostic category than to the other. Both also made the same three exceptions: multiple sclerosis, migraine, and essential tremor sat closer on average to psychiatric than to neurological disorders. Clinical trajectories and genetic architecture thus draw the same diagnostic boundary and break it in the same places. These findings support a more integrated approach to neurological and psychiatric disorders.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
     "primary_category": "health informatics",
     "categories": [
       "health informatics"
@@ -986,36 +884,87 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.06.26359855v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.06.26359855v2.full.pdf"
       }
     ],
-    "score": 45,
+    "score": 37,
     "infographic": {
-      "key_insight": "LLMPopSim shows that AI agent populations can approximate real community health behaviors, but accuracy is uneven across places and outcomes.",
-      "clinical_relevance": "This could help public health teams simulate screening patterns and test interventions at the community level before real-world rollout.",
+      "key_insight": "Clinical trajectories from health records and genetic correlations show a moderate match across neurological and psychiatric disorders, and both mostly align with the traditional diagnostic split.",
+      "clinical_relevance": "The results suggest neurology and psychiatry may be better understood as overlapping disease domains, with a few disorders bridging the boundary and potentially benefiting from more integrated research and classification.",
       "method": [
-        "Built AI agent populations using U.S. Census and CDC data.",
-        "Trained on Hawaii 2018 data and tested on held-out 2022 cohorts from Hawaii and New York State.",
-        "Compared simulated vs observed colorectal cancer screening and mammography at the ZCTA level."
+        "Used Delphi-2M, a transformer trained on 400,000 UK Biobank participants’ health records, to build disease trajectory embeddings.",
+        "Compared clinical similarity between 19 neurological and psychiatric disorders with genome-wide genetic correlations.",
+        "Assessed whether the two similarity measures agreed across disorder pairs and diagnostic categories."
       ],
-      "evidence_signal": "Across four evaluations, mean absolute error was 3.5 to 15.0 percentage points and ZCTA-level correlations ranged from 0.26 to 0.69.",
-      "watch_item": "Performance was weakest in lower-prevalence communities, highlighting calibration and subgroup fidelity concerns before practical use.",
+      "evidence_signal": "Across 19 disorders, clinical and genetic similarity showed partial convergence (Mantel r = 0.33), with both measures placing most disorders closer to their own category and highlighting the same three exceptions: multiple sclerosis, migraine, and essential tremor.",
+      "watch_item": "This is an observational, correlation-based comparison from one cohort, so it does not prove causality or guarantee the same pattern will generalize to other populations or clinical settings.",
       "hashtags": [
-        "#AIinHealth",
-        "#PublicHealth",
-        "#GenerativeAI",
-        "#HealthSimulation",
-        "#ClinicalNLP"
+        "#Neurology",
+        "#Psychiatry",
+        "#Genetics",
+        "#AIinMedicine",
+        "#UKBiobank"
       ],
-      "paper_id": "2026-09-21-medrxiv-evaluating_agentic_simulation_for_local_public_health_estimation",
-      "paper_title": "Evaluating agentic simulation for local public health estimation",
-      "paper_date": "2026-09-21",
-      "paper_category": "Clinical NLP",
-      "generated_at": "2026-09-27T12:35:35",
+      "paper_id": "2026-09-22-medrxiv-clinical_trajectories_and_genetic_architecture_across_the_neurological_psychiatric_boundar",
+      "paper_title": "Clinical trajectories and genetic architecture across the neurological-psychiatric boundary",
+      "paper_date": "2026-09-22",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-09-28T14:42:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-22-medrxiv-evaluating_the_harmonization_of_native_digital_and_digitized_ecgs_for_ecg_ai_research",
+    "doi": "10.64898/2026.09.21.26363586",
+    "date": "2026-09-22",
+    "title": "Evaluating the Harmonization of Native Digital and Digitized ECGs for ECG-AI Research",
+    "authors": "Soliman, E. Z.; Bukhari, H.; Patterson, L.; Moldibi, S.; Karabayir, I.; Akbilgic, O.",
+    "abstract": "Large epidemiologic studies have historical electrocardiogram (ECG) collections limited to paper tracings or scanned images rather than native digital files, limiting ECG-AI applications. We compared 15 ECGs available as native digital XML files and as PDF tracings digitized using ECGScan software. Both versions were processed using an ensemble of five convolutional neural networks predicting 10-year heart failure risk. Predictions were strongly correlated (Pearson r=0.804; Spearman {rho}=0.893). Predicted probabilities were (mean {+/-} SD) 0.195 {+/-} 0.048 for native digital ECGs and 0.171 {+/-} 0.042 for digitized ECGs. These preliminary findings support further evaluation of digitized ECGs for ECG-AI applications.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363586v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363586v1.full.pdf"
+      }
+    ],
+    "score": 27,
+    "infographic": {
+      "key_insight": "Digitized ECGs produced AI heart-failure risk predictions that closely tracked native digital ECGs, suggesting scanned tracings may be usable for ECG-AI research.",
+      "clinical_relevance": "This supports the potential reuse of historical paper or PDF ECG archives in AI studies when native digital files are unavailable.",
+      "method": [
+        "Compared 15 ECGs in two formats: native digital XML and PDF tracings digitized with ECGScan.",
+        "Processed both versions with an ensemble of five convolutional neural networks.",
+        "Compared predicted 10-year heart failure risk outputs between formats."
+      ],
+      "evidence_signal": "The two ECG formats showed strong prediction agreement, with Pearson r=0.804 and Spearman rho=0.893, and similar mean predicted risks (0.195 native vs 0.171 digitized).",
+      "watch_item": "The sample was very small, so results are preliminary and need larger validation before routine research or operational use.",
+      "hashtags": [
+        "#ECGAI",
+        "#DigitalHealth",
+        "#MedicalImaging",
+        "#MachineLearning",
+        "#HeartFailure"
+      ],
+      "paper_id": "2026-09-22-medrxiv-evaluating_the_harmonization_of_native_digital_and_digitized_ecgs_for_ecg_ai_research",
+      "paper_title": "Evaluating the Harmonization of Native Digital and Digitized ECGs for ECG-AI Research",
+      "paper_date": "2026-09-22",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-09-28T14:42:56",
       "generator": "openai"
     }
   }

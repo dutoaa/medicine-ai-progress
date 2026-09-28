@@ -1,24 +1,24 @@
 {
-  "key_insight": "A privacy-preserving local hybrid system using a small language model plus rules can accurately extract uncoded urinary tract infection features from multilingual primary-care EHR free text.",
-  "clinical_relevance": "This could help convert narrative notes into structured data for research, quality improvement, and risk stratification without sending sensitive records to external cloud LLMs.",
+  "key_insight": "A local hybrid pipeline combining a small language model with regular expressions can accurately extract uncoded urinary tract infection features from Catalan primary care notes without sending data to the cloud.",
+  "clinical_relevance": "This approach could help turn free-text EHR narratives into usable structured data for research and quality improvement while better preserving privacy.",
   "method": [
-    "Ran Phi4-mini (3.8B) locally inside the institutional firewall with Ollama.",
-    "Combined clinician-refined prompts with deterministic regular expressions to extract six UTI features.",
-    "Validated against a double-blind clinician gold standard and an adversarial synthetic noise dataset."
+    "Deployed the open-weight Phi4-mini model inside the institutional firewall using Ollama.",
+    "Refined prompts with clinicians and added deterministic regular expressions after model output.",
+    "Validated on both real clinician-reviewed records and noisy synthetic notes designed to stress-test the pipeline."
   ],
-  "evidence_signal": "On 15,498 EHR narratives from 2,962 patients, the pipeline identified 4,663 feature occurrences and achieved 93.8% accuracy in real-world clinician validation, with 83.6% sensitivity and 96.6% specificity.",
-  "watch_item": "Performance was validated on a focused UTI feature set, so broader deployment may require retraining, local language adaptation, and monitoring for edge cases or site-specific documentation styles.",
+  "evidence_signal": "In 15,498 MEAP narratives from 2,962 patients, the pipeline found 4,663 feature occurrences and achieved 93.8% accuracy in real-world clinician validation.",
+  "watch_item": "Performance was strong, but the approach still needs careful local calibration and oversight because multilingual notes, noisy text, and feature-specific errors can affect reliability.",
   "hashtags": [
     "#ClinicalNLP",
-    "#MedicalAI",
+    "#HealthAI",
     "#EHR",
-    "#LLM",
-    "#PrivacyPreservingAI"
+    "#PrivacyPreservingAI",
+    "#MedicalLLM"
   ],
   "paper_id": "2026-09-22-medrxiv-uncoded_clinical_features_from_multilingual_electronic_health_records_in_catalonia_develop",
   "paper_title": "Uncoded Clinical Features from Multilingual Electronic Health Records in Catalonia: Development and Validation Study",
   "paper_date": "2026-09-22",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-09-27T12:34:53",
+  "generated_at": "2026-09-28T14:42:17",
   "generator": "openai"
 }
