@@ -1,156 +1,164 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-28
+Generated: 2026-09-29
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Uncoded Clinical Features from Multilingual Electronic Health Records in Catalonia: Development and Validation Study
+## 1. EHRAdapt: Adapting Pretrained Language Models to Electronic Health Records with Semantic Priors for Rare Clinical Events
 
-- Date: 2026-09-22
+- Date: 2026-09-27
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363030v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363030v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-uncoded_clinical_features_from_multilingual_electronic_health_records_in_catalonia_develop_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.34007v1
+- PDF: https://arxiv.org/pdf/2609.34007v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-27-arxiv-ehradapt_adapting_pretrained_language_models_to_electronic_health_records_with_semantic_pr_infographic.json
 
-## 2. Auditing the Human LLM Autonomy Gap in Clinical Ethics: Development and Application of the Autonomy Index Across 50 Clinical Ethics Vignettes
+## 2. Applying Language Models in medical Medicine: Recent Trends and Perspectives
 
-- Date: 2026-09-23
+- Date: 2026-09-28
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.22.26363256v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.22.26363256v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-23-medrxiv-auditing_the_human_llm_autonomy_gap_in_clinical_ethics_development_and_application_of_the_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.34780v1
+- PDF: https://arxiv.org/pdf/2609.34780v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-applying_language_models_in_medical_medicine_recent_trends_and_perspectives_infographic.json
 
-## 3. Evaluation of an AI-Powered Patient Education Application in Bariatric Surgery: A Prospective Mixed-Methods Feasibility Study
+## 3. FOCUS: Benchmarking Retinal Model Generalization from Foundation Vision Encoders to Multimodal LLMs
 
-- Date: 2026-09-23
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363276v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363276v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-23-medrxiv-evaluation_of_an_ai_powered_patient_education_application_in_bariatric_surgery_a_prospecti_infographic.json
-
-## 4. Clinician Perspectives on Automated Facial Analysis for Pain Assessment: A Cross-Sectional Survey of Physicians, Advanced Practice Providers, and Nurses
-
-- Date: 2026-09-23
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363597v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363597v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-23-medrxiv-clinician_perspectives_on_automated_facial_analysis_for_pain_assessment_a_cross_sectional_infographic.json
-
-## 5. Assessment of Fairness and Bias of an Image-based Surgical Site Infection Detection AI Model
-
-- Date: 2026-09-23
+- Date: 2026-09-27
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.22.26363636v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.22.26363636v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-23-medrxiv-assessment_of_fairness_and_bias_of_an_image_based_surgical_site_infection_detection_ai_mod_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.33158v1
+- PDF: https://arxiv.org/pdf/2609.33158v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-27-arxiv-focus_benchmarking_retinal_model_generalization_from_foundation_vision_encoders_to_multimo_infographic.json
 
-## 6. Does Deep Learning Vascular Segmentation on CTA Improve Vertebral Artery Dissection Detection?
+## 4. Jev in Medicine: A Benchmark Evaluation. Preliminary Results
 
-- Date: 2026-09-22
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.20.26363486v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.20.26363486v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-does_deep_learning_vascular_segmentation_on_cta_improve_vertebral_artery_dissection_detect_infographic.json
-
-## 7. Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records
-
-- Date: 2026-09-22
+- Date: 2026-09-27
 - Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.34024v1
+- PDF: https://arxiv.org/pdf/2609.34024v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-27-arxiv-jev_in_medicine_a_benchmark_evaluation_preliminary_results_infographic.json
 
-## 8. An auditable evidence compiler for large language model-assisted systematic reviews
+## 5. SentZero: An Enhanced Sentence-Centric Vision-Language Pretraining for Multi-Task Zero-Shot Chest X-Ray Analysis
 
-- Date: 2026-09-22
+- Date: 2026-09-28
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.34479v1
+- PDF: https://arxiv.org/pdf/2609.34479v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-sentzero_an_enhanced_sentence_centric_vision_language_pretraining_for_multi_task_zero_shot_infographic.json
+
+## 6. PPG-LM: A Photoplethysmography-Language Model with Multi-Level Clinical Alignment
+
+- Date: 2026-09-27
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-an_auditable_evidence_compiler_for_large_language_model_assisted_systematic_reviews_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.33516v1
+- PDF: https://arxiv.org/pdf/2609.33516v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-27-arxiv-ppg_lm_a_photoplethysmography_language_model_with_multi_level_clinical_alignment_infographic.json
 
-## 9. Assessing the Performance of Artificial Intelligence on Anesthesiology In-Training Examinations and Applicability in Medical Education
+## 7. RareDx: Controlled Knowledge Integration and Graph-Grounded Policy Optimization for Rare-Disease Diagnosis
 
-- Date: 2026-09-22
+- Date: 2026-09-28
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2609.35549v1
+- PDF: https://arxiv.org/pdf/2609.35549v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-raredx_controlled_knowledge_integration_and_graph_grounded_policy_optimization_for_rare_di_infographic.json
+
+## 8. M3-Score: Fidelity, Memorization and Coverage as Separate Axes for Evaluating Generative Radiology Image Models
+
+- Date: 2026-09-27
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.33769v1
+- PDF: https://arxiv.org/pdf/2609.33769v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-27-arxiv-m3_score_fidelity_memorization_and_coverage_as_separate_axes_for_evaluating_generative_rad_infographic.json
+
+## 9. Can LLMs Value the Right Evidence? Evidence-Value Misalignment in Dynamic Medical Diagnosis
+
+- Date: 2026-09-28
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2609.35627v1
+- PDF: https://arxiv.org/pdf/2609.35627v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-can_llms_value_the_right_evidence_evidence_value_misalignment_in_dynamic_medical_diagnosis_infographic.json
+
+## 10. Training-Free Clinical Reasoning through Medical Ontologies and Cognitive Mapping: A Symbolic-Probabilistic Knowledge Graph Framework
+
+- Date: 2026-09-28
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2609.35298v1
+- PDF: https://arxiv.org/pdf/2609.35298v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-training_free_clinical_reasoning_through_medical_ontologies_and_cognitive_mapping_a_symbol_infographic.json
+
+## 11. DoAtlas-2: A Foundation for Self-Evolving Causal Biomedical Discovery
+
+- Date: 2026-09-28
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2609.35107v1
+- PDF: https://arxiv.org/pdf/2609.35107v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-doatlas_2_a_foundation_for_self_evolving_causal_biomedical_discovery_infographic.json
+
+## 12. InfiMed2: A Generalist Medical Multimodal Foundation Model from Contextual Evidence and Stability-Aware Supervision
+
+- Date: 2026-09-28
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363591v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363591v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-assessing_the_performance_of_artificial_intelligence_on_anesthesiology_in_training_examina_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.34798v1
+- PDF: https://arxiv.org/pdf/2609.34798v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-infimed2_a_generalist_medical_multimodal_foundation_model_from_contextual_evidence_and_sta_infographic.json
 
-## 10. Mind the gap: emergent clinical risk at the interface of two individually safe AI systems in a multilingual ambient scribe
+## 13. Clinical Trajectory Alignment for Medical Vision-Language Pre-training
 
-- Date: 2026-09-23
+- Date: 2026-09-28
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.22.26363642v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.22.26363642v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-23-medrxiv-mind_the_gap_emergent_clinical_risk_at_the_interface_of_two_individually_safe_ai_systems_i_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.34439v1
+- PDF: https://arxiv.org/pdf/2609.34439v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-clinical_trajectory_alignment_for_medical_vision_language_pre_training_infographic.json
 
-## 11. Benchmarking open-source automated thigh muscle MRI segmentation algorithms
+## 14. Recursive LLM Degradation in Biomedical Question Answering: A Cross-Generation Study
 
-- Date: 2026-09-22
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms_infographic.json
-
-## 12. The United States CADASIL Consortium: Baseline Findings from a Natural History Study
-
-- Date: 2026-09-22
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-the_united_states_cadasil_consortium_baseline_findings_from_a_natural_history_study_infographic.json
-
-## 13. Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma
-
-- Date: 2026-09-22
+- Date: 2026-09-28
 - Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.34257v1
+- PDF: https://arxiv.org/pdf/2609.34257v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-recursive_llm_degradation_in_biomedical_question_answering_a_cross_generation_study_infographic.json
 
-## 14. Evaluating the Real-World Safety of Atypical Antipsychotics in Paediatric Autism Spectrum Disorder: Lessons from Saudi Arabia's Pharmacovigilance System.
+## 15. CG-Probes: Recovering Guardrail Directions from Patient Query Embeddings
 
-- Date: 2026-09-23
+- Date: 2026-09-25
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2609.31062v1
+- PDF: https://arxiv.org/pdf/2609.31062v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-25-arxiv-cg_probes_recovering_guardrail_directions_from_patient_query_embeddings_infographic.json
+
+## 16. Nutri-ATLAS: Embodied Agent for Tabulated Lookup and Assistance for Smarter nutrition
+
+- Date: 2026-09-26
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.32803v1
+- PDF: https://arxiv.org/pdf/2609.32803v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-26-arxiv-nutri_atlas_embodied_agent_for_tabulated_lookup_and_assistance_for_smarter_nutrition_infographic.json
+
+## 17. CLIMB: A Clinical Multimorbidity Benchmark for Diagnosing Co-occurring Conditions through Multiturn Conversations
+
+- Date: 2026-09-28
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2609.35462v1
+- PDF: https://arxiv.org/pdf/2609.35462v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-climb_a_clinical_multimorbidity_benchmark_for_diagnosing_co_occurring_conditions_through_m_infographic.json
+
+## 18. SegBanana: Steering Unified Multimodal Models into Medical Segmenters
+
+- Date: 2026-09-28
 - Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.22.26363643v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.22.26363643v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-23-medrxiv-evaluating_the_real_world_safety_of_atypical_antipsychotics_in_paediatric_autism_spectrum_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2609.34235v1
+- PDF: https://arxiv.org/pdf/2609.34235v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-segbanana_steering_unified_multimodal_models_into_medical_segmenters_infographic.json
 
-## 15. Genomic Landscape of Early-Onset and Familial Latin American Parkinson's Patients
+## 19. Unknown is not normal: separating language-model extraction from rule-based decision logic for clinical risk scores
 
-- Date: 2026-09-22
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26359514v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26359514v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-genomic_landscape_of_early_onset_and_familial_latin_american_parkinson_s_patients_infographic.json
+- Date: 2026-09-28
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2609.34112v1
+- PDF: https://arxiv.org/pdf/2609.34112v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-28-arxiv-unknown_is_not_normal_separating_language_model_extraction_from_rule_based_decision_logic_infographic.json
 
-## 16. Soft Temporal Scoring Using a Foundation Model: Optimal Frame Selection for Improved ONSD Measurement in Ultrasound Videos
+## 20. T-MoXAI: A Hierarchical Explainability Framework for Temporal Multimodal Data
 
-- Date: 2026-09-22
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26362872v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26362872v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-soft_temporal_scoring_using_a_foundation_model_optimal_frame_selection_for_improved_onsd_m_infographic.json
-
-## 17. Automated Segmentation of Intracranial Arteries on 4D Flow MRI for Hemodynamic Quantification
-
-- Date: 2026-09-23
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.03.09.26347567v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.03.09.26347567v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-23-medrxiv-automated_segmentation_of_intracranial_arteries_on_4d_flow_mri_for_hemodynamic_quantificat_infographic.json
-
-## 18. Clinical trajectories and genetic architecture across the neurological-psychiatric boundary
-
-- Date: 2026-09-22
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.06.26359855v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.06.26359855v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-clinical_trajectories_and_genetic_architecture_across_the_neurological_psychiatric_boundar_infographic.json
-
-## 19. Evaluating the Harmonization of Native Digital and Digitized ECGs for ECG-AI Research
-
-- Date: 2026-09-22
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363586v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363586v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-22-medrxiv-evaluating_the_harmonization_of_native_digital_and_digitized_ecgs_for_ecg_ai_research_infographic.json
+- Date: 2026-09-27
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2609.33685v1
+- PDF: https://arxiv.org/pdf/2609.33685v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-09-27-arxiv-t_moxai_a_hierarchical_explainability_framework_for_temporal_multimodal_data_infographic.json
