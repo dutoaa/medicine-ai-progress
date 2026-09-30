@@ -1,24 +1,24 @@
 {
-  "key_insight": "EHRAdapt adapts frozen language models to EHR tuples by combining a semantic prior for each event code with a learned residual, which helps especially when clinical events are rare.",
-  "clinical_relevance": "This could improve prediction and classification from sparse, long-tailed health records by preserving clinical meaning without flattening EHR structure into text.",
+  "key_insight": "EHRAdapt lets frozen language models work directly with EHR event tuples by combining a clinical semantic prior with a learned evidence residual, which helps especially for rare events.",
+  "clinical_relevance": "This could improve EHR-based prediction and downstream disease classification by preserving clinical meaning without inflating records into long text sequences.",
   "method": [
-    "Maps EHR tuples directly into a frozen LM embedding space instead of serializing records as text.",
-    "Uses learned modality embeddings and time-gap attention biases to represent structure and temporal spacing.",
-    "Represents each event code as semantic prior + low-rank evidence residual, trained while keeping the backbone frozen."
+    "Encodes each EHR event as (time, modality, code) instead of serializing it as text.",
+    "Adds modality embeddings and time-gap attention biases while mapping event codes into the model's input space.",
+    "Represents each code with a frozen ontology-based semantic prior plus a learned low-rank residual that grows with evidence."
   ],
-  "evidence_signal": "Across continued pretraining on about 4 million patients' records and three frozen backbones, the full adapter outperformed ablations on held-out next-event prediction and downstream infectious-disease/syndromic classification.",
-  "watch_item": "Performance gains are shown on retrospective benchmarks, so real-world deployment would still need prospective validation and careful handling of rare-code coverage and ontology quality.",
+  "evidence_signal": "The adapter was continued-pretrained on records from about 4 million patients and evaluated with held-out next-event prediction and downstream infectious-disease/syndromic classification across three frozen backbones.",
+  "watch_item": "Rare-event gains depend on ontology descriptions and projection quality, so performance may vary when code semantics are sparse or local coding systems differ.",
   "hashtags": [
     "#ClinicalNLP",
-    "#EHR",
-    "#HealthAI",
-    "#RareEvents",
-    "#LLM"
+    "#ElectronicHealthRecords",
+    "#RareDisease",
+    "#BiomedicalAI",
+    "#LanguageModels"
   ],
   "paper_id": "2026-09-27-arxiv-ehradapt_adapting_pretrained_language_models_to_electronic_health_records_with_semantic_pr",
   "paper_title": "EHRAdapt: Adapting Pretrained Language Models to Electronic Health Records with Semantic Priors for Rare Clinical Events",
   "paper_date": "2026-09-27",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-09-29T13:32:31",
+  "generated_at": "2026-09-30T13:09:46",
   "generator": "openai"
 }

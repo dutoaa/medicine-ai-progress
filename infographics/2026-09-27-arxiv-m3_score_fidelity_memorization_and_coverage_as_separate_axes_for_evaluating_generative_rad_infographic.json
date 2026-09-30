@@ -1,24 +1,24 @@
 {
-  "key_insight": "M3-Score evaluates radiology generative models on three separate axes—fidelity, memorization, and coverage—using radiology-specific encoder features instead of one summary score.",
-  "clinical_relevance": "This could make it easier to compare synthetic radiology images in ways that better reflect clinically meaningful similarity, diversity, and overfitting risk.",
+  "key_insight": "M3-Score breaks generative radiology evaluation into three separate axes—fidelity, memorization, and coverage—so models can be judged for image realism and diversity instead of by one blended score.",
+  "clinical_relevance": "A more radiology-aware evaluation metric may better detect whether synthetic medical images preserve clinically important structures without simply copying training data or missing rare findings.",
   "method": [
     "Uses a frozen radiology-pretrained vision transformer (RadioDINO-s16) as the feature encoder.",
-    "Computes fidelity with unbiased multi-bandwidth RBF MMD² at the final encoder block.",
-    "Computes memorization with nearest-neighbor distance at 75% depth and coverage with k-NN radius coverage at 33% depth."
+    "Computes fidelity with unbiased multi-bandwidth RBF MMD^2 at the final block.",
+    "Measures memorization with nearest-neighbor distances and coverage with k-NN radius overlap at earlier encoder depths."
   ],
-  "evidence_signal": "On BraTS brain MRI, the fidelity axis ranked five comparison sets perfectly (Spearman ρ=1.00), a diffusion model covered only 38% of the real distribution, and RadioDINO features separated real vs generated samples better than InceptionV3 or CLIP (ROC-AUC 0.819 vs 0.555 and 0.582).",
-  "watch_item": "Results are based on a specific radiology encoder and one dataset, so generalization to other modalities, scanners, and clinical tasks still needs validation.",
+  "evidence_signal": "In BraTS MRI experiments, the fidelity axis ranked five increasingly severe comparison sets perfectly (Spearman ρ=1.00), the subject-disjoint real set gave MMD^2=0, and the coverage axis tracked progressive mode dropping monotonically (ρ=-1.00).",
+  "watch_item": "Results depend on a specific radiology-pretrained encoder and subject-level sampling design, so generalization to other modalities, scanners, or datasets may require revalidation.",
   "hashtags": [
     "#MedicalImaging",
     "#GenerativeAI",
     "#RadiologyAI",
-    "#MMD",
-    "#SyntheticData"
+    "#ModelEvaluation",
+    "#DiffusionModels"
   ],
   "paper_id": "2026-09-27-arxiv-m3_score_fidelity_memorization_and_coverage_as_separate_axes_for_evaluating_generative_rad",
   "paper_title": "M3-Score: Fidelity, Memorization and Coverage as Separate Axes for Evaluating Generative Radiology Image Models",
   "paper_date": "2026-09-27",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-09-29T13:32:52",
+  "generated_at": "2026-09-30T13:10:17",
   "generator": "openai"
 }
