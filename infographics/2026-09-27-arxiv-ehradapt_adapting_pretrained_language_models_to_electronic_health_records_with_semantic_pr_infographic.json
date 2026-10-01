@@ -1,24 +1,24 @@
 {
-  "key_insight": "EHRAdapt lets frozen language models work directly with EHR event tuples by combining a clinical semantic prior with a learned evidence residual, which helps especially for rare events.",
-  "clinical_relevance": "This could improve EHR-based prediction and downstream disease classification by preserving clinical meaning without inflating records into long text sequences.",
+  "key_insight": "EHRAdapt maps structured EHR events directly into a frozen language model using a semantic prior plus a learned residual, which helps especially with rare clinical events.",
+  "clinical_relevance": "This could improve prediction and downstream classification from EHRs without forcing records into long text strings, potentially making rare disease signals easier to detect.",
   "method": [
-    "Encodes each EHR event as (time, modality, code) instead of serializing it as text.",
-    "Adds modality embeddings and time-gap attention biases while mapping event codes into the model's input space.",
-    "Represents each code with a frozen ontology-based semantic prior plus a learned low-rank residual that grows with evidence."
+    "Takes (time, modality, code) EHR tuples and embeds them into the LLM input space.",
+    "Uses learned modality embeddings and attention biases for time gaps.",
+    "Represents each event code as a frozen semantic prior from clinical ontology descriptions plus a low-rank evidence residual that updates with observed data."
   ],
-  "evidence_signal": "The adapter was continued-pretrained on records from about 4 million patients and evaluated with held-out next-event prediction and downstream infectious-disease/syndromic classification across three frozen backbones.",
-  "watch_item": "Rare-event gains depend on ontology descriptions and projection quality, so performance may vary when code semantics are sparse or local coding systems differ.",
+  "evidence_signal": "Continued pretraining on about 4 million patients' records with frozen OLMo2 1B, Llama3.2 1B, and OLMo2 7B backbones showed the full adapter outperforming ablations on next-event prediction and downstream infectious-disease/syndromic classification.",
+  "watch_item": "The approach depends on reliable clinical code descriptions and adapter training on large EHR corpora, so performance and portability may vary across health systems and coding schemes.",
   "hashtags": [
     "#ClinicalNLP",
-    "#ElectronicHealthRecords",
+    "#EHR",
+    "#LLM",
     "#RareDisease",
-    "#BiomedicalAI",
-    "#LanguageModels"
+    "#AIinMedicine"
   ],
   "paper_id": "2026-09-27-arxiv-ehradapt_adapting_pretrained_language_models_to_electronic_health_records_with_semantic_pr",
   "paper_title": "EHRAdapt: Adapting Pretrained Language Models to Electronic Health Records with Semantic Priors for Rare Clinical Events",
   "paper_date": "2026-09-27",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-09-30T13:09:46",
+  "generated_at": "2026-10-01T14:02:22",
   "generator": "openai"
 }
