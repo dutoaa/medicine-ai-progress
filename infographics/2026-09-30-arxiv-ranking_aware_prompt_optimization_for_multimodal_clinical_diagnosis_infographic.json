@@ -1,24 +1,24 @@
 {
-  "key_insight": "Replacing accuracy-based prompt selection with pairwise ranking optimization (Ranking-PE) aligns multimodal prompt search with AUROC, improving clinical ranking quality without extra model calls.",
-  "clinical_relevance": "For imbalanced diagnostic tasks, this approach is more useful than accuracy because it rewards correctly ranking diseased cases above non-diseased ones, which better matches real clinical screening needs.",
+  "key_insight": "Ranking-Aware Prompt Optimization (Ranking-PE) changes prompt search from accuracy-based scoring to pairwise ranking, so multimodal clinical models are optimized to rank true positives above negatives rather than just match labels.",
+  "clinical_relevance": "This matters for imbalanced medical diagnosis tasks, where a model can look accurate while still failing to identify clinically important cases, whereas AUROC better reflects discrimination quality.",
   "method": [
-    "Swap binary correctness scores for positive-vs-negative pairwise ordering scores.",
-    "Use the resulting matrix to drive Pareto dominance, reflection feedback, and final candidate selection.",
-    "Optimize prompt evolution directly for AUROC with no surrogate loss and no added model calls."
+    "Replace per-example correctness with pairwise positive-vs-negative ordering in the prompt evolution score matrix.",
+    "Use the same reflective prompt-optimization pipeline, but select prompts by empirical AUROC instead of accuracy.",
+    "Apply the ranking objective to scores, reflection feedback, and final candidate selection without extra model calls."
   ],
-  "evidence_signal": "Evaluated across three diseases on MIMIC, with gains of +5.8 AUROC points on fine-tuned Qwen3-VL-8B and +16.2 points on MedGemma-4B versus accuracy-based prompt evolution.",
-  "watch_item": "Performance still depends on having a strong medical visual backbone, so prompt optimization cannot fully compensate for a weak or non-medical encoder.",
+  "evidence_signal": "Across three MIMIC disease tasks, Ranking-PE outperformed accuracy-based prompt evolution by +5.8 AUROC points on fine-tuned Qwen3-VL-8B and +16.2 points on MedGemma-4B.",
+  "watch_item": "The approach still depends on a strong medical visual backbone, so prompt search alone cannot compensate for weak multimodal pretraining or limited vision-encoder tuning.",
   "hashtags": [
+    "#AIinMedicine",
     "#ClinicalNLP",
-    "#MultimodalAI",
+    "#MultimodalLLM",
     "#AUROC",
-    "#PromptOptimization",
-    "#MedicalAI"
+    "#PromptOptimization"
   ],
   "paper_id": "2026-09-30-arxiv-ranking_aware_prompt_optimization_for_multimodal_clinical_diagnosis",
   "paper_title": "Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis",
   "paper_date": "2026-09-30",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-01T14:02:27",
+  "generated_at": "2026-10-02T13:21:06",
   "generator": "openai"
 }
