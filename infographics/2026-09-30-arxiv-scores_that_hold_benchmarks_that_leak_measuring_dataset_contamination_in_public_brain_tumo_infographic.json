@@ -1,17 +1,17 @@
 {
-  "key_insight": "High MRI tumor classification scores can be misleading because public benchmark splits contain multiple kinds of data leakage that inflate performance.",
-  "clinical_relevance": "For medical imaging research, a strong leaderboard result does not prove a model truly learned tumor biology unless training and test data are independent at the image, patient, and source levels.",
+  "key_insight": "Public brain-tumor MRI benchmarks can look highly accurate even when training and test sets leak duplicate, patient-level, or source-level information.",
+  "clinical_relevance": "Reported MRI tumor-classification performance on these public datasets may overstate true generalization, so benchmark results should be interpreted cautiously before influencing research or downstream AI development.",
   "method": [
-    "Audited three widely used brain-tumor MRI corpora for duplicate, patient, and source-label contamination.",
-    "Compared effects across nine model architectures and three evaluation conditions.",
-    "Used a chest-radiograph negative control to test whether non-anatomical file-header cues could still separate classes."
+    "Audited three widely used public MRI corpora for duplicate, patient, and acquisition-source leakage.",
+    "Compared performance across nine architectures and three evaluation conditions.",
+    "Used a chest-radiograph negative control to test whether non-anatomical file-header cues could separate classes."
   ],
-  "evidence_signal": "The abstract reports severe contamination, including 28.8% near-duplicate leakage in one test split, 22.3% byte-identical leakage in another, 95.5% patient-level sharing in traceable cases, and balanced accuracy of 0.959 from file-header features alone.",
-  "watch_item": "Removing identified leaked images did not materially change balanced accuracy, so deduplication alone may not be enough to certify benchmark integrity.",
+  "evidence_signal": "Leakage was substantial: 28.8% of one corpus’s test split had near-twins in training, another had 22.3% byte-identical test-image leakage, 95.5% of traceable test images shared a patient with training, and header-only features reached 0.959 balanced accuracy.",
+  "watch_item": "Deduplication alone did not reduce balanced accuracy, so a stable leaderboard does not prove dataset integrity or true model validity.",
   "hashtags": [
     "#MedicalImaging",
-    "#BrainTumorMRI",
-    "#DatasetLeakage",
+    "#MRI",
+    "#DatasetBias",
     "#BenchmarkIntegrity",
     "#AIinMedicine"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Scores That Hold, Benchmarks That Leak: Measuring Dataset Contamination in Public Brain-Tumor MRI Classification",
   "paper_date": "2026-09-30",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-10-02T13:21:02",
+  "generated_at": "2026-10-04T12:57:05",
   "generator": "openai"
 }

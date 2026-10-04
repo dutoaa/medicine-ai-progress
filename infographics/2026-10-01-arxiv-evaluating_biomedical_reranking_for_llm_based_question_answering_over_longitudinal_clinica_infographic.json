@@ -1,24 +1,24 @@
 {
-  "key_insight": "Biomedical reranking made the right clinical evidence appear earlier in long-note QA, improving retrieval more than final answer accuracy.",
-  "clinical_relevance": "For longitudinal clinical notes, better evidence ordering can help retrieval-augmented systems answer patient-specific questions more reliably.",
+  "key_insight": "Biomedical reranking improved how often the right clinical note chunk appeared near the top of the retrieved evidence set, but answer accuracy improved only modestly.",
+  "clinical_relevance": "For longitudinal clinical note question answering, better evidence ranking may help LLMs find patient-specific facts in long, repetitive records, yet retrieval gains alone do not guarantee substantially better answers.",
   "method": [
-    "PubMedBERT dense retrieval + BM25 lexical retrieval",
-    "Weighted reciprocal-rank fusion",
-    "MedCPT cross-encoder reranking with Qwen3-8B answer generation"
+    "Built a retrieval-augmented QA pipeline for longitudinal notes",
+    "Combined PubMedBERT dense retrieval, BM25 lexical retrieval, weighted reciprocal-rank fusion, and MedCPT cross-encoder reranking",
+    "Tested on 1,000 open- and closed-ended QA pairs from 200 bariatric surgery patients"
   ],
-  "evidence_signal": "In 1,000 QA pairs from 200 bariatric surgery patients, Hit@10 rose from 46.6% to 60.6% and MRR from 0.2371 to 0.3252, while answer correctness increased from 44.8% to 48.6%.",
-  "watch_item": "Retrieval gains did not translate proportionally into answer gains, so context-window limits and downstream generation quality remain important implementation concerns.",
+  "evidence_signal": "Reranking increased Hit@10 from 46.6% to 60.6% and mean reciprocal rank from 0.2371 to 0.3252, while judge-assessed answer correctness rose from 44.8% to 48.6%.",
+  "watch_item": "Because retrieval improvements translated only partially into better answers, deployment should account for context-window limits, note duplication, and the gap between evidence selection and generation quality.",
   "hashtags": [
     "#ClinicalNLP",
+    "#MedicalAI",
     "#RAG",
-    "#BiomedicalAI",
-    "#MedicalRetrieval",
-    "#LLMHealthcare"
+    "#BiomedicalIR",
+    "#LLMQA"
   ],
   "paper_id": "2026-10-01-arxiv-evaluating_biomedical_reranking_for_llm_based_question_answering_over_longitudinal_clinica",
   "paper_title": "Evaluating Biomedical Reranking for LLM-Based Question Answering over Longitudinal Clinical Notes",
   "paper_date": "2026-10-01",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-02T13:21:04",
+  "generated_at": "2026-10-04T12:57:10",
   "generator": "openai"
 }

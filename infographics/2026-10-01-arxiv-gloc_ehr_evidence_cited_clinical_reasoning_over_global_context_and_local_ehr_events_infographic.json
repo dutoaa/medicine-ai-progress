@@ -1,24 +1,24 @@
 {
-  "key_insight": "GLoC-EHR improves clinical question answering by combining global trajectory context with local EHR evidence and training the model to cite record-supported reasons before answering.",
-  "clinical_relevance": "This approach may make EHR-based predictions more reliable and more interpretable by linking answers to specific patient events rather than only generating a final prediction.",
+  "key_insight": "GLoC-EHR improves clinical question answering by combining a global trajectory view with local event evidence and training the model to cite record-supported rationales before answering.",
+  "clinical_relevance": "This approach may help EHR-based AI provide more trustworthy answers and summaries by linking predictions to specific chart evidence rather than relying on the full record alone.",
   "method": [
-    "Builds two memories from structured EHRs: a fixed-size global memory for the full course and a local memory for selected events.",
-    "Pretrains with multitask objectives to generate hospital-course summaries and masked concept descriptions aligned to clinical text.",
-    "Uses rationale fine-tuning plus GRPO to reward both correct answers and evidence supported by the record."
+    "Builds a fixed-size global memory of the whole EHR trajectory",
+    "Adds a local memory for selected events to capture supporting details",
+    "Trains with summary and masked-concept objectives, then rationale fine-tuning plus GRPO to reward correct, evidence-backed answers"
   ],
-  "evidence_signal": "On three MIMIC-IV outcome tasks, it achieved the best macro AUROC among compared models in direct answering, stayed close to that performance with evidence-cited reasoning, and transferred to EHRSHOT on par with EHR-BERT.",
-  "watch_item": "Evidence-cited reasoning improved support quality, but the gains depended on task setting and the model still requires careful validation before real-world deployment.",
+  "evidence_signal": "In three MIMIC-IV outcome tasks, the model achieved the highest macro AUROC among compared models when answering directly, and evidence-cited reasoning stayed close to direct performance while reducing unsupported evidence; it also transferred well to EHRSHOT.",
+  "watch_item": "Evidence citation and local-memory gains do not guarantee perfect clinical validity, so deployment would still need careful checking for unsupported rationales and task-specific generalization.",
   "hashtags": [
     "#ClinicalNLP",
     "#EHR",
     "#MedicalAI",
     "#ExplainableAI",
-    "#HealthcareAI"
+    "#MIMICIV"
   ],
   "paper_id": "2026-10-01-arxiv-gloc_ehr_evidence_cited_clinical_reasoning_over_global_context_and_local_ehr_events",
   "paper_title": "GLoC-EHR: Evidence-Cited Clinical Reasoning over Global Context and Local EHR Events",
   "paper_date": "2026-10-01",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-02T13:20:59",
+  "generated_at": "2026-10-04T12:57:03",
   "generator": "openai"
 }
