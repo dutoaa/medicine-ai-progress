@@ -1,24 +1,24 @@
 {
-  "key_insight": "ReLMem learns a fixed-size recurrent patient memory that updates visit by visit, preserving useful history for longitudinal EHR prediction without reprocessing the full record.",
-  "clinical_relevance": "This could make large-model EHR workflows much more efficient for tasks like medication prediction by lowering storage and compute demands while keeping performance close to full-history modeling.",
+  "key_insight": "ReLMem learns to update a fixed-size patient memory over time, letting a frozen LLM model longitudinal EHRs without rereading the full history.",
+  "clinical_relevance": "This could make long-patient-history prediction tasks, such as medication prediction, more efficient by reducing storage and compute while preserving useful clinical context.",
   "method": [
-    "Adds lightweight compression adapters to a frozen LLM to update memory from the previous state plus each new visit.",
-    "Uses multi-granularity training to align compressed-memory attention with full-history attention under the same queries.",
-    "Adds final-step prediction supervision so the learned memory supports downstream cross-entropy prediction."
+    "Uses lightweight compression adapters to recurrently merge each new visit into an existing memory.",
+    "Trains with multi-granularity supervision to match compressed-memory attention to full-history attention.",
+    "Adds prediction supervision on the final memory for downstream task performance."
   ],
-  "evidence_signal": "In EHR medication prediction, ReLMem nearly matched the full-history baseline while reducing retained historical storage by 97.1%, and beat the strongest compressed-memory baseline by 4.66 macro-F1 and 4.75 micro-F1.",
-  "watch_item": "Results are shown on one EHR prediction task, so broader clinical validation and careful monitoring of information loss under fixed memory budgets are still needed.",
+  "evidence_signal": "On EHR medication prediction, ReLMem nearly matched a full-history baseline while cutting retained historical storage by 97.1% and improved macro-/micro-F1 by 4.66/4.75 points over the strongest compressed-memory baseline.",
+  "watch_item": "Results are reported on a specific EHR prediction setting, so performance and robustness may differ across institutions, tasks, and memory budgets.",
   "hashtags": [
     "#ClinicalNLP",
     "#EHR",
     "#LongitudinalModeling",
-    "#LLM",
-    "#MedicalAI"
+    "#MemoryEfficientAI",
+    "#HealthcareAI"
   ],
   "paper_id": "2026-09-29-arxiv-relmem_learning_recurrent_memory_for_longitudinal_ehr_modeling",
   "paper_title": "ReLMem: Learning Recurrent Memory for Longitudinal EHR Modeling",
   "paper_date": "2026-09-29",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-04T12:57:00",
+  "generated_at": "2026-10-05T15:25:31",
   "generator": "openai"
 }

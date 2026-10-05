@@ -1,24 +1,24 @@
 {
-  "key_insight": "Counterfactual bias in open-source LLMs for pediatric triage varies widely across models and does not reliably improve with larger size or medical-domain pretraining.",
-  "clinical_relevance": "For ED triage support, models can shift acuity ratings when only demographic or contextual details change, creating fairness and safety risks even when the clinical vignette is unchanged.",
+  "key_insight": "Counterfactual bias in open-source LLMs for pediatric ED triage varies widely by model and does not reliably improve with larger size or medical-domain pretraining.",
+  "clinical_relevance": "For clinical decision support, even small demographic or context changes can shift triage predictions, so fairness audits are important before deployment.",
   "method": [
-    "Paired clinical vignettes were created by changing one non-clinical variable at a time while keeping the presentation fixed.",
-    "Ten open-source LLMs were compared, including general, medical-domain, and fine-tuned Qwen, MedGemma, MedLLaMA2, and GPT-OSS models.",
-    "Outputs were scored for any shift, undertriage, overtriage, >1 ESI-level shifts, mean shift, and mean absolute shift."
+    "Compared 10 open-source LLMs, including base, instruction-tuned, medical-domain, and fine-tuned Qwen/MedGemma/MedLLaMA/GPT-OSS variants.",
+    "Used paired clinical vignettes with only one counterfactual change at a time across demographic, socioeconomic, access, behavioral, social, and system-context factors.",
+    "Measured any shift, undertriage, overtriage, >1-level shifts, mean shift, and mean absolute shift in pediatric ESI prediction."
   ],
-  "evidence_signal": "Across the abstract’s evaluation set, the fine-tuned Qwen2.5-7B had the lowest any-shift rate (5.27%) and mean absolute shift (0.0534), versus 16.02% and 0.1706 for the base model.",
-  "watch_item": "Counterfactual audits reveal sensitivity patterns, but they do not by themselves prove real-world clinical impact or guarantee fairness in deployment.",
+  "evidence_signal": "In the abstract, the fine-tuned Qwen2.5-7B had the lowest sensitivity (5.27% any-shift; mean absolute shift 0.0534) versus 16.02% and 0.1706 for the base model, with other models sometimes performing worse.",
+  "watch_item": "Counterfactual audits reveal sensitivity patterns but do not by themselves prove real-world clinical safety, and results may depend on the vignette set and prompting setup.",
   "hashtags": [
     "#ClinicalNLP",
-    "#AIinMedicine",
-    "#BiasAudit",
-    "#LLMFairness",
-    "#EmergencyMedicine"
+    "#AIFairness",
+    "#LLMAudit",
+    "#EmergencyMedicine",
+    "#PatientSafety"
   ],
   "paper_id": "2026-10-01-arxiv-counterfactual_auditing_of_bias_in_open_source_large_language_models_for_clinical_triage",
   "paper_title": "Counterfactual Auditing of Bias in Open-Source Large Language Models for Clinical Triage",
   "paper_date": "2026-10-01",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-04T12:56:54",
+  "generated_at": "2026-10-05T15:25:07",
   "generator": "openai"
 }

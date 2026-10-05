@@ -1,13 +1,13 @@
 {
-  "key_insight": "Ranking-Aware Prompt Optimization (Ranking-PE) swaps accuracy-based scoring for pairwise ranking so prompt evolution optimizes AUROC instead of class-balance-sensitive correctness.",
-  "clinical_relevance": "In imbalanced clinical diagnosis, this can better prioritize true risk ranking from multimodal models, which is more useful than raw accuracy for screening and triage.",
+  "key_insight": "Ranking-PE changes prompt optimization from accuracy-based scoring to pairwise ranking, so the search objective directly matches AUROC for imbalanced clinical diagnosis.",
+  "clinical_relevance": "This matters because clinical datasets are often highly imbalanced, and a model that looks accurate can still fail to identify the higher-risk cases that matter most.",
   "method": [
-    "Replaced binary per-example correctness with pairwise positive-vs-negative ordering in the prompt search score matrix.",
-    "Used the same ranking signal for Pareto dominance, reflection feedback, and final prompt selection.",
-    "Kept the process model-call efficient, with no extra evaluations or surrogate loss."
+    "Replace per-example correctness with pairwise positive-vs-negative ordering in the prompt-evolution score matrix.",
+    "Use the resulting column average as empirical AUROC via the Wilcoxon-Mann-Whitney identity.",
+    "Apply the same ranking-based swap in dominance checks, reflection feedback, and final candidate selection without extra model calls."
   ],
-  "evidence_signal": "Across three MIMIC diseases, Ranking-PE improved AUROC over accuracy-based prompt evolution by +5.8 points on fine-tuned Qwen3-VL-8B and +16.2 points on MedGemma-4B.",
-  "watch_item": "Results depend on a strong medical visual backbone, so prompt search cannot fully compensate for weak multimodal pretraining or vision tuning.",
+  "evidence_signal": "Across three MIMIC diseases, ranking-aware prompt evolution improved AUROC by +5.8 points on fine-tuned Qwen3-VL-8B and +16.2 points on MedGemma-4B versus accuracy-based prompt evolution.",
+  "watch_item": "The approach still depends on a strong medical visual backbone, so prompt search alone cannot compensate for weak multimodal pretraining or vision tuning.",
   "hashtags": [
     "#ClinicalNLP",
     "#MultimodalAI",
@@ -19,6 +19,6 @@
   "paper_title": "Ranking-Aware Prompt Optimization for Multimodal Clinical Diagnosis",
   "paper_date": "2026-09-30",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-04T12:57:12",
+  "generated_at": "2026-10-05T15:25:22",
   "generator": "openai"
 }

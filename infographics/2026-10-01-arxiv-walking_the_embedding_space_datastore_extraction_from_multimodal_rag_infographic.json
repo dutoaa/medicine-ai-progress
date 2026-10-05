@@ -1,24 +1,24 @@
 {
-  "key_insight": "An adaptive black-box attack called \u0015immrag\u0015 can extract many distinct images from multimodal retrieval systems by steering queries through embedding space using attacker-held and recovered images.",
-  "clinical_relevance": "For medical imaging tools that use image-returning retrieval, this highlights a privacy risk: confidential radiology images could be unintentionally exposed through the retrieval pipeline.",
+  "key_insight": "A black-box attack called \u001bimmrag can extract many distinct images from multimodal retrieval systems by using an attacker image plus a previously recovered image to steer retrieval toward new items.",
+  "clinical_relevance": "For medical imaging tools that rely on multimodal retrieval, this highlights a privacy and security risk that could expose sensitive radiology images if safeguards are weak.",
   "method": [
-    "Blends a shadow image with a previously recovered image in each query.",
-    "Uses relevance-weighted resampling to explore embedding regions that still produce new retrievals.",
-    "Operates in a black-box setting against image-returning multimodal RAG systems."
+    "Uses image-returning multimodal RAG, where the retrieved visual artifact is the response",
+    "Blends a shadow image with a recovered image to form each query",
+    "Applies relevance-weighted resampling to move through embedding space and find novel retrievals"
   ],
-  "evidence_signal": "In experiments across medical assistant, document helper, and general-purpose settings, a single 2500-query run reconstructed up to 611 radiology images and outperformed a non-adaptive baseline by up to 5.6x in distinct items recovered.",
-  "watch_item": "Results come from attack evaluations on specific retrievers and generators, so real-world risk may vary with system defenses, retrieval design, and access controls.",
+  "evidence_signal": "In 2,500-query runs, the attack reconstructed up to 611 radiology images, 566 document scans, and 416 general-purpose images, reaching up to 5.6x more distinct datastore items than a non-adaptive baseline.",
+  "watch_item": "The results come from controlled experiments on specific retrievers and generators, so real-world risk will depend on system design, access controls, and whether additional defenses are in place.",
   "hashtags": [
     "#MedicalImaging",
-    "#AIPRIVACY",
-    "#MultimodalRAG",
-    "#DataExtraction",
-    "#AIsecurity"
+    "#MultimodalAI",
+    "#DataSecurity",
+    "#RAG",
+    "#AIPrivacy"
   ],
   "paper_id": "2026-10-01-arxiv-walking_the_embedding_space_datastore_extraction_from_multimodal_rag",
   "paper_title": "Walking the Embedding Space: Datastore Extraction from Multimodal RAG",
   "paper_date": "2026-10-01",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-10-04T12:57:20",
+  "generated_at": "2026-10-05T15:25:42",
   "generator": "openai"
 }
