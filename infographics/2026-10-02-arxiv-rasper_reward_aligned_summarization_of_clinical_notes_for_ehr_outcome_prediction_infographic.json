@@ -1,24 +1,24 @@
 {
-  "key_insight": "RASPER learns to summarize discharge notes in a way that preserves the details most useful for predicting clinical outcomes, rather than just producing generic summaries.",
-  "clinical_relevance": "This could help EHR models use unstructured notes more effectively alongside structured codes for tasks like readmission prediction and medication recommendation.",
+  "key_insight": "RASPER improves EHR prediction by training a note summarizer to keep only the patient-specific evidence that helps the downstream clinical task.",
+  "clinical_relevance": "This could make discharge-note use in hospital prediction models more accurate by filtering noisy text while preserving information that complements structured codes.",
   "method": [
-    "Uses an LLM-based summarizer tuned for task-relevant evidence extraction",
-    "Trains the summarizer with reinforcement learning from downstream prediction feedback",
-    "Conditions note summarization on structured EHR codes via longitudinal soft prompts"
+    "Uses an LLM-based summarizer for discharge notes.",
+    "Optimizes summaries with reinforcement learning from downstream prediction loss as the reward.",
+    "Injects structured-code context through a longitudinal encoder that creates soft prompts for each patient."
   ],
-  "evidence_signal": "The abstract reports consistent gains over strong baselines on readmission prediction and medication recommendation using MIMIC-III and MIMIC-IV.",
-  "watch_item": "Performance depends on downstream prediction feedback and integration into EHR workflows, so clinical utility may vary if the structured data are incomplete or the summarizer misses rare but important note details.",
+  "evidence_signal": "According to the abstract, RASPER outperforms strong baselines on readmission prediction and medication recommendation using MIMIC-III and MIMIC-IV.",
+  "watch_item": "Performance depends on a task-specific reward and model integration, so results may not transfer cleanly to other clinical settings or summary targets.",
   "hashtags": [
     "#ClinicalNLP",
     "#EHR",
-    "#LLM",
+    "#MedicalAI",
     "#Summarization",
-    "#PredictiveMedicine"
+    "#ReadmissionPrediction"
   ],
   "paper_id": "2026-10-02-arxiv-rasper_reward_aligned_summarization_of_clinical_notes_for_ehr_outcome_prediction",
   "paper_title": "RASPER: Reward-Aligned Summarization of Clinical Notes for EHR Outcome Prediction",
   "paper_date": "2026-10-02",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-05T15:24:57",
+  "generated_at": "2026-10-06T13:46:41",
   "generator": "openai"
 }
