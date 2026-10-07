@@ -1,24 +1,24 @@
 {
-  "key_insight": "Oncology-specific language models and tokenizers better capture real-world outpatient cancer notes than general adjacent-domain encoders.",
-  "clinical_relevance": "For oncology NLP tasks, adapting both the model and the tokenizer to local note style may improve representation quality before downstream use.",
+  "key_insight": "Oncology-specific language models performed best when they were either further pretrained on local notes or built with a bespoke oncology tokenizer, showing that both adaptation and tokenization matter.",
+  "clinical_relevance": "For NLP systems used on real outpatient oncology notes, domain-specific model design may improve term handling, masking predictions, and representation quality compared with general biomedical encoders.",
   "method": [
-    "Compared RadBERT and PathologyBERT against two local models: continued pretraining (OncoNote-RadBERT) and training from scratch (OncoNoteBERT).",
-    "Used 290,026 outpatient oncology notes from 21,564 UK patients with lung or head-and-neck cancer.",
-    "Evaluated perplexity, masked-language modelling, token fragmentation, clinical term tokenisation, and masked-token probes."
+    "Trained and compared RadBERT, PathologyBERT, OncoNote-RadBERT, and OncoNoteBERT on 290,026 UK outpatient oncology notes from 21,564 patients.",
+    "Evaluated models with masked language modeling loss, perplexity, tokenizer fragmentation, clinical term tokenization, masked-token probes, and representation analysis.",
+    "Compared zero-shot external encoders with continued pretraining and training-from-scratch strategies."
   ],
-  "evidence_signal": "OncoNote-RadBERT had the best corpus fit (perplexity 2.10), while OncoNoteBERT had more efficient tokenisation and acceptable masked-token predictions for 12/13 probes.",
-  "watch_item": "Better perplexity did not always mean better token-level clinical predictions, so tokenizer fragmentation and local validation need careful review before deployment.",
+  "evidence_signal": "OncoNote-RadBERT had the best corpus fit (perplexity 2.10), while OncoNoteBERT had the most efficient tokenization and correctly handled 12 of 13 masked-token probes versus 7 of 13 for OncoNote-RadBERT.",
+  "watch_item": "Better perplexity did not always mean better clinical token prediction, so tokenizer fragmentation and local validation should be checked before deployment.",
   "hashtags": [
     "#ClinicalNLP",
     "#OncologyAI",
     "#BERT",
     "#MedicalAI",
-    "#TransformerModels"
+    "#HealthInformatics"
   ],
   "paper_id": "2026-10-02-arxiv-onconotebert_a_foundation_representation_model_for_natural_language_processing_of_real_wor",
   "paper_title": "OncoNoteBERT: A Foundation Representation Model for Natural Language Processing of Real-World Outpatient Oncology Notes",
   "paper_date": "2026-10-02",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-06T13:46:32",
+  "generated_at": "2026-10-07T14:03:36",
   "generator": "openai"
 }
