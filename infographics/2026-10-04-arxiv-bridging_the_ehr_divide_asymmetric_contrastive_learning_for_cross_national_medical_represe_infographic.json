@@ -1,24 +1,24 @@
 {
-  "key_insight": "Asymmetric contrastive pre-training can transfer longitudinal EHR representations across countries by clustering patients with the same positive outcome without forcing negative cases together.",
-  "clinical_relevance": "This could improve few-shot prediction and cross-site model portability when local labeled data are limited, especially for incident disease tasks.",
+  "key_insight": "Asymmetric supervised contrastive pre-training learned cross-national EHR representations that transferred better than standard supervised or contrastive baselines, especially for few-shot prediction.",
+  "clinical_relevance": "This could help hospitals reuse large foreign EHR data to improve prediction models when local labeled data are limited or coding systems differ.",
   "method": [
-    "Pre-trained temporal Transformer encoders on 3.98 million patients from Taiwan’s NHIRD.",
-    "Used Asymmetric Supervised Contrastive Learning to emphasize shared target outcomes while avoiding over-clustering negatives.",
-    "Applied a hybrid semantic mapping pipeline to align clinical vocabularies and transferred models to MIMIC-IV and EHRSHOT."
+    "Pre-trained temporal Transformer encoders on 3.98 million Taiwanese NHIRD patients.",
+    "Used Asymmetric SupCon to cluster patients with the same target outcome without forcing negative cases together.",
+    "Mapped heterogeneous clinical vocabularies with a hybrid direct-mapping plus embedding-retrieval pipeline before transfer to U.S. datasets."
   ],
-  "evidence_signal": "The abstract reports improved transfer over random initialization on MIMIC-IV, strong few-shot performance on EHRSHOT, and higher mean AUPRC than BCE transfer on all four tasks and Standard SupCon on three of four in a matched-scale ablation.",
-  "watch_item": "Cross-national transfer still depends on vocabulary mapping quality and may not generalize equally well across tasks, with a small AUPRC drop on readmission versus Standard SupCon.",
+  "evidence_signal": "In transfer to MIMIC-IV and EHRSHOT, the NHIRD-pretrained models improved over random initialization; under matched pre-training scale, Asymmetric SupCon achieved higher mean AUPRC than direct BCE on all four tasks and beat Standard SupCon on three of four.",
+  "watch_item": "Cross-site vocabulary mapping and performance gains may not fully generalize to settings with different coding practices, workflows, or outcomes, so external validation is still needed.",
   "hashtags": [
     "#EHR",
-    "#MachineLearning",
     "#ContrastiveLearning",
-    "#HealthcareAI",
-    "#TransferLearning"
+    "#MedicalAI",
+    "#CrossNationalTransfer",
+    "#HealthInformatics"
   ],
   "paper_id": "2026-10-04-arxiv-bridging_the_ehr_divide_asymmetric_contrastive_learning_for_cross_national_medical_represe",
   "paper_title": "Bridging the EHR Divide: Asymmetric Contrastive Learning for Cross-National Medical Representation Transfer",
   "paper_date": "2026-10-04",
   "paper_category": "Health Systems",
-  "generated_at": "2026-10-07T14:03:23",
+  "generated_at": "2026-10-08T14:11:59",
   "generator": "openai"
 }
