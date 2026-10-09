@@ -1,24 +1,24 @@
 {
-  "key_insight": "MM-KG turns multimodal patient data and biomedical knowledge into one explicit, query-aware graph so clinical LLMs can trace which evidence supports an answer.",
-  "clinical_relevance": "This could help clinical AI systems answer complex questions more reliably by separating patient evidence from background knowledge and showing which links actually matter.",
+  "key_insight": "MM-KG turns multimodal patient data and biomedical knowledge into an explicit, linkable graph so clinical LLMs can use and trace the exact evidence needed for a question.",
+  "clinical_relevance": "This could improve clinical decision support by making model outputs more auditable and by isolating when patient evidence, external knowledge, or both are truly needed.",
   "method": [
-    "Harmonize EHR text, imaging, genomics, and biospecimens into typed observations",
-    "Map observations to UMLS concepts and align them to a biomedical knowledge graph with explicit edges",
-    "Retrieve a compact, query-conditioned subgraph for use by an LLM or graph neural network"
+    "Harmonize EHR text, imaging, genomic, and biospecimen data into typed observations mapped to UMLS concepts",
+    "Align patient observations to a biomedical knowledge graph with route-prioritized matching and explicit edges",
+    "Retrieve a compact, query-conditioned subgraph for use by a large language model or graph neural network"
   ],
-  "evidence_signal": "In MIMIC-IV and ADNI experiments, combining patient evidence with biomedical knowledge improved interaction performance, with +0.194 AUROC on MIMIC and +0.299 on ADNI for questions needing both sources.",
-  "watch_item": "The approach depends on accurate mapping and retrieval; if the key relation is missed or misaligned, the benefit can drop back to baseline.",
+  "evidence_signal": "Across MIMIC-IV and ADNI, the combined patient-evidence plus knowledge setup produced strong interaction gains on questions needing both sources, with +0.194 drug-controlled AUROC on MIMIC and +0.299 on ADNI, and query-conditioned retrieval reached 0.731 AUROC with 6.8x less context than the strongest generic policy.",
+  "watch_item": "Performance depends on accurate modality harmonization and alignment, and the approach may be less helpful for routine prediction tasks where static knowledge graph context showed no consistent gain.",
   "hashtags": [
     "#ClinicalNLP",
-    "#BiomedicalKG",
+    "#MedicalAI",
+    "#KnowledgeGraphs",
     "#MultimodalAI",
-    "#HealthAI",
-    "#LLM"
+    "#LLMHealth"
   ],
   "paper_id": "2026-10-05-arxiv-aligning_multimodal_patient_evidence_with_biomedical_knowledge_graphs_for_clinical_llms",
   "paper_title": "Aligning Multimodal Patient Evidence with Biomedical Knowledge Graphs for Clinical LLMs",
   "paper_date": "2026-10-05",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-08T14:11:44",
+  "generated_at": "2026-10-09T13:59:06",
   "generator": "openai"
 }
