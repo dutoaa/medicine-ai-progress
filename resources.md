@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-10-09
+Generated: 2026-10-10
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Aligning Multimodal Patient Evidence with Biomedical Knowledge Graphs for Clinical LLMs
@@ -115,7 +115,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.06170v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-05-arxiv-ms_exam_gen_source_grounded_benchmark_construction_for_evaluating_llms_on_textual_multiple_infographic.json
 
-## 15. Clinician use of language models diverges from how the models are evaluated
+## 15. Data-Efficient Prostate Micro-Ultrasound Image Analysis using a Modality-specific Foundation Model
+
+- Date: 2026-10-05
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.29.26364330v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.29.26364330v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-05-medrxiv-data_efficient_prostate_micro_ultrasound_image_analysis_using_a_modality_specific_foundati_infographic.json
+
+## 16. Clinician use of language models diverges from how the models are evaluated
 
 - Date: 2026-10-08
 - Category: Clinical NLP
@@ -123,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.11069v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-clinician_use_of_language_models_diverges_from_how_the_models_are_evaluated_infographic.json
 
-## 16. Beyond Explanation: Debugging Medical Imaging Models via Concept Intervention
+## 17. Beyond Explanation: Debugging Medical Imaging Models via Concept Intervention
 
 - Date: 2026-10-06
 - Category: Medical Imaging
@@ -131,7 +139,15 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.09031v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-06-arxiv-beyond_explanation_debugging_medical_imaging_models_via_concept_intervention_infographic.json
 
-## 17. ContiLNN: Mitigating Slice Sampling Discontinuity with Liquid Neural Networks for Medical Image Restoration
+## 18. An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers
+
+- Date: 2026-10-06
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-06-medrxiv-an_interpretable_cell_centric_representation_of_pancreatic_ductal_adenocarcinoma_matches_m_infographic.json
+
+## 19. ContiLNN: Mitigating Slice Sampling Discontinuity with Liquid Neural Networks for Medical Image Restoration
 
 - Date: 2026-10-08
 - Category: Medical Imaging
@@ -139,26 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.12337v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-contilnn_mitigating_slice_sampling_discontinuity_with_liquid_neural_networks_for_medical_i_infographic.json
 
-## 18. Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants
+## 20. Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants
 
 - Date: 2026-10-08
 - Category: Clinical NLP
 - Source: arXiv - https://arxiv.org/abs/2610.12281v1
 - PDF: https://arxiv.org/pdf/2610.12281v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-unlocking_the_regulatory_genome_by_argus_an_evidence_constrained_agentic_framework_for_int_infographic.json
-
-## 19. Detecting Spin in Clinical Trials with Large Language Models
-
-- Date: 2026-10-08
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2610.11845v1
-- PDF: https://arxiv.org/pdf/2610.11845v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-detecting_spin_in_clinical_trials_with_large_language_models_infographic.json
-
-## 20. CoPoE: Multimodal Fusion via Decomposable Disease-Coordinate Product-of-Experts for Missing-Modality Alzheimer's Diagnosis
-
-- Date: 2026-10-08
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.11394v1
-- PDF: https://arxiv.org/pdf/2610.11394v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-copoe_multimodal_fusion_via_decomposable_disease_coordinate_product_of_experts_for_missing_infographic.json
