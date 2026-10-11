@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-10-10
+Generated: 2026-10-11
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Aligning Multimodal Patient Evidence with Biomedical Knowledge Graphs for Clinical LLMs

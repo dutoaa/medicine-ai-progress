@@ -1,24 +1,24 @@
 {
-  "key_insight": "ContiLNN adds bidirectional continuous-time slice modeling to 2D medical image restoration so the model can use cross-slice anatomy while adapting to variable slice spacing.",
-  "clinical_relevance": "It may improve restoration quality for CT, MRI, and PET images when slice sampling is irregular, which could support clearer downstream interpretation.",
+  "key_insight": "ContiLNN adds bidirectional liquid-neural cross-slice modeling to a 2D restoration backbone so medical images can use neighboring-slice context while staying robust to irregular slice spacing.",
+  "clinical_relevance": "This could improve CT, MRI, and PET image restoration quality in settings where slice sampling is uneven, potentially yielding clearer images for downstream interpretation.",
   "method": [
-    "Wraps a 2D restoration backbone with Bi-CfC modules for bidirectional cross-slice propagation.",
-    "Uses slice-interval-gated updates driven by local features and hidden states to handle sampling gaps without ODE solving.",
-    "Adds reference-guided consistency loss and distillation from a frozen backbone to preserve anatomical variation and in-plane fidelity."
+    "Bi-CfC modules model cross-slice continuity in both directions without ODE solving.",
+    "Slice-index intervals and local features modulate propagation gates to adapt to sampling gaps.",
+    "Reference-guided consistency and frozen-backbone distillation help preserve anatomical variation and in-plane detail."
   ],
-  "evidence_signal": "Across five seeds, ContiLNN improved mean PSNR over Restore-RWKV and reduced RMSE on CT denoising, MRI super-resolution, and reduced-count PET restoration; profiling also showed lower latency and GPU memory than a Bi-GRU.",
-  "watch_item": "Results include descriptive CT evaluation for one held-out patient and performance varies with sampling context, so generalization to other datasets and acquisition patterns needs caution.",
+  "evidence_signal": "Across five seeds, ContiLNN improved mean PSNR over Restore-RWKV on CT denoising, MRI super-resolution, and reduced-count PET restoration, with lower RMSE on all three tasks; profiling also showed lower latency and GPU memory than Bi-GRU.",
+  "watch_item": "Some results are reported descriptively for a single held-out CT patient, so broader validation and real-world robustness testing are still needed.",
   "hashtags": [
     "#MedicalImaging",
     "#ImageRestoration",
+    "#LiquidNeuralNetworks",
     "#MRI",
-    "#CT",
-    "#PET"
+    "#CTPET"
   ],
   "paper_id": "2026-10-08-arxiv-contilnn_mitigating_slice_sampling_discontinuity_with_liquid_neural_networks_for_medical_i",
   "paper_title": "ContiLNN: Mitigating Slice Sampling Discontinuity with Liquid Neural Networks for Medical Image Restoration",
   "paper_date": "2026-10-08",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-10-10T13:09:45",
+  "generated_at": "2026-10-11T13:39:00",
   "generator": "openai"
 }

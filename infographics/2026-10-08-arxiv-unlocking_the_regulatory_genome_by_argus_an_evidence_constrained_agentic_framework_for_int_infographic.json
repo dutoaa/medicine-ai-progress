@@ -1,24 +1,24 @@
 {
-  "key_insight": "ARGUS is an evidence-constrained agentic framework that uses LLM planning plus deterministic bioinformatics checks to interpret noncoding SNVs without hallucinating unsupported regulatory effects.",
-  "clinical_relevance": "It could improve the reliability of variant interpretation in genomic medicine by distinguishing true regulatory signals from weak, conflicting, or absent evidence.",
+  "key_insight": "ARGUS is an evidence-constrained agentic framework that separates deterministic genomic analysis from LLM reasoning to reduce hallucinated interpretations of noncoding variants.",
+  "clinical_relevance": "It may improve how researchers prioritize and interpret regulatory variants in genomic medicine by grounding claims in real experimental and annotation evidence rather than model-only guesses.",
   "method": [
-    "Runs 458 DNABERT-based TF-binding models to generate variant hypotheses.",
-    "Uses an LLM planner to choose the next evidence source based on uncertainty.",
-    "Verifies each step deterministically with real ADASTRA, JASPAR, and ENCODE cCRE queries."
+    "Uses 458 DNABERT-based TF-binding models as deterministic predictors.",
+    "A planner selects evidence sources based on uncertainty, while a verifier interprets each result and updates the investigation path.",
+    "Integrates real ADASTRA, JASPAR, and ENCODE cCRE queries in a hypothesis-directed loop."
   ],
-  "evidence_signal": "In the rs6983267 case study, ARGUS produced divergent TF-specific trajectories: FOXA1 was supported by ADASTRA allele-specific binding data, while KLF6 and RAD21 abstained after mixed or nonsignificant evidence, and all observations were drawn from real data.",
-  "watch_item": "The framework depends on available, locus-specific external databases and may still abstain when evidence is sparse, incomplete, or not directly decisive.",
+  "evidence_signal": "In the rs6983267 case study, ARGUS produced divergent TF-specific trajectories and used real evidence to support or abstain from claims, including ADASTRA results (e.g., 15 experiments, FDR = 0.030 for FOXA1; 5 experiments, FDR = 0.65 for RAD21).",
+  "watch_item": "Performance depends on the coverage and quality of available external evidence, so some variants may still end in abstention when direct data are sparse or inconclusive.",
   "hashtags": [
     "#Genomics",
     "#VariantInterpretation",
-    "#AIinMedicine",
-    "#ClinicalNLP",
-    "#RegulatoryGenomics"
+    "#RegulatoryDNA",
+    "#LLMSafety",
+    "#Bioinformatics"
   ],
   "paper_id": "2026-10-08-arxiv-unlocking_the_regulatory_genome_by_argus_an_evidence_constrained_agentic_framework_for_int",
   "paper_title": "Unlocking the Regulatory Genome by ARGUS: An Evidence-Constrained Agentic Framework for Interpreting Single Nucleotide Variants",
   "paper_date": "2026-10-08",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-10T13:09:47",
+  "generated_at": "2026-10-11T13:39:03",
   "generator": "openai"
 }

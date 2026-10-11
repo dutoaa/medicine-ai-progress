@@ -1,13 +1,13 @@
 {
-  "key_insight": "CARing improves next-visit diagnosis prediction by combining semantic ID tokens for diagnoses with a coverage-based learning objective so the model covers more valid diagnoses instead of repeatedly predicting the same few.",
-  "clinical_relevance": "This could support more complete automated support for multi-label diagnosis prediction from longitudinal EHRs, especially when multiple diagnoses may all be correct for a patient.",
+  "key_insight": "CARing improves next-visit diagnosis prediction by pairing compact semantic diagnosis tokens with training that rewards coverage of multiple correct diagnoses, not just repeated hits.",
+  "clinical_relevance": "This could support more complete differential-style prediction from longitudinal EHRs, helping models cover co-occurring diagnoses more reliably in clinical NLP settings.",
   "method": [
-    "Represents ICD-style diagnoses as compact compositional Semantic IDs (SIDs) using residual quantization.",
-    "Aligns SID tokens with natural language and longitudinal EHR context through multi-task alignment and reasoning-enriched training.",
-    "Uses coverage reward plus multi-positive supervision, with direct constrained decoding or multi-chain reasoning at inference."
+    "Represents diagnoses as compositional Semantic IDs (SIDs) learned from ontology-enriched disease semantics.",
+    "Aligns SID tokens with natural language and EHR context using multi-task and reasoning-enriched training.",
+    "Adds coverage-based reinforcement learning plus multi-positive supervision; supports constrained decoding and multi-chain rank fusion at inference."
   ],
-  "evidence_signal": "On MIMIC-III and MIMIC-IV, the method outperformed EHR-trained baselines in weighted F1 and achieved the highest top-k recall, including R@30 of 46.04% and 46.52% in reasoning mode.",
-  "watch_item": "Performance is reported on retrospective benchmark datasets, so clinical deployment would still need external validation, calibration, and workflow testing for safety and robustness.",
+  "evidence_signal": "On MIMIC-III and MIMIC-IV, the method outperformed EHR-trained baselines in weighted F1 and achieved the best reported top-k recall, including R@30 of 46.04% and 46.52% in reasoning mode.",
+  "watch_item": "The approach depends on ontology quality, token design, and careful inference constraints, so performance may vary when moving to different hospitals or coding systems.",
   "hashtags": [
     "#ClinicalNLP",
     "#EHR",
@@ -19,6 +19,6 @@
   "paper_title": "Coverage-Aware Reasoning with Medical Tokens for Diagnosis Prediction",
   "paper_date": "2026-10-07",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-10T13:09:10",
+  "generated_at": "2026-10-11T13:38:18",
   "generator": "openai"
 }
