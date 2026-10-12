@@ -1,24 +1,24 @@
 {
-  "key_insight": "CA-WCP adds class-aware, asymmetric conformal uncertainty to 3D segmentation so volume bounds stay calibrated even under distribution shift.",
-  "clinical_relevance": "It can make volumetric tumor or organ segmentation more trustworthy and easier to communicate in uncertainty-aware radiology workflows.",
+  "key_insight": "CA-WCP makes 3D segmentation uncertainty more reliable by using class-specific asymmetric bounds and shift-aware weighting instead of a single symmetric interval.",
+  "clinical_relevance": "This could improve how volumetric tumor or organ segmentation uncertainty is communicated in radiology workflows, especially when models face distribution shift.",
   "method": [
     "Uses latent-space density-ratio weighting to handle covariate shift.",
-    "Builds separate lower and upper volume bounds with directional quantiles.",
-    "Adjusts each class with an asymmetry factor from validation false-positive and false-negative rates."
+    "Builds directional lower and upper volume bounds with conformal prediction.",
+    "Adjusts each class by false-positive/false-negative asymmetry factors from validation data."
   ],
-  "evidence_signal": "On BraTS 2020 and a synthetic multi-organ CT benchmark, the observed 90% coverage intervals contained the nominal level for every class, with 8–14% narrower intervals than symmetric weighted conformal prediction.",
-  "watch_item": "Performance depends on representative validation data for class asymmetry and shift estimation, so calibration may weaken if those assumptions do not hold.",
+  "evidence_signal": "Evaluated on BraTS 2020 brain tumor segmentation and a synthetic multi-organ CT shift benchmark; the abstract reports 95% Clopper-Pearson coverage intervals containing the nominal 90% level for every class and 8-14% narrower intervals than symmetric weighted conformal prediction.",
+  "watch_item": "The approach depends on representative validation data and carefully estimated shift weights, so performance may degrade if these inputs are inaccurate or if deployment shifts beyond the calibration setting.",
   "hashtags": [
     "#MedicalImaging",
     "#ConformalPrediction",
     "#UncertaintyQuantification",
     "#3DSegmentation",
-    "#AIinRadiology"
+    "#RadiologyAI"
   ],
   "paper_id": "2026-10-07-arxiv-quantifying_volumetric_risk_class_aware_asymmetric_weighted_conformal_prediction_for_3d_me",
   "paper_title": "Quantifying Volumetric Risk: Class-Aware Asymmetric Weighted Conformal Prediction for 3D Medical Image Segmentation",
   "paper_date": "2026-10-07",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-10-11T13:38:42",
+  "generated_at": "2026-10-12T16:18:19",
   "generator": "openai"
 }
