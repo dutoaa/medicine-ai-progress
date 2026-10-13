@@ -1,164 +1,164 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-10-12
+Generated: 2026-10-13
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Hybrid Cross-Modal Attention Network for Early Breast Cancer Detection in Low-Resource Clinical Settings
-
-- Date: 2026-10-05
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.07243v1
-- PDF: https://arxiv.org/pdf/2610.07243v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-05-arxiv-hybrid_cross_modal_attention_network_for_early_breast_cancer_detection_in_low_resource_cli_infographic.json
-
-## 2. Bridging Human and Model Attention: Explainability Analysis of CNN, Mamba, and ViT Architectures with Gaze-Based Validation
-
-- Date: 2026-10-08
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.12703v1
-- PDF: https://arxiv.org/pdf/2610.12703v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-bridging_human_and_model_attention_explainability_analysis_of_cnn_mamba_and_vit_architectu_infographic.json
-
-## 3. Coverage-Aware Reasoning with Medical Tokens for Diagnosis Prediction
-
-- Date: 2026-10-07
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2610.10641v1
-- PDF: https://arxiv.org/pdf/2610.10641v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-arxiv-coverage_aware_reasoning_with_medical_tokens_for_diagnosis_prediction_infographic.json
-
-## 4. Frozen Models, Evolving Expertise: Model-Agnostic Learning from Deployment Experience for Multimodal Medical AI
-
-- Date: 2026-10-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2610.09146v1
-- PDF: https://arxiv.org/pdf/2610.09146v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-06-arxiv-frozen_models_evolving_expertise_model_agnostic_learning_from_deployment_experience_for_mu_infographic.json
-
-## 5. ECGWmark: Deep Watermarking for Electrocardiogram Signals
-
-- Date: 2026-10-09
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2610.13357v1
-- PDF: https://arxiv.org/pdf/2610.13357v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-ecgwmark_deep_watermarking_for_electrocardiogram_signals_infographic.json
-
-## 6. EchoTab: Learning Measurement-Grounded Representations for Echocardiographic Diagnosis through Tabular Reconstruction
-
-- Date: 2026-10-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.13599v1
-- PDF: https://arxiv.org/pdf/2610.13599v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-echotab_learning_measurement_grounded_representations_for_echocardiographic_diagnosis_thro_infographic.json
-
-## 7. Tensor-based Fusion of Multi-modal Data for Predicting Cancer Risk Levels
-
-- Date: 2026-10-09
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2610.13221v1
-- PDF: https://arxiv.org/pdf/2610.13221v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-tensor_based_fusion_of_multi_modal_data_for_predicting_cancer_risk_levels_infographic.json
-
-## 8. A4-MR: Abnormality-aware Anatomical Alignment for MR
-
-- Date: 2026-10-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.13056v1
-- PDF: https://arxiv.org/pdf/2610.13056v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-a4_mr_abnormality_aware_anatomical_alignment_for_mr_infographic.json
-
-## 9. CliQ-RRG: Clinical-Knowledge Guided Disease-aware Visual-Textual Alignment for QA-Style Radiology Report Generation
-
-- Date: 2026-10-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.13059v1
-- PDF: https://arxiv.org/pdf/2610.13059v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-cliq_rrg_clinical_knowledge_guided_disease_aware_visual_textual_alignment_for_qa_style_rad_infographic.json
-
-## 10. BioBigBird: A Sparse Attention Model for Long-Range Dependency Processing in Biomedical Text
-
-- Date: 2026-10-08
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2610.11430v1
-- PDF: https://arxiv.org/pdf/2610.11430v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-biobigbird_a_sparse_attention_model_for_long_range_dependency_processing_in_biomedical_tex_infographic.json
-
-## 11. MedCORE: Criteria-Grounded Clinical Reasoning for Interpretable Medical Image Diagnosis
-
-- Date: 2026-10-06
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.08528v1
-- PDF: https://arxiv.org/pdf/2610.08528v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-06-arxiv-medcore_criteria_grounded_clinical_reasoning_for_interpretable_medical_image_diagnosis_infographic.json
-
-## 12. Cite What You Explore: Budget-Aware LLM Reasoning over Medical KGs with Verifiable Evidence
-
-- Date: 2026-10-06
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2610.07739v1
-- PDF: https://arxiv.org/pdf/2610.07739v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-06-arxiv-cite_what_you_explore_budget_aware_llm_reasoning_over_medical_kgs_with_verifiable_evidence_infographic.json
-
-## 13. Learning Features, Not Layouts: Feature-Axis Attention as a Transfer Prior for Medical Imaging
-
-- Date: 2026-10-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.13012v1
-- PDF: https://arxiv.org/pdf/2610.13012v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-learning_features_not_layouts_feature_axis_attention_as_a_transfer_prior_for_medical_imagi_infographic.json
-
-## 14. Evidence-Bound Reasoning: Neuro-Semantic Verification of Biomedical AI in Glioblastoma Radiogenomics
-
-- Date: 2026-10-06
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.08660v1
-- PDF: https://arxiv.org/pdf/2610.08660v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-06-arxiv-evidence_bound_reasoning_neuro_semantic_verification_of_biomedical_ai_in_glioblastoma_radi_infographic.json
-
-## 15. Efficient Multi-Granularity Knowledge Transfer for Radiology Report Generation
-
-- Date: 2026-10-08
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.11303v1
-- PDF: https://arxiv.org/pdf/2610.11303v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-arxiv-efficient_multi_granularity_knowledge_transfer_for_radiology_report_generation_infographic.json
-
-## 16. The Predictability Bias of Joint-Embedding Predictive Learning in Medical Imaging
-
-- Date: 2026-10-09
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.13237v1
-- PDF: https://arxiv.org/pdf/2610.13237v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-the_predictability_bias_of_joint_embedding_predictive_learning_in_medical_imaging_infographic.json
-
-## 17. Quantifying Volumetric Risk: Class-Aware Asymmetric Weighted Conformal Prediction for 3D Medical Image Segmentation
+## 1. Implementing AI-assisted, patient-friendly imaging report summaries to enhance oncology care delivery: protocol for a randomized mixed-methods quality improvement study
 
 - Date: 2026-10-07
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.09392v1
-- PDF: https://arxiv.org/pdf/2610.09392v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-arxiv-quantifying_volumetric_risk_class_aware_asymmetric_weighted_conformal_prediction_for_3d_me_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364529v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364529v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-implementing_ai_assisted_patient_friendly_imaging_report_summaries_to_enhance_oncology_car_infographic.json
 
-## 18. Multi-Objective Aligned Small Language Model Framework for SUD Patient Dialogue Generation
+## 2. Large language model consensus for reliable research cohort construction from radiology reports: a retrospective cohort study
 
-- Date: 2026-10-06
+- Date: 2026-10-08
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2610.09209v1
-- PDF: https://arxiv.org/pdf/2610.09209v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-06-arxiv-multi_objective_aligned_small_language_model_framework_for_sud_patient_dialogue_generation_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.06.26364312v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.06.26364312v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-medrxiv-large_language_model_consensus_for_reliable_research_cohort_construction_from_radiology_re_infographic.json
 
-## 19. Retrieval-Augmented Multimodal Language Model with Heterogeneous Evidence Integration for Clinical Prognosis
+## 3. Machine Learning Models Using Electronic Health Record Data to Predict Obstructive Sleep Apnea
 
-- Date: 2026-10-09
+- Date: 2026-10-07
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2610.13510v1
-- PDF: https://arxiv.org/pdf/2610.13510v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-retrieval_augmented_multimodal_language_model_with_heterogeneous_evidence_integration_for_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364806v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364806v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-machine_learning_models_using_electronic_health_record_data_to_predict_obstructive_sleep_a_infographic.json
 
-## 20. CoBe: A Benchmark For Conversational Counterfactual Text Editing
+## 4. Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma
 
-- Date: 2026-10-09
+- Date: 2026-10-08
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep_infographic.json
+
+## 5. HealthFound: a health world model for quantitative reasoning on longitudinal health profiles
+
+- Date: 2026-10-07
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.03.26364142v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.03.26364142v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-healthfound_a_health_world_model_for_quantitative_reasoning_on_longitudinal_health_profile_infographic.json
+
+## 6. Forecasting Alzheimer's disease progression using non-imaging clinical features and XGBoost
+
+- Date: 2026-10-07
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364229v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364229v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-forecasting_alzheimer_s_disease_progression_using_non_imaging_clinical_features_and_xgboos_infographic.json
+
+## 7. Assessment of Fairness and Bias of an Image-based Surgical Site Infection Detection AI Model
+
+- Date: 2026-10-08
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.22.26363636v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.22.26363636v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-medrxiv-assessment_of_fairness_and_bias_of_an_image_based_surgical_site_infection_detection_ai_mod_infographic.json
+
+## 8. Considerations for implementing a machine learning model for suicide risk in the health systems that serve American Indian communities
+
+- Date: 2026-10-07
 - Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2610.13057v1
-- PDF: https://arxiv.org/pdf/2610.13057v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-09-arxiv-cobe_a_benchmark_for_conversational_counterfactual_text_editing_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364799v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364799v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-considerations_for_implementing_a_machine_learning_model_for_suicide_risk_in_the_health_sy_infographic.json
+
+## 9. External Evaluation and Calibration Drift of Explainable Machine Learning Models for Acute and Chronic GVHD Prediction After Allogeneic HSCT
+
+- Date: 2026-10-08
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.14.26355639v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.14.26355639v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-medrxiv-external_evaluation_and_calibration_drift_of_explainable_machine_learning_models_for_acute_infographic.json
+
+## 10. Can Generative Video Address the Clinical Video Data Gap? Evaluation of Synthetic Parkinsonian Hand Motions
+
+- Date: 2026-10-07
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26363719v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26363719v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-can_generative_video_address_the_clinical_video_data_gap_evaluation_of_synthetic_parkinson_infographic.json
+
+## 11. Evidence-processing errors and their correction in an LLM-assisted systematic review: a retrospective methodological case study
+
+- Date: 2026-10-08
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v3
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363538v3.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-08-medrxiv-evidence_processing_errors_and_their_correction_in_an_llm_assisted_systematic_review_a_ret_infographic.json
+
+## 12. Generalizing Amyloid β Pathology from Postmortem Human Brains with Vision Foundation Models for Lesion Quantification
+
+- Date: 2026-10-07
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364184v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364184v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-generalizing_amyloid_pathology_from_postmortem_human_brains_with_vision_foundation_models_infographic.json
+
+## 13. Clinical, epidemiological, and economic profile of patients with Parkinson disease eligible for neuromodulation
+
+- Date: 2026-10-07
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364767v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364767v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-clinical_epidemiological_and_economic_profile_of_patients_with_parkinson_disease_eligible_infographic.json
+
+## 14. Multimodal Artificial Intelligence Predicts Pathological Response and Prognosis in HER2-Positive Early Breast Cancer Treated with Chemotherapy De-escalation Strategies: Analyses from PHERGain and PHERGain-2 Trials
+
+- Date: 2026-10-07
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364736v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364736v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-multimodal_artificial_intelligence_predicts_pathological_response_and_prognosis_in_her2_po_infographic.json
+
+## 15. Subversion of clinical judgment by conversational artificial intelligence
+
+- Date: 2026-10-07
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364541v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364541v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-subversion_of_clinical_judgment_by_conversational_artificial_intelligence_infographic.json
+
+## 16. Machine learning predicts relapse after anti-TNF withdrawal in ulcerative colitis using rectal biopsy transcriptomics
+
+- Date: 2026-10-07
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364793v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364793v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-machine_learning_predicts_relapse_after_anti_tnf_withdrawal_in_ulcerative_colitis_using_re_infographic.json
+
+## 17. Validation of a two-stage automated screening pipeline for medical systematic reviews: a stratified concordance study with three independent human reviewers, using PABAK and Gwet's AC1
+
+- Date: 2026-10-07
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.05.26364147v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.05.26364147v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-validation_of_a_two_stage_automated_screening_pipeline_for_medical_systematic_reviews_a_st_infographic.json
+
+## 18. RFM: A Lightweight Retinal Foundation Model for Generalised Oculomics
+
+- Date: 2026-10-07
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.02.26362554v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.02.26362554v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-rfm_a_lightweight_retinal_foundation_model_for_generalised_oculomics_infographic.json
+
+## 19. Brain region- and solubility-dependent proteomic signatures of neurofibrillary tangle pathology in Alzheimer's disease
+
+- Date: 2026-10-07
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.04.26361149v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.04.26361149v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-brain_region_and_solubility_dependent_proteomic_signatures_of_neurofibrillary_tangle_patho_infographic.json
+
+## 20. Feature-Engineering Strategies for EEG-Based ADHD Classification in Children: A Controlled Benchmark of Expert, LLM-Guided and Full-Space Comparators
+
+- Date: 2026-10-07
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.06.26364825v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.06.26364825v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-07-medrxiv-feature_engineering_strategies_for_eeg_based_adhd_classification_in_children_a_controlled_infographic.json
