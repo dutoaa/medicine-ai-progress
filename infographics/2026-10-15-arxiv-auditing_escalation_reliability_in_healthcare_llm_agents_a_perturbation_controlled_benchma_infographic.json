@@ -1,24 +1,24 @@
 {
-  "key_insight": "This study shows that LLMs can look highly accurate on clean healthcare workflow tasks yet still fail to escalate or ask for clarification when uncertainty, conflict, or missing evidence appears.",
-  "clinical_relevance": "For healthcare AI, the main risk is not just wrong answers but missed workflow actions like escalation, which can affect safety and decision quality.",
+  "key_insight": "Healthcare LLMs can look highly accurate on clean questions yet still fail badly when they must decide whether to answer, ask for clarification, abstain, or escalate under workflow uncertainty.",
+  "clinical_relevance": "In patient-facing workflows, unreliable escalation can miss important safety triggers, so decision policies need evaluation beyond answer accuracy alone.",
   "method": [
-    "400 synthetic workflow episodes built from 40 hand-authored seeds",
-    "Two surface forms and five controlled perturbation variants across four task classes",
-    "Compared five open-weight LLM configurations using ANSWER / ASK CLARIFICATION / ABSTAIN / ESCALATE under a 5:1 missed-escalation cost"
+    "400 synthetic healthcare workflow episodes built from 40 semantic seeds",
+    "Five controlled variants tested across four task classes and two surface forms",
+    "Compared five open-weight LLM configurations under ANSWER/ASK CLARIFICATION/ABSTAIN/ESCALATE with a preset 5:1 missed-vs-unnecessary escalation cost"
   ],
-  "evidence_signal": "Clean decision accuracy reached 0.97, but under conflict the strongest model dropped to 0.78 and missed-escalation rates remained high without a workflow-aware controller.",
-  "watch_item": "The proposed controller improves benchmark performance, but its rule detectors failed on paraphrased triggers, so generalization beyond this benchmark is not yet established.",
+  "evidence_signal": "Clean decision accuracy reached 0.97, but uncertainty-prompted models missed 32% to 97% of required escalations and one model fell from 0.97 clean accuracy to 0.78 under conflict.",
+  "watch_item": "The workflow-aware controller improved benchmark utility, but its rule detectors collapsed on paraphrased triggers, so real-world generalization remains unproven.",
   "hashtags": [
     "#HealthAI",
-    "#LLMSafety",
-    "#ClinicalWorkflow",
-    "#Escalation",
-    "#Benchmarking"
+    "#LLMAgents",
+    "#PatientSafety",
+    "#WorkflowEvaluation",
+    "#AIinMedicine"
   ],
   "paper_id": "2026-10-15-arxiv-auditing_escalation_reliability_in_healthcare_llm_agents_a_perturbation_controlled_benchma",
   "paper_title": "Auditing Escalation Reliability in Healthcare LLM Agents: A Perturbation-Controlled Benchmark of Workflow-State Failures",
   "paper_date": "2026-10-15",
   "paper_category": "Health Systems",
-  "generated_at": "2026-10-17T11:16:58",
+  "generated_at": "2026-10-18T11:52:46",
   "generator": "openai"
 }
