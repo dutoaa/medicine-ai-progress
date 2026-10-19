@@ -1,24 +1,26 @@
 {
-  "key_insight": "A target-domain adapted ensemble better predicted sustained antibiotic exposure in ICU patients with intracerebral hemorrhage when moved from MIMIC-IV to eICU, outperforming a source-only model.",
-  "clinical_relevance": "This could help ICU teams identify patients with ICH who are more likely to receive prolonged antibiotics, supporting benchmarking, resource planning, and retrospective care analysis across hospitals.",
+  "key_insight": "Target-domain adaptation improved prediction of sustained antibiotic exposure in ICU patients with intracerebral hemorrhage, raising held-out AUROC from 0.782 to 0.841.",
+  "clinical_relevance": "The model predicts antibiotic exposure patterns, not infection or antibiotic need, and may support research into variation in ICU care.",
   "method": [
-    "Trained models on MIMIC-IV ICH ICU stays and adapted them to eICU data.",
-    "Combined 16 model probabilities with clinical, availability, and measurement-density features in a logistic meta-learner.",
-    "Used cross-fitting and a held-out eICU evaluation set to test transfer performance."
+    "Used 2,024 MIMIC-IV ICU stays as the source cohort and 1,277 eICU stays for target-domain development and evaluation.",
+    "Combined 16 model probabilities with clinical, availability, and measurement-density features in a penalized logistic ensemble.",
+    "Evaluated sustained antibiotic exposure on at least two ICU days in 511 held-out eICU stays."
   ],
-  "evidence_signal": "On the held-out eICU subset (511 stays; 48 positive cases), the adapted ensemble reached AUROC 0.841 and AP 0.540, improving over the MIMIC-IV source-only stack AUROC of 0.782.",
-  "watch_item": "The outcome is based on antibiotic exposure patterns, which may reflect local practice differences and documentation/measurement intensity rather than infection alone, so external deployment should be validated carefully.",
+  "evidence_signal": "Among 511 held-out stays with 48 positive outcomes, the adapted model achieved AUROC 0.841 (95% CI 0.775–0.899), average precision 0.540, and an AUROC gain of 0.059 (95% CI 0.003–0.112) over the source-only stack.",
+  "watch_item": "Some inputs used the full first 24 hours, potentially including observations after antibiotics began, which limits interpretation as a pre-treatment prediction tool.",
   "hashtags": [
-    "#MachineLearning",
-    "#ICU",
+    "#MedicalAI",
+    "#CriticalCare",
     "#IntracerebralHemorrhage",
-    "#Antibiotics",
-    "#ModelAdaptation"
+    "#DomainAdaptation",
+    "#AntibioticExposure"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-13-medrxiv-cross_database_adaptation_of_machine_learning_models_for_predicting_sustained_antibiotic_e",
   "paper_title": "Cross-database adaptation of machine learning models for predicting sustained antibiotic exposure among patients with intracerebral hemorrhage in intensive care units",
   "paper_date": "2026-10-13",
   "paper_category": "Health Systems",
-  "generated_at": "2026-10-19T19:59:39",
+  "generated_at": "2026-10-19T20:04:39",
   "generator": "openai"
 }
