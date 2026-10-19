@@ -1,24 +1,24 @@
 {
-  "key_insight": "An adapted machine-learning ensemble better predicted sustained antibiotic exposure in ICU patients with intracerebral hemorrhage across hospitals than a source-only model.",
-  "clinical_relevance": "This suggests prediction models for antibiotic use in critical care may need site-specific adaptation before being trusted for decision support or benchmarking.",
+  "key_insight": "A target-domain adapted ensemble better predicted sustained antibiotic exposure in ICU patients with intracerebral hemorrhage when moved from MIMIC-IV to eICU, outperforming a source-only model.",
+  "clinical_relevance": "This could help ICU teams identify patients with ICH who are more likely to receive prolonged antibiotics, supporting benchmarking, resource planning, and retrospective care analysis across hospitals.",
   "method": [
-    "Derived ICH ICU cohorts from MIMIC-IV (source) and eICU (target).",
-    "Built multiple feature-based base models using demographic, comorbidity, physiologic, lab, neurologic, respiratory, temporal, and measurement-density data.",
-    "Combined model outputs with clinical and data-availability features in a 42-input L2-penalized logistic meta-learner using cross-fitting."
+    "Trained models on MIMIC-IV ICH ICU stays and adapted them to eICU data.",
+    "Combined 16 model probabilities with clinical, availability, and measurement-density features in a logistic meta-learner.",
+    "Used cross-fitting and a held-out eICU evaluation set to test transfer performance."
   ],
-  "evidence_signal": "On held-out eICU data (511 stays, 48 positives), the adapted ensemble reached AUROC 0.841 and AP 0.540, outperforming the MIMIC-IV source-only stack (AUROC 0.782).",
-  "watch_item": "Performance was evaluated retrospectively and the target outcome is proxy-based and institution-dependent, so external transportability and real-world implementation still need confirmation.",
+  "evidence_signal": "On the held-out eICU subset (511 stays; 48 positive cases), the adapted ensemble reached AUROC 0.841 and AP 0.540, improving over the MIMIC-IV source-only stack AUROC of 0.782.",
+  "watch_item": "The outcome is based on antibiotic exposure patterns, which may reflect local practice differences and documentation/measurement intensity rather than infection alone, so external deployment should be validated carefully.",
   "hashtags": [
     "#MachineLearning",
     "#ICU",
     "#IntracerebralHemorrhage",
     "#Antibiotics",
-    "#HealthSystems"
+    "#ModelAdaptation"
   ],
   "paper_id": "2026-10-13-medrxiv-cross_database_adaptation_of_machine_learning_models_for_predicting_sustained_antibiotic_e",
   "paper_title": "Cross-database adaptation of machine learning models for predicting sustained antibiotic exposure among patients with intracerebral hemorrhage in intensive care units",
   "paper_date": "2026-10-13",
   "paper_category": "Health Systems",
-  "generated_at": "2026-10-19T14:11:27",
+  "generated_at": "2026-10-19T19:59:39",
   "generator": "openai"
 }

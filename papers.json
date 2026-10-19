@@ -26,27 +26,27 @@
     ],
     "score": 87,
     "infographic": {
-      "key_insight": "A longitudinal machine learning model using routine EHR data could flag people at high risk for incident inflammatory bowel disease months to years before diagnosis.",
-      "clinical_relevance": "If prospectively validated, this approach could help clinicians find patients with undiagnosed IBD earlier and potentially shorten diagnostic delay.",
+      "key_insight": "A longitudinal machine learning model using routine EHR data identified incident inflammatory bowel disease months to years before diagnosis with strong external validation.",
+      "clinical_relevance": "This approach could help flag patients at high risk for earlier evaluation, potentially shortening diagnostic delay in IBD care pathways.",
       "method": [
-        "Trained a Mamba state-space model on pre-diagnostic EHR data from adults with IBD-compatible symptoms/signs/finding.",
-        "Excluded diagnostic-workup features to focus on pre-workup signals of future IBD.",
-        "Externally validated the model at a demographically distinct safety-net hospital and simulated a diagnosis-code-only alert workflow."
+        "Retrospective cohort of adults with IBD-compatible symptoms/findings from UCSF EHR data (2012-2024).",
+        "Incident IBD cases were confirmed with structured filtering and validated large language model note review.",
+        "Mamba and comparator models were trained on pre-diagnostic EHR data and externally tested at ZSFG without recalibration."
       ],
       "evidence_signal": "At 6 months after presentation, Mamba achieved AUROC 0.969 at UCSF and 0.965 at ZSFG, with median lead times of 20 and 15 months, respectively.",
-      "watch_item": "This was a retrospective study, so real-world alert performance, false positives, and impact on outcomes still need prospective evaluation.",
+      "watch_item": "Because this is retrospective EHR modeling, prospective studies are still needed to confirm real-world impact, alert burden, and whether earlier identification improves outcomes.",
       "hashtags": [
-        "#IBD",
-        "#MachineLearning",
-        "#EHR",
+        "#ArtificialIntelligence",
+        "#ElectronicHealthRecords",
+        "#InflammatoryBowelDisease",
         "#ClinicalNLP",
-        "#DigitalHealth"
+        "#PredictiveModeling"
       ],
       "paper_id": "2026-10-13-medrxiv-prediction_of_incident_inflammatory_bowel_disease_from_routine_electronic_health_records_d",
       "paper_title": "Prediction of incident inflammatory bowel disease from routine electronic health records: development and external validation of a longitudinal machine learning model",
       "paper_date": "2026-10-13",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-10-19T14:11:09",
+      "generated_at": "2026-10-19T19:59:21",
       "generator": "openai"
     }
   },
@@ -77,27 +77,27 @@
     ],
     "score": 75,
     "infographic": {
-      "key_insight": "A DistilGPT2 table-to-text approach can turn small, imbalanced clinical datasets into strong disease prediction models by leveraging contextual language patterns rather than relying only on traditional feature statistics.",
-      "clinical_relevance": "This could help improve early disease risk prediction in low-volume clinical settings where conventional machine learning models often miss minority-case patterns.",
+      "key_insight": "A Distil GPT2 table-to-text approach can outperform traditional machine learning and neural networks for disease prediction when clinical datasets are small, imbalanced, and low-volume.",
+      "clinical_relevance": "This suggests GPT-style models may help improve screening and risk prediction from structured clinical records while highlighting clinically meaningful features even when positive cases are scarce.",
       "method": [
-        "Converted structured patient records into physician-style text descriptions",
-        "Augmented minority-class examples with GPT-4-generated medical paraphrases",
-        "Fine-tuned DistilGPT2 and used gradient-based explainability to highlight important clinical features"
+        "Structured patient data were converted into physician-style text descriptions.",
+        "GPT-4 generated paraphrases were used to enrich minority-class examples before fine-tuning Distil GPT2.",
+        "Gradient-based explainable AI was used to identify influential clinical variables."
       ],
-      "evidence_signal": "Across four public datasets, the model reported average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96, respectively, with stronger sensitivity and stability than several comparison methods.",
-      "watch_item": "Results come from public datasets, so real-world performance and safety need external validation before clinical deployment.",
+      "evidence_signal": "Across four public datasets, the model reported average precision 0.96, specificity 0.97, sensitivity 0.96, and F1-score 0.96, with stronger and more stable performance than comparison models.",
+      "watch_item": "The approach depends on synthetic paraphrasing and public datasets, so external validation and real-world testing are needed before clinical deployment.",
       "hashtags": [
-        "#AIinHealthcare",
-        "#ClinicalAI",
+        "#AIinMedicine",
+        "#ClinicalPrediction",
         "#GPT",
-        "#MedicalPrediction",
-        "#HealthSystems"
+        "#MachineLearning",
+        "#HealthcareAI"
       ],
       "paper_id": "2026-10-13-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
       "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
       "paper_date": "2026-10-13",
       "paper_category": "Health Systems",
-      "generated_at": "2026-10-19T14:11:11",
+      "generated_at": "2026-10-19T19:59:23",
       "generator": "openai"
     }
   },
@@ -128,15 +128,15 @@
     ],
     "score": 71,
     "infographic": {
-      "key_insight": "MRI radiomic features from pre-operative brain scans added prognostic value beyond clinical variables for lung cancer brain metastases, and the imaging risk groups appeared to reflect underlying immune-tumor biology.",
-      "clinical_relevance": "If validated, this approach could help identify patients at higher risk of death or leptomeningeal progression and support more personalized follow-up and treatment planning.",
+      "key_insight": "MRI radiomic features added meaningful prognostic signal beyond clinical factors for survival risk stratification in lung cancer brain metastases.",
+      "clinical_relevance": "If validated, this approach could help identify higher-risk patients more accurately and support more personalized follow-up and treatment planning.",
       "method": [
-        "Retrospective cohort of 103 lung cancer patients with brain metastases and matched MRI/histopathology.",
-        "Extracted radiomic features from contrast-enhanced T1 and FLAIR MRI sequences.",
-        "Compared Cox models, random survival forests, and DeepSurv using clinical, imaging, and combined inputs for OS, CNS progression, and LM progression."
+        "Retrospective study of 103 patients with lung cancer brain metastases and matched pre-operative MRI/histopathology.",
+        "Extracted radiomic features from T1 post-contrast and T2-FLAIR MRI and combined them with clinical variables.",
+        "Trained Cox, random survival forest, and DeepSurv models for overall survival, CNS progression, and leptomeningeal progression."
       ],
-      "evidence_signal": "The combined clinical-imaging DeepSurv model achieved the best overall survival concordance index (0.728), and imaging-only risk groups showed differences in tumor-infiltrating lymphocytes and PD-L1 expression.",
-      "watch_item": "Single-center retrospective data with a modest sample size means the findings need external validation before routine clinical use.",
+      "evidence_signal": "The combined clinical-imaging DeepSurv model achieved the best overall survival concordance index (0.728), and imaging-only high-risk groups showed immune-microenvironment differences such as lower tumor-infiltrating lymphocytes and PD-L1 expression.",
+      "watch_item": "This was a retrospective single-cohort study, so external validation is needed before the model can be used routinely in practice.",
       "hashtags": [
         "#MedicalImaging",
         "#Radiomics",
@@ -148,7 +148,7 @@
       "paper_title": "MRI Biomarkers for Brain Metastases in Lung Cancer Using Machine Learning",
       "paper_date": "2026-10-13",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:14",
+      "generated_at": "2026-10-19T19:59:26",
       "generator": "openai"
     }
   },
@@ -179,27 +179,27 @@
     ],
     "score": 71,
     "infographic": {
-      "key_insight": "Routine clinical data available at the first echocardiogram can help shortlist the most likely genetic conditions in infants with congenital heart disease.",
-      "clinical_relevance": "This could support earlier genetic suspicion and triage in CHD care, especially before definitive genetic testing results are available.",
+      "key_insight": "Routine clinical data available by the first echocardiogram can help shortlist likely genetic diagnoses in infants with congenital heart disease.",
+      "clinical_relevance": "This could support earlier genetic referral or testing prioritization when diagnosis is unclear, but it is a decision-support tool rather than a standalone diagnostic test.",
       "method": [
-        "Retrospective single-center cohort of 1,720 children with congenital heart disease and known genetic testing status.",
-        "Compared class-balanced logistic regression with a multimodal deep learning fusion model as more data became available over time.",
-        "Evaluated balanced top-3 accuracy after echocardiogram data, then after serial records, radiology notes, and ICD-10 codes were added."
+        "Retrospective single-center cohort of 1,720 children with CHD and confirmed genetic diagnoses or negative genetic workup.",
+        "Compared class-balanced logistic regression with a multimodal deep learning fusion model using echocardiogram images plus serial clinical data as they became available.",
+        "Evaluated balanced top-3 accuracy across staged inputs, with bootstrap intervals."
       ],
-      "evidence_signal": "Balanced top-3 accuracy was 0.758 using echocardiogram-visit data alone and increased to 0.809 with later clinical codes; multimodal fusion performed similarly.",
-      "watch_item": "Single-center retrospective data and moderate class imbalance may limit generalizability, and the model should be validated prospectively before clinical use.",
+      "evidence_signal": "Balanced top-3 accuracy improved from 0.758 using echocardiogram-visit inputs alone to 0.809 after adding serial records, radiology notes, and ICD-10 codes; multimodal fusion performed similarly.",
+      "watch_item": "Single-center retrospective data and modest gains over logistic regression mean external validation and careful integration into clinical workflows are needed before use.",
       "hashtags": [
-        "#ArtificialIntelligence",
+        "#AIinMedicine",
         "#Genomics",
         "#CongenitalHeartDisease",
-        "#PediatricCardiology",
+        "#ClinicalDecisionSupport",
         "#MedicalImaging"
       ],
       "paper_id": "2026-10-13-medrxiv-artificial_intelligence_based_modeling_to_aid_in_the_identification_of_genetic_conditions",
       "paper_title": "Artificial Intelligence-Based Modeling to Aid in the Identification of Genetic Conditions in Infants with Congenital Heart Disease",
       "paper_date": "2026-10-13",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:16",
+      "generated_at": "2026-10-19T19:59:29",
       "generator": "openai"
     }
   },
@@ -230,27 +230,27 @@
     ],
     "score": 65,
     "infographic": {
-      "key_insight": "FERMAT shows that the best prediction approach depends on the task: representation-based methods work better for future disease risk, while generation-based methods are stronger for same-day clinical event prediction.",
-      "clinical_relevance": "This suggests clinical foundation models may need to combine both prediction styles to better support risk stratification and near-term event forecasting in real-world EHR settings.",
+      "key_insight": "FERMAT shows that the best prediction approach depends on the task: representation-based models work better for long-term disease risk, while generation-based models do better for same-day clinical event prediction.",
+      "clinical_relevance": "This could help clinicians and health systems choose the right AI strategy for different EHR prediction needs, from future disease risk to near-term event forecasting.",
       "method": [
-        "Trained a 65M-parameter autoregressive clinical foundation model on longitudinal EHRs from 3.77 million patients.",
-        "Compared representation-based predictors with generation-based forecasts across disease risk and clinical event tasks.",
-        "Evaluated performance on chronic kidney disease, fatty liver, diabetes, and same-day diagnoses, prescriptions, and procedures."
+        "Trained a 65-million-parameter autoregressive clinical foundation model on longitudinal EHR data from 3.77 million patients.",
+        "Compared representation-based predictors versus generated-sequence predictions across risk and event-prediction tasks.",
+        "Evaluated chronic kidney disease, fatty liver, diabetes risk, and same-day diagnoses, prescriptions, and procedures."
       ],
-      "evidence_signal": "In a 10,000-patient test cohort, representation-based prediction improved five-year disease-risk AUROC by 0.098-0.115, while generation-based prediction reached 71.0% Recall@10 for same-day events versus 55.7% for representation-based methods.",
-      "watch_item": "Results come from a single-hospital EHR dataset, so performance may not generalize across health systems or documentation practices.",
+      "evidence_signal": "In a 10,000-patient test cohort, representation-based prediction improved five-year disease-risk AUROC by 0.098-0.115, while generation-based prediction reached 71.0% Recall@10 for same-day events versus 55.7% for representation-based prediction.",
+      "watch_item": "Results come from a single-hospital EHR dataset, so performance may not generalize well to other care settings or coding practices.",
       "hashtags": [
         "#ClinicalAI",
-        "#FoundationModel",
+        "#FoundationModels",
         "#EHR",
-        "#RiskPrediction",
-        "#MedicalAI"
+        "#PredictiveHealth",
+        "#HealthInformatics"
       ],
       "paper_id": "2026-10-13-medrxiv-fermat_an_autoregressive_clinical_foundation_model_for_disease_risk_and_clinical_event_pre",
       "paper_title": "FERMAT: An Autoregressive Clinical Foundation Model for Disease Risk and Clinical Event Prediction",
       "paper_date": "2026-10-13",
       "paper_category": "Health Systems",
-      "generated_at": "2026-10-19T14:11:19",
+      "generated_at": "2026-10-19T19:59:31",
       "generator": "openai"
     }
   },
@@ -281,27 +281,27 @@
     ],
     "score": 63,
     "infographic": {
-      "key_insight": "RadKev is an open-weight decision model specialized for radiology that improves categorical radiology decisions over its general-purpose base model and matched or exceeded larger or hosted alternatives.",
-      "clinical_relevance": "Because it can run inside a hospital and keep data local, RadKev could support faster, privacy-preserving radiology triage and decision support after local validation.",
+      "key_insight": "RadKev is an open-weight radiology decision model that outperformed its general-purpose base models and matched or beat larger hosted systems for categorical radiology tasks.",
+      "clinical_relevance": "Because it can run locally in a hospital, RadKev may support faster, privacy-preserving radiology decision support after local validation.",
       "method": [
-        "Fine-tuned Kev-27B and Kev-9B on 36,109 public radiology records to create RadKev-27B and RadKev-9B.",
-        "Compared against base Kev models, hosted decision models, and Qwen3.8-27B on 14,142 held-out questions across 15 radiology tasks.",
-        "Evaluated accuracy and latency, with task-averaged accuracy as the prespecified primary outcome."
+        "Fine-tuned Kev-27B and Kev-9B on 36,109 public radiology records.",
+        "Tested the resulting RadKev models on 14,142 held-out questions across 15 radiology tasks.",
+        "Compared accuracy and latency against hosted decision models and a large language model."
       ],
-      "evidence_signal": "RadKev-27B improved over Kev-27B by 4.9 percentage points and was more accurate than Jev, OpenAI Decisions, and Qwen3.8-27B, while running about 132 times faster than reasoning mode on a 1,675-question comparison set.",
-      "watch_item": "Performance was shown on held-out public datasets, so real-world deployment still needs validation on local workflows, scanner populations, and reporting practices.",
+      "evidence_signal": "On held-out evaluation, RadKev-27B improved over Kev-27B by 4.9 percentage points and was more accurate than Jev, OpenAI Decisions, and Qwen3.8-27B, while answering much faster than reasoning-based LLM use.",
+      "watch_item": "Performance was shown on public datasets, so real-world deployment still needs validation on local hospital data and workflows.",
       "hashtags": [
         "#RadiologyAI",
         "#ClinicalNLP",
-        "#DecisionModel",
+        "#DecisionModels",
         "#OpenWeightAI",
-        "#MedicalImaging"
+        "#MedicalAI"
       ],
       "paper_id": "2026-10-13-medrxiv-radkev_an_open_weight_decision_model_for_radiology",
       "paper_title": "RadKev: An Open-Weight Decision Model for Radiology",
       "paper_date": "2026-10-13",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-10-19T14:11:22",
+      "generated_at": "2026-10-19T19:59:35",
       "generator": "openai"
     }
   },
@@ -332,27 +332,27 @@
     ],
     "score": 63,
     "infographic": {
-      "key_insight": "Infrastructure as Code can rapidly deploy governed, hospital-controlled AI services for clinical use through a browser or API.",
-      "clinical_relevance": "This approach may make it easier for hospitals to deliver privacy-compliant AI tools to clinicians without installing workstation software.",
+      "key_insight": "Infrastructure as Code can rapidly deploy governed clinical AI services in hospital cloud environments, making bedside-accessible AI more practical.",
+      "clinical_relevance": "This approach could help hospitals launch privacy-compliant AI tools for clinicians through a browser or API without installing workstation software.",
       "method": [
-        "Encoded secure backend, private AI endpoint, and identity/access setup as machine-readable infrastructure files.",
-        "Deployed a hospital-governed LLM service accessible from a browser or API.",
-        "Built an inconsistency checker to flag contradictory statements in clinical documents."
+        "Encoded secure backend, private model endpoint, and identity/access setup as machine-readable infrastructure files",
+        "Deployed a hospital-governed LLM service in a tertiary care center",
+        "Built and tested an LLM-based inconsistency checker for clinical documents"
       ],
-      "evidence_signal": "Deployment took 310.3 ± 196.6 seconds on average (n=25), and the inconsistency checker flagged severe inconsistencies in 105 of 1,347 physician-approved documents; 149 of 150 sampled findings were confirmed (population-weighted PPV 98.2%).",
-      "watch_item": "Results come from a single tertiary-care case study, so broader generalizability and integration burden may vary across institutions.",
+      "evidence_signal": "Deployment took a mean of 310.3 ± 196.6 seconds across 25 runs, and the inconsistency checker flagged severe issues in 105 of 1,347 documents with a population-weighted PPV of 98.2% after audit.",
+      "watch_item": "Results come from a single-center case study, so broader generalizability and local regulatory integration still need validation.",
       "hashtags": [
-        "#HealthAI",
+        "#HealthcareAI",
         "#InfrastructureAsCode",
         "#ClinicalAI",
-        "#HealthSystems",
-        "#DigitalHealth"
+        "#HealthIT",
+        "#LLM"
       ],
       "paper_id": "2026-10-13-medrxiv-introducing_infrastructure_as_code_for_deployment_and_governance_of_medical_ai_a_case_stud",
       "paper_title": "Introducing Infrastructure as Code for deployment and governance of medical AI: A case study",
       "paper_date": "2026-10-13",
       "paper_category": "Health Systems",
-      "generated_at": "2026-10-19T14:11:24",
+      "generated_at": "2026-10-19T19:59:37",
       "generator": "openai"
     }
   },
@@ -383,27 +383,27 @@
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "An adapted machine-learning ensemble better predicted sustained antibiotic exposure in ICU patients with intracerebral hemorrhage across hospitals than a source-only model.",
-      "clinical_relevance": "This suggests prediction models for antibiotic use in critical care may need site-specific adaptation before being trusted for decision support or benchmarking.",
+      "key_insight": "A target-domain adapted ensemble better predicted sustained antibiotic exposure in ICU patients with intracerebral hemorrhage when moved from MIMIC-IV to eICU, outperforming a source-only model.",
+      "clinical_relevance": "This could help ICU teams identify patients with ICH who are more likely to receive prolonged antibiotics, supporting benchmarking, resource planning, and retrospective care analysis across hospitals.",
       "method": [
-        "Derived ICH ICU cohorts from MIMIC-IV (source) and eICU (target).",
-        "Built multiple feature-based base models using demographic, comorbidity, physiologic, lab, neurologic, respiratory, temporal, and measurement-density data.",
-        "Combined model outputs with clinical and data-availability features in a 42-input L2-penalized logistic meta-learner using cross-fitting."
+        "Trained models on MIMIC-IV ICH ICU stays and adapted them to eICU data.",
+        "Combined 16 model probabilities with clinical, availability, and measurement-density features in a logistic meta-learner.",
+        "Used cross-fitting and a held-out eICU evaluation set to test transfer performance."
       ],
-      "evidence_signal": "On held-out eICU data (511 stays, 48 positives), the adapted ensemble reached AUROC 0.841 and AP 0.540, outperforming the MIMIC-IV source-only stack (AUROC 0.782).",
-      "watch_item": "Performance was evaluated retrospectively and the target outcome is proxy-based and institution-dependent, so external transportability and real-world implementation still need confirmation.",
+      "evidence_signal": "On the held-out eICU subset (511 stays; 48 positive cases), the adapted ensemble reached AUROC 0.841 and AP 0.540, improving over the MIMIC-IV source-only stack AUROC of 0.782.",
+      "watch_item": "The outcome is based on antibiotic exposure patterns, which may reflect local practice differences and documentation/measurement intensity rather than infection alone, so external deployment should be validated carefully.",
       "hashtags": [
         "#MachineLearning",
         "#ICU",
         "#IntracerebralHemorrhage",
         "#Antibiotics",
-        "#HealthSystems"
+        "#ModelAdaptation"
       ],
       "paper_id": "2026-10-13-medrxiv-cross_database_adaptation_of_machine_learning_models_for_predicting_sustained_antibiotic_e",
       "paper_title": "Cross-database adaptation of machine learning models for predicting sustained antibiotic exposure among patients with intracerebral hemorrhage in intensive care units",
       "paper_date": "2026-10-13",
       "paper_category": "Health Systems",
-      "generated_at": "2026-10-19T14:11:27",
+      "generated_at": "2026-10-19T19:59:39",
       "generator": "openai"
     }
   },
@@ -434,27 +434,27 @@
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "A large-language-model screening workflow can feasibly flag potential treatment injuries from discharge summaries for clinician review, but many signals still need adjudication.",
-      "clinical_relevance": "This approach may help hospitals surface previously missed inpatient harms for possible ACC consideration, supporting safer follow-up and reporting workflows.",
+      "key_insight": "An AI-assisted workflow could feasibly screen discharge summaries for potential treatment injury and help surface cases for clinician review that might otherwise be missed.",
+      "clinical_relevance": "This approach may improve detection of inpatient harm signals and support follow-up for possible ACC consideration, but it is not a stand-alone diagnostic tool.",
       "method": [
-        "Single-site, six-month pilot at Wairarapa Hospital using all 2,642 inpatient discharge summaries.",
-        "LLM generated structured harm signals with supporting text and certainty labels.",
-        "Clinicians reviewed flagged cases and decided whether escalation was warranted."
+        "Single-site, 6-month pilot at Wairarapa Hospital using an LLM to screen 2,642 inpatient discharge summaries",
+        "The model produced structured candidate harm signals with supporting text and certainty labels",
+        "Clinicians reviewed all flagged cases and decided whether escalation was warranted"
       ],
-      "evidence_signal": "The system flagged 237 cases (9.0% yield); clinicians confirmed 102 as iatrogenic harm and judged 43 more as possible harm, with 4.6% unsupported outputs.",
-      "watch_item": "Results come from one hospital and clinician review without an independent chart-review gold standard, so accuracy and equity effects remain uncertain.",
+      "evidence_signal": "The system flagged 237 summaries (9.0% yield), with 43.0% confirmed iatrogenic harm PPV and 61.2% when possible harm was included; 4.6% of outputs were unsupported.",
+      "watch_item": "Performance was assessed without an independent chart-review reference standard, so accuracy, equity, and generalisability still need prospective validation.",
       "hashtags": [
-        "#AIMedicine",
+        "#HealthAI",
         "#PatientSafety",
-        "#HealthSystems",
-        "#ClinicalWorkflow",
+        "#ClinicalNLP",
+        "#HospitalQuality",
         "#MedicalAI"
       ],
       "paper_id": "2026-10-13-medrxiv-ai_assisted_identification_of_potential_treatment_injury_from_inpatient_discharge_summarie",
       "paper_title": "AI-assisted identification of potential treatment injury from inpatient discharge summaries: an early-stage sociotechnical evaluation in a New Zealand district hospital",
       "paper_date": "2026-10-13",
       "paper_category": "Health Systems",
-      "generated_at": "2026-10-19T14:11:30",
+      "generated_at": "2026-10-19T19:59:42",
       "generator": "openai"
     }
   },
@@ -485,17 +485,17 @@
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "The Nephro Candidate Score (N-CS) uses machine learning to rank genes and variants that may explain suspected inherited kidney disease, helping surface plausible disease candidates from large sequencing datasets.",
-      "clinical_relevance": "This tool could speed up interpretation of exome data in patients with suspected genetic kidney disease and support more standardized candidate variant prioritization in research and diagnostic workflows.",
+      "key_insight": "The Nephro Candidate Score (N-CS) combines gene, variant, and inheritance signals to prioritize likely disease-causing variants in suspected inherited kidney disease.",
+      "clinical_relevance": "This tool may help clinicians and researchers focus genetic testing on the most plausible candidate variants and genes, potentially improving diagnosis and discovery in kidney disease.",
       "method": [
-        "Combines a Nephro Gene Score, Nephro Variant Score, and an inheritance-based heuristic into one prioritization framework.",
-        "Uses XGBoost to estimate gene-disease relevance and logistic regression to estimate variant pathogenicity from genomic features.",
-        "Evaluated with exome-wide candidate discovery, gene-level burden analysis, and external validation against newly proposed kidney disease genes."
+        "Built a machine learning pipeline with a Nephro Gene Score (N-GS) for gene-disease relevance and a Nephro Variant Score (N-VS) for pathogenicity.",
+        "Added a heuristic inheritance score to integrate family-pattern information.",
+        "Validated performance on independent test sets and in a cohort of 1,452 individuals with suspected inherited kidney disease."
       ],
-      "evidence_signal": "In independent test sets, the N-GS achieved AUC 0.94 and the N-VS achieved AUC 0.99, with enrichment of kidney-related pathways among top-ranked genes and high scores for 10 of 11 external candidate genes.",
-      "watch_item": "Performance was shown in retrospective and validation datasets, so prospective clinical impact and generalizability across diverse populations and sequencing pipelines still need confirmation.",
+      "evidence_signal": "In the abstract, the N-GS reached an AUC of 0.94 and the N-VS reached an AUC of 0.99, with enrichment of kidney-related biology and external support for 10 of 11 newly proposed genes.",
+      "watch_item": "Performance may not fully translate across diverse clinical settings, and prioritized candidates still require expert review and confirmatory genetic/clinical evidence.",
       "hashtags": [
-        "#Genomics",
+        "#Genetics",
         "#KidneyDisease",
         "#MachineLearning",
         "#VariantPrioritization",
@@ -505,7 +505,7 @@
       "paper_title": "Automated Variant Prioritization in Suspected Genetic Kidney Disease",
       "paper_date": "2026-10-13",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:33",
+      "generated_at": "2026-10-19T19:59:44",
       "generator": "openai"
     }
   },
@@ -536,27 +536,27 @@
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "Combining clinical, tumor genomics, and ctDNA data with machine learning modestly improved progression-free survival risk prediction for HR+/HER2- metastatic breast cancer.",
-      "clinical_relevance": "This multimodal approach may help better identify patients at higher or lower risk of progression, supporting more informed prognostic assessment in advanced breast cancer.",
+      "key_insight": "A multimodal machine learning model combining clinical, ctDNA, and tumor gene-expression data better predicted progression-free survival in metastatic HR+/HER2- breast cancer than single-data-source models.",
+      "clinical_relevance": "If validated, this approach could help clinicians identify patients at higher progression risk and support more personalized treatment planning in first-line advanced breast cancer.",
       "method": [
-        "Trained fusion-based machine learning models on baseline clinical, ctDNA, and gene expression data from MONALEESA-2, -3, and -7.",
-        "Compared early fusion, late fusion, and single-modality models for progression-free survival prediction.",
-        "Evaluated performance in a held-out test set using Kaplan-Meier, Cox, and Weibull analyses."
+        "Trained fusion models on baseline clinical, ctDNA, and archival tumor gene-expression data from MONALEESA-2, -3, and -7.",
+        "Used 1,355 patients for training and 382 for testing.",
+        "Compared early fusion, late fusion, and single-modality models using Kaplan-Meier, Cox, and Weibull analyses."
       ],
-      "evidence_signal": "In the test set (n=382), the late fusion model achieved C-index 0.727, slightly better than early fusion (0.718) and single-modality approaches, with clear low- vs high-risk separation.",
-      "watch_item": "The gains over simpler models were modest, so external validation and real-world testing are needed before clinical implementation.",
+      "evidence_signal": "In the test set, the late fusion model achieved the best prognostic performance with a C-index of 0.727, slightly outperforming early fusion and single-modality models.",
+      "watch_item": "The findings are promising but come from retrospective trial data, so external validation and clinical implementation testing are still needed before routine use.",
       "hashtags": [
+        "#AIinMedicine",
         "#BreastCancer",
         "#MachineLearning",
-        "#MultimodalAI",
         "#Genomics",
-        "#Prognosis"
+        "#PrecisionOncology"
       ],
       "paper_id": "2026-10-13-medrxiv-multimodal_machine_learning_based_clinical_and_genomic_prognostic_factors_for_progression",
       "paper_title": "Multimodal Machine Learning-Based Clinical and Genomic Prognostic Factors for Progression-Free Survival in Metastatic Breast Cancer Using Phase III MONALEESA Trials",
       "paper_date": "2026-10-13",
       "paper_category": "Biomedical AI",
-      "generated_at": "2026-10-19T14:11:35",
+      "generated_at": "2026-10-19T19:59:46",
       "generator": "openai"
     }
   },
@@ -587,17 +587,17 @@
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "In India’s eSanjeevani telemedicine service, both hub clinicians and spoke providers generally accepted AI clinical decision support, but acceptance varied when the AI output felt inaccurate, incomplete, or poorly calibrated to the case.",
-      "clinical_relevance": "AI decision support was viewed as useful for triage and review workflows, but its real-world value depends on reliable symptom capture, relevant questions, and actionable diagnostic suggestions.",
+      "key_insight": "Providers generally accepted the AI CDSS in eSanjeevani, but acceptance dropped when the system’s suggestions were absent, inaccurate, or poorly calibrated to the case.",
+      "clinical_relevance": "For telemedicine teams, AI decision support appears most useful when it is reliable, clearly presented, and aligned with clinicians’ workflow and judgment.",
       "method": [
         "Program feedback web survey of hub clinicians and spoke providers in eSanjeevani",
-        "Compared acceptance and difficulty patterns within each role using absolute differences with Newcombe 95% CIs",
-        "Included short open-ended comments analyzed for recurring themes"
+        "Analyzed role-specific experience with symptom summaries, AI differential diagnoses, and symptom capture tools",
+        "Compared acceptance patterns within roles using absolute differences with Newcombe 95% CIs; open comments were content-analyzed"
       ],
-      "evidence_signal": "Survey data from 190 hub and 662 spoke respondents across 13 and 15 Indian states showed high intention to continue use, with lower acceptance when suggestions were mostly inappropriate or absent.",
-      "watch_item": "The findings come from a short voluntary feedback survey, so results may reflect response bias and may not capture longer-term workflow effects or patient outcomes.",
+      "evidence_signal": "The survey included 190 hub and 662 spoke respondents from 13 and 15 states, and most rated the tools positively, though experience varied by whether AI suggestions matched clinician impressions.",
+      "watch_item": "Reported acceptance was high, but technical gaps, missing suggestions, and mixed question volume suggest implementation quality may strongly affect real-world uptake.",
       "hashtags": [
-        "#AIinHealthcare",
+        "#AIinMedicine",
         "#ClinicalDecisionSupport",
         "#Telemedicine",
         "#DigitalHealth",
@@ -607,7 +607,7 @@
       "paper_title": "Provider Experiences with AI Clinical Decision Support in eSanjeevani",
       "paper_date": "2026-10-13",
       "paper_category": "Diagnostics",
-      "generated_at": "2026-10-19T14:11:38",
+      "generated_at": "2026-10-19T19:59:48",
       "generator": "openai"
     }
   },
@@ -638,17 +638,17 @@
     ],
     "score": 55,
     "infographic": {
-      "key_insight": "A locally deployable small language model can perform case-level and trio-based genomic interpretation by combining ACMG/AMP evidence assignment with inheritance reasoning and deterministic checks.",
-      "clinical_relevance": "This could enable privacy-preserving variant interpretation on hospital infrastructure, supporting more complete genomic reporting without relying on cloud-based models.",
+      "key_insight": "A locally deployable small language model can support end-to-end genomic variant interpretation, including ACMG criterion assignment and trio-based inheritance reasoning, while deterministic code handles the arithmetic and reporting steps.",
+      "clinical_relevance": "This could enable privacy-preserving variant review on hospital hardware, making advanced genomic interpretation more accessible without sending patient data to the cloud.",
       "method": [
-        "Benchmarked 13 small language models on 150 genetics multiple-choice questions and selected Qwen3.5-9B.",
+        "Benchmarked 13 small language models on 150 multiple-choice genetics questions and selected Qwen3.5-9B.",
         "Built a four-stage IVA pipeline that assigns ACMG/AMP criteria, applies inheritance logic, and generates structured reports.",
-        "Used deterministic code for retrieval, phasing, scoring, citation checking, and formatting."
+        "Used deterministic code for retrieval, phasing, point summation, citation checking, and formatting."
       ],
-      "evidence_signal": "IVA was evaluated on synthetic scenarios, 16 solved trios, and 327 solved singleton visual impairment cases, recovering 100% of trio variants of interest and 93% of causative singleton variants.",
-      "watch_item": "Precision was modest and failures included omission, unverified mechanism claims, reasoning-to-label mismatches, and arithmetic errors, so human review remains essential.",
+      "evidence_signal": "IVA was evaluated on synthetic scenarios, 16 solved trios, and 327 solved singleton visual impairment cases; it reported all key trio variants, recovered 93% of causative singleton variants, and achieved 81% benchmark accuracy for the chosen small model.",
+      "watch_item": "Performance remained imperfect, with precision limitations and recurrent errors such as omission, unverified mechanism, label-reasoning mismatch, and arithmetic mistakes.",
       "hashtags": [
-        "#Genomics",
+        "#GenomicAI",
         "#VariantInterpretation",
         "#ClinicalNLP",
         "#SmallLanguageModel",
@@ -658,7 +658,7 @@
       "paper_title": "IVA, a locally deployable Intelligent Variant Analyser based on a small language model for complete case-level and trio-based genomic interpretation.",
       "paper_date": "2026-10-13",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-10-19T14:11:40",
+      "generated_at": "2026-10-19T19:59:51",
       "generator": "openai"
     }
   },
@@ -689,27 +689,27 @@
     ],
     "score": 49,
     "infographic": {
-      "key_insight": "In this Russian cancer cohort, receiving at least one COVID-19 vaccine dose before the landmark date was associated with markedly better overall survival.",
-      "clinical_relevance": "The finding supports vaccination as an important prevention strategy for cancer patients, while highlighting the value of CT-based risk markers for prognosis.",
+      "key_insight": "In this registry-based cohort of cancer patients in Northwest Russia, receiving at least one COVID-19 vaccine dose before the landmark date was associated with substantially better overall survival.",
+      "clinical_relevance": "The study suggests COVID-19 vaccination may be an important survival-related protective factor for cancer patients, while AI-read chest CT findings also helped identify higher-risk patients.",
       "method": [
-        "Population-based retrospective cohort of 1,144 cancer patients from regional registries in Northwest Russia",
-        "Vaccination status was linked from records and survival was analyzed with Kaplan-Meier and multivariable Cox models",
-        "AI-derived chest CT biomarkers and a landmark design were used to reduce immortal time bias"
+        "Population-based retrospective cohort of 1,144 cancer patients linked across cancer registry, vaccination records, and AI-analyzed chest CT scans.",
+        "Used a landmark design to reduce immortal time bias, with primary analysis restricted to patients alive on March 1, 2021 (N=1,136).",
+        "Compared vaccinated vs unvaccinated survival with Kaplan-Meier curves and multivariable Cox regression adjusted for clinical and imaging factors."
       ],
-      "evidence_signal": "Only 6.6% of patients were vaccinated; in the primary landmark analysis, vaccination was associated with 3-year OS of 80.3% vs 45.7% and an adjusted hazard ratio of 0.40.",
-      "watch_item": "Observational registry data can show association but not prove causation, and the very low vaccination rate plus baseline differences between groups may limit generalizability.",
+      "evidence_signal": "Vaccination was uncommon (6.6%, 76/1,144) and was associated with higher 3-year overall survival (80.3% vs 45.7%) and lower adjusted mortality hazard (HR 0.40, 95% CI 0.25-0.64).",
+      "watch_item": "Because this is an observational study, vaccinated patients may have differed from unvaccinated patients in ways that also affect survival, so causality cannot be confirmed.",
       "hashtags": [
-        "#COVID19",
-        "#Cancer",
-        "#Vaccination",
+        "#CancerCare",
+        "#COVID19Vaccine",
         "#SurvivalAnalysis",
-        "#AIinMedicine"
+        "#MedicalAI",
+        "#CohortStudy"
       ],
       "paper_id": "2026-10-13-medrxiv-covid_19_vaccination_and_survival_of_cancer_patients_in_northwestern_russia_a_historical_r",
       "paper_title": "COVID-19 vaccination and survival of cancer patients in Northwestern Russia: a historical registry-based cohort study",
       "paper_date": "2026-10-13",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:43",
+      "generated_at": "2026-10-19T19:59:54",
       "generator": "openai"
     }
   },
@@ -740,27 +740,27 @@
     ],
     "score": 49,
     "infographic": {
-      "key_insight": "An XGBoost model using clinical and ECG features predicted pacing-induced cardiomyopathy (PICM) in AV block patients with mildly reduced or preserved ejection fraction with good discrimination.",
-      "clinical_relevance": "This could help identify higher-risk patients before or after pacemaker implantation, potentially informing pacing strategy and follow-up intensity.",
+      "key_insight": "An XGBoost model using clinical and ECG-related features predicted pacing-induced cardiomyopathy in AV block patients with moderately good discrimination.",
+      "clinical_relevance": "This could help identify higher-risk patients before or after pacemaker implantation and support more individualized pacing strategy selection.",
       "method": [
-        "Multicenter prospective RISK-PICM registry analysis of 125 AV block patients with pacemakers",
-        "Compared four machine learning models: logistic regression, SVM, random forest, and XGBoost",
-        "Used stratified 4-fold cross-validation with hyperparameter tuning to predict PICM"
+        "Multicenter prospective RISK-PICM registry",
+        "125 pacemaker recipients with AV block and HFmrEF/HFpEF",
+        "Compared logistic regression, SVM, random forest, and XGBoost with stratified 4-fold cross-validation"
       ],
-      "evidence_signal": "PICM occurred in 41 of 125 patients (32.8%) over a median 4.8 years, and XGBoost had the best performance with AUROC 0.831, sensitivity 0.805, and specificity 0.845.",
-      "watch_item": "The sample was modest and the model needs external validation and workflow testing before routine clinical use.",
+      "evidence_signal": "In 125 patients followed a median of 4.8 years, PICM occurred in 32.8% and XGBoost achieved AUROC 0.831 with sensitivity 0.805 and specificity 0.845.",
+      "watch_item": "The model was developed in a relatively small cohort, so external validation and calibration in independent populations are still needed before routine use.",
       "hashtags": [
         "#MachineLearning",
         "#Cardiology",
         "#Pacemaker",
         "#HeartFailure",
-        "#RiskPrediction"
+        "#PredictiveModel"
       ],
       "paper_id": "2026-10-13-medrxiv-machine_learning_based_prediction_of_pacing_induced_cardiomyopathy_in_patients_with_atriov",
       "paper_title": "Machine Learning-based Prediction of Pacing-Induced Cardiomyopathy in Patients with Atrioventricular Block Underlying Heart Failure with Mildly Reduced or Preserved Ejection Fraction",
       "paper_date": "2026-10-13",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:45",
+      "generated_at": "2026-10-19T19:59:56",
       "generator": "openai"
     }
   },
@@ -791,18 +791,18 @@
     ],
     "score": 49,
     "infographic": {
-      "key_insight": "Asymptomatic young adults with C9orf72 repeat expansions showed smaller pulvinar, mediodorsal, and lateral thalamic nuclei, and these regions aligned with transcriptomic signatures suggestive of early developmental vulnerability.",
-      "clinical_relevance": "The findings support the idea that C9orf72-related FTLD may involve brain changes that begin before symptoms, which could help guide earlier biomarker and disease-mechanism research.",
+      "key_insight": "Young adult C9orf72 expansion carriers already show smaller volumes in specific thalamic nuclei, and those nuclei map to transcriptomic programs linked to both prenatal thalamic development and FTLD-related biology.",
+      "clinical_relevance": "This suggests thalamic vulnerability in C9orf72-FTLD may begin before symptoms, which could help refine early biomarker research and target disease mechanisms earlier in life.",
       "method": [
-        "Compared thalamic nucleus volumes on MRI in 72 C9orf72 expansion carriers vs 48 non-carriers aged 18–30.",
-        "Linked nucleus-level volume patterns to normative gene expression maps from the Allen Human Brain Atlas.",
-        "Checked developmental timing using BrainSpan transcriptomic data from prenatal to middle-age periods."
+        "Compared MRI thalamic nuclei volumes in asymptomatic C9orf72 expansion carriers (n=72) vs non-carriers (n=48), ages 18–30.",
+        "Linked nucleus-level volume differences to normative thalamic transcriptomics from the Allen Human Brain Atlas.",
+        "Used BrainSpan data to examine when key genes are expressed across prenatal and postnatal development."
       ],
-      "evidence_signal": "The abstract reports a multicenter MRI study with spatial transcriptomic association analyses across young adults and normative developmental datasets, identifying nucleus-specific volume differences and gene-expression enrichment patterns.",
-      "watch_item": "Normative transcriptomic associations are indirect and do not prove causality, so the results should be interpreted as hypothesis-generating rather than diagnostic.",
+      "evidence_signal": "The study reports smaller pulvinar, mediodorsal, and lateral nucleus volumes in carriers, with spatial transcriptomic patterns implicating neurodevelopmental and lysosomal/autophagic/small GTPase pathways.",
+      "watch_item": "Findings are associative and based on normative transcriptomic maps rather than direct tissue-level validation in the same individuals, so causal interpretation should be cautious.",
       "hashtags": [
         "#C9orf72",
-        "#FTLD",
+        "#FrontotemporalDementia",
         "#Thalamus",
         "#Neuroimaging",
         "#Transcriptomics"
@@ -811,7 +811,7 @@
       "paper_title": "Normative transcriptomic clues to thalamic developmental vulnerability in C9orf72-FTLD",
       "paper_date": "2026-10-13",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:48",
+      "generated_at": "2026-10-19T19:59:58",
       "generator": "openai"
     }
   },
@@ -842,27 +842,27 @@
     ],
     "score": 46,
     "infographic": {
-      "key_insight": "A stage-aware machine-learning model can predict IVF implantation more accurately as later treatment information, especially embryological data, becomes available.",
-      "clinical_relevance": "This could support more interpretable IVF outcome prediction, while highlighting that embryo-related features are the strongest drivers of model performance.",
+      "key_insight": "An explainable, stage-aware machine-learning model predicted IVF implantation better as more treatment-stage information became available, with embryological variables giving the biggest boost.",
+      "clinical_relevance": "This could help support more informed IVF counseling and decision-making by providing interpretable risk estimates without relying on leakage-prone data.",
       "method": [
-        "Excluded β-HCG to reduce target leakage.",
-        "Trained and compared several models; tuned with stratified cross-validation.",
-        "Evaluated a fixed Random Forest model across three IVF stages and interpreted predictions with permutation importance and SHAP."
+        "Excluded beta-HCG to reduce target leakage.",
+        "Trained and tuned Logistic Regression, Random Forest, Extra Trees, XGBoost, and Hist Gradient Boosting with stratified cross-validation.",
+        "Tested a fixed Random Forest model across three IVF stages and used permutation and SHAP for explanation."
       ],
-      "evidence_signal": "The framework was tested on a public IVF dataset with training, validation, and independent test splits, and the final Random Forest performed well on the independent test set.",
-      "watch_item": "Results need external validation on independent clinical datasets before any clinical use, since performance may not generalize across sites or patient populations.",
+      "evidence_signal": "The model was trained on a public IVF dataset, split into training, validation, and independent test sets, and showed good performance on the independent test set.",
+      "watch_item": "The framework still needs validation on independent clinical datasets before it can be considered ready for real-world use.",
       "hashtags": [
         "#IVF",
         "#MachineLearning",
         "#ExplainableAI",
-        "#MedicalAI",
-        "#ReproductiveHealth"
+        "#PredictionModel",
+        "#MedicalAI"
       ],
       "paper_id": "2026-10-14-medrxiv-stage_aware_and_explainable_machine_learning_for_predicting_ivf_implantation",
       "paper_title": "Stage-Aware and Explainable Machine Learning for Predicting IVF Implantation",
       "paper_date": "2026-10-14",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:50",
+      "generated_at": "2026-10-19T20:00:00",
       "generator": "openai"
     }
   },
@@ -893,19 +893,19 @@
     ],
     "score": 45,
     "infographic": {
-      "key_insight": "The study created MedMatch, a standardized medication order format designed to make medication orders easier for NLP systems and LLMs to evaluate consistently.",
-      "clinical_relevance": "A common medication-order structure could improve automated quality checks and benchmarking for medication-related AI tools, potentially reducing reliance on manual clinician review.",
+      "key_insight": "The study introduces MedMatch, a standardized medication order format designed to make medication-order evaluation easier and more consistent for LLMs and NLP systems.",
+      "clinical_relevance": "A shared order structure could improve automated assessment of medication documentation quality and help reduce the need for time-intensive clinician review.",
       "method": [
         "Surveyed clinicians on real medication orders and order appropriateness",
-        "Built standardized MedMatch order structures and benchmark datasets",
-        "Tested GPT-5-Chat on order standardization and missing-component detection"
+        "Created standardized order sentences for oral and IV routes, plus benchmark datasets and an abbreviation guide",
+        "Tested GPT-5-chat on formatting, route identification, and missing-component detection"
       ],
-      "evidence_signal": "GPT-5-Chat achieved 77.6% overall MedMatch standardization accuracy, with higher performance in some categories such as intravenous push (96.7%), and missing-component detection improved from 66.7% to 76.8% with MedMatch formatting.",
-      "watch_item": "Results are benchmark-specific, so real-world performance may vary and the format still needs broader validation across medication types and clinical settings.",
+      "evidence_signal": "GPT-5-Chat achieved 77.6% overall accuracy, with highest performance in IV push (96.7%) and improved missing-component detection using MedMatch (76.8% vs. 66.7%).",
+      "watch_item": "The format is still early-stage and may not generalize across all medication types, workflows, or institutions without further validation.",
       "hashtags": [
         "#ClinicalNLP",
         "#MedAI",
-        "#LLMbenchmarking",
+        "#LLMEvaluation",
         "#MedicationSafety",
         "#HealthInformatics"
       ],
@@ -913,7 +913,7 @@
       "paper_title": "MedMatch: a standardized medication order format for data science and natural language processing applications",
       "paper_date": "2026-10-13",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-10-19T14:11:52",
+      "generated_at": "2026-10-19T20:00:02",
       "generator": "openai"
     }
   },
@@ -944,27 +944,27 @@
     ],
     "score": 41,
     "infographic": {
-      "key_insight": "US clinical trials that require English proficiency tend to enroll fewer Asian and Hispanic/Latinx participants, while explicit language accommodation is uncommon.",
-      "clinical_relevance": "Language eligibility criteria are a modifiable trial-design feature that may influence who gets enrolled and therefore how representative trial populations are.",
+      "key_insight": "US clinical trials that required English proficiency enrolled fewer Asian and Hispanic/Latinx participants, while language accommodations were uncommon.",
+      "clinical_relevance": "Making eligibility language requirements more flexible may be a practical lever to improve trial diversity and reduce avoidable participation barriers.",
       "method": [
-        "Cross-sectional analysis of 44,487 US interventional trials on ClinicalTrials.gov with posted results.",
-        "Free-text eligibility criteria were mined with validated regular expressions to detect English-language requirements and language accommodation.",
-        "Associations with enrolled racial and ethnic composition were estimated using adjusted generalized linear models."
+        "Cross-sectional analysis of 44,487 interventional US trials on ClinicalTrials.gov with posted results.",
+        "Eligibility criteria were mined from free text using validated regular expressions for English-language requirements and language accommodations.",
+        "Enrolled racial/ethnic composition was modeled with adjusted generalized linear models accounting for trial and sponsor factors."
       ],
-      "evidence_signal": "Among trials with exclusively US sites, 12.9% included an English-language requirement and 1.8% documented language accommodation; the requirement was associated with lower enrolled proportions of Asian and Hispanic/Latinx participants.",
-      "watch_item": "Because many trials lacked complete race/ethnicity reporting and the study is observational, the findings show association rather than proving that language criteria caused enrollment differences.",
+      "evidence_signal": "The English-language requirement classifier performed well against physician review (88.2% sensitivity, 99.2% specificity), and the requirement was linked to lower enrolled proportions of Asian and Hispanic/Latinx participants.",
+      "watch_item": "Because this is observational registry research, the association may reflect unmeasured trial or site factors, and many trials still lacked complete race/ethnicity reporting.",
       "hashtags": [
         "#ClinicalTrials",
         "#HealthEquity",
-        "#LanguageAccess",
+        "#TrialDiversity",
         "#ClinicalNLP",
-        "#ResearchMethods"
+        "#LanguageAccess"
       ],
       "paper_id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
       "paper_title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
       "paper_date": "2026-10-13",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-10-19T14:11:55",
+      "generated_at": "2026-10-19T20:00:04",
       "generator": "openai"
     }
   },
@@ -995,27 +995,27 @@
     ],
     "score": 41,
     "infographic": {
-      "key_insight": "A personalized “normative twin” cardiac model can detect hidden patterns of heart-shape deviation that reveal clinically relevant risk beyond standard measures like ejection fraction and strain.",
-      "clinical_relevance": "This approach may improve risk stratification, especially for atrial fibrillation in people with preserved ejection fraction, by identifying patients whose cardiac shape looks abnormal relative to their expected healthy profile.",
+      "key_insight": "A personalised “digital twin” baseline can reveal hidden cardiac shape-and-function patterns that conventional measures like ejection fraction may miss.",
+      "clinical_relevance": "These deviation phenotypes improved prediction of future cardiovascular events, especially atrial fibrillation in people with preserved ejection fraction, suggesting a path toward more precise risk stratification.",
       "method": [
-        "Compared each person’s cardiac shape to an age-, sex-, and body-size-matched digital twin of expected healthy function.",
-        "Learned deviation phenotypes from two independent shape representations: a 128D statistical shape model and a 64D deep generative latent space.",
-        "Tested whether deviation scores improved prediction of future cardiovascular outcomes beyond conventional biomarkers and against noise controls."
+        "Built normative cardiac twins using age, sex, and body habitus to define expected healthy heart shape/function.",
+        "Compared individuals against two independent shape representations: HeartSSM (statistical shape model) and MeshHeart cVAE (deep latent mesh model).",
+        "Derived deviation scores and tested whether they added prognostic value beyond standard biomarkers, with placebo-noise controls and external validation."
       ],
-      "evidence_signal": "Across UK Biobank cohorts, deviation scores improved prediction of incident atrial fibrillation in preserved-EF participants (largest gain: ΔC up to +0.068; likelihood-ratio P = 3.3×10^-8), with a separate smaller signal for stroke in an independent representation, and the model generalized to an external healthy cohort.",
-      "watch_item": "The findings are promising but need broader external validation and careful integration into clinical workflows because performance differed by outcome and representation.",
+      "evidence_signal": "In UK Biobank cohorts, deviation scores improved risk prediction beyond standard biomarkers, with the strongest signal for incident atrial fibrillation in preserved-EF participants (ΔC up to +0.068; likelihood-ratio P = 3.3×10^-8) and a smaller independent signal for stroke in the alternate representation.",
+      "watch_item": "The approach relies on specific imaging pipelines and shape representations, so broader clinical deployment will need robust standardisation and validation across scanners and populations.",
       "hashtags": [
         "#CardiacImaging",
         "#DigitalTwin",
+        "#RiskPrediction",
         "#MachineLearning",
-        "#RiskStratification",
-        "#AtrialFibrillation"
+        "#PrecisionMedicine"
       ],
       "paper_id": "2026-10-13-medrxiv-personalised_normative_cardiac_phenotyping_reveals_clinically_relevant_heterogeneity_in_ca",
       "paper_title": "Personalised normative cardiac phenotyping reveals clinically relevant heterogeneity in cardiac shape and outcome risk",
       "paper_date": "2026-10-13",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-10-19T14:11:57",
+      "generated_at": "2026-10-19T20:00:07",
       "generator": "openai"
     }
   }
