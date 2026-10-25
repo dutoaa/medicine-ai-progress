@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-10-24
+Generated: 2026-10-25
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Overview of CHIP 2026 Shared Task 1: Patient-Specific Phenotype Concept Recognition in Full-Text Biomedical Literature
@@ -83,15 +83,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.30631v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-22-arxiv-large_language_models_show_systematic_failures_in_incorporating_evolving_medical_knowledge_infographic.json
 
-## 11. An interpretable deep learning method for early hepatocellular carcinoma diagnosis on multiphase CT
-
-- Date: 2026-10-21
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2610.29616v1
-- PDF: https://arxiv.org/pdf/2610.29616v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-21-arxiv-an_interpretable_deep_learning_method_for_early_hepatocellular_carcinoma_diagnosis_on_mult_infographic.json
-
-## 12. RetiJev: Fast and Source-Grounded Ophthalmic Decision Models
+## 11. RetiJev: Fast and Source-Grounded Ophthalmic Decision Models
 
 - Date: 2026-10-22
 - Category: Clinical NLP
@@ -99,7 +91,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.30947v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-22-arxiv-retijev_fast_and_source_grounded_ophthalmic_decision_models_infographic.json
 
-## 13. ViBMR: A Large-Scale Multi-Sequence Brain MRI Dataset and Comprehensive Evaluation for Vietnamese Radiology Report Generation
+## 12. ViBMR: A Large-Scale Multi-Sequence Brain MRI Dataset and Comprehensive Evaluation for Vietnamese Radiology Report Generation
 
 - Date: 2026-10-21
 - Category: Medical Imaging
@@ -107,7 +99,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.29905v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-21-arxiv-vibmr_a_large_scale_multi_sequence_brain_mri_dataset_and_comprehensive_evaluation_for_viet_infographic.json
 
-## 14. Fairness or Fallacy? Mapping the Landscape of AI Bias in Disease Detection
+## 13. Fairness or Fallacy? Mapping the Landscape of AI Bias in Disease Detection
 
 - Date: 2026-10-19
 - Category: Diagnostics
@@ -115,7 +107,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.26215v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-19-arxiv-fairness_or_fallacy_mapping_the_landscape_of_ai_bias_in_disease_detection_infographic.json
 
-## 15. From Clinical Risk Prediction to Operational Decisions: An Uncertainty-Aware Framework for ICU Staffing
+## 14. From Clinical Risk Prediction to Operational Decisions: An Uncertainty-Aware Framework for ICU Staffing
 
 - Date: 2026-10-18
 - Category: Health Systems
@@ -123,7 +115,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.25530v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-18-arxiv-from_clinical_risk_prediction_to_operational_decisions_an_uncertainty_aware_framework_for_infographic.json
 
-## 16. Expandable Modality Experts for Medical Vision-Language Learning
+## 15. Expandable Modality Experts for Medical Vision-Language Learning
 
 - Date: 2026-10-21
 - Category: Medical Imaging
@@ -131,7 +123,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.29881v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-21-arxiv-expandable_modality_experts_for_medical_vision_language_learning_infographic.json
 
-## 17. Are Joint-Embedding Predictive Objectives Effective for Longitudinal EHRs?
+## 16. Are Joint-Embedding Predictive Objectives Effective for Longitudinal EHRs?
 
 - Date: 2026-10-21
 - Category: Clinical NLP
@@ -139,7 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.29528v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-21-arxiv-are_joint_embedding_predictive_objectives_effective_for_longitudinal_ehrs_infographic.json
 
-## 18. Temporal Evidence Allocation For Longitudinal Clinical Retrieval: A Position And Technical Report
+## 17. Temporal Evidence Allocation For Longitudinal Clinical Retrieval: A Position And Technical Report
 
 - Date: 2026-10-20
 - Category: Clinical NLP
@@ -147,13 +139,21 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2610.27682v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-20-arxiv-temporal_evidence_allocation_for_longitudinal_clinical_retrieval_a_position_and_technical_infographic.json
 
-## 19. Deep Learning for Random Objects in Metric Spaces: Beyond Manifold Assumptions
+## 18. Deep Learning for Random Objects in Metric Spaces: Beyond Manifold Assumptions
 
 - Date: 2026-10-22
 - Category: Medical Imaging
 - Source: arXiv - https://arxiv.org/abs/2610.31328v1
 - PDF: https://arxiv.org/pdf/2610.31328v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-22-arxiv-deep_learning_for_random_objects_in_metric_spaces_beyond_manifold_assumptions_infographic.json
+
+## 19. An interpretable deep learning method for early hepatocellular carcinoma diagnosis on multiphase CT
+
+- Date: 2026-10-21
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2610.29616v1
+- PDF: https://arxiv.org/pdf/2610.29616v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-21-arxiv-an_interpretable_deep_learning_method_for_early_hepatocellular_carcinoma_diagnosis_on_mult_infographic.json
 
 ## 20. Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting
 
