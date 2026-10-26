@@ -1,19 +1,19 @@
 {
-  "key_insight": "Retinal OCT models can identify biomarker presence yet struggle to localize findings; OCT-specific fine-tuning improved grounding F1 from 23.7% to 33.9%.",
-  "clinical_relevance": "Reliable localization could help clinicians assess whether AI-reported retinal findings are supported by the image.",
+  "key_insight": "Retinal OCT finding recognition does not ensure accurate localization: RetGrounder improved grounding F1 from 23.7% to 33.9%, but performance remained limited.",
+  "clinical_relevance": "Localizing reported retinal abnormalities is important for assessing whether AI image interpretations are grounded in visible evidence.",
   "method": [
-    "Introduced RetinaGroundBench: 815 OCT B-scans with 4,537 ophthalmologist-annotated boxes spanning 13 biomarkers and 8 diseases.",
-    "Proposed AggIoU to evaluate combined coverage when models fragment lesions across multiple predicted boxes.",
-    "Evaluated 27 open-source MLLMs and fine-tuned the 8B-parameter RetGrounder using OCT grounding and textual information."
+    "Created RetinaGroundBench with ophthalmologist-annotated retinal OCT scans.",
+    "Introduced AggIoU to evaluate combined coverage from overlapping predicted boxes.",
+    "Evaluated 27 open-source MLLMs and fine-tuned the 8B RetGrounder using OCT grounding and textual information."
   ],
-  "evidence_signal": "The best general-purpose model achieved 23.7% macro grounding F1, while RetGrounder reached 33.9%—a 43% relative improvement; biomarker-presence balanced accuracy reached up to 73%.",
-  "watch_item": "Grounding performance remained limited, and these benchmark results do not establish clinical safety or readiness for deployment.",
+  "evidence_signal": "The benchmark contains 815 B-scans and 4,537 bounding boxes spanning 13 biomarkers across 8 diseases; RetGrounder achieved a 43% relative grounding F1 improvement over the best general-purpose model.",
+  "watch_item": "Grounding performance remains limited, and these benchmark results do not establish safety or effectiveness in clinical practice.",
   "hashtags": [
     "#RetinalOCT",
-    "#MedicalAI",
     "#VisualGrounding",
     "#MultimodalAI",
-    "#Ophthalmology"
+    "#Ophthalmology",
+    "#MedicalAIEvaluation"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "A Visual Grounding Benchmark for Retinal OCT with Multimodal Large Language Models",
   "paper_date": "2026-10-22",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-10-25T12:12:28",
+  "generated_at": "2026-10-26T13:43:28",
   "generator": "openai"
 }
