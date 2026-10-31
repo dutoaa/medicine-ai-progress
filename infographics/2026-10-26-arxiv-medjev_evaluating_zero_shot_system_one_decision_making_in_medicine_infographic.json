@@ -1,17 +1,17 @@
 {
-  "key_insight": "MedJev delivers competitive zero-shot medical predictions locally on a laptop, but patient-level confidence estimates require recalibration.",
-  "clinical_relevance": "Low computational demands could support local clinical decision-support research, though benchmark performance does not establish clinical safety or benefit.",
+  "key_insight": "MedJev delivers competitive zero-shot medical predictions in a single forward pass on a laptop, but patient-level confidence estimates require local recalibration.",
+  "clinical_relevance": "Low-cost local inference could support future clinical decision tools, although benchmark performance does not establish safety or effectiveness in practice.",
   "method": [
-    "Answers structured questions in one forward pass without generating text.",
-    "Evaluated across 10 medical benchmarks against zero-shot LLMs, published GPT results, and supervised models.",
-    "Uses two-parameter recalibration with 50–200 labeled local examples."
+    "Evaluated an open System One model that answers structured questions without generating text.",
+    "Compared zero-shot performance with LLM baselines, published GPT results, and supervised models.",
+    "Tested two-parameter local recalibration using 50–200 labeled examples."
   ],
-  "evidence_signal": "MedJev achieved 72.5% MedQA accuracy and 0.926 in-hospital mortality AUROC on MIMIC-based evaluation; reported recalibration reduced patient-level expected calibration error from 0.286 to 0.007.",
-  "watch_item": "Strong mortality discrimination did not generalize to all tasks: ED admission AUROC trailed a supervised comparator (0.745 vs. 0.809), and uncalibrated patient-level confidence was unreliable.",
+  "evidence_signal": "Across 10 benchmarks, including MIMIC-IV and MIMIC-IV-ED tasks, MedJev achieved 72.5% MedQA accuracy and 0.926 in-hospital mortality AUROC versus XGBoost’s 0.902.",
+  "watch_item": "Patient-level predictions showed substantial miscalibration (mortality ECE 0.286, reduced to 0.007 after recalibration), and ED admission discrimination lagged supervised models.",
   "hashtags": [
     "#MedicalAI",
     "#ZeroShotLearning",
-    "#ClinicalDecisionSupport",
+    "#ClinicalPrediction",
     "#ModelCalibration",
     "#OpenModels"
   ],
@@ -21,6 +21,6 @@
   "paper_title": "MedJev: Evaluating Zero-Shot System-One Decision Making in Medicine",
   "paper_date": "2026-10-26",
   "paper_category": "Diagnostics",
-  "generated_at": "2026-10-30T13:43:45",
+  "generated_at": "2026-10-31T13:12:20",
   "generator": "openai"
 }
