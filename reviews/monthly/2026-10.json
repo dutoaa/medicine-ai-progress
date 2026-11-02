@@ -1,0 +1,56 @@
+{
+  "repo_title": "AI Medicine",
+  "period": "month",
+  "label": "2026-10",
+  "author": "William Sun with help from OpenAI",
+  "paper_count": 293,
+  "analysis": {
+    "author": "William Sun with help from OpenAI",
+    "period": "2026-10",
+    "executive_summary": "The supplied October 2026 papers suggest a shift in AI medicine from isolated prediction and fluent answer generation toward evidence-grounded, longitudinal, and operationally useful systems. Knowledge graphs, explicit citations, guideline-derived decision graphs, and deterministic calculation tools aim to make clinical outputs traceable. New benchmarks examine patient-specific reasoning across care phases, visual grounding, and agent workflow execution rather than relying solely on examination accuracy. EHR foundation models increasingly address cross-system transfer, screening-relevant operating points, and training design, while imaging research emphasizes multimodal integration, structured reporting, and resource efficiency. Privacy, demographic bias, uncertainty, and population representation also receive sustained attention. These are promising research directions rather than evidence of widespread clinical readiness: many supplied abstracts are truncated, limiting assessment of results, validation protocols, and clinical benefit.",
+    "major_themes": [
+      "Evidence-grounded clinical reasoning: MM-KG, GLoC-EHR, BAR, and pathology knowledge frameworks connect model outputs to patient observations and external biomedical knowledge.",
+      "Evaluation beyond final-answer accuracy: NPC-RubricBench, MedHarnessBench, and RetinaGroundBench assess longitudinal responsibilities, workflow execution, and localization of supporting image evidence.",
+      "Longitudinal and transferable EHR modeling: TRACER, Asymmetric SupCon, GraphBEAT, and sequence-composition research address temporal prediction, heterogeneous records, and cross-system generalization.",
+      "Hybrid decision architectures: System One models, guideline-derived decision graphs, and executable medical calculators separate probabilistic interpretation from constrained or deterministic operations.",
+      "Interactive clinical agents: ClinVerse and treatment-planning research move toward active information gathering and sequential decisions, while operational frameworks address staffing and real-world study automation.",
+      "More interpretable multimodal imaging: Criteria-based diagnosis, longitudinal report generation, and image-text fusion seek to connect predictions with clinically meaningful findings.",
+      "Safety and equitable deployment: Counterfactual triage audits, patient-level privacy analysis, multilingual datasets, and locally collected imaging data broaden the assessment of deployment risks.",
+      "Resource-aware medical AI: Compact segmentation models, local decision models, and budget-constrained knowledge retrieval explore alternatives to uniformly scaling model size and inference cost."
+    ],
+    "notable_papers": [
+      "TRACER, a time-to-event EHR foundation model for disease detection across health systems — Pretrained on records from more than 4.5 million patients across four health systems and evaluated on 16 incident diseases in more than 2 million patients from two held-out systems. Its emphasis on low false-positive rates makes the evaluation more relevant to screening than AUROC alone; prospective benefit and downstream testing burden remain unresolved.",
+      "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care — Introduces NPC-RubricBench with 405 patients, 941 patient-phase units, and 17,688 patient-specific criteria. Evaluation of 30 LLMs reports that strong diagnostic performance does not carry over to downstream care, challenging the use of isolated diagnosis benchmarks as proxies for broader clinical competence.",
+      "MedHarnessBench: A Unified Benchmark for Healthcare Agent Evaluation — Separates seven healthcare-specific process dimensions, including patient-evidence alignment, auditability, closed-loop verification, and conduct boundaries. It matters because agent reliability depends on the interaction between the model and its runtime workflow, not just the terminal answer.",
+      "A Visual Grounding Benchmark for Retinal OCT with Multimodal Large Language Models — Introduces RetinaGroundBench with 815 OCT B-scans and 4,537 ophthalmologist-annotated bounding boxes covering 13 biomarkers. Its AggIoU metric addresses fragmented lesion predictions and supports evaluation of whether reported findings are spatially grounded; comparative results are unavailable in the supplied excerpt.",
+      "A general-purpose System One decision model for clinical records — Presents CS1-4B, trained on 12.4 million question-answer pairs from 3.6 million patients, for typed judgments with associated probabilities. It offers an alternative to free-text generation for high-volume record analysis, although the supplied abstract does not establish comparative accuracy or operational savings.",
+      "Aligning Multimodal Patient Evidence with Biomedical Knowledge Graphs for Clinical LLMs — MM-KG explicitly separates patient observations from biomedical concepts and connects them through typed alignment edges. This design makes evidence relationships inspectable and potentially supports attribution experiments, but the truncated abstract does not provide evaluation outcomes.",
+      "Bridging the EHR Divide: Asymmetric Contrastive Learning for Cross-National Medical Representation Transfer — Uses pretraining on 3.98 million Taiwanese patient records before transfer to MIMIC-IV and EHRSHOT. Its asymmetric objective and semantic mapping pipeline directly address differences in clinical coding and patient trajectories across countries; transfer gains cannot be assessed from the supplied excerpt.",
+      "Hybrid Cross-Modal Attention Network for Early Breast Cancer Detection in Low-Resource Clinical Settings — Combines mammography with structured clinical data from 1,024 patients across four Ethiopian referral hospitals. The reported 97.8% accuracy and 97.2% sensitivity are encouraging, while local data collection addresses an important representation gap; the excerpt does not establish external generalization or prospective utility.",
+      "Automated screening of privacy risks in medical AI — Examines patient-level membership-inference vulnerability across 7,789 models and six clinical datasets. The reported persistence of high-risk patient rankings across training configurations indicates why cohort-average privacy measures can miss concentrated individual exposure.",
+      "Development and validation of early warning scores predicting 24-hour mortality addressing intercurrent medical interventions: a multi-centre retrospective cohort study of 2,08 million hospital encounters — Compares NEWS, simpler scoring rules, and machine learning across approximately 2.08 million encounters at 15 Danish hospitals. Its focus on intervention bias, clinical net benefit, and subgroup heterogeneity is methodologically important, though comparative results are absent from the supplied excerpt."
+    ],
+    "field_progress": [
+      "Clinical evaluation is becoming more patient- and process-specific. Longitudinal rubrics, visual grounding annotations, and agent execution traces provide ways to identify failures that aggregate answer accuracy can conceal.",
+      "Traceability is increasingly treated as an architectural requirement. Explicit evidence edges, cited EHR events, machine-checkable claims, and executable guideline paths offer more inspectable outputs, although traceability alone does not establish correctness.",
+      "Foundation-model research is engaging more directly with deployment conditions. External health-system evaluation, cross-national transfer, and screening-relevant specificity targets better reflect practical use than single-dataset discrimination alone.",
+      "Clinical AI architectures are becoming more modular. Fast decision models, language-model orchestration, constrained extraction, and deterministic tools allocate different tasks to components suited to their requirements.",
+      "Safety assessment is broadening beyond hallucination. Patient-level privacy vulnerability, counterfactual demographic sensitivity, authorization boundaries, and uncertainty-aware operational decisions are becoming explicit research targets.",
+      "The evidence base remains uneven. Large retrospective studies and detailed benchmarks coexist with conceptual perspectives and preliminary frameworks; the supplied material does not establish prospective clinical effectiveness for most approaches."
+    ],
+    "open_questions": [
+      "Do explicit citations, knowledge-graph links, and machine-checkable claims reduce clinically consequential errors, or primarily make existing errors easier to inspect?",
+      "How well do longitudinal reasoning rubrics, visual grounding scores, and agent workflow metrics predict clinician performance, patient outcomes, and safe real-world use?",
+      "Can cross-system EHR models maintain calibration and useful screening performance across changes in coding, prevalence, clinical practice, and patient demographics?",
+      "What governance and verification mechanisms are needed for clinical agents that acquire information, invoke tools, share experience, or update external memories after deployment?",
+      "How should health systems jointly evaluate privacy, fairness, uncertainty, workload, and cost when a model improves average performance but creates concentrated risks for particular patients?",
+      "Which modular combinations of compact decision models, generative models, and deterministic tools deliver the best prospective clinical value under resource constraints?"
+    ],
+    "outlook": "The next meaningful step is to test whether more grounded and modular systems produce safer decisions and better workflows, rather than simply more convincing explanations. Priority studies should combine external and prospective validation with calibrated uncertainty, patient-level safety audits, clinician review, and endpoints such as unnecessary procedures, missed deterioration, workload, and resource use. Benchmarks should preserve decision-time evidence boundaries and distinguish model failures from retrieval, tool, and runtime failures. The supplied papers point toward clinical AI that is more inspectable, temporally aware, and operationally integrated, but establishing dependable benefit will require evidence beyond retrospective performance and framework design.",
+    "model": "gpt-6.1-sol",
+    "service_tier": "ultrafast",
+    "generator": "openai"
+  },
+  "markdown_file": "2026-10.md",
+  "generated_at": "2026-11-02T04:19:23"
+}
