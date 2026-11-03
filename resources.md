@@ -1,9 +1,33 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-02
+Generated: 2026-11-03
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Quantifying Localized Tumor-Infiltrating Lymphocytes by Deep Learning on H&E Images: Analytical Validation and Prognostic Value in Lung Adenocarcinoma
+## 1. Richer database context improves LLM-generated EHR phenotyping algorithms
+
+- Date: 2026-10-28
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.27.26366654v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.27.26366654v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-richer_database_context_improves_llm_generated_ehr_phenotyping_algorithms_infographic.json
+
+## 2. Performance of a foundation model to generate thousands of predicted outcomes across multiple use cases
+
+- Date: 2026-10-29
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.28.26366723v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.28.26366723v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-performance_of_a_foundation_model_to_generate_thousands_of_predicted_outcomes_across_multi_infographic.json
+
+## 3. MedMLX: On-Device Medical Imaging AI for Apple Silicon
+
+- Date: 2026-10-29
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.28.26366762v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.28.26366762v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-medmlx_on_device_medical_imaging_ai_for_apple_silicon_infographic.json
+
+## 4. Quantifying Localized Tumor-Infiltrating Lymphocytes by Deep Learning on H&E Images: Analytical Validation and Prognostic Value in Lung Adenocarcinoma
 
 - Date: 2026-10-28
 - Category: Medical Imaging
@@ -11,15 +35,55 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.23.26366340v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-quantifying_localized_tumor_infiltrating_lymphocytes_by_deep_learning_on_h_e_images_analyt_infographic.json
 
-## 2. BurnCare: A deep learning framework for burn injury assessment and TBSA estimation.
+## 5. Evaluating the Incremental Value of AI-Derived ECG Features Beyond Automated ECG Reports and Clinical Data for 30-Day Mortality: A MIMIC-IV Cohort Study
 
-- Date: 2026-10-27
+- Date: 2026-10-29
 - Category: Diagnostics
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2025.12.24.25337638v2
-- PDF: https://www.medrxiv.org/content/10.64898/2025.12.24.25337638v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-27-medrxiv-burncare_a_deep_learning_framework_for_burn_injury_assessment_and_tbsa_estimation_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.28.26366716v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.28.26366716v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-evaluating_the_incremental_value_of_ai_derived_ecg_features_beyond_automated_ecg_reports_a_infographic.json
 
-## 3. Evaluating ChatGPTs Responses to Chiropractic Patient Questions: A Comparative Study
+## 6. Deep learning-based electrocardiographic differentiation of Takotsubo syndrome from acute anterior myocardial infarction: explainability, human-AI interaction, and a utilization bias hypothesis
+
+- Date: 2026-10-29
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.15.26365116v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.15.26365116v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-deep_learning_based_electrocardiographic_differentiation_of_takotsubo_syndrome_from_acute_infographic.json
+
+## 7. Longitudinal AI Models Predict Cancer Adverse Events
+
+- Date: 2026-10-29
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.22.26364879v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.22.26364879v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-longitudinal_ai_models_predict_cancer_adverse_events_infographic.json
+
+## 8. Coach-BP: Computer Vision-Based Assessment and Correction of Blood Pressure Measurement Technique
+
+- Date: 2026-10-29
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.29.26366628v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.29.26366628v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-coach_bp_computer_vision_based_assessment_and_correction_of_blood_pressure_measurement_tec_infographic.json
+
+## 9. PedDx: An End-to-End Deep Learning Framework for Pediatric Posterior Fossa Tumor Diagnosis with Agentic AI-Enabled Independent External Evaluation
+
+- Date: 2026-10-29
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.27.26366616v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.27.26366616v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-peddx_an_end_to_end_deep_learning_framework_for_pediatric_posterior_fossa_tumor_diagnosis_infographic.json
+
+## 10. Genetic hallmarks of patients with congenital portosystemic shunts and portopulmonary hypertension: protocol for a multicentre exploratory study
+
+- Date: 2026-10-28
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.27.26366476v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.27.26366476v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-genetic_hallmarks_of_patients_with_congenital_portosystemic_shunts_and_portopulmonary_hype_infographic.json
+
+## 11. Evaluating ChatGPTs Responses to Chiropractic Patient Questions: A Comparative Study
 
 - Date: 2026-10-28
 - Category: Clinical NLP
@@ -27,7 +91,39 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.25.26366458v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-evaluating_chatgpts_responses_to_chiropractic_patient_questions_a_comparative_study_infographic.json
 
-## 4. Large language models detect methodological errors that human peer review misses in clinical trials
+## 12. Biopsy-Validated Deep Learning Mapping of Glioma Infiltration Beyond Contrast Enhancement Using Multiparametric MRI
+
+- Date: 2026-10-28
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.26.26366551v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.26.26366551v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-biopsy_validated_deep_learning_mapping_of_glioma_infiltration_beyond_contrast_enhancement_infographic.json
+
+## 13. Same pipelines, different answers: how evaluation design shapes EEG seizure prediction
+
+- Date: 2026-10-29
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.28.26366763v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.28.26366763v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-same_pipelines_different_answers_how_evaluation_design_shapes_eeg_seizure_prediction_infographic.json
+
+## 14. Multiscale Spatial Characterization of Glioma MRI with MUSE and Radiomics
+
+- Date: 2026-10-29
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.27.26366624v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.27.26366624v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-multiscale_spatial_characterization_of_glioma_mri_with_muse_and_radiomics_infographic.json
+
+## 15. SPEECH FEATURES IN A DEVELOPMENTAL PERSPECTIVE: A SCREENING TOOL FOR PSYCHOSIS, DEPRESSION AND ANXIETY
+
+- Date: 2026-10-29
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.28.26366635v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.28.26366635v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-speech_features_in_a_developmental_perspective_a_screening_tool_for_psychosis_depression_a_infographic.json
+
+## 16. Large language models detect methodological errors that human peer review misses in clinical trials
 
 - Date: 2026-10-28
 - Category: Clinical NLP
@@ -35,7 +131,23 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.25.26366455v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-large_language_models_detect_methodological_errors_that_human_peer_review_misses_in_clinic_infographic.json
 
-## 5. Spatial AI quantification of inflammatory and architectural features differentiates pathologist-defined active ulcerative colitis from histological remission
+## 17. EM-BENCH: A Reproducible Framework for Benchmarking Guideline-Concordant Clinical Decision Making in Large Language Models
+
+- Date: 2026-10-28
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.27.26366650v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.27.26366650v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-em_bench_a_reproducible_framework_for_benchmarking_guideline_concordant_clinical_decision_infographic.json
+
+## 18. An Agentic AI Pipeline for an Evidence-Grounded Environmental Health Public Information System: Development and Evaluation
+
+- Date: 2026-10-29
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.26.26366549v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.26.26366549v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-29-medrxiv-an_agentic_ai_pipeline_for_an_evidence_grounded_environmental_health_public_information_sy_infographic.json
+
+## 19. Spatial AI quantification of inflammatory and architectural features differentiates pathologist-defined active ulcerative colitis from histological remission
 
 - Date: 2026-10-28
 - Category: Medical Imaging
@@ -43,18 +155,10 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.01.27.26344949v3.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-spatial_ai_quantification_of_inflammatory_and_architectural_features_differentiates_pathol_infographic.json
 
-## 6. Tumor Associated Neutrophils Extend NETs To Spatially Drive Necroptosis In Glioblastoma
+## 20. Tumor Associated Neutrophils Extend NETs To Spatially Drive Necroptosis In Glioblastoma
 
 - Date: 2026-10-28
 - Category: Drug Discovery
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.25.26366446v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.25.26366446v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-tumor_associated_neutrophils_extend_nets_to_spatially_drive_necroptosis_in_glioblastoma_infographic.json
-
-## 7. Cognition in healthy aging, ages 36 to 108: Associations with dementia risk factors and neurodegenerative disease biomarkers
-
-- Date: 2026-10-28
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.25.26366428v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.10.25.26366428v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-10-28-medrxiv-cognition_in_healthy_aging_ages_36_to_108_associations_with_dementia_risk_factors_and_neur_infographic.json
