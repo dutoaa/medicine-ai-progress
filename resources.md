@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-07
+Generated: 2026-11-08
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Identifying interstitial lung disease with large language models on clinical notes and claims
@@ -147,18 +147,18 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2611.08185v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-05-arxiv-multimodal_hierarchical_mixture_of_experts_for_3d_medical_vision_language_modeling_infographic.json
 
-## 19. GTAFL: Addressing Test-Agnostic Long-Tailed Federated Learning in Medical Image
-
-- Date: 2026-11-05
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2611.08021v1
-- PDF: https://arxiv.org/pdf/2611.08021v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-05-arxiv-gtafl_addressing_test_agnostic_long_tailed_federated_learning_in_medical_image_infographic.json
-
-## 20. Comprehensive real-world utilization, treatment trajectories, and outcomes of immune checkpoint inhibitors across cancer types: the multicenter FAIR-ICI cohort
+## 19. Comprehensive real-world utilization, treatment trajectories, and outcomes of immune checkpoint inhibitors across cancer types: the multicenter FAIR-ICI cohort
 
 - Date: 2026-11-03
 - Category: Health Systems
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.02.26367076v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.11.02.26367076v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-03-medrxiv-comprehensive_real_world_utilization_treatment_trajectories_and_outcomes_of_immune_checkpo_infographic.json
+
+## 20. Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication
+
+- Date: 2026-11-02
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2611.03826v1
+- PDF: https://arxiv.org/pdf/2611.03826v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-02-arxiv-rethinking_next_visit_diagnosis_prediction_beyond_aggregate_metrics_retrieval_memory_multi_infographic.json

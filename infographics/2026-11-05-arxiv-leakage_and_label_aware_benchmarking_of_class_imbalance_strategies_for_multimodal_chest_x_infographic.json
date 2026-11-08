@@ -1,13 +1,13 @@
 {
-  "key_insight": "Patient-separated, label-corrected evaluation overturned the benchmark’s conclusions: no tested imbalance strategy improved observed mean macro F2 by more than 0.01 over no augmentation.",
-  "clinical_relevance": "Reliable assessment of multimodal chest X-ray models requires preventing patient overlap and aligning diagnostic labels with the relevant admission before considering clinical use.",
+  "key_insight": "Patient leakage and misaligned labels distorted this benchmark; after correction, no evaluated class-imbalance strategy improved observed mean macro F2 by more than 0.01 over no augmentation.",
+  "clinical_relevance": "Reliable evaluation of multimodal chest X-ray models requires patient-separated testing and labels aligned to the imaging admission before drawing conclusions about predictive value.",
   "method": [
-    "Audited record-level splits using an EHR-based label lookup and unseen-patient testing.",
-    "Traced diagnosis labels to source admissions and evaluated admission-aligned, rule-refined labels.",
-    "Compared imbalance strategies, classifiers, diagnostic history and image embeddings under patient-separated evaluation."
+    "Audited record-level splits using an EHR-vector label-lookup baseline and unseen-patient testing.",
+    "Traced diagnosis labels to MIMIC-IV admissions and evaluated admission-aligned, rule-refined labels.",
+    "Compared imbalance strategies, tuned classifiers, diagnostic history and image embeddings."
   ],
-  "evidence_signal": "Across 29,083 radiographs from 10,479 patients with eight diagnosis targets, the lookup nearly matched the best record-split model, while every model fell to all-positive baseline performance on unseen patients.",
-  "watch_item": "Encoder comparisons require pretraining-overlap checks: RAD-DINO had seen 96.6% of these radiographs during self-supervised pretraining.",
+  "evidence_signal": "Across 29,083 radiographs from 10,479 patients and eight targets, roughly one-third of radiographs had labels differing from their own admission codes; under corrected evaluation, adding image encoders to diagnostic history yielded no statistically significant F2 gain.",
+  "watch_item": "Pretraining overlap complicates interpretation: RAD-DINO had seen 96.6% of these radiographs during self-supervised pretraining.",
   "hashtags": [
     "#MedicalAI",
     "#ChestXRay",
@@ -21,6 +21,6 @@
   "paper_title": "Leakage- and Label-Aware Benchmarking of Class-Imbalance Strategies for Multimodal Chest X-Ray and EHR Classification",
   "paper_date": "2026-11-05",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-11-07T13:39:51",
+  "generated_at": "2026-11-08T13:59:34",
   "generator": "openai"
 }

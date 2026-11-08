@@ -24,23 +24,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.30.26366942v1.full.pdf"
       }
     ],
-    "score": 114,
+    "score": 109,
     "infographic": {
-      "key_insight": "Zero-shot LLMs improved the trade-off between positive predictive value (PPV) and positive classification yield for interstitial lung disease compared with published claims-based algorithms.",
-      "clinical_relevance": "More accurate ILD identification could strengthen drug-safety research, including in claims databases without linked clinical notes.",
+      "key_insight": "Zero-shot LLMs improved the trade-off between positive predictive value and case yield for identifying interstitial lung disease (ILD), using claims, clinical notes, or both.",
+      "clinical_relevance": "More accurate ILD identification could strengthen drug-safety research by reducing outcome misclassification that can obscure associations.",
       "method": [
-        "Evaluated 12 open-access LLMs using claims, EHR notes, or both, without task-specific training.",
-        "Compared performance with 20 published claims-based algorithms using pulmonologist-adjudicated ILD status.",
-        "Projected drug-safety effect estimates and sample-size requirements under simulated outcome misclassification."
+        "Evaluated 309 oncology patients with ILD diagnosis codes, adjudicated by two pulmonologists.",
+        "Compared 12 open-access LLMs with 20 published claims-based algorithms, without task-specific training.",
+        "Measured positive predictive value and yield, then modeled effects on drug-safety estimates and sample size."
       ],
-      "evidence_signal": "Among 309 oncology patients with ILD diagnosis codes, claims-only Qwen3-8B achieved 89.8% PPV at 15.9% yield, versus 86.7% PPV at 4.9% yield for the highest-PPV claims algorithm.",
-      "watch_item": "Evaluation was limited to code-positive oncology patients at one health system; epidemiological benefits were simulated rather than demonstrated in a drug-safety study.",
+      "evidence_signal": "Claims-only Qwen3-8B achieved 89.8% positive predictive value at 15.9% yield, versus 86.7% at 4.9% for the highest-PPV claims algorithm.",
+      "watch_item": "Results require external validation beyond this code-selected, single-health-system oncology cohort; projected drug-safety benefits were simulated, not observed.",
       "hashtags": [
         "#ClinicalNLP",
         "#LargeLanguageModels",
         "#InterstitialLungDisease",
         "#DrugSafety",
-        "#RealWorldData"
+        "#RealWorldEvidence"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -48,7 +48,7 @@
       "paper_title": "Identifying interstitial lung disease with large language models on clinical notes and claims",
       "paper_date": "2026-11-02",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:14",
+      "generated_at": "2026-11-08T13:58:54",
       "generator": "openai"
     }
   },
@@ -78,17 +78,17 @@
         "url": "https://arxiv.org/pdf/2611.02327v1"
       }
     ],
-    "score": 98,
+    "score": 93,
     "infographic": {
-      "key_insight": "FiLIP trains CT representations using report-derived abnormal findings, avoiding the assumption that different patient cases should always be pushed apart.",
-      "clinical_relevance": "The approach could support CT finding recognition and radiology report generation, but clinical utility remains unestablished.",
+      "key_insight": "FiLIP trains CT representations around report-derived findings rather than treating different patients’ scans and reports as inherently dissimilar.",
+      "clinical_relevance": "This approach could support CT finding classification and radiology report generation, though clinical utility is not established by the abstract.",
       "method": [
         "Use a large language model to extract abnormal finding phrases from radiology reports.",
         "Encode those findings with a biomedical text embedding model to construct target representations.",
-        "Train a CT image encoder to predict these finding-based representations."
+        "Train the CT image encoder to predict these finding-based representations."
       ],
-      "evidence_signal": "The abstract reports better multi-label zero-shot finding classification than weakly supervised approaches in in-domain and external-domain evaluations, plus benefits for fine-tuned report generation, without numerical results.",
-      "watch_item": "Errors or omissions in report-derived findings could propagate into training targets; the abstract does not describe extraction validation.",
+      "evidence_signal": "The abstract reports better multi-label zero-shot finding classification than weakly supervised approaches in in-domain and external-domain evaluations, plus benefits after fine-tuning for report generation.",
+      "watch_item": "Reliance on automatically extracted findings may propagate report or extraction errors; the abstract provides no dataset sizes or numerical performance results.",
       "hashtags": [
         "#MedicalImaging",
         "#CT",
@@ -102,7 +102,7 @@
       "paper_title": "Findings-aware Language-Image Pretraining for CT Volume Interpretation",
       "paper_date": "2026-11-02",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-07T13:39:17",
+      "generated_at": "2026-11-08T13:58:56",
       "generator": "openai"
     }
   },
@@ -133,17 +133,17 @@
         "url": "https://arxiv.org/pdf/2611.08315v1"
       }
     ],
-    "score": 96,
+    "score": 91,
     "infographic": {
-      "key_insight": "Graph grounding reduced hallucinations across all five evaluated LLMs, while general-purpose models generally outperformed domain-specific models on complex reasoning tasks.",
-      "clinical_relevance": "Combining LLMs with structured biomedical knowledge may improve research tools, but this benchmark does not establish safety or effectiveness in patient care.",
+      "key_insight": "Graph grounding reduced hallucinations across all evaluated LLMs, while general-purpose models generally outperformed domain-specific models on complex reasoning.",
+      "clinical_relevance": "Combining LLMs with structured biomedical knowledge may improve research tools relevant to medicine, but this benchmark does not establish clinical safety or effectiveness.",
       "method": [
         "Benchmarked GPT-5.1, Gemini 2.0 Pro, Llama 3, Qwen, and BioGPT.",
-        "Used DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG.",
-        "Compared graph-grounded and graph-agnostic performance on multitier reasoning and factual-accuracy queries."
+        "Evaluated multitier queries across DrugBank, NeuroSynth, Cognitive Atlas, Brain Map, and GDPKG.",
+        "Compared graph-grounded and graph-agnostic reasoning and factual accuracy."
       ],
-      "evidence_signal": "Annotation agreement was substantial (Cohen’s κ = 0.781; Fleiss’ κ = 0.77), and model performance declined as query complexity increased.",
-      "watch_item": "The abstract provides no numerical effect sizes for hallucination reduction and reports no clinical validation.",
+      "evidence_signal": "Performance declined as query complexity increased; annotation agreement was substantial, with Cohen’s kappa of 0.781 and Fleiss’ kappa of 0.77.",
+      "watch_item": "The abstract provides no dataset size or quantitative hallucination reductions, limiting assessment of effect magnitude and generalizability.",
       "hashtags": [
         "#ClinicalNLP",
         "#KnowledgeGraphs",
@@ -157,7 +157,7 @@
       "paper_title": "Benchmarking Large Language Models on Heterogeneous Cognitive and Biomedical Knowledge Graphs: The Role of Graph Grounding in Multi-Hop Reasoning and Hallucination Mitigation",
       "paper_date": "2026-11-05",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:19",
+      "generated_at": "2026-11-08T13:58:59",
       "generator": "openai"
     }
   },
@@ -186,19 +186,19 @@
         "url": "https://arxiv.org/pdf/2611.03357v1"
       }
     ],
-    "score": 91,
+    "score": 86,
     "infographic": {
-      "key_insight": "Calibrated XGBoost performed best among the evaluated models for classifying documented suicide-related outcomes in an age-matched EHR cohort.",
+      "key_insight": "Calibrated XGBoost performed best among the evaluated models for identifying a composite of documented suicide-related outcomes in an age-matched EHR cohort.",
       "clinical_relevance": "EHR-derived clinical and social-contextual features may support suicide-related risk research, but these findings do not establish readiness for clinical screening.",
       "method": [
-        "Used MIMIC-IV diagnosis categories to define features and a composite suicide-related outcome.",
-        "Retained all positive patients and age-matched comparison patients to address imbalance and reduce age confounding.",
-        "Compared logistic regression, random forest, and XGBoost with isotonic calibration; used SHAP for interpretation."
+        "Grouped MIMIC-IV diagnosis codes into clinically motivated features and a composite suicide-related outcome.",
+        "Retained all positive patients and sampled age-matched comparison patients to address imbalance and age-related confounding.",
+        "Compared logistic regression, random forest, and XGBoost with isotonic calibration; used SHAP for feature interpretation."
       ],
-      "evidence_signal": "In retrospective MIMIC-IV evaluation, calibrated XGBoost showed the strongest matched-cohort performance; the abstract reports no numerical metrics.",
-      "watch_item": "Code-based outcomes capture documented events, not necessarily future risk; external validation and evaluation at real-world prevalence are needed.",
+      "evidence_signal": "In retrospective MIMIC-IV evaluation, calibrated XGBoost achieved the strongest matched-cohort performance; the abstract reports no numerical metrics.",
+      "watch_item": "The code-based composite includes ideation and prior behavior, so performance should not be interpreted as validated prediction of future suicide attempts or deaths.",
       "hashtags": [
-        "#AIMedicine",
+        "#ClinicalAI",
         "#SuicidePreventionResearch",
         "#ElectronicHealthRecords",
         "#MachineLearning",
@@ -210,7 +210,7 @@
       "paper_title": "Multidimensional Suicide Risk Assessment with Machine Learning using Electronic Health Records",
       "paper_date": "2026-11-02",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:21",
+      "generated_at": "2026-11-08T13:59:02",
       "generator": "openai"
     }
   },
@@ -239,17 +239,17 @@
         "url": "https://arxiv.org/pdf/2611.08392v1"
       }
     ],
-    "score": 90,
+    "score": 85,
     "infographic": {
-      "key_insight": "A learned patient world model could support multiple ICU planning simulations without rebuilding patient-state models for each policy question.",
-      "clinical_relevance": "The approach could help health systems explore how ICU bed capacity, care dispatch, and post-ICU transfer capacity affect care demand and resource use before implementation.",
+      "key_insight": "A learned patient world model could support multiple ICU policy simulations without rebuilding question-specific patient-state models.",
+      "clinical_relevance": "The approach could help health systems explore how ICU capacity, care dispatch, and post-ICU transfers affect care demand, queues, and bed use before implementation.",
       "method": [
-        "Train a neural patient-trajectory model on longitudinal MIMIC-IV electronic health records.",
-        "Freeze the model and connect its time-queryable predictions to shared ICU calendars, resources, and queues.",
-        "Adapt scenario-specific mappings to simulate different operational policies."
+        "Train a neural network on longitudinal MIMIC-IV electronic health records to represent patient trajectories.",
+        "Freeze the model and connect time-queryable predictions to shared ICU calendars, resources, and queues.",
+        "Reconfigure scenario-specific mappings to simulate different operational policies."
       ],
-      "evidence_signal": "In simulation evaluations, the model matched Markov and semi-Markov comparators on aggregate occupancy and directional policy responses, while capturing a history-dependent 24-hour recovery contrast of −6.4 percentage points versus −6.7 observed.",
-      "watch_item": "Simulation agreement does not establish real-world operational benefit; validation beyond MIMIC-IV and prospective evaluation remain important.",
+      "evidence_signal": "In MIMIC-IV-based simulations, the model matched Markov and semi-Markov comparators on aggregate occupancy and directional policy responses, while capturing a history-dependent 24-hour recovery difference of −6.4 percentage points versus −6.7 observed.",
+      "watch_item": "Simulation results do not establish real-world operational benefit; external validation and prospective evaluation are needed before deployment.",
       "hashtags": [
         "#AIMedicine",
         "#HealthSystems",
@@ -263,7 +263,7 @@
       "paper_title": "Learning a patient world model for health system simulation in intensive care",
       "paper_date": "2026-11-05",
       "paper_category": "Health Systems",
-      "generated_at": "2026-11-07T13:39:23",
+      "generated_at": "2026-11-08T13:59:06",
       "generator": "openai"
     }
   },
@@ -292,23 +292,23 @@
         "url": "https://arxiv.org/pdf/2611.08369v1"
       }
     ],
-    "score": 90,
+    "score": 85,
     "infographic": {
-      "key_insight": "Strong performance on isolated medical tasks did not ensure jointly correct diagnostic and care answers across a patient's nasopharyngeal carcinoma care pathway.",
-      "clinical_relevance": "NPCBench tests capabilities relevant to oncology workflows, including visual evidence use, longitudinal reasoning, and integrated care planning.",
+      "key_insight": "Strong performance on isolated medical tasks did not translate into reliable patient-level reasoning: strict CarePath success peaked at 23% among 21 multimodal models.",
+      "clinical_relevance": "NPCBench evaluates whether AI can integrate visual evidence and changing patient states across nasopharyngeal carcinoma care pathways, rather than answer isolated questions.",
       "method": [
-        "Models specialist apprenticeship from foundational knowledge to case planning and consultation.",
-        "Links multimodal, stepwise tasks to patient-level care trajectories.",
-        "Uses episode-level scoring, paired controls, and physician calibration."
+        "Mirror specialist training through foundational knowledge, case planning, longitudinal review, CarePath integration, and consultation.",
+        "Score whether diagnostic and care answers are jointly correct within each patient’s pathway.",
+        "Use paired controls and physician calibration to examine evidence grounding, longitudinal revision, and consultation judging."
       ],
-      "evidence_signal": "Evaluation covered 30 models, 4,777 component and consultation items, and 100 CarePath patients with 417 scored tasks; strict CarePath success peaked at 23% among 21 multimodal models.",
-      "watch_item": "Benchmark performance does not establish safety or effectiveness in real-world clinical care.",
+      "evidence_signal": "Evaluation covered 30 models using 4,777 component and consultation items plus a 100-patient CarePath cohort with 417 scored diagnostic and care tasks.",
+      "watch_item": "This disease-specific benchmark does not establish real-world clinical safety or generalizability to other cancers or care settings.",
       "hashtags": [
         "#MedicalAI",
-        "#NPCBench",
         "#MultimodalAI",
-        "#Oncology",
-        "#ClinicalReasoning"
+        "#ClinicalReasoning",
+        "#NasopharyngealCarcinoma",
+        "#AIEvaluation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -316,7 +316,7 @@
       "paper_title": "NPCBench: A Clinical Apprenticeship Benchmark for Multimodal Care-Pathway Reasoning in Nasopharyngeal Carcinoma",
       "paper_date": "2026-11-05",
       "paper_category": "Health Systems",
-      "generated_at": "2026-11-07T13:39:25",
+      "generated_at": "2026-11-08T13:59:08",
       "generator": "openai"
     }
   },
@@ -347,17 +347,17 @@
         "url": "https://arxiv.org/pdf/2611.07265v1"
       }
     ],
-    "score": 90,
+    "score": 85,
     "infographic": {
-      "key_insight": "Colorectal cancer prediction improved with longer EHR lookback, reaching about 80% of the observed AUROC gain within 10 years and plateauing around 18 years.",
-      "clinical_relevance": "Historical primary-care records may add predictive information, but the modest discrimination does not establish clinical utility.",
+      "key_insight": "Longer calendar lookback improved colorectal cancer prediction modestly, with about 80% of the AUROC gain reached by 10 years and a plateau around 18 years.",
+      "clinical_relevance": "Historical primary-care records may add predictive signal, but modest discrimination does not establish clinical screening utility.",
       "method": [
-        "Pretrained a 34.6M-parameter decoder-only transformer on 1.4B coded events from 3.6M patients.",
+        "Pretrained a 34.6M-parameter transformer on 1.4B coded events from 3.6M patients.",
         "Fine-tuned for incident colorectal cancer prediction with a 12-month pre-diagnostic buffer.",
-        "Compared 15 nested lookback windows spanning 2–30 years within the same cohort and against XGBoost."
+        "Compared 15 lookback windows spanning 2–30 years in the same patients, alongside XGBoost."
       ],
-      "evidence_signal": "Among 1,008 cases and 9,582 matched controls registered for at least 30 years, transformer AUROC rose from 0.551 at 2 years to 0.590 at 18 years; XGBoost peaked at 0.589.",
-      "watch_item": "Findings from patients with at least 30 years of registration in one UK region may not generalize to populations with shorter or fragmented records.",
+      "evidence_signal": "In 1,008 cases and 9,582 matched controls registered for at least 30 years, transformer AUROC rose from 0.551 at 2 years to 0.590 at 18 years; XGBoost peaked at 0.589.",
+      "watch_item": "Results from long-registered patients in one region may not generalize to populations with shorter or fragmented EHR histories.",
       "hashtags": [
         "#ClinicalAI",
         "#ColorectalCancer",
@@ -371,7 +371,7 @@
       "paper_title": "How Deep is the Signal? Time-Context up to 30 Years for Colorectal Cancer Prediction in a Primary-Care EHR Model",
       "paper_date": "2026-11-05",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:28",
+      "generated_at": "2026-11-08T13:59:11",
       "generator": "openai"
     }
   },
@@ -400,23 +400,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v2.full.pdf"
       }
     ],
-    "score": 90,
+    "score": 85,
     "infographic": {
-      "key_insight": "Variantscape uses large language models and traditional NLP to extract variant–treatment–cancer associations from oncology abstracts at scale.",
-      "clinical_relevance": "The tool may support precision oncology evidence review and molecular tumour board preparation, but extracted associations are not treatment recommendations.",
+      "key_insight": "Variantscape combines NLP and large language models to extract variant–treatment–cancer associations from oncology abstracts at scale.",
+      "clinical_relevance": "The tool may support evidence discovery and molecular tumour board preparation, but extracted associations do not establish treatment benefit or clinical actionability.",
       "method": [
-        "Screen biomedical abstracts for gene names.",
-        "Extract and standardise variants, cancer types, and therapeutic agents.",
+        "Screen biomedical abstracts for gene mentions.",
+        "Extract and standardise variants, cancer types, and therapies using NLP and LLMs.",
         "Use LLMs to verify associations against abstract text and build a literature-derived graph."
       ],
-      "evidence_signal": "Among 886,195 eligible abstracts, 37,895 (4.3%) mentioned all three entity types; LLM verification identified at least one association in 35,224 papers, yielding 44,644 verified graph edges.",
-      "watch_item": "LLM verification against abstracts does not establish clinical validity; the abstract reports no independent expert-validation accuracy.",
+      "evidence_signal": "Of 886,195 gene-containing abstracts, 37,895 (4.3%) mentioned all three entity types; LLM verification identified at least one association in 35,224 papers, yielding 44,644 verified graph edges.",
+      "watch_item": "The abstract reports LLM-based verification but no independent expert-validation accuracy, so extraction reliability remains uncertain.",
       "hashtags": [
         "#ClinicalNLP",
         "#PrecisionOncology",
         "#LargeLanguageModels",
-        "#VariantInterpretation",
-        "#EvidenceSynthesis"
+        "#EvidenceSynthesis",
+        "#CancerResearch"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -424,7 +424,7 @@
       "paper_title": "Variantscape: Retrospective Study of Large Language Model-Based Extraction of Variant-Treatment-Cancer Associations from Published Oncology Abstracts",
       "paper_date": "2026-11-02",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:30",
+      "generated_at": "2026-11-08T13:59:14",
       "generator": "openai"
     }
   },
@@ -454,22 +454,22 @@
         "url": "https://arxiv.org/pdf/2611.08433v1"
       }
     ],
-    "score": 87,
+    "score": 82,
     "infographic": {
-      "key_insight": "MedGraph uses graph memory to track changing patient information, distinguish whose facts are whose, and keep recorded safety facts available across medical conversations.",
-      "clinical_relevance": "More reliable longitudinal memory could help medical assistants avoid answers based on outdated states, another person’s history, or missing safety information.",
+      "key_insight": "MedGraph uses graph memory to track changing patient facts across medical conversations while addressing outdated information, person mix-ups, and missing safety facts.",
+      "clinical_relevance": "More accurate longitudinal memory could help medical dialogue systems preserve patient context across visits, though clinical benefit is not established here.",
       "method": [
-        "Extract dated, person-attributed facts from each dialogue session.",
-        "Link medication, diagnosis, and measurement records into chains that preserve earlier states.",
-        "Retrieve patient-specific chains for the requested time, add original dialogue text, and include all recorded safety facts."
+        "Extract dated facts, identify whom they describe, and link medication, diagnosis, and measurement updates into history-preserving chains.",
+        "Retrieve patient-specific chains, interpret them at the requested time, and include original dialogue text.",
+        "Include a patient profile containing every recorded safety fact with each question."
       ],
-      "evidence_signal": "On MedMemoryBench, MedGraph achieved the highest overall accuracy against five baselines with GPT and Qwen backbones, improving on the strongest baseline by 10.5 and 10.4 points, respectively.",
-      "watch_item": "Benchmark gains do not establish clinical safety; performance still depends on correctly extracting, dating, and attributing patient facts.",
+      "evidence_signal": "On MedMemoryBench, MedGraph achieved the highest overall accuracy against five baselines with GPT and Qwen backbones, exceeding the strongest baseline by 10.5 and 10.4 points, respectively.",
+      "watch_item": "Benchmark gains do not establish real-world clinical safety; performance still depends on accurate fact extraction and person attribution.",
       "hashtags": [
         "#ClinicalNLP",
         "#MedicalAI",
         "#GraphMemory",
-        "#LongitudinalCare",
+        "#LongitudinalDialogue",
         "#PatientSafety"
       ],
       "model": "gpt-6.1-sol",
@@ -478,7 +478,7 @@
       "paper_title": "MedGraph: Maintaining Patient State with Graph Memory for Long-Term Medical Dialogue",
       "paper_date": "2026-11-05",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:32",
+      "generated_at": "2026-11-08T13:59:16",
       "generator": "openai"
     }
   },
@@ -508,17 +508,17 @@
         "url": "https://arxiv.org/pdf/2611.07940v1"
       }
     ],
-    "score": 85,
+    "score": 80,
     "infographic": {
-      "key_insight": "Joint multilingual training delivered stronger cardiology entity recognition than language-specific models, while specialty pretraining had limited impact on strict F1.",
-      "clinical_relevance": "CardioLM could support extraction of diseases, symptoms, procedures, and medications from multilingual cardiology documentation.",
+      "key_insight": "Joint multilingual training delivered the strongest cardiology entity recognition in nearly all settings, while specialty-specific pretraining had limited downstream impact.",
+      "clinical_relevance": "CardioLM could support extraction of diseases, symptoms, procedures, and medications from multilingual cardiology text, but clinical workflow benefits remain unproven.",
       "method": [
-        "Built CardioCCC from 508 Spanish cardiology case reports, extended to six additional languages through machine translation, annotation projection, and clinician review.",
-        "Continued pretraining language-specific encoders on cardiology and biomedical text, then fine-tuned entity recognition models.",
-        "Compared language-specific and jointly trained multilingual models using strict and relaxed F1 and clinician ratings."
+        "Built CardioCCC from 508 Spanish cardiology case reports, extended to six other languages through translation, annotation projection, and clinician review.",
+        "Continued cardiology and biomedical pretraining to create language-specific CardioBERTa encoders.",
+        "Fine-tuned CardioNER models and compared monolingual systems with jointly trained multilingual models."
       ],
-      "evidence_signal": "Multilingual models exceeded the strongest monolingual system by up to 0.13 strict F1; mean clinician ratings across entity types rose from 26% for a rule-and-dictionary baseline to 73% for CardioNER.",
-      "watch_item": "Performance on translated case reports may not generalize to native-language clinical records, and entity-boundary errors remained common.",
+      "evidence_signal": "Multilingual models exceeded the strongest monolingual system by up to 0.13 strict F1; clinicians’ mean ratings rose from 26% for a rule-and-dictionary baseline to 73% for CardioNER.",
+      "watch_item": "Performance on translated case reports may not generalize to native-language clinical records, and entity-boundary errors remain substantial.",
       "hashtags": [
         "#ClinicalNLP",
         "#Cardiology",
@@ -532,7 +532,7 @@
       "paper_title": "CardioLM: A multilingual suite of small language models for the cardiology domain",
       "paper_date": "2026-11-05",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:34",
+      "generated_at": "2026-11-08T13:59:18",
       "generator": "openai"
     }
   },
@@ -561,23 +561,23 @@
         "url": "https://arxiv.org/pdf/2611.04685v1"
       }
     ],
-    "score": 84,
+    "score": 79,
     "infographic": {
-      "key_insight": "MIMIC-Note-Extract converts free-text discharge summaries into reusable structured data, reducing repeated extraction work for clinical AI research.",
-      "clinical_relevance": "The dataset makes patient history, allergies, and diagnostic findings more accessible for research without establishing readiness for clinical deployment.",
+      "key_insight": "MIMIC-Note-Extract converts free-text discharge summaries into reusable structured data, expanding access to clinical information missing from existing MIMIC tables.",
+      "clinical_relevance": "Structured histories, allergies, and diagnostic findings could support clinical AI research while reducing repeated data-curation work.",
       "method": [
-        "Process 16 sections from 300,720 MIMIC-IV-Note discharge summaries.",
-        "Combine deterministic parsing with schema-guided large language model extraction.",
-        "Use structured outputs to build a clinical decision-making benchmark for LLM agents."
+        "Extract 16 sections from 300,720 MIMIC-IV-Note discharge summaries.",
+        "Combine deterministic parsing with schema-guided large language model generation.",
+        "Use the resulting tables to build a clinical decision-making benchmark for LLM agents."
       ],
-      "evidence_signal": "Medical-doctor validation found extraction accuracy above 92% across sections; MNE provides 10 times more patient-history entries and medication histories for more than twice as many admissions as related structured MIMIC tables.",
-      "watch_item": "The abstract does not detail validation sample sizes or error types, limiting assessment of reliability for specific downstream tasks.",
+      "evidence_signal": "The abstract reports physician-validated extraction accuracy above 92% across sections, 10 times more patient-history entries, and medication histories covering more than twice as many admissions as related structured MIMIC tables.",
+      "watch_item": "Extraction accuracy does not establish clinical decision-making safety; validation sample details and performance outside MIMIC are not provided in the abstract.",
       "hashtags": [
         "#ClinicalNLP",
         "#MIMICIV",
-        "#StructuredClinicalData",
         "#MedicalAI",
-        "#LLMEvaluation"
+        "#InformationExtraction",
+        "#ClinicalData"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -585,7 +585,7 @@
       "paper_title": "MIMIC-Note-Extract: A Large-Scale Structured Dataset Extracted from MIMIC-IV-Note Discharge Summaries",
       "paper_date": "2026-11-03",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:36",
+      "generated_at": "2026-11-08T13:59:20",
       "generator": "openai"
     }
   },
@@ -615,23 +615,23 @@
         "url": "https://arxiv.org/pdf/2611.07843v1"
       }
     ],
-    "score": 83,
+    "score": 78,
     "infographic": {
-      "key_insight": "CNN and SVC achieved high reported accuracy in MRI brain tumor classification, with CNN performing best on the larger benchmark dataset.",
-      "clinical_relevance": "The approach could support MRI-based tumor assessment, but these research results do not establish readiness for clinical use.",
+      "key_insight": "CNN and SVC achieved high brain tumor classification accuracy on MRI datasets, with CNN leading on the larger benchmark.",
+      "clinical_relevance": "These findings suggest potential for MRI-based tumor assessment support, but do not establish readiness for clinical use.",
       "method": [
-        "Compared six feature representations, including LBP, Gabor filters, wavelets, Fourier transforms, CNN features, and run-length matrices.",
-        "Evaluated k-nearest neighbor, random forest, SVC, probabilistic neural network, and CNN classifiers.",
-        "Used statistical tests to assess LBP features and SHAP to explain feature contributions."
+        "Compared six feature representations, including LBP, Gabor filters, wavelets and CNN features.",
+        "Evaluated five learning algorithms, including SVC, CNN and Random Forest.",
+        "Used SHAP to identify influential features and statistical tests to assess LBP feature significance."
       ],
       "evidence_signal": "Reported accuracy was 97.8% for CNN and 98.06% for SVC on a small dataset, versus 98.9% and 96.7%, respectively, on a larger benchmark dataset.",
-      "watch_item": "The abstract does not report dataset sizes, patient-level splitting, or external clinical validation, limiting assessment of generalizability.",
+      "watch_item": "The abstract does not report dataset sizes or independent clinical validation, limiting assessment of real-world generalizability.",
       "hashtags": [
         "#MedicalImaging",
         "#BrainTumor",
-        "#MRI",
         "#DeepLearning",
-        "#ExplainableAI"
+        "#ExplainableAI",
+        "#MRI"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -639,7 +639,7 @@
       "paper_title": "Enhanced MRI brain tumor detection using deep learning in conjunction with explainable AI SHAP based diverse and multi feature analysis",
       "paper_date": "2026-11-05",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-07T13:39:39",
+      "generated_at": "2026-11-08T13:59:23",
       "generator": "openai"
     }
   },
@@ -668,23 +668,23 @@
         "url": "https://arxiv.org/pdf/2611.07127v1"
       }
     ],
-    "score": 83,
+    "score": 78,
     "infographic": {
-      "key_insight": "A scalable Bayesian Gaussian process classifier improved uncertainty calibration and predictive performance in breast cancer histopathology benchmarks, with the largest gains under hospital-level distribution shift.",
-      "clinical_relevance": "Better-calibrated predictions could support more reliable cross-hospital pathology AI, but benchmark results do not establish clinical safety or benefit.",
+      "key_insight": "A scalable Bayesian Gaussian process classifier improved prediction and uncertainty calibration in breast cancer histopathology benchmarks, with the largest gains under hospital-level distribution shift.",
+      "clinical_relevance": "Better-calibrated uncertainty could support more reliable cross-hospital pathology AI, but clinical benefit remains unproven.",
       "method": [
-        "Extract frozen histopathology embeddings with the Phikon foundation model.",
-        "Use accelerated RPCholesky for low-rank kernel approximation and selected pivots for prediction.",
-        "Sample the Bayesian posterior using non-centered Hamiltonian Monte Carlo at approximately 300,000 training points."
+        "Uses frozen Phikon pathology foundation model embeddings.",
+        "Applies accelerated RPCholesky for low-rank kernel approximation.",
+        "Combines non-centered Hamiltonian Monte Carlo sampling with pivot-based inducing points for prediction."
       ],
-      "evidence_signal": "Evaluation on PCam and CAMELYON17-WILDS reported up to 88% lower expected calibration error and up to 90% lower false negative rate versus stochastic variational GP and neural network baselines.",
-      "watch_item": "The abstract does not establish prospective clinical performance or computational requirements for routine deployment.",
+      "evidence_signal": "Evaluated on PCam and CAMELYON17-WILDS with training scale around 300,000 samples, the method reduced expected calibration error by up to 88% and false negative rate by up to 90% versus variational GP and neural network baselines.",
+      "watch_item": "Benchmark results do not establish clinical readiness; prospective cross-site validation and assessment of sampling costs are still needed.",
       "hashtags": [
-        "#MedicalAI",
-        "#ComputationalPathology",
-        "#BayesianLearning",
+        "#AIPathology",
+        "#BayesianAI",
         "#UncertaintyQuantification",
-        "#DistributionShift"
+        "#DistributionShift",
+        "#CancerResearch"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -692,7 +692,7 @@
       "paper_title": "Scalable Bayesian Gaussian Process Classification for Cancer Histopathology: Calibrated Uncertainty Under Distribution Shift",
       "paper_date": "2026-11-04",
       "paper_category": "Diagnostics",
-      "generated_at": "2026-11-07T13:39:42",
+      "generated_at": "2026-11-08T13:59:25",
       "generator": "openai"
     }
   },
@@ -722,23 +722,23 @@
         "url": "https://arxiv.org/pdf/2611.07847v1"
       }
     ],
-    "score": 81,
+    "score": 76,
     "infographic": {
-      "key_insight": "In simulated clinical prediction networks, reliable LLM auditing depended on computation and explicit instructions, not direct access to model weights.",
-      "clinical_relevance": "Tool-assisted LLMs may help identify learned relationships and subgroup bias in clinical prediction models, but real-world clinical usefulness remains untested.",
+      "key_insight": "In simulated clinical prediction networks, reliable LLM auditing depended on computation tools and explicit instructions, not direct access to model weights.",
+      "clinical_relevance": "Tool-assisted auditing may help identify prediction patterns and subgroup label bias, but clinical usefulness remains untested in real patient data.",
       "method": [
-        "Trained networks with 105–38,401 weights on simulated subarachnoid haemorrhage cohorts with planted relationships or no relationship.",
-        "Compared five GPT models using raw weights without tools versus calculation tools with weight or prediction-only access.",
-        "Tested default versus explicit instructions, subgroup death under-recording, and a scripted comparator."
+        "Trained tanh networks with 105–38,401 weights on simulated subarachnoid haemorrhage cohorts with planted relationships, no relationship, or subgroup death under-recording.",
+        "Compared five GPT models using raw weights without tools versus calculation tools with weight access or prediction-only access.",
+        "Tested default versus explicit system instructions and compared LLM auditing and repair with a scripted approach."
       ],
-      "evidence_signal": "With calculation tools, GPT-6 Astra recovered planted relationships in 29/29 runs, raised no false alarms in 15 null-network runs, and identified the biased subgroup in 6/6 runs; prediction-only access matched weight access.",
-      "watch_item": "These simulation results do not establish clinical validity, and a well-designed script matched comparator-model audits and the best LLM repair.",
+      "evidence_signal": "With tools, GPT-6 Astra recovered planted relationships in 29/29 runs, raised no false alarms in 15 null-network runs, and identified the biased subgroup in 6/6 runs; prediction-only access matched weight access.",
+      "watch_item": "Results are limited to simulated cohorts and small networks, and a well-designed script matched comparator-model auditing and the best LLM repair.",
       "hashtags": [
-        "#ClinicalAI",
-        "#ModelAuditing",
         "#ClinicalNLP",
+        "#AIAuditing",
+        "#ClinicalAI",
         "#AlgorithmicBias",
-        "#AIValidation"
+        "#LLMEvaluation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -746,7 +746,7 @@
       "paper_title": "Computation, not weight access: large language models as auditors of clinical prediction networks",
       "paper_date": "2026-11-05",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:44",
+      "generated_at": "2026-11-08T13:59:27",
       "generator": "openai"
     }
   },
@@ -775,17 +775,17 @@
         "url": "https://arxiv.org/pdf/2611.08311v1"
       }
     ],
-    "score": 80,
+    "score": 75,
     "infographic": {
-      "key_insight": "Training-only LLM filtering of potentially unreliable EEG sleep-stage labels improved TinySleepNet classification without adding inference-time complexity.",
-      "clinical_relevance": "The approach could support lightweight, wearable sleep-stage monitoring, though clinical utility remains unestablished.",
+      "key_insight": "LLM-assisted filtering of potentially unreliable training labels improved EEG sleep-stage classification without adding an LLM at inference.",
+      "clinical_relevance": "The approach may support lightweight wearable sleep monitoring, but clinical utility remains unestablished.",
       "method": [
-        "Train TinySleepNet on original labels and flag low-confidence epochs.",
-        "Use LLaMA 3.1 to assess flagged epochs using EEG spectral features, sequence context, and AASM scoring guidelines.",
+        "Train TinySleepNet and flag low-confidence EEG epochs.",
+        "Use LLaMA 3.1 to assess flagged labels against AASM guidelines using spectral features and sequence context.",
         "Remove epochs judged suspicious and retrain TinySleepNet."
       ],
       "evidence_signal": "On Sleep-EDF Expanded with 20-fold cross-validation, accuracy rose from 81.8% to 84.6% and macro F1 from 75.6% to 77.4%, with notable REM detection gains.",
-      "watch_item": "Low-confidence epochs may include valid, difficult examples; the abstract does not report independent expert validation of the LLM's filtering decisions.",
+      "watch_item": "Filtering may discard difficult but valid examples; independent validation of LLM judgments and performance is needed.",
       "hashtags": [
         "#SleepStaging",
         "#EEG",
@@ -799,7 +799,7 @@
       "paper_title": "LLM-Assisted Label Noise Correction for EEG-Based Sleep Stage Classification",
       "paper_date": "2026-11-05",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-07T13:39:46",
+      "generated_at": "2026-11-08T13:59:30",
       "generator": "openai"
     }
   },
@@ -828,23 +828,23 @@
         "url": "https://arxiv.org/pdf/2611.05192v1"
       }
     ],
-    "score": 80,
+    "score": 75,
     "infographic": {
-      "key_insight": "Natural-image pretraining improved medical diffusion generation, with benefits linked to spatial structure rather than semantics.",
-      "clinical_relevance": "Better synthetic-image fidelity may support medical imaging research, but the reported proxy improvements do not establish clinical utility or safety.",
+      "key_insight": "Natural-image pretraining improved medical diffusion image generation, with benefits linked to spatial structure rather than semantic knowledge.",
+      "clinical_relevance": "More faithful synthetic medical images could support research, but improved pathology-classification and radiomic metrics do not establish clinical utility or safety.",
       "method": [
-        "Compared natural-image initialization with training from scratch and alternative pretraining or reinitialization schemes.",
+        "Compared natural-image initialization with training from scratch, medical pretraining, and reinitialization schemes.",
         "Evaluated pixel- and latent-space diffusion models spanning 131M–952M parameters.",
-        "Probed internal representations and tested mixed natural–medical image training."
+        "Probed semantic and spatial representations and tested mixed natural–medical image training."
       ],
-      "evidence_signal": "Across RadImageNet and BraTS, natural-image initialization improved relative gFID by 21–34% in pixel space and 14% in latent space, with gains mirrored by pathology-classification and radiomic-feature evaluations.",
-      "watch_item": "Results cover two radiology datasets and proxy fidelity measures; generalization to other settings and clinical use remains unestablished.",
+      "evidence_signal": "Across RadImageNet and BraTS, natural-image initialization improved relative gFID by 21–34% in pixel space and 14% in latent space; a spatial-structure metric tracked gFID with |r| = 0.85.",
+      "watch_item": "Results cover two datasets and rely on proxy fidelity measures; broader generalization and clinical validity remain unproven.",
       "hashtags": [
         "#MedicalImaging",
         "#DiffusionModels",
         "#TransferLearning",
-        "#GenerativeAI",
-        "#SyntheticMedicalImages"
+        "#SyntheticData",
+        "#AIMedicine"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -852,7 +852,7 @@
       "paper_title": "From Natural Images to Medical Scans: Transferability of Diffusion Models for Medical Image Generation",
       "paper_date": "2026-11-03",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-07T13:39:49",
+      "generated_at": "2026-11-08T13:59:32",
       "generator": "openai"
     }
   },
@@ -882,17 +882,17 @@
         "url": "https://arxiv.org/pdf/2611.07950v1"
       }
     ],
-    "score": 79,
+    "score": 74,
     "infographic": {
-      "key_insight": "Patient-separated, label-corrected evaluation overturned the benchmark’s conclusions: no tested imbalance strategy improved observed mean macro F2 by more than 0.01 over no augmentation.",
-      "clinical_relevance": "Reliable assessment of multimodal chest X-ray models requires preventing patient overlap and aligning diagnostic labels with the relevant admission before considering clinical use.",
+      "key_insight": "Patient leakage and misaligned labels distorted this benchmark; after correction, no evaluated class-imbalance strategy improved observed mean macro F2 by more than 0.01 over no augmentation.",
+      "clinical_relevance": "Reliable evaluation of multimodal chest X-ray models requires patient-separated testing and labels aligned to the imaging admission before drawing conclusions about predictive value.",
       "method": [
-        "Audited record-level splits using an EHR-based label lookup and unseen-patient testing.",
-        "Traced diagnosis labels to source admissions and evaluated admission-aligned, rule-refined labels.",
-        "Compared imbalance strategies, classifiers, diagnostic history and image embeddings under patient-separated evaluation."
+        "Audited record-level splits using an EHR-vector label-lookup baseline and unseen-patient testing.",
+        "Traced diagnosis labels to MIMIC-IV admissions and evaluated admission-aligned, rule-refined labels.",
+        "Compared imbalance strategies, tuned classifiers, diagnostic history and image embeddings."
       ],
-      "evidence_signal": "Across 29,083 radiographs from 10,479 patients with eight diagnosis targets, the lookup nearly matched the best record-split model, while every model fell to all-positive baseline performance on unseen patients.",
-      "watch_item": "Encoder comparisons require pretraining-overlap checks: RAD-DINO had seen 96.6% of these radiographs during self-supervised pretraining.",
+      "evidence_signal": "Across 29,083 radiographs from 10,479 patients and eight targets, roughly one-third of radiographs had labels differing from their own admission codes; under corrected evaluation, adding image encoders to diagnostic history yielded no statistically significant F2 gain.",
+      "watch_item": "Pretraining overlap complicates interpretation: RAD-DINO had seen 96.6% of these radiographs during self-supervised pretraining.",
       "hashtags": [
         "#MedicalAI",
         "#ChestXRay",
@@ -906,7 +906,7 @@
       "paper_title": "Leakage- and Label-Aware Benchmarking of Class-Imbalance Strategies for Multimodal Chest X-Ray and EHR Classification",
       "paper_date": "2026-11-05",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-07T13:39:51",
+      "generated_at": "2026-11-08T13:59:34",
       "generator": "openai"
     }
   },
@@ -935,23 +935,23 @@
         "url": "https://arxiv.org/pdf/2611.08185v1"
       }
     ],
-    "score": 76,
+    "score": 71,
     "infographic": {
-      "key_insight": "MedHiVE models anatomical hierarchies in both 3D scans and reports to learn aligned local and global representations.",
-      "clinical_relevance": "Anatomy-aware representations could support medical image segmentation, classification, and detection, though clinical utility remains unestablished.",
+      "key_insight": "MedHiVE models anatomical hierarchies in both 3D scans and reports to learn locally detailed and globally contextualized vision-language representations.",
+      "clinical_relevance": "Anatomy-aware representations could support medical-image segmentation, classification, and detection, though clinical utility is not established by the abstract.",
       "method": [
-        "Routes image and text tokens through local and global Soft Mixture-of-Experts layers.",
-        "Uses report-derived anatomical supervision to align anatomy-level and whole-scan representations.",
-        "Combines hierarchical token routing with contrastive vision-language learning."
+        "Routes image and text tokens through a local Soft Mixture-of-Experts layer.",
+        "Fuses local features through a global Soft Mixture-of-Experts layer.",
+        "Uses contrastive learning to align anatomy-level and whole-scan vision-language representations."
       ],
-      "evidence_signal": "Pre-trained on 25,000+ CT scans with anatomical supervision, MedHiVE reportedly outperformed 11 state-of-the-art methods across 6 datasets covering segmentation, classification, and detection.",
-      "watch_item": "The abstract does not report effect sizes or prospective clinical validation, limiting assessment of practical benefit.",
+      "evidence_signal": "Pre-trained on over 25,000 CT scans with anatomical supervision, MedHiVE reportedly outperformed 11 state-of-the-art methods across 6 datasets covering segmentation, classification, and detection.",
+      "watch_item": "The abstract does not establish prospective clinical performance or robustness across institutions and scanning protocols.",
       "hashtags": [
         "#MedicalAI",
         "#MedicalImaging",
         "#VisionLanguageModels",
         "#MixtureOfExperts",
-        "#3DImaging"
+        "#3DCT"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -959,60 +959,7 @@
       "paper_title": "Multimodal Hierarchical Mixture-of-Experts for 3D Medical Vision-Language Modeling",
       "paper_date": "2026-11-05",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-07T13:39:53",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-05-arxiv-gtafl_addressing_test_agnostic_long_tailed_federated_learning_in_medical_image",
-    "arxiv_id": "2611.08021v1",
-    "date": "2026-11-05",
-    "title": "GTAFL: Addressing Test-Agnostic Long-Tailed Federated Learning in Medical Image",
-    "authors": "Guangyu Chen, Jingyun Zeng, Hui Jiang",
-    "abstract": "In healthcare, protecting patient privacy is crucial due to the sensitivity of medical data and its extensive accessibility. Federated Learning (FL) offers a decentralized and privacy-preserving training paradigm, making it an ideal solution for healthcare applications. A critical challenge in healthcare is that real-world medical data often exhibits long-tailed distributions in local and global views. Existing methods addressing long-tailed FL problem typically assume that the model will be evaluated on uniform test data distribution. However, practical test data in healthcare systems is often agnostic and unpredictable, leading to potential model failures in real-world scenarios. In this paper, we introduce a novel task termed Test-Agnostic Long-Tailed Federated Learning and propose GTAFL, a comprehensive framework to address this challenge. During the training stage, GTAFL employs adaptive re-sampling, expert classifier retraining, and self-supervised learning to correct biased classifiers and distorted feature spaces caused by long-tailed training distributions. During the inference stage, an ensemble mechanism combines retrained expert classifiers to handle test data with unknown distributions. Extensive experiments on CIFAR10 and two medical datasets manifest that our framework outperforms other state-of-the-art methods. The code is available at https://github.com/cgy-lavine/GTAFL",
-    "category": "Health Systems",
-    "source": "arXiv",
-    "published": "2026-11-05T13:41:39Z",
-    "updated": "2026-11-05T13:41:39Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.08021v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.08021v1"
-      }
-    ],
-    "score": 75,
-    "infographic": {
-      "key_insight": "GTAFL addresses long-tailed federated learning when both training data are class-imbalanced and test-time class distributions are unknown.",
-      "clinical_relevance": "The framework could make decentralized medical-image models more robust to changing disease-class frequencies across healthcare settings, though clinical benefit is not established.",
-      "method": [
-        "Adaptive re-sampling and expert classifier retraining address class-imbalance bias.",
-        "Self-supervised learning targets distorted feature representations.",
-        "An inference-time ensemble combines retrained experts for unknown test distributions."
-      ],
-      "evidence_signal": "The abstract reports outperforming state-of-the-art methods on CIFAR10 and two medical datasets, without naming the medical datasets or providing numerical results.",
-      "watch_item": "Robustness to unknown class distributions in benchmarks does not establish performance under broader real-world clinical shifts.",
-      "hashtags": [
-        "#FederatedLearning",
-        "#MedicalImaging",
-        "#LongTailedLearning",
-        "#DistributionShift",
-        "#AIResearch"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-05-arxiv-gtafl_addressing_test_agnostic_long_tailed_federated_learning_in_medical_image",
-      "paper_title": "GTAFL: Addressing Test-Agnostic Long-Tailed Federated Learning in Medical Image",
-      "paper_date": "2026-11-05",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-11-07T13:39:55",
+      "generated_at": "2026-11-08T13:59:37",
       "generator": "openai"
     }
   },
@@ -1041,17 +988,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26367076v1.full.pdf"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
-      "key_insight": "In the FAIR-ICI cohort, survival could extend well beyond immune checkpoint inhibitor treatment, while real-world survival was frequently less favorable than in pivotal trials.",
-      "clinical_relevance": "Performance status was important when interpreting outcomes: ECOG ≥2 was associated with poorer overall survival than ECOG 0–1.",
+      "key_insight": "Real-world immune checkpoint inhibitor outcomes varied by patient characteristics, and some patients survived well beyond treatment discontinuation.",
+      "clinical_relevance": "Performance status may help contextualize differences between routine-care and pivotal-trial survival outcomes.",
       "method": [
         "Retrospective cohort of 3,231 adults receiving immune checkpoint inhibitors across four Belgian hospitals.",
-        "Structured and unstructured electronic health records harmonized using OMOP-CDM and natural language processing.",
+        "Harmonized electronic health records using OMOP-CDM and natural language processing.",
         "Evaluated survival and treatment trajectories, with descriptive trial comparisons and multivariable Cox regression."
       ],
-      "evidence_signal": "Among 568 metastatic patients who discontinued ICIs without subsequent systemic therapy, median post-discontinuation survival was 21.4 months; ECOG ≥2 was associated with higher mortality across the analyzed cohort (adjusted HR 2.18, 95% CI 1.82–2.60).",
-      "watch_item": "Retrospective observational data and descriptive trial comparisons cannot establish treatment effects or explain all differences between real-world and trial outcomes.",
+      "evidence_signal": "Among 568 metastatic patients who discontinued treatment without subsequent systemic therapy, median post-discontinuation survival was 21.4 months; ECOG ≥2 was associated with poorer overall survival than ECOG 0–1 (adjusted HR 2.18, 95% CI 1.82–2.60).",
+      "watch_item": "Retrospective observational data and descriptive trial comparisons cannot establish causal effects or show that discontinuing treatment improves survival.",
       "hashtags": [
         "#Immunotherapy",
         "#RealWorldEvidence",
@@ -1065,7 +1012,62 @@
       "paper_title": "Comprehensive real-world utilization, treatment trajectories, and outcomes of immune checkpoint inhibitors across cancer types: the multicenter FAIR-ICI cohort",
       "paper_date": "2026-11-03",
       "paper_category": "Health Systems",
-      "generated_at": "2026-11-07T13:39:57",
+      "generated_at": "2026-11-08T13:59:39",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-02-arxiv-rethinking_next_visit_diagnosis_prediction_beyond_aggregate_metrics_retrieval_memory_multi",
+    "arxiv_id": "2611.03826v1",
+    "date": "2026-11-02",
+    "title": "Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication",
+    "authors": "Heejoon Koo",
+    "abstract": "Next-visit diagnosis prediction forecasts the diagnoses documented at a patient's next encounter, turning retrospective electronic health records into prospective clinical prediction. However, conventional aggregate evaluation obscures its multifaceted nature: distributionally, models must handle variable-size diagnosis sets and long-tailed labels; temporally, they must distinguish persistent, newly recorded, and recurrent diagnoses; and both vary with observed history depth. We introduce an evaluation framework along these dimensions and apply it to rule-based heuristics, LLM-based prompting, retrieval, memory, and multi-agent approaches. This reveals that repeating the last visit outperforms most LLM-based approaches overall despite predicting no new or recurrent diagnoses, and that retrieval and memory exhibit distinct profiles whose relative strengths vary across temporal transitions and backbones. Motivated by this, we propose LONGINUS, a retrieval-memory multi-agent adjudication framework combining evidence retrieved from patient records with structured memory of the patient trajectory. Using cross-view agreement as a reliability heuristic, it preserves shared predictions and adjudicates disagreements without revealing their source. Across MIMIC-III and MIMIC-IV with four LLM backbones, LONGINUS achieves the best transition-specific performance among LLM-based methods in nearly all settings while remaining competitive with them on aggregate metrics.",
+    "category": "Diagnostics",
+    "source": "arXiv",
+    "published": "2026-11-02T19:03:08Z",
+    "updated": "2026-11-02T19:03:08Z",
+    "primary_category": "cs.CL",
+    "categories": [
+      "cs.CL",
+      "cs.AI",
+      "cs.IR"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.03826v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.03826v1"
+      }
+    ],
+    "score": 70,
+    "infographic": {
+      "key_insight": "Aggregate scores can mask next-visit diagnosis prediction weaknesses; LONGINUS combines retrieval and memory to improve transition-specific performance among LLM-based methods.",
+      "clinical_relevance": "Distinguishing persistent, newly recorded, and recurrent diagnoses may make evaluation more informative for clinical prediction research, but clinical utility remains unestablished.",
+      "method": [
+        "Evaluate diagnosis-set size, long-tailed labels, temporal transitions, and observed history depth.",
+        "Combine retrieved patient-record evidence with structured memory of the patient trajectory.",
+        "Preserve predictions shared across views and adjudicate disagreements without revealing their source."
+      ],
+      "evidence_signal": "Across MIMIC-III and MIMIC-IV with four LLM backbones, LONGINUS led LLM-based methods on transition-specific performance in nearly all settings, while repeating the last visit outperformed most LLM approaches overall.",
+      "watch_item": "Cross-view agreement is a reliability heuristic, not proof of correctness, and the abstract does not establish prospective clinical benefit.",
+      "hashtags": [
+        "#ClinicalAI",
+        "#DiagnosisPrediction",
+        "#ElectronicHealthRecords",
+        "#MultiAgentAI",
+        "#AIEvaluation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-02-arxiv-rethinking_next_visit_diagnosis_prediction_beyond_aggregate_metrics_retrieval_memory_multi",
+      "paper_title": "Rethinking Next-Visit Diagnosis Prediction Beyond Aggregate Metrics: Retrieval--Memory Multi-Agent Adjudication",
+      "paper_date": "2026-11-02",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-11-08T13:59:41",
       "generator": "openai"
     }
   }
