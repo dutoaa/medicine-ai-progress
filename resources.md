@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-11
+Generated: 2026-11-12
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
 ## 1. Hx2Dx: From Anamnesis to Diagnosis - A Multimodal Arena for Conversational Clinical Reasoning in LLMs
@@ -131,23 +131,7 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2611.10180v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-06-arxiv-generative_active_learning_for_label_efficient_pan_organ_ultrasound_diagnosis_infographic.json
 
-## 17. Application of Machine Learning and Deep Learning in diagnosis Covid19
-
-- Date: 2026-11-05
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.01.26367023v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.01.26367023v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-05-medrxiv-application_of_machine_learning_and_deep_learning_in_diagnosis_covid19_infographic.json
-
-## 18. Large Language Model-Enhanced Electronic Frailty Assessment and Prognostic Performance in Hospitalized Adults: A Retrospective Cohort Study
-
-- Date: 2026-11-05
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.04.26367272v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.04.26367272v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-05-medrxiv-large_language_model_enhanced_electronic_frailty_assessment_and_prognostic_performance_in_infographic.json
-
-## 19. Toward Foundation Detection Models via Example-Based Grounding in EM-DETR
+## 17. Toward Foundation Detection Models via Example-Based Grounding in EM-DETR
 
 - Date: 2026-11-10
 - Category: Medical Imaging
@@ -155,10 +139,26 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2611.14518v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-10-arxiv-toward_foundation_detection_models_via_example_based_grounding_in_em_detr_infographic.json
 
-## 20. DuSS-PET: Self-Supervised Low-Dose PET Reconstruction Using Pseudo-Dual-Domain Consistency Without Paired Data
+## 18. DuSS-PET: Self-Supervised Low-Dose PET Reconstruction Using Pseudo-Dual-Domain Consistency Without Paired Data
 
 - Date: 2026-11-08
 - Category: Medical Imaging
 - Source: arXiv - https://arxiv.org/abs/2611.11265v1
 - PDF: https://arxiv.org/pdf/2611.11265v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-08-arxiv-duss_pet_self_supervised_low_dose_pet_reconstruction_using_pseudo_dual_domain_consistency_infographic.json
+
+## 19. Evidence-Grounded Iterative Reasoning for the Diagnosis of Diffuse Cystic Lung Diseases
+
+- Date: 2026-11-08
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2611.12981v1
+- PDF: https://arxiv.org/pdf/2611.12981v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-08-arxiv-evidence_grounded_iterative_reasoning_for_the_diagnosis_of_diffuse_cystic_lung_diseases_infographic.json
+
+## 20. Target Recoverability under Selective Labels: A Failure Mode in ECG-Based Acute Coronary Syndrome Prediction
+
+- Date: 2026-11-08
+- Category: Diagnostics
+- Source: arXiv - https://arxiv.org/abs/2611.11063v1
+- PDF: https://arxiv.org/pdf/2611.11063v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-08-arxiv-target_recoverability_under_selective_labels_a_failure_mode_in_ecg_based_acute_coronary_sy_infographic.json

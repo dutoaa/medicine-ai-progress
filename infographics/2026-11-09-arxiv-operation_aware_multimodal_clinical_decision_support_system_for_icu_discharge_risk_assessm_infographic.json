@@ -1,13 +1,13 @@
 {
-  "key_insight": "An operation-aware multimodal model combining patient data, clinical notes, and hospital workload signals achieved the strongest ICU readmission prediction performance among the evaluated approaches.",
-  "clinical_relevance": "Accounting for hospital workload alongside patient condition may help contextualize ICU discharge risk, but clinical benefit remains unproven.",
+  "key_insight": "Combining clinical data with hospital workload indicators and end-to-end text fine-tuning improved ICU readmission risk prediction, while directly adding raw text embeddings hurt tree-model performance.",
+  "clinical_relevance": "Operation-aware risk estimates could inform ICU discharge review, but clinical benefit and safety remain unproven.",
   "method": [
-    "Combined workload and admission-flow indicators with vital signs, ICD/DRG codes, and clinical notes.",
-    "Used multi-agent extraction and self-evolving retrieval-augmented generation to remove note template noise.",
-    "Fine-tuned a multimodal Transformer with layer-wise freezing and differential learning rates; addressed imbalance through class reweighting and threshold calibration."
+    "Used multi-agent extraction and self-evolving retrieval-augmented generation to reduce template noise in progress notes.",
+    "Integrated notes, vital signs, ICD/DRG codes, admission flow, and departmental workload indicators.",
+    "Applied class reweighting, threshold calibration, and multimodal Transformer fine-tuning with layer-wise freezing and differential learning rates."
   ],
   "evidence_signal": "Across 20 independent runs on 20,000 MIMIC-III ICU stays with approximately 10.5% readmissions, the best model achieved AUROC 0.8288 ± 0.0110, PR-AUC 0.4373 ± 0.0310, and F1 0.4757 ± 0.0196.",
-  "watch_item": "Retrospective MIMIC-III results require external and prospective validation before use in discharge decisions.",
+  "watch_item": "The abstract reports no external or prospective validation; generalizability and effects on discharge safety and alarm burden need evaluation.",
   "hashtags": [
     "#ClinicalAI",
     "#ICUReadmission",
@@ -21,6 +21,6 @@
   "paper_title": "Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment",
   "paper_date": "2026-11-09",
   "paper_category": "Health Systems",
-  "generated_at": "2026-11-11T14:49:19",
+  "generated_at": "2026-11-12T15:40:43",
   "generator": "openai"
 }

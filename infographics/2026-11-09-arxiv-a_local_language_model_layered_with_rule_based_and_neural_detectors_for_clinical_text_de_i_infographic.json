@@ -1,13 +1,13 @@
 {
-  "key_insight": "A locally hosted LLM layered with other detectors offered recall-first and precision-first options for identifying protected health information (PHI) without sending text off-site.",
-  "clinical_relevance": "The toolkit could support privacy-preserving reuse of clinical text, but its missed-PHI and over-redaction trade-offs require local validation.",
+  "key_insight": "A local LLM layered with other detectors offered two PHI-detection trade-offs: higher recall or higher precision, depending on configuration.",
+  "clinical_relevance": "The open-source toolkit could support clinical text de-identification without sending text off-site, but missed PHI remains a privacy risk.",
   "method": [
-    "Combined rule-based detectors, clinical named-entity recognition (NER), and a local 26B mixture-of-experts LLM.",
-    "Evaluated recall-first and precision-first configurations against five de-identification tools.",
-    "Fixed configurations on tuning halves and evaluated reporting halves using paired patient-level bootstrap intervals."
+    "Combined rule-based patterns, clinical NER and a local 26B mixture-of-experts LLM.",
+    "Evaluated recall-first and precision-first configurations fixed before testing.",
+    "Failed closed on any detector error."
   ],
-  "evidence_signal": "Across nursing notes (889 PHI spans) and semi-synthetic discharge summaries (29,023 spans), recall-first sensitivity reached 98.9% and 95.3%, respectively; all four prespecified comparisons held.",
-  "watch_item": "The discharge-summary advantage over Stanford/Penn arose almost entirely from generated untyped names, limiting inference about performance on real-world clinical names.",
+  "evidence_signal": "Prespecified testing included nursing notes (889 PHI spans), semi-synthetic discharge summaries (29,023 spans) and synthetic queries; nursing-note recall reached 98.9%, 2.8 percentage points above Stanford/Penn, with lower precision.",
+  "watch_item": "Discharge-summary gains came almost entirely from generated untyped names, limiting conclusions about performance on real-world identifiers.",
   "hashtags": [
     "#ClinicalNLP",
     "#DeIdentification",
@@ -21,6 +21,6 @@
   "paper_title": "A local language model layered with rule-based and neural detectors for clinical text de-identification: an open-source toolkit and evaluation",
   "paper_date": "2026-11-09",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-11-11T14:49:36",
+  "generated_at": "2026-11-12T15:41:01",
   "generator": "openai"
 }
