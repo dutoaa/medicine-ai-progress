@@ -25,16 +25,17 @@
         "url": "https://arxiv.org/pdf/2611.16393v1"
       }
     ],
-    "score": 96,
+    "score": 91,
     "infographic": {
-      "key_insight": "TransXplainRRG combines chest X-rays and patient history to generate reports, with expert-guided refinement aimed at improving clinical consistency and explainability.",
-      "clinical_relevance": "The framework could support radiology reporting workflows, but its suitability for routine clinical use remains unestablished.",
+      "key_insight": "TransXplainRRG combines chest X-ray analysis, patient history, and expert-guided report refinement, outperforming MAIRA-2 on GREEN clinical-consistency scores in the reported evaluation.",
+      "clinical_relevance": "The framework aims to make automated chest X-ray reports more clinically relevant and interpretable, but its suitability for routine clinical use remains unestablished.",
       "method": [
-        "Encode chest X-rays with a Swin Transformer and patient history with a transformer-based text encoder.",
-        "Use an expert-guided “inside-out” approach and extract abnormal findings to refine reports."
+        "Uses a Swin Transformer vision encoder and a transformer-based text encoder incorporating patient medical history.",
+        "Applies an expert-guided “inside-out” approach and abnormal-finding extraction to refine reports.",
+        "Combines transformer encoders with LLMs for report generation and refinement."
       ],
-      "evidence_signal": "Trained and tested on MIMIC-CXR and evaluated on unseen IU X-Ray data, it achieved GREEN scores of 0.327 and 0.605, respectively—above MAIRA-2 under the same evaluation setting—with preliminary radiologist review of 100 generated reports.",
-      "watch_item": "Preliminary review of 100 reports does not establish clinical safety or workflow benefit; prospective validation is still needed.",
+      "evidence_signal": "Trained and tested on MIMIC-CXR and evaluated on unseen IU X-Ray data, it achieved GREEN scores of 0.327 and 0.605, respectively, with preliminary radiologist evaluation of 100 generated reports.",
+      "watch_item": "Preliminary expert review and benchmark performance do not establish prospective clinical safety or workflow benefit.",
       "hashtags": [
         "#ClinicalNLP",
         "#RadiologyAI",
@@ -48,7 +49,7 @@
       "paper_title": "TransXplainRRG: A Radiologist-Evaluated LVLM for Chest Radiograph Report Generation",
       "paper_date": "2026-11-12",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:12",
+      "generated_at": "2026-11-14T13:53:10",
       "generator": "openai"
     }
   },
@@ -79,20 +80,20 @@
         "url": "https://arxiv.org/pdf/2611.15710v1"
       }
     ],
-    "score": 96,
+    "score": 91,
     "infographic": {
-      "key_insight": "Curiosity-0826-4B broadens zero-shot medical event prediction to pediatric populations and adult mortality, while reducing laboratory prediction error versus its predecessor.",
-      "clinical_relevance": "A shared model could support multiple clinical and operational prediction tasks without separate task-specific training, but clinical utility remains unproven.",
+      "key_insight": "Curiosity-0826-4B extends zero-shot medical event prediction to pediatric populations and adult mortality, while reducing laboratory prediction error by 18–46% versus its predecessor.",
+      "clinical_relevance": "A shared model could support prediction across ages and outcomes without separate task-specific training, but clinical utility remains unproven.",
       "method": [
-        "Trained on Epic Cosmos to simulate patient timelines and predict future events.",
-        "Expanded patient coverage and clinical event representations, including documented death.",
-        "Used scaling-law-guided pretraining and context extension to reach 4.3B parameters and a 16K context window."
+        "Generative foundation model trained on Epic Cosmos to simulate patient timelines.",
+        "Expanded clinical event representations, including documented death.",
+        "Scaled to 4.3B parameters and a 16K context window using scaling-law-guided pretraining."
       ],
-      "evidence_signal": "Evaluations reported 18–46% lower laboratory MAE than Curiosity-0226-1B, pediatric disease-event AUROCs of 0.742–0.852, and adult mortality AUROCs of 0.821–0.942.",
-      "watch_item": "Deployment requires validation of local calibration, subgroup performance, generalization to new settings, and prospective clinical utility.",
+      "evidence_signal": "In evaluations covering ages 2–17, AUROCs were 0.742–0.785 for new asthma diagnosis, 0.829–0.852 for asthma exacerbation, and 0.820–0.847 for sickle cell crisis; adult mortality AUROCs were 0.821–0.942.",
+      "watch_item": "Local calibration, subgroup performance, generalization, and prospective clinical utility require further validation before deployment.",
       "hashtags": [
         "#MedicalAI",
-        "#FoundationModels",
+        "#GenerativeAI",
         "#PredictiveModeling",
         "#PediatricResearch",
         "#ClinicalValidation"
@@ -103,7 +104,7 @@
       "paper_title": "Curiosity-0826-4B: Generative Medical Event Sequence Modeling Across Pediatric and Adult Populations",
       "paper_date": "2026-11-11",
       "paper_category": "Diagnostics",
-      "generated_at": "2026-11-13T15:00:15",
+      "generated_at": "2026-11-14T13:53:12",
       "generator": "openai"
     }
   },
@@ -133,17 +134,17 @@
         "url": "https://arxiv.org/pdf/2611.17053v1"
       }
     ],
-    "score": 94,
+    "score": 89,
     "infographic": {
-      "key_insight": "tEHR uses pretrained language semantics to encode longitudinal health records, with clinical descriptions and numerical values contributing to prediction performance.",
-      "clinical_relevance": "This approach could support EHR-based risk prediction, but the abstract does not establish readiness for clinical use.",
+      "key_insight": "tEHR uses pretrained language semantics to model longitudinal EHRs, with clinical descriptions and two-stage adaptation supporting prediction performance.",
+      "clinical_relevance": "This approach could support risk prediction from structured patient histories, but the reported results do not establish clinical utility.",
       "method": [
         "Represent structured EHR events using natural-language descriptions.",
-        "Continue pretraining a causal language model on longitudinal EHR text.",
-        "Use LoRA for task-specific discriminative fine-tuning."
+        "Continue pretraining a causal language model on EHR text streams.",
+        "Apply task-specific discriminative fine-tuning with LoRA to encode longitudinal patient histories."
       ],
-      "evidence_signal": "Evaluation covered four MIMIC-IV prediction tasks and CPRD pancreatic cancer prediction at 1–12-month horizons; Mistral-7B-v0.3 achieved the strongest overall performance among the tested tEHR backbones.",
-      "watch_item": "The abstract provides no numerical performance estimates or prospective clinical evaluation, limiting assessment of clinical utility.",
+      "evidence_signal": "Evaluation covered four MIMIC-IV prediction tasks and CPRD pancreatic cancer prediction at 1–12-month horizons; the Mistral-7B-v0.3 backbone performed strongest overall.",
+      "watch_item": "The abstract does not report absolute performance, calibration, or prospective validation, limiting assessment of deployment readiness.",
       "hashtags": [
         "#ClinicalNLP",
         "#EHR",
@@ -157,7 +158,7 @@
       "paper_title": "Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks",
       "paper_date": "2026-11-12",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:17",
+      "generated_at": "2026-11-14T13:53:14",
       "generator": "openai"
     }
   },
@@ -186,22 +187,22 @@
         "url": "https://arxiv.org/pdf/2611.16460v1"
       }
     ],
-    "score": 94,
+    "score": 89,
     "infographic": {
-      "key_insight": "Synthetic clinical data generated by a fine-tuned Phi-2 model improved an LSTM classifier’s reported accuracy from 89.0% to 93.7%.",
-      "clinical_relevance": "This approach could support predictive modeling for remotely monitored vital signs when labeled clinical datasets are small or imbalanced.",
+      "key_insight": "Synthetic clinical data generated by a fine-tuned Phi-2 model increased an LSTM classifier’s reported accuracy from 89.0% to 93.7%.",
+      "clinical_relevance": "This approach could support predictive modeling for remote vital-sign monitoring when labeled clinical datasets are small or imbalanced.",
       "method": [
-        "Adapted Microsoft Phi-2 to medical content using MedQuad and supervised QLoRA fine-tuning.",
-        "Used few-shot prompting to generate structured synthetic vital-sign records and physiological/pathological labels.",
-        "Augmented a small dataset to train an LSTM predictive model."
+        "Adapted Microsoft Phi-2 to the medical domain using MedQuAD and supervised QLoRA fine-tuning.",
+        "Used few-shot prompting to generate structured synthetic vital-sign records with physiological and pathological labels.",
+        "Augmented a small vital-sign dataset and evaluated an LSTM predictive model."
       ],
-      "evidence_signal": "The abstract reports improved ROUGE and BERTScore versus pretrained Phi-2, alongside higher LSTM accuracy, precision, recall, and F1-score after augmentation.",
-      "watch_item": "The abstract does not report dataset size or external validation, leaving generalizability to real-world patient populations uncertain.",
+      "evidence_signal": "The abstract reports improved ROUGE and BERTScore versus pretrained Phi-2, alongside higher downstream accuracy, precision, recall, and F1-score after augmentation.",
+      "watch_item": "The abstract does not specify dataset size or external validation, leaving generalizability to real-world patient populations uncertain.",
       "hashtags": [
         "#ClinicalNLP",
-        "#SyntheticClinicalData",
+        "#SyntheticData",
         "#SmallLanguageModels",
-        "#RemotePatientMonitoring",
+        "#RemoteMonitoring",
         "#HealthcareAI"
       ],
       "model": "gpt-6.1-sol",
@@ -210,7 +211,7 @@
       "paper_title": "Fine-Tuned Small Language Model for Synthetic Clinical Data Generation and Predictive Healthcare Analytics",
       "paper_date": "2026-11-12",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:20",
+      "generated_at": "2026-11-14T13:53:17",
       "generator": "openai"
     }
   },
@@ -239,17 +240,17 @@
         "url": "https://arxiv.org/pdf/2611.15094v1"
       }
     ],
-    "score": 93,
+    "score": 88,
     "infographic": {
       "key_insight": "Neuro-VL is a specialized vision-language model that interprets complete neuroimaging examinations and discusses findings in natural language.",
-      "clinical_relevance": "Its capabilities could support radiology reporting and longitudinal disease assessment, but the abstract does not establish improved patient outcomes.",
+      "clinical_relevance": "Its reported capabilities could support radiology reporting and longitudinal disease assessment, though clinical benefit remains to be established.",
       "method": [
         "Trained on nearly one million neuroimaging studies from routine clinical care.",
-        "Interprets examinations, describes abnormalities and generates radiology reports.",
-        "Compares serial examinations and responds to questions about findings."
+        "Evaluated on abnormality diagnosis, localization, description and report generation.",
+        "Tested on serial examination comparisons and resistance to misleading clinical assumptions."
       ],
-      "evidence_signal": "Across internal and international datasets, Neuro-VL outperformed general-purpose and specialized medical models on reported imaging tasks and more reliably resisted misleading clinical assumptions.",
-      "watch_item": "Prospective clinical validation is needed to establish safety and reliability before routine deployment.",
+      "evidence_signal": "Across internal and international datasets, the abstract reports stronger performance than general-purpose and specialized medical models, but provides no numerical results.",
+      "watch_item": "Prospective validation is needed to establish safety and effectiveness in clinical workflows.",
       "hashtags": [
         "#MedicalAI",
         "#Neuroimaging",
@@ -263,7 +264,7 @@
       "paper_title": "A frontier machine intelligence for human neuroimaging",
       "paper_date": "2026-11-11",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-13T15:00:22",
+      "generated_at": "2026-11-14T13:53:19",
       "generator": "openai"
     }
   },
@@ -293,16 +294,16 @@
         "url": "https://arxiv.org/pdf/2611.17059v1"
       }
     ],
-    "score": 91,
+    "score": 86,
     "infographic": {
-      "key_insight": "Capacity-aware online conformal risk control (CA-OCRC) adapts prediction sets when delayed feedback and limited tracking capacity would otherwise undermine long-term risk guarantees.",
-      "clinical_relevance": "For medical imaging AI, this approach could support uncertainty quantification when outcome feedback arrives late and not every prediction can be tracked.",
+      "key_insight": "Capacity-aware online conformal risk control (CA-OCRC) adapts prediction sets when feedback is delayed or lost because tracking resources are limited.",
+      "clinical_relevance": "For medical imaging AI, this approach could support uncertainty quantification when outcome feedback arrives late and only some predictions can be tracked.",
       "method": [
         "Randomly samples a proxy delay to decide whether and how long to track each prediction.",
-        "Uses inverse probability weighting to account for feedback lost through delays or capacity limits.",
-        "Optimizes tracking policies using risk bounds that balance feedback collection against capacity saturation."
+        "Uses inverse probability weighting to compensate for missing feedback.",
+        "Optimizes tracking policies using risk bounds for arbitrary and stochastic delays."
       ],
-      "evidence_signal": "The abstract reports theoretical risk bounds and experiments spanning medical imaging, natural language processing, computer vision, and wireless communications, but provides no numerical results.",
+      "evidence_signal": "The abstract reports experiments in medical imaging, natural language processing, computer vision, and wireless communications, but provides no dataset details or numerical results.",
       "watch_item": "Long-term risk guarantees do not establish per-patient safety; clinical deployment would require validation under local feedback delays and tracking constraints.",
       "hashtags": [
         "#MedicalAI",
@@ -317,167 +318,7 @@
       "paper_title": "Capacity-Constrained Delayed Feedback for Online Conformal Risk Control",
       "paper_date": "2026-11-12",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-13T15:00:25",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-09-medrxiv-redefining_synovial_pathotypes_in_psoriatic_arthritis_through_multi_modal_histology_and_ma",
-    "doi": "10.64898/2026.11.06.26367442",
-    "date": "2026-11-09",
-    "title": "Redefining Synovial Pathotypes in Psoriatic Arthritis through Multi-Modal Histology and Machine Learning (The PSYNOVIUM Study)",
-    "authors": "Hum, R. M.; Christofi, M.; Smith, S. L.; Tan, Y.; Shukla, R.; Marshall, L. M.; Smith, M.; Williams, A.; Orozco, G.; Viatte, S.; Buch, M.; Barton, A.; Ho, P.; Martin, P.",
-    "abstract": "BackgroundSynovial inflammation in psoriatic arthritis (PsA) lacks a validated histological classification framework. Current approaches apply rheumatoid arthritis (RA) synovial pathotypes to PsA, which overlooks immunobiological differences between the diseases and limits the predictive power of tissue stratification. We aimed to define data-driven, PsA-specific synovial pathotypes to facilitate tissue-driven precision medicine. MethodsIn this cross-sectional study, ultrasound-guided synovial biopsies were obtained from 61 patients with PsA (n=22), seropositive RA (n=23), seronegative RA (n=10), and other inflammatory arthritides (n=6). Sections underwent multi-modal staining, including H&E, picrosirius red, and immunohisto-chemistry for CD3, CD20, CD68, CD138, and CD31. Whole-slide digital image analysis and automated pixel classifiers quantified cellular and stromal metrics. Unsupervised hierarchical clustering identified intrinsic PsA pathotypes, which were correlated with clinical disease activity, radiographic osteoarthritis (OA), and longitudinal treatment responses. FindingsWhile a subset of PsA patients shared an inflammatory signature with seropositive RA, unsupervised clustering of the PsA cohort revealed three distinct, novel pathotypes: Dense Myeloid (macrophage-driven), Fibro-Stromal (fibrosis and pauci-immune), and Angio-Lymphoid (hypervascular with significant CD138+ plasma cell infiltration). Pathotypes were independent of treatment and concurrent radiographic knee OA. The Fibro-Stromal pathotype correlated with significantly higher cutaneous psoriasis severity. Longitudinally, patients with the Fibro-Stromal pathotype exhibited a trend toward lower treatment response (44%) following standard interventions (methotrexate or TNF inhibitors) compared to the Dense Myeloid (50%) and Angio-Lymphoid (80%) pathotypes. InterpretationWe present the first computationally derived synovial pathotypes specific to PsA, revealing distinct plasma cell and fibrotic architectures not captured by RA-centric models. To enable clinical translation, we distilled these findings into a pragmatic, four-marker diagnostic decision tree (CD31, CD68, CD138, and picrosirius red) designed for routine histopathology workflows, providing a staging ground for biomarker-stratified clinical trials in PsA. FundingFunding from the NIHR Biomedical Research Centre: Manchester, Arthritis UK, the Wellcome Trust, Brit-PACT, the National Psoriasis Foundation, and the Medical Research Council. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSThe potential clinical utility of tissue-based patient stratification is well established in rheumatoid arthritis (RA), where baseline synovial pathotypes (lympho-myeloid, diffuse-myeloid, and pauciimmune) have guided targeted biologic therapy in landmark precision medicine trials. However, psoriatic arthritis (PsA) exhibits a fundamentally distinct synovial microenvironment, characterised by unique vascular architecture, altered stromal fibroblast phenotypes, and distinct immune infiltrates intertwined with the IL-23/IL-17 cytokine axis. Consequently, attempting to classify PsA synovial tissue using established RA-derived scoring systems risks misrepresenting intrinsic disease biology. There is currently no validated, disease-specific histological classification system for PsA, which forces therapeutic decision-making to rely on an empirical, trial-and-error approach rather than underlying target tissue pathobiology. Added value of this studyTo our knowledge, this is the first study to define data-driven, computationally derived synovial pathotypes entirely specific to PsA. By leveraging multi-modal digital pathology and unsupervised machine learning, we deconstructed the PsA synovium into three biologically distinct pathotypes: Dense Myeloid, Fibro-Stromal, and Angio-Lymphoid. We demonstrated that the highly inflammatory PsA microenvironment is distinctly driven by CD138+ plasma cells rather than the CD20+ B cells typically observed in RA. Furthermore, we identified a striking tissue-level divergence: patients with the highly fibrotic, pauci-immune Fibro-Stromal pathotype exhibited the most severe cutaneous psoriasis and demonstrated a trend toward higher failure rates on standard therapies, independent of concurrent osteoarthritis. Crucially, we translated these high-dimensional computational findings into a pragmatic, four-marker diagnostic decision tree (incorporating CD31, CD68, CD138, and picrosirius red). Implications of all the available evidenceThis study establishes that PsA synovial pathology requires a dedicated, disease-specific classification framework. The proposed diagnostic decision tree can be integrated into routine clinical histopathology workflows without the immediate need for advanced spatial or single-cell transcriptomics. Furthermore, the correlation between the Fibro-Stromal pathotype, severe skin disease, and poor joint response to standard therapies provides a biological rationale for stratifying this specific subgroup towards early IL-17 or IL-23 inhibitor intervention alongside conventional synthetic disease-modifying antirheumatic drugs. Ultimately, these novel PsA pathotypes provide the vital staging ground required to design and execute biomarker-stratified, tissue-driven clinical trials, paving the way for precision medicine in PsA.",
-    "category": "Biomedical AI",
-    "source": "medRxiv",
-    "published": "2026-11-09",
-    "updated": "2026-11-09",
-    "primary_category": "rheumatology",
-    "categories": [
-      "rheumatology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367442v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367442v1.full.pdf"
-      }
-    ],
-    "score": 91,
-    "infographic": {
-      "key_insight": "Computational analysis identified three PsA-specific synovial pathotypes: Dense Myeloid, Fibro-Stromal, and Angio-Lymphoid.",
-      "clinical_relevance": "These tissue patterns could support future patient stratification, but their ability to guide treatment remains unvalidated.",
-      "method": [
-        "Ultrasound-guided synovial biopsies from 61 patients, including 22 with PsA.",
-        "Multi-modal staining, whole-slide image analysis, and automated pixel classifiers quantified cellular and stromal features.",
-        "Unsupervised hierarchical clustering identified PsA pathotypes, which were compared with clinical features and treatment responses."
-      ],
-      "evidence_signal": "In the 22-patient PsA cohort, reported treatment response rates were 44% for Fibro-Stromal, 50% for Dense Myeloid, and 80% for Angio-Lymphoid—a descriptive trend rather than established predictive performance.",
-      "watch_item": "The small PsA cohort and lack of reported external validation limit confidence in the proposed four-marker decision tree.",
-      "hashtags": [
-        "#PsoriaticArthritis",
-        "#DigitalPathology",
-        "#MachineLearning",
-        "#SynovialBiology",
-        "#PrecisionMedicine"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-09-medrxiv-redefining_synovial_pathotypes_in_psoriatic_arthritis_through_multi_modal_histology_and_ma",
-      "paper_title": "Redefining Synovial Pathotypes in Psoriatic Arthritis through Multi-Modal Histology and Machine Learning (The PSYNOVIUM Study)",
-      "paper_date": "2026-11-09",
-      "paper_category": "Biomedical AI",
-      "generated_at": "2026-11-13T15:00:27",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-11-arxiv-kqml_liver_interpretable_hybrid_quantum_machine_learning_with_kolmogorov_arnold_networks_f",
-    "arxiv_id": "2611.15241v1",
-    "date": "2026-11-11",
-    "title": "KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification",
-    "authors": "Nhat-Long Nguyen, Viet-Loi Dinh, Trong-Nghia Pham",
-    "abstract": "Liver disease remains a major global health concern, highlighting the need for reliable and accessible early detection methods. Although recent advances in machine learning, deep learning and quantum machine learning (QML) have introduced promising diagnostic tools, many approaches suffer from limited interpretability and inflated performance caused by data leakage or overly simplistic evaluation protocols. These constraints reduce their reliability in real-world clinical practice. This paper proposes KQML-Liver, a hybrid framework that integrates QML with Kolmogorov-Arnold Networks (KANs) to enhance predictive performance and interpretability. The architecture combines parameterized quantum circuits for expressive feature representation with KAN-based functional mappings that capture nonlinear relationships in an interpretable manner. Evaluated on the Indian Liver Patient Dataset (ILPD) under a rigorous preprocessing protocol preventing data leakage, the proposed model achieves 82% classification accuracy and 100% recall, detecting all positive cases, outperforming existing baselines while providing improved transparency in clinical predictions. These results suggest that hybrid KAN-quantum architectures offer a promising direction for interpretable AI-assisted medical diagnosis.",
-    "category": "Diagnostics",
-    "source": "arXiv",
-    "published": "2026-11-11T09:31:35Z",
-    "updated": "2026-11-11T09:31:35Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.15241v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.15241v1"
-      }
-    ],
-    "score": 89,
-    "infographic": {
-      "key_insight": "KQML-Liver combines quantum machine learning with Kolmogorov-Arnold Networks, reporting 82% accuracy and 100% recall for liver disease classification.",
-      "clinical_relevance": "The approach could support more interpretable liver disease detection, but clinical usefulness remains unproven.",
-      "method": [
-        "Parameterized quantum circuits represent input features.",
-        "Kolmogorov-Arnold Networks model nonlinear relationships.",
-        "Leakage-prevention preprocessing supports evaluation."
-      ],
-      "evidence_signal": "On the Indian Liver Patient Dataset, the authors report 82% accuracy and 100% recall, outperforming evaluated baselines under a protocol designed to prevent data leakage.",
-      "watch_item": "The abstract reports no external validation or specificity, leaving generalizability and false-positive burden uncertain.",
-      "hashtags": [
-        "#LiverDisease",
-        "#QuantumMachineLearning",
-        "#KolmogorovArnoldNetworks",
-        "#InterpretableAI",
-        "#MedicalAI"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-11-arxiv-kqml_liver_interpretable_hybrid_quantum_machine_learning_with_kolmogorov_arnold_networks_f",
-      "paper_title": "KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification",
-      "paper_date": "2026-11-11",
-      "paper_category": "Diagnostics",
-      "generated_at": "2026-11-13T15:00:29",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-11-arxiv-constructing_and_validating_memorisation_audits_for_ehr_foundation_models",
-    "arxiv_id": "2611.15578v1",
-    "date": "2026-11-11",
-    "title": "Constructing and Validating Memorisation Audits for EHR Foundation Models",
-    "authors": "Inigo Stibbe, Joshua Placidi, Padmanabhan Ramnarayan, A. Aldo Faisal",
-    "abstract": "Autoregressive electronic health record (EHR) foundation models may disclose training information at inference, yet clinical predictability makes patient-specific memorisation difficult to distinguish from generalisation. We evaluate fixed-window token reconstruction, sensitive-attribute disclosure, and random patient-level canaries in GPT-2-style models trained on MIMIC-IV, across early, best-validation, and final checkpoints. Reconstruction improves with additional context, but training--held-out differences remain small. Trajectory-unique prompts containing limited clinical information produce no excess sensitive disclosure for training patients. In a matched model with random binary patient-level canaries, training-patient label-recovery AUROC increases from 0.512 to 0.549 while held-out recovery remains at chance. An overfit 1,000-patient positive control achieves near-perfect recovery, confirming sensitivity to strong memorisation. These results reveal weak cohort-level memorisation but no reliable patient-level disclosure under the evaluated attacks. They motivate clinically grounded inference-time audits that can detect patient-specific memorisation in existing models without retraining with canaries.",
-    "category": "Clinical NLP",
-    "source": "arXiv",
-    "published": "2026-11-11T15:02:19Z",
-    "updated": "2026-11-11T15:02:19Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.15578v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.15578v1"
-      }
-    ],
-    "score": 88,
-    "infographic": {
-      "key_insight": "EHR foundation models showed weak cohort-level memorisation but no reliable patient-level disclosure under the evaluated attacks.",
-      "clinical_relevance": "Privacy audits must distinguish patient-specific memorisation from predictable clinical patterns when assessing EHR model disclosure risks.",
-      "method": [
-        "Evaluated GPT-2-style models trained on MIMIC-IV at early, best-validation, and final checkpoints.",
-        "Tested fixed-window token reconstruction, sensitive-attribute disclosure, and random patient-level canary recovery.",
-        "Used an overfit 1,000-patient model as a positive control for strong memorisation."
-      ],
-      "evidence_signal": "Training-patient canary recovery AUROC rose from 0.512 to 0.549 while held-out recovery stayed at chance; the overfit positive control achieved near-perfect recovery.",
-      "watch_item": "These findings do not establish privacy safety beyond the evaluated models, prompts, and attacks.",
-      "hashtags": [
-        "#ClinicalNLP",
-        "#EHR",
-        "#FoundationModels",
-        "#AIPrivacy",
-        "#MemorisationAudits"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-11-arxiv-constructing_and_validating_memorisation_audits_for_ehr_foundation_models",
-      "paper_title": "Constructing and Validating Memorisation Audits for EHR Foundation Models",
-      "paper_date": "2026-11-11",
-      "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:31",
+      "generated_at": "2026-11-14T13:53:22",
       "generator": "openai"
     }
   },
@@ -509,14 +350,14 @@
     "score": 86,
     "infographic": {
       "key_insight": "LLMs lose diagnostic accuracy when they must gather clinical information interactively rather than receive a complete case upfront.",
-      "clinical_relevance": "Evaluating how models obtain relevant information—not just interpret it—is important before considering their use in diagnostic workflows.",
+      "clinical_relevance": "Evaluating how models ask questions—not just how they interpret supplied evidence—is important before considering them for diagnostic workflows.",
       "method": [
-        "Introduced Hx2Dx ARENA using 1,000 NEJM clinical cases.",
-        "Simulated encounters spanning history taking, physical examination, and diagnostic workup.",
-        "Evaluated open- and closed-source LLMs across configurations and compared interactive with static performance."
+        "Introduced Hx2Dx ARENA with 1,000 simulated clinical encounters based on NEJM cases.",
+        "Modeled history taking, physical examination, and diagnostic workup.",
+        "Compared open- and closed-source LLMs across configurations and interactive versus static evaluations."
       ],
-      "evidence_signal": "Every evaluated model performed worse interactively than with the full case provided upfront; more targeted questioning was associated with better diagnostic performance.",
-      "watch_item": "Results come from simulated encounters and do not establish safety or effectiveness in real-world patient care.",
+      "evidence_signal": "Every evaluated model performed worse interactively than with the full case upfront, while more targeted questioning and a more complete clinical picture were associated with better diagnosis.",
+      "watch_item": "Simulated-case performance does not establish real-world clinical safety, and limitations in hypothesis-driven information gathering remain a concern.",
       "hashtags": [
         "#ClinicalNLP",
         "#MedicalAI",
@@ -530,7 +371,220 @@
       "paper_title": "Hx2Dx: From Anamnesis to Diagnosis - A Multimodal Arena for Conversational Clinical Reasoning in LLMs",
       "paper_date": "2026-11-10",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:36",
+      "generated_at": "2026-11-14T13:53:24",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-09-medrxiv-redefining_synovial_pathotypes_in_psoriatic_arthritis_through_multi_modal_histology_and_ma",
+    "doi": "10.64898/2026.11.06.26367442",
+    "date": "2026-11-09",
+    "title": "Redefining Synovial Pathotypes in Psoriatic Arthritis through Multi-Modal Histology and Machine Learning (The PSYNOVIUM Study)",
+    "authors": "Hum, R. M.; Christofi, M.; Smith, S. L.; Tan, Y.; Shukla, R.; Marshall, L. M.; Smith, M.; Williams, A.; Orozco, G.; Viatte, S.; Buch, M.; Barton, A.; Ho, P.; Martin, P.",
+    "abstract": "BackgroundSynovial inflammation in psoriatic arthritis (PsA) lacks a validated histological classification framework. Current approaches apply rheumatoid arthritis (RA) synovial pathotypes to PsA, which overlooks immunobiological differences between the diseases and limits the predictive power of tissue stratification. We aimed to define data-driven, PsA-specific synovial pathotypes to facilitate tissue-driven precision medicine. MethodsIn this cross-sectional study, ultrasound-guided synovial biopsies were obtained from 61 patients with PsA (n=22), seropositive RA (n=23), seronegative RA (n=10), and other inflammatory arthritides (n=6). Sections underwent multi-modal staining, including H&E, picrosirius red, and immunohisto-chemistry for CD3, CD20, CD68, CD138, and CD31. Whole-slide digital image analysis and automated pixel classifiers quantified cellular and stromal metrics. Unsupervised hierarchical clustering identified intrinsic PsA pathotypes, which were correlated with clinical disease activity, radiographic osteoarthritis (OA), and longitudinal treatment responses. FindingsWhile a subset of PsA patients shared an inflammatory signature with seropositive RA, unsupervised clustering of the PsA cohort revealed three distinct, novel pathotypes: Dense Myeloid (macrophage-driven), Fibro-Stromal (fibrosis and pauci-immune), and Angio-Lymphoid (hypervascular with significant CD138+ plasma cell infiltration). Pathotypes were independent of treatment and concurrent radiographic knee OA. The Fibro-Stromal pathotype correlated with significantly higher cutaneous psoriasis severity. Longitudinally, patients with the Fibro-Stromal pathotype exhibited a trend toward lower treatment response (44%) following standard interventions (methotrexate or TNF inhibitors) compared to the Dense Myeloid (50%) and Angio-Lymphoid (80%) pathotypes. InterpretationWe present the first computationally derived synovial pathotypes specific to PsA, revealing distinct plasma cell and fibrotic architectures not captured by RA-centric models. To enable clinical translation, we distilled these findings into a pragmatic, four-marker diagnostic decision tree (CD31, CD68, CD138, and picrosirius red) designed for routine histopathology workflows, providing a staging ground for biomarker-stratified clinical trials in PsA. FundingFunding from the NIHR Biomedical Research Centre: Manchester, Arthritis UK, the Wellcome Trust, Brit-PACT, the National Psoriasis Foundation, and the Medical Research Council. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSThe potential clinical utility of tissue-based patient stratification is well established in rheumatoid arthritis (RA), where baseline synovial pathotypes (lympho-myeloid, diffuse-myeloid, and pauciimmune) have guided targeted biologic therapy in landmark precision medicine trials. However, psoriatic arthritis (PsA) exhibits a fundamentally distinct synovial microenvironment, characterised by unique vascular architecture, altered stromal fibroblast phenotypes, and distinct immune infiltrates intertwined with the IL-23/IL-17 cytokine axis. Consequently, attempting to classify PsA synovial tissue using established RA-derived scoring systems risks misrepresenting intrinsic disease biology. There is currently no validated, disease-specific histological classification system for PsA, which forces therapeutic decision-making to rely on an empirical, trial-and-error approach rather than underlying target tissue pathobiology. Added value of this studyTo our knowledge, this is the first study to define data-driven, computationally derived synovial pathotypes entirely specific to PsA. By leveraging multi-modal digital pathology and unsupervised machine learning, we deconstructed the PsA synovium into three biologically distinct pathotypes: Dense Myeloid, Fibro-Stromal, and Angio-Lymphoid. We demonstrated that the highly inflammatory PsA microenvironment is distinctly driven by CD138+ plasma cells rather than the CD20+ B cells typically observed in RA. Furthermore, we identified a striking tissue-level divergence: patients with the highly fibrotic, pauci-immune Fibro-Stromal pathotype exhibited the most severe cutaneous psoriasis and demonstrated a trend toward higher failure rates on standard therapies, independent of concurrent osteoarthritis. Crucially, we translated these high-dimensional computational findings into a pragmatic, four-marker diagnostic decision tree (incorporating CD31, CD68, CD138, and picrosirius red). Implications of all the available evidenceThis study establishes that PsA synovial pathology requires a dedicated, disease-specific classification framework. The proposed diagnostic decision tree can be integrated into routine clinical histopathology workflows without the immediate need for advanced spatial or single-cell transcriptomics. Furthermore, the correlation between the Fibro-Stromal pathotype, severe skin disease, and poor joint response to standard therapies provides a biological rationale for stratifying this specific subgroup towards early IL-17 or IL-23 inhibitor intervention alongside conventional synthetic disease-modifying antirheumatic drugs. Ultimately, these novel PsA pathotypes provide the vital staging ground required to design and execute biomarker-stratified, tissue-driven clinical trials, paving the way for precision medicine in PsA.",
+    "category": "Biomedical AI",
+    "source": "medRxiv",
+    "published": "2026-11-09",
+    "updated": "2026-11-09",
+    "primary_category": "rheumatology",
+    "categories": [
+      "rheumatology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367442v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367442v1.full.pdf"
+      }
+    ],
+    "score": 86,
+    "infographic": {
+      "key_insight": "Computational analysis identified three PsA-specific synovial pathotypes: Dense Myeloid, Fibro-Stromal, and Angio-Lymphoid.",
+      "clinical_relevance": "These tissue patterns may support future patient stratification, but their value for guiding treatment remains unvalidated.",
+      "method": [
+        "Analyzed ultrasound-guided synovial biopsies from 61 patients, including 22 with PsA.",
+        "Quantified cellular and stromal features using multi-modal staining, digital pathology, and automated pixel classifiers.",
+        "Applied unsupervised hierarchical clustering to identify PsA pathotypes and examine clinical associations."
+      ],
+      "evidence_signal": "In the 22-patient PsA cohort, reported treatment response rates were 44% for Fibro-Stromal, 50% for Dense Myeloid, and 80% for Angio-Lymphoid, described as a trend rather than a confirmed predictive difference.",
+      "watch_item": "The small PsA cohort and observational design require independent prospective validation before pathotypes or the proposed four-marker decision tree can guide care.",
+      "hashtags": [
+        "#PsoriaticArthritis",
+        "#DigitalPathology",
+        "#MachineLearning",
+        "#SynovialBiology",
+        "#PrecisionMedicine"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-09-medrxiv-redefining_synovial_pathotypes_in_psoriatic_arthritis_through_multi_modal_histology_and_ma",
+      "paper_title": "Redefining Synovial Pathotypes in Psoriatic Arthritis through Multi-Modal Histology and Machine Learning (The PSYNOVIUM Study)",
+      "paper_date": "2026-11-09",
+      "paper_category": "Biomedical AI",
+      "generated_at": "2026-11-14T13:53:27",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-11-arxiv-kqml_liver_interpretable_hybrid_quantum_machine_learning_with_kolmogorov_arnold_networks_f",
+    "arxiv_id": "2611.15241v1",
+    "date": "2026-11-11",
+    "title": "KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification",
+    "authors": "Nhat-Long Nguyen, Viet-Loi Dinh, Trong-Nghia Pham",
+    "abstract": "Liver disease remains a major global health concern, highlighting the need for reliable and accessible early detection methods. Although recent advances in machine learning, deep learning and quantum machine learning (QML) have introduced promising diagnostic tools, many approaches suffer from limited interpretability and inflated performance caused by data leakage or overly simplistic evaluation protocols. These constraints reduce their reliability in real-world clinical practice. This paper proposes KQML-Liver, a hybrid framework that integrates QML with Kolmogorov-Arnold Networks (KANs) to enhance predictive performance and interpretability. The architecture combines parameterized quantum circuits for expressive feature representation with KAN-based functional mappings that capture nonlinear relationships in an interpretable manner. Evaluated on the Indian Liver Patient Dataset (ILPD) under a rigorous preprocessing protocol preventing data leakage, the proposed model achieves 82% classification accuracy and 100% recall, detecting all positive cases, outperforming existing baselines while providing improved transparency in clinical predictions. These results suggest that hybrid KAN-quantum architectures offer a promising direction for interpretable AI-assisted medical diagnosis.",
+    "category": "Diagnostics",
+    "source": "arXiv",
+    "published": "2026-11-11T09:31:35Z",
+    "updated": "2026-11-11T09:31:35Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.15241v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.15241v1"
+      }
+    ],
+    "score": 84,
+    "infographic": {
+      "key_insight": "KQML-Liver combines quantum machine learning with Kolmogorov-Arnold Networks, reporting 82% accuracy and 100% recall for liver disease classification.",
+      "clinical_relevance": "The approach could support interpretable liver disease screening, but its clinical usefulness remains unproven.",
+      "method": [
+        "Parameterized quantum circuits represent input features.",
+        "Kolmogorov-Arnold Networks model nonlinear relationships through interpretable functional mappings.",
+        "Preprocessing is designed to prevent data leakage."
+      ],
+      "evidence_signal": "On the Indian Liver Patient Dataset, the authors report 82% accuracy and detection of all positive cases under a leakage-prevention protocol.",
+      "watch_item": "The abstract reports no external validation or specificity, leaving generalizability and false-positive burden unclear.",
+      "hashtags": [
+        "#LiverDisease",
+        "#QuantumMachineLearning",
+        "#KolmogorovArnoldNetworks",
+        "#InterpretableAI",
+        "#MedicalAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-11-arxiv-kqml_liver_interpretable_hybrid_quantum_machine_learning_with_kolmogorov_arnold_networks_f",
+      "paper_title": "KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification",
+      "paper_date": "2026-11-11",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-11-14T13:53:29",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-11-arxiv-constructing_and_validating_memorisation_audits_for_ehr_foundation_models",
+    "arxiv_id": "2611.15578v1",
+    "date": "2026-11-11",
+    "title": "Constructing and Validating Memorisation Audits for EHR Foundation Models",
+    "authors": "Inigo Stibbe, Joshua Placidi, Padmanabhan Ramnarayan, A. Aldo Faisal",
+    "abstract": "Autoregressive electronic health record (EHR) foundation models may disclose training information at inference, yet clinical predictability makes patient-specific memorisation difficult to distinguish from generalisation. We evaluate fixed-window token reconstruction, sensitive-attribute disclosure, and random patient-level canaries in GPT-2-style models trained on MIMIC-IV, across early, best-validation, and final checkpoints. Reconstruction improves with additional context, but training--held-out differences remain small. Trajectory-unique prompts containing limited clinical information produce no excess sensitive disclosure for training patients. In a matched model with random binary patient-level canaries, training-patient label-recovery AUROC increases from 0.512 to 0.549 while held-out recovery remains at chance. An overfit 1,000-patient positive control achieves near-perfect recovery, confirming sensitivity to strong memorisation. These results reveal weak cohort-level memorisation but no reliable patient-level disclosure under the evaluated attacks. They motivate clinically grounded inference-time audits that can detect patient-specific memorisation in existing models without retraining with canaries.",
+    "category": "Clinical NLP",
+    "source": "arXiv",
+    "published": "2026-11-11T15:02:19Z",
+    "updated": "2026-11-11T15:02:19Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2611.15578v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2611.15578v1"
+      }
+    ],
+    "score": 83,
+    "infographic": {
+      "key_insight": "EHR foundation models showed weak cohort-level memorisation, but no reliable patient-level disclosure under the evaluated attacks.",
+      "clinical_relevance": "Privacy audits must distinguish patient-specific memorisation from clinically predictable information when assessing EHR models.",
+      "method": [
+        "Evaluated GPT-2-style models trained on MIMIC-IV at early, best-validation, and final checkpoints.",
+        "Tested fixed-window token reconstruction, sensitive-attribute disclosure, and random patient-level canary recovery.",
+        "Used an overfit 1,000-patient model as a positive control for strong memorisation."
+      ],
+      "evidence_signal": "Training-patient canary recovery AUROC rose from 0.512 to 0.549 while held-out recovery remained at chance; the overfit control achieved near-perfect recovery.",
+      "watch_item": "Negative disclosure results apply only to the evaluated attacks and do not establish privacy safety against other inference-time attacks.",
+      "hashtags": [
+        "#ClinicalNLP",
+        "#EHR",
+        "#FoundationModels",
+        "#Memorisation",
+        "#PatientPrivacy"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-11-arxiv-constructing_and_validating_memorisation_audits_for_ehr_foundation_models",
+      "paper_title": "Constructing and Validating Memorisation Audits for EHR Foundation Models",
+      "paper_date": "2026-11-11",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-11-14T13:53:31",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-10-medrxiv-applications_of_fairness_training_in_artificial_intelligence_to_ophthalmic_disease_diagnos",
+    "doi": "10.64898/2026.11.08.26363489",
+    "date": "2026-11-10",
+    "title": "Applications of Fairness Training in Artificial Intelligence to Ophthalmic Disease Diagnosis using External Eye Photographs",
+    "authors": "Kostin, V.; Yoon, S.-H.; Chen, J. S.; Baek, S.; Seid, J.; Quyang, N.; Li, E.; Li, E.; Shi, M.; Wang, M.",
+    "abstract": "Diabetic retinopathy (DR), age-related macular degeneration (AMD), and glaucoma are leading causes of preventable blindness, yet whether external eye photographs carry phenotypic information about posterior segment disease remains unclear, and methods to mitigate demographic disparities in such models are largely unexplored. We developed and evaluated deep learning and vision-language models for binary classification of vision-threatening DR (VTDR), advanced AMD, and glaucoma using 40,687 external eye photographs from 9,878 patients at Massachusetts Eye and Ear. Convolutional networks (WResNet, EfficientNet), a vision transformer (ViT), and a finetuned vision-language model (LLaVA) were assessed by area under the receiver operating characteristic curve (AUC), with fairness across sex, race, and ethnicity quantified by the equity-scaled AUC (ES-AUC). Five fairness-training strategies were applied to the best models. LLaVA achieved the highest baseline AUC for VTDR (85{middle dot}4%, comparable to ViT 82{middle dot}6%); advanced AMD was similar across architectures (EfficientNet 86{middle dot}3%; LLaVA 84{middle dot}8%; ViT 84{middle dot}7%), whereas glaucoma was substantially worse (67-74%). Fairness training improved VTDR and AMD AUCs to 86{middle dot}3% and 85{middle dot}9% while partially mitigating demographic disparities. In summary, although AI models that rely on external eye photography to detect posterior segment disease may not yet be suitable for clinical deployment, the fairness methods demonstrated in this proof-of-concept study could be applied to other AI systems to decrease performance disparities and potentially improve model performance.",
+    "category": "Medical Imaging",
+    "source": "medRxiv",
+    "published": "2026-11-10",
+    "updated": "2026-11-10",
+    "primary_category": "ophthalmology",
+    "categories": [
+      "ophthalmology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26363489v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26363489v1.full.pdf"
+      }
+    ],
+    "score": 79,
+    "infographic": {
+      "key_insight": "AI models identified signals of vision-threatening diabetic retinopathy and advanced AMD in external eye photographs, while fairness training partially reduced demographic performance disparities.",
+      "clinical_relevance": "External eye photography may offer a research pathway for assessing posterior eye disease, but these models are not yet suitable for clinical deployment.",
+      "method": [
+        "Compared convolutional networks, a vision transformer, and a fine-tuned LLaVA vision-language model.",
+        "Evaluated disease classification using AUC and demographic fairness using equity-scaled AUC.",
+        "Applied five fairness-training strategies to the best-performing models."
+      ],
+      "evidence_signal": "Evaluation used 40,687 photographs from 9,878 patients at one institution; baseline AUCs reached 85.4% for vision-threatening diabetic retinopathy and 86.3% for advanced AMD, versus 67–74% for glaucoma.",
+      "watch_item": "Single-institution, proof-of-concept findings require external validation, and fairness training did not eliminate demographic disparities.",
+      "hashtags": [
+        "#MedicalAI",
+        "#Ophthalmology",
+        "#AlgorithmicFairness",
+        "#MedicalImaging",
+        "#HealthEquity"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-10-medrxiv-applications_of_fairness_training_in_artificial_intelligence_to_ophthalmic_disease_diagnos",
+      "paper_title": "Applications of Fairness Training in Artificial Intelligence to Ophthalmic Disease Diagnosis using External Eye Photographs",
+      "paper_date": "2026-11-10",
+      "paper_category": "Medical Imaging",
+      "generated_at": "2026-11-14T13:53:33",
       "generator": "openai"
     }
   },
@@ -561,23 +615,23 @@
         "url": "https://arxiv.org/pdf/2611.14935v1"
       }
     ],
-    "score": 83,
+    "score": 78,
     "infographic": {
-      "key_insight": "This audit found no racial or sex differences surviving study-wide correction, while pain-management recommendations varied substantially across models and settings.",
-      "clinical_relevance": "Clinical AI fairness evaluations should test each deployed configuration, because model and setting choices may affect recommendations more than patient identity in these tasks.",
+      "key_insight": "This audit found no robust racial or sex differences in pain recommendations, while variation across models and configurations was much larger.",
+      "clinical_relevance": "Clinical AI fairness evaluations should test each deployed configuration because aggregate findings may obscure substantial differences in treatment recommendations.",
       "method": [
-        "Study 1 tested four open-weight models on six acute-pain vignettes, varying race and sex through explicit labels or names.",
-        "Identity comparisons were paired to a White male reference using the same case and sampling seed.",
+        "Study 1 tested four open-weight LLMs on six acute-pain vignettes across race and sex, using explicit identities or name-only cues.",
+        "Identity comparisons were paired by case and sampling seed against a White male reference.",
         "Study 2 evaluated 24 configurations of 17 models on the same vignettes and 50 clinician-written Q-Pain cases."
       ],
       "evidence_signal": "None of 1,386 Study 2 comparisons survived false-discovery-rate correction; all pain-severity differences met equivalence bounds of ±1 point on a 0–10 scale.",
-      "watch_item": "These exploratory, single-prompt findings do not establish absence of bias: opioid estimates were less precise, with Study 1 unable to exclude differences of about 20 percentage points.",
+      "watch_item": "These exploratory, single-prompt, JSON-constrained results do not establish clinical fairness; opioid estimates were less precise, with Study 1 unable to exclude differences of about 20 percentage points.",
       "hashtags": [
         "#ClinicalAI",
-        "#AlgorithmicFairness",
+        "#LLMBias",
         "#PainManagement",
-        "#LLMEvaluation",
-        "#HealthEquity"
+        "#AIFairness",
+        "#ClinicalNLP"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -585,7 +639,113 @@
       "paper_title": "Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen",
       "paper_date": "2026-11-11",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:38",
+      "generated_at": "2026-11-14T13:53:36",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-10-medrxiv-agentic_pipeline_for_large_scale_clinical_data_queries_in_enterprise_electronic_health_rec",
+    "doi": "10.64898/2026.11.05.26367378",
+    "date": "2026-11-10",
+    "title": "Agentic Pipeline for Large-Scale Clinical Data Queries in Enterprise Electronic Health Records",
+    "authors": "Pawar, K.; Tavabi, N.; Kalepalli, A.; Kalepalli, N.; Blackmon, M.; Williamson, A.; Kiapour, A.",
+    "abstract": "Using electronic health record (EHR) data to answer clinical research questions is challenging. It requires understanding the research question, finding relevant information across different sources, and combining that information to produce meaningful results. We developed an agentic large language model (LLM) pipeline that decomposes investigator-authored requests into source-specific tasks, generates and executes SQL on EHR, integrates structured and unstructured EHR evidence, and applies study-specific clinical note adjudication. We evaluated this workflow against data analyst-identified cohorts across 50 pediatric orthopedic clinical data query requests. Of these, 43 were included in manual-review-adjusted performance analyses. The median adjusted positive predictive value, sensitivity among patients identified by either approach, and corresponding F1 score were 0.93 (95% CI, 0.88-0.98), 0.92 (95% CI, 0.90-0.95) and 0.90 (95% CI, 0.87-0.94), respectively. These findings support the feasibility of translating natural-language research intent into executable, autonomous multi-stage EHR workflows.",
+    "category": "Clinical NLP",
+    "source": "medRxiv",
+    "published": "2026-11-10",
+    "updated": "2026-11-10",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.05.26367378v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.05.26367378v2.full.pdf"
+      }
+    ],
+    "score": 78,
+    "infographic": {
+      "key_insight": "An agentic LLM pipeline translated natural-language research requests into multi-stage EHR queries, achieving a median adjusted F1 score of 0.90.",
+      "clinical_relevance": "The approach could help researchers identify study cohorts using both structured EHR data and clinical notes.",
+      "method": [
+        "Decompose investigator requests into source-specific tasks.",
+        "Generate and execute SQL, then integrate structured and unstructured EHR evidence.",
+        "Apply study-specific clinical note adjudication."
+      ],
+      "evidence_signal": "Evaluated against analyst-identified cohorts for 50 pediatric orthopedic requests, with 43 included in manual-review-adjusted analyses: median PPV 0.93, sensitivity among patients identified by either approach 0.92, and F1 0.90.",
+      "watch_item": "Performance outside pediatric orthopedics remains uncertain, and the reported sensitivity does not capture patients missed by both approaches.",
+      "hashtags": [
+        "#ClinicalNLP",
+        "#AgenticAI",
+        "#EHR",
+        "#ClinicalResearch",
+        "#CohortIdentification"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-10-medrxiv-agentic_pipeline_for_large_scale_clinical_data_queries_in_enterprise_electronic_health_rec",
+      "paper_title": "Agentic Pipeline for Large-Scale Clinical Data Queries in Enterprise Electronic Health Records",
+      "paper_date": "2026-11-10",
+      "paper_category": "Clinical NLP",
+      "generated_at": "2026-11-14T13:53:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-10-medrxiv-benchmarking_large_language_ai_models_against_human_doctors_using_an_emergency_medicine_si",
+    "doi": "10.64898/2026.11.09.26367590",
+    "date": "2026-11-10",
+    "title": "Benchmarking Large Language AI Models Against Human Doctors Using an Emergency Medicine Simulation Approach",
+    "authors": "Shahabian, M.; Hadizadeh Esfahani, A.; Ahmadi, M.; Rajabzadeh, S.; Givechin Ghamsari, M. H.; Tabaraee, A.; Hejripour Rafsanjani, S. Z.",
+    "abstract": "BackgroundProper adoption of AI in emergency medicine necessitate thorough and rigorous appraisal. Classic benchmarks, which rely heavily on basic question-and-answer formats, though dominating the benchmarking field of LLM usage in medicine, have proven inadequate in assessing the full spectrum of skills incumbent upon an agent in healthcare. MethodsWe propose an intricate benchmarking scheme in which the skill set required of an emergency physician is tested and quantified. Our benchmarking structure is 3-fold: skills such as history taking, diagnostic accuracy, treatment plan, and empathy are evaluated by an emergency medicine expert, while the same expertise is scored by an intern from the perspective of a patient, through what we call a simulated emergency room visit. A comprehensive written examination is also utilized to measure general emergency medicine knowledge. ResultsEight LLMs were benchmarked against each other and in contrast to nine emergency medical doctors. Our findings indicate that the AI models significantly outperformed human physicians across several key domains, including history taking, investigation, diagnostic accuracy, and treatment planning. Furthermore, the models demonstrated superior performance in comprehensibility, credibility, and empathy. When comparing AI models against each other, performance advantages were marginal during simulated emergency room visits and were mostly pronounced during the written examination. ConclusionAI models demonstrate a clear advantage over human physicians across a diverse range of emergency medicine competencies. The proposed benchmarking scheme provides a comprehensive metric for a thorough evaluation of medical skill set, furthering validation, adaptation, and utilization of AI in emergency medicine.",
+    "category": "Health Systems",
+    "source": "medRxiv",
+    "published": "2026-11-10",
+    "updated": "2026-11-10",
+    "primary_category": "emergency medicine",
+    "categories": [
+      "emergency medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367590v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367590v1.full.pdf"
+      }
+    ],
+    "score": 75,
+    "infographic": {
+      "key_insight": "In an emergency medicine simulation benchmark, eight LLMs outperformed nine emergency physicians across several assessed clinical and communication domains.",
+      "clinical_relevance": "The findings support further evaluation of AI for emergency medicine support, but do not establish safety or effectiveness in real patient care.",
+      "method": [
+        "Emergency medicine experts assessed simulated visits for history taking, diagnosis, treatment planning, and empathy.",
+        "Interns playing patients rated performance from the patient perspective.",
+        "A written examination tested general emergency medicine knowledge."
+      ],
+      "evidence_signal": "The abstract reports significant AI advantages in several domains, with differences among LLMs more pronounced on the written examination than during simulated visits.",
+      "watch_item": "Simulation results from eight models and nine physicians may not generalize to real emergency departments; the abstract provides no effect sizes or patient outcomes.",
+      "hashtags": [
+        "#MedicalAI",
+        "#EmergencyMedicine",
+        "#LLMBenchmarking",
+        "#SimulationResearch",
+        "#HealthSystems"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-10-medrxiv-benchmarking_large_language_ai_models_against_human_doctors_using_an_emergency_medicine_si",
+      "paper_title": "Benchmarking Large Language AI Models Against Human Doctors Using an Emergency Medicine Simulation Approach",
+      "paper_date": "2026-11-10",
+      "paper_category": "Health Systems",
+      "generated_at": "2026-11-14T13:53:39",
       "generator": "openai"
     }
   },
@@ -615,23 +775,23 @@
         "url": "https://arxiv.org/pdf/2611.17128v1"
       }
     ],
-    "score": 79,
+    "score": 74,
     "infographic": {
-      "key_insight": "PECA reduced mean response length by 72.8% while increasing multiple-choice diagnostic accuracy from 40.8% to 44.0% in a 1.7-billion-parameter language model.",
-      "clinical_relevance": "Shorter medical responses could reduce reading burden in time-constrained workflows, but clinical usefulness and safety remain unestablished.",
+      "key_insight": "PECA reduced mean response length by 72.8% while increasing multiple-choice diagnostic accuracy from 40.8% to 44.0% in a 1.7-billion-parameter model.",
+      "clinical_relevance": "Shorter outputs could make clinical AI responses easier to review under time pressure, but clinical utility and safety remain unestablished.",
       "method": [
         "Adds a differentiable conciseness term to QLoRA supervised fine-tuning.",
-        "Encourages end-of-sequence generation after a token budget is exceeded.",
+        "Encourages end-of-sequence prediction once responses exceed a token budget.",
         "Requires no preference data or auxiliary model and trains on a single commodity GPU."
       ],
-      "evidence_signal": "The abstract reports fine-tuning on medical-o1-reasoning-SFT and multiple-choice diagnostic evaluation, with a conciseness-strength sweep mapping accuracy–length trade-offs.",
-      "watch_item": "Results from one model and multiple-choice evaluation do not establish whether shorter responses preserve clinically important details in real-world use.",
+      "evidence_signal": "The abstract reports fine-tuning on medical-o1-reasoning-SFT and multiple-choice diagnostic evaluation, with a conciseness-strength sweep mapping the accuracy–length trade-off.",
+      "watch_item": "Multiple-choice accuracy does not establish whether shorter responses preserve safety-critical detail in real clinical workflows.",
       "hashtags": [
-        "#MedicalAI",
+        "#ClinicalAI",
         "#SmallLanguageModels",
         "#ParameterEfficientFineTuning",
-        "#ClinicalNLP",
-        "#ConciseReasoning"
+        "#ConciseReasoning",
+        "#HealthSystems"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -639,7 +799,7 @@
       "paper_title": "Parameter-Efficient Conciseness Adaptation: Differentiable Length Control for Concise Clinical Reasoning in Smaller Language Models",
       "paper_date": "2026-11-12",
       "paper_category": "Health Systems",
-      "generated_at": "2026-11-13T15:00:41",
+      "generated_at": "2026-11-14T13:53:41",
       "generator": "openai"
     }
   },
@@ -668,20 +828,20 @@
         "url": "https://arxiv.org/pdf/2611.13883v1"
       }
     ],
-    "score": 79,
+    "score": 74,
     "infographic": {
-      "key_insight": "BRIDGE pairs prostate biopsy whole-slide images across three preparation stages to support research on AI-based virtual staining and related imaging methods.",
-      "clinical_relevance": "Gleason annotations enable research on whether virtual staining preserves information relevant to prostate cancer classification and grading.",
+      "key_insight": "BRIDGE provides paired prostate biopsy images across three preparation stages to support research on AI-based virtual staining and related imaging methods.",
+      "clinical_relevance": "The dataset could help researchers evaluate methods intended to streamline histopathology workflows, but the abstract does not establish clinical performance.",
       "method": [
-        "Collect 869 prostate biopsy slides from 169 patients at one oncology centre in Poland.",
-        "Digitize each slide in paraffin, after deparaffinization, and after H&E staining.",
-        "Provide de-identified images in native scanner format with slide-level Gleason scores."
+        "Sequentially scan each slide in paraffin, after deparaffinization, and after H&E staining.",
+        "Pair images across stages and provide slide-level Gleason scores.",
+        "Distribute de-identified images in native scanner format through the BioImage Archive."
       ],
-      "evidence_signal": "The dataset contains 2,607 whole-slide images; the abstract reports no model performance or clinical validation results.",
-      "watch_item": "Single-centre sourcing may limit generalizability, requiring validation across institutions and imaging workflows.",
+      "evidence_signal": "The dataset contains 2,607 whole-slide images from 869 slides across 169 patients at one Polish oncology centre; no model performance results are reported in the abstract.",
+      "watch_item": "Single-centre sourcing may limit generalizability, so models developed using BRIDGE need independent validation across institutions and imaging workflows.",
       "hashtags": [
         "#MedicalImaging",
-        "#DigitalPathology",
+        "#ComputationalPathology",
         "#VirtualStaining",
         "#ProstateCancer",
         "#OpenData"
@@ -692,7 +852,7 @@
       "paper_title": "The BRIDGE dataset: paired brightfield whole-slide images of prostate core-needle biopsies in paraffin, after deparaffinization and H&E staining",
       "paper_date": "2026-11-10",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-13T15:00:43",
+      "generated_at": "2026-11-14T13:53:44",
       "generator": "openai"
     }
   },
@@ -723,23 +883,23 @@
         "url": "https://arxiv.org/pdf/2611.12640v1"
       }
     ],
-    "score": 79,
+    "score": 74,
     "infographic": {
-      "key_insight": "TrialDesignBench reveals gaps between frontier LLMs and expert-validated statistical designs for early-phase oncology trials.",
-      "clinical_relevance": "The benchmark supports research toward AI-assisted dose-finding trial design aligned with contemporary FDA initiatives, including Project Optimus.",
+      "key_insight": "TrialDesignBench finds that five frontier LLMs fall short of expert-validated, contemporary standards for early-phase oncology trial design.",
+      "clinical_relevance": "The benchmark supports research toward AI-assisted dose-finding trial design aligned with recent FDA initiatives, including Project Optimus.",
       "method": [
-        "Compile 617 Phase-I/I-II oncology dose-finding trials.",
-        "Pair each trial with an expert-validated reference design using a formalized expert process.",
-        "Evaluate five frontier LLMs and probe performance gaps through ablation experiments."
+        "Curated 617 Phase-I/I-II oncology dose-finding trials.",
+        "Paired each trial with an expert-validated reference design using a formalized expert process.",
+        "Evaluated five frontier LLMs and tested sources of performance gaps through ablations."
       ],
-      "evidence_signal": "None of the five LLMs matched the reference standard; supplying latent design determinants and structured decision-tree reasoning improved class-wise balanced accuracy by 0.22 and 0.24, respectively.",
-      "watch_item": "Benchmark performance does not establish readiness for real-world trial design, particularly when critical design determinants are unrecorded.",
+      "evidence_signal": "Supplying latent design determinants improved class-wise balanced accuracy by 0.22, while structured decision-tree reasoning improved it by 0.24.",
+      "watch_item": "Benchmark performance does not establish clinical readiness; important design determinants may be absent from trial records.",
       "hashtags": [
-        "#ClinicalNLP",
-        "#ClinicalTrials",
+        "#ClinicalAI",
+        "#TrialDesign",
         "#Oncology",
         "#LLMEvaluation",
-        "#TrialDesign"
+        "#ProjectOptimus"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -747,7 +907,7 @@
       "paper_title": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design Against Clinical Knowledge",
       "paper_date": "2026-11-09",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:45",
+      "generated_at": "2026-11-14T13:53:46",
       "generator": "openai"
     }
   },
@@ -776,17 +936,17 @@
         "url": "https://arxiv.org/pdf/2611.13426v1"
       }
     ],
-    "score": 78,
+    "score": 73,
     "infographic": {
-      "key_insight": "BioMem introduces HMRU, a training-free memory framework reporting an average 8.6% relative improvement across biomedical question-answering and conversational memory benchmarks.",
-      "clinical_relevance": "More reliable memory could help biomedical LLM agents use relevant prior information, but these results do not establish clinical safety or patient benefit.",
+      "key_insight": "BioMem introduces HMRU, a training-free framework that improves how biomedical LLM agents retrieve and use stored information.",
+      "clinical_relevance": "Better memory handling could support biomedical reasoning and clinical prediction, but these benchmark results do not establish safety or effectiveness in patient care.",
       "method": [
         "Evaluated five memory approaches across four LLMs.",
         "Tested biomedical reasoning, clinical prediction, and long-term conversational memory.",
         "Developed HMRU to improve evidence accessibility and task-aware use."
       ],
-      "evidence_signal": "HMRU reduced conversational answer errors by 24.9% and closed 48.0% of the performance gap to full-context inference, with additional gains in selected clinical prediction tasks.",
-      "watch_item": "The abstract does not specify dataset sizes or clinical deployment validation; retrieval relevance and information fidelity remain important implementation concerns.",
+      "evidence_signal": "The abstract reports an 8.6% average relative improvement across biomedical QA and conversational memory benchmarks, 24.9% fewer conversational answer errors, and closure of 48.0% of the gap to full-context inference.",
+      "watch_item": "Dataset sizes and clinical deployment validation are not specified in the abstract, limiting conclusions about real-world reliability.",
       "hashtags": [
         "#BioMem",
         "#ClinicalNLP",
@@ -800,7 +960,60 @@
       "paper_title": "BioMem: Agentic Memory for Biomedical LLM Agents",
       "paper_date": "2026-11-10",
       "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:48",
+      "generated_at": "2026-11-14T13:53:48",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-10-medrxiv-exploring_data_augmentation_for_stroke_severity_prediction_how_generative_ai_enhances_eeg",
+    "doi": "10.64898/2026.11.09.26367632",
+    "date": "2026-11-10",
+    "title": "Exploring Data Augmentation for Stroke Severity Prediction: How Generative AI Enhances EEG Signal Classification",
+    "authors": "Sarkar, M. S. S.; Saon, M. T. H.; Basak, S.",
+    "abstract": "In clinical datasets, data augmentation is often avoided because it can remove important unusual values, known as outliers, which are important for understanding diseases accurately. However, clinical EEG datasets often suffer from two key limitations: small sample sizes and class imbalance, which significantly reduce classification performance. To over-come these challenges, this study applies generative AI-based data augmentation techniques with a carefully designed hybrid pipeline that effectively enhances performance even on limited EEG data. Using EEG signals from 50 brain stroke patients [1], we investigate both traditional oversampling methods (SMOTE and ADASYN [2]) and advanced generative models, including WGAN and WGAN-GP. Our proposed pipeline involves pre-processing EEG recordings, extracting comprehensive statistical and frequency-domain features, applying feature reduction, and evaluating multiple machine learning classifiers. Experimental results show that the combination of SelectKBest feature selection, SVM classifier, and WGAN-GP augmentation achieves the highest classification accuracy of 72%, outperforming other methods. This work introduces a novel hybrid approach for EEG-based stroke severity classification, demonstrating that generative augmentation, when integrated properly, can significantly improve performance on small clinical datasets. To the best of our knowledge, this combination of techniques has not been explored before on any dataset, providing a solid foundation for future research in automated EEG-based stroke diagnosis.",
+    "category": "Diagnostics",
+    "source": "medRxiv",
+    "published": "2026-11-10",
+    "updated": "2026-11-10",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367632v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367632v1.full.pdf"
+      }
+    ],
+    "score": 73,
+    "infographic": {
+      "key_insight": "WGAN-GP augmentation paired with SelectKBest feature selection and an SVM achieved the highest reported stroke severity classification accuracy of 72%.",
+      "clinical_relevance": "Augmenting limited EEG datasets may support research toward automated stroke severity assessment, but clinical utility remains unproven.",
+      "method": [
+        "Preprocess EEG recordings and extract statistical and frequency-domain features.",
+        "Compare SMOTE, ADASYN, WGAN, and WGAN-GP augmentation.",
+        "Apply feature reduction and evaluate multiple machine learning classifiers."
+      ],
+      "evidence_signal": "Using EEG data from 50 stroke patients, the study reported a best accuracy of 72%; the abstract does not specify validation procedures or uncertainty estimates.",
+      "watch_item": "Independent patient-level validation is needed to assess generalizability and ensure augmentation does not introduce data leakage or distort clinically important outliers.",
+      "hashtags": [
+        "#MedicalAI",
+        "#EEG",
+        "#StrokeResearch",
+        "#DataAugmentation",
+        "#GenerativeAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-10-medrxiv-exploring_data_augmentation_for_stroke_severity_prediction_how_generative_ai_enhances_eeg",
+      "paper_title": "Exploring Data Augmentation for Stroke Severity Prediction: How Generative AI Enhances EEG Signal Classification",
+      "paper_date": "2026-11-10",
+      "paper_category": "Diagnostics",
+      "generated_at": "2026-11-14T13:53:51",
       "generator": "openai"
     }
   },
@@ -829,17 +1042,17 @@
         "url": "https://arxiv.org/pdf/2611.17031v1"
       }
     ],
-    "score": 77,
+    "score": 72,
     "infographic": {
-      "key_insight": "SeeEEG turns EEG signals into images, enabling a frozen vision foundation model to outperform specialized frozen EEG encoders across eight datasets.",
-      "clinical_relevance": "The approach could support EEG analysis across clinical and sleep-related tasks, but these benchmarks do not establish readiness for clinical use.",
+      "key_insight": "SeeEEG turns EEG signals into images, enabling a frozen vision model to outperform specialized frozen EEG foundation models across eight benchmark datasets.",
+      "clinical_relevance": "This approach could support EEG analysis across clinical and sleep-related tasks, but the reported benchmarks do not establish readiness for clinical use.",
       "method": [
-        "Render each EEG channel as a waveform or scalogram in a dedicated row of image patches.",
-        "Optimize montage, filtering, and contrast through a frozen vision backbone using at most 1,113 trainable display parameters per view.",
+        "Render EEG channels as patch-aligned waveform or scalogram rows.",
+        "Keep the vision backbone frozen while optimizing montage, filtering, and contrast with at most 1,113 trainable parameters per view.",
         "Compare frozen encoders using identical readout heads."
       ],
-      "evidence_signal": "Against seven EEG foundation models on eight datasets, SeeEEG with DINOv3 ViT-B achieved higher balanced accuracy than every comparator on all eight; random initialization reduced scores by 15.2 points on average.",
-      "watch_item": "The results concern frozen-encoder benchmarks; performance against fully fine-tuned EEG models and in prospective clinical workflows remains unestablished.",
+      "evidence_signal": "Against seven EEG foundation models on eight datasets, DINOv3-based SeeEEG achieved the highest balanced accuracy on all eight; randomizing its vision backbone reduced scores by 15.2 points on average.",
+      "watch_item": "Performance under real-world acquisition variability and prospective clinical workflows remains unestablished by the abstract.",
       "hashtags": [
         "#EEG",
         "#FoundationModels",
@@ -853,219 +1066,7 @@
       "paper_title": "Your Vision Foundation Model Is Secretly an EEG Foundation Model",
       "paper_date": "2026-11-12",
       "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-13T15:00:51",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-10-arxiv-an_evidence_traceable_benchmark_of_clinical_reasoning_in_large_language_models",
-    "arxiv_id": "2611.13562v1",
-    "date": "2026-11-10",
-    "title": "An evidence-traceable benchmark of clinical reasoning in large language models",
-    "authors": "Zhiqun Zhao, Xiaodong Yang, Bruce Gu, Ming Li, Yi Fu, Song Li",
-    "abstract": "Benchmark scores for medical large language models (LLMs) are difficult to interpret when scoring criteria cannot be traced to clinical evidence. Here we developed Med Evidence Bench (MEB; https://www.medevidencebench.org.cn/), comprising 1,536 physician-constructed items across three levels: guideline knowledge, standardized clinical scenarios and real-world laboratory scenarios. Each criterion stating a medical claim is linked to a versioned source-text span. Across ten LLMs, the Evidence Trace Score (ETS) was 0.975-0.997 for guideline knowledge, 0.292-0.658 for standardized scenarios and 0.182-0.447 for real-world scenarios, and rankings varied across levels. For real-world scenarios, scores for identifying clinical information (mean, 0.770) exceeded those for matching evidence (0.165) or formulating recommendations (0.160). On 1,296 criterion-level judgments, automated grading agreed with the majority vote of three physicians (macro-F1, 0.930; 95% confidence interval, 0.915-0.945), although agreement was lower for evidence application. These findings from Chinese-language materials indicate that guideline recall does not ensure patient-specific evidence use and do not establish clinical effectiveness.",
-    "category": "Clinical NLP",
-    "source": "arXiv",
-    "published": "2026-11-10T04:28:57Z",
-    "updated": "2026-11-10T04:28:57Z",
-    "primary_category": "cs.CL",
-    "categories": [
-      "cs.CL"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.13562v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.13562v1"
-      }
-    ],
-    "score": 76,
-    "infographic": {
-      "key_insight": "Strong guideline recall did not translate into patient-specific evidence use across ten medical LLMs.",
-      "clinical_relevance": "Medical AI evaluation should test evidence application in clinical scenarios, not guideline knowledge alone.",
-      "method": [
-        "Developed Med Evidence Bench with 1,536 physician-constructed items across three levels.",
-        "Linked every medical-claim scoring criterion to a versioned source-text span.",
-        "Evaluated ten LLMs and compared automated grading with physician judgments."
-      ],
-      "evidence_signal": "Evidence Trace Scores ranged from 0.975–0.997 for guideline knowledge but 0.182–0.447 for real-world scenarios; automated grading achieved macro-F1 0.930 against physician-majority judgments.",
-      "watch_item": "Results derive from Chinese-language materials and do not establish clinical effectiveness; grading agreement was lower for evidence application.",
-      "hashtags": [
-        "#ClinicalNLP",
-        "#MedicalAI",
-        "#LLMEvaluation",
-        "#EvidenceTraceability",
-        "#ClinicalReasoning"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-10-arxiv-an_evidence_traceable_benchmark_of_clinical_reasoning_in_large_language_models",
-      "paper_title": "An evidence-traceable benchmark of clinical reasoning in large language models",
-      "paper_date": "2026-11-10",
-      "paper_category": "Clinical NLP",
-      "generated_at": "2026-11-13T15:00:53",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-11-arxiv-casescope_a_multi_field_benchmark_for_case_level_pathology_diagnosis_with_multimodal_llms",
-    "arxiv_id": "2611.15325v1",
-    "date": "2026-11-11",
-    "title": "CaseScope: A Multi-Field Benchmark for Case-Level Pathology Diagnosis with Multimodal LLMs",
-    "authors": "Wenchuan Zhang, Chengyang Zhang, Fengling Li, Ting Yin, Chen Shu, Jie Chen",
-    "abstract": "Pathologists rarely diagnose from a single image: they scan a section at low power for architecture, zoom into selected fields for cytology, and integrate the evidence across views and scales. Pathology benchmarks for multimodal large language models (MLLMs), however, mostly ask about one image or require whole-slide pipelines, and the few that show several fields draw nested regions from cancer slides of one public cohort. We introduce CaseScope, a benchmark of diagnosis from several curated fields of one lesion: CaseScope-Teaching, 436 cases from a residency-training image library, reconstructed, de-identified, harmonised against a WHO-based ontology and re-examined by a pathologist wherever an automated pre-review raised a doubt, and CaseScope-Atlas, 800 cases from 88 published atlases (387 of them figure series of one disease), labelled from the captions by two LLMs that must agree. They cover 843 entities across 18 organ systems and pose 4,679 items in six tasks, from open-ended and ten-way diagnosis with ontology-guided hard negatives under circular evaluation to the verification and location of morphological findings. Across twenty-eight open and four proprietary MLLMs, diagnoses are unstable -- the best open and proprietary models are correct under all ten option rotations on 17.9% and 61.7% of the teaching cases -- and wrong answers favour the classic look-alike; open models make little use of the additional fields on teaching cases, where the one-line specimen site matters more, although on atlas cases with three or more fields the fields count about as much as the site; and most open models verify findings barely above chance (median 62.0% vs. 50%, best 81.5%), gaining a median +3.4 points from images; proprietary models reach 83.2-93.2%. Rankings broadly replicate between the sources. The evaluation code is available at https://github.com/Wenchuan-Zhang/CaseScope.",
-    "category": "Medical Imaging",
-    "source": "arXiv",
-    "published": "2026-11-11T11:04:30Z",
-    "updated": "2026-11-11T11:04:30Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.15325v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.15325v1"
-      }
-    ],
-    "score": 75,
-    "infographic": {
-      "key_insight": "CaseScope exposes unstable case-level pathology diagnosis in multimodal LLMs: the best open and proprietary models answered correctly across all ten option rotations on just 17.9% and 61.7% of teaching cases, respectively.",
-      "clinical_relevance": "The benchmark tests integration of multiple pathology fields, highlighting reliability gaps relevant to evaluating potential diagnostic support tools.",
-      "method": [
-        "Combined 436 residency-teaching cases with 800 cases from 88 published pathology atlases.",
-        "Evaluated six tasks spanning diagnosis, morphological finding verification, and finding localization.",
-        "Tested 28 open and four proprietary multimodal LLMs, including sensitivity to answer-option order."
-      ],
-      "evidence_signal": "Across 4,679 items covering 843 entities and 18 organ systems, most open models verified findings only modestly above chance, while model rankings broadly replicated across the two sources.",
-      "watch_item": "Curated teaching and atlas fields, including atlas labels derived through agreement between two LLMs, do not establish performance in prospective clinical workflows.",
-      "hashtags": [
-        "#CaseScope",
-        "#AIPathology",
-        "#MultimodalAI",
-        "#MedicalAIEvaluation",
-        "#DiagnosticReliability"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-11-arxiv-casescope_a_multi_field_benchmark_for_case_level_pathology_diagnosis_with_multimodal_llms",
-      "paper_title": "CaseScope: A Multi-Field Benchmark for Case-Level Pathology Diagnosis with Multimodal LLMs",
-      "paper_date": "2026-11-11",
-      "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-13T15:00:55",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-09-arxiv-operation_aware_multimodal_clinical_decision_support_system_for_icu_discharge_risk_assessm",
-    "arxiv_id": "2611.11960v1",
-    "date": "2026-11-09",
-    "title": "Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment",
-    "authors": "Guoqing Zhang, Rafik Hadfi, Takayuki Ito",
-    "abstract": "Unplanned 30-day intensive care unit (ICU) readmission is a critical benchmark for evaluating healthcare quality. Most predictive models assume readmission risk depends solely on a patient's individual pathophysiological state, ignoring hospital operational context and resource capacity. In practice, discharge decisions are dynamic trade-offs between patient stability and bed turnover pressures. To address this gap, we develop an Operation-aware Multimodal Clinical Decision Support System (CDSS) for ICU discharge risk assessment. The system combines multi-agent collaborative extraction with self-evolving retrieval-augmented generation (RAG) to eliminate template noise from progress notes, while constructing departmental workload indicators alongside admission flow features, continuous vital signs, and sparse medical codes (ICD/DRG). Addressing severe class imbalance (about 10.5% readmissions) and alarm fatigue, we implement data normalization, class reweighting, and decision-threshold calibration. In 20 independent runs across 20,000 ICU stays from MIMIC-III, empirical findings demonstrate that: vital signs alone have limited predictive capacity under real-world class imbalance (PR-AUC of 0.1387 +/- 0.0086); directly concatenating raw text embeddings degrades decision tree performance (XGBoost and LightGBM PR-AUC drop to 0.3893 and 0.4030); whereas an end-to-end multimodal fine-tuning architecture (Transformer E2E FineTune) utilizing layer-wise parameter freezing and differential learning rates reverses text negative transfer, achieving the highest AUROC of 0.8288 +/- 0.0110, PR-AUC of 0.4373 +/- 0.0310, and F1-Score of 0.4757 +/- 0.0196. Operational indicators supply independent risk signals, laying an engineering foundation for high-utility clinical decision support tools.",
-    "category": "Health Systems",
-    "source": "arXiv",
-    "published": "2026-11-09T06:28:58Z",
-    "updated": "2026-11-09T06:28:58Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.11960v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.11960v1"
-      }
-    ],
-    "score": 75,
-    "infographic": {
-      "key_insight": "An operation-aware multimodal model combining patient data, clinical notes, and hospital workload achieved the strongest ICU readmission prediction among the evaluated approaches.",
-      "clinical_relevance": "Incorporating operational context may help discharge-risk tools reflect both patient condition and hospital pressures, but clinical benefit remains unproven.",
-      "method": [
-        "Combined workload and admission-flow indicators with vital signs, ICD/DRG codes, and clinical notes.",
-        "Used multi-agent extraction and self-evolving retrieval-augmented generation to remove note-template noise.",
-        "Applied end-to-end Transformer fine-tuning, class reweighting, and decision-threshold calibration."
-      ],
-      "evidence_signal": "Across 20 independent runs on 20,000 MIMIC-III ICU stays with approximately 10.5% readmissions, the best model achieved AUROC 0.8288 ± 0.0110, PR-AUC 0.4373 ± 0.0310, and F1 0.4757 ± 0.0196.",
-      "watch_item": "The abstract reports no external or prospective validation; performance and alert burden in other hospitals remain uncertain.",
-      "hashtags": [
-        "#ClinicalAI",
-        "#ICUReadmission",
-        "#MultimodalAI",
-        "#ClinicalDecisionSupport",
-        "#HealthSystems"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-09-arxiv-operation_aware_multimodal_clinical_decision_support_system_for_icu_discharge_risk_assessm",
-      "paper_title": "Operation-aware Multimodal Clinical Decision Support System for ICU Discharge Risk Assessment",
-      "paper_date": "2026-11-09",
-      "paper_category": "Health Systems",
-      "generated_at": "2026-11-13T15:00:58",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-09-arxiv-domain_adaptation_of_a_video_foundation_model_for_heart_failure_diagnosis_from_echocardiog",
-    "arxiv_id": "2611.13297v1",
-    "date": "2026-11-09",
-    "title": "Domain adaptation of a video Foundation model for Heart Failure Diagnosis from Echocardiography",
-    "authors": "Mahyar Bolhassani, Tijana Geroski, Narayana S. Singam, Amir Amini",
-    "abstract": "The rapid advancement of foundation models has transformed computer vision, yet their adaptation to medical imaging, particularly purpose built foundation models for spatio temporal echocardiography videos, remains limited. In this work, we explore the feasibility of fine tuning a pretrained foundation model for video (TimeSformer) for automated diagnosis of reduced ejection fraction heart failure (HFrEF) from apical four chamber videos. The model is finetuned on the publicly available RVENet A4C dataset with a phase aware clip generation strategy that captures complementary systolic and diastolic dynamics. We employ divided space time attention, layer wise learning rate decay, and multi clip inference to enhance robustness under limited data. Experimental results show that full fine tuning of the proposed model outperforms classifier only tuning and a 3D CNN baseline. These findings highlight the potential of leveraging foundation video models for echocardiography based heart failure diagnosis and motivates further domain adaptation studies in medical imaging.",
-    "category": "Medical Imaging",
-    "source": "arXiv",
-    "published": "2026-11-09T22:04:03Z",
-    "updated": "2026-11-09T22:04:03Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2611.13297v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2611.13297v1"
-      }
-    ],
-    "score": 74,
-    "infographic": {
-      "key_insight": "Fully fine-tuning a pretrained TimeSformer video model outperformed classifier-only tuning and a 3D CNN baseline for identifying HFrEF from echocardiography videos.",
-      "clinical_relevance": "Video foundation models could support echocardiography-based HFrEF assessment, but clinical utility remains unestablished.",
-      "method": [
-        "Fine-tuned TimeSformer on apical four-chamber videos from the public RVENet A4C dataset.",
-        "Generated phase-aware clips capturing complementary systolic and diastolic dynamics.",
-        "Used divided space-time attention, layer-wise learning rate decay, and multi-clip inference."
-      ],
-      "evidence_signal": "Evaluation on RVENet A4C favored full fine-tuning over classifier-only tuning and a 3D CNN baseline; the abstract reports no numerical performance metrics.",
-      "watch_item": "External validation is not described in the abstract, leaving generalizability across clinical settings uncertain.",
-      "hashtags": [
-        "#MedicalAI",
-        "#Echocardiography",
-        "#HeartFailure",
-        "#VideoFoundationModels",
-        "#DomainAdaptation"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-09-arxiv-domain_adaptation_of_a_video_foundation_model_for_heart_failure_diagnosis_from_echocardiog",
-      "paper_title": "Domain adaptation of a video Foundation model for Heart Failure Diagnosis from Echocardiography",
-      "paper_date": "2026-11-09",
-      "paper_category": "Medical Imaging",
-      "generated_at": "2026-11-13T15:01:00",
+      "generated_at": "2026-11-14T13:53:53",
       "generator": "openai"
     }
   }

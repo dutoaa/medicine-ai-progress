@@ -1,19 +1,19 @@
 {
-  "key_insight": "This audit found no racial or sex differences surviving study-wide correction, while pain-management recommendations varied substantially across models and settings.",
-  "clinical_relevance": "Clinical AI fairness evaluations should test each deployed configuration, because model and setting choices may affect recommendations more than patient identity in these tasks.",
+  "key_insight": "This audit found no robust racial or sex differences in pain recommendations, while variation across models and configurations was much larger.",
+  "clinical_relevance": "Clinical AI fairness evaluations should test each deployed configuration because aggregate findings may obscure substantial differences in treatment recommendations.",
   "method": [
-    "Study 1 tested four open-weight models on six acute-pain vignettes, varying race and sex through explicit labels or names.",
-    "Identity comparisons were paired to a White male reference using the same case and sampling seed.",
+    "Study 1 tested four open-weight LLMs on six acute-pain vignettes across race and sex, using explicit identities or name-only cues.",
+    "Identity comparisons were paired by case and sampling seed against a White male reference.",
     "Study 2 evaluated 24 configurations of 17 models on the same vignettes and 50 clinician-written Q-Pain cases."
   ],
   "evidence_signal": "None of 1,386 Study 2 comparisons survived false-discovery-rate correction; all pain-severity differences met equivalence bounds of ±1 point on a 0–10 scale.",
-  "watch_item": "These exploratory, single-prompt findings do not establish absence of bias: opioid estimates were less precise, with Study 1 unable to exclude differences of about 20 percentage points.",
+  "watch_item": "These exploratory, single-prompt, JSON-constrained results do not establish clinical fairness; opioid estimates were less precise, with Study 1 unable to exclude differences of about 20 percentage points.",
   "hashtags": [
     "#ClinicalAI",
-    "#AlgorithmicFairness",
+    "#LLMBias",
     "#PainManagement",
-    "#LLMEvaluation",
-    "#HealthEquity"
+    "#AIFairness",
+    "#ClinicalNLP"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen",
   "paper_date": "2026-11-11",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-11-13T15:00:38",
+  "generated_at": "2026-11-14T13:53:36",
   "generator": "openai"
 }
