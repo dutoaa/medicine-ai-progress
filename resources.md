@@ -1,164 +1,116 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-16
+Generated: 2026-11-17
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. TransXplainRRG: A Radiologist-Evaluated LVLM for Chest Radiograph Report Generation
+## 1. Automating postmarketing pharmacovigilance with large language model agents
 
 - Date: 2026-11-12
 - Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.16393v1
-- PDF: https://arxiv.org/pdf/2611.16393v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-arxiv-transxplainrrg_a_radiologist_evaluated_lvlm_for_chest_radiograph_report_generation_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.10.26367711v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.10.26367711v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-automating_postmarketing_pharmacovigilance_with_large_language_model_agents_infographic.json
 
-## 2. Curiosity-0826-4B: Generative Medical Event Sequence Modeling Across Pediatric and Adult Populations
-
-- Date: 2026-11-11
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2611.15710v1
-- PDF: https://arxiv.org/pdf/2611.15710v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-arxiv-curiosity_0826_4b_generative_medical_event_sequence_modeling_across_pediatric_and_adult_po_infographic.json
-
-## 3. Fine-Tuned Small Language Model for Synthetic Clinical Data Generation and Predictive Healthcare Analytics
-
-- Date: 2026-11-12
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.16460v1
-- PDF: https://arxiv.org/pdf/2611.16460v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-arxiv-fine_tuned_small_language_model_for_synthetic_clinical_data_generation_and_predictive_heal_infographic.json
-
-## 4. A frontier machine intelligence for human neuroimaging
-
-- Date: 2026-11-11
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.15094v1
-- PDF: https://arxiv.org/pdf/2611.15094v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-arxiv-a_frontier_machine_intelligence_for_human_neuroimaging_infographic.json
-
-## 5. Capacity-Constrained Delayed Feedback for Online Conformal Risk Control
-
-- Date: 2026-11-12
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.17059v1
-- PDF: https://arxiv.org/pdf/2611.17059v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-arxiv-capacity_constrained_delayed_feedback_for_online_conformal_risk_control_infographic.json
-
-## 6. Evaluating Pretrained Language Semantics for Structured EHR Prediction Tasks
-
-- Date: 2026-11-12
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.17053v1
-- PDF: https://arxiv.org/pdf/2611.17053v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-arxiv-evaluating_pretrained_language_semantics_for_structured_ehr_prediction_tasks_infographic.json
-
-## 7. KQML-Liver: Interpretable Hybrid Quantum Machine Learning with Kolmogorov-Arnold Networks for Liver Disease Classification
-
-- Date: 2026-11-11
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2611.15241v1
-- PDF: https://arxiv.org/pdf/2611.15241v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-arxiv-kqml_liver_interpretable_hybrid_quantum_machine_learning_with_kolmogorov_arnold_networks_f_infographic.json
-
-## 8. A thorough review on Deep Learning approaches to 2D-to-3D Registration in Medical Imaging
-
-- Date: 2026-11-12
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.17468v1
-- PDF: https://arxiv.org/pdf/2611.17468v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-arxiv-a_thorough_review_on_deep_learning_approaches_to_2d_to_3d_registration_in_medical_imaging_infographic.json
-
-## 9. Hx2Dx: From Anamnesis to Diagnosis - A Multimodal Arena for Conversational Clinical Reasoning in LLMs
-
-- Date: 2026-11-10
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.14122v1
-- PDF: https://arxiv.org/pdf/2611.14122v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-10-arxiv-hx2dx_from_anamnesis_to_diagnosis_a_multimodal_arena_for_conversational_clinical_reasoning_infographic.json
-
-## 10. Applications of Fairness Training in Artificial Intelligence to Ophthalmic Disease Diagnosis using External Eye Photographs
-
-- Date: 2026-11-10
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.08.26363489v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.08.26363489v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-10-medrxiv-applications_of_fairness_training_in_artificial_intelligence_to_ophthalmic_disease_diagnos_infographic.json
-
-## 11. A Multi-Layered AI Pipeline for BPMN Generation from Natural Language
-
-- Date: 2026-11-13
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.18157v1
-- PDF: https://arxiv.org/pdf/2611.18157v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-13-arxiv-a_multi_layered_ai_pipeline_for_bpmn_generation_from_natural_language_infographic.json
-
-## 12. Constructing and Validating Memorisation Audits for EHR Foundation Models
-
-- Date: 2026-11-11
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.15578v1
-- PDF: https://arxiv.org/pdf/2611.15578v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-arxiv-constructing_and_validating_memorisation_audits_for_ehr_foundation_models_infographic.json
-
-## 13. Do Large Language Models Show Racial and Sex Bias in Pain Management? A Counterfactual Audit of GPT, Claude, Gemini, Llama, DeepSeek and Qwen
-
-- Date: 2026-11-11
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.14935v1
-- PDF: https://arxiv.org/pdf/2611.14935v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-arxiv-do_large_language_models_show_racial_and_sex_bias_in_pain_management_a_counterfactual_audi_infographic.json
-
-## 14. Agentic Pipeline for Large-Scale Clinical Data Queries in Enterprise Electronic Health Records
-
-- Date: 2026-11-10
-- Category: Clinical NLP
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.05.26367378v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.05.26367378v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-10-medrxiv-agentic_pipeline_for_large_scale_clinical_data_queries_in_enterprise_electronic_health_rec_infographic.json
-
-## 15. A Tumour-Aware Multimodal Framework for Explainable Prediction of IDH Mutation in Gliomas from Multi-Sequence MRI
-
-- Date: 2026-11-13
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.17712v1
-- PDF: https://arxiv.org/pdf/2611.17712v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-13-arxiv-a_tumour_aware_multimodal_framework_for_explainable_prediction_of_idh_mutation_in_gliomas_infographic.json
-
-## 16. Benchmarking Large Language AI Models Against Human Doctors Using an Emergency Medicine Simulation Approach
-
-- Date: 2026-11-10
-- Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.09.26367590v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.09.26367590v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-10-medrxiv-benchmarking_large_language_ai_models_against_human_doctors_using_an_emergency_medicine_si_infographic.json
-
-## 17. PADSNet: Physics-Aware Dual-Stream Network with Biomechanical Priors for Laryngeal Lesion Classification
-
-- Date: 2026-11-13
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.17852v1
-- PDF: https://arxiv.org/pdf/2611.17852v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-13-arxiv-padsnet_physics_aware_dual_stream_network_with_biomechanical_priors_for_laryngeal_lesion_c_infographic.json
-
-## 18. Causally Constrained and Uncertainty-Aware Cardiopulmonary Risk Prediction
-
-- Date: 2026-11-13
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2611.17819v1
-- PDF: https://arxiv.org/pdf/2611.17819v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-13-arxiv-causally_constrained_and_uncertainty_aware_cardiopulmonary_risk_prediction_infographic.json
-
-## 19. Parameter-Efficient Conciseness Adaptation: Differentiable Length Control for Concise Clinical Reasoning in Smaller Language Models
+## 2. Benchmark Self-Triage (BeST): Comparing Self-Triage Systems and Multiple Generations of OpenAI Models Against Preliminary Expert Consensus
 
 - Date: 2026-11-12
 - Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2611.17128v1
-- PDF: https://arxiv.org/pdf/2611.17128v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-arxiv-parameter_efficient_conciseness_adaptation_differentiable_length_control_for_concise_clini_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.12.26365287v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.12.26365287v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-benchmark_self_triage_best_comparing_self_triage_systems_and_multiple_generations_of_opena_infographic.json
 
-## 20. The BRIDGE dataset: paired brightfield whole-slide images of prostate core-needle biopsies in paraffin, after deparaffinization and H&E staining
+## 3. Generative AI Versus Primary Care Physicians from Plan Initiation to Long-Term Maintenance of Chronic Disease Self-Management: A Vignette-Based Validation Study
 
-- Date: 2026-11-10
+- Date: 2026-11-12
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.10.26367736v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.10.26367736v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-generative_ai_versus_primary_care_physicians_from_plan_initiation_to_long_term_maintenance_infographic.json
+
+## 4. AToP: An Explainability Framework for Transformer-Based EHR Predictions Using Attribution-Guided Temporal Pattern Mining
+
+- Date: 2026-11-12
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.13883v1
-- PDF: https://arxiv.org/pdf/2611.13883v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-10-arxiv-the_bridge_dataset_paired_brightfield_whole_slide_images_of_prostate_core_needle_biopsies_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-atop_an_explainability_framework_for_transformer_based_ehr_predictions_using_attribution_g_infographic.json
+
+## 5. Silent Drift and Site-level Variance in Clinical AI: Real-world performance and subgroup analysis for post-market monitoring of an FDA-cleared artificial intelligence (AI) triage tool for high-risk use case of pulmonary embolism
+
+- Date: 2026-11-12
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.10.26367739v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.10.26367739v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-silent_drift_and_site_level_variance_in_clinical_ai_real_world_performance_and_subgroup_an_infographic.json
+
+## 6. Cytokine Signatures of Immune Checkpoint Inhibitor Myocarditis and the Modifying Role of Clonal Hematopoiesis: A Machine-Learning and Multi-Omics Study
+
+- Date: 2026-11-12
+- Category: Biomedical AI
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-cytokine_signatures_of_immune_checkpoint_inhibitor_myocarditis_and_the_modifying_role_of_c_infographic.json
+
+## 7. Primary Care Quality and Inappropriate Community Antibiotic Use: Evidence from Linked Provider and Household Data
+
+- Date: 2026-11-11
+- Category: Health Systems
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361459v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361459v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-medrxiv-primary_care_quality_and_inappropriate_community_antibiotic_use_evidence_from_linked_provi_infographic.json
+
+## 8. Use of AI-Related CPT Codes by Patient, Geographic, and Payer Characteristics in the U.S., 2021-2026
+
+- Date: 2026-11-11
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.09.26367689v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.09.26367689v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-medrxiv-use_of_ai_related_cpt_codes_by_patient_geographic_and_payer_characteristics_in_the_u_s_202_infographic.json
+
+## 9. Expert-level localization of fine-grained cardiac structures across the transthoracic echocardiogram
+
+- Date: 2026-11-12
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.10.26367643v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.10.26367643v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-expert_level_localization_of_fine_grained_cardiac_structures_across_the_transthoracic_echo_infographic.json
+
+## 10. Prediction of Subsolid Pulmonary Nodule Evolution from Baseline CT Using Temporal Imaging Models
+
+- Date: 2026-11-11
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-medrxiv-prediction_of_subsolid_pulmonary_nodule_evolution_from_baseline_ct_using_temporal_imaging_infographic.json
+
+## 11. Spatiotemporal mapping of ex vivo myometrial contractions in adenomyosis
+
+- Date: 2026-11-11
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.10.26367720v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.10.26367720v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-medrxiv-spatiotemporal_mapping_of_ex_vivo_myometrial_contractions_in_adenomyosis_infographic.json
+
+## 12. Serum Raman spectroscopy as a blood-based triage test for bladder cancer: a retrospective proof-of-concept study
+
+- Date: 2026-11-11
+- Category: Diagnostics
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.26.26366501v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.26.26366501v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-medrxiv-serum_raman_spectroscopy_as_a_blood_based_triage_test_for_bladder_cancer_a_retrospective_p_infographic.json
+
+## 13. Environmental toxic metal exposure and conditional mortality survival among US adults: a prospective cohort study
+
+- Date: 2026-11-12
+- Category: Clinical NLP
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-12-medrxiv-environmental_toxic_metal_exposure_and_conditional_mortality_survival_among_us_adults_a_pr_infographic.json
+
+## 14. A data-driven regional amyloid PET score predicts cognitive decline beyond Centiloid
+
+- Date: 2026-11-11
+- Category: Medical Imaging
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26360248v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26360248v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-11-medrxiv-a_data_driven_regional_amyloid_pet_score_predicts_cognitive_decline_beyond_centiloid_infographic.json
