@@ -1,9 +1,17 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-23
+Generated: 2026-11-24
 Public site: https://dutoaa.github.io/medicine-ai-progress/
 
-## 1. Agentic AI versus pediatric emergency physicians for differential diagnosis of acutely ill and injured children
+## 1. Medical Specialty Prediction from Bangla Patient Narratives: A Comparative Study of ML, DL, Transformers, and LLMs
+
+- Date: 2026-11-22
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.29151v1
+- PDF: https://arxiv.org/pdf/2611.29151v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-22-arxiv-medical_specialty_prediction_from_bangla_patient_narratives_a_comparative_study_of_ml_dl_t_infographic.json
+
+## 2. Agentic AI versus pediatric emergency physicians for differential diagnosis of acutely ill and injured children
 
 - Date: 2026-11-18
 - Category: Clinical NLP
@@ -11,15 +19,71 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.11.16.26367440v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-18-medrxiv-agentic_ai_versus_pediatric_emergency_physicians_for_differential_diagnosis_of_acutely_ill_infographic.json
 
-## 2. OmniTongue: A Comprehensive MLLM Benchmark for Automated Tongue Diagnosis in Traditional Chinese Medicine
+## 3. Laya-IsoToken: Day-One Clinical Codebook Switching via Closed-Form Operator Compilation
 
-- Date: 2026-11-17
+- Date: 2026-11-23
+- Category: Health Systems
+- Source: arXiv - https://arxiv.org/abs/2611.30196v1
+- PDF: https://arxiv.org/pdf/2611.30196v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-laya_isotoken_day_one_clinical_codebook_switching_via_closed_form_operator_compilation_infographic.json
+
+## 4. Learning Multimodal Representations from Partially Paired, Small-Scale Data
+
+- Date: 2026-11-23
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.22652v1
-- PDF: https://arxiv.org/pdf/2611.22652v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-17-arxiv-omnitongue_a_comprehensive_mllm_benchmark_for_automated_tongue_diagnosis_in_traditional_ch_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2611.30601v1
+- PDF: https://arxiv.org/pdf/2611.30601v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-learning_multimodal_representations_from_partially_paired_small_scale_data_infographic.json
 
-## 3. Toward a digital twin of the ICU patient: Forecasting and treatment response in a generative event model
+## 5. Leakage-Free Is Not Confounder-Free: What a Patient-Level Split Cannot Certify About a Medical Imaging Benchmark
+
+- Date: 2026-11-20
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2611.27585v2
+- PDF: https://arxiv.org/pdf/2611.27585v2
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-leakage_free_is_not_confounder_free_what_a_patient_level_split_cannot_certify_about_a_medi_infographic.json
+
+## 6. MedUIGym: Evaluating and Training GUI Agents for Clinical Workflows
+
+- Date: 2026-11-23
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.30983v1
+- PDF: https://arxiv.org/pdf/2611.30983v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-meduigym_evaluating_and_training_gui_agents_for_clinical_workflows_infographic.json
+
+## 7. Virtual spatial transcriptomics links kidney histopathology to disease-associated molecular programs
+
+- Date: 2026-11-19
+- Category: Biomedical AI
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-19-medrxiv-virtual_spatial_transcriptomics_links_kidney_histopathology_to_disease_associated_molecula_infographic.json
+
+## 8. SAE-Audit: Clinical-Trial Prediction via Inference-Time Optimization of Black-Box LLMs Audited by Sparse Autoencoder Evidence
+
+- Date: 2026-11-22
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.29368v1
+- PDF: https://arxiv.org/pdf/2611.29368v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-22-arxiv-sae_audit_clinical_trial_prediction_via_inference_time_optimization_of_black_box_llms_audi_infographic.json
+
+## 9. CT-Navigator: Towards Interpretable and Generalizable CT Understanding through Agentic Perception and Tool-Invocation
+
+- Date: 2026-11-22
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.29305v1
+- PDF: https://arxiv.org/pdf/2611.29305v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-22-arxiv-ct_navigator_towards_interpretable_and_generalizable_ct_understanding_through_agentic_perc_infographic.json
+
+## 10. When Should We Trust Medical Image Models? Evaluating Confidence Reliability under Cross-Dataset Shift
+
+- Date: 2026-11-23
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2611.29955v1
+- PDF: https://arxiv.org/pdf/2611.29955v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-when_should_we_trust_medical_image_models_evaluating_confidence_reliability_under_cross_da_infographic.json
+
+## 11. Toward a digital twin of the ICU patient: Forecasting and treatment response in a generative event model
 
 - Date: 2026-11-20
 - Category: Health Systems
@@ -27,138 +91,74 @@ Public site: https://dutoaa.github.io/medicine-ai-progress/
 - PDF: https://arxiv.org/pdf/2611.27028v1
 - Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-toward_a_digital_twin_of_the_icu_patient_forecasting_and_treatment_response_in_a_generativ_infographic.json
 
-## 4. TabBioMed: A Large-Scale Benchmark for Biomedical Tabular Learning
+## 12. A Cascaded Framework with a Cross-Attention-Guided Mamba-CNN Model for Pre- and Post-Treatment Glioma Segmentation
 
-- Date: 2026-11-18
-- Category: Biomedical AI
-- Source: arXiv - https://arxiv.org/abs/2611.23779v1
-- PDF: https://arxiv.org/pdf/2611.23779v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-18-arxiv-tabbiomed_a_large_scale_benchmark_for_biomedical_tabular_learning_infographic.json
-
-## 5. Leakage-Free Is Not Confounder-Free: What a Patient-Level Split Cannot Certify About a Medical Imaging Benchmark
-
-- Date: 2026-11-20
+- Date: 2026-11-22
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.27585v1
-- PDF: https://arxiv.org/pdf/2611.27585v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-leakage_free_is_not_confounder_free_what_a_patient_level_split_cannot_certify_about_a_medi_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2611.29792v1
+- PDF: https://arxiv.org/pdf/2611.29792v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-22-arxiv-a_cascaded_framework_with_a_cross_attention_guided_mamba_cnn_model_for_pre_and_post_treatm_infographic.json
 
-## 6. Patient, carer and clinical stakeholder views on using artificial intelligence and machine learning for the histopathological diagnosis of duodenal biopsies
+## 13. KMed-31B Technical Report
 
-- Date: 2026-11-17
+- Date: 2026-11-21
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.28719v1
+- PDF: https://arxiv.org/pdf/2611.28719v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-21-arxiv-kmed_31b_technical_report_infographic.json
+
+## 14. Synthetic EHR Generators Should Be Audited Like LLMs
+
+- Date: 2026-11-21
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.28804v1
+- PDF: https://arxiv.org/pdf/2611.28804v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-21-arxiv-synthetic_ehr_generators_should_be_audited_like_llms_infographic.json
+
+## 15. The AMPEL Platform: An Open-Source Project for Developing Hospital-Wide Clinical Decision Support Systems under EU-Regulation
+
+- Date: 2026-11-23
 - Category: Health Systems
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.16.26368196v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.16.26368196v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-17-medrxiv-patient_carer_and_clinical_stakeholder_views_on_using_artificial_intelligence_and_machine_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2611.30990v1
+- PDF: https://arxiv.org/pdf/2611.30990v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-the_ampel_platform_an_open_source_project_for_developing_hospital_wide_clinical_decision_s_infographic.json
 
-## 7. MedicalRSI: Medical Recursive Self-Improving Agents via Clinical Model-Harness Co-Evolution
+## 16. Leakage-Safe Auditing of Attribution-Driven Data Curation in Medical Imaging
+
+- Date: 2026-11-23
+- Category: Medical Imaging
+- Source: arXiv - https://arxiv.org/abs/2611.31096v1
+- PDF: https://arxiv.org/pdf/2611.31096v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-leakage_safe_auditing_of_attribution_driven_data_curation_in_medical_imaging_infographic.json
+
+## 17. Decompose and Describe: Narrowing the Diagnosis-to-Report Gap in 3D CT Report Generation
+
+- Date: 2026-11-23
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.30458v1
+- PDF: https://arxiv.org/pdf/2611.30458v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-decompose_and_describe_narrowing_the_diagnosis_to_report_gap_in_3d_ct_report_generation_infographic.json
+
+## 18. Ontology-Compiled 2D Clinical State Fields with Bidirectional Diffusion Encoders for Zero-Training Cross-Ontology Medical Coding
+
+- Date: 2026-11-23
+- Category: Clinical NLP
+- Source: arXiv - https://arxiv.org/abs/2611.30218v1
+- PDF: https://arxiv.org/pdf/2611.30218v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-ontology_compiled_2d_clinical_state_fields_with_bidirectional_diffusion_encoders_for_zero_infographic.json
+
+## 19. Beyond Fidelity: Evaluating Synthetic Medical Imaging Data
 
 - Date: 2026-11-19
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.26806v1
-- PDF: https://arxiv.org/pdf/2611.26806v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-19-arxiv-medicalrsi_medical_recursive_self_improving_agents_via_clinical_model_harness_co_evolution_infographic.json
-
-## 8. Beyond Final Answers: Interpretable Tumor Immune Microenvironment Reasoning from H&E and mIF
-
-- Date: 2026-11-19
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.26794v1
-- PDF: https://arxiv.org/pdf/2611.26794v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-19-arxiv-beyond_final_answers_interpretable_tumor_immune_microenvironment_reasoning_from_h_e_and_mi_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2611.28154v1
+- PDF: https://arxiv.org/pdf/2611.28154v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-19-arxiv-beyond_fidelity_evaluating_synthetic_medical_imaging_data_infographic.json
 
-## 9. Learning 3D MRI Representations with Generative Adversarial Networks
+## 20. Foundation Model and Radiomics Distance Scores for Post-Hoc Segmentation Failure Detection
 
-- Date: 2026-11-20
+- Date: 2026-11-23
 - Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.27057v1
-- PDF: https://arxiv.org/pdf/2611.27057v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-learning_3d_mri_representations_with_generative_adversarial_networks_infographic.json
-
-## 10. Multi-Tier Edge Triage: Optimizing Latency for Safe Clinical Agents
-
-- Date: 2026-11-20
-- Category: Diagnostics
-- Source: arXiv - https://arxiv.org/abs/2611.26914v1
-- PDF: https://arxiv.org/pdf/2611.26914v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-multi_tier_edge_triage_optimizing_latency_for_safe_clinical_agents_infographic.json
-
-## 11. Neurodegenerative Differential Diagnosis with Knowledge-enhanced Structural Reasoning
-
-- Date: 2026-11-20
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.27427v1
-- PDF: https://arxiv.org/pdf/2611.27427v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-neurodegenerative_differential_diagnosis_with_knowledge_enhanced_structural_reasoning_infographic.json
-
-## 12. Scalable Evaluation of Medical AI using Evidence-based Practice Recommendations
-
-- Date: 2026-11-20
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.27007v1
-- PDF: https://arxiv.org/pdf/2611.27007v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-scalable_evaluation_of_medical_ai_using_evidence_based_practice_recommendations_infographic.json
-
-## 13. LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT
-
-- Date: 2026-11-20
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2611.27876v1
-- PDF: https://arxiv.org/pdf/2611.27876v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-lesionagent_training_free_agentic_tumor_tracking_and_response_assessment_in_longitudinal_c_infographic.json
-
-## 14. A Neurosymbolic Multimodal Framework for 30-Day Diabetic Readmission Prediction: Integrating Structured EHR Data, Dense Clinical Embeddings, and Knowledge-Grounded Symbolic Extraction
-
-- Date: 2026-11-18
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.25236v1
-- PDF: https://arxiv.org/pdf/2611.25236v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-18-arxiv-a_neurosymbolic_multimodal_framework_for_30_day_diabetic_readmission_prediction_integratin_infographic.json
-
-## 15. Adversarial Robustness of Capsule Networks for Medical Image Classification
-
-- Date: 2026-11-17
-- Category: Medical Imaging
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.03.09.26347900v3
-- PDF: https://www.medrxiv.org/content/10.64898/2026.03.09.26347900v3.full.pdf
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-17-medrxiv-adversarial_robustness_of_capsule_networks_for_medical_image_classification_infographic.json
-
-## 16. Communication-Efficient Federated Learning of Latent Patient Representations from Multi-Institutional EHRs
-
-- Date: 2026-11-20
-- Category: Health Systems
-- Source: arXiv - https://arxiv.org/abs/2611.27900v1
-- PDF: https://arxiv.org/pdf/2611.27900v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-communication_efficient_federated_learning_of_latent_patient_representations_from_multi_in_infographic.json
-
-## 17. From Sequence Uncertainty to Phenotype Hypotheses: Uncertainty-Conditioned Inference over Biomedical Knowledge Graphs
-
-- Date: 2026-11-19
-- Category: Biomedical AI
-- Source: arXiv - https://arxiv.org/abs/2611.25422v1
-- PDF: https://arxiv.org/pdf/2611.25422v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-19-arxiv-from_sequence_uncertainty_to_phenotype_hypotheses_uncertainty_conditioned_inference_over_b_infographic.json
-
-## 18. DiagTrace: An Interactive Benchmark for Clinical Decision Making
-
-- Date: 2026-11-16
-- Category: Clinical NLP
-- Source: arXiv - https://arxiv.org/abs/2611.22009v1
-- PDF: https://arxiv.org/pdf/2611.22009v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-16-arxiv-diagtrace_an_interactive_benchmark_for_clinical_decision_making_infographic.json
-
-## 19. Observed, Curated, Reused: Observation Bias in Clinical AI Evaluation
-
-- Date: 2026-11-20
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.27301v1
-- PDF: https://arxiv.org/pdf/2611.27301v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-observed_curated_reused_observation_bias_in_clinical_ai_evaluation_infographic.json
-
-## 20. Towards Text-Mask Consistency in Medical Image Segmentation
-
-- Date: 2026-11-20
-- Category: Medical Imaging
-- Source: arXiv - https://arxiv.org/abs/2611.27050v1
-- PDF: https://arxiv.org/pdf/2611.27050v1
-- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-20-arxiv-towards_text_mask_consistency_in_medical_image_segmentation_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2611.30582v1
+- PDF: https://arxiv.org/pdf/2611.30582v1
+- Infographic JSON: https://dutoaa.github.io/medicine-ai-progress/infographics/2026-11-23-arxiv-foundation_model_and_radiomics_distance_scores_for_post_hoc_segmentation_failure_detection_infographic.json

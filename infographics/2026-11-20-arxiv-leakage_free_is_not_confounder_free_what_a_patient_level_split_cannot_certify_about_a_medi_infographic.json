@@ -1,19 +1,19 @@
 {
-  "key_insight": "Patient-level splits prevent subject leakage but cannot rule out acquisition-related confounding that may drive apparent diagnostic performance.",
-  "clinical_relevance": "High breast thermography benchmark performance may reflect when patients were scanned rather than pathology, limiting its value as evidence for clinical use.",
+  "key_insight": "Patient-level splits prevent subject leakage but cannot rule out diagnostic predictions driven by acquisition-related confounders shared across folds.",
+  "clinical_relevance": "High benchmark accuracy alone may not establish that a medical imaging model detects pathology rather than differences in how patients were recruited or scanned.",
   "method": [
-    "Audit five questions covering confounder predictiveness, image decodability, score dependence, added image value and discrimination after control.",
-    "Evaluate acquisition-date confounding across nine imaging arms using patient-disjoint splits.",
-    "Repeat the audit in an independently acquired cohort with age as the dominant confounding channel."
+    "Audit whether a candidate confounder predicts diagnosis and can be decoded from images.",
+    "Test whether model scores depend on the confounder and whether images add predictive value beyond it.",
+    "Measure discrimination after controlling for the confounder."
   ],
-  "evidence_signal": "In 236 DMR-IR patients, acquisition date alone achieved AUROC 0.980 versus 0.949 for the best imaging arm; no arm improved on date in paired-fold comparisons.",
-  "watch_item": "Only eight cross-label same-date pairs from ten patients limit evaluation within acquisition-date groups, so confounder mitigation alone cannot establish that remaining discrimination reflects pathology.",
+  "evidence_signal": "Across 236 DMR-IR patients with patient-disjoint evaluation, acquisition date predicted malignancy at AUROC 0.980 versus 0.949 for the best imaging arm; no imaging arm improved on date alone in paired folds.",
+  "watch_item": "Only eight cross-label same-date pairs from ten patients were available, limiting reliable evaluation within acquisition-date groups and attribution of residual performance to pathology.",
   "hashtags": [
     "#MedicalImaging",
-    "#AIValidation",
+    "#MedicalAI",
     "#Confounding",
-    "#BreastThermography",
-    "#DatasetAudit"
+    "#ModelEvaluation",
+    "#BreastThermography"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Leakage-Free Is Not Confounder-Free: What a Patient-Level Split Cannot Certify About a Medical Imaging Benchmark",
   "paper_date": "2026-11-20",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-11-23T18:51:40",
+  "generated_at": "2026-11-24T18:27:23",
   "generator": "openai"
 }

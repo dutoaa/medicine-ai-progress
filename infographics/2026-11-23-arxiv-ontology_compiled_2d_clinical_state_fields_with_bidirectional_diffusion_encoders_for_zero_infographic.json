@@ -1,0 +1,26 @@
+{
+  "key_insight": "OCSF separates clinical-note encoding from ontology indexing, allowing one trained model to switch medical code sets without target-specific training.",
+  "clinical_relevance": "The approach could reduce retraining burdens when coding standards change, though real-world coding accuracy and workflow value remain to be established.",
+  "method": [
+    "Encode each note into a fixed-size 2D clinical state matrix without code-specific parameters.",
+    "Compile ontology descriptions offline into a Tikhonov deconvolution operator to reduce interference between sibling codes.",
+    "Apply the compiled operator to read out codes without target-specific tuning."
+  ],
+  "evidence_signal": "Trained only on English MIMIC-IV ICD-9 discharge summaries, OCSF was evaluated across 58,706 held-out notes and five unseen ontologies, reporting 63.15% in-domain Micro-F1 and 29.23% recall at gold cardinality for English ICD-10.",
+  "watch_item": "Recall measured using the true number of codes per note does not establish performance when that number is unknown in routine coding.",
+  "hashtags": [
+    "#ClinicalNLP",
+    "#MedicalCoding",
+    "#Ontology",
+    "#TransferLearning",
+    "#AIinHealthcare"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-11-23-arxiv-ontology_compiled_2d_clinical_state_fields_with_bidirectional_diffusion_encoders_for_zero",
+  "paper_title": "Ontology-Compiled 2D Clinical State Fields with Bidirectional Diffusion Encoders for Zero-Training Cross-Ontology Medical Coding",
+  "paper_date": "2026-11-23",
+  "paper_category": "Clinical NLP",
+  "generated_at": "2026-11-24T18:27:53",
+  "generator": "openai"
+}
