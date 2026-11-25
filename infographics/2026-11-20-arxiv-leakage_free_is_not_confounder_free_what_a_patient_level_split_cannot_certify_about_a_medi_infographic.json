@@ -1,18 +1,18 @@
 {
-  "key_insight": "Patient-level splits prevent subject leakage but cannot rule out diagnostic predictions driven by acquisition-related confounders shared across folds.",
-  "clinical_relevance": "High benchmark accuracy alone may not establish that a medical imaging model detects pathology rather than differences in how patients were recruited or scanned.",
+  "key_insight": "Patient-level splits prevent subject leakage but cannot rule out acquisition confounders that predict diagnosis across the entire dataset.",
+  "clinical_relevance": "Strong medical imaging benchmark performance may reflect acquisition patterns rather than pathology, limiting confidence in clinical generalization.",
   "method": [
     "Audit whether a candidate confounder predicts diagnosis and can be decoded from images.",
-    "Test whether model scores depend on the confounder and whether images add predictive value beyond it.",
+    "Test whether diagnostic scores depend on it and whether images add predictive value beyond it.",
     "Measure discrimination after controlling for the confounder."
   ],
-  "evidence_signal": "Across 236 DMR-IR patients with patient-disjoint evaluation, acquisition date predicted malignancy at AUROC 0.980 versus 0.949 for the best imaging arm; no imaging arm improved on date alone in paired folds.",
-  "watch_item": "Only eight cross-label same-date pairs from ten patients were available, limiting reliable evaluation within acquisition-date groups and attribution of residual performance to pathology.",
+  "evidence_signal": "In 236 DMR-IR patients evaluated with patient-disjoint splits, acquisition date predicted malignancy at AUROC 0.980 versus 0.949 for the best imaging arm; no imaging arm improved on date alone in paired-fold comparisons.",
+  "watch_item": "Only eight cross-label same-date pairs from ten patients were available, preventing reliable assessment of pathology-specific discrimination within acquisition-date groups.",
   "hashtags": [
     "#MedicalImaging",
-    "#MedicalAI",
+    "#ClinicalAI",
     "#Confounding",
-    "#ModelEvaluation",
+    "#BenchmarkValidation",
     "#BreastThermography"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "Leakage-Free Is Not Confounder-Free: What a Patient-Level Split Cannot Certify About a Medical Imaging Benchmark",
   "paper_date": "2026-11-20",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-11-24T18:27:23",
+  "generated_at": "2026-11-25T17:42:22",
   "generator": "openai"
 }

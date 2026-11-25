@@ -1,19 +1,19 @@
 {
-  "key_insight": "Laya-IsoToken enables clinical codebook switching without target-labeled training notes by separating clinical evidence extraction from code definitions.",
-  "clinical_relevance": "The approach could reduce reannotation burdens when hospitals update coding systems, reimbursement groupers, or coding languages.",
+  "key_insight": "Laya-IsoToken enables clinical codebook switching without target-labeled training notes by separating clinical text evidence from a frozen multilingual concept space.",
+  "clinical_relevance": "The approach could reduce reannotation burden when hospitals adopt new coding systems, reimbursement groupers, or languages.",
   "method": [
-    "Train a clinical span reader once against a frozen multilingual concept space, with no per-code classifier parameters.",
+    "Train a clinical span reader on source records without per-code classifier weights.",
     "Compile public target code descriptions into alignment operators in under three seconds.",
-    "Route unfamiliar concepts to offline language-model verification using a geometric residual."
+    "Use a geometric residual to flag unfamiliar concepts for offline language-model verification."
   ],
-  "evidence_signal": "The abstract reports 62.6% Micro-F1 on 32,804 ICD-9 discharges, switching to 13,783 unseen-patient ICD-10 discharges without target training notes, and 40.6% ICD-10 Micro-F1 with offline verification on 1,000 summaries.",
-  "watch_item": "Reported benchmark performance does not establish deployment readiness; prospective validation across hospitals and assessment of verifier costs remain important.",
+  "evidence_signal": "Evaluated on 32,804 ICD-9 and 13,783 unseen-patient ICD-10 discharges, the system exceeded CMS mappings by 3.5 F1 points; adding an offline 31B verifier achieved 40.6% ICD-10 Micro-F1 with no invalid codes observed across 1,000 summaries.",
+  "watch_item": "Zero invalid codes does not mean correct coding; moderate ICD-10 performance and offline verifier requirements warrant validation before operational use.",
   "hashtags": [
     "#ClinicalAI",
     "#MedicalCoding",
-    "#HealthInformatics",
+    "#HealthSystems",
     "#ICD10",
-    "#ZeroShotLearning"
+    "#MultilingualAI"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Laya-IsoToken: Day-One Clinical Codebook Switching via Closed-Form Operator Compilation",
   "paper_date": "2026-11-23",
   "paper_category": "Health Systems",
-  "generated_at": "2026-11-24T18:27:19",
+  "generated_at": "2026-11-25T17:42:02",
   "generator": "openai"
 }

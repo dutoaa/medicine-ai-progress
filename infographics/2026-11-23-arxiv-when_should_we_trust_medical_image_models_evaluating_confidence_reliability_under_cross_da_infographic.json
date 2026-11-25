@@ -1,19 +1,19 @@
 {
-  "key_insight": "Under cross-dataset shift, chest X-ray models lost predictive performance, and source-fitted temperature scaling increased confidence in incorrect predictions.",
-  "clinical_relevance": "Strong benchmark performance and calibrated source-domain confidence may not indicate reliable predictions at another hospital.",
+  "key_insight": "Strong benchmark performance did not ensure reliable cross-dataset predictions, and source-fitted temperature scaling increased confidence in errors.",
+  "clinical_relevance": "Chest X-ray AI may become less accurate and misleadingly confident when transferred between hospital datasets, supporting cross-site validation before deployment.",
   "method": [
-    "Trained ResNet-50 and DenseNet-121 on CheXpert and evaluated transfer to MIMIC-CXR.",
-    "Assessed pneumothorax and pleural effusion using AUC, ECE, Brier score, and confidence on incorrect predictions.",
-    "Tested source-validation temperature scaling and examined attention patterns with Grad-CAM."
+    "Trained ResNet-50 and DenseNet-121 on CheXpert; evaluated transfer to MIMIC-CXR for pneumothorax and pleural effusion.",
+    "Measured AUC, ECE, Brier score, and average confidence on incorrect predictions with 95% bootstrap confidence intervals.",
+    "Tested source-validation temperature scaling and examined attention patterns using Grad-CAM."
   ],
-  "evidence_signal": "Across five experimental settings, cross-domain AUC dropped 7–13 percentage points; metrics were reported with 95% bootstrap confidence intervals.",
-  "watch_item": "Evidence covers two architectures, two pathologies, and one transfer direction; broader reliability requires validation across additional sites and tasks.",
+  "evidence_signal": "Across five experimental settings, cross-domain AUC fell 7–13 percentage points, while temperature scaling increased confidence on errors in all four model–pathology combinations.",
+  "watch_item": "Evidence covers two architectures, two findings, and one dataset-transfer direction; broader clinical generalizability remains uncertain.",
   "hashtags": [
-    "#MedicalAI",
-    "#ChestXRay",
+    "#MedicalImaging",
+    "#ChestXRayAI",
     "#DatasetShift",
     "#ModelCalibration",
-    "#AIValidation"
+    "#AISafety"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "When Should We Trust Medical Image Models? Evaluating Confidence Reliability under Cross-Dataset Shift",
   "paper_date": "2026-11-23",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-11-24T18:27:35",
+  "generated_at": "2026-11-25T17:42:33",
   "generator": "openai"
 }
