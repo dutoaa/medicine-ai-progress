@@ -1,13 +1,13 @@
 {
-  "key_insight": "LLM judges better distinguish unsafe clinical actions when given EHR evidence, while agent reasoning does not improve overall performance.",
-  "clinical_relevance": "Evaluating EHR-connected AI agents requires checking clinical actions against patient records, not just assessing whether final answers appear correct.",
+  "key_insight": "LLM judges detect unsafe clinical actions more reliably when given EHR evidence; apparent task completion alone is not a dependable safety signal.",
+  "clinical_relevance": "Evaluating EHR-connected AI agents should assess their underlying actions and clinical evidence, not just their final answers.",
   "method": [
-    "Injected controlled errors across eight categories into verified MedAgentBench trajectories.",
-    "Evaluated six open-weight LLM judges on 416 faulty trajectories paired with correct counterparts.",
-    "Compared evidence access and combined LLM judgments with a full-EHR rule-based checker."
+    "Injected eight categories of clinical errors into verified MedAgentBench trajectories.",
+    "Compared 416 faulty trajectories with correct counterparts using six open-weight LLM judges.",
+    "Tested different evidence inputs and combined LLM judgments with an EHR-informed rule-based checker."
   ],
-  "evidence_signal": "Full-trajectory evaluation reached a discrimination score of 0.75; the original grader accepted all 38 skipped-lab-check trajectories, while combined LLM and rule-based checks detected 97% of injected faults.",
-  "watch_item": "These benchmark results use injected errors and do not establish safety or reliability in real-world clinical deployment.",
+  "evidence_signal": "Final-answer-only judges flagged 56% of correct trajectories, while full-trajectory evaluation reached a discrimination score of 0.75 and combined LLM–rule-based checking detected 97% of injected faults.",
+  "watch_item": "These controlled benchmark results do not establish real-world clinical safety; added agent reasoning did not improve overall detection, and incorrectly reported clinical values remained hardest to detect.",
   "hashtags": [
     "#ClinicalAI",
     "#PatientSafety",
@@ -21,6 +21,6 @@
   "paper_title": "Can LLM Judges Catch Unsafe Clinical Actions? A Fault-Injection Study",
   "paper_date": "2026-11-24",
   "paper_category": "Clinical NLP",
-  "generated_at": "2026-11-25T17:42:05",
+  "generated_at": "2026-11-26T17:26:50",
   "generator": "openai"
 }
