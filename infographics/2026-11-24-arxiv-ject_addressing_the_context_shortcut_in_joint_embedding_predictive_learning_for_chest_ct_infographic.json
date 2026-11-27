@@ -1,13 +1,13 @@
 {
-  "key_insight": "JECT addresses the “context shortcut” in chest CT learning by making the encoder predict report content, encouraging it to represent findings that surrounding anatomy cannot predict.",
-  "clinical_relevance": "The approach could support chest CT classification, finding localization, and risk prediction, but the abstract does not establish clinical readiness.",
+  "key_insight": "JECT addresses a context shortcut in chest CT pretraining by making the encoder predict report content, rather than relying on surrounding anatomy to infer potentially hidden findings.",
+  "clinical_relevance": "The approach could support chest CT classification, retrieval, nodule malignancy assessment and lung-cancer risk prediction, but the abstract does not establish clinical readiness.",
   "method": [
     "Condition masked-region feature prediction on the radiology report.",
     "Train the encoder to predict anatomical report sections from the unmasked scan.",
-    "Apply prediction objectives at every stage of a hierarchical 3D encoder."
+    "Use a hierarchical 3D encoder with prediction at every stage to retain clinical content across scales."
   ],
-  "evidence_signal": "Trained from scratch on 173k CT volumes, JECT reportedly matched current CT foundation models across classification, retrieval, and nodule malignancy tasks, and task-specific lung-cancer risk models after fine-tuning.",
-  "watch_item": "Report conditioning alone added little encoder benefit in this setup; implementation should preserve the text-target objective rather than assume report access is sufficient.",
+  "evidence_signal": "Trained from scratch on 173k CT volumes, JECT reportedly matched current CT foundation models on classification, retrieval and nodule malignancy, and task-specific models on lung-cancer risk after fine-tuning; ablations favored report-text targets over conditioning alone.",
+  "watch_item": "The abstract provides no numerical performance estimates or external-validation details, limiting assessment of robustness and generalizability.",
   "hashtags": [
     "#MedicalAI",
     "#ChestCT",
@@ -21,6 +21,6 @@
   "paper_title": "JECT: Addressing the Context Shortcut in Joint-Embedding Predictive Learning for Chest CT",
   "paper_date": "2026-11-24",
   "paper_category": "Medical Imaging",
-  "generated_at": "2026-11-26T17:27:17",
+  "generated_at": "2026-11-27T17:05:04",
   "generator": "openai"
 }
