@@ -1,19 +1,19 @@
 {
-  "key_insight": "Laya-IsoToken enables clinical codebook switching without target-labeled training notes by separating clinical text reading from code definitions.",
-  "clinical_relevance": "The approach could reduce reannotation burden when hospitals change coding systems or deploy coding across languages.",
+  "key_insight": "Laya-IsoToken enables clinical coding models to switch codebooks without target-labeled training notes by separating clinical evidence reading from code definitions.",
+  "clinical_relevance": "The approach could reduce annotation burden and support faster transitions between diagnostic classifications, reimbursement groupers, and coding languages.",
   "method": [
-    "Train a clinical span reader once using source records and a frozen multilingual concept space.",
-    "Compile public target-code descriptions into alignment operators in under three seconds.",
-    "Route unfamiliar concepts to offline language-model verification using a geometric residual."
+    "Train a clinical span reader once against a frozen multilingual concept space, without per-code classifier parameters.",
+    "Compile public target code descriptions into alignment operators in under three seconds.",
+    "Route unfamiliar concepts to an offline language-model verifier using a geometric residual."
   ],
-  "evidence_signal": "Across 32,804 ICD-9 and 13,783 unseen-patient ICD-10 discharges, the abstract reports 62.6% source Micro-F1 and a 5.4-point ICD-10 F1 gain over semantic crosswalks; offline verification on 1,000 summaries achieved 40.6% ICD-10 Micro-F1 with no invalid codes observed.",
-  "watch_item": "Real-world generalizability and workflow impact require prospective validation; zero invalid codes does not mean all assigned codes were correct.",
+  "evidence_signal": "The abstract reports 62.6% Micro-F1 on 32,804 ICD-9 discharges, a 5.4-point ICD-10 F1 gain over semantic crosswalks in zero-target-training evaluation, and 40.6% ICD-10 Micro-F1 with offline verification on 1,000 summaries.",
+  "watch_item": "Performance in prospective hospital deployment remains unestablished; 0.0% invalid codes in the reported verifier evaluation does not mean all assigned codes were correct.",
   "hashtags": [
     "#ClinicalAI",
     "#MedicalCoding",
+    "#ICD10",
     "#HealthInformatics",
-    "#TransferLearning",
-    "#ICD10"
+    "#ZeroShotLearning"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Laya-IsoToken: Day-One Clinical Codebook Switching via Closed-Form Operator Compilation",
   "paper_date": "2026-11-23",
   "paper_category": "Health Systems",
-  "generated_at": "2026-11-27T17:04:40",
+  "generated_at": "2026-11-28T15:53:58",
   "generator": "openai"
 }
